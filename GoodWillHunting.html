@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html>
+<title>GoodWillHunting</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* amber theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fffbf3 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#fff1d6 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ffe4ad !important}
+.w3-theme-l2 {color:#000 !important; background-color:#ffd685 !important}
+.w3-theme-l1 {color:#000 !important; background-color:#ffc95c !important}
+.w3-theme-d1 {color:#000 !important; background-color:#ffb114 !important}
+.w3-theme-d2 {color:#000 !important; background-color:#f5a300 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#d68f00 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#b87a00 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#996600 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fffbf3 !important}
+.w3-theme-dark {color:#fff !important; background-color:#996600 !important}
+.w3-theme-action {color:#fff !important; background-color:#996600 !important}
+
+.w3-theme {color:#000 !important; background-color:#ffbb33 !important}
+.w3-text-theme {color:#ffbb33 !important}
+.w3-border-theme {border-color:#ffbb33 !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#ffbb33 !important}
+.w3-hover-text-theme {color:#ffbb33 !important}
+.w3-hover-border-theme:hover {border-color:#ffbb33 !important}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #ffcd37;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body style="max-width:100%;margin-left:16px;margin-right:16px;font-family: 'Open Sans', sans-serif; border:1px solid #ffcd37">
+<nav class="navbar navbar-fixed-top" role="navigation" style="border:2px;border-color:#ffcd37;border-style:solid;margin-left:16px;margin-right:16px;">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#part8" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 8</a>
+    <a href="#part9" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 9</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">Good Will Hunting</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/GWH.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Rated R | 2 hrs 6 min | Drama | 1997
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Will Hunting</td><td>Matt Damon</td>
+  </tr>
+  <tr>
+    <td colspan="2">A troubled young janitor from Boston who is both an orphan and a mathematical genius.</td>
+  </tr>
+  <tr>
+    <td>Prof. Gerald Lambeau</td><td>Stellan Skarsg&aring;rd</td>
+  </tr>
+  <tr>
+    <td colspan="2">A brilliant mathematics professor at the Massachusetts Institute of Technology (MIT) who discovers how gifted Will really is.</td>
+  </tr>
+  <tr>
+    <td>Sean Maguire</td><td>Robin Williams</td>
+  </tr>
+  <tr>
+    <td colspan="2">A psychologist and old friend of Lambeau who agrees to try and help Will.</td>
+  </tr>
+  <tr>
+    <td>Chuckie Sullivan</td><td>Ben Affleck</td>
+  </tr>
+  <tr>
+    <td colspan="2">Will's best friend from childhood, who pushes him to use his genius to get a better life.</td>
+  </tr>
+  <tr>
+    <td>Skylar</td><td>Minnie Driver</td>
+  </tr>
+  <tr>
+    <td colspan="2">A British science student at Harvard University who falls in love with Will.</td>
+  </tr>
+  <tr>
+    <td>Morgan O'Mally</td><td>Casey Affleck</td>
+  </tr>
+  <tr>
+    <td colspan="2">A good friend of Will and Chuckie.</td>
+  </tr>
+  <tr>
+    <td>Billy McBride</td><td>Cole Hauser</td>
+  </tr>
+  <tr>
+    <td colspan="2">Another good friend of Will and Chuckie.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+    Will Hunting is a 20 year old Boston janitor who works cleaning classrooms
+    at the Massachusetts Institute of Technology, one of the best and most famous
+    universities in the world. He is an orphan who grew up in various foster homes,
+    where he had been physically abused as a child. He is also an extraordinarily
+    gifted mathematical genius, who likes to solve math problems that an MIT professor
+    writes on a hallway chalkboard. For the students, these problems are too difficult
+    to solve, but for Will, they're easy!
+<p>
+  One day, Prof. Lambeau sees Will writing the answer to a problem on the chalkboard,
+  but Will runs away before they can talk. Lambeau soon discovers many disturbing things
+  about Will, including the fact that he is stuck in jail for having just physically
+  attacked someone who had beaten him up many years earlier. Lambeau arranges with a
+  judge to keep Will out of jail,  as long as Will agrees to work on mathematical problems
+  and to get psychological help. Will agrees to these conditions.
+<p>
+    Will is too difficult a patient for the various psychologists that Lambeau asks to help,
+    but eventually Lambeau goes to his old friend Sean Maguire, who is teaching psychology
+    at a local community collage. Sean has many of his own problems to face, including the
+    fact that his wife of 17 years had recently died from cancer. Still, he agrees to work
+    with Will, and while the relationship is extremely difficult and emotionally explosive,
+    Sean sticks with it because he is convinced he can help Will find some stability and happiness.
+<p>
+  Over the next few months, Will becomes romantically involved with Skylar, a British student
+  at Harvard University who has decided to go Medical School at Stanford University in California.
+  Skylar falls in love with Will, and wants him to go with her to California, but Will is too
+  scared to become emotionally vulnerable and too scared to leave Boston and his friends.
+  <p>
+    In the end, Lambeau simply wants Will to get a job where he would use his mathematical talent,
+    and even Chuckie wants Will to find a life for himself that is far from the difficult working
+    class lives that they both have now. Ultimately though, it is Sean who patiently gives Will
+    the courage and direction he really needs to move on with his life.
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Will passes time with his old childhood friends, by drinking, working,
+and solving mathematical equations that no one else on earth can.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+  <p></p>
+  <p><em>I know many of you had this as <strong>undergraduates.</strong></em></p>
+  <ul>
+  <li>In American universities, education is divided into "undergraduate," which is usually when students work on
+    Bachelor's degrees, and "graduate," where they work on advanced degrees such as a Master's or Ph.D.</li>
+  </ul>
+  <p><em>It won't hurt to <strong>brush up.</strong></em></p>
+  <ul>
+  <li>A nice little phrasal verb meaning to review, or study something again.</li>
+  </ul>
+  <p><em>The person to do so...<strong>will be in my good graces.</strong></em></p>
+  <ul>
+  <li>An old fashioned but pretty way of saying that "I will be very appreciative to this person."</li>
+  </ul>
+  <p><em>"The <strong>auspicious</strong> <strong>MIT Tech</strong>."</em></p>
+  <ul>
+  <li>"Auspicious" is an interesting adjective implying good fortune in the future.</li>
+  <li>The "MIT Tech" is MIT's oldest and largest newspaper.</li>
+  </ul>
+  <p><em>Nobel laureates, Fields Medal winners, renowned Astrophysicists...</em></p>
+  <ul>
+  <li>The first refers to those who have won the world famous Nobel Prizes.</li>
+  <li>The Fields Medal is the highest award a mathematician can receive. Awarded every four years to mathematicians who have made great contributions in the field before their 40th birthday.</li>
+  <li>"Renowned" is a useful adjective meaning prominent or widely respected. Astro-physicists (like Einstein) study the laws of the universe.</li>
+  </ul>
+  <p><em>...and <strong>lowly</strong> MIT professors</em></p>
+  <ul>
+  <li>An excellent adjective meaning humble or unimportant, and often used in a sarcastic (joking) manner when referring to oneself.</li>
+  </ul>
+  <p><em>Fuck you, and your Irish <strong>curse.</strong></em></p>
+  <ul>
+  <li>A "curse" is a superstition of bad luck placed on a person by someone with magical powers.</li>
+  </ul>
+  <p><em>Like I'd waste my energy spreading my legs for that <strong>Tootsie Roll</strong> <strong>dick</strong>? Go home and give it a <strong>tug</strong> yourself!</em></p>
+  <ul>
+  <li>Note the use of "like" at the beginning of sentences, used (and overused!) by many young people for "as if." The rest of the sentence is a crude sexual insult, since a "tootise roll" is a small piece of well known candy, and a "dick" is very common for penis.</li>
+  <li>"To tug" means to pull, and thus the last sentence implies "go home and masturbate with your tiny penis."</li>
+  </ul>
+  <p><em>It's like <strong>five to two</strong> Morgan ends up marrying her.</em></p>
+  <ul>
+  <li>A common way of suggesting the odds of something happening if you wanted to bet on it (ie...A race horse may be "3 to 1").</li>
+  </ul>
+  <p><em>There's only so many times you can <strong>bang</strong> your friend's future wife</em></p>
+  <ul>
+  <li>"To bang" someone is an old-fashioned and silly verb meaning to have sex with.</li>
+  </ul>
+  <p><em>I'm going to <strong>take off</strong>.</em></p>
+  <ul>
+  <li>An excellent phrasal verb meaning to leave. Use it!</li>
+  </ul>
+  <p><em>"Stop brushing me back!"</em></p>
+  <ul>
+  <li>"Stop throwing the ball so close to me like you are going to hit me."</li>
+  </ul>
+  <p><em>"Stop crowding the plate!"</em></p>
+  <ul>
+  <li>"Stop standing so close to the plate like you want to get hit."</li>
+  <li>In this exchange, each one is blaming the other for poor sportsmanship.</li>
+  </ul>
+  <p><em>Hey, <strong>what's up</strong>? You still tough? <strong>Come on!</strong></em></p>
+  <ul>
+  <li>Two of the greatest phrasal verbs in English. "What's up?" is a standard way to greet someone, and essentially means "what's new in your life?" "Come on" is the most versatile phrasal verb in English, and can mean everything from "stop lying" to "hurry up," or as in this case, "show me you can do it."</li>
+  </ul>
+  <p><em>Theorem.</em></p>
+  <ul>
+  <li>A statement that can be demonstrated by previously proven statements.</li>
+  </ul>
+  <p><em>Who's the girl with the <strong>striped</strong> pants? She's got <strong>a nice ass</strong>.</em></p>
+  <ul>
+  <li>"Striped" is a useful adjective referring to a pattern of rows, often on clothes (or Zebras!)</li>
+  <li>The second sentence is a compliment, though a bit forward. An "ass," as you know, is a butt or rear end.</li>
+  </ul>
+  <p><em>I hate that little <strong>bitch</strong>.</em></p>
+  <ul>
+  <li>A crude but common term, usually used for an unpleasant or mean woman.</li>
+  </ul>
+  <p><em>That kid used <strong>to beat the shit out of me</strong> in <strong>kindergarten</strong>.</em></p>
+  <ul>
+  <li>"To beat the shit out of someone" is a vulgar way of saying beat up, or physically attack.</li>
+  <li>"Kindergarten" is preschool for 3-5 year old children.</li>
+  </ul>
+  <p><em>It's 15 minutes <strong>out of our way.</strong></em></p>
+  <ul>
+  <li>A very useful expression meaning "in a different direction from where we are going." Often, people argue whether it is worth going to a place if it's considered too far out of the way.</li>
+  </ul>
+  <p><em>Would you shut <strong>the fuck</strong> up?</em></p>
+  <ul>
+  <li>A delightful use of "fuck" as a noun, added for emotional flavor. Very vulgar, but common (Note the use of "fucking" as an adjective throughout the movie, as in "my fucking sandwich").</li>
+  </ul>
+  <p><em>Stop being a <strong>prick</strong>.</em></p>
+  <ul>
+  <li>Very vulgar. Could mean literally a penis, but more generally, used for a jerk or ass.</li>
+  </ul>
+  <p><em>We'll put your fucking sandwich <strong>on layaway</strong>.</em></p>
+  <ul>
+  <li>A financial expression meaning to pay for something each month over an extended period of time.</li>
+  </ul>
+  <p><em>I think you should establish <strong>a good line of credit</strong>.</em></p>
+  <ul>
+  <li>Access to money, often through a bank loan. "A good line of credit" is the goal of every good middle class American.</li>
+  </ul>
+  <p><em><strong>Hold up</strong>, Chuck.</em></p>
+  <ul>
+  <li>In this case, meaning stay, or slow down.</li>
+  </ul>
+  <p><em>So without further ado...</em></p>
+  <ul>
+  <li>A fancy way to say "Without speaking more..." during a speech</li>
+  </ul>
+  <p><em>Come forward, silent <strong>rogue</strong>, and receive <strong>thy</strong> prize.</em></p>
+  <ul>
+  <li>A "rogue" is an educated word for an unprincipled person who behaves badly.</li>
+  <li>"Thy" is used only poetically, or in a speech such as this, since it is old Shakespearean English for "your."</li>
+  </ul>
+  <p><em>The <strong>gauntlet</strong> has been thrown down.</em></p>
+  <ul>
+  <li>Another poetic way to say "the challenge has been made (or accepted)." A "gauntlet" is, curiously, a glove used in medieval times, and is almost never used today except in this expression.</li>
+  </ul>
+<p>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Will loses his job as a janitor, but at a local bar for
+  Harvard students, he shows who is smart enough to get the girl.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>Arraignment.</em></p>
+<ul>
+<li>A legal term for a hearing at a court where a person is officially charged with committing a crime.</li>
+</ul>
+<p><em>Graffiti.</em></p>
+<ul>
+<li>Writing on building walls. A very important word in many neighborhoods!</li>
+</ul>
+<p><em>Hey, <strong>fuck you</strong>!</em></p>
+<ul>
+<li>In case you didn't know, the most common direct obscenity in all of English.</li>
+</ul>
+<p><em>Oh, you're a <strong>clever</strong> one.</em></p>
+<ul>
+<li>A nice little word for smart, or possibly creative.</li>
+</ul>
+<p><em>How hard is it to push a motherfucking <strong>broom</strong> around?</em></p>
+<ul>
+<li>The object used to sweep floors. Note that the obscene adjective before "broom" is extremely vulgar, but not that uncommon among certain types of people.</li>
+</ul>
+<p><em>I got <strong>fired</strong> because management was <strong>restructuring.</strong></em></p>
+<ul>
+<li>"To fire" someone is to tell someone they can no longer work at the job they had.</li>
+<li>"Restructuring" has become a common word in this context, meaning that the company has reorganized itself, often firing workers in the process.
+  Will is making a joke because he got fired for breaking the law.</li>
+</ul>
+<p><em>Retards.</em></p>
+<ul>
+<li>A crude abbreviation for "retarded," referring to mentally handicapped people with very low intelligence.</li>
+</ul>
+<p><em>You get canned more than tuna, bitch.</em></p>
+<ul>
+<li>A semi-clever play on words. "Canned" means to be laid-off or fired from a job, and of course, to be literally put in cans.</li>
+</ul>
+<p><em>I though there would be <strong>equations</strong> and shit on the walls.</em></p>
+<ul>
+<li>Mathematical formulas.</li>
+</ul>
+<p><em>I will take a <strong>pitcher</strong> of the finest <strong>lager</strong> <strong>in the house</strong>.</em></p>
+<ul>
+<li>A "pitcher" is a container for pouring liquids.</li>
+<li>"Lager" is a word for good beer, and here, "in the house" refers to the bar in which it is said.</li>
+</ul>
+<p><em>Do you ladies....come here often?</em></p>
+<ul>
+<li>A tired and overused way to introduce oneself at a bar or other place where people come to socialize.</li>
+</ul>
+<p><em>It must have been a <strong>survey</strong> course.</em></p>
+<ul>
+<li>Note the grammatical construction for a logical deduction in the past (Must+have+been, though pronounced by Chuckie as "musta' been...").</li>
+<li> A "survey course" is an introductory class.</li>
+</ul>
+<p><em>I found the class....<strong>elementary</strong>.</em></p>
+<ul>
+<li>One way to say simple, or too easy.</li>
+</ul>
+<p><em>It was just between <strong>recess</strong> and lunch.</em></p>
+<ul>
+<li>A term used in elementary schools for the time period when students can go out and play in the school yard. The guy is mocking Chuckie.</li>
+</ul>
+<p><em>I was hoping you can give me some <strong>insight</strong> into the evolution of the market economy of the Southern economies...</em></p>
+<ul>
+<li>"Insight" is a nice word for intelligent observations, or analysis.</li>
+</ul>
+<p><em>Of course, that's your <strong>contention</strong>.</em></p>
+<ul>
+<li>A good word for belief, or claim.</li>
+</ul>
+<p><em><strong>Hang on a second.</strong></em></p>
+<ul>
+<li>A good way to slow somebody down when you need time to think, or as here, when you object to what someone is saying.</li>
+</ul>
+<p><em>That's going to last until next year, when you're going to be in here <strong>regurgitating</strong> Gordon Wood.</em></p>
+<ul>
+<li>"To regurgitate" is a great verb meaning to spit back out, used for both food and ideas. Wood, Garrison and Vickers are the names of history writers that appear in the dialog about this point in the film. Will is very directly telling the other man that he is unoriginal, unintelligent, and lazy.</li>
+</ul>
+<p><em>You going to <strong>plagiarize</strong> the whole thing for us?</em></p>
+<ul>
+<li>"To plagiarize" is a powerful verb meaning to copy or steal another person's writing or other artistic expression. Something none of my students ever do.</li>
+</ul>
+<p><em>Do you have any thoughts on this matter...or...<strong>is that your thing</strong>?</em></p>
+<ul>
+<li>A colloquial way to ask "Is this what you enjoy?"</li>
+</ul>
+<p><em>You dropped 150 <strong>grand</strong> on a fucking education you could have gotten for $1.50 in late charges at the public library.</em></p>
+<ul>
+<li>This is one of Will's great lines. A "grand" is $1,000.</li>
+</ul>
+<p><em>It's <strong>cool</strong>.</em></p>
+<ul>
+<li>A critical, great colloquial adjective. Used to mean fun, nice, enjoyable, or as here, "not a problem."</li>
+</ul>
+<p><em>My boy is <strong>wicked</strong> smart!</em></p>
+<ul>
+<li>An interesting adjective that most often simply means evil, although here it is used as an adverb to mean "extremely." Commonly used in the Boston area.</li>
+</ul>
+<p><em>The <strong>heavy-set</strong> girl said I have a <strong>receding hairline</strong>.</em></p>
+<ul>
+<li>"Heavy-set" is a somewhat polite way to say overweight, heavy or possibly big-boned.</li>
+<li>A "receding hairline" refers to a growing loss of hair above the forehead.</li>
+</ul>
+<p><em>I was, <strong>like</strong>, "go fuck yourself!"</em></p>
+<ul>
+<li>A grammatically pointless word that is extremely common among many people, especially when used with the verb "to be." Be aware of it, but avoid using it too often.</li>
+</ul>
+<p><em>You're an <strong>idiot</strong>.</em></p>
+<ul>
+<li>A very common noun for a stupid or ridiculous person.</li>
+</ul>
+<p><em>That guy over there...the Michael Bolton <strong>clone.</strong></em></p>
+<ul>
+<li>An interesting and useful word from biology which describes someone that looks or behaves exactly like someone else. Michael Bolton is a famous singer. Lousy, but famous.</li>
+</ul>
+<p><em>Maybe we could just <strong>get together</strong> and eat a bunch of <strong>caramels</strong>.</em></p>
+<ul>
+<li>"To get together" is an excellent phrasal verb meaning to meet and/or spend time together. Caramels are delicious little candies made by overcooking sugar.</li>
+</ul>
+<p><em>It's as <strong>arbitrary</strong> as drinking coffee.</em></p>
+<ul>
+<li>This is an excellent word meaning "determined by whim or personal desire, and not by law or principle."</li>
+</ul>
+<p><em>Well, I got her number! <strong>How do you like them apples?!</strong></em></p>
+<ul>
+<li>A wonderful but very old-fashioned expression in the form of a question, which is used when you expect the listener to be surprised or angry or perhaps amazed. Will is mocking the other guy for not being chosen by the attractive female.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Professor Lambeau discovers Will Hunting and
+decides to save him and his brain for humanity.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>He's about this high...</em></p>
+  <ul>
+  <li>When used with hand gestures, an effective way to describe the height of somebody.</li>
+  </ul>
+  <p><em>He didn't <strong>show</strong> for work today...</em></p>
+  <ul>
+  <li>Usually, one would say "show up," but there it is!</li>
+  </ul>
+  <p><em>Parole officer.</em></p>
+  <ul>
+  <li>When a person is released from jail "on parole," they are allowed to stay free so long as they follow certain rules set by a judge. A "parole officer" makes sure the released prisoner follows those rules.</li>
+  </ul>
+  <p><em>There is a very lengthy <strong>precedent</strong>, <strong>your honor</strong>, going back to 1789.</em></p>
+  <ul>
+  <li>In law, a "precedent" refers to a legal opinion that was written in the past that is still considered correct. "Your honor" is the one and only way you should address a judge while in court.</li>
+  </ul>
+  <p><em>Beecher says...and I <strong>quote</strong>...</em></p>
+  <ul>
+  <li>"To quote" is the verb to use when you are using other people's exact words. This way you don't plagiarize.</li>
+  </ul>
+  <p><em>You're <strong>making a mockery of</strong> the court here!</em></p>
+  <ul>
+  <li>"To make a mockery" of something is to make fun of and disrespect it.</li>
+  </ul>
+  <p><em>Liberty....is the <strong>soul's</strong> right to breath....</em></p>
+  <ul>
+  <li>The "soul" is the spiritual part of a person's life. Will is trying to argue his way out of a crime he committed.</li>
+  </ul>
+  <p><em>I've been looking....at this <strong>rap sheet</strong> of yours.</em></p>
+  <ul>
+  <li>A "rap sheet" is a colloquial term for a person's official criminal record. You only get one if you've committed many crimes.</li>
+  </ul>
+  <p><em>Assault. Grand theft auto.</em></p>
+  <ul>
+  <li>Legal terms for physically attacking someone, and stealing a car (or the name of a great game made by Rockstar Games).</li>
+  </ul>
+  <p><em>I'm also aware that you've been through several <strong>foster homes</strong>.</em></p>
+  <ul>
+  <li>Homes where kids are raised temporarily if they are orphans, or if their own parents have been abusing them. On occasion, "foster parents" will legally adopt the children in their care.</li>
+  </ul>
+  <p><em><strong>Motion to dismiss</strong> is denied.</em></p>
+  <ul>
+  <li>This is an expression heard in court, and is basically an official request to stop a legal action against a person.</li>
+  </ul>
+  <p><em>$50,000 <strong>bail</strong>.</em></p>
+  <ul>
+  <li>"Bail" is a critical word for those with serious legal problems. It is the money that a person accused of a crime needs to pay the court in order to be released from jail, until a trial has taken place.</li>
+  </ul>
+  <p><em><strong>Good-looking.</strong></em></p>
+  <ul>
+  <li>The simplest and most common way of saying handsome or pretty.</li>
+  </ul>
+  <p><em>It's the ugly, <strong>obnoxious</strong> toothless loser who got <strong>hammered</strong>.</em></p>
+  <ul>
+  <li>"Obnoxious" is an excellent adjective meaning disagreeable or unpleasant (or possibly just loud).</li>
+  <li>If someone gets "hammered," they are very drunk.</li>
+  </ul>
+  <p><em>This is just a <strong>shot in the dark</strong>....that you're <strong>pre-law</strong>.</em></p>
+  <ul>
+  <li>"A shot in the dark" is a nice expression meaning a wild guess. Students who are "pre-law" take classes to prepare them for law school.</li>
+  </ul>
+  <p><em>What <strong>the fuck</strong> do you want?</em></p>
+  <ul>
+  <li>Grammatically pointless, and yet there it is, with amazing frequency! Added for effect, in this case to express anger.</li>
+  </ul>
+  <p><em>He's agreed to release you, under my <strong>supervision</strong>.</em></p>
+  <ul>
+  <li>Used in cases like this to mean "personal responsibility"</li>
+  </ul>
+  <p><em>Combinatory mathematics. Finite math.</em></p>
+  <ul>
+  <li>Lambeau's mathematical specializations.</li>
+  </ul>
+  <p><em>Sounds like <strong>a real hoot</strong>.</em></p>
+  <ul>
+  <li>A "hoot" is literally the cry that an owl makes, but it has come to mean something that is fun. It is very often used sarcastically, as here, and thus this is in fact Will's way of saying that it does not sound fun at all!</li>
+  </ul>
+  <p><em><strong>Therapist.</strong></em></p>
+  <ul>
+  <li>This is a very common and official word for a psychologist.</li>
+  </ul>
+  <p><em>No more shenanigans...tomfoolery...ballyhoo.</em></p>
+  <ul>
+  <li>Three words that essentially mean nonsense or ridiculous behavior, but none of them are ever, ever used. The therapist sounds like a stuffy intellectual who will never be able to reach Will on an emotional level, and Will decides to toy with him.</li>
+  </ul>
+  <p><em>You're not going to <strong>get off</strong> that easily!</em></p>
+  <ul>
+  <li>You can obviously "get off a bus," but this wonderful and versatile phrasal verb has several other meanings, including, as in this case, to be allowed to continue without restriction or punishment. "To get away" with something has the same meaning.</li>
+  </ul>
+  <p><em>Bomp bomp bomp...boom boom boom.</em></p>
+  <ul>
+  <li>The words to imitate various sounds, from drums or other musical instruments to objects falling on the floor. Will is luring the therapist into a false sense of a successful breakthrough.</li>
+  </ul>
+  <p><em>Do you find it hard to hide the fact that you're <strong>gay</strong>?</em></p>
+  <ul>
+  <li>The one word to use for "homosexual." Very common.</li>
+  </ul>
+  <p><em>Look <strong>buddy</strong>, two seconds ago you were ready to give me a jump.</em></p>
+  <ul>
+  <li>"Buddy" is an old word for friend, but is often used today with sarcasm and anger ("Give me a jump" is Will's way of saying "a sexual advance.")</li>
+  </ul>
+  <p><em>I don't care if you <strong>putt from the rough</strong>.</em></p>
+  <ul>
+  <li>A curious golfing term that Will uses to refer to homosexual activity. If the ball is hit into "the rough," it is hit into an area of high grass, and a putter would not be appropriate; a more powerful club would be used. Will is using the expression to say the therapist likes anal sex.</li>
+  </ul>
+  <p><em>What in <strong>the heck</strong> are you talking about?</em></p>
+  <ul>
+  <li>Will would have said "What the fuck...?" Most young people will compromise and say "What the hell...?" / "What the heck...?" is very old-fashioned and conservative, as is the use of the preposition "in" preceding it. If you want to add emotion, stick with "what the hell...?"</li>
+  </ul>
+  <p><em>A theorem...can be very <strong>erotic</strong>.</em></p>
+  <ul>
+  <li>An important word for sexy, or perhaps sensual or mysterious. Not the sort of term most people would use to describe a theorem.</li>
+  </ul>
+  <p><em>I can't do this <strong>pro bono</strong> work anymore.</em></p>
+  <ul>
+  <li>A legal (and Latin) expression meaning "for free."</li>
+  </ul>
+  <p><em>That <strong>raving loony</strong> in there....</em></p>
+  <ul>
+  <li>Someone who is "raving" is shouting or screaming wildly.</li>
+  <li>"Loony" is a slangy word for a lunatic, which itself is a word for a crazy person. A professional therapist would never use such terms to describe a patient.</li>
+  </ul>
+  <p><em>It's a figure.....it's <strong>hovering</strong> over me.</em></p>
+  <ul>
+  <li>"To hover" means to float in the air, as in what helicopters can do. Will is toying with his next therapist.</li>
+  </ul>
+  <p><em>It's touching me <strong>down there</strong>.</em></p>
+  <ul>
+  <li>Often the way little kids refer to their sexual organs.</li>
+  </ul>
+  <p><em><strong>Jesus.</strong></em></p>
+  <ul>
+  <li>Yes, him, of course, but put here to show you how often the name is used to simply express anger, joy, disgust, surprise, etc.</li>
+  </ul>
+  <p><em><strong>For God's sake</strong>, Will...</em></p>
+  <ul>
+  <li>Another religious expression, usually placed at the beginning of a sentence to express anger and frustration. A little old-fashioned.</li>
+  </ul>
+  <p><em>You can't <strong>pin that on me</strong>!</em></p>
+  <ul>
+  <li>"To pin" something on someone is to blame them for it.</li>
+  </ul>
+  <p><em>In a <strong>clinical situation</strong>...</em></p>
+  <ul>
+  <li>Used to describe when psychologists are working with patients.</li>
+  </ul>
+  <p><em>A <strong>breakthrough.</strong></em></p>
+  <ul>
+  <li>An important word meaning a great amount of progress, often coming suddenly or unexpectedly.</li>
+  </ul>
+  <p><em>Oral fixation.</em></p>
+  <ul>
+  <li>A reference to Sigmund Freud's theory of sexual development, specifically the phase when children are obsessed with their mouths.</li>
+  </ul>
+  <p><em><strong>Wow</strong>, that's very <strong>deep</strong>.</em></p>
+  <ul>
+  <li>A funny and sarcastic line. "Wow" is used often at the beginning of sentences to express surprise.</li>
+  <li>If something is "deep" in a philosophical sense, it is important or insightful.</li>
+  </ul>
+  <p><em><strong>Nail</strong> them while they're <strong>vulnerable</strong>.</em></p>
+  <ul>
+  <li>"To nail" someone can colloquially mean to attack. "Vulnerable' is an excellent word meaning weak or fragile, or easily open to attack.</li>
+  </ul>
+  <p><em>That's my <strong>motto.</strong></em></p>
+  <ul>
+  <li>A "motto" is a brief expression that describes a person's or organization's general goal or belief.</li>
+  </ul>
+  <p><em>Why didn't you come to the <strong>reunion</strong>?</em></p>
+  <ul>
+  <li>A "reunion" is a party for people who attended the same school, often years or decades before.</li>
+  </ul>
+  <p><em>Come on, <strong>submit</strong>!</em></p>
+  <ul>
+  <li>A very official way to say surrender, or give up.</li>
+  </ul>
+  <p><em>Leniency.</em></p>
+  <ul>
+  <li>To be "lenient" is to be forgiving, or perhaps liberal. "Leniency" is the noun.</li>
+  </ul>
+  <p><em>I got <strong>probation.</strong></em></p>
+  <ul>
+  <li>When a person in prison gets out "on probation," this means they are released, but only so long as they follow rules set by a judge.</li>
+  </ul>
+  <p><em>You're a real <strong>smoothie</strong>.</em></p>
+  <ul>
+  <li>Someone who speaks "smoothly" is a person who can convince another person to accept their side of a story, and thus a "smoothie" is a persuasive or perhaps charming person.</li>
+  </ul>
+  <p><em>Ramnujan.</em></p>
+  <ul>
+  <li>A famous 19th century Indian mathematician who, like Will, was never formally educated, but was a towering mathematical genius.</li>
+  </ul>
+  <p><em>He was able to <strong>extrapolate</strong> theories that had <strong>baffled</strong> mathematicians.</em></p>
+  <ul>
+  <li>"To extrapolate" means to infer or figure out logically.</li>
+  <li>"To baffle" is an excellent verb meaning to intellectually frustrate.</li>
+  </ul>
+  <p><em>His genius was <strong>unparalleled</strong>.</em></p>
+  <ul>
+  <li>Without comparison, or unique.</li>
+  </ul>
+  <p><em>I need someone who can <strong>get through</strong> to him.</em></p>
+  <ul>
+  <li>"To get through" to someone is to truly communicate with, or possibly, to reach them in some sort of emotional way.</li>
+  </ul>
+  <p><em>He's from <strong>Southie</strong>?</em></p>
+  <ul>
+  <li>The name of the working class neighborhood in Southern Boston where both Will and Sean were raised.</li>
+  </ul>
+  <p><em>How many <strong>shrinks</strong> did you go to before me?</em></p>
+  <ul>
+  <li>A great colloquial word for a psychologist. Perhaps from the fact that psychologists are thought to "shrink heads."</li>
+  </ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Sean and Skylar enter Will's life.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>I'm <strong>pumped</strong>! Let the <strong>healing</strong> begin!</em></p>
+  <ul>
+  <li>"Pumped" is a very colloquial way of saying excited.</li>
+  <li>Note that "to heal" is simply to get better, either physically, or in this case, psychologically.</li>
+  </ul>
+  <p><em>You buy all these books <strong>retail</strong> or do you send away for a <strong>shrink kit</strong>...?</em></p>
+  <ul>
+  <li>"Retail" is what is for sale to customers at a store, as opposed to "wholesale," where stores themselves buy the product at a cheaper price.</li>
+  <li>"A kit" is a box or container with useful goods inside. Will is disrespectfully minimizing the importance of Sean's profession.</li>
+  </ul>
+  <p><em>Read Howard Zinn's "<a href="http://www.historyisaweapon.com/zinnapeopleshistory.html">People's History of the United States</a>"---that book
+    will fucking <strong>knock you on your ass</strong>.</em></p>
+  <ul>
+  <li>"To knock someone on their ass" can be a crude and colloquial way to say amaze or shock them.</li>
+  <li>The book in question tells the history of the United States from the perspective of workers, poor people and various minorities.
+    The supplied link will take you to an online table of contents. Each chapter of the book has a
+    mobile-friendly view.</li>
+  </ul>
+  <p><em>Better than Chomsky's "<a href="https://youtu.be/AnrBQEAM3rE">Manufacturing Consent</a>?"</em></p>
+  <ul>
+  <li>A reference to Noam Chomsky, the MIT Professor known as "the father of modern linguistics" and a pioneer in cognitive science. Prof. Chomsky is also
+    a well known political scholar. "Manufacturing Consent" is Chomsky's book on how the media manipulates public opinion. Highly recommended!</li>
+  </ul>
+  <p><em>Hey, whatever blows your hair back.</em></p>
+  <ul>
+  <li>Will's version of "whatever gets you through the night," which basically expresses the opinion that you should do what you want as long as you're not hurting others.</li>
+  </ul>
+  <p><em>You'd be better <strong>shoving</strong> that cigarette up your ass.</em></p>
+  <ul>
+  <li>A crude comment on cigarettes and health, put here to show you that "shove" is a somewhat more forceful verb than push.</li>
+  </ul>
+  <p><em>Do you <strong>work out</strong>?</em></p>
+  <ul>
+  <li>The critical phrasal verb for "exercise," often used for lifting weights, but also just for running.</li>
+  </ul>
+  <p><em>Sculpt.</em></p>
+  <ul>
+  <li>The verb for carving rock or wood or casting metal or plaster into statues, as Rodin did.</li>
+  </ul>
+  <p><em>It's <strong>a real piece of shit</strong>.</em></p>
+  <ul>
+  <li>A very crude and direct way of describing anything.</li>
+  </ul>
+  <p><em>It's a very <strong>muddled</strong> composition...it's also a Winslow Homer <strong>rip-off</strong>.</em></p>
+  <ul>
+  <li>"Muddled" means unclear, or perhaps confused.</li>
+  <li>"To rip off" someone means to cheat them, as in charging them too much money, but when used as a noun, it is an excellent way of describing a fake version or poor imitation. In this case, of a painting by Winslow Homer.</li>
+  </ul>
+  <p><em>It's painting <strong>by numbers</strong>.</em></p>
+  <ul>
+  <li>A reference to kits in which a picture is drawn with many areas marked with numbers, and each numbered area represents a specific paint color to apply. When finished, the design resembles a more creative effort.</li>
+  </ul>
+  <p><em>You're one step away from cutting your fucking ear off.</em></p>
+  <ul>
+  <li>A reference to the Dutch artist Vincent van Gogh, who cut off his own ear.</li>
+  </ul>
+  <p><em>"Any port in a storm."</em></p>
+  <ul>
+  <li>A nice expression meaning you should use any available help when you are in a lot of trouble.</li>
+  </ul>
+  <p><em>The <strong>oars</strong> are about to <strong>snap</strong>.</em></p>
+  <ul>
+  <li>"Oars" are wooden tools used to help steer a canoe or other small boat.</li>
+  <li>"To snap" is a dramatic verb meaning to break.</li>
+  </ul>
+  <p><em>Bingo!</em></p>
+  <ul>
+  <li>A common colloquial way of saying "exactly!" Literally, a really stupid game in which people gamble on the numbers that a machine or wheel of fortune will choose for them.</li>
+  </ul>
+  <p><em>Watch it right there, <strong>chief</strong>.</em></p>
+  <ul>
+  <li>Literally, the head of a Native American tribe. Used by Sean colloquially as a word of warning.</li>
+  </ul>
+  <p><em>Time's up.</em></p>
+  <ul>
+  <li>An abrubt way a psychologist will end a session, and often considered a bit irritating by the patients who are paying over $100 an hour to talk!</li>
+  </ul>
+  <p><em><strong>At ease</strong>, gentleman.</em></p>
+  <ul>
+  <li>A term used in the military for "relax."</li>
+  </ul>
+  <p><em>You look <strong>lovely</strong> in those glasses.</em></p>
+  <ul>
+  <li>British English for "pretty."</li>
+  </ul>
+  <p><em>Med school.</em></p>
+  <ul>
+  <li>Short, and common, for "Medical school."</li>
+  </ul>
+  <p><em>I <strong>inherited</strong> the money.</em></p>
+  <ul>
+  <li>"To inherit" is the verb to use when you receive something from people who die, especially parents.</li>
+  </ul>
+  <p><em>Stanford.</em></p>
+  <ul>
+  <li>A very prestigious and famous University in California, near San Francisco.</li>
+  </ul>
+  <p><em><strong>Anatomy</strong> class.</em></p>
+  <ul>
+  <li>Study of the human body.</li>
+  </ul>
+  <p><em>You need my <strong>wand</strong>.</em></p>
+  <ul>
+  <li>The stick that witches wave for creating magic.</li>
+  </ul>
+  <p><em>I don't really <strong>date</strong>, you know.</em></p>
+  <ul>
+  <li>"To date" is to go out with someone you like.</li>
+  </ul>
+  <p><em>I was hoping to get goodnight <strong>laid</strong>, but I'll <strong>settle for</strong> a kiss.</em></p>
+  <ul>
+  <li>"To get laid" is a very slangy and crude way to say to have sex. In more innocent times, boys just hoped for a goodnight kiss.</li>
+  <li>"To settle for" something is to accept it, even though you want something better.</li>
+  </ul>
+  <p><em>How very <strong>noble</strong> of you.</em></p>
+  <ul>
+  <li>"Noble" is another way to say honorable.</li>
+  </ul>
+  <section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>As Sean slowly wins Will's  trust, Skylar tries to win his heart.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>So what's this? A "Taster's Choice" moment between guys?</em></p>
+  <ul>
+  <li>A very clever line, referring to a famous coffee commercial in which couples share romantic moments while drinking Taster's Choice coffee.</li>
+  </ul>
+  <p><em>You got a thing for <strong>swans</strong>?</em></p>
+  <ul>
+  <li>A very slangy way to ask "Do you like swans?" Swans are the beautiful white birds found on certain park lakes.</li>
+  </ul>
+  <p><em>You don't have the <strong>faintest</strong> idea what you're talking about.</em></p>
+  <ul>
+  <li>A good little word meaning "slightest," but note that it is only used in negative sentences.</li>
+  </ul>
+  <p><em>You'd <strong>give me the skinny</strong> on every art book ever written.</em></p>
+  <ul>
+  <li>A rare colloquial expression for "briefly summarize."</li>
+  </ul>
+  <p><em>I ask you about love, you'd probably quote me a <strong>sonnet</strong>.</em></p>
+  <ul>
+  <li>A type of romantic poem, often associated with Shakespeare.</li>
+  </ul>
+  <p><em><strong>Visiting hours</strong> don't apply to you.</em></p>
+  <ul>
+  <li>The time that hospitals let people visit patients.</li>
+  </ul>
+  <p><em>I see a <strong>cocky, scared shitless</strong> kid.</em></p>
+  <ul>
+  <li>"Cocky" means acting too confidently.</li>
+  <li>"Scared shitless," is a crude and colloquial way to say very scared.</li>
+  </ul>
+  <p><em>Does that <strong>encapsulate</strong> you?</em></p>
+  <ul>
+  <li>A fancy way to say describe or summarize. Similar in meaning to "to capture a moment," referring to photography.</li>
+  </ul>
+  <p><em>Freak!</em></p>
+  <ul>
+  <li>A powerful word for a very strange or disturbing person.</li>
+  </ul>
+  <p><em>It was your mother's <strong>900 number</strong>.</em></p>
+  <ul>
+  <li>Telephone numbers with the 900 prefix are often used for phone sex services.</li>
+  </ul>
+  <p><em>Why don't we <strong>get off of</strong> mothers; I just <strong>got off of</strong> yours.</em></p>
+  <ul>
+  <li>The complex beauty of phrasal verbs! In the first one, "to get off of" means to stop talking about (her), whereas in the second sentence, it is describing the physical act! Note that if the sentence had been "I get off <em>on</em> your mother," that would have an even more sexual connotation.</li>
+  </ul>
+  <p><em>Nickel.</em></p>
+  <ul>
+  <li>As in pennies, nickels, dimes and quarters...</li>
+  </ul>
+  <p><em>Keep <strong>antagonizing</strong> me.</em></p>
+  <ul>
+  <li>"To antagonize" someone is to make them angry.</li>
+  </ul>
+  <p><em>What is this, some kind of <strong>staring contest</strong>?</em></p>
+  <ul>
+  <li>"To stare" is to look at something for an extended period of time. In a "staring contest," two people often stare into each other's eyes and the first one to blink loses.</li>
+  </ul>
+  <p><em>We'll be <strong>cruising</strong> at 35,000 feet.</em></p>
+  <ul>
+  <li>"To cruise" is to travel at a steady or consistent speed.</li>
+  </ul>
+  <p><em>You know, all I can use right now is a fucking <strong>blow job</strong> and a cup of coffee.</em></p>
+  <ul>
+  <li>A "blow job" is a very common term for oral sex performed on a man.</li>
+  </ul>
+  <p><em>It works better if I tell it <strong>in the first person</strong>.</em></p>
+  <ul>
+  <li>Using "I," as opposed to in the 3rd person, using "he" or "she." People often prefer to tell jokes in the first person.</li>
+  </ul>
+  <p><em>I got laid....<strong>big time</strong>.</em></p>
+  <ul>
+  <li>This implies either a lot, or possibly, with great success.</li>
+  </ul>
+  <p><em>So, call her up, <strong>Romeo</strong>.</em></p>
+  <ul>
+  <li>Refers to Romeo of "Romeo and Juliet," a romantic tragedy by Shakespeare.</li>
+  </ul>
+  <p><em>My wife used to <strong>fart</strong> when she was nervous. She had all sorts of wonderful <strong>idiosyncrasies</strong>.</em></p>
+  <ul>
+  <li>"To fart" is the vulgar but necessary verb meaning to pass intestinal gas. You can just say "pass gas."</li>
+  <li>An "idiosyncrasy" is a word meaning the odd behavior of one particular person.</li>
+  </ul>
+  <p><em>And she <strong>had the goods on me</strong>. She knew all my <strong>peccadilloes</strong>.</em></p>
+  <ul>
+  <li>The first sentence is a way of saying "she knew all of my secrets." A "peccadillo" is an educated word meaning imperfection, or flaw.</li>
+  </ul>
+  <p><em>The only way you're finding out that one is by <strong>giving it a shot</strong></em></p>
+  <ul>
+  <li>To give it a shot" is a common way to say take a chance.</li>
+  </ul>
+  <p><em>Even if I did know, I wouldn't tell a <strong>piss ant</strong> like you.</em></p>
+  <ul>
+  <li>A sharp insult, meaning a little or cowardly person.</li>
+  </ul>
+  <p><em><strong>Hence</strong> the word: Remarried.</em></p>
+  <ul>
+  <li>A great word meaning "therefore," often used to show the logic behind a previous question or statement--very formal.</li>
+  </ul>
+  <p><em>I'm sorry, you know...<strong>I blew it.</strong></em></p>
+  <ul>
+  <li>"To blow it" is a wonderful and common colloquialism meaning to do something poorly, or in this case, to make a bad mistake.</li>
+  </ul>
+  <p><em>I was wondering...if you'd give me <strong>another crack at it</strong>.</em></p>
+  <ul>
+  <li>Colloquial for another chance, or opportunity.</li>
+  </ul>
+  <p><em>Open toed <strong>sandals</strong>.</em></p>
+  <ul>
+  <li>Casual shoes, which are very popular with old hippies.</li>
+  </ul>
+  <p><em>I <strong>totally</strong> won!</em></p>
+  <ul>
+  <li>Used for emphasis, but like "like," overused and often grammatically pointless.</li>
+  </ul>
+  <p><em>I'm still <strong>glowing</strong> from my win.</em></p>
+  <ul>
+  <li>"To glow" is to shine or radiate.</li>
+  </ul>
+  <p><em>Do you still <strong>counsel veterans</strong>?</em></p>
+  <ul>
+  <li>"To counsel" is to advise, or in a psychological context, to treat.</li>
+  <li>"Veterans" are those who have served in the military.</li>
+  </ul>
+  <p><em>It was game six of the <strong>World Series</strong>. Biggest Game in <strong>Red Sox</strong> history.</em></p>
+  <ul>
+  <li>The championship games played at the end of every baseball season, and one of the most popular sporting events in the United States.</li>
+  <li>The Red Sox are Boston's baseball team. They are referring to the 1975 World Series between the Boston Red Sox and the Cincinnati Reds, which many sports writers consider one of the most exciting World Series in history. The Cincinnati Reds went on to win the series in game seven.</li>
+  </ul>
+  <p><em>Bottom of the 12th...</em></p>
+  <ul>
+  <li>There are 9 innings, or periods of play, in baseball. Game 6 was particularly exciting because it went into extra innings.</li>
+  </ul>
+  <p><em>He steps up to the <strong>plate</strong>...He's got that <strong>weird stance</strong>.</em></p>
+  <ul>
+  <li>"Home plate" is where the batter stands to bat in baseball, and a "weird stance" is a strange way of standing.</li>
+  </ul>
+  <p><em><strong>Bam</strong>! High fly ball down the left field line!</em></p>
+  <ul>
+  <li>A great word to describe a dramatic sound, such as the noise of a bat hitting a ball!</li>
+  </ul>
+  <p><em>And he goes <strong>apeshit</strong>!</em></p>
+  <ul>
+  <li>A funny little vulgarity meaning crazy.</li>
+  </ul>
+  <p><em>Did you <strong>rush the field</strong>?</em></p>
+  <ul>
+  <li>"Rushing the field" happens when the fans are so excited, they get out of their seats and run onto the field, overwhelming the security guards who ordinarily arrest people for doing that.</li>
+  </ul>
+  <p><em>You should have seen her...she was a <strong>stunner</strong>.</em></p>
+  <ul>
+  <li>If someone looks "stunning," they are extremely beautiful.</li>
+  </ul>
+  <p><em>I got to go see about a girl.</em></p>
+  <ul>
+  <li>A romantic line, with a classic Hollywood feel.</li>
+  </ul>
+  <p><em>They let you <strong>get away with</strong> that?</em></p>
+  <ul>
+  <li>"To get away with" something is to do something bad or illegal while escaping punishment or bad consequences.</li>
+  </ul>
+  <p><em>It would have been nice to <strong>catch</strong> the game.</em></p>
+  <ul>
+  <li>Used colloquially to mean "see."</li>
+  </ul>
+  <p><em>Will I ever play in the <strong>NBA</strong>?</em></p>
+  <ul>
+  <li>The National Basketball Association.</li>
+  </ul>
+  <p><em>It's kind of a hike.</em></p>
+  <ul>
+  <li>An interesting way of saying "it's pretty far from here."</li>
+  </ul>
+  <p><em>If you're not thinking of your <strong>wiener</strong>, then you're <strong>acting directly on its behalf</strong>.</em></p>
+  <ul>
+  <li>A "wiener" is a child's slang word for penis.</li>
+  <li>"To act on behalf" of someone is to act for them, or with their permission.</li>
+  </ul>
+  <p><em>Hook. Dunk.</em></p>
+  <ul>
+  <li>These are two ways to shoot a basketball at the basket.</li>
+  </ul>
+  <p><em>I ever tell you what happened when he was driving up there and he got <strong>pulled over</strong><strong>?</strong></em></p>
+  <ul>
+  <li>"To be pulled over" is to be stopped while driving, usually by the police.</li>
+  </ul>
+  <p><em>He was bombed out of his tree, hammered out of his <strong>gourd</strong>.</em></p>
+  <ul>
+  <li>Very slangy ways to say "drunk." A "gourd" is slang for head.</li>
+  </ul>
+  <p><em>A state trooper.</em></p>
+  <ul>
+  <li>A police officer who usually works on state highways.</li>
+  </ul>
+  <p><em>He gets out of the car, and <strong>pukes</strong> on the guy.</em></p>
+  <ul>
+  <li>"To puke" is an unpleasant little verb meaning to vomit, or throw up.</li>
+  </ul>
+  <p><em>The statie's pretty sure he is <strong>over the legal limit</strong>.</em></p>
+  <ul>
+  <li>Another way to say "legally drunk." ("Statie" refers to the state trooper, but I suspect this word is not used outside of Boston).</li>
+  </ul>
+  <p><em>A huge fucking <strong>boom</strong>...so he's <strong>spooked</strong>.</em></p>
+  <ul>
+  <li>A "boom" is another great word to describe a very loud sound.</li>
+  <li>"Spooked" is a useful word for scared.</li>
+  </ul>
+  <p><em><strong>You're driving me nuts.</strong></em></p>
+  <ul>
+  <li>"You're driving me crazy."</li>
+  </ul>
+  <p><em>The next morning, my uncle is <strong>passed out.</strong></em></p>
+  <ul>
+  <li>To "pass out" is to faint or lose consciousness (often because of drugs or alcohol), but to <em>be</em> passed out is to be sleeping.</li>
+  </ul>
+  <p><em>I pulled you over and you fucking <strong>took off</strong>.</em></p>
+  <ul>
+  <li>"To take off" is a very common and useful way to say leave.</li>
+  </ul>
+  <p><em>A police cruiser</em></p>
+  <ul>
+  <li>A police car.</li>
+  </ul>
+  <p><em>What the fuck is the point to your story?</em></p>
+  <ul>
+  <li>"Why are you telling me all of this?!"</li>
+  </ul>
+  <p><em>He <strong>got away</strong>.</em></p>
+  <ul>
+  <li>"To get away" is to escape.</li>
+  </ul>
+  <p><em>Such a good looking <strong>fellow</strong>.</em></p>
+  <ul>
+  <li>A British way to say "guy."</li>
+  </ul>
+  <p><em>That was the most beautiful, <strong>earth shattering</strong> thing ever.</em></p>
+  <ul>
+  <li>If something is earth shattering, it is extremely powerful. "To shatter" is to break into many pieces.</li>
+  </ul>
+  <p><em>Filthy.</em></p>
+  <ul>
+  <li>A stronger version of "dirty," and often used to describe something sexual, such as a joke or movie.</li>
+  </ul>
+  <p><em><strong>Take it easy</strong>, Bill</em></p>
+  <ul>
+  <li>Literally "relax," but in fact, used quite often for "goodbye"!</li>
+  </ul>
+  <p><em>You don't want to <strong>rush to judgment</strong> on that one</em></p>
+  <ul>
+  <li>This means to quickly decide what you think of something, often without reflecting seriously enough.</li>
+  </ul>
+  <p><em>You're giving us <strong>a ride</strong>.</em></p>
+  <ul>
+  <li>A critical noun, referring to the act of being driven in a car.</li>
+  </ul>
+  <p><em>You're <strong>dropping me off</strong> first.</em></p>
+  <ul>
+  <li>"To drop someone off' is to leave them somewhere after giving them a ride.</li>
+  </ul>
+  <p><em>He knows once you see that little <strong>shithole</strong>, he's getting <strong>dropped like a bad habit</strong>.</em></p>
+  <ul>
+  <li>"Shithole" a vulgar way to describe a small and ugly apartment or building.</li>
+  <li>Note that a girl can drop a boy (decide not to see him), and a person can drop a habit (refuse to do it anymore).</li>
+  </ul>
+  <section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lambeau and Sean debate Will's future, and Skylar learns the awful truth about his past.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Bullshit.</em></p>
+  <ul>
+  <li>A vulgar but absolutely critical word to describe what the speaker views as nonsense, lies, etc. "B.S." is also quite useful.</li>
+  </ul>
+  <p><em>Put it on my <strong>tab</strong>.</em></p>
+  <ul>
+  <li>A bill, usually at a bar, that is paid all at once after a period of time.</li>
+  </ul>
+  <p><em>What's the <strong>jackpot</strong>?</em></p>
+  <ul>
+  <li>The money that is won in a lottery, often worth millions.</li>
+  </ul>
+  <p><em>We're still <strong>banging away</strong> at the past.</em></p>
+  <ul>
+  <li>Here, "to bang away" is used to mean discuss endlessly.</li>
+  </ul>
+  <p><em>My phone has been <strong>ringing off the hook</strong> with job offers.</em></p>
+  <ul>
+  <li>If a phone is "ringing off the hook," its getting lots of phone calls.</li>
+  </ul>
+  <p><em>The kind of place where a mind like Will's is given <strong>free reign</strong>.</em></p>
+  <ul>
+  <li>If you are given "free reign," you have the opportunity to do whatever you want.</li>
+  </ul>
+  <p><em>This boy has that <strong>gift</strong>. He just hasn't got the direction.</em></p>
+  <ul>
+  <li>If a person is "gifted," he is extremely smart or talented.</li>
+  </ul>
+  <p><em>Michigan. Berkeley. Montana.</em></p>
+  <ul>
+  <li>Three places where Ted Kazyinski, the murdering University professor known as "The Unabomber," was known to live.</li>
+  </ul>
+  <p><em>I'm not <strong>hatching</strong> a plan...to ruin this boy's life.</em></p>
+  <ul>
+  <li>A chicken hatches an egg, and if you "hatch a plan," you are simply trying to create or formulate an idea.</li>
+  </ul>
+  <p><em>Why don't we give him time to <strong>figure out</strong> what he wants?</em></p>
+  <ul>
+  <li>"To figure something out" is an excellent phrasal verb meaning to learn, discover or solve.</li>
+  </ul>
+  <p><em>You <strong>arrogant</strong> fucking <strong>prick</strong>!</em></p>
+  <ul>
+  <li>A sharp insult. "Arrogant" is a combination of snobby and too confident.</li>
+  <li>A "prick" is vulgar for penis, but it is used colloquially to mean a rude and/or mean person.</li>
+  </ul>
+  <p><em>I wanted to keep you <strong>in the loop</strong>.</em></p>
+  <ul>
+  <li>A "loop" is literally a string that is joined at the ends to form a closed circle. To be "in the loop" is to be informed about what is happening in a given situation.</li>
+  </ul>
+  <p><em>Nobody in this town works without a <strong>retainer</strong>.</em></p>
+  <ul>
+  <li>A "retainer" is money paid that is used to keep open an opportunity to employ someone or buy something later.</li>
+  </ul>
+  <p><em>After the shit you tried <strong>to pull</strong> today, you can bet that I'll be looking into you!</em></p>
+  <ul>
+  <li>"To pull something over on" someone is to try to do something improper, or in a secret way. Remember that "to pull off" something can also mean to achieve.</li>
+  </ul>
+  <p><em>Keep your ear to the grindstone.</em></p>
+  <ul>
+  <li>An old fashioned way of saying "keep listening for news."</li>
+  </ul>
+  <p><em>Give me one little <strong>peek</strong> and we'll go to the <strong>batting cages</strong>.</em></p>
+  <ul>
+  <li>A "peek" is a quick look, often done secretly.</li>
+  <li>"Batting cages" are where you go to practice hitting baseballs.</li>
+  </ul>
+  <p><em>Seeing as you are intent on <strong>breaking my balls</strong>, let me ask you a question.</em></p>
+  <ul>
+  <li>A grammatically interesting use of the (elliptical) progressive tense at the beginning of a sentence.</li>
+  <li>"To break someone's balls" is a somewhat vulgar way to say to exhaust or humiliate them.</li>
+  </ul>
+  <p><em>Organic chemistry.</em></p>
+  <ul>
+  <li>An extremely difficult area of science. Organic means (carbon-based) life.</li>
+  </ul>
+  <p><em>Yeah, <strong>for kicks</strong>.</em></p>
+  <ul>
+  <li>To do something "for kicks" is to do it just for fun.</li>
+  </ul>
+  <p><em>Are you <strong>mad</strong>?</em></p>
+  <ul>
+  <li>"Mad" usually means angry, but in British English (Skylar is British), it is also used to mean crazy, as in this case.</li>
+  </ul>
+  <p><em>No, I can't play <strong>a lick</strong>.</em></p>
+  <ul>
+  <li>When referring to musical instruments, it means a single note.</li>
+  </ul>
+  <p><em>I probably can't hit the ball out of <strong>Fenway</strong>.</em></p>
+  <ul>
+  <li>The name of the much loved baseball stadium in Boston.</li>
+  </ul>
+  <p><em>And now I'm stuck in California with someone who wishes they had <strong>a takeback</strong>.</em></p>
+  <ul>
+  <li>A word created by Will to mean something that you regret.</li>
+  </ul>
+  <p><em>You just want to have your <strong>fling</strong> with the guy.</em></p>
+  <ul>
+  <li>A "fling" is a good word for a brief affair or sexual relationship.</li>
+  </ul>
+  <p><em>And you'll just sit around...with the other <strong>trust-fund</strong> babies, and talk about how you went <strong>slumming</strong>, too.</em></p>
+  <ul>
+  <li>A "trust-fund" is money put into an account by one person for another, often by rich parents for their kids.</li>
+  <li>A "slum" is a poor area of a city, and thus "to go slumming" means to spend time with poor people. The idea is extremely condescending because poor people are considered sources of entertainment in this context.</li>
+  </ul>
+  <p><em>Don't put your shit on me!</em></p>
+  <ul>
+  <li>A crude way to say "don't blame me for your emotional problems."</li>
+  </ul>
+  <p><em>An <strong>orphan</strong>.</em></p>
+  <ul>
+  <li>A child who does not have any parents.</li>
+  </ul>
+  <p><em>You don't want to hear that this isn't surgery, that the motherfucker <strong>stabbed</strong> me!</em></p>
+  <ul>
+  <li>"To stab" is a violent verb, meaning to attack with a knife.</li>
+  </ul>
+  <p><em>Don't bullshit me!</em></p>
+  <ul>
+  <li>Like fuck, bullshit is a grammatically versatile word. Here, it's used as a verb which means to tell nonsense or lies.</li>
+  </ul>
+  <section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Will explains why he won't be working for the government, and both
+Sean and Chuckie show him that there are better ways to lead his life.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>I got to <strong>knock off</strong> work to come here and the <strong>commute</strong> is killing me.</em></p>
+  <ul>
+  <li>"To knock off" work means to stop working.</li>
+  <li>The "commute" is usually the act of traveling from home to work, and is often hated given the heavy traffic of most cities.</li>
+  </ul>
+  <p><em>I sent my chief <strong>negotiator</strong>.</em></p>
+  <ul>
+  <li>A person who discusses with others to reach an agreement. Will is making a joke.</li>
+  </ul>
+  <p><em>Associates.</em></p>
+  <ul>
+  <li>Business partners.</li>
+  </ul>
+  <p><em>I'm sorry you can't do this...because I wouldn't have to sit here and watch you <strong>fumble around</strong> and <strong>fuck it up</strong>.</em></p>
+  <ul>
+  <li>"To fumble" is literally to drop, so "to fumble around" is to do something inefficiently or poorly.</li>
+  <li>To "fuck up" something is to do it badly, but it's safer to say "screw up," which means the same thing.</li>
+  </ul>
+  <p><em>If you're watching <strong>pornos</strong> in my mom's room again, I'm going to give you a fucking <strong>beating</strong>.</em></p>
+  <ul>
+  <li>A "porno" is short for pornographic movie, often called an adult film.</li>
+  <li>To "beat up" someone is to physically attack them, and thus a "beating" is an attack in which the victim is often badly hurt.</li>
+  </ul>
+  <p><em>Why don't you <strong>jerk off</strong> in your own fucking house?</em></p>
+  <ul>
+  <li>"To jerk off" is a common slang expression meaning to masturbate.</li>
+  </ul>
+  <p><em>You <strong>humped</strong> a baseball glove?</em></p>
+  <ul>
+  <li>"To hump" is a funny verb meaning to have sex by rubbing against something, in much the way a dog might hump someone's leg.</li>
+  </ul>
+  <p><em>The National Security Agency.</em></p>
+  <ul>
+  <li>A secretive US governmental organization that gathers information about other countries. It's not as well known as the CIA, but it's bigger.</li>
+  </ul>
+  <p><em>Well, you'd be working on <strong>the cutting edge</strong>.</em></p>
+  <ul>
+  <li>This is a common term when referring to the most technologically advanced parts of a society or organization.</li>
+  </ul>
+  <p><em>Code-breaking.</em></p>
+  <ul>
+  <li>The act of trying to understand secret codes that various governments and organizations use to maintain secrecy.</li>
+  </ul>
+  <p><em>That's a tough one, but I'll <strong>take a shot.</strong></em></p>
+  <ul>
+  <li>"To take a shot" at something means to at least try to do it.</li>
+  </ul>
+  <p><em>They bomb a village where the <strong>rebels</strong> are hiding.</em></p>
+  <ul>
+  <li>"Rebels" are soldiers who are usually fighting the local government. A rebellion is an uprising against a government or people in power.</li>
+  </ul>
+  <p><em>They send in the <strong>marines</strong> to secure the area because they <strong>don't give a shit</strong>.</em></p>
+  <ul>
+  <li>The "marines" are the part of the military who operate in both land and sea, often near beaches.</li>
+  <li>"To not give a shit" is a very common but crude way of saying to not care about something.</li>
+  </ul>
+  <p><em>The National Guard.</em></p>
+  <ul>
+  <li>Military units that keep order within the United States. Some people joined the Guard in the 1960s to avoid serving in the Vietnam War.</li>
+  </ul>
+  <p><em>The kid...is taking <strong>shrapnel</strong> in the ass....</em></p>
+  <ul>
+  <li>Metal fragments.</li>
+  </ul>
+  <p><em>...and the oil companies used the little <strong>skirmish</strong> over there.</em></p>
+  <ul>
+  <li>A "skirmish" is a violent but brief battle, or gun fight.</li>
+  </ul>
+  <p><em>An alcoholic <strong>skipper</strong> who likes to drink <strong>martinis</strong> and play <strong>slalom</strong> with the <strong>icebergs</strong>.</em></p>
+  <ul>
+  <li>A "skipper" is the captain of a boat and a "martini" is a popular alcoholic drink.</li>
+  <li>"Slalom" is a form of skiing where the skier moves side-to-side around poles, and an "iceberg" is a giant piece of ice floating in the ocean.</li>
+  </ul>
+  <p><em>The shrapnel in his ass is giving him <strong>chronic hemorrhoids</strong>.</em></p>
+  <ul>
+  <li>"Chronic" is a key word that means lasting over a long period of time.</li>
+  <li>"Hemorrhoids" are a painful medical condition consisting of swollen veins around the anus.</li>
+  </ul>
+  <p><em>The only <strong>blue plate special</strong> they're serving is <strong>scrod</strong> with <strong>Quaker State</strong>...</em></p>
+  <ul>
+  <li>The "blue pate special" is the best priced meal of a restaurant.</li>
+  <li>"Scrod" is a type of fish, and "Quaker State" is a brand of motor oil.</li>
+  </ul>
+  <p><em><strong>Club</strong> a <strong>baby seal</strong>, hit the <strong>hash pipe</strong>.</em></p>
+  <ul>
+  <li>"To club" is to hit, with a club or pipe.</li>
+  <li>A "baby seal" is a super cute animal that lives in the ocean. Baby seals are killed so their fur can be used as a fashion accessory; they are clubbed to death instead of shot so their fur remains undamaged.</li>
+  <li>A "hash pipe" is used to smoke hashish.</li>
+  </ul>
+  <p><em>Shakespeare, Nietzsche, Frost, O'Conner Kant, Pope, Locke...</em></p>
+  <ul>
+  <li>Various writers, philosophers, and poets that Will respects.</li>
+  </ul>
+  <p><em>Not without some serious <strong>smelling salts</strong> and a heater.</em></p>
+  <ul>
+  <li>"Smelling salts" are chemicals that are used to wake up people who have fainted or are unconscious.</li>
+  </ul>
+  <p><em>You are <strong>bound</strong> by nothing.</em></p>
+  <ul>
+  <li>"Bound" is another word for "limited."</li>
+  </ul>
+  <p><em>So don't <strong>cop out</strong> behind "I didn't ask for this."</em></p>
+  <ul>
+  <li>"To cop out" is a good expression meaning to make stupid excuses.</li>
+  </ul>
+  <p><em>What's wrong with laying <strong>bricks</strong>?</em></p>
+  <ul>
+  <li>The rectangular stone material used for building houses, walls and various buildings.</li>
+  </ul>
+  <p><em>Why did you work at the most <strong>prestigious</strong> technical college in the whole fucking world?</em></p>
+  <ul>
+  <li>"Prestigious" is an excellent word meaning influential and highly respected.</li>
+  </ul>
+  <p><em>And why did you <strong>sneak around</strong> at night and finish other people's <strong>formulas</strong>.</em></p>
+  <ul>
+  <li>To "sneak around" is to try and explore an area without being noticed by anybody. A "formula" is often a mathematical equation (E=MC<sup>2</sup>).</li>
+  </ul>
+  <p><em>I want to be a <strong>shepherd</strong>.</em></p>
+  <ul>
+  <li>A person who takes care of sheep and other animals.</li>
+  </ul>
+  <p><em>I want to move to Nashua and get a nice little <strong>spread</strong>.</em></p>
+  <ul>
+  <li>Used here to mean a nice piece of land, big enough for animals.</li>
+  </ul>
+  <p><em>You're chucking me?!</em></p>
+  <ul>
+  <li>"To chuck" someone is a colloquial way to say to throw them out.</li>
+  </ul>
+  <p><em>Look at you, you fucking <strong>burnout</strong>. What winds you're clock?</em></p>
+  <ul>
+  <li>A "burnout" is someone who is mentally or physically exhausted by life, perhaps because of work, perhaps because of drugs.</li>
+  <li>The second sentence above is typical of Will and means "What makes you happy?"</li>
+  </ul>
+  <p><em>You just <strong>cash in your chips</strong> and walk away...</em></p>
+  <ul>
+  <li>A colorful way to say "quit," using the language of poker.</li>
+  </ul>
+  <p><em>Hey, at least I played a <strong>hand</strong>.</em></p>
+  <ul>
+  <li>In poker or other card games, a round or bet.</li>
+  </ul>
+  <p><em>It won't be on my conscience.</em></p>
+  <ul>
+  <li>"I won't feel guilty..."</li>
+  </ul>
+  <p><em>Well, <strong>that sucks</strong>.</em></p>
+  <ul>
+  <li>A vulgar but extremely common way of saying that something is bad, undesirable, or worse!</li>
+  </ul>
+  <p><em>I'm going to be a fucking <strong>lab rat</strong>.</em></p>
+  <ul>
+  <li>The rats that live in laboratories which scientists study.</li>
+  </ul>
+  <p><em>We'll have little fucking kids and take them to <strong>little league</strong> together up at Foley Field.</em></p>
+  <ul>
+  <li>A baseball league for kids that is popular throughout the US.</li>
+  </ul>
+  <p><em>You're sitting on a winning lottery ticket and you're too much of a <strong>pussy</strong> to cash it in.</em></p>
+  <ul>
+  <li>This is a very vulgar word for a coward, or a person who is scared.</li>
+  </ul>
+  <section id="part8"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lambeau and Sean battle one last time over Will's future,
+but it is Sean who gives Will the courage to decide for himself.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>I don't care if you have a <strong>rapport</strong> with the boy.</em></p>
+  <ul>
+  <li>An interesting word for "relationship." Unless used with a negative adjective, the connotation is positive.</li>
+  </ul>
+  <p><em>Don't you dare <strong>undermine</strong> what I am trying to do here.</em></p>
+  <ul>
+  <li>"To undermine" something is to weaken or perhaps even destroy it.</li>
+  </ul>
+  <p><em>Better off <strong>hanging out</strong> with a bunch of <strong>retarded gorillas</strong>?</em></p>
+  <ul>
+  <li>"To hang out" is a useful and common phrasal verb meaning to pass time.</li>
+  <li>"Retarded" means mentally defective or very stupid.</li>
+  <li>A "gorilla" is a well known animal related to monkeys, but the word is used here to emphasize how unsophisticated Will's friends are.</li>
+  </ul>
+  <p><em>Oh, come on, don't give me that <strong>Freudian crap.</strong></em></p>
+  <ul>
+  <li>"Freudian" refers to Freud, the creator of many of the more interesting theories that come from modern psychology.</li>
+  <li>"Crap" is a useful but still crude replacement for "bullshit."</li>
+  </ul>
+  <p><em>It's a <strong>defense mechanism</strong>, all right?</em></p>
+  <ul>
+  <li>A expression from modern psychology. Here, the belief that Will pushes away people who get emotionally close to him, in order to defend himself from the possible types of hurt he suffered as a child.</li>
+  </ul>
+  <p><em>Don't <strong>infect</strong> him with the idea that it OK to quit.</em></p>
+  <ul>
+  <li>"To infect" is a powerful verb meaning to contaminate or corrupt, or most often, to give someone a disease.</li>
+  </ul>
+  <p><em>You <strong>resent</strong> me, but I'm not going to apologize.</em></p>
+  <ul>
+  <li>"To resent" is another powerful verb meaning to feel angry at.</li>
+  </ul>
+  <p><em>That <strong>condescending</strong>, embarrassed look.</em></p>
+  <ul>
+  <li>Snobby. An excellent word to describe someone who looks down on another.</li>
+  </ul>
+  <p><em>You and your <strong>cronies</strong> think I'm a <strong>pity case</strong>.</em></p>
+  <ul>
+  <li>A "crony" is an interesting word for friend, often with a negative connotation that suggests politics and corruption.</li>
+  <li>To feel "pity" for someone is to feel sorry for them.</li>
+  </ul>
+  <p><em>You and your <strong>kiss ass</strong> chorus.</em></p>
+  <ul>
+  <li>A very colorful and pejorative expression that describes people who are willing to do anything for someone else if they feel it will ultimately be beneficial for themselves.</li>
+  </ul>
+  <p><em>I knew you before you were a mathematical god, when you were <strong>pimple</strong>-faced and homesick.</em></p>
+  <ul>
+  <li>This is Sean's way of saying he knew Lambeau when he was still young and innocent.</li>
+  <li>"Pimples" are the little pus-filled swellings on the skin that all teenagers have.</li>
+  </ul>
+  <p><em>It's not about you, you mathematical <strong>dick</strong>!</em></p>
+  <ul>
+  <li>"Dick" is another insult word which can mean penis. More useful than "prick" since its less vulgar. Next time you have to deal with a jerk, just roll your eyes up in disgust and softly think "what a dick."</li>
+  </ul>
+  <p><em>If you push him Gerry, if you <strong>ride</strong> him...</em></p>
+  <ul>
+  <li>"To ride" someone is used here to mean force or manipulate.</li>
+  </ul>
+  <p><em>This is your <strong>file</strong>. I have to send to the judge for <strong>evaluation</strong>.</em></p>
+  <ul>
+  <li>A "file" is an important word describing a folder and the various papers within it. Most patients, clients etc. have files about them.</li>
+  <li>An "evaluation" is another word for analysis, or formal review.</li>
+  </ul>
+  <p><em>He would come home hammered, looking <strong>to whale</strong> on somebody.</em></p>
+  <ul>
+  <li>"To whale" is slang for "to beat on something furiously." It comes from the days of whaling ships that killed whales for their oil. The expression is sometimes misspelled as "to wail," which means to cry out loudly.</li>
+  </ul>
+  <p><em>He used to put a <strong>wrench</strong>, a stick and a belt on the table, and just say "choose."</em></p>
+  <ul>
+  <li>A "wrench" is a metal tool used to turn nuts and bolts.</li>
+  </ul>
+  <p><em>Will has an <strong>attachment disorder</strong>.</em></p>
+  <ul>
+  <li>In psychology, an "attachment disorder" is used to describe an inability to become emotionally close to people.</li>
+  </ul>
+  <p><em>Don't fuck with me.</em></p>
+  <ul>
+  <li>To play with someone and make them angry. Very vulgar, obviously, but common among certain people.</li>
+  </ul>
+  <p><em>I hope we <strong>keep in touch.</strong></em></p>
+  <ul>
+  <li>The expression to use when two people who have communicated with each other frequently are going off in separate directions, but want to continue to communicate.</li>
+  </ul>
+  <p><em>I'm just going to put my money on the table and see what kind of cards I get.</em></p>
+  <ul>
+  <li>Sean's way of describing changes in life like a big poker game.</li>
+  </ul>
+  <p><em>Does this violate <strong>the patient-doctor relationship</strong>?</em></p>
+  <ul>
+  <li>A legal term which deals with how doctors and patients are supposed to treat each other.</li>
+  </ul>
+  <section id="part9"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Chuckie learns just how successful Sean
+has been, as Will begins a new chapter in life.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Me and Bill <strong>scraped together</strong> the parts.</em></p>
+  <ul>
+  <li>"To scrape together" various things is to get them from lots of different places.</li>
+  </ul>
+  <p><em>Morgan was out <strong>panhandling</strong> for change everyday.</em></p>
+  <ul>
+  <li>"To panhandle" is to beg for money, usually on city streets.</li>
+  </ul>
+  <p><em>India, China and Baltimore.</em></p>
+  <ul>
+  <li>The places where Sean wants to travel. Baltimore is a large city in the state of Maryland, near Washington DC.
+    Sean lists two far away places that may seem exotic to an American and one city that is not at all exotic or exciting.</li>
+  </ul>
+  <p><em>I know Gerry. I was being <strong>ironical</strong>.</em></p>
+  <ul>
+  <li>Irony is "the use of words to convey the opposite of their literal meaning." It can be a way to be funny. "Ironic" is more common than ironical, though "sarcastic" is best of all. "Ironical" sounds dated (old).</li>
+  </ul>
+  <p><em>This one's on me.</em></p>
+  <ul>
+  <li>"I'll pay for this." Or, most commonly, "my treat."</li>
+  </ul>
+  <p><em>I still have <strong>a shot</strong>.</em></p>
+  <ul>
+  <li>In this case, "a shot" is a chance, or a possibility.</li>
+  </ul>
+  <p><em><strong>Son of a bitch</strong>, he stole my <strong>line</strong>.</em></p>
+  <ul>
+  <li>"Son of a bitch" is a crude and common insult, though note that here it is used simply to express surprise. In this context, a "line" refers to the words that a person uses, often within movies or plays. Will has intentionally plagiarized Sean.</li>
+  </ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. What are the various advantages and disadvantages that Will has had in life?</p>
+<p>2. Will seemed to be exceptional in several different areas; was this realistic? Are there different kinds of genius?</p>
+<p>3. Is Lambeau an admirable character? Was he trying to help Will, or manipulate him, or both?</p>
+<p>4. Does modern psychology help people? Is it practiced in your own country? If not, are there equivalent types of emotional help?</p>
+<p>5. How is the issue of social class dealt with in this movie? Specifically, is it a given that Will should use his intelligence to "escape" his working class life?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

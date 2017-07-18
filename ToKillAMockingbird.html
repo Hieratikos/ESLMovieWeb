@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html>
+<title>To Kill a Mockingbird</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* indigo theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#f3f4fb !important}
+.w3-theme-l4 {color:#000 !important; background-color:#d8dcf1 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#b1b8e3 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#8995d6 !important}
+.w3-theme-l1 {color:#fff !important; background-color:#6271c8 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#3949a3 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#334191 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#2d397f !important}
+.w3-theme-d4 {color:#fff !important; background-color:#26316d !important}
+.w3-theme-d5 {color:#fff !important; background-color:#20295b !important}
+.w3-theme-light {color:#000 !important; background-color:#f3f4fb !important}
+.w3-theme-dark {color:#fff !important; background-color:#20295b !important}
+.w3-theme-action {color:#fff !important; background-color:#20295b !important}
+.w3-theme {color:#fff !important; background-color:#3f51b5 !important}
+.w3-text-theme {color:#3f51b5 !important}
+.w3-border-theme {border-color:#3f51b5 !important}
+.w3-hover-theme:hover {color:#fff !important; background-color:#3f51b5 !important}
+.w3-hover-text-theme:hover {color:#3f51b5 !important}
+.w3-hover-border-theme:hover {border-color:#3f51b5 !important}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #6271c8;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body style="max-width:100%;margin-left:16px;margin-right:16px;font-family: 'Open Sans', sans-serif; border:1px solid #6271c8">
+<nav class="navbar navbar-fixed-top" role="navigation" style="border:2px;border-color:#6271c8;border-style:solid;margin-left:16px;margin-right:16px;">
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#part8" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 8</a>
+
+
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">To Kill a Mockingbird</h1>
+</header>
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+
+    <img id="myImg" src="images/mockingbird.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    Atticus Finch, a lawyer in the Depression-era South, defends a black man against an undeserved rape charge, and his children against prejudice.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Not Rated | 2 hrs 9 min | Crime, Drama | 1962
+  </div>
+</div>
+
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Atticus Finch</td><td>Gregory Peck</td>
+  </tr>
+  <tr>
+    <td colspan="2">A gentle and highly moral lawyer in a small Southern town who agrees to
+    defend a black man accused of rape.</td>
+  </tr>
+  <tr>
+    <td>"Scout" (Jean Louise) Finch</td><td>Mary Badham</td>
+  </tr>
+  <tr>
+    <td colspan="2">The adorable six year old daughter of Atticus who tells the story of the
+    events that take place in the film.</td>
+  </tr>
+  <tr>
+    <td>Jem Finch</td><td>Phillip Alford</td>
+  </tr>
+  <tr>
+    <td colspan="2">Scout&apos;s protective 10 year old brother.</td>
+  </tr>
+  <tr>
+    <td>Dill Harris</td><td>John Megna</td>
+  </tr>
+  <tr>
+    <td colspan="2">The friend of Scout and Jem who lives in their town during the summers.</td>
+  </tr>
+  <tr>
+    <td>Tom Robinson</td><td>Brock Peters</td>
+  </tr>
+  <tr>
+    <td colspan="2">The kind and soft-spoken black man who is falsely accused of rape, and now
+    must face the charges with an all white jury.</td>
+  </tr>
+  <tr>
+    <td>Mayella Violet Ewell</td><td>Colin Wilcox</td>
+  </tr>
+  <tr>
+    <td colspan="2">The ignorant teenage girl who accuses Tom of raping her after she is seen
+    trying to kiss him by her father.</td>
+  </tr>
+  <tr>
+    <td>Bob Ewell</td><td>James Anderson</td>
+  </tr>
+  <tr>
+    <td colspan="2">The ignorant, hateful and racist father of Mayella who claims that Tom
+    raped her.</td>
+  </tr>
+  <tr>
+    <td>Nathan Radley</td><td>Richard Hale</td>
+  </tr>
+  <tr>
+    <td colspan="2">An antisocial, mysterious and scary man who lives down the street from the
+    Finches.</td>
+  </tr>
+  <tr>
+    <td>"Boo" (Arthur) Radley</td><td>Robert Duvall</td>
+  </tr>
+  <tr>
+    <td colspan="2">Mr. Radley's mentally disturbed but gentle son, who the town's people never
+    see, and who is believed by some to be chained to a bed in his home.</td>
+  </tr>
+  <tr>
+    <td>Sheriff Tate</td><td>Frank Overton</td>
+  </tr>
+  <tr>
+    <td colspan="2">The sheriff (head police officer) of Macomb, the small Alabama town where
+    the story takes place.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+    This movie is the classic story of racism in a small fictional town in the
+    American South, based on the book of the same title by Harper Lee. The
+    story takes place in 1932, during the great economic depression, in Macomb,
+    Alabama. It is told through the eyes of Scout Finch, a six year
+    old girl who loves her father very much, and who observes the great
+    difficulties that he faces after he decides to defend a black man, Tom
+    Robinson, who is falsely accused of raping a poor white teenage girl. In
+    telling her story, she reveals much about race, social class and the law in
+    1930s America.
+<p>
+    After deciding to take Tom's case, Atticus must deal with many serious
+    problems, from the fact that other kids at his children's school make fun
+    of his kids because their father was "defending a nigger," to doing
+    everything he can to defend Tom Robinson's life from a white mob that was
+    determined to kill him before he even had a chance to have a trial.
+    However, the trial does eventually take place, and in it, Atticus uses his
+    great skills as a lawyer to clearly show that Tom Robinson was not guilty
+    of rape, and that in fact Mayella Ewell was the victim of her own desires,
+    her father's brutality and the morals of Southern society. By the end, the
+    truth becomes obvious to everyone, except the 12 white men on the jury.
+<p>
+    While all of this is happening, Scout, Jem and their friend Dill continue
+    to explore the world of the mysterious "Boo" Radley, a young man who has
+    not been seen in years, and who many believe is crazy. Many also think that
+    Boo's scary and strange father, who never talks to anyone, has tied him up
+    to a bed inside their scary and poor house, just down the road. But one day
+    Boo appears in their lives, and in an amazing climax to this story, saves
+    them from the hate that had so badly hurt their town.
+<p>
+    <strong>A Brief Historical Note on the American South:</strong>
+    Racism exists everywhere, but until the 1960s, there were few places in
+    the industrialized world where it was so openly accepted as the Southern
+    states of the US. The Civil War of the 1860s put an end to slavery within
+    these states, but legal discrimination would last for at least another
+    century. Thus, for example, blacks in the South were almost never allowed
+    to sit on juries, and both law and social mores strictly forbid the mixing
+    of blacks and whites in many social settings. It is within this segregated
+    and repressive context that a decent man like Atticus was forced to work
+    and raise his family.
+<p>
+    <strong>A Quick Note on the Language:</strong>
+    Do not be discouraged! Scout, Jem and Dill are very difficult to understand
+    at first since they use a lot of old words, speak very quickly and have
+strong Southern accents. It becomes easier as the movie goes on.
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Scout and Jem meet Dill, and all three learn of the mysteries of the Radley House.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+<p><em><strong>Macomb</strong> was a tired old town in 1932.</em></p>
+<ul>
+<li>The name of the small (fictional) Alabama town and county where Atticus Finch and his family lived.</li>
+</ul>
+<p><em>Men's stiff shirt collars <strong>wilted</strong> by 9AM and ladies bathed by noon.</em></p>
+<ul>
+<li>"To wilt" is to become limp or to bend, often because of heat.</li>
+</ul>
+<p><em>And by nightfall they were like soft teacakes with frosting from sweating and sweet <strong>talcum.</strong></em></p>
+<ul>
+<li>"Frosting" is the sweet covering that is used on cakes. "Talcum" is a type of powder people use to absorb sweat when it&apos;s hot.</li>
+</ul>
+<p><em>There was no money and nothing to buy...though Macomb County had recently been told there was <strong>nothing to fear but fear itself.</strong></em></p>
+<ul>
+<li>This is a very famous campaign slogan that Franklin Roosevelt said in 1932 when talking about the great economic depression.</li>
+</ul>
+<p><em>No, Miss, I don't care to <strong>bother</strong> him.</em></p>
+<ul>
+<li>"To bother" is an important verb meaning to annoy or irritate.</li>
+</ul>
+<p><em>The <strong>collards</strong> that we had last week were delicious.</em></p>
+<ul>
+<li>A type of green vegetable popular in the Southern US.</li>
+</ul>
+<p><em>Why is he bringing you all this <strong>stuff</strong>?</em></p>
+<ul>
+<li>A critical word meaning "things," but note it's a non-count noun.</li>
+</ul>
+<p><em>The Cunninghams are country folks, farmers. The <strong>crash</strong> hit them the hardest.</em></p>
+<ul>
+<li>This refers to the stock market crash of 1929, which led to the great economic depression of the 1930s.</li>
+</ul>
+<p><em>He's in a tree and won't come down until you agree to play football for the <strong>Methodists</strong>.</em></p>
+<ul>
+<li>Methodists are a denomination (sub-group) in the Christian Church.</li>
+</ul>
+<p><em>Hot <strong>biscuits</strong>.</em></p>
+<ul>
+<li>A popular type of a small, round or square shaped bread.</li>
+</ul>
+<p><em>You wouldn't want me to get my head <strong>knocked off</strong>.</em></p>
+<ul>
+<li>"To knock off" someone's head is to remove it from their body, perhaps by shooting it or throwing something at it.</li>
+</ul>
+<p><em>I ain't coming down. :: <strong>Suit yourself</strong>.</em></p>
+<ul>
+<li>Note that "ain't" is incorrect for "am/are/is not."</li>
+<li>"Suit yourself" is an interesting way to say "Do what you want."</li>
+</ul>
+<p><em>He'll only play touch football with me. Never <strong>tackle</strong>.</em></p>
+<ul>
+<li>"To tackle" someone is to wrestle or force them to the ground. American football is played in either a touch or tackle version.</li>
+</ul>
+<p><em>He can make somebody's <strong>will</strong> so <strong>airtight</strong> you can't break it.</em></p>
+<ul>
+<li>In this context, a person's "will" is their determination or desire.</li>
+<li>If something is "airtight," it cannot be contaminated or broken.</li>
+</ul>
+<p><em>You <strong>count your blessings</strong> and stop complaining.</em></p>
+<ul>
+<li>"To count one's blessings" is a way to say that people should be grateful for what they have.</li>
+</ul>
+<p><em>You look right <strong>puny</strong> for going on seven.</em></p>
+<ul>
+<li>"Puny" is an interesting adjective for small or weak. Note the use of "right" as an adverb, which is very rarely used today.</li>
+</ul>
+<p><em>The picture show.</em></p>
+<ul>
+<li>A very old-fashioned way to refer to the movies.</li>
+</ul>
+<p><em><strong>Pleased to know you</strong>, Dill.</em></p>
+<ul>
+<li>Another old-fashioned expression, meaning "nice to meet you."</li>
+</ul>
+<p><em>New Orleans.</em></p>
+<ul>
+<li>A beautiful city in Louisiana, another Southern State.</li>
+</ul>
+<p><em>There goes the <strong>meanest</strong> man who ever took a breath of life.</em></p>
+<ul>
+<li>"Mean" is cruel, abusive or unpleasant. The opposite of nice!</li>
+</ul>
+<p><em>Well, for one thing, he has a boy named Boo that he keeps <strong>chained</strong> to a bed in the house <strong>over yonder</strong>.</em></p>
+<ul>
+<li>"To chain" someone is to keep them physically restrained with the use of chains.</li>
+<li>"Over yonder" is very old-fashioned for "over there," and was only really used in the Southern States.</li>
+</ul>
+<p><em>Once I heard him scratching on our <strong>screen</strong> door, but he was gone by the time Atticus got there.</em></p>
+<ul>
+<li>A "screen" is a sheet of metal wires filled with tiny holes, designed to let air in but keep insects out.</li>
+</ul>
+<p><em>Judging from his <strong>tracks</strong>, he eats raw <strong>squid</strong> and all the cats he can catch.</em></p>
+<ul>
+<li>"Tracks" are the foot prints or other evidence that a person may leave behind when walking.</li>
+<li>"Squid" is a type of seafood.</li>
+</ul>
+<p><em>He has a long <strong>jagged</strong> <strong>scar</strong> that runs across his face, his eyes are <strong>popped</strong>, his teeth are yellow, and he <strong>drools</strong> most of the time.</em></p>
+<ul>
+<li>"Jagged" means not straight, but serrated, like a saw.</li>
+<li>A "scar" is a wound on the skin that is left after an injury heals.</li>
+<li>"To drool" is to let saliva run from one's mouth, like a baby.</li>
+</ul>
+<p><em><strong>My lord</strong> , Aunt Stephanie, you almost gave me a heart attack.</em></p>
+<ul>
+<li>"My Lord" is an old-fashioned way to express surprise or other emotion. If you almost give someone a heart attack, it is probably because you scared them!</li>
+</ul>
+<p><em>There's a <strong>maniac</strong> who lives there and he's dangerous.</em></p>
+<ul>
+<li>"Maniac" is a common word used to describe a crazy person.</li>
+</ul>
+<p><em>Papa. Mama.</em></p>
+<ul>
+<li>Very old-fashioned words for father and mother.</li>
+</ul>
+<p><em>They wanted to send him to an <strong>asylum</strong>, but he said "No Radley's are going to an asylum."</em></p>
+<ul>
+<li>An "asylum" is a house or institution for mentally disturbed or crazy people.</li>
+</ul>
+<p><em>They locked him in the basement of the <strong>courthouse</strong> until he nearly died of the <strong>damp</strong>.</em></p>
+<ul>
+<li>A "courthouse" is where trials take place.</li>
+<li>"Damp" can be either a noun or adjective, and refers to wetness or moisture.</li>
+</ul>
+<p><em><strong>Lord knows</strong> what he's doing or thinking.</em></p>
+<ul>
+<li>An old-fashioned expression that means approximately "I have no idea' (ie...Only God would know)...</li>
+</ul>
+<p><em>Why do you call your daddy Atticus?</em></p>
+<ul>
+<li>Note that both Scout and Jem call their father by his first name (instead of dad or daddy). In the US, this is somewhat rare.</li>
+</ul>
+<p><em>There's a <strong>confederate</strong> <strong>pistol</strong> on her <strong>lap</strong> and she'd kill you as quick as she looks at you.</em></p>
+<ul>
+<li>"Confederate" refers to the Southern states that tried to form their own country during the American Civil War in the 1860s.</li>
+<li>A "pistol" is a gun, and one's "lap" is the upper legs of a person who is sitting.</li>
+</ul>
+<p><em>You come out here when I'm talking to you.</em></p>
+<ul>
+<li>Note the pronoun "you" that some people will use when giving instructions to children or others.</li>
+</ul>
+<p><em><strong>My goodness gracious</strong> , look at your flowers.</em></p>
+<ul>
+<li>Very old-fashioned for "My god" or "Wow!" to show excitement.</li>
+</ul>
+<p><em>Your yard is going to be the <strong>showplace</strong> of this town.</em></p>
+<ul>
+<li>A nice word for the center of attention.</li>
+</ul>
+<p><em><strong>Grand</strong> seeing you, Mr. Bose.</em></p>
+<ul>
+<li>Another very old-fashioned way to say very nice.</li>
+</ul>
+<p><em>Stay away from their house and stop <strong>tormenting</strong> them.</em></p>
+<ul>
+<li>"To torment" someone is to very much bother or even torture them, either physically or emotionally.</li>
+</ul>
+<p><em>To Atticus, my <strong>beloved</strong> husband.</em></p>
+<ul>
+<li>A pretty word meaning dear, cherished or loved.</li>
+</ul>
+<p><em>It's <strong>customary</strong> for the boy to have his father's watch.</em></p>
+<ul>
+<li>A "custom" is a tradition, and thus this means traditional.</li>
+</ul>
+<p>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Atticus learns of the charges against Tom Robinson, and agrees to take his case.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>Warm, isn't it? :: Yes, <strong>indeed</strong>.</em></p>
+<ul>
+<li>"Indeed" is a nice way to say "certainly," or perhaps "for sure."</li>
+<li>Much more used in England than in the States.</li>
+</ul>
+<p><em>The <strong>Grand Jury</strong> will get around to charging him tomorrow.</em></p>
+<ul>
+<li>A "Grand Jury" is a jury of local citizens that is brought together to see if there is enough evidence to officially charge a person with a crime.</li>
+</ul>
+<p><em>I was thinking about <strong>appointing</strong> you to take his case.</em></p>
+<ul>
+<li>"To appoint" someone is to officially choose them to fill a position or office, here as a public defender for Mr. Robinson.</li>
+</ul>
+<p><em>I know you're busy these days with your <strong>practice</strong>.</em></p>
+<ul>
+<li>A lawyer's business is often referred to as a practice.</li>
+</ul>
+<p><em>I'll send by a boy tomorrow when his <strong>hearing</strong> <strong>comes up</strong>.</em></p>
+<ul>
+<li>In law, a "hearing" is an official meeting where evidence is presented and official charges may be made.</li>
+<li>"To come up" is an important phrasal verb meaning to occur or take place.</li>
+</ul>
+<p><em><strong>Hush up</strong> , Scout.</em></p>
+<ul>
+<li>A bit old-fashioned way of saying "Be quiet!"</li>
+</ul>
+<p><em>Get away from there, <strong>come on</strong>!</em></p>
+<ul>
+<li>The most widely used phrasal verb in English, here meaning "move yourself!" Depending on the context, it could mean go, stay, leave, be serious, stop lying, hurry up, trust me, etc....</li>
+</ul>
+<p><em>Now who's a <strong>coward</strong>?! :: You tell them about this in Radin <strong>County</strong>!</em></p>
+<ul>
+<li>A "coward" is a person who is always scared in dangerous situations.</li>
+<li>A "county" is a political subdivision of a state, usually big enough to contain one or many towns and cities.</li>
+</ul>
+<p><em>You nearly die from <strong>mildew</strong>.</em></p>
+<ul>
+<li>A plant fungus which forms a coating on objects that have been left wet or damp. It's similar to "mold," and usually unpleasant.</li>
+</ul>
+<p><em>Let's go to the courthouse. I <strong>bet</strong> they got chains and <strong>instruments</strong> of torture down there.</em></p>
+<ul>
+<li>"I bet" is a very common way to say "I'm sure that..."</li>
+<li>"Instruments" are tools or devices.</li>
+</ul>
+<p><em>I see your <strong>daddy</strong> and a <strong>colored</strong> man.</em></p>
+<ul>
+<li>"Daddy" is how children refer to their fathers.</li>
+<li>"Colored" is a very dated way to refer to people who are black.</li>
+</ul>
+<p><em>One guy is pointing at the colored man and <strong>yelling</strong></em></p>
+<ul>
+<li>"To yell" is to scream or shout.</li>
+</ul>
+<p><em>Scout, Jem---What <strong>in the world</strong> are you doing here?</em></p>
+<ul>
+<li>A curious expression that is occasionally added to "Wh questions" in order to show surprise, anger or other emotion.</li>
+</ul>
+<p><em>We came down to see where Boo Radley is <strong>locked up</strong>.</em></p>
+<ul>
+<li>"To be locked up" is usually to be held in a jail or prison.</li>
+</ul>
+<p><em><strong>Run along</strong> , now.</em></p>
+<ul>
+<li>An old-fashioned way to say leave, or get going.</li>
+</ul>
+<p><em>I'm really sorry that they picked you to defend that <strong>nigger</strong> that raped my Mayella.</em></p>
+<ul>
+<li>An ugly racial slur against black people, generally used only by stupid and uneducated racists (or, black people speaking among themselves!)</li>
+</ul>
+<p><em>I should have killed him myself. That would have saved you, the <strong>sheriff</strong> and the taxpayers less trouble.</em></p>
+<ul>
+<li>A sheriff is the head of the local police.</li>
+</ul>
+<p><em>You're <strong>dead wrong</strong>, man.</em></p>
+<ul>
+<li>One way to say "completely wrong." Note the use of "man" to end many sentences, and still common in "Hey, man!"</li>
+</ul>
+<p><em>You <strong>taking his side</strong>? :: I've been appointed to defend him.</em></p>
+<ul>
+<li>"To take a person's side" is to support them, or perhaps simply to agree with them.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Scout, Jem and Dill go looking for Boo, and soon face the pressures of school as Atticus prepares for trial.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>I'm going to see if we can <strong>get a look</strong> at Boo Radley.</em></p>
+<ul>
+<li>"To get a look at" someone is one way saying to see them.</li>
+</ul>
+<p><em>I <strong>swear</strong>, you act more like a girl all the time.</em></p>
+<ul>
+<li>"I swear" is a common way to say "I really mean it," though "to swear" literally means to promise to tell the truth or to use curse words like "shit."</li>
+</ul>
+<p><em>We'll <strong>crawl</strong> under the high wire fence.</em></p>
+<ul>
+<li>"To crawl" is to move slowly on one's hands and knees.</li>
+</ul>
+<p><em>Atticus ain't never <strong>whipped</strong> me since I can remember and I plan to keep it that way.</em></p>
+<ul>
+<li>"To whip" somebody is to hit or strike somebody with a whip, which is a piece of leather or rope attached to a handle.</li>
+</ul>
+<p><em>Mr. Radley shot at a <strong>prowler</strong>.</em></p>
+<ul>
+<li>An interesting word for a person trying to secretly get into a house, usually at night for the purpose of stealing something.</li>
+</ul>
+<p><em>Mr. Radley must have <strong>scared them out of their wits.</strong></em></p>
+<ul>
+<li>An old-fashioned way to say scared them very much.</li>
+</ul>
+<p><em>Scared the living daylights out of me.</em></p>
+<ul>
+<li>Another fascinating but old-fashioned "scared" expression. Much more common today is "to terrify," or more colloquially (and crudely), "to scare the shit out of" someone.</li>
+</ul>
+<p><em>I think your dress is <strong>mighty</strong> <strong>becoming</strong>, honey.</em></p>
+<ul>
+<li>"Mighty" used as an adverb is very old-fashioned for "very." If something is "becoming," it is pretty or attractive.</li>
+</ul>
+<p><em>Now don't go <strong>tugging</strong> at that dress, Scout.</em></p>
+<ul>
+<li>"To tug" means to pull.</li>
+</ul>
+<p><em>You'll have it <strong>wrinkled</strong> before you get to school.</em></p>
+<ul>
+<li>"Wrinkles" are the lines that people get on their skin as they get older. Noted here to show that clothes can also get wrinkles!</li>
+</ul>
+<p><em>I don't see why I have to wear a <strong>darn</strong> old dress.</em></p>
+<ul>
+<li>An old-fashioned adverb that means "damn," which is more common today.</li>
+</ul>
+<p><em><strong>Cut that out!</strong> What do you think you're doing?</em></p>
+<ul>
+<li>A common and classic colloquial expression meaning "Stop it!"</li>
+</ul>
+<p><em>He made me <strong>start out on the wrong foot</strong>! I was explaining to that teacher why he didn't have any money.</em></p>
+<ul>
+<li>"To start off on the wrong foot" is to start something badly.</li>
+</ul>
+<p><em>I don't know when I've had a <strong>roast</strong>; We've been having <strong>squirrels</strong> and rabbits lately.</em></p>
+<ul>
+<li>A "roast" is a piece of meat that is cooked in an oven.</li>
+<li>"Squirrels" are tree-dwelling rodents, eaten primarily by people who live in very rural areas.</li>
+</ul>
+<p><em>My <strong>pa</strong> and I go hunting in our <strong>spare</strong> time.</em></p>
+<ul>
+<li>"Pa" is an old-fashioned word for dad, used mostly in the Southern states.</li>
+<li>"Spare time" is time that you have free to do what you want with. People will also ask for "spare change."</li>
+</ul>
+<p><em>He told me I'd rather shoot at <strong>tin</strong> cans, but sooner or later, the <strong>temptation</strong> to <strong>go after</strong> birds would be too much.</em></p>
+<ul>
+<li>"Tin" is a type of cheap metal.</li>
+<li>"Temptation" is an important word meaning desire. In this case, "to go after" birds is to try and shoot them.</li>
+</ul>
+<p><em>I could shoot at all the bluejays I wanted, but it was a <strong>sin</strong> to kill a <strong>mockingbird</strong>.</em></p>
+<ul>
+<li>A "sin" is religious word that refers to actions that are considered immoral by God.</li>
+<li>A "mockingbird" is a bird that imitates the cries of other birds, and is also known for its constant singing.</li>
+</ul>
+<p><em>Why? :: I <strong>reckon</strong> they make music for us to enjoy, and they just <strong>sing their hearts out</strong> for us.</em></p>
+<ul>
+<li>"To reckon" is a dated word that was used in the Southern states, meaning to think. "To sing your heart out" is to sing with all the energy that you have.</li>
+</ul>
+<p><em>Nest.</em></p>
+<ul>
+<li>The homes that birds build for themselves, often in trees.</li>
+</ul>
+<p><em>What <strong>in the hell</strong> are you doing?</em></p>
+<ul>
+<li>Added to "Wh questions" to express anger, surprise and other emotions (Note that it can be used with or without "in").</li>
+</ul>
+<p><em>What in the world has gotten into you?</em></p>
+<ul>
+<li>A classic colloquial question: "Why are you acting this way?!"</li>
+</ul>
+<p><em>I tried to give Walter Cunningham a <strong>quarter</strong> when everyone knows that the Cunninghams won't take anything from nobody.</em></p>
+<ul>
+<li>A quarter is 25 cents (penny-nickel-dime-quarter-dollar). Note the "double negation" of the sentence, which you should avoid.</li>
+</ul>
+<p><em>You <strong>get along</strong> better with all kinds of <strong>folks</strong>.</em></p>
+<ul>
+<li>"To get along well" with people is to like them and enjoy being with them.</li>
+<li>"Folks" is a bit dated word for people (or parents).</li>
+</ul>
+<p><em>You never really understand a person until you consider something from his <strong>point of view</strong>.</em></p>
+<ul>
+<li>An important expression meaning "perspective," or the way in which one person looks at a particular event.</li>
+</ul>
+<p><em>Do you know what a <strong>compromise</strong> is? It's an agreement reached by mutual consent.</em></p>
+<ul>
+<li>A critical word referring to an agreement in which each side agrees to give up something that they want.</li>
+</ul>
+<p><em>You <strong>concede</strong> the necessity of going to school and we'll keep reading every night.</em></p>
+<ul>
+<li>"To concede" is to admit or agree to.</li>
+</ul>
+<p><em>I swear to god there's a <strong>mad</strong> dog down the street.</em></p>
+<ul>
+<li>Here, "mad" means wild, though it can also mean crazy or angry.</li>
+</ul>
+<p><em>He's <strong>within range</strong>.</em></p>
+<ul>
+<li>If something is "within shooting range," this means that a person is close enough to hit it with a gun.</li>
+</ul>
+<p><em>Don't you know your daddy's <strong>the best shot</strong> in this county?</em></p>
+<ul>
+<li>"A good shot" is someone who knows how to use a gun effectively by hitting what he shoots at.</li>
+</ul>
+<p><em>I got a <strong>postponement</strong> on the trial to give things a chance to <strong>cool down</strong>.</em></p>
+<ul>
+<li>A postponement is a delay, and note there is also the verb "to postpone." In this context, "to cool down" means to become less angry or emotional over time.</li>
+</ul>
+<section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Atticus soon faces the high risks of defending a black man, both inside and outside of court.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>You nigger lover! :: No need to be afraid of him son, since he's all <strong>bluff</strong>.</em></p>
+<ul>
+<li>"To bluff" is to mislead by implying that you are stronger or more threatening than you really are. Here, used as a noun.</li>
+</ul>
+<p><em>Atticus promised me he would <strong>wear me out </strong>if he ever heard of me fighting anymore.</em></p>
+<ul>
+<li>"To wear out" someone is to tire or exhaust them, though here it may mean to punish, which is not a way it is used anymore.</li>
+</ul>
+<p><em>I was too big for such childish things, and the sooner I'd learn to <strong>hold it in</strong>, the better off everybody would be.</em></p>
+<ul>
+<li>In this context, "to hold it in" means to take your anger or other violent emotion and control it, so that others don't notice it.</li>
+</ul>
+<p><em>I <strong>forbid</strong> you to fight.</em></p>
+<ul>
+<li>"To forbid" is a strong verb meaning to refuse to allow.</li>
+</ul>
+<p><em>I am simply defending a <strong>negro</strong>, Tom Robinson.</em></p>
+<ul>
+<li>A very dated word that was used to refer to black people.</li>
+<li>Although no longer used, it was not a racial slur like "nigger."</li>
+</ul>
+<p><em>There's been some <strong>high talk</strong> around town to the effect that I shouldn't do much about this man.</em></p>
+<ul>
+<li>"High talk" is Atticus' way of saying "loose talk," or conversations among people who aren't thinking seriously about the issue.</li>
+</ul>
+<p><em>If I didn't, I couldn't <strong>hold up my head</strong> in town.</em></p>
+<ul>
+<li>In this context, "to hold one's head up" is to be able to walk the streets without being ashamed of what you had done.</li>
+</ul>
+<p><em>You're going to hear some <strong>ugly talk</strong> about this in school, but promise me you won't get into fights.</em></p>
+<ul>
+<li>A way of referring to crude threats, foul language, etc.</li>
+</ul>
+<p><em>They were the <strong>cradle</strong> of civilization! They invented <strong>embalming</strong> and toilet paper!</em></p>
+<ul>
+<li>A "cradle" is a small bed for babies, and this sentence often refers to Ancient Egypt.</li>
+<li>"To embalm" is to chemically treat a dead body (a "corpse") in order to preserve it.</li>
+</ul>
+<p><em>If I show you, will you <strong>swear</strong> never to tell nobody?</em></p>
+<ul>
+<li>In this context, "to swear" is a stronger and more legal verb than to promise.</li>
+</ul>
+<p><em>I swear. :: <strong>Cross your heart</strong>?</em></p>
+<ul>
+<li>Children will ask this question to make extra sure the person plans to tell the truth. Christians "cross their hearts" in church.</li>
+</ul>
+<p><em>I found all three in that <strong>hollow</strong> of that old tree at different times.</em></p>
+<ul>
+<li>A hollow is a hole or cavity, in this case, inside a tree trunk.</li>
+</ul>
+<p><em>They were all in a <strong>tangle</strong> and I couldn't get them loose.</em></p>
+<ul>
+<li>If two things are "tangled up," they are tied together and hard to separate from each other (In this case, Jem's pants and the fence).</li>
+</ul>
+<p><em>I always get up at 4AM; <strong>It's in my blood</strong>.</em></p>
+<ul>
+<li>A common way to refer to behaviors that are a fundamental part of a person, as if they inherited it from their parents.</li>
+</ul>
+<p><em>My daddy flies airplanes, and one of these days he's just going to <strong>swoop down</strong> here in Macomb, pick me up, and take me for <strong>a ride</strong>.</em></p>
+<ul>
+<li>"To swoop down" on something is to descend suddenly on it, as when planes head dramatically toward the ground. Note that you can get a "ride" in a car, plane or any moving vehicle.</li>
+</ul>
+<p><em>The Abbotsville Jail.</em></p>
+<ul>
+<li>The jail where Tom Robinson is being housed.</li>
+</ul>
+<p><em>There might be trouble from that <strong>bunch</strong>.</em></p>
+<ul>
+<li>"Bunch" can refer to many pieces of fruit, or a group of people!</li>
+</ul>
+<p><em>I think you better <strong>count on</strong> staying.</em></p>
+<ul>
+<li>"To count on" doing something is to assume that you'll have to do it.</li>
+</ul>
+<p><em>I just wanted to see where he was and what he was <strong>up to</strong>.</em></p>
+<ul>
+<li>"To be up to" something is a classic phrasal verb simply meaning "to do." A common way to ask "What has he been doing?" if you haven't heard for a while would be "So, what is he up to?"</li>
+</ul>
+<p><em><strong>Get aside</strong> from that door.</em></p>
+<ul>
+<li>One way to say "move from."</li>
+</ul>
+<p><em>Hey Mr. Cunningham, how are you and your aunt <strong>getting along</strong>?</em></p>
+<ul>
+<li>Note that "to get along" may be followed by <em>with each other</em>, or as here, when used alone, it may simply mean to survive.</li>
+</ul>
+<p><em>You remember me? You brought us some <strong>hickory nuts</strong> one early morning.</em></p>
+<ul>
+<li>A popular snack in certain parts of the US.</li>
+</ul>
+<p><em><strong>Entailments</strong> are bad, and sometimes it takes a long time.</em></p>
+<ul>
+<li>Scout says this word several times, and at one time it was used to mean "debts." Thus she means it takes a long time to pay back what you owe, but this word is no longer ever used in the US.</li>
+</ul>
+<p><em><strong>I sure meant no harm</strong> , Mr. Cunningham.</em></p>
+<ul>
+<li>A very polite way to say "I did not mean to hurt you."</li>
+</ul>
+<p><em><strong>No harm taken</strong>, young lady. :: I'll tell Walter you said "<strong>Hey</strong>."</em></p>
+<ul>
+<li>"No harm taken" is a polite way to respond to an apology, meaning "you did not hurt me." "Hey" is one possible way to say hi or hello.</li>
+</ul>
+<p><em>Let's clear out of here.</em></p>
+<ul>
+<li>A slang way to say "Let's go" when two or more people plan to leave.</li>
+</ul>
+<section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>The trial of Tom Robinson finally begins, and the claims of the prosecutor soon fall apart.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em><strong>I can't stand it</strong> no longer. I'm going to the courthouse and watch.</em></p>
+<ul>
+<li>If you "can't stand something," you hate it, or as here, you can't accept it (and thus Jem decides he must see the trial). Note the use of the double negative, which you should avoid.</li>
+</ul>
+<p><em>It's <strong>packed solid</strong>. They're standing all along the back.</em></p>
+<ul>
+<li>If a building is "packed solid," it is so crowded that people don't have any room to move around.</li>
+</ul>
+<p><em>This court is now <strong>in session</strong>. <strong>Everybody rise</strong>.</em></p>
+<ul>
+<li>"In session" is a very official way to say that a meeting or trial has already begun. When a judge enters the court room, all people must stand up (or "rise"), to show respect.</li>
+</ul>
+<p><em>She was pretty well <strong>beat up</strong>.</em></p>
+<ul>
+<li>"To beat up" someone is to attack them, and if you've been beaten up, you likely have bruises and other types of injuries.</li>
+</ul>
+<p><em>I asked if he had <strong>taken advantage of her</strong>, and he said yes, he did.</em></p>
+<ul>
+<li>Here, the men actually use these words to mean rape, though usually force or violence is not implied, even if this expression is used in a sexual context.</li>
+</ul>
+<p><em>There were <strong>bruises</strong> on her arm and she had a <strong>black eye</strong> starting.</em></p>
+<ul>
+<li>A "bruise" is a black or blue marking on the skin caused by hitting of some type. A black eye is exactly that, caused after a person has been hit or beaten on that part of the face.</li>
+</ul>
+<p><em>There were definite finger marks on her <strong>gullet</strong>.</em></p>
+<ul>
+<li>A slightly odd word for the outside of the throat.</li>
+</ul>
+<p><em>Do you solemnly swear to tell the truth, the whole truth, and nothing but the truth?</em></p>
+<ul>
+<li>The words that every person must say before they can testify in court.</li>
+</ul>
+<p><em>I was coming home from the woods with a load of <strong>kindling</strong>, and I heard Mayella screaming.</em></p>
+<ul>
+<li>A type of dry wood used to start fires, used by very poor people who do not have modern heating in their homes.</li>
+</ul>
+<p><em>I run up to the window and I see him with my Mayella.</em></p>
+<ul>
+<li>Noted here for the use of the historical present tense, though in fact, more educated people would use the simple past in court.</li>
+</ul>
+<p><em>What did you do after you saw the <strong>defendant</strong>?</em></p>
+<ul>
+<li>A legal term that refers to the person accused of the crime.</li>
+</ul>
+<p><em>You folks were doing a lot of running that night. Did you run for a doctor?</em></p>
+<ul>
+<li>Note that Atticus asks this question to show that there was in fact no medical evidence that Mayella had ever been raped.</li>
+</ul>
+<p><em>Are you left-handed Mr. Ewell?</em></p>
+<ul>
+<li>A "left-handed" person uses his left hand for writing and other major functions. The opposite of "right-handed."</li>
+</ul>
+<p><em><strong>What's that got to do with it</strong> , Judge?! I'm a <strong>God-fearing</strong> man!</em></p>
+<ul>
+<li>If someone questions what one thing "has to do" with another, they are asking "How are these two things related?" Note that conservative Christians will often say that they are "God-fearing."</li>
+</ul>
+<p><em>That Atticus Finch is trying to take advantage of me! You got to watch <strong>tricky</strong> lawyers like Atticus Finch.</em></p>
+<ul>
+<li>"Tricky" is an interesting adjective that refers to someone who manipulates the truth, or can easily trick or mislead.</li>
+</ul>
+<p><em><strong>Suppose</strong> you tell us just what happened.</em></p>
+<ul>
+<li>An old-fashioned word at the beginning of a request that basically means "Go ahead" (and tell us...). In a different context, "I suppose" means "I think."</li>
+</ul>
+<p><em>I was sitting on the <strong>porch</strong> and he <strong>came along</strong>.</em></p>
+<ul>
+<li>A porch is an outdoor space with a roof that is often immediately next to a house.</li>
+<li>"To come along" is another way to say walk by or come by.</li>
+</ul>
+<p><em>You come in here and I'll <strong>bust up</strong> the <strong>chifforobe</strong> and I'll give you a nickel.</em></p>
+<ul>
+<li>"To bust up" something is to destroy it or take it apart. A chifforobe is an old word for a piece of furniture that held clothes, but it is no longer used (at least outside the South).</li>
+</ul>
+<p><em>The next thing, papa's standing in the room yelling <strong>who done it</strong>?</em></p>
+<ul>
+<li>Very old "Southern English" for "who did it?"</li>
+</ul>
+<p><em>Is he easy to get along with? :: He's <strong>tolerable</strong>.</em></p>
+<ul>
+<li>"To tolerate" is to accept, so if someone is tolerable, you can live with them or accept them, but this is not a compliment!</li>
+</ul>
+<p><em>When he's <strong>riled</strong>, has he ever beaten you?</em></p>
+<ul>
+<li>"To be riled up" is an interesting way to say emotional or angry, but "riled" alone is rarely used anymore.</li>
+</ul>
+<p><em>You say "he caught me, <strong>choked</strong> me and took advantage of me?"</em></p>
+<ul>
+<li>"To choke" someone is to try and cut off their air by squeezing their neck so they cannot breath.</li>
+</ul>
+<p><em>I don't <strong>recollect</strong> if he hit me.</em></p>
+<ul>
+<li>An old-fashioned way to say "remember."</li>
+</ul>
+<p><em>Can you identify the man who hit you? :: Most certainly will, sitting <strong>right yonder</strong>.</em></p>
+<ul>
+<li>A very old and Southern way of saying "right over there."</li>
+</ul>
+<section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Tom Robinson takes the stand, and tells a town what it does not want to hear.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>I got it caught in a <strong>cotton gin</strong> when I was 12. All my muscles were <strong>torn loose</strong>.</em></p>
+<ul>
+<li>A cotton gin is a machine used to pick cotton that was critical to the economies of the South. If muscles are "torn loose" they are violently separated from bones and other parts of the body.</li>
+</ul>
+<p><em>You didn't say he <strong>sneaked up</strong> behind you and <strong>knocked you out cold</strong>, but that you turned around and there he was.</em></p>
+<ul>
+<li>"To sneak up" on somebody is to secretly approach them without them noticing. "To knock someone out cold" is to hit them so hard that they lose consciousness.</li>
+</ul>
+<p><em>If you fine fancy gentlemen ain't gonna do something about it, then you're just a bunch of <strong>lousy, yellow stinking cowards</strong>,</em></p>
+<ul>
+<li>"Lousy" is an important word meaning bad or useless. To call someone "yellow" is very old-fashioned way to refer to a person without courage, or as Mayella says here, a coward.</li>
+</ul>
+<p><em>Your Ma&apos;am&apos;in and your Miss Mayella&apos;in ain&apos;t come to nothing!</em></p>
+<ul>
+<li>In Southern States, men used to address women as "Ma&apos;am," or use their first name with "Miss," as in "Miss Mayella."</li>
+</ul>
+<p><em><strong>The state rests</strong>, Judge.</em></p>
+<ul>
+<li>This is a way for the prosecutor, who represents the state, to say that he has no other evidence to show the jury.</li>
+</ul>
+<p><em>Were you <strong>acquainted with</strong> Mayella Ewell?</em></p>
+<ul>
+<li>"To be acquainted with" somebody is to know them, but not well enough to consider them a friend.</li>
+</ul>
+<p><em>Yes Sir, I <strong>tipped</strong> my hat when I'd go by, and one day she asked me to come inside the fence....to bust up a chifforobe for her.</em></p>
+<ul>
+<li>"To tip" one's hat is to take it off and briefly lower it out of respect.</li>
+</ul>
+<p><em>She gave me the <strong>hatchet</strong> and I broke it up.</em></p>
+<ul>
+<li>A "hatchet" is a type of small ax used to break up wood.</li>
+</ul>
+<p><em>She said I reckon that I'll have to give you a nickel, and I said, no Mam, there's <strong>no charge</strong>.</em></p>
+<ul>
+<li>A common way to say that something has been done for free.</li>
+</ul>
+<p><em>And then <strong>it come to me.</strong></em></p>
+<ul>
+<li>This is a way of saying that you suddenly realized something (though "it <em>came</em> to me" would have been more correct).</li>
+</ul>
+<p><em>It's <strong>right</strong> nice of you to <strong>treat</strong> them.</em></p>
+<ul>
+<li>"Right" used as an adverb for "very" is another old-fashioned and Southern way of speaking.</li>
+<li>"To treat" somebody is a common way to say to pay for them, often for a meal at a restaurant.</li>
+</ul>
+<p><em>I got the box on top of the chifforobe , and the next thing I know, she <strong>grabbed</strong> me round the legs.</em></p>
+<ul>
+<li>"To grab" something is to take it forcefully and hold on to it.</li>
+</ul>
+<p><em>She scared me so, I <strong>hopped down</strong> and turned the chair over.</em></p>
+<ul>
+<li>"To hop down" is to jump. In this case, its clear the chair fell over when Tom tried to jump down.</li>
+</ul>
+<p><em>Mr. Ewell <strong>cursed</strong> at her from the window and said he was going to kill her.</em></p>
+<ul>
+<li>"To curse" at someone is to scream at them with "dirty words" such as fuck and shit.</li>
+</ul>
+<p><em>How come you were so <strong>anxious</strong> to do that woman's <strong>chores</strong>.</em></p>
+<ul>
+<li>If a person is "anxious to do something," they are in a hurry to do it.</li>
+<li>"Chores" is a cute little word for errands that are done around the house, such as cleaning the kitchen or cutting the grass.</li>
+</ul>
+<p><em>You did all this chopping out of <strong>sheer</strong> goodness?</em></p>
+<ul>
+<li>An interesting adjective meaning pure or undiluted.</li>
+</ul>
+<p><em>I felt right sorry for her. :: You felt sorry for a white woman?</em></p>
+<ul>
+<li>A key exchange, for in 1930s Alabama, it would have been considered unbelievable for a black man to feel sorry for a white person.</li>
+</ul>
+<section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Atticus asks the jury to move beyond their prejudice, but these 12 men will not listen.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em><strong>To begin with</strong> , this case should never have come to trial.</em></p>
+<ul>
+<li>A good way to start a statement when you want to say several things at once.</li>
+</ul>
+<p><em>The state has not produced one <strong>iota</strong> of medical evidence that the crime that Tom Robinson is charged with ever took place.</em></p>
+<ul>
+<li>"Iota" is an interesting word that means a very small amount. Commonly used in the expression "not one iota of..."</li>
+</ul>
+<p><em>It has relied upon the <strong>testimony</strong> of two <strong>witnesses</strong> whose evidence has been called into serious question on <strong>cross examination</strong>.</em></p>
+<ul>
+<li>"Testimony" refers to the words of people who appear in court to tell what they think has happened.</li>
+<li>A "witness" is a person who testifies in court.</li>
+<li>"Cross examination" is the questioning of a witness by a lawyer to see if there are any lies or weaknesses that can be uncovered.</li>
+</ul>
+<p><em>It has been flatly <strong>contradicted</strong> by the defendant.</em></p>
+<ul>
+<li>In this context, "to contradict" is to deny a statement, or say exactly the opposite of what had been said.</li>
+</ul>
+<p><em>There is <strong>circumstantial evidence</strong> that Mayella Ewell was beaten <strong>savagely</strong> by someone who led almost exclusively with his left.</em></p>
+<ul>
+<li>"Circumstantial evidence" refers to physical evidence such as bruises or blood.</li>
+<li>"Savagely" is a powerful adverb meaning violently or ruthlessly. Here, Atticus is saying the person who beat Mayella must have been left-handed.</li>
+</ul>
+<p><em>Tom Robinson sits before you having taken the <strong>oath</strong> with the only good one he possesses---his right.</em></p>
+<ul>
+<li>An "oath" is a solemn promise to tell the truth, usually taken in American courts while one's hand is on a bible.</li>
+</ul>
+<p><em>I have nothing but <strong>pity</strong> for the chief witness.</em></p>
+<ul>
+<li>"Pity" is concern for someone, but primarily because you feel sorry for them as a person. Generally, a negative word.</li>
+</ul>
+<p><em>But my pity does not extend so far as to her putting a man's life <strong>at stake</strong> <strong>to get rid of</strong> her own guilt.</em></p>
+<ul>
+<li>"At stake" is another way to say at risk.</li>
+<li>"To get rid of" something is a common and colloquial way to say to throw away or eliminate.</li>
+</ul>
+<p><em>She has committed no crime. She has <strong>merely</strong> broken <strong>a rigid and time-honored code</strong> of our society.</em></p>
+<ul>
+<li>"Merely" is an interesting little word meaning "only."</li>
+<li>Something that is "rigid" is unbending, and here, a "code" is an accepted way of behavior, perhaps even a law.</li>
+</ul>
+<p><em>A code so <strong>severe</strong> that whoever breaks it is <strong>hounded</strong> from our <strong>midst</strong> as <strong>unfit</strong> to live with.</em></p>
+<ul>
+<li>"Severe" is a strong adjective meaning strict or harsh or perhaps unforgiving.</li>
+<li>"To hound" someone is to chase them away.</li>
+<li>To be in one's "midst" is to be in the center or close by, and "unfit" is another strong adjective meaning unqualified.</li>
+</ul>
+<p><em>What did she do? She <strong>tempted</strong> a Negro, and in our society it is <strong>unspeakable</strong>....and the code came <strong>crashing down on</strong> her afterwards.</em></p>
+<ul>
+<li>"To tempt" is to try and attract or seduce.</li>
+<li>If something is "unspeakable," it is considered so bad or horrible that it cannot be discussed.</li>
+<li>"To crash down" on someone is to fall on them.</li>
+</ul>
+<p><em>The witnesses for the state had cynical confidence that you'd <strong>go along with</strong> them on the evil a<strong>ssumption</strong> that all negros lie and are immoral <strong>beings</strong>.</em></p>
+<ul>
+<li>"To go along with" something is to agree to accept it.</li>
+<li>An "assumption" is a statement or claim that is accepted as true.</li>
+<li>"Beings" is short for human beings.</li>
+</ul>
+<p><em>Negro men are not to be trusted around our women. This is an assumption we associate with minds of their <strong>caliber</strong>.</em></p>
+<ul>
+<li>An educated word for distinction, or here, intelligence.</li>
+</ul>
+<p><em>And so a <strong>humble</strong> quiet Negro who has had the <strong>unmitigated temerity</strong> to feel sorry for a white woman....</em></p>
+<ul>
+<li>"Humble" is an important adjective meaning modest.</li>
+<li>"Unmitigated temerity" is one way to say the "pure nerve" or "audacity," and is said here with sarcastic anger.</li>
+</ul>
+<p><em>....has had to put <strong>his word</strong> against two white people.</em></p>
+<ul>
+<li>In a legal context, "your word" is your solemn promise.</li>
+</ul>
+<p><em>Our courts are the great <strong>levelers</strong>, and in our courts, all men are created equal.</em></p>
+<ul>
+<li>"To level" something is to make it flat, and here the idea is that in theory, the courts treat all people the same, black or white.</li>
+</ul>
+<p><em>Now, I'm no <strong>idealist</strong> to believe firmly in the <strong>integrity</strong> of our courts and our jury system....It's a living, working reality.</em></p>
+<ul>
+<li>An "idealist" is someone who is overly romantic or optimistic about how well certain institutions, such as the justice system, can work.</li>
+<li>"Integrity" is another word for honesty or morality.</li>
+</ul>
+<p><em>I'm confident you gentlemen will review the evidence without passion...and <strong>restore</strong> this man to his family.</em></p>
+<ul>
+<li>"To restore" something is to return it to the way it was before.</li>
+</ul>
+<p><em><strong>In the name of God</strong> , do your duty.</em></p>
+<ul>
+<li>This is a very powerful way to urge people to do something.</li>
+</ul>
+<p><em>How long <strong>has the jury been out</strong>, Reverend?</em></p>
+<ul>
+<li>If the jury is "out," the members are in the process of discussing the evidence behind closed doors, before reaching a decision.</li>
+</ul>
+<p><em>Have you reached a <strong>verdict</strong>? :: We have, <strong>your honor</strong>.</em></p>
+<ul>
+<li>A "verdict" is the legal conclusion as to whether a person is guilty or not guilty of the criminal charges.</li>
+<li>"Your honor" is the way all people in court are expected to address a judge.</li>
+</ul>
+<p><em>The jury is <strong>dismissed</strong>. Court is <strong>adjourned</strong>.</em></p>
+<ul>
+<li>A jury that is "dismissed" is officially ended since they have done their job.</li>
+<li>If court is "adjourned," it is ended for the day.</li>
+</ul>
+<section id="part8"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Atticus learns of the tragic fate of Tom, and Scout discovers that some people are not nearly as scary as she thought they were.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>He shot at him to <strong>wound</strong> him and missed his aim and killed him.</em></p>
+<ul>
+<li>"To wound" someone is to injure them.</li>
+</ul>
+<p><em>The <strong>deputy</strong> said Tom just ran like a crazy man.</em></p>
+<ul>
+<li>A "deputy" is a police officer with a rank below that of Sheriff.</li>
+</ul>
+<p><em>Last thing I told him was not <strong>to lose heart</strong>, and we'd ask for an <strong>appeal</strong><strong>.</strong></em></p>
+<ul>
+<li>"To lose heart" is to lose hope.</li>
+<li>In law, an "appeal" is an important word referring to the process of asking a higher level court to overturn the decision in a lower court, for Constitutional or other reasons.</li>
+</ul>
+<p><em>By October, things had <strong>settled down</strong> again.</em></p>
+<ul>
+<li>"To settle down" is a widely used phrasal verb meaning to become calmer or more peaceful.</li>
+</ul>
+<p><em>There was a <strong>pageant</strong> representing our county's agricultural products. I was to be a ham.</em></p>
+<ul>
+<li>A "pageant" is a type of celebration, festival or fair.</li>
+</ul>
+<p><em>Jem was to <strong>escort</strong> me to the school <strong>auditorium</strong>, and <strong>thus</strong> began our longest journey together.</em></p>
+<ul>
+<li>"To escort" someone is to accompany them, often in order to protect them.</li>
+<li>An "auditorium" is a building with many seats for spectators.</li>
+<li>"Thus" is an alternative way of saying "therefore."</li>
+</ul>
+<p><em>Get the <strong>janitor</strong> to let you in.</em></p>
+<ul>
+<li>A person who cleans public buildings, such as schools.</li>
+</ul>
+<p><em>Is he dead? :: No, he's <strong>unconscious</strong>.</em></p>
+<ul>
+<li>An important word referring to the state of being unaware, as if asleep. Often caused by disease or injury from an accident.</li>
+</ul>
+<p><em>Someone's <strong>been after</strong> my children.</em></p>
+<ul>
+<li>If someone "is after" somebody, they are trying to harm or injure them in some way.</li>
+</ul>
+<p><em>Somebody tried to <strong>wring</strong> his arm off.</em></p>
+<ul>
+<li>"To wring" is to twist, in the way that you twist a towel when you want to eliminate water from it.</li>
+</ul>
+<p><em>Bobby Ewell is lying under a tree over yonder with a kitchen knife stuck under his <strong>ribs</strong>.</em></p>
+<ul>
+<li>The "ribs" are the curved bones that go out from the spinal cord, located in humans below the neck and above the stomach.</li>
+</ul>
+<p><em>Jem <strong>hollered</strong> and then somebody grabbed me...and then I heard somebody <strong>panting</strong> and coughing.</em></p>
+<ul>
+<li>"To holler" is to scream or yell, and "to pant" is to breath very rapidly, often after running or exercise.</li>
+</ul>
+<p><em>It will have to come before the county court; Of course, it's a <strong>clear cut case of</strong> <strong>self-defense</strong>.</em></p>
+<ul>
+<li>If something is "clear cut," it is obvious or unambiguous.</li>
+<li>"Self-defense" is a legal term, and an accepted justification for killing or harming someone, if it was considered reasonable.</li>
+</ul>
+<p><em>Bob Ewell fell on his knife. He killed himself.</em></p>
+<ul>
+<li>This is Sheriff Tate's "analysis" of what happened.</li>
+</ul>
+<p><em>I never heard it was against the law for a citizen to <strong>do his utmost</strong> to prevent a crime from being committed, which is exactly what he did.</em></p>
+<ul>
+<li>"To do your utmost" is to do the most or best that you can.</li>
+</ul>
+<p><em>With his shy ways....dragging him into the <strong>limelight</strong> would be a sin.</em></p>
+<ul>
+<li>"The limelight" the focus or center center of public attention.</li>
+</ul>
+<p><em>I'm not about to <strong>have it on my head</strong>.</em></p>
+<ul>
+<li>In this context, to "have something on one's head" is to feel guilty for having taken a particular action.</li>
+</ul>
+<p><em>It would be <strong>sort of like</strong> shooting a mockingbird, wouldn't it?</em></p>
+<ul>
+<li>A very common way to say "similar to..."</li>
+</ul>
+<p><em>You never really knew a man until you stood in his shoes and walked around in them.</em></p>
+<ul>
+<li>A great saying that someone such as Atticus would teach his children, perhaps implying that few people are able to truly see the problems of life from another person's point of view.</li>
+</ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p>1. What does this movie tell us about American life in 1932?</p>
+<p>2. Is the US still a racist society? Is it as bad as it was back then? What about your own country? Who are the "negroes" of the culture that you come from?</p>
+<p>3. Atticus said that he had to defend Tom Robinson so that he could walk in town "with his head up" (without being ashamed). What were the principles that Atticus was defending? If you had been in his position in that town at that time, would you have had the courage to do what he did?</p>
+<p>4. Why do you think this story was told from the point of view of a child?</p>
+<p>5. How would you describe Atticus to a friend? What about Scout? And Jem?</p>
+<p>6. In a very powerful scene, Scout's talking to Mr. Cunningham seems to prevent the white mob from killing Tom Robinson. What does that scene seem to imply about hatred, violence, and human nature?</p>
+<p>7. Why did Mr. Radley scare so many people in town? Does every town have somebody like him?</p>
+<p>8. Atticus believes that the search for truth is one of the greatest principles, but at the end of the film, he seems to agree with Sheriff Tate that the death of Mr. Ewell should be considered an accident. Given the nature of the town, the circumstances in which Boo became involved, and Boo's "shy ways," was agreeing to the sheriff's "version of reality" the right thing to do?</p>
+<footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

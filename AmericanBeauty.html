@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+<title>AmericanBeauty</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* rose quarts theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fff0f4 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ffcdd9 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ff9bb2 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#ff698c !important}
+.w3-theme-l1 {color:#fff !important; background-color:#ff3766 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#ea0037 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#d00031 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#b6002a !important}
+.w3-theme-d4 {color:#fff !important; background-color:#9c0024 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#82001e !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fff0f4 !important}
+.w3-theme-dark {color:#fff !important; background-color:#82001e !important}
+.w3-theme-action {color:#fff !important; background-color:#82001e !important}
+
+.w3-theme {color:#fff !important; background-color:#ff053f !important}
+.w3-text-theme {color:#ff053f !important}
+.w3-border-theme {border-color:#ff053f !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#ff053f !important}
+.w3-hover-text-theme {color:#ff053f !important}
+.w3-hover-border-theme:hover {border-color:#ff053f !important}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #ff3766;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body style="max-width:100%;margin-left:16px;margin-right:16px;font-family: 'Open Sans', sans-serif; border:1px solid #ff3766">
+<nav class="navbar navbar-fixed-top" role="navigation" style="border:2px;border-color:#ff3766;border-style:solid;margin-left:16px;margin-right:16px;">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-d2" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">American Beauty</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/AmericanBeauty.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Rated R | 2 hrs 2 min | Drama, Romance | 1999
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Lester Burnham</td><td>Kevin Spacey</td>
+  </tr>
+  <tr>
+    <td colspan="2">An unhappy and frustrated advertising executive whose wife no longer cares about him, and whose daughter almost hates him.</td>
+  </tr>
+  <tr>
+    <td>Carolyn Burnham</td><td>Annette Bening</td>
+  </tr>
+  <tr>
+    <td colspan="2">Lester's unhappy wife, who is a struggling real estate agent.</td>
+  </tr>
+  <tr>
+    <td>Jane Burnham</td><td>Thora Birch</td>
+  </tr>
+  <tr>
+    <td colspan="2">Lester and Carol's 16 year old daughter who is a typically frustrated
+	and insecure teenager, who strongly dislikes both of her parents.</td>
+  </tr>
+  <tr>
+    <td>Angela Hayes</td><td>Mena Suvari</td>
+  </tr>
+  <tr>
+    <td colspan="2">Jane's very pretty friend who wants to be a fashion model, who
+is interested in Lester even though that makes Jane very angry.</td>
+  </tr>
+  <tr>
+    <td>Ricky Fitts</td><td>Wes Bentley</td>
+  </tr>
+  <tr>
+    <td colspan="2">A gentle but somewhat strange teenager who moves
+in next door to the Burnhams, who likes Jane very much.</td>
+  </tr>
+  <tr>
+    <td>Colonel Frank Fitts</td><td>Chris Cooper</td>
+  </tr>
+  <tr>
+    <td colspan="2">Ricky's extremely conservative father, a retired officer in the Marine Corps, who strongly dislikes drugs and homosexuals.</td>
+  </tr>
+  <tr>
+    <td>Barbara Fitts</td><td>Allison Janney</td>
+  </tr>
+  <tr>
+    <td colspan="2">Ricky's suffocated and gentle mother, and Frank's wife.</td>
+  </tr>
+  <tr>
+    <td>Buddy Kane</td><td>Peter Gallagher</td>
+  </tr>
+  <tr>
+    <td colspan="2">The top real estate agent in the neighborhood where the
+Burnhams live, who decides to have an affair with Carolyn.</td>
+  </tr>
+  <tr>
+    <td>Jim Olmeyer</td><td>Scott Bakula</td>
+  </tr>
+  <tr>
+    <td colspan="2">A gay neighbor of the Burnhams who is an attorney.</td>
+  </tr>
+  <tr>
+    <td>Jim Berkley</td><td>Sam Robards</td>
+  </tr>
+  <tr>
+    <td colspan="2">Jim Olmeyer's partner, who is an anesthesiologist.</td>
+  </tr>
+  <tr>
+    <td>Brad Dupree</td><td>Barry Del Sherman</td>
+  </tr>
+  <tr>
+    <td colspan="2">An executive at the office where Lester works who
+decides to fire him because of his bad attitude.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+    This film is the story of the Burnhams, a typical American family that lives in
+    an upper middle class suburb in the state of Connecticut, perhaps an hour or two
+    outside of New York City.  Lester Burnham has a pretty wife and daughter, a nice
+    house, and a fairly good paying career, but he is still extremely unhappy. He
+    hates his job, he knows that both his wife and daughter have no respect for him,
+    and he feels he is growing old way too fast.
+<p>
+  Carolyn Burnham is also unhappy, in part because she has a very hard time selling
+  houses, and in part because her marriage is horrible and her daughter seems to hate
+  her. Finally, Jane Burnham has her own unhappiness, both because she hates her parents,
+  and more disturbingly, because her best friend and her father seem like they want to
+  sleep with each other. In short, the Burnhams are the classic dysfunctional family.
+<p>
+  The Burnhams soon face great challenges when Lester decides to quit his job, Carolyn decides to
+  have an affair with her greatest competition in the real estate business, and Jane falls in love
+  with Ricky, the gentle yet somewhat strange young man who moves in next door. But the greatest
+  crisis comes when Lester decides to recapture his youth by buying cars and drugs from his teen
+  years, and by becoming obsessed with Angela, Jane's beautiful 16 year old friend. As Lester's
+  life spins out of control, Jane, Carolyn and even Ricky's dad find their own reasons why it would
+  be better if Lester were dead....
+<p>
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lester introduces us to his family, almost loses
+his job, and tries to improve his relationship with Jane.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+  <p></p>
+  <p><em>I need a father who is <strong>a role model</strong>.</em></p>
+  <ul>
+  <li>A "role model" is a person who others look up to as an example of excellent behavior or great accomplishment.</li>
+  </ul>
+  <p><em>Not some <strong>horny geek</strong> boy who is going to <strong>spray his shorts</strong> whenever I bring a girlfriend home from school.</em></p>
+  <ul>
+  <li>If a person is "horny," they want to have sex.</li>
+  <li>A "geek" is a socially awkward person, often more at ease with computers than people.</li>
+  <li>Here, if a man "sprays his shorts," it's implied he is getting sexually excited (To spray is to scatter small drops of water, like a garden hose).</li>
+  </ul>
+  <p><em>What a <strong>lame-o</strong>.</em></p>
+  <ul>
+  <li>"Lame" is a slang word meaning stupid, bad or ridiculous (as well as injured or disabled). Children will sometimes add the suffix '-o' to an adjective like this to turn it into a noun (but this is rare for adults).</li>
+  </ul>
+  <p><em>Someone should <strong>put him out of his misery</strong>.</em></p>
+  <ul>
+  <li>"To put a person out of their misery" is to kill them, perhaps because they are suffering so much that it's considered a humane thing to do.</li>
+  </ul>
+  <p><em>Look at me; <strong>jerking off</strong> in the shower.</em></p>
+  <ul>
+  <li>"To jerk off" is the most common slang way of saying to masturbate.</li>
+  </ul>
+  <p><em>This will be the <strong>high point</strong> of my day; <strong>It's all down hill from here</strong>.</em></p>
+  <ul>
+  <li>"The high point" of a day or event is the most exciting or best part.</li>
+  <li>If something goes "all down hill from here," it becomes worse, though note that in the right context, it could mean that it becomes easier!</li>
+  </ul>
+  <p><em>The handle on those <strong>pruning sheers</strong> matches her gardening <strong>clogs</strong>.</em></p>
+  <ul>
+  <li>"Pruning shears" are metal tools to cut (or prune) plants and bushes.</li>
+  <li>"Clogs" are a type of shoe, usually made of wood on the bottom.</li>
+  </ul>
+  <p><em>How do you get them to <strong>flourish</strong> like this? Eggshells and <strong>Miracle-Grow.</strong></em></p>
+  <ul>
+  <li>If a flower "flourishes," it grows with strength and beauty.</li>
+  <li>"Miracle Grow" is a well-known fertilizer.</li>
+  </ul>
+  <p><em>Angry, <strong>insecure</strong>, confused. I wish I could tell her that's all going <strong>to pass</strong>, but I don't want to lie to her.</em></p>
+  <ul>
+  <li>A person who is "insecure" has little confidence in themselves, and is often nervous around other people.</li>
+  <li>In this case, if a situation "passes," it goes away or dies out.</li>
+  </ul>
+  <p><em><strong>Nice going</strong> dad!</em></p>
+  <ul>
+  <li>This is usually a compliment, but Jane is being sarcastic and mocking.</li>
+  </ul>
+  <p><em>Both my wife and daughter think I'm this <strong>gigantic loser</strong>.</em></p>
+  <ul>
+  <li>"Gigantic" is extremely big or huge.</li>
+  <li>In this case, a "loser" is a person whose life in general is not happy, or who has little good about them.</li>
+  </ul>
+  <p><em>I didn't always feel this...<strong>sedated</strong>.</em></p>
+  <ul>
+  <li>A person who is "sedated" is sleepy or not very alert, often because of the effects of a drug or depression.</li>
+  </ul>
+  <p><em>We're all <strong>under a deadline</strong> here.</em></p>
+  <ul>
+  <li>To be "under a deadline" is to be in a situation where you have to finish something before a certain time.</li>
+  </ul>
+  <p><em>Product launch.</em></p>
+  <ul>
+  <li>A business expression for the production, distribution and marketing (advertising) for any new product, from software to food.</li>
+  </ul>
+  <p><em>I need to <strong>cut corners</strong> around here.</em></p>
+  <ul>
+  <li>If a company has to "cut corners," it has to reduce the money it spends.</li>
+  </ul>
+  <p><em><strong>Times are tight</strong> and you got <strong>to free up</strong> some cash.</em></p>
+  <ul>
+  <li>In this context, if "times are tight," there's little money left.</li>
+  <li>"To free up" cash is to find savings in one area in order to spend it in another.</li>
+  </ul>
+  <p><em>Like the time Mr. Flourney used the company <strong>MasterCard</strong> to pay for that <strong>hooker</strong>.</em></p>
+  <ul>
+  <li>MasterCard is a very well known brand of credit card.</li>
+  <li>"Hooker" is a slang word for a prostitute.</li>
+  </ul>
+  <p><em>That's <strong>unsubstantiated gossip</strong>.</em></p>
+  <ul>
+  <li>If a piece of news is "unsubstantiated," it has not been confirmed or verified.</li>
+  <li>"Gossip" is unofficial talk or writing, often about people's personal lives, and often untrue.</li>
+  </ul>
+  <p><em>That's because Greg has to pay women <strong>to fuck</strong> him.</em></p>
+  <ul>
+  <li>"To fuck" a person is a very crude way of saying to have sex with them (obviously!), but be aware that this word can be used in many grammatically different ways.</li>
+  </ul>
+  <p><em>A job description <strong>mapping out</strong> in detail how they contribute.</em></p>
+  <ul>
+  <li>To "map out" something is to clearly express in writing all of its important details and how they relate to each other.</li>
+  </ul>
+  <p><em>Management can <strong>assess</strong> who's valuable and who is <strong>expendable</strong>.</em></p>
+  <ul>
+  <li>"To assess" a situation is to analyze or judge it carefully.</li>
+  <li>If a person is "expendable," they are not really needed.</li>
+  </ul>
+  <p><em>I'm one of the good guys, Les. I'm trying <strong>to level with you</strong>.</em></p>
+  <ul>
+  <li>"To level with" a person is to speak with them very honestly, including, if necessary, by telling them unpleasant or bad news.</li>
+  </ul>
+  <p><em>You don't think it's <strong>weird</strong> and kind of <strong>fascist</strong>?</em></p>
+  <ul>
+  <li>"Weird" is an important word that means strange or bizarre (It is widely used in this movie).</li>
+  <li>"Fascist" usually refers to a dictatorial political system, but note many people use it more generally to refer to any system they think is unfair, such as how people are fired at a job.</li>
+  </ul>
+  <p><em>Let's just all sell our <strong>souls</strong> and work for <strong>Satan</strong>, because it's more <strong>convenient</strong> that way!</em></p>
+  <ul>
+  <li>A person's "soul" is the non-physical part of them that lives on after they die, and "Satan" is another name for the devil.</li>
+  <li>If something is "convenient," it is accessible, easy to reach, or suited to one's needs.</li>
+  </ul>
+  <p><em>That house would never have <strong>sat on the market</strong> for six months.</em></p>
+  <ul>
+  <li>If a house "sits on the market," it continues to be for sale, but nobody is willing to pay the price that is being asked.</li>
+  </ul>
+  <p><em>Their <strong>Sycamore</strong>?! <strong>Come on</strong>!</em></p>
+  <ul>
+  <li>A "sycamore" is a type of tree.</li>
+  <li>"Come on" is the most versatile phrasal verb in English. Here, it means "Stop saying nonsense and be serious."</li>
+  </ul>
+  <p><em>A <strong>substantial portion</strong> of the <strong>root structure</strong> was on our property!</em></p>
+  <ul>
+  <li>A "substantial portion" of something is a big part of it.</li>
+  <li>The "root structure" of a tree refers to the part of the tree that grows out under the ground, in search of water and food.</li>
+  </ul>
+  <p><em>I wouldn't <strong>have had the heart</strong> to cut down something if it wasn't partially mine.</em></p>
+  <ul>
+  <li>If a person doesn't "have the heart " to do something, they don't have the desire to do it, or they think it would be too cruel to do it.</li>
+  </ul>
+  <p><em>Do we always have to listen to this <strong>elevator music</strong>?</em></p>
+  <ul>
+  <li>A very negative expression for the type of music that is played softly in elevators, stores and other public places.</li>
+  </ul>
+  <p><em>A nutritious but <strong>savory</strong> meal.</em></p>
+  <ul>
+  <li>Another word for delicious, or filled with flavor.</li>
+  </ul>
+  <p><em>No dad, it was <strong>spectacular</strong>.</em></p>
+  <ul>
+  <li>A strong adjective meaning excellent, wonderful or amazing.</li>
+  </ul>
+  <p><em>They hired this <strong>efficiency expert</strong> named Brad.</em></p>
+  <ul>
+  <li>An "efficiency expert" is a person who is hired by a company to help it be more efficient or productive, so that it can save money.</li>
+  </ul>
+  <p><em>I mean, <strong>hello</strong>, you've barely even spoken to me for months!</em></p>
+  <ul>
+  <li>Note that in the right context and when said with a sarcastic or cynical tone of voice, this is a common way to imply that a person is being ridiculous, stupid, or insensitive.</li>
+  </ul>
+  <p><em>What happened? We used to be <strong>pals</strong>.</em></p>
+  <ul>
+  <li>A nice little word for friends.</li>
+  </ul>
+<p>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lester meets Angela, and soon he finds himself obsessed with her.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em><strong>Wait till you see</strong> the native stone fireplace!</em></p>
+<ul>
+<li>"Wait till you see..." is a way of saying "I think you'll be excited by..."</li>
+</ul>
+<p><em>A simple cream could <strong>lighten things up</strong>.</em></p>
+<ul>
+<li>"To lighten up" a house is to make it brighter and friendlier. (In this case, cream is the color of a paint that Carolyn suggests).</li>
+</ul>
+<p><em>Skylight.</em></p>
+<ul>
+<li>A glass window in a ceiling to allow light in.</li>
+</ul>
+<p><em>Just filled with <strong>positive energy</strong>, huh?</em></p>
+<ul>
+<li>People (and places) can have either <em>positive</em> energy (which is good and makes people happy) or <em>negative</em> energy (which is bad and makes people angry or upset).</li>
+</ul>
+<p><em>The ad said that this pool was <strong>lagoon-like</strong>.</em></p>
+<ul>
+<li>A "lagoon" is a small lake, usually separated from the ocean by sand, and often found on tropical pacific islands. If the pool is lagoon-like," it looks like a lagoon.</li>
+</ul>
+<p><em>I think 'lagoon,' I think waterfall, <strong>tropical</strong>. This is a <strong>cement</strong> hole.</em></p>
+<ul>
+<li>"Tropical" refers to those places on earth that are hot and muggy, such as islands in the Caribbean sea.</li>
+<li>"Cement" is the hard rock material that pools and sidewalks are made of.</li>
+</ul>
+<p><em>They're trying to <strong>take an active interest in me</strong>.</em></p>
+<ul>
+<li>To "take an active interest" in a person is to become very concerned by how they are doing in life.</li>
+</ul>
+<p><em><strong>Gross</strong>! I hate it when my mom does that.</em></p>
+<ul>
+<li>A popular slang word for disgusting, repulsive, or very unpleasant.</li>
+</ul>
+<p><em>They're such <strong>assholes</strong>.</em></p>
+<ul>
+<li>A very crude but common insult, similar to jerk, creep or shithead.</li>
+</ul>
+<p><em>I'm missing the James Bond <strong>marathon</strong> on <strong>TNT</strong>.</em></p>
+<ul>
+<li>A "marathon," is a 26 mile (long!) race. Here it refers to a long back-to-back showing of many movies or TV shows on the same day (In this case, the character James Bond).</li>
+<li>"TNT" is a cable television channel.</li>
+</ul>
+<p><em>She's just <strong>willful</strong>. :: She hates you, too.</em></p>
+<ul>
+<li>An interesting but rarely used word meaning determined or stubborn.</li>
+</ul>
+<p><em><strong>Rockwell High's</strong> Dancing Spartenettes.</em></p>
+<ul>
+<li>Note that high school's are often called just by their name and the word 'high.' This is a reference to the school's cheerleaders, who are the students who cheer on athletes at various school games.</li>
+</ul>
+<p><em>You were also very good tonight. Very <strong>precise</strong>.</em></p>
+<ul>
+<li>A good word for accurate, exact or correct, but not terribly enthusiastic.</li>
+</ul>
+<p><em>You didn't <strong>screw up</strong> once.</em></p>
+<ul>
+<li>"To screw up" something is to do it very badly. It's a very common expression. However, an expression like this is not the kind of encouraging words children should hear from their parents. It suggests they screw up a lot, and that's a mean thing to say to your children.</li>
+</ul>
+<p><em>Do you need a <strong>ride</strong>?</em></p>
+<ul>
+<li>The noun you need for the act of being transported by car.</li>
+</ul>
+<p><em>Could he be any more...<strong>pathetic</strong>?</em></p>
+<ul>
+<li>An excellent word meaning completely hopeless or ridiculously bad.</li>
+</ul>
+<p><em>It's the weirdest thing....I feel like I've been in a <strong>coma</strong> for about 20 years.</em></p>
+<ul>
+<li>A "coma" is the state of being unconscious for a long period of time, usually caused by disease or a sharp blow to the head.</li>
+</ul>
+<p><em>I'm used to guys <strong>drooling</strong> over me.</em></p>
+<ul>
+<li>"To drool" is to let saliva run slowly from your mouth (like a baby), so if one person "drools over" another, the one who is drooling is sexually attracted to the other.</li>
+</ul>
+<p><em>I knew what they were thinking...just like I knew guys at school thought about me when they <strong>jerked off</strong>.</em></p>
+<ul>
+<li>"To jerk off" is to masturbate.</li>
+</ul>
+<p><em><strong>Vomit</strong>. :: No, I like it.</em></p>
+<ul>
+<li>This is literally food or other matter that has been thrown up, but as here, it's also a slangy way of simply expressing disgust or revulsion.</li>
+</ul>
+<p><em>If people I don't even know look at me and want to fuck me, it means I really <strong>have a shot</strong> at being a model.</em></p>
+<ul>
+<li>"To have a shot" at doing something is to have a real chance or possibility of doing it.</li>
+</ul>
+<p><em>There is nothing worse in life than being <strong>ordinary</strong>.</em></p>
+<ul>
+<li>In this case, another way of saying average or not easily noticed.</li>
+</ul>
+<p><em>Somebody hung up, and I <strong>star-69ed</strong>, and I called you back.</em></p>
+<ul>
+<li>"Star-69" (*69) is a feature in some phone systems that lets you know who just called you without picking up the phone.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>The Fitts family moves in next door, Angela dreams of being
+a model, and Carolyn drags Lester to a party of her business colleagues.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em><strong>Colonel</strong> Frank Fitts, <strong>U.S Marine Corps</strong>.</em></p>
+  <ul>
+  <li>A "Colonel" is a high officer rank in the military, just one rank below "General."</li>
+  <li>The "Marine Corps" are the military branch that are known for being tough infantry soldiers.</li>
+  </ul>
+  <p><em>This is my <strong>partner</strong>. :: Jim Berkeley, but people call me J.B.</em></p>
+  <ul>
+  <li>Note that the use of "partner" to refer to a gay lover, a person who is also often called a "significant other."</li>
+  </ul>
+  <p><em>Let's <strong>cut to the chase</strong>. :: What are you guys selling?</em></p>
+  <ul>
+  <li>"To cut to the chase" is a slangy way of saying to quickly get to the point, or say what needs to be said.</li>
+  </ul>
+  <p><em>He's a tax <strong>attorney</strong> :: And he's an <strong>anesthesiologist</strong>.</em></p>
+  <ul>
+  <li>An "attorney" is a lawyer, and an "anesthesiologist" is a person who gives anesthesia and other pain killers to people having surgery.</li>
+  </ul>
+  <p><em>How come these <strong>faggots</strong> have to always <strong>rub it in your face</strong>?</em></p>
+  <ul>
+  <li>"Faggot" is a very negative slur (insult word) for a gay man.</li>
+  <li>If a person "rubs it in your face," they are making obvious what you would rather not see.</li>
+  </ul>
+  <p><em>How can they be so <strong>shameless</strong>?</em></p>
+  <ul>
+  <li>An excellent word to describe a person who is without shame, or whose behavior suggests they have no morals or dignity.</li>
+  </ul>
+  <p><em>Don't <strong>placate</strong> me like I'm your mother, boy.</em></p>
+  <ul>
+  <li>"To placate" a person is to try and stop them from feeling angry, often by agreeing with them, or doing something they want you to do.</li>
+  </ul>
+  <p><em>Forgive me for speaking so bluntly, but those <strong>fags</strong> make me want to <strong>puke</strong> my <strong>fucking guts</strong> out.</em></p>
+  <ul>
+  <li>To speak "bluntly" is to speak honestly, or frankly.</li>
+  <li>"Fag" is also a slur for a gay man.</li>
+  <li>"To puke" is a slang word meaning to vomit or throw up, and "guts" are stomach intestines. Ricky is telling his father what he wants to hear.</li>
+  </ul>
+  <p><em>He just pulled down his pants and <strong>yanked</strong> it out.</em></p>
+  <ul>
+  <li>"To yank" something is to pull it out suddenly or forcefully.</li>
+  </ul>
+  <p><em>So did you <strong>do it</strong> with him?</em></p>
+  <ul>
+  <li>In the right context, to "do it" with a person is to have sex with them.</li>
+  </ul>
+  <p><em>He's a well-known photographer. He shoots for <strong>Elle</strong>, on like, <strong>a regular basis</strong>.</em></p>
+  <ul>
+  <li>"Elle" is a well-known women's fashion magazine.</li>
+  <li>To do something "on a regular basis" is to do it regularly, or consistently. Note the use of "like," which is an extremely common filler word (with no meaning) among many teenagers and others. Be aware of it, but avoid it!</li>
+  </ul>
+  <p><em>It would have been so <strong>majorly</strong> stupid of me <strong>to turn him down</strong>.</em></p>
+  <ul>
+  <li>In this case, "majorly" is a slangy adverb that means completely.</li>
+  <li>Here, "to turn down" a person is to refuse to have sex with them.</li>
+  </ul>
+  <p><em>You're this <strong>pampered</strong> little <strong>suburban chick</strong>.</em></p>
+  <ul>
+  <li>If a person is "pampered," they are spoiled and always get what they want from others.</li>
+  <li>"Suburban" refers to the suburbs or residential neighborhoods outside cities, and "chick" is a slang word for a female.</li>
+  </ul>
+  <p><em>Stop acting like you're <strong>goddamn Christi Turlington</strong>.</em></p>
+  <ul>
+  <li>"Goddamn" as a filler adjective is a crude way to express emotion such as anger of frustration.</li>
+  <li>Turlington is a well-known model.</li>
+  </ul>
+  <p><em>Cunt!</em></p>
+  <ul>
+  <li>Possibly the most vulgar word in English.</li>
+  <li>A crude way to refer to female sex organs, and an insult word that is even stronger than bitch.</li>
+  </ul>
+  <p><em>I'm so sick of people <strong>taking their insecurities out on me</strong>.</em></p>
+  <ul>
+  <li>If a person is "insecure," they have no confidence in themselves.</li>
+  <li>If you "take your insecurities out on" another person, you are blaming them for your lack of confidence.</li>
+  </ul>
+  <p><em>That's the <strong>pervert</strong> who filmed me last night.</em></p>
+  <ul>
+  <li>A "pervert" is a strange person who is often thought to have strange or bizarre sexual desires.</li>
+  </ul>
+  <p><em><strong>No way</strong>, he's a total <strong>lunatic</strong>.</em></p>
+  <ul>
+  <li>"No way" is a common way of saying absolutely not.</li>
+  <li>A "lunatic" is a crazy or insane person.</li>
+  </ul>
+  <p><em>He would always serve the most <strong>random</strong>, <strong>weird</strong> things.</em></p>
+  <ul>
+  <li>If something is "random," it is made or done without fitting any pattern or plan.</li>
+  <li>"Weird" means strange or bizarre.</li>
+  </ul>
+  <p><em>His parents had to put him in a <strong>mental institution</strong>.</em></p>
+  <ul>
+  <li>A hospital run by the state for crazy or mentally disturbed people.</li>
+  </ul>
+  <p><em>You total <strong>slut</strong>! You got <strong>a crush on him</strong>!</em></p>
+  <ul>
+  <li>A "slut" is a woman who has sex with lots of men. A silly word, in part because there is no such word for a man!</li>
+  <li>"To have a crush on" a person is to like them in a romantic way, even though you don't really know them very well. A dated but fun expression.</li>
+  </ul>
+  <p><em>I remember this <strong>creepy incident </strong>when you were filming last night.</em></p>
+  <ul>
+  <li>If something is "creepy," it is scary or disturbing.</li>
+  <li>An "incident" is a small event or occurrence.</li>
+  </ul>
+  <p><em>I really don't need to have some <strong>psycho obsessing</strong> about me right now. :: I'm not obsessing, I'm just curious.</em></p>
+  <ul>
+  <li>"Psycho" is a funny slang word for a crazy or insane person.</li>
+  <li>"To obsess" about someone is to constantly be thinking about them.</li>
+  </ul>
+  <p><em>What a <strong>freak</strong>! And why does he dress like a bible salesman?</em></p>
+  <ul>
+  <li>A "freak" is a person who looks very strange, or behaves in very strange or bizarre ways. A powerful and common slang word.</li>
+  </ul>
+  <p><em>Everyone here is with their <strong>spouse</strong> or <strong>significant other</strong>.</em></p>
+  <ul>
+  <li>A "spouse" is a husband or wife.</li>
+  <li>"Significant other" is a popular expression for a boyfriend, girlfriend, spouse, lover, or gay partner.</li>
+  </ul>
+  <p><em>How would it look if I <strong>showed up</strong> with no one?</em></p>
+  <ul>
+  <li>A widely used way of saying to arrive.</li>
+  </ul>
+  <p><em>This is an important <strong>business function</strong>. My business is selling an image, and part of that job is to <strong>live that image</strong>.</em></p>
+  <ul>
+  <li>A "business function" is a dinner or social event such as a party in which making business connections is considered as important as having a good time.</li>
+  <li>"To live an image" is Carolyn's way of saying to appear to be living in a certain way, so that others will see her as being successful in both a personal and business sense.</li>
+  </ul>
+  <p><em>Say whatever you want to say and <strong>spare me</strong> the <strong>propaganda</strong>.</em></p>
+  <ul>
+  <li>"Spare me" the details is a way of telling a person you are not interested in hearing about them.</li>
+  <li>"Propaganda" is ideas and publicity that are spread around by governments, in order to manipulate people, or to convince them to think in a certain or acceptable way.</li>
+  </ul>
+  <p><em>Do you <strong>party</strong>? Do you <strong>get high</strong>?</em></p>
+  <ul>
+  <li>"To party" is a relatively new and slangy verb which means to do the things one does at a party---drink, take drugs, dance, etc...</li>
+  <li>"To get high" is to feel the various effects of a drug like marijuana.</li>
+  </ul>
+  <p><em>I wouldn't tell you this if I weren't a little <strong>tipsy</strong>...but, I'm <strong>in complete awe</strong> of you.</em></p>
+  <ul>
+  <li>If a person is "tipsy," they are slightly drunk, dizzy and likely to fall or stumble.</li>
+  <li>To be "in awe of" a person is to have extreme respect for them, possibly combined with fear of their great authority.</li>
+  </ul>
+  <p><em>Your firm is <strong>hands-down</strong> the <strong>Rolls Royce</strong> of local real estate firms.</em></p>
+  <ul>
+  <li>"Hands-down" is a grammatically curious expression which means absolutely, or without competition.</li>
+  <li>A "Rolls Royce" is one of the most expensive luxury cars in the world.</li>
+  </ul>
+  <p><em>Your personal sales record...is very <strong>intimidating</strong>.</em></p>
+  <ul>
+  <li>If something is "intimidating," it is threatening and scary.</li>
+  </ul>
+  <p><em>I'd love to sit down with you and <strong>pick your brain</strong>.</em></p>
+  <ul>
+  <li>"To pick a person's brain" is to talk with them for a while in order to find out what they think or know about a particular subject.</li>
+  </ul>
+  <p><em><strong>Technically</strong>, I'm the competition, but I don't <strong>flatter</strong> myself that I'm even in the same <strong>league</strong> with you.</em></p>
+  <ul>
+  <li>In this type of context, "technically" essentially means "One could say that." This usage is very common.</li>
+  <li>"To flatter" a person is to speak highly or positively about them. A "league" is a division in sports that divides players by how good they are (Pro League, AAA League, etc).</li>
+  </ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lester meets Ricky, remembers how happy he had been as a
+ teenager, and realizes how dead his life and marriage have become.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Did you see that movie where the body is carrying its own head, where the head <strong>goes down</strong> on that <strong>babe</strong>?!</em></p>
+  <ul>
+  <li>In this context, to "go down" on a person is to give them oral sex.</li>
+  <li>"Babe" is a very slangy word for a good-looking woman.</li>
+  </ul>
+  <p><em>I just do these <strong>gigs as a cover</strong>; I have other sources of income.</em></p>
+  <ul>
+  <li>A "gig" is a slang term for a job, or more often, a concert for a musician.</li>
+  <li>To do something "as a cover" is to do it just to fool other people (In this case to fool Ricky's dad).</li>
+  </ul>
+  <p><em>My dad interferes less in my life when I pretend to be an <strong>upstanding young citizen</strong> with a respectable job.</em></p>
+  <ul>
+  <li>An "upstanding citizen" is a person who obeys the law, doesn't cause problems and is well respected. A loved expression for politicians.</li>
+  </ul>
+  <p><em>I should say hi to your dad. I don't want to be <strong>rude</strong>.</em></p>
+  <ul>
+  <li>A good alternative to impolite, obnoxious or badly mannered.</li>
+  </ul>
+  <p><em>Last time I saw you, you looked kind of <strong>wound up</strong>.</em></p>
+  <ul>
+  <li>If a person is "wound up," they are very tense or perhaps upset.</li>
+  </ul>
+  <p><em>Rootbeer.</em></p>
+  <ul>
+  <li>A popular soft drink made from sassafras root.</li>
+  </ul>
+  <p><em>She's going <strong>to spend</strong> the night.</em></p>
+  <ul>
+  <li>Note the verb: "To spend" time at a place is to pass time there.</li>
+  </ul>
+  <p><em>To you, he's just another guy who wants to <strong>jump your bones</strong>.</em></p>
+  <ul>
+  <li>"To jump a person's bones" is a fun but silly way of saying to have sex with them.</li>
+  </ul>
+  <p><em>Your mom is the one who is embarrassing. What a <strong>phony</strong>!</em></p>
+  <ul>
+  <li>A person who is a "phony" often says things they don't really believe, or acts in ways that are false or hypocritical.</li>
+  </ul>
+  <p><em>If he just <strong>worked out</strong> a little, he'd be <strong>hot</strong>.</em></p>
+  <ul>
+  <li>"To work out" is a common way of saying to exercise. In this context, if a person is "hot," they are very sexy or attractive.</li>
+  </ul>
+  <p><em>You never <strong>sneaked a peak</strong> at him in his underwear? I bet he's got a big <strong>dick</strong>.</em></p>
+  <ul>
+  <li>"To sneak a peak" at a person is to very quickly look at them, without them noticing (perhaps when they are naked and unaware).</li>
+  <li>"Dick" is one of the most common slang terms for a penis (along with "cock").</li>
+  </ul>
+  <p><em>You're <strong>so grossing me out</strong> right now.</em></p>
+  <ul>
+  <li>A classic line of teenage English! "To gross out" a person is to disgust them, or even make them sick. Note both the use of "so," and putting the verb in the progressive tense, adds to its colloquial teen charm.</li>
+  </ul>
+  <p><em>If he <strong>built up</strong> his chest and arms, I'd <strong>totally</strong> fuck him.</em></p>
+  <ul>
+  <li>"To build up" your arms or chest is to increase their muscle size by lifting weights or other exercise.</li>
+  <li>Note that "totally" is a much loved adverb that is over-used by many teenagers.</li>
+  </ul>
+  <p><em>It's the psycho next door! What if he <strong>worships</strong> you?!</em></p>
+  <ul>
+  <li>"To worship" a person is to greatly admire and respect them, as if they were a God.</li>
+  </ul>
+  <p><em>What if he's got a <strong>shrine</strong> with pictures of you surrounded by dead people's heads and stuff?</em></p>
+  <ul>
+  <li>A "shrine" is a place of worship or prayer in honor of a God or religious figure.</li>
+  </ul>
+  <p><em>Welcome to America's weirdest <strong>home videos</strong>.</em></p>
+  <ul>
+  <li>"Home videos" are private movies made by people with their own video cameras ("America's <em>Funniest</em> Home Videos" is a TV show).</li>
+  </ul>
+  <p><em>So <strong>what's up?</strong></em></p>
+  <ul>
+  <li>A very common way of asking what's new, how's life, etc....</li>
+  </ul>
+  <p><em>I need <strong>a urine sample</strong>. :: <strong>Wow</strong>, it's been six months!</em></p>
+  <ul>
+  <li>"A urine sample" is a small glass of urine (piss) that is often used to see if a person has been using drugs.</li>
+  <li>"Wow" is a very common way of expressing great excitement, surprise or other emotion.</li>
+  </ul>
+  <p><em>Can I give it to you in the morning? I just <strong>took a whiz</strong>.</em></p>
+  <ul>
+  <li>"To take a whiz" is to urinate.</li>
+  </ul>
+  <p><em>You've been working out, haven't you? I can <strong>tell</strong>.</em></p>
+  <ul>
+  <li>Note the verb "to tell" often means to see or realize.</li>
+  </ul>
+  <p><em>You were masturbating! :: Oh, all right, <strong>so shoot me</strong>! I was <strong>whacking off</strong>.</em></p>
+  <ul>
+  <li>"So shoot me" is a funny way to reply to a person who has accused you of doing something wrong. A way of saying "I don't care that you're upset."</li>
+  <li>"To whack off" is another slang term meaning to masturbate.</li>
+  </ul>
+  <p><em>That's right. I was <strong>choking the bishop, chafing the carrot, saying hi to my monster</strong>. :: That's disgusting.</em></p>
+  <ul>
+  <li>Three ridiculous ways of saying to masturbate, none of which are used (A "bishop" is a figure in a church and a piece in the game of chess, and to "chafe" is to become sore after being rubbed too much).</li>
+  </ul>
+  <p><em>Well, excuse me, but <strong>some of us</strong> still have blood <strong>pumping through</strong> our <strong>veins</strong>.</em></p>
+  <ul>
+  <li>"Some of us" is a colloquial way of actually referring to yourself when you want to make a point.</li>
+  <li>If liquid is "pumping through" a vein, it is moving quickly through it.</li>
+  <li>"Veins" are the small tubes that carry blood in the body. This is Lester's way of saying he is still interested in sex.</li>
+  </ul>
+  <p><em>I've changed. And the new me whacks off when he feels horny, cause <strong>you're obviously not going to help me out in that department</strong>.</em></p>
+  <ul>
+  <li>This is Lester's colorful way of saying he knows that Carolyn is no longer interested in having sex with him.</li>
+  </ul>
+  <p><em><strong>Don't you mess with me</strong>, Mister! I will divorce you so fast, <strong>it will make your head spin</strong>. :: <strong>On what grounds</strong>?!</em></p>
+  <ul>
+  <li>"Don't mess with me" is a way of telling a person to stop provoking or upsetting them (Note the use of "you" for added emphasis).</li>
+  <li>"It will make you head spin" is a way of saying it will greatly surprise you.</li>
+  <li>"On what grounds" is a way of asking the legal reason for an action.</li>
+  </ul>
+  <p><em>I don't even try to touch you, since you made it so <strong>abundantly</strong> clear how unnecessary you consider me to be.</em></p>
+  <ul>
+  <li>In this case, "abundantly" means completely or totally.</li>
+  </ul>
+  <p><em>I did support you when you got your <strong>license</strong>, and some people might think that <strong>entitles</strong> me to half of what's yours.</em></p>
+  <ul>
+  <li>The "license" Lester is referring to is one to sell real estate.</li>
+  <li>If a person is "entitled" to something, they have a legal right to it. This is Lester's way of saying that after a divorce, he'd get half of Carolyn's money.</li>
+  </ul>
+  <p><em>I <strong>figured</strong> you guys might be able to give me some <strong>pointers</strong>; I need to <strong>shape up</strong> fast.</em></p>
+  <ul>
+  <li>"To figure" is to think or believe.</li>
+  <li>A "pointer" is a helpful suggestion, and to "shape up" is to get in good physical shape, often by exercising.</li>
+  </ul>
+  <p><em>Do you want increased strength and <strong>flexibility</strong> as well? :: I want to look good naked.</em></p>
+  <ul>
+  <li>In this case, "flexibility" is the ability to move and stretch your arms, legs and body muscles without pain.</li>
+  </ul>
+  <p><em>What is this? Fucking <strong>gay pride</strong> parade?</em></p>
+  <ul>
+  <li>Note that many ethnic and other social groups have annual parades to celebrate their identities (Pride is a sense of self-respect, and thus a Gay Pride parade celebrates gay culture). Also note the use of "fucking" as an adjective, which is crude but common.</li>
+  </ul>
+  <p><em>My entire life is passing before my eyes, and those two have <strong>barely broken a sweat</strong>.</em></p>
+  <ul>
+  <li>"Barely" means only just, or hardly.</li>
+  <li>"To break a sweat" is to begin to sweat or perspire, usually because of having exercised.</li>
+  </ul>
+  <p><em>I have to take a drug test every six months just to make sure <strong>I'm clean</strong>.</em></p>
+  <ul>
+  <li>"I'm clean" is Ricky's way of saying that he's not using illegal drugs.</li>
+  </ul>
+  <p><em>Are you <strong>kidding</strong>? You just smoked last night.</em></p>
+  <ul>
+  <li>"To kid" is to joke around or not speak seriously (But note that this is almost always used in the progressive tense).</li>
+  </ul>
+  <p><em>One of my clients is a nurse in a <strong>pediatrician's</strong> office.</em></p>
+  <ul>
+  <li>A "pediatrician" is a children's doctor.</li>
+  </ul>
+  <p><em>I cut her a deal, and she keeps me in clean piss.</em></p>
+  <ul>
+  <li>This is Ricky's way of saying that he agreed to sell his friend marijuana for a very cheap price, and in exchange, the friend gives Ricky urine (piss) from the doctor's office that will not have any drugs in it.</li>
+  </ul>
+  <p><em>Pink Floyd.</em></p>
+  <ul>
+  <li>A very popular rock group in the 1970s.</li>
+  </ul>
+  <p><em>How much is an <strong>ounce</strong>?</em></p>
+  <ul>
+  <li>An "ounce" is 1/16<sup>th</sup> of a pound, and the unit of measurement for many illegal drugs like cocaine or marijuana.</li>
+  </ul>
+  <p><em>This shit is <strong>top of the line</strong>. It's called G-B, and it's <strong>genetically engineered</strong> by the US government.</em></p>
+  <ul>
+  <li>If something is "top of the line," it is considered the very best quality.</li>
+  <li>If a drug is "genetically engineered," it is made by changing around the basic biological structures (genes, or DNA) of a plant or animal.</li>
+  </ul>
+  <p><em>It's extremely <strong>potent</strong>, but a completely <strong>mellow high</strong>. No <strong>paranoia</strong>.</em></p>
+  <ul>
+  <li>If something is "potent," it is strong or powerful.</li>
+  <li>"Mellow" is a popular slang word form the 1970s which means gentle, soft or pleasant, and in this case a "high" is the pleasant feeling one gets from an illegal drug like marijuana.</li>
+  <li>"Paranoia" is a feeling of great fear or anxiety.</li>
+  </ul>
+  <p><em>How much? :: Two <strong>grand</strong>.</em></p>
+  <ul>
+  <li>A "grand" is a slang term for 1,000 dollars. (Two grand is an absurdly high price for an ounce of pot.)</li>
+  </ul>
+  <p><em><strong>Jesus</strong>! Things have changed since 1973.</em></p>
+  <ul>
+  <li>A common way of expressing emotion such as surprise or frustration.</li>
+  </ul>
+  <p><em>You don't have to pay now. I know <strong>you're good for it</strong>.</em></p>
+  <ul>
+  <li>If a person is "good for" their debts, they are responsible and will pay it.</li>
+  </ul>
+  <p><em>There's a card in there with my <strong>beeper</strong> number. <strong>Beep</strong> me anytime.</em></p>
+  <ul>
+  <li>A "beeper" is a small pocket device which tells a person when they have received a phone call. Note that there's both a noun and a verb. The technology hasn't been used much since the development of the cell phone.</li>
+  </ul>
+  <p><em>When I was your age, I <strong>flipped</strong> burgers all summer just to be able to buy an <strong>8-track</strong>. :: That <strong>sucks</strong>.</em></p>
+  <ul>
+  <li>"To flip" burgers is to turn them over by throwing them gently in the air.</li>
+  <li>An "8-track" is a type of music tape that died out after the 1970s.</li>
+  <li>If something "sucks," it is considered very bad. Crude but common.</li>
+  </ul>
+  <p><em>All I did was party and <strong>get laid</strong>.</em></p>
+  <ul>
+  <li>"To get laid" is a crude but widely used way of saying to have sex.</li>
+  </ul>
+  <p><em>My dad thinks I pay for all of this with <strong>catering jobs</strong>.</em></p>
+  <ul>
+  <li>"Catering jobs" are those jobs in which people serve food and drinks at parties and other social meetings.</li>
+  </ul>
+  <p><em>Never <strong>underestimate</strong> the power of <strong>denial</strong>.</em></p>
+  <ul>
+  <li>"To underestimate" something is to not take it as seriously, or value it as highly, as one should.</li>
+  <li>"Denial" is the act of denying or refusing to admit something.</li>
+  </ul>
+  <section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>The Burnhams fall apart as Les quits his job in order to
+become a teenager, Carolyn decides to sleep with the
+enemy, and Jane and Ricky become very close friends.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>What <strong>the hell</strong> do you think you're doing?</em></p>
+  <ul>
+  <li>Note that "the hell" is often added to Wh- questions to express emotion such as frustration or anger.</li>
+  </ul>
+  <p><em><strong>Bench presses</strong>. I'm going <strong>to whale on my pecks</strong> and then I'm going to do my back.</em></p>
+  <ul>
+  <li>"Bench presses" is a way of lifting weights.</li>
+  <li>"Pecks" are a slang term for chest (pectoral) muscles, but the expression above is rarely if ever used. This is Lester's way of saying he's going to increase his chest and back muscles.</li>
+  </ul>
+  <p><em>I see you've been smoking <strong>pot</strong> now.</em></p>
+  <ul>
+  <li>"Pot" is the most common way of referring to marijuana.</li>
+  </ul>
+  <p><em>I think using illegal <strong>psychotropic substances</strong>...is a very <strong>positive example to set</strong> for our daughter.</em></p>
+  <ul>
+  <li>"Psychotropic substances" is a medical way of referring to drugs like marijuana that cause people to have strange psychological effects.</li>
+  <li>If you "set a positive example" for a person, you act in such a way that they can look up to you as an example for how they should act.</li>
+  </ul>
+  <p><em><strong>You're one to talk</strong>, you <strong>bloodless money-grubbing freak</strong>.</em></p>
+  <ul>
+  <li>A classic line. "You're one to talk" is a way of telling a person that they are being hypocritical, or saying one thing but behaving differently.</li>
+  <li>"Bloodless" means cowardly or fearful, but this is rarely used.</li>
+  <li>If a person is "money-grubbing," they're always looking for ways to make money in any possible way, and a "freak" is a strange or bizarre person.</li>
+  </ul>
+  <p><em>You have such <strong>hostility</strong> in you.</em></p>
+  <ul>
+  <li>"Hostility" is anger toward another person.</li>
+  </ul>
+  <p><em>You will not <strong>get away with</strong> this.</em></p>
+  <ul>
+  <li>"To get away with" something is to be able to do it without being caught or punished, even if it is a bad or illegal action.</li>
+  </ul>
+  <p><em>My job basically <strong>consists</strong> of <strong>masking</strong> my <strong>contempt</strong> for the assholes in charge, and at least once a day retiring to the men's room so I can jerk off....</em></p>
+  <ul>
+  <li>"To consist of" means to be made of.</li>
+  <li>"To mask" something is to hide it, and "contempt" is a powerful noun meaning complete lack of respect, or disdain.</li>
+  </ul>
+  <p><em>...while I <strong>fantasize</strong> a life that doesn't so closely <strong>resemble</strong> hell.</em></p>
+  <ul>
+  <li>"To fantasize" about something is to dream about it, and "to resemble" something is to look like it.</li>
+  </ul>
+  <p><em>For 14 years, I've been a <strong>whore</strong> for the advertising industry.</em></p>
+  <ul>
+  <li>A widely used word for a prostitute.</li>
+  </ul>
+  <p><em>What sort of <strong>severance package</strong> is management prepared to offer me?...</em></p>
+  <ul>
+  <li>A "severance package" is the money and other items that a company offers an employee after they are fired or let go.</li>
+  </ul>
+  <p><em>..considering the information I have about our <strong>editorial director</strong> buying <strong>pussy</strong> with company money?</em></p>
+  <ul>
+  <li>An "editorial director" is the person responsible for the contents of a magazine or newspaper.</li>
+  <li>"Pussy" is a crude term for female sex organs, or in this case, for sex in general.</li>
+  </ul>
+  <p><em>I think it would interest the <strong>IRS</strong>, since it technically <strong>constitutes fraud</strong>.</em></p>
+  <ul>
+  <li>The IRS is the Internal Revenue Service, which is the federal government agency that collects all taxes.</li>
+  <li>"To constitute" means to be made of, or be equal to.</li>
+  <li>"Fraud" is a legal term that refers to the illegal act of lying to or deceiving others in order to gain personally.</li>
+  </ul>
+  <p><em>I'm sure some of our advertisers and <strong>rival publications</strong> might like to know about it as well, not to mention....Craig's wife.</em></p>
+  <ul>
+  <li>A "rival" is a major competitor, and a publication is usually either a book, magazine or newspaper.</li>
+  </ul>
+  <p><em>One year's salary with <strong>benefits</strong>.</em></p>
+  <ul>
+  <li>In this context, "benefits" include the various things that employers give employees besides money, including health insurance, retirement pay and paid vacations.</li>
+  </ul>
+  <p><em>What do you say if I throw in a little <strong>sexual harassment</strong> charge, <strong>to boot</strong>?</em></p>
+  <ul>
+  <li>A "sexual harassment" charge is an official accusation that one person has tried to intimidate or scare the other into offering sexual favors while on the job.</li>
+  <li>"To boot" is a colloquial way of saying "in addition."</li>
+  </ul>
+  <p><em>Can you prove that you didn't offer to save my job if I let you <strong>blow</strong> me?</em></p>
+  <ul>
+  <li>In this case, to "blow" a person is to give them oral sex (A "blow job" is the most common way of referring to oral sex on a man).</li>
+  </ul>
+  <p><em>Man, you are one <strong>twisted </strong>fuck.</em></p>
+  <ul>
+  <li>If a person is "twisted," they are immoral or psychologically disturbed.</li>
+  </ul>
+  <p><em>Let's just say that things were a little <strong>hectic</strong> around the house.</em></p>
+  <ul>
+  <li>If things are "hectic," they are filled with hurried movements and excitement.</li>
+  </ul>
+  <p><em>Yes, we are <strong>splitting up</strong>.</em></p>
+  <ul>
+  <li>"To split up" is an alternative way of saying to break up.</li>
+  </ul>
+  <p><em>According to her, I'm too <strong>focused</strong> on my career...as if being <strong>driven to succeed</strong> is some kind of <strong>character flaw</strong>.</em></p>
+  <ul>
+  <li>If a person is "focused" on something, they concentrate and spend much time on it.</li>
+  <li>A person who is "driven to succeed" is determined to do well or be successful.</li>
+  <li>A "character flaw" is a personal trait or habit that is considered negative, such as willingness to lie.</li>
+  </ul>
+  <p><em>It is my philosophy that in order to be successful, one must <strong>project</strong> an image of success at all times.</em></p>
+  <ul>
+  <li>"To project" an image is to constantly act as if that image or reputation is accurate and true.</li>
+  </ul>
+  <p><em>I think maybe you forgot your <strong>medication</strong> today, <strong>mental boy</strong>.</em></p>
+  <ul>
+  <li>"Medication" is a word for medicine, in this case for a mental disease.</li>
+  <li>"Mental boy" is a silly insult for an emotionally disturbed person.</li>
+  </ul>
+  <p><em>I don't want to <strong>end up</strong> <strong>hacked to pieces</strong> in a <strong>dumpster</strong> somewhere.</em></p>
+  <ul>
+  <li>"To end up" is to finish or complete.</li>
+  <li>If a person is "hacked to pieces," they have been cut into small pieces by an ax or knife.</li>
+  <li>A "dumpster" is a large trash container often used for big apartment buildings.</li>
+  </ul>
+  <p><em>You like being <strong>nailed</strong> by the king?! :: Yeah, fuck me, <strong>your majesty</strong>.</em></p>
+  <ul>
+  <li>In this case, to "nail" a person is to have sex with them.</li>
+  <li>"Your majesty" is the expression one uses to address a King or Queen.</li>
+  </ul>
+  <p><em>I'd like to <strong>fill out an application</strong>. :: There's no job for manager, just for <strong>counter</strong>.</em></p>
+  <ul>
+  <li>If you "fill out a job application," you write in information about yourself on a standard question form to see if an employer is interested in you.</li>
+  <li>The "counter" at a fast food place is the flat surface where the money and food are exchanged.</li>
+  </ul>
+  <p><em>I don't think you'd <strong>fit in</strong> here.</em></p>
+  <ul>
+  <li>If a person doesn't "fit in" at a particular place, they would not be comfortable being there, perhaps because everyone else is so different.</li>
+  </ul>
+  <p><em>I'm sure there's been <strong>amazing technological advances</strong> in the industry, but surely you must have some sort of <strong>training program</strong>.</em></p>
+  <ul>
+  <li>"Amazing" is a powerful adjective meaning incredible or fantastic.</li>
+  <li>"Technological advances" refer to things such as computers, cell phones, etc.</li>
+  <li>A "training program" teaches people new skills.</li>
+  </ul>
+  <p><em>That was exactly what I needed. "The <strong>royal</strong> treatment," <strong>so to speak</strong>.</em></p>
+  <ul>
+  <li>"Royal" is an adjective that refers to the king, queen or monarchy (though the word is also widely used in advertising).</li>
+  <li>"So to speak" is an expression that is used to show that the words one just used can be interpreted or mean different things.</li>
+  </ul>
+  <p><em>I was so <strong>stressed out</strong>.</em></p>
+  <ul>
+  <li>A person who is "stressed out" is feeling very tense or nervous.</li>
+  </ul>
+  <p><em>I go to this <strong>firing range</strong> downtown, and I <strong>pop off a few rounds</strong>.</em></p>
+  <ul>
+  <li>A "firing range" is a place where people practice shooting guns, and to "pop off a few rounds" is to shoot a few times, usually firing at a target.</li>
+  </ul>
+  <p><em>People who used to live there fed the <strong>stray cats</strong>, so they were always around, and it <strong>drove my mother nuts</strong>.</em></p>
+  <ul>
+  <li>"Stray cats" are those cats in the neighborhood that don't belong to anybody.</li>
+  <li>If something "drives a person nuts," it makes them upset.</li>
+  </ul>
+  <p><em>This is where my dad <strong>hangs out</strong>. :: I take it he has <strong>a thing for guns</strong>.</em></p>
+  <ul>
+  <li>"To hang out" in a place is to pass a lot of time there.</li>
+  <li>If a person "has a thing" for guns, they like guns a lot.</li>
+  </ul>
+  <p><em>One of my clients is a <strong>locksmith</strong>.</em></p>
+  <ul>
+  <li>A person who works with keys and locks.</li>
+  </ul>
+  <p><em>It's like official state <strong>china</strong> of the <strong>3<sup>rd</sup> Reich</strong>.</em></p>
+  <ul>
+  <li>In this case, "china" refers to fine plates, cuts and silverware.</li>
+  <li>The "3<sup>rd</sup> Reich" was Germany's Nazi government under Hitler.</li>
+  </ul>
+  <p><em>There's a whole <strong>subculture</strong> who collect this Nazi shit.</em></p>
+  <ul>
+  <li>A "subculture" is a group of people within society that have a specific interest or lifestyle that is different from the majority.</li>
+  </ul>
+  <p><em>This incredibly <strong>benevolent force</strong> wanted me to know that there was no reason to be afraid, ever.</em></p>
+  <ul>
+  <li>If a person is "benevolent," they are nice or kind and have good intentions. In this case, a "force" is a general power, such as a God or nature itself.</li>
+  </ul>
+  <p><em>Sometime there's so much beauty in the world I feel that I <strong>can't take it</strong>, and my heart is just going to <strong>cave in</strong>.</em></p>
+  <ul>
+  <li>If a person "can't take it," they don't have the strength or energy to deal with it.</li>
+  <li>If a building "caves in," it collapses or falls down.</li>
+  </ul>
+  <p><em>I quit my job and then I told my boss <strong>to go fuck himself</strong>, and then I <strong>blackmailed</strong> him for almost $60,000.</em></p>
+  <ul>
+  <li>Note that after you tell a person "fuck you," you can then tell a 3<sup>rd</sup> person that you told them to "go fuck themselves." Very crude, but useful.</li>
+  <li>"To blackmail" a person is to threaten to reveal something they want kept secret, unless they agree to pay money.</li>
+  </ul>
+  <p><em>Your mother prefers I go through life like a fucking prisoner while she keeps my <strong>dick</strong> in a <strong>mason jar</strong> under the sink.</em></p>
+  <ul>
+  <li>"Dick" is a slang word for a penis, and a "mason jar" is a wide-mouthed jar that is commonly used for storing home-made jam.</li>
+  </ul>
+  <p><em><strong>How dare you</strong> speak to me like that in front of her!</em></p>
+  <ul>
+  <li>"How dare you" is a very strong way of expressing disapproval.</li>
+  </ul>
+  <p><em>I <strong>marvel</strong> that you can be so <strong>contemptuous</strong> of me on the day you lose your job.</em></p>
+  <ul>
+  <li>"To marvel" at something is to be amazed by it.</li>
+  <li>To be "contemptuous" of a person is to look down on them with disgust or anger.</li>
+  </ul>
+  <p><em>I want to thank you for putting me under the added pressure of being the <strong>sole breadwinner</strong> now.</em></p>
+  <ul>
+  <li>"Sole" is an interesting adjective which means only.</li>
+  <li>The "breadwinner" of the house is the person who makes the money.</li>
+  </ul>
+  <p><em>Don't give a second thought as to who is going to pay the <strong>mortgage</strong>.</em></p>
+  <ul>
+  <li>The "mortgage" is the monthly payment that is made to a bank after having borrowed money to buy a house.</li>
+  </ul>
+  <p><em>You don't complain? :: Yeah, let's bring in <strong>the laugh meter</strong> and see how loud it gets on that one.</em></p>
+  <ul>
+  <li>A machine that measures how loud the laughter is for an audience.</li>
+  </ul>
+  <p><em>From now on were going <strong>to alternate</strong> our dinner music, because <strong>frankly</strong>, I am really tired of this <strong>Lawrence Welk</strong> shit.</em></p>
+  <ul>
+  <li>"To alternate" two things is to go back and forth between them.</li>
+  <li>"Frankly" is a common way of starting a sentence when you want to be totally honest.</li>
+  <li>"Lawrence Welk" was a conductor who was very famous for very soft, bland and popular elevator music.</li>
+  </ul>
+  <p><em>I wish you hadn't <strong>witnessed</strong> that awful <strong>scene</strong> tonight, but in a way, I'm <strong>glad</strong>.</em></p>
+  <ul>
+  <li>"To witness" something is to see or observe it. In this case, a "scene" is a dramatic, loud or emotional argument.</li>
+  <li>If a person is "glad," they're satisfied or happy.</li>
+  </ul>
+  <p><em>You cannot count on anyone except yourself.</em></p>
+  <ul>
+  <li>The words that a person would say who has been badly hurt by someone they had trusted.</li>
+  </ul>
+  <p><em>Look, I really don't feel like having <strong>a Kodak moment</strong> here, OK?</em></p>
+  <ul>
+  <li>A famous expression from a Kodak film ad; An emotional or sweet event or incident between two people that both will remember forever.</li>
+  </ul>
+  <p><em>You <strong>ungrateful</strong> little <strong>brat</strong>!</em></p>
+  <ul>
+  <li>A person who is "ungrateful" does not appreciate what they have been given, and a "brat" is a badly-mannered person, who is usually a child.</li>
+  </ul>
+  <p><em>When I was your age, I lived in a <strong>duplex</strong>.</em></p>
+  <ul>
+  <li>A building with two separate living units.</li>
+  </ul>
+  <p><em><strong>You little bastard</strong>! How did you get in there?</em></p>
+  <ul>
+  <li>A crude and classic insult. Historically, the word "bastard" means a son who doesn't know his father. It has changed to include a mean or abusive man.</li>
+  </ul>
+  <p><em>Fight back, you <strong>little pussy</strong>! :: No Sir, I won't fight you.</em></p>
+  <ul>
+  <li>In this case, a "pussy" is a coward, or a person who is too scared to act.</li>
+  </ul>
+  <p><em>I <strong>picked</strong> the lock, Sir.</em></p>
+  <ul>
+  <li>"To pick" a lock is to open it, usually by using a small tool.</li>
+  </ul>
+  <p><em>What are you looking for, money? Are you on <strong>dope</strong> again?</em></p>
+  <ul>
+  <li>"Dope" is a common colloquial word for illegal drugs like marijuana.</li>
+  </ul>
+  <p><em>You need <strong>discipline</strong>. :: Don't <strong>give up on me</strong>, Dad.</em></p>
+  <ul>
+  <li>"Discipline" is either self-control or the threat of punishment, usually to get a child to behave correctly.</li>
+  <li>"To give up on" a person is to decide that they will not ever succeed.</li>
+  </ul>
+  <p><em>I thought you'd be hopeless, but you're a <strong>natural</strong>.</em></p>
+  <ul>
+  <li>A person who is "a natural" at a particular job or skill is very good at it, even if they have not done it in the past.</li>
+  </ul>
+  <section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lester catches Carolyn with Buddy as Jane and Ricky
+grow closer, but Ricky soon has big problems with his dad.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>1970 Pontiac Firebird! I rule!</em></p>
+  <ul>
+  <li>The Pontiac Firebird is a type of very sporty car. "I rule" is a teenager's way of saying that they are great (or more colloquially, cool), for having done something cool (In this case, for having bought the Firebird).</li>
+  </ul>
+  <p><em>Shouldn't you have <strong>consulted</strong> me first?</em></p>
+  <ul>
+  <li>"To consult" with a person is to talk with them in order to get their opinion in a particular topic or issue.</li>
+  </ul>
+  <p><em>When did you become so....<strong>joyless</strong>.</em></p>
+  <ul>
+  <li>A rare but powerful word for unhappy.</li>
+  </ul>
+  <p><em>Whatever happened to that girl who used to fake seizures at <strong>frat parties</strong> when she got bored?</em></p>
+  <ul>
+  <li>A "seizure" is a sudden medical condition in which people often begin to shake violently and lose control over their bodily functions.</li>
+  <li>A "frat party" is a party at a college fraternity, which is usually a house where many male students live who love to drink beer.</li>
+  </ul>
+  <p><em>We used to run up to the roof...to <strong>flash</strong> the traffic helicopters.</em></p>
+  <ul>
+  <li>If you "flash" a person, you pull down your pants in order to very briefly show them your butt. It's a bit hard to flash a helicopter!</li>
+  </ul>
+  <p><em>Lester, you're going to <strong>spill</strong> beer on the couch.</em></p>
+  <ul>
+  <li>"To spill" a liquid is to let it accidentally pour out of a container.</li>
+  </ul>
+  <p><em>This is a $4,000 couch, <strong>upholstered</strong> in Italian <strong>silk</strong>!</em></p>
+  <ul>
+  <li>"Upholstery" is material that is used to cover furniture.</li>
+  <li>"Silk" is a very fine and expensive thread that is used to make cloth.</li>
+  </ul>
+  <p><em>It's just <strong>stuff</strong>, and it's become more important to you than life. Honey, that's just <strong>nuts</strong>.</em></p>
+  <ul>
+  <li>Here, "stuff" is just another word for things, and if something is "nuts," then it is crazy or insane.</li>
+  </ul>
+  <p><em>I got <strong>kicked out</strong>.</em></p>
+  <ul>
+  <li>To be "kicked out" of a school is to be officially removed.</li>
+  </ul>
+  <p><em>Dad and I had this huge fight, and the next day at school, some kid made <strong>a crack</strong> about my haircut, and I just <strong>snapped</strong>.</em></p>
+  <ul>
+  <li>In this context, "a crack" is a joke or perhaps disrespectful remark.</li>
+  <li>If a person "snaps," they lose their temper and often act violently (To snap is to literally break off, or to break into two or more pieces).</li>
+  </ul>
+  <p><em>He's a <strong>total asshole</strong>. He's got <strong>this crush on</strong> my friend, Angela, and it's disgusting.</em></p>
+  <ul>
+  <li>A "total asshole" is a complete jerk, creep or bastard.</li>
+  <li>"To have a crush" on a person is to secretly like them in a romantic way.</li>
+  </ul>
+  <p><em>I know you think my dad's <strong>harmless</strong>, but you're wrong.</em></p>
+  <ul>
+  <li>If a person is "harmless," they're not dangerous or harmful to anybody.</li>
+  </ul>
+  <p><em>He's doing <strong>massive</strong> psychological damage to me.</em></p>
+  <ul>
+  <li>A powerful adjective meaning extremely big, huge or enormous.</li>
+  </ul>
+  <p><em>I've got almost $3,000. Of course, I was saving it up for <strong>a boob job</strong>.</em></p>
+  <ul>
+  <li>A silly expression for plastic surgery to make a woman's breasts bigger ("Boobs" is a colloquial word for breasts, and it is a less offensive word than "tits").</li>
+  </ul>
+  <p><em>Today is the first day of the rest of your life.</em></p>
+  <ul>
+  <li>A favorite clich&eacute; for people who want to start their lives over.</li>
+  </ul>
+  <p><em>Dad, you <strong>stare</strong> at her all the time. :: Jane, you better watch yourself, or you're going to turn into a real <strong>bitch</strong>, just like your mother.</em></p>
+  <ul>
+  <li>"To stare at" somebody is to look at them for an extended period of time, without turning away.</li>
+  <li>A "bitch" is a mean, abusive or unpleasant female. Very crude and offensive but widely used.</li>
+  </ul>
+  <p><em>I need a super smiley with cheese, <strong>A-S-A-P.</strong></em></p>
+  <ul>
+  <li>"As Soon As Possible." A very useful abbreviation (The super smiley is a cheeseburger).</li>
+  </ul>
+  <p><em>I think we deserve a little <strong>junk food</strong> after the <strong>workout</strong> we had this morning.</em></p>
+  <ul>
+  <li>"Junk food" is unhealthy food like hamburgers and French fries.</li>
+  <li>A "workout" usually refers to vigorous exercise, although here Carolyn is talking about sex.</li>
+  </ul>
+  <p><em>We were just at a <strong>seminar</strong>. Buddy, this is my husband.</em></p>
+  <ul>
+  <li>A "seminar" is a public lecture or presentation on a particular topic.</li>
+  </ul>
+  <p><em><strong>Whoa</strong>, you are so <strong>busted</strong>! :: This really doesn't concern you.</em></p>
+  <ul>
+  <li>"Whoa" is a common way of expressing emotion such as surprise.</li>
+  <li>If a person has been "busted," they have probably been caught doing something that is illegal or embarrassing.</li>
+  </ul>
+  <p><em>Actually, Jamie is senior <strong>drive-through</strong> manager, so you are on her <strong>turf</strong>.</em></p>
+  <ul>
+  <li>The "drive-through" part of a fast-food restaurant is where people in cars pick up their food.</li>
+  <li>"Turf" is a interesting word for land or territory.</li>
+  </ul>
+  <p><em>I guess we could <strong>cool it</strong> for a while.</em></p>
+  <ul>
+  <li>In this context, to "cool it" is to stop it, at least until things calm down.</li>
+  </ul>
+  <p><em>So, you and <strong>psycho boy</strong> are like fucking on a regular basis.</em></p>
+  <ul>
+  <li>"Psycho boy" is a disrespectful way of referring to a person who may have emotional problems.</li>
+  </ul>
+  <p><em>Now that you have a boyfriend, you're like <strong>above it</strong>?</em></p>
+  <ul>
+  <li>In this context, to be "above it" is to be more concerned with other things, or to think that it is not so important.</li>
+  </ul>
+  <p><em><strong>Put up a fight, dude</strong>. You are like, such <strong>a push-over</strong>.</em></p>
+  <ul>
+  <li>"To put up a fight" is to try and fight back.</li>
+  <li>"Dude" is a very popular word with which young males address each other.</li>
+  <li>A "push-over" is a person who easily agrees to do anything.</li>
+  </ul>
+  <p><em>You should learn to <strong>roll a joint</strong>.</em></p>
+  <ul>
+  <li>"To roll a joint" is to make a marijuana cigarette.</li>
+  </ul>
+  <p><em>I should probably go see what Jane's <strong>up to</strong>.</em></p>
+  <ul>
+  <li>A slangy way of asking what a person is doing.</li>
+  </ul>
+  <p><em>I will not sit back and watch my only son become a <strong>cocksucker</strong>. :: Jesus, <strong>what is it with you</strong>?!</em></p>
+  <ul>
+  <li>A "cock" is a crude term for a penis, and thus a "cocksucker" is a crude term for a person who performs oral sex on men (especially other men).</li>
+  <li>"What is it with you?" can be a way of expressing great anger.</li>
+  </ul>
+  <p><em>You mean that? :: You're <strong>damn straight</strong> I do.</em></p>
+  <ul>
+  <li>A slangy and somewhat dated way of saying completely correct.</li>
+  </ul>
+  <p><em>I'd rather you were dead than be a fucking <strong>faggot</strong>.</em></p>
+  <ul>
+  <li>A very crude slur (insult word) for a gay man.</li>
+  </ul>
+  <p><em>You should see me fuck. I'm the best <strong>piece of ass</strong> in three states.</em></p>
+  <ul>
+  <li>Another crude term for a person who is looked on as nothing more than a sex object.</li>
+  </ul>
+  <p><em>The constant <strong>cycle of victimhood</strong>.</em></p>
+  <ul>
+  <li>In this case, the idea that a person who feels that they are a victim of society will always be so until they change their actions or attitudes.</li>
+  </ul>
+  <p><em>You're way too <strong>uptight</strong> about sex. :: Just don't fuck my dad!</em></p>
+  <ul>
+  <li>If a person is "uptight" about something, they are tense or nervous about it.</li>
+  </ul>
+  <p><em>You're just a kid, and he's like <strong>a mental case</strong>.</em></p>
+  <ul>
+  <li>Another slangy way of referring to a crazy or disturbed person.</li>
+  </ul>
+  <p><em>We can use my <strong>plastic surgery</strong> money.</em></p>
+  <ul>
+  <li>Surgery that is designed to improve a person's physical appearance.</li>
+  </ul>
+  <p><em>I know people in the city who can help us <strong>get set up</strong>. :: What, other <strong>drug dealers</strong>?</em></p>
+  <ul>
+  <li>In this case, "to get set up" is to find a new home and establish a new life.</li>
+  <li>"Drug dealers" are people who sell illegal drugs on city streets.</li>
+  </ul>
+  <p><em>You'd be <strong>out of your mind</strong> to go with him.</em></p>
+  <ul>
+  <li>If a person is "out of their mind," they're crazy or emotionally unstable.</li>
+  </ul>
+  <p><em><strong>Go fuck yourself</strong>! :: Hey, shut up, bitch.</em></p>
+  <ul>
+  <li>An honorable if equally crude alternative to "fuck you!"</li>
+  </ul>
+  <p><em>You two deserve each other.</em></p>
+  <ul>
+  <li>The expression you'd say to a couple when you are equally upset at both partners.</li>
+  </ul>
+  <section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lester Burnham has the strangest day of his life.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Jesus, man, you're <strong>soaked</strong>.</em></p>
+  <ul>
+  <li>If a person is "soaked," they are completely wet, usually from rain.</li>
+  </ul>
+  <p><em>Where's your wife? :: Probably out fucking that <strong>dorky</strong> prince of real estate asshole.</em></p>
+  <ul>
+  <li>"Dork" is a slang word for a jerk or fool, though <em>dorky</em> is rarely used.</li>
+  </ul>
+  <p><em>Our marriage is <strong>just for show</strong>; A commercial for how normal we are, when <strong>we're anything but</strong>.</em></p>
+  <ul>
+  <li>If a marriage is "just for show," it is kept up just so that people will think the partners are still doing well, but not for any other reason.</li>
+  <li>Here, "We're anything but" implies that the next word is "normal."</li>
+  </ul>
+  <p><em>Do you want a <strong>sip</strong>? :: Sure.</em></p>
+  <ul>
+  <li>A "sip" is a the act of drinking just a small amount at a time.</li>
+  </ul>
+  <p><em>This is my first time. :: You're <strong>kidding</strong>.</em></p>
+  <ul>
+  <li>If a person is "kidding," they are joking or not being serious.</li>
+  </ul>
+  <p><em>I'm still a little <strong>weirded out</strong>, but I feel better. Thanks.</em></p>
+  <ul>
+  <li>If a person is "weirded out," they are felling a little strange, or perhaps scared or shaken. An interesting but very slangy phrasal verb.</li>
+  </ul>
+  <p><em>I've always heard that your entire life <strong>flashes</strong> in front of you the second before you die.</em></p>
+  <ul>
+  <li>In this case, "to flash" is to pass by extremely quickly.</li>
+  </ul>
+  <p><em>That one second <strong>stretches on forever</strong>, like an ocean of time.</em></p>
+  <ul>
+  <li>In this case, "to stretch on forever" is simply to go on forever ("To stretch" is to grow longer, often by pulling two sides apart).</li>
+  </ul>
+  <p><em>Yellow leaves from the <strong>maple trees</strong> that lined our street.</em></p>
+  <ul>
+  <li>A "maple tree" contains maple, which is the delicious syrup that Americans love to put on their breakfast pancakes.</li>
+  </ul>
+  <p><em>I guess I could be pretty <strong>pissed off</strong> about what happened to me, but it's hard to stay mad when there's so much beauty in the world.</em></p>
+  <ul>
+  <li>If a person is "pissed off," they are very angry or upset. Very common.</li>
+  </ul>
+  <p><em>My heart fills up like a balloon that's about to <strong>burst</strong>.</em></p>
+  <ul>
+  <li>If a balloon "bursts," it explodes because it has too much air or water.</li>
+  </ul>
+  <p><em>And then it <strong>flows through</strong> me like rain, and I can't feel anything but <strong>gratitude</strong>, for every single moment of my stupid little life.</em></p>
+  <ul>
+  <li>If a liquid "flows through" a body, it travels smoothly through it, perhaps like a river.</li>
+  <li>"Gratitude" is an important word meaning appreciation or gratefulness.</li>
+  </ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. Are the Burnhams really a typical American family, or are they in fact more dysfunctional ("screwed up") than most? What about compared to your family?</p>
+  <p>2. Why are Lester and Carolyn so unhappy? Should they be?</p>
+  <p>3. Which characters had public images that hid who they really were, and which ones seemed to be completely honest?</p>
+  <p>4. Do you think most men over 40 dream of being 18 again?</p>
+  <p>5. What did you like and not like about this movie?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

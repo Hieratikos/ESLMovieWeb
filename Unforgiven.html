@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html>
+<title>Unforgiven</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* orange theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fff4ec !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ffdabf !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ffb47e !important}
+.w3-theme-l2 {color:#000 !important; background-color:#ff8f3e !important}
+.w3-theme-l1 {color:#fff !important; background-color:#fd6900 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#aa4700 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#973f00 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#843700 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#712f00 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#5e2700 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fff4ec !important}
+.w3-theme-dark {color:#fff !important; background-color:#5e2700 !important}
+.w3-theme-action {color:#fff !important; background-color:#5e2700 !important}
+
+.w3-theme {color:#fff !important; background-color:#bd4f00 !important}
+.w3-text-theme {color:#bd4f00 !important}
+.w3-border-theme {border-color:#bd4f00 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#bd4f00 !important}
+.w3-hover-text-theme {color:#bd4f00 !important}
+.w3-hover-border-theme:hover {border-color:#bd4f00 !important}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #fd6900;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body style="max-width:100%;margin-left:16px;margin-right:16px;font-family: 'Open Sans', sans-serif; border:1px solid #fd6900";>
+<nav class="navbar navbar-fixed-top" role="navigation" style="border:2px;border-color:#fd6900;border-style:solid;margin-left:16px;margin-right:16px;">
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#part8" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 8</a>
+    <a href="#part9" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 9</a>
+    <a href="#part10" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 10</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">Unforgiven</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/Unforgiven.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    Retired Old West gunslinger William Munny reluctantly takes on one last job, with the help of his old partner and a young man.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Rated R | 2 hrs 11 min | Drama, Western | 1992
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Bill Munny</td><td>Clint Eastwood</td>
+  </tr>
+  <tr>
+    <td colspan="2">A poor pig farmer with two young children who used to be considered one of the greatest but
+      meanest gun fighters in the West. After years of living without violence, he agrees to help kill two cowboys
+      who had badly hurt a prostitute, in exchange for a share of a $1,000 reward.</td>
+  </tr>
+  <tr>
+    <td>Little Bill Daggett</td><td>Gene Hackman</td>
+  </tr>
+  <tr>
+    <td colspan="2">The violent Sheriff  of the tiny town of Big Whiskey, Wyoming.</td>
+  </tr>
+  <tr>
+    <td>Ned Logan</td><td>Morgan Freeman</td>
+  </tr>
+  <tr>
+    <td colspan="2">Will's black friend who agrees to help Will and the Kid.</td>
+  </tr>
+  <tr>
+    <td>English Bob</td><td>Richard Harris</td>
+  </tr>
+  <tr>
+    <td colspan="2">An English gunfighter who comes to the town of Little Whiskey,
+	but soon finds himself in big trouble with Little Bill.</td>
+  </tr>
+  <tr>
+    <td>The 'Schofield Kid'</td><td>Jaimz Woolvett</td>
+  </tr>
+  <tr>
+    <td colspan="2">A teenager from Kansas who had convinced Will to help him kill the two cowboys in order to get the reward money.</td>
+  </tr>
+  <tr>
+    <td>W.W. Beauchamp</td><td>Saul Rubinek</td>
+  </tr>
+  <tr>
+    <td colspan="2">A writer from the Eastern part of the United States who writes about
+	gunfighters, cowboys and others in the Western part of the US.</td>
+  </tr>
+  <tr>
+    <td>Skinny Dubois</td><td>Anthony James</td>
+  </tr>
+  <tr>
+    <td colspan="2">A businessman who owns the local bar, and who is also the town pimp (a person who manages the business affairs of prostitutes).</td>
+  </tr>
+  <tr>
+    <td>Delilah Fitzgerald</td><td>Anna Levine</td>
+  </tr>
+  <tr>
+    <td colspan="2">A young prostitute from Boston who is attacked with a knife and whose face is badly cut up by a male customer,
+      simply because she giggled (laughed gently) when she saw how small his penis was.</td>
+  </tr>
+  <tr>
+    <td>Strawberry Alice</td><td>Frances Fisher</td>
+  </tr>
+  <tr>
+    <td colspan="2">The leader of the prostitutes who convinces the others to put together $1,000 in reward money for any person who will kill Delilah's attackers.</td>
+  </tr>
+  <tr>
+    <td>Quick Mike</td><td>David Mucci</td>
+  </tr>
+  <tr>
+    <td colspan="2">The violent cowboy who badly cut-up Delilah's face.</td>
+  </tr>
+  <tr>
+    <td>Sally Two Trees</td><td>Cherrilene Cardinal</td>
+  </tr>
+  <tr>
+    <td colspan="2">The Native-American wife of Ned, who still does not trust Will.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+    This film is considered one of the truly great Westerns, a type of movie that deals with
+    life in the "Wild West" of the 19th century. It is the story of Will Munny, a poor Kansas
+    pig farmer who had been considered one of the cruelest and best gunfighters in the West,
+    but who had become much less violent and gentler ever since he got married. As the movie
+    begins, Will is struggling to raise his two young children alone because his wife had died
+    of a disease two years earlier.
+<p>
+    Will is pulled back into a life of violence after events that take place in the tiny town
+    of Big Whiskey, Wyoming, in 1880. One day, a young prostitute named Delilah is horribly hurt
+    by a cowboy who attacks her face with a knife. The sheriff of the town refuses to punish the
+    cowboys, but instead forces them to pay the prostitutes' business manager several horses, for
+    the loss of income that he will suffer since Delilah will no longer be able to charge much
+    money for sex. The prostitutes working with her become so offended and angry by this situation
+    that they soon offer a $1,000 bounty (reward) to the first people that will kill the cowboys who
+    had cut up Delilah's face.
+<p>
+  Will hears of this news from the Schofield kid, who had come to ask if he would help him kill the
+  cowboys in exchange for a part of the reward money. Reluctantly, Will agrees, and soon Will's old
+  friend Ned also joins them. The three of them travel to Northern Wyoming in hopes of finding the
+  cowboys and collecting the money, but soon things start to go wrong in this very violent part of
+  the American West.
+<p>
+  An Important Note on the Language Used in the Movie: Although this film is a good look at life in
+  the last years of the Western frontier, the language that is used should be learned with caution.
+  This is because while there is a lot of useful vocabulary here, the dialog is filled with old and
+  ungrammatical English that should be understood but avoided when speaking. Among the most common
+  examples found throughout the movie are the following:
+<br>
+-Double (and triple!) negatives: "She didn't know no better."<br>
+-The constant use of ain't: "You ain't going to whip them?"<br>
+-Bad verb conjugation: "We was tired."<br>
+-The use of them between verb and noun: "Get them horses in the barn."
+<p>
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>A horrible cowboy attacks Delilah, but
+Little Bill sees only a crime against property.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+  <p>
+  <p><strong>New Words and Expressions:</strong></p>
+  <p><em>She was a <strong>comely</strong> young woman and not without <strong>prospects</strong>.</em></p>
+  <ul>
+  <li>"Comely" is attractive or pleasant, but it's rarely used.</li>
+  <li>"Prospects" are possibilities, and in this case, refers to potential husbands.</li>
+  </ul>
+  <p><em>A man of <strong>notoriously vicious</strong> and <strong>intemperate disposition</strong>.</em></p>
+  <ul>
+  <li>"Notoriously" means widely known in a very negative way.</li>
+  <li>"Vicious" is a useful adjective meaning extremely cruel or dangerous.</li>
+  <li>If a person has an "intemperate disposition," they have a violent temper.</li>
+  </ul>
+  <p><em>Smallpox.</em></p>
+  <ul>
+  <li>A well known disease that has been largely eliminated from the world.</li>
+  </ul>
+  <p><em>Billiards.</em></p>
+  <ul>
+  <li>A game played on a cloth covered table with shiny balls and long sticks which are used to push the balls into pockets on the side of the table.</li>
+  </ul>
+  <p><em>I'll <strong>brand</strong> you like a <strong>damn steer</strong>!</em></p>
+  <ul>
+  <li>"To brand" a cow is to burn letters or numbers into its skin with a hot iron.</li>
+  <li>"Damn" is a common and vulgar filler word that expresses anger or other similar emotions.</li>
+  <li>A "steer" is a male cow or ox.</li>
+  </ul>
+  <p><em>Hold that <strong>bitch</strong> still! Hold her or I'll cut her <strong>tits</strong> off.</em></p>
+  <ul>
+  <li>"Bitch" is a very crude and offensive word for a mean or unpleasant female.</li>
+  <li>"Tits" is a vulgar slang word for female breasts.</li>
+  </ul>
+  <p><em>Get off of her, <strong>cowboy</strong>.</em></p>
+  <ul>
+  <li>A famous word referring to men in the 19th century who drove cattle (cows) across the prairies and fields of the American West.</li>
+  </ul>
+  <p><em>I said let's get Little Bill here and <strong>settle</strong> this thing.</em></p>
+  <ul>
+  <li>"To settle" an argument is to decide on a solution that all can accept.</li>
+  </ul>
+  <p><em>She didn't even touch his <strong>poke</strong>.</em></p>
+  <ul>
+  <li>A slang word for a penis, but this is never used.</li>
+  </ul>
+  <p><em>When she seen he had a <strong>teensy</strong> little <strong>pecker</strong>, she gave a <strong>giggle</strong>. That's all.</em></p>
+  <ul>
+  <li>"Teensy" (or teeny) means very small or tiny.</li>
+  <li>A "pecker" is a slang word for a penis, though this is rare.</li>
+  <li>A "giggle" is a soft laugh.</li>
+  </ul>
+  <p><em><strong>Hang</strong> them, Little Bill!</em></p>
+  <ul>
+  <li>"To hang" a person is to kill them by tying a rope around their neck and letting them hang from the rope. A common form of execution in the Old West.</li>
+  </ul>
+  <p><em><strong>Step over</strong> to the office and get the <strong>bullwhip</strong>.</em></p>
+  <ul>
+  <li>"To step over" to a place is to walk a short distance.</li>
+  <li>A "bullwhip" is a whip, or long leather rope, with a large handle at the end.</li>
+  </ul>
+  <p><em>A <strong>whipping</strong>?! That's all they get after what they done?!</em></p>
+  <ul>
+  <li>A form of punishment in which a person is hit repeatedly with a whip, usually across the back.</li>
+  </ul>
+  <p><em>Whipping won't settle this; Here's a lawful contract between me and Delilah Fritzgerald, the cut whore.</em></p>
+  <ul>
+  <li>This is Skinny's way of saying that punishing the cowboys who attacked Delilah won't help him, since if Delilah is left scarred and ugly, that will ultimately cost Skinny money.</li>
+  </ul>
+  <p><em>I got a contract that represents <strong>an investment of capital</strong>.</em></p>
+  <ul>
+  <li>An expression that refers to the money that a person pays for a legal share in the profits that a company, or in this case, a prostitute, will eventually make.</li>
+  </ul>
+  <p><em>Damaged property!</em></p>
+  <ul>
+  <li>"Damaged" means harmed or broken, and this is a legal term that usually refers to machinery or buildings. Here though, Skinny is referring to Delilah as a piece of property.</li>
+  </ul>
+  <p><em>Like if I <strong>hamstrung</strong> one of those <strong>ponies</strong>.</em></p>
+  <ul>
+  <li>"To hamstring" a horse is to injure it so that it can't walk.</li>
+  <li>A "pony" is a young horse.</li>
+  </ul>
+  <p><em>You <strong>figure</strong> nobody would want to fuck her now.</em></p>
+  <ul>
+  <li>"To figure" is a common and colloquial way of saying to think.</li>
+  </ul>
+  <p><em>Guess you <strong>just as soon</strong> not have a trial, <strong>no fuss</strong>, huh?</em></p>
+  <ul>
+  <li>"To just as soon" do something is to prefer to do it instead of something else.</li>
+  <li>"No fuss" means without problems or excitement.</li>
+  </ul>
+  <p><em><strong>Come this fall</strong>, you bring in five ponies and give them to Skinny.</em></p>
+  <ul>
+  <li>One way of saying "When Fall arrives..."</li>
+  </ul>
+  <p><em>You ain't gonna whip them? :: I <strong>fined</strong> them instead, Alice.</em></p>
+  <ul>
+  <li>If a judge "fines" a person, they order them to pay a certain amount of money as punishment (rather than putting them in jail).</li>
+  </ul>
+  <p><em><strong>Hell</strong>, Alice, it ain't like they were <strong>tramps</strong> or <strong>loafers</strong>....they was just hard working boys that were <strong>foolish</strong>.</em></p>
+  <ul>
+  <li>"Hell" is a filler word at the beginning of sentences to show emotion.</li>
+  <li>"Tramps" are homeless people who don't work, and wander from place to place, while "loafers" are just lazy people who never work. Both words are a bit dated.</li>
+  <li>If you do something that is "foolish," it is silly, needlessly harmful or just stupid.</li>
+  </ul>
+  <p><em>If they were <strong>given over to wickedness</strong> in a regular way....</em></p>
+  <ul>
+  <li>"To be given over to" something is to be in the habit of doing it, though this expression is rarely used. "Wickedness" is evil or very bad.</li>
+  </ul>
+  <p><em>Alice, <strong>tend to</strong> Delilah.</em></p>
+  <ul>
+  <li>This is an old-fashioned way of saying to take care of.</li>
+  </ul>
+<p>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Alice and the girls offer a deadly $1,000 reward, and soon the
+Schofield Kid comes looking for Will in order to help him collect it.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>If Delilah doesn't care one way or the other, what are we getting so <strong>riled up</strong> about?</em></p>
+<ul>
+<li>"To get riled up" about something is to get very angry or upset about it.</li>
+</ul>
+<p><em>Just because we let those smelly fools ride us like horses don't mean we gotta let them brand us like horses.</em></p>
+<ul>
+<li>Note that "have got to"------&gt;"gotta" in causal speech.</li>
+</ul>
+<p><em>You don't look like no <strong>rootin-tootin</strong> <strong>son of a bitch cold blooded</strong> assassin. :: <strong>Say what</strong>?</em></p>
+<ul>
+<li>"Rootin-tootin" used to be slang for real or genuine, but it is no longer used.</li>
+<li>"Son of a bitch" is a very common and vulgar slang term for a mean or abusive man, and a person who is "cold blooded" is extremely cruel.</li>
+<li>"Say what?" is a funny way of asking for clarification after a person says something you do not understand.</li>
+</ul>
+<p><em><strong>Pa</strong>, hey pa!</em></p>
+<ul>
+<li>A word that some children use to address their fathers.</li>
+</ul>
+<p><em>Two more <strong>hogs</strong> got the fever.</em></p>
+<ul>
+<li>Another word for a pig.</li>
+</ul>
+<p><em>Now<strong>, hold on</strong>, Mister.</em></p>
+<ul>
+<li>A common way of saying stop or slow down, after a person starts to say a lot of nonsense or lies.</li>
+</ul>
+<p><em>You don't look like no <strong>meaner than hell</strong>, cold blooded damn killer.</em></p>
+<ul>
+<li>One way of referring to a very cruel or savage person.</li>
+</ul>
+<p><em>You're as cold as the snow, and don't have no <strong>weak nerve</strong> nor fear.</em></p>
+<ul>
+<li>If a person has a "weak nerve," they are often hesitant or scared to do something that would be considered dangerous.</li>
+<li>"Nerves" are the string-like parts of the body that carry messages to and from the brain.</li>
+</ul>
+<p><em>I ain't killed as many as you....because of my <strong>youth</strong>.</em></p>
+<ul>
+<li>The condition of being (relatively) young.</li>
+</ul>
+<p><em>It's <strong>on account of</strong> my Schofield model Smith and Wesson <strong>pistol</strong>.</em></p>
+<ul>
+<li>"On account of" is another way of saying "because of...," and is very widely used in this film.</li>
+<li>The Schofield was a type of gun produced by the Smith and Wesson Company. A "pistol" is a handgun.</li>
+</ul>
+<p><em><strong>How about it</strong>? How about being my partner?</em></p>
+<ul>
+<li>An excellent way of asking a person whether they would like to do something that has been under discussion.</li>
+</ul>
+<p><em>I'm <strong>heading up</strong> to Wyoming. I'm gonna kill a couple of <strong>no-good</strong> cowboys.</em></p>
+<ul>
+<li>"To head up" to a place is to travel toward it.</li>
+<li>"No-good" is an adjective that is still used with insult nouns to describe a very bad person.</li>
+</ul>
+<p><em>They cut her eyes out, her ears off. Hell, they even cut her <strong>teets</strong>.</em></p>
+<ul>
+<li>This is an old-fashioned variation of "tits", which is a crude expression for female breasts.</li>
+</ul>
+<p><em>$1,000 reward, Will. <strong>$500 a piece</strong>.</em></p>
+<ul>
+<li>"$500 a piece" is one way of saying that each person will get $500.</li>
+</ul>
+<p><em>I can't move those damn pigs. :: Watch your <strong>cussing</strong>.</em></p>
+<ul>
+<li>"To cuss" is to use vulgar words like damn, or worse, fuck and shit.</li>
+</ul>
+<p><em>Go to the <strong>pump</strong> and get yourself cleaned up. <strong>Come on</strong>.</em></p>
+<ul>
+<li>In this case, a "pump" is a mechanical object that's used to suck up water from below the ground.</li>
+<li>"Come on" means everything from be serious to stop lying, though here it means hurry up.</li>
+</ul>
+<p><em>It was <strong>whiskey</strong> done it as much as anything else; I ain't had a <strong>drop</strong> in over 10 years.</em></p>
+<ul>
+<li>"Whiskey" is a type of hard liquor.</li>
+<li>A "drop" is a tiny amount of liquid.</li>
+</ul>
+<p><em>My wife cured me of drink and wickedness.</em></p>
+<ul>
+<li>This is Will's way of saying that thanks to his wife, he stopped drinking liquor and became a better and more humane person.</li>
+</ul>
+<p><em>Well, you don't look so <strong>prosperous</strong>.</em></p>
+<ul>
+<li>A useful word meaning financially successful or rich.</li>
+</ul>
+<p><em>She's <strong>passed on</strong>.</em></p>
+<ul>
+<li>One way of saying to die, although to pass away is more common now.</li>
+</ul>
+<p><em>If you change your mind, I'll be riding <strong>due</strong> West for the <strong>trail</strong> headed North into Wyoming.</em></p>
+<ul>
+<li>To go "due" West is to go directly West.</li>
+<li>A "trail" is a path or course across land that people can easily walk on.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Will decides to join the Schofield Kid as Little Bill learns of the bounty.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>A couple more days and I was going to call on the <strong>sheriff</strong>. :: The river was all <strong>swollen</strong> up.</em></p>
+  <ul>
+  <li>A "sheriff" is the leader of a local police department. If a river is "swollen," it is over flowing with lots of water (To swell is to increase or grow bigger in roundness).</li>
+  </ul>
+  <p><em>She's the best of the <strong>lot</strong>.</em></p>
+  <ul>
+  <li>A way of referring to the group that is available (in this case, of horses).</li>
+  </ul>
+  <p><em>She ain't got no face left, and you give her a <strong>mangy</strong> pony!</em></p>
+  <ul>
+  <li>A sad little adjective that refers to animals whose fur is coming out because of disease or old age.</li>
+  </ul>
+  <p><em>Did Pa used to kill <strong>folks</strong>?</em></p>
+  <ul>
+  <li>Another word for people.</li>
+  </ul>
+  <p><em>She ain't a <strong>saddle</strong> horse no more, Pa.</em></p>
+  <ul>
+  <li>A "saddle" is the leather seat that is put on the backs of horses for people to sit in. This expression is saying that the horse hasn't been ridden in a very long time.</li>
+  </ul>
+  <p><em>She's <strong>getting even</strong> with me for the <strong>sins</strong> of my youth.</em></p>
+  <ul>
+  <li>"To get even" with somebody is to do something that makes up for what they had done to you in the past, such as winning a game after having lost earlier.</li>
+  <li>A "sin" is an action that is considered immoral, or a crime against God.</li>
+  </ul>
+  <p><em>Before I met your dear <strong>departed Ma</strong>, I used to be weak and <strong>given to</strong> mistreating animals.</em></p>
+  <ul>
+  <li>"To depart" is to leave, though here it means to die.</li>
+  <li>"Ma" is an old-fashioned way of saying mom or mother (just like "Pa" is for father).</li>
+  <li>If somebody is "given to" doing something, they are likely to do it, though this wording is rare.</li>
+  </ul>
+  <p><em>They are getting even with me for the cruelty I <strong>inflicted</strong>.</em></p>
+  <ul>
+  <li>"To inflict" cruelty on a person or animal is to physically abuse or torture them.</li>
+  </ul>
+  <p><em>I used to be able to whip a horse like this, but your Ma, <strong>rest her soul</strong>, showed me the error of my ways.</em></p>
+  <ul>
+  <li>"Rest her soul" is a way of asking that God treat the dead person with kindness.</li>
+  </ul>
+  <p><em>The <strong>spirit</strong> of your dear departed ma watches over you.</em></p>
+  <ul>
+  <li>Another word for soul, or the non-physical part of a person.</li>
+  </ul>
+  <p><em>What are you going to do if somebody comes to <strong>collect</strong>?</em></p>
+  <ul>
+  <li>"To collect" is to bring or gather together, though in this case it means to come looking for money.</li>
+  </ul>
+  <p><em>You going to <strong>hump</strong> them 1,000 times?</em></p>
+  <ul>
+  <li>"To hump" is a dated and silly way of saying to have sex.</li>
+  </ul>
+  <p><em>People coming for that 1,000 dollars won't <strong>tolerate</strong> you not having it.</em></p>
+  <ul>
+  <li>"To tolerate" is to accept or allow.</li>
+  </ul>
+  <p><em>Damn it. Jesus.</em></p>
+  <ul>
+  <li>Two ways of expressing emotion such as anger or surprise.</li>
+  </ul>
+  <p><em>Hello Skinny. You <strong>snuck up on</strong> me.</em></p>
+  <ul>
+  <li>"To sneak up on" a person is to surprise them by approaching in such a manner that the person doesn't see you coming.</li>
+  </ul>
+  <p><em>I'm building my <strong>porch</strong> here so I can sit...and smoke my pipe.</em></p>
+  <ul>
+  <li>An outdoor extension of a house without walls, for sitting or relaxing.</li>
+  </ul>
+  <p><em>We got railroad <strong>barons</strong> and <strong>cattle</strong> barons and you'll be the first billiard baron.</em></p>
+  <ul>
+  <li>A "baron" is very powerful businessman.</li>
+  <li>"Cattle" are cows.</li>
+  </ul>
+  <p><em>They've been...telling every <strong>bowlegged</strong> one of them that they're paying 1,000 dollars to whatever son of a bitch kills the two boys who cut up Delilah.</em></p>
+  <ul>
+  <li>A person who is bowlegged has legs that bend outward below the knee.</li>
+  <li>This is Skinny's way of saying that the women are telling everybody.</li>
+  </ul>
+  <p><em>Those cowboys are <strong>riding the beef</strong> down to Kansas and Cheyenne.</em></p>
+  <ul>
+  <li>Little Bill's way of saying to move cattle. Cheyenne is the present capital of the state of Wyoming.</li>
+  </ul>
+  <p><em>The word has gotten all the way to Texas by now.</em></p>
+  <ul>
+  <li>"People in Texas now know the news."</li>
+  </ul>
+  <p><em>You know, women can lie. <strong>Knock them around</strong> a little bit, ask them where the money is, and they ain't got none.</em></p>
+  <ul>
+  <li>"To knock around" a person is to physically harm them, usually by hitting or pushing them.</li>
+  </ul>
+  <p><em>You could <strong>run off</strong> them two cowboys. :: I could run off the whores.</em></p>
+  <ul>
+  <li>A way of saying to kill or scare away, but this is no longer used.</li>
+  </ul>
+  <p><em>They'll stay out at the Bar T, close to their friends.</em></p>
+  <ul>
+  <li>The Bar T is a ranch (farm house) that is located near Big Whiskey.</li>
+  </ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Ned joins Will in the hunt for the reward money.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Sally, <strong>see to</strong> Will's horse.</em></p>
+  <ul>
+  <li>An old-fashioned way of saying take care of.</li>
+  </ul>
+  <p><em>I don't know if it was easy back then, but <strong>we was young and full of beans</strong>.</em></p>
+  <ul>
+  <li>A ridiculous way of saying full of energy or courage. Fun, but not used.</li>
+  </ul>
+  <p><em>What did these fellows do? Cheat at cards? Steal some <strong>strays</strong>? <strong>Spit</strong> on a rich fellow? What?</em></p>
+  <ul>
+  <li>If an animal "strays" from its owner, it wanders or walks away on its own.</li>
+  <li>"To spit" is to shoot saliva from one's mouth.</li>
+  </ul>
+  <p><em>They cut a woman...everything but her <strong>cunny</strong>, I suppose.</em></p>
+  <ul>
+  <li>This is not a word; it's a way of referring to the word "cunt" without actually using it. "Cunt" is the most obscene word in the English language.</li>
+  </ul>
+  <p><em><strong>I'll be dogged</strong>. Well, I guess they <strong>got it coming</strong>.</em></p>
+  <ul>
+  <li>"I'll be dogged" is no longer used, though "I'll be damned" is a way of showing surprise.</li>
+  <li>If somebody "has it coming," they deserve what they are going to get, perhaps because they did something very bad.</li>
+  </ul>
+  <p><em>I suppose you wouldn't mind <strong>looking in on</strong> my youngsters next week?</em></p>
+  <ul>
+  <li>"To look in on" children is to stop by and make sure they're OK.</li>
+  </ul>
+  <p><em>He must be moving right along.</em></p>
+  <ul>
+  <li>"He must be going quickly."</li>
+  </ul>
+  <p><em>We'll <strong>come across</strong> him tomorrow, I <strong>reckon</strong>.</em></p>
+  <ul>
+  <li>"To come across" a person is to see them, often just by chance.</li>
+  <li>"To reckon" is a very old Western way to say think or guess. It's also used by Australians.</li>
+  </ul>
+  <p><em>Don't <strong>fret</strong> it. It ain't nothing.</em></p>
+  <ul>
+  <li>"To fret" is to worry, or get upset.</li>
+  </ul>
+  <p><em>She don't like it...you're <strong>riding off</strong> with me.</em></p>
+  <ul>
+  <li>"To ride off" with a person is to go with them, usually while on a horse or while driving a car.</li>
+  </ul>
+  <p><em>She gave me <strong>the evil eye</strong>.</em></p>
+  <ul>
+  <li>A funny way of referring to a very serious and angry facial expression.</li>
+  </ul>
+  <p><em>Indians ain't <strong>over</strong> friendly Will.</em></p>
+  <ul>
+  <li>A alternative and unused adverb meaning "very."</li>
+  </ul>
+  <p><em>I won't <strong>hold it against</strong> her.</em></p>
+  <ul>
+  <li>"To hold something against" somebody is to to be angry at them for what they have done.</li>
+  </ul>
+  <p><em>Claudia <strong>straightened me out</strong>. Cleaned me of drinking whisky and all.</em></p>
+  <ul>
+  <li>"To straighten out" a person is to make them better or more responsible.</li>
+  </ul>
+  <p><em>He didn't do anything to deserve to get shot, at least nothing I can remember when I <strong>sobered</strong> up.</em></p>
+  <ul>
+  <li>To be "sober" is to be not drunk, or perhaps in control, and thus to "sober up" is to get over the effects of liquor.</li>
+  </ul>
+  <p><em>The boys all thought that I'd shoot them <strong>out of pure meanness</strong>.</em></p>
+  <ul>
+  <li>In this case, "out of" means because of, or thanks to.</li>
+  <li>"Pure meanness" is complete cruelty or anger.</li>
+  </ul>
+  <p><em>Eagle, he <strong>hated my guts</strong>. Bonaparte didn't think too much of me, either.</em></p>
+  <ul>
+  <li>"To hate a person's guts" is to hate them with great emotion or passion ("Guts" are the intestines found in the stomach).</li>
+  </ul>
+<section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>English Bob and Mr. Beauchamp arrive in
+Big Whiskey,...and Little Bill comes to meet them.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Which son of a bitch shot him? Was it one of them <strong>John Bulls</strong>?</em></p>
+  <ul>
+  <li>"John Bull" is a symbol of the English government, just as "Uncle Sam" is of the American government.</li>
+  </ul>
+  <p><em>I believe the <strong>would-be assassin</strong> to be a gentleman of French <strong>ancestry</strong>.</em></p>
+  <ul>
+  <li>A "would-be" criminal is the likely suspect, though it has not been proven.</li>
+  <li>An "assassin" is a person who murders political leaders.</li>
+  <li>"Ancestry" refers to a person's family tree, starting with parents.</li>
+  </ul>
+  <p><em>The French are known to be a race of assassins who can't shoot <strong>worth a damn</strong>.</em></p>
+  <ul>
+  <li>If you can't do something "worth a damn," you do it very poorly.</li>
+  </ul>
+  <p><em>Any Frenchmen in the <strong>present company are excluded</strong>, of course.</em></p>
+  <ul>
+  <li>If a person insults an entire race or group of people, they can say "present company excluded" to show they make an exception for those people of that race or group who are in the same room as the speaker. English Bob does not sincerely mean this because he continues to insult everyone around him.</li>
+  </ul>
+  <p><em><strong>Sure as hell</strong> sounds like a John Bull to me.</em></p>
+  <ul>
+  <li>A common colloquial way of saying definitely or certainly.</li>
+  </ul>
+  <p><em>The <strong>majesty</strong> of <strong>royalty</strong>, you see.</em></p>
+  <ul>
+  <li>"Majesty" is greatness or great dignity and grace, and "royalty" refers to the families of kings and queens.</li>
+  </ul>
+  <p><em>It might be that this <strong>dude</strong> here is English Bob.</em></p>
+  <ul>
+  <li>In the Old West, "dude" meant something different than what it means today. In the old days, a "dude" was someone who
+    was well-spoken, possibly educated, had money, and did not do manual labor. Today, it just means "person."</li>
+  </ul>
+  <p><em>He's waiting for some crazy cowboy to touch his pistol so that he can <strong>shoot him down</strong>.</em></p>
+  <ul>
+  <li>"To shoot down" a person is to shoot and perhaps kill them.</li>
+  </ul>
+  <p><em>Let's shoot some <strong>pheasant</strong>. Let's say one dollar a pheasant.</em></p>
+  <ul>
+  <li>A type of large bird usually hunted for food.</li>
+  </ul>
+  <p><em>No doubt your <strong>aim</strong> was affected by your <strong>grief</strong> over the injury to your President.</em></p>
+  <ul>
+  <li>A person's "aim" is the ability to shoot accurately or straight.</li>
+  <li>"Grief" is the great sadness that follows a tragedy, such as the death of a child. English Bob is mocking all Americans.</li>
+  </ul>
+  <p><em>It's the climate....and the <strong>infernal</strong> distances that <strong>induces</strong> people to shoot persons in high places.</em></p>
+  <ul>
+  <li>"Infernal" is a way of saying hellish or horrible.</li>
+  <li>"To induce" a person to do something is to convince or persuade them.</li>
+  </ul>
+  <p><em>It's a <strong>savage</strong> country; That's the second one they shot in 20 years.</em></p>
+  <ul>
+  <li>"Savage" means uncivilized, wild or cruel. This refers to the fact Presidents Lincoln (1861) and Garfield (1881) were both shot to death. English Bob continues disrespecting all Americans.</li>
+  </ul>
+  <p><em>It's uncivilized shooting <strong>persons of substance</strong>.</em></p>
+  <ul>
+  <li>This is English Bob's way of referring to important people.</li>
+  </ul>
+  <p><em>The local <strong>ordinance obliges</strong> you to surrender all <strong>sidearms</strong> to the <strong>proper authorities</strong> during your visit.</em></p>
+  <ul>
+  <li>An "ordinance" is a law, often passed by a city or town.</li>
+  <li>"To oblige" a person to do something is to require or force them to do it.</li>
+  <li>"Sidearms" are guns, and the "proper authorities" are the police, or here, sheriff.</li>
+  </ul>
+  <p><em>Neither my companion or I carry <strong>firearms</strong> on our person.</em></p>
+  <ul>
+  <li>Another word for guns.</li>
+  </ul>
+  <p><em>We rely on the <strong>good will</strong> of our fellow man and the <strong>forbearance</strong> of <strong>reptiles</strong>.</em></p>
+  <ul>
+  <li>"Good will" is kindness.</li>
+  <li>"Forbearance" is an educated word for restraint or self-control.</li>
+  <li>"Reptiles" are animals like snakes, lizards, etc. English Bob is again disrespecting the people around him by referring to them as reptiles.</li>
+  </ul>
+  <p><em>Unarmed, my ass.</em></p>
+  <ul>
+  <li>If a person is "unarmed," they are not carrying any guns or other weapons.</li>
+  <li>"My ass" is a funny way of expressing disbelief or cynicism.</li>
+  </ul>
+  <p><em>You boys clean my <strong>Remington</strong>? :: Clean and <strong>loaded</strong>.</em></p>
+  <ul>
+  <li>Remington is a famous brand of gun.</li>
+  <li>If a gun is "loaded," it has bullets in it and is ready to shoot.</li>
+  </ul>
+  <p><em>Where's Little Bill, <strong>for Christ's sake</strong>.</em></p>
+  <ul>
+  <li>A common way of expressing anger or frustration.</li>
+  </ul>
+  <p><em>He don't have <strong>a straight angle</strong> on that whole god damn porch, or on the whole house, <strong>for that matter</strong>.</em></p>
+  <ul>
+  <li>A "straight angle" refers to space that is formed when two perpendicular lines cross (as in "<strong>+</strong>").</li>
+  <li>"For that matter" is a set expression that is used when a statement applies to more (or less) than what was being described.</li>
+  </ul>
+  <p><em>He is the worst damn <strong>carpenter</strong>.</em></p>
+  <ul>
+  <li>A person who builds structures and building that are made of wood.</li>
+  </ul>
+  <p><em>Maybe he's <strong>tough</strong>, but he sure ain't no carpenter.</em></p>
+  <ul>
+  <li>A useful word for strong and not easily weakened, or perhaps violent.</li>
+  </ul>
+  <p><em>There's a dignity in royalty, a majesty which <strong>precludes</strong> the likelihood of <strong>assassination</strong>.</em></p>
+  <ul>
+  <li>"To preclude" is to prevent," and an "assassination" is the murder of a important person. This is English Bob's silly way of saying that people would be too scared to shoot a king or queen, but not a president. Again, he is being insulting.</li>
+  </ul>
+  <p><em>If you were to point a pistol at a king or queen, your hand would shake as if <strong>palsied</strong>.</em></p>
+  <ul>
+  <li>"Palsied" is a medical term that is recognized from the disease Cerebral Palsy, in which people's arms shake uncontrollably.</li>
+  </ul>
+  <p><em>That's a <strong>wise</strong> <strong>policy</strong>.</em></p>
+  <ul>
+  <li>"Wise" is a good word meaning smart or prudent. "Policy" is an important political word meaning a plan or course of action.</li>
+  </ul>
+  <p><em>The sight of royalty would cause you to <strong>dismiss</strong> all thoughts of <strong>bloodshed</strong>.</em></p>
+  <ul>
+  <li>"To dismiss" a thought is to reject or not allow it.</li>
+  <li>"Bloodshed" is the word used for the blood and injuries that result from violence.</li>
+  </ul>
+  <p><em>You would stand....how should I put it?.....<strong>in awe</strong>.</em></p>
+  <ul>
+  <li>To be "in awe" of something is to be totally amazed by it.</li>
+  </ul>
+  <p><em>Greely's Beer Garden and Billiard <strong>Parlor</strong>.</em></p>
+  <ul>
+  <li>A "parlor" is a type of bar or room that is put aside for something specific, like billiards or cards (This is the parlor that Skinny owns).</li>
+  </ul>
+  <p><em>Shit and fried eggs.</em></p>
+  <ul>
+  <li>A ridiculous and never used way of expressing anger or other emotion.</li>
+  </ul>
+  <p><em>It's been a long time; Did you run out of <strong>Chinamen</strong>?</em></p>
+  <ul>
+  <li>"Chinamen" is an old word for Chinese men that is no longer used.</li>
+  </ul>
+  <p><em>I see you've shaved your chin <strong>whiskers</strong> off.</em></p>
+  <ul>
+  <li>"Whiskers" are the long stiff hairs that grow out from cats mouths, but it can be used, as here, to refer to hair that men have on their faces.</li>
+  </ul>
+  <p><em>Even I thought I was dead, until I found out I was just in <strong>Nebraska</strong>.</em></p>
+  <ul>
+  <li>Nebraska is the state East of Wyoming and North of Kansas.</li>
+  </ul>
+  <p><em>Actually, he's my <strong>biographer</strong>.</em></p>
+  <ul>
+  <li>A "biographer" is a writer of biographies, which are the life stories of people that are made into books and movies.</li>
+  </ul>
+  <p><em>You saw the sign outside of town saying <strong>surrender</strong> your firearms.</em></p>
+  <ul>
+  <li>"To surrender" a gun is to hand it over, in this case to the police.</li>
+  </ul>
+  <p><em>I got a <strong>peacemaker</strong>, but that wouldn't worry you.</em></p>
+  <ul>
+  <li>A type of gun.</li>
+  </ul>
+  <p><em>Charlie, see what kind of book Mr. Beauchamp is <strong>packing</strong> here.</em></p>
+  <ul>
+  <li>"To pack" a gun is to carry one, often hidden inside a coat.</li>
+  </ul>
+  <p><em><strong>No shit?</strong></em></p>
+  <ul>
+  <li>A crude but common and fun way of asking if something is really true.</li>
+  </ul>
+  <p><em>The Duck of Death? :: The <strong>Duke</strong> of Death.</em></p>
+  <ul>
+  <li>A "duke" is an offical title used in England for people born to parents of the highest social rank or level. A "duck" is an aquatic bird.
+    Little Bill is mocking English Bob now.</li>
+  </ul>
+  <p><em>I'll have that <strong>32</strong>, Bob.</em></p>
+  <ul>
+  <li>Another type of gun.</li>
+  </ul>
+  <p><em>You will leave me <strong>at the mercy of</strong> my enemies.</em></p>
+  <ul>
+  <li>To be "at the mercy of" somebody else is to be in a situation where you can't defend yourself against them.</li>
+  </ul>
+  <p><em>You been talking about the queen again....on <strong>Independence Day</strong>.</em></p>
+  <ul>
+  <li>The day the US celebrates becoming an independent nation (July 4<sup>th</sup>). Disrespecting America on its birthday makes the insults worse.</li>
+  </ul>
+  <p><em>I'm talking to all them <strong>villains</strong> in Kansas....Missouri....</em></p>
+  <ul>
+  <li>A funny word for very bad or evil people who are often criminals.</li>
+  </ul>
+  <p><em>Tell them there ain't no <strong>whore's gold</strong>.</em></p>
+  <ul>
+  <li>Little Bill's way of referring to the money that the prostitute's offered for the killing of the men who cut up Delilah. A "whore" is an extremely offensive way of referring to a woman.</li>
+  </ul>
+  <p><em>Go on, get out of here. <strong>Scoot</strong>!</em></p>
+  <ul>
+  <li>A funny little way of saying "leave!"</li>
+  </ul>
+  <p><em>Go on, <strong>mind your own business</strong>.</em></p>
+  <ul>
+  <li>"Stop looking into the personal lives of other people." A widely used expression.</li>
+  </ul>
+<section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Will, Ned and the Schofield Kid Head toward Big Whiskey,
+as Little Bill teaches Mr. Beauchamp about English Bob's past.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Only woman a man like me can get is one he'd have to pay for, and that ain't right, buying flesh.</em></p>
+  <ul>
+  <li>Will's way of saying that he thinks prostitution is immoral.</li>
+  </ul>
+  <p><em>He' s shooting way <strong>over yonder</strong>.</em></p>
+  <ul>
+  <li>A very old-fashioned way of saying over there.</li>
+  </ul>
+  <p><em>What's he shooting at over there? :: <strong>Beats the hell out of me</strong>.</em></p>
+  <ul>
+  <li>A colloquial way of saying "I don't know."</li>
+  </ul>
+  <p><em>I <strong>figure</strong> I can take care of them two cowboys myself.</em></p>
+  <ul>
+  <li>"To figure" is to a way of saying to think or guess (Note that in this case, to "take care" of the cowboys is to kill them).</li>
+  </ul>
+  <p><em>Ned's <strong>an awful good shot</strong> with a rifle.</em></p>
+  <ul>
+  <li>"Awfully" is a curious word that when used as an adverb means very.</li>
+  <li>To be a "good shot" is to be able to shoot a gun with great accuracy.</li>
+  </ul>
+  <p><em>I thought maybe something was <strong>bent</strong>.</em></p>
+  <ul>
+  <li>If an object is "bent," it is curved or forced into an angle (This is the past participle of the verb to bend, which is to curve).</li>
+  </ul>
+  <p><em>You were shooting all over <strong>creation</strong>.</em></p>
+  <ul>
+  <li>"Creation" in this context refers to the creation of God, and thus, the entire planet or universe (i.e....."You were shooting everywhere").</li>
+  </ul>
+  <p><em>What's it come to, three ways?</em></p>
+  <ul>
+  <li>This is the Schofield Kid's way of asking how much money each person would get if they divided the reward money by three people.</li>
+  </ul>
+  <p><em>What are you <strong>pissing on</strong> about?</em></p>
+  <ul>
+  <li>This means "complaining about", though this is no longer used. However, to be "pissed off" about something is a common way of saying to be angry about it.</li>
+  </ul>
+  <p><em>We got a storm riding up our ass.</em></p>
+  <ul>
+  <li>Ned's colorful way of saying a storm is quickly approaching!</li>
+  </ul>
+  <p><em>See your <strong>canteen</strong>?</em></p>
+  <ul>
+  <li>A small container for water or other liquids.</li>
+  </ul>
+  <p><em><strong>You bet your ass</strong> I can see 50 yards.</em></p>
+  <ul>
+  <li>"You bet your ass" is a slangy way of saying that a person is certain about what they are talking about.</li>
+  </ul>
+  <p><em><strong>Hold on!</strong></em></p>
+  <ul>
+  <li>A common way of saying wait, or perhaps calm down.</li>
+  </ul>
+  <p><em>That's you, <strong>embalmed</strong> on the cover?</em></p>
+  <ul>
+  <li>"To embalm" a dead body is to treat it with chemicals in order to preserve it. He is making a play on words: "to emboss" is to stamp a design on a surface--which is done to book covers to make them more appealing. "To embalm" means the person is already dead.</li>
+  </ul>
+  <p><em>It's generally considered desirable in the publishing business to <strong>take a certain liberty</strong> when <strong>depicting</strong> the cover scene.</em></p>
+  <ul>
+  <li>"To take liberties" with the truth is to exaggerate, distort or change it.</li>
+  <li>"To depict" a scene is to describe it, or as here, to draw or paint it.</li>
+  </ul>
+  <p><em>For reasons involving the <strong>marketplace</strong>.</em></p>
+  <ul>
+  <li>A general economic term that refers to the economic marketplace, in which people buy and sell goods and services.</li>
+  </ul>
+  <p><em>The events that are described in there are taken from the <strong>account</strong> of <strong>eyewitnesses</strong>.</em></p>
+  <ul>
+  <li>In this case, an "account" is the description of an event told by one person to another.</li>
+  <li>An "eyewitness" is a person who sees an event take place with their own eyes, and who may later testify about it in court.</li>
+  </ul>
+  <p><em>You have <strong>insulted the honor</strong> of this beautiful woman, Cochran.</em></p>
+  <ul>
+  <li>"To insult the honor" of a person is to insult or question their honesty, integrity or perhaps reputation.</li>
+  </ul>
+  <p><em>"Hot lead blazed from his smoking six-gun."</em></p>
+  <ul>
+  <li>A dramatic writing style!</li>
+  <li>"Hot lead" refers to bullets, and if something "blazes," it moves extremely quickly.</li>
+  <li>A "six-gun" is a hand gun that holds six bullets.</li>
+  </ul>
+  <p><em><strong>First off</strong>, Cochran never carried two guns, though he should have.</em></p>
+  <ul>
+  <li>A good way to start a sentence when you want to say a list of things.</li>
+  </ul>
+  <p><em>That wasn't because he was <strong>sporting</strong> two pistols, but because he had a <strong>dick</strong> so big that it was longer than the <strong>barrel</strong> of that <strong>Walker Colt</strong> that he had.</em></p>
+  <ul>
+  <li>"To sport a pistol" is to carry a gun, but this is rarely used.</li>
+  <li>A "dick" is a common slang terms for a penis, and the "barrel" of a gun is the long tube that the bullets come out of.</li>
+  <li>A Walker Colt is a type of gun.</li>
+  </ul>
+  <p><em>The only insulting he did was stick that thing into the French lady that English Bob was kind of <strong>sweet on</strong>.</em></p>
+  <ul>
+  <li>To be "sweet on" a person is to like them romantically, though this expression is rare. This is Little Bill's way of saying that English
+    Bob was angry at Cochran for having had sex with the French woman.</li>
+  </ul>
+  <p><em>That bullet <strong>whizzing by</strong> panicked old Cochran and he did the wrong thing.</em></p>
+  <ul>
+  <li>"To whiz by" is to travel through the air at very high speed.</li>
+  </ul>
+  <p><em>Bob here, he's <strong>aiming</strong> real good, and he <strong>squeezes off</strong> another.</em></p>
+  <ul>
+  <li>"To aim" a gun is to point it exactly where you want to shoot.</li>
+  <li>"To squeeze off" a shot is to fire a gun. "To squeeze" is to hold something tightly, and if you "squeeze the trigger," the gun fires.</li>
+  </ul>
+  <p><em>He aims real careful, no hurry, and <strong>bam</strong>!</em></p>
+  <ul>
+  <li>"Bam" is the word ones uses to make the sound of an explosion.</li>
+  </ul>
+  <p><em>The Walker Colt <strong>blew up</strong> in his hand, which was a failing common for that model.</em></p>
+  <ul>
+  <li>"To blow up" is an important phrasal verb meaning to explode.</li>
+  </ul>
+  <p><em>That business in Jackson <strong>county</strong>.</em></p>
+  <ul>
+  <li>A "county" is an area of land that is usually bigger than a city, but smaller than a state. States are divided into counties.</li>
+  </ul>
+  <p><em>Two <strong>deputies</strong> pointing a rifle right up close at you, got you <strong>dead to rights</strong>.</em></p>
+  <ul>
+  <li>A "deputy" is a police officer who serves under a sheriff.</li>
+  <li>"Dead to rights" is an interesting expression which means "caught in the act of doing something wrong." Synonymous with "caught red-handed."</li>
+  </ul>
+  <p><em>You pulled out your pistol and you <strong>blew them both to hell</strong>.</em></p>
+  <ul>
+  <li>"To blow a person to hell" is a slangy way of saying to shoot and kill them.</li>
+  </ul>
+  <p><em>Only took a <strong>scratch</strong> yourself.</em></p>
+  <ul>
+  <li>In this case, a "scratch" is a slight cut or very minor injury.</li>
+  </ul>
+  <p><em>Well, I don't <strong>recollect</strong>.</em></p>
+  <ul>
+  <li>A way of saying to remember.</li>
+  </ul>
+  <p><em>What <strong>the hell</strong> is that to you? :: I like to know what kind of fellow I'm riding with, in case we get into a <strong>scrape</strong> and all.</em></p>
+  <ul>
+  <li>Note that "the hell" is added to Wh- questions in order to show anger or other emotion.</li>
+  <li>A "scrape" is a tearing of the skin from rubbing too much, though here it's used to mean a dangerous situation.</li>
+  </ul>
+  <p><em>You boys are as <strong>crotchety</strong> as a couple old <strong>hens</strong>.</em></p>
+  <ul>
+  <li>"Crotchety" means easily irritated, ill-tempered or in a bad mood.</li>
+  <li>A "hen" is a female chicken. This is a fun but never used expression!</li>
+  </ul>
+  <p><em>Actually then, Mr. Cochran was <strong>faster on the draw</strong> than the duck.</em></p>
+  <ul>
+  <li>To be "fast on the draw" is to be able to grab a gun from it's holster (the leather pocket it sits in) and then shoot it very quickly.</li>
+  </ul>
+  <p><em>Being quick....don't do no harm, but it don't mean much next to being <strong>cool headed</strong>.</em></p>
+  <ul>
+  <li>A person who is "cool headed" remains calm and thoughtful, even during very dangerous or difficult situations.</li>
+  </ul>
+  <p><em>A man who'll <strong>keep his head</strong>, and not get <strong>rattled under fire</strong>.</em></p>
+  <ul>
+  <li>If a man "keeps his head" in a stressful situation, he remains calm.</li>
+  <li>To get "rattled" is to become nervous or shaken.</li>
+  <li>To be "under fire" is to literally be shot at, or to face very strong criticism or pressure.</li>
+  </ul>
+  <p><em>Unless it's a <strong>barn</strong>.</em></p>
+  <ul>
+  <li>A large wooden building for housing horses, cows and other animals.</li>
+  </ul>
+  <p><em>Is it <strong>loaded</strong>? :: Wouldn't do any good if it wasn't.</em></p>
+  <ul>
+  <li>If a gun is "loaded," it has bullets in it and is ready to use.</li>
+  </ul>
+  <p><em>First, you got <strong>to cock</strong> it.</em></p>
+  <ul>
+  <li>"To cock" a gun is to set the hammer in place so it's ready to shoot.</li>
+  </ul>
+  <p><em>You gotta point it.</em></p>
+  <ul>
+  <li>Note that "have got to"-----&gt;"gotta" in fast speech.</li>
+  </ul>
+  <p><em>Now all you gotta do is <strong>pull the trigger</strong>, Mister.</em></p>
+  <ul>
+  <li>"To pull the trigger" of a gun is to actually shoot it.</li>
+  </ul>
+  <p><em>You no-good god damn pig fucking whore.</em></p>
+  <ul>
+  <li>A very strong string of insults!</li>
+  <li>"No-good" means, of course, all bad.</li>
+  <li>A "whore" is a prostitute, and saying that someone has sex with a pig is an insult of its own.</li>
+  </ul>
+<section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>English Bob leaves Little Whiskey as Will, Ned and the Kid arrive,
+and soon Will finds himself facing the anger of Little Bill.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>You still think it will be easy to kill them cowboys? :: If we don't <strong>drown</strong> first.</em></p>
+  <ul>
+  <li>"To drown" is to die in the water after being unable to breathe.</li>
+  </ul>
+  <p><em>Give these keys to the <strong>conductor</strong> and tell him he can lose old Bob's <strong>cuffs</strong> as soon as he is outside the county.</em></p>
+  <ul>
+  <li>A "conductor" is the person who drives a train (or perhaps a carriage pulled by a horse).</li>
+  <li>"Hand cuffs" are the metal tools that police use to keep the hands of suspected criminals trapped and close together.</li>
+  </ul>
+  <p><em>If I see you again, I'll just start shooting and figure it's <strong>self-defense</strong>.</em></p>
+  <ul>
+  <li>A legal term that means the act of protecting oneself, which is often used to justify the harming or killing of another person.</li>
+  </ul>
+  <p><em>He's staying <strong>on his own account</strong>. :: <strong>He can go stuff himself</strong> as well, can't he?</em></p>
+  <ul>
+  <li>If a man does something "on his own account," he does it because he wants to, though this expression is rarely used.</li>
+  <li>"He can go stuff himself" is a gentler insult than "he can go fuck himself" (Note that "to stuff" a box means literally to fill it with things).</li>
+  </ul>
+  <p><em>A <strong>plague</strong> on the whole stinking lot of you!</em></p>
+  <ul>
+  <li>A "plague" is a horrible and very contagious disease. This is English Bob's way of saying that he hopes everyone in town gets sick and dies.</li>
+  </ul>
+  <p><em>You're all <strong>savages</strong>. <strong>Bloody</strong> savages, a <strong>curse</strong> on you!</em></p>
+  <ul>
+  <li>A "savage" is a brutal and uncivilized person.</li>
+  <li>Note that "bloody" is a widely used and loved obscenity for many British people.</li>
+  <li>A "curse" is a magical wish from a witch that brings bad fortune.</li>
+  </ul>
+  <p><em>A fellow asking for you, Alice. :: Tonight, you ain't <strong>joshing</strong>?</em></p>
+  <ul>
+  <li>"To josh" is a rarely used word meaning to tease or joke around.</li>
+  </ul>
+  <p><em>Must be <strong>randy</strong> as hell to come out in this shit.</em></p>
+  <ul>
+  <li>"Randy" is a slangy adjective for a person who is very much in the mood to have sex. Here, the shit referred to is the rainy weather.</li>
+  </ul>
+  <p><em>He started crying and <strong>sobbing</strong> and just <strong>carrying on</strong>.</em></p>
+  <ul>
+  <li>"To sob" is to breath heavily while crying, and to "carry on" is one way of saying to cry, scream or act with great emotion.</li>
+  </ul>
+  <p><em>I can't <strong>abide</strong> them kind.</em></p>
+  <ul>
+  <li>"To abide" a person is to accept or tolerate them.</li>
+  </ul>
+  <p><em>You see them in the <strong>taverns</strong>, ya know. <strong>Tramps</strong> and drunk <strong>teamsters</strong>.</em></p>
+  <ul>
+  <li>A "tavern" is a bar or saloon.</li>
+  <li>A "tramp" is an old-fashioned word for a poor person with no home who wanders from place to place.</li>
+  <li>A "teamster" is a person who leads a team of horses, though today it is only used in the context of the Teamsters labor union (of truck drivers).</li>
+  </ul>
+  <p><em><strong>Crazed piners</strong>, sporting their pistols and acting like they were bad men.</em></p>
+  <ul>
+  <li>To be "crazed" is to be extremely emotional, perhaps to the point of being crazy.</li>
+  <li>"To pine" is to suffer intense longing or desire, but this word is rarely used.</li>
+  </ul>
+  <p><em>But without any <strong>character</strong>, not even any bad character.</em></p>
+  <ul>
+  <li>In the first usage, "character" refers to honor, integrity or good morals, though in the second usage above, it means simply any qualities that a person has.</li>
+  </ul>
+  <p><em>Bob was no <strong>coward</strong>, you know.</em></p>
+  <ul>
+  <li>A "coward" is a person who is unable to face fear or danger without being extremely scared or nervous.</li>
+  </ul>
+  <p><em>I don't have any more <strong>receptacles</strong>.</em></p>
+  <ul>
+  <li>Another word for a container to hold water or other liquid.</li>
+  </ul>
+  <p><em>His head was <strong>broke</strong> open....and <strong>worms</strong> were coming out.</em></p>
+  <ul>
+  <li>Note that that past participle of to break is broken, not broke.</li>
+  <li>"Worms" are tiny and slippery tube-shaped animals.</li>
+  </ul>
+  <p><em>Maybe he's getting an <strong>advance</strong> on one of them sporting ladies.</em></p>
+  <ul>
+  <li>In this context, an "advance" is a payment made before a service is actually provided ("Sporting ladies" is Ned's words for prostitutes).</li>
+  </ul>
+  <p><em>If it <strong>worked out</strong> that I could take a little time for myself....</em></p>
+  <ul>
+  <li>In this context, if something "works out," it becomes possible.</li>
+  </ul>
+  <p><em>I says give me over your pistol.</em></p>
+  <ul>
+  <li>Note that Little Bill occasionally says "I says," which is a very strange verbal conjugation, and never used.</li>
+  </ul>
+  <p><em>Ordinance says you got to <strong>turn in</strong> your firearm to the county office.</em></p>
+  <ul>
+  <li>"To turn in" an object to the police is to physically give it to them.</li>
+  </ul>
+  <p><em>I ain't <strong>armed</strong>.</em></p>
+  <ul>
+  <li>A person who is "armed" is carrying a gun or other weapon on them.</li>
+  </ul>
+  <p><em><strong>Spilled</strong> your whisky.</em></p>
+  <ul>
+  <li>"To spill" a drink is to accidentally let it fall out of its glass and on to the ground.</li>
+  </ul>
+  <p><em>You <strong>shit in your pants</strong> because of a <strong>cowardly soul</strong>.</em></p>
+  <ul>
+  <li>A crude expression which refers to a person who is extremely scared.</li>
+  <li>"Cowardly" means scared or without courage, and the "soul" is the non-physical or spiritual part of a person.</li>
+  </ul>
+  <p><em>I <strong>bet</strong> you'd show me that pistol, right quick, and shoot me dead. Isn't that so?</em></p>
+  <ul>
+  <li>"I bet" is a very common way of saying "I am sure that..."</li>
+  </ul>
+  <p><em>What's this for, snakes <strong>and such</strong>?</em></p>
+  <ul>
+  <li>An interesting expression that means "and other similar things."</li>
+  </ul>
+  <p><em>It ain't loaded. <strong>Powder</strong>'s wet.</em></p>
+  <ul>
+  <li>"Powder" in this case refers to gun powder, which is used to cause an explosion that sends a bullet into the air. If it's wet, the gun can't fire.</li>
+  </ul>
+  <p><em>You find this in all the <strong>saloons</strong> in all your <strong>prosperous</strong> communities.</em></p>
+  <ul>
+  <li>A "saloon" is a type of bar, and if a community is "prosperous," this means it has many financially successful people.</li>
+  </ul>
+  <p><em>Wichita. Cheyenne. Abilene.</em></p>
+  <ul>
+  <li>Three well known cities of the old West. Cheyenne is now the capital of Wyoming, and the other two are in the state of Kansas.</li>
+  </ul>
+  <p><em>He's desiring to leave the <strong>hospitality</strong> of Big Whiskey behind him.</em></p>
+  <ul>
+  <li>"Hospitality" is the kindness and warmth that people show a visitor.</li>
+  </ul>
+  <p><em><strong>Easy</strong>, Little Bill. She's got to work and she's got <strong>to turn a dollar at a time</strong>.</em></p>
+  <ul>
+  <li>"Easy" is short for take it easy, or calm down.</li>
+  <li>"To turn a dollar a time" is Skinny's way of saying that Alice must make a dollar every time she has sex with a man.</li>
+  </ul>
+  <p><em>How come they <strong>lit out</strong> the back window? :: On account they seen you <strong>beating</strong> on their friend. </em></p>
+  <ul>
+  <li>"To light out" is to leave quickly, though this is no longer used. "To beat" a person is to physically attack them (beat on is rarely used).</li>
+  </ul>
+  <p><em>You just <strong>kicked the shit out of</strong> an innocent man.</em></p>
+  <ul>
+  <li>"To kick the shit out of" a person is a crude but common way of saying to physically attack and badly hurt them.</li>
+  </ul>
+<section id="part8"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Will, Ned and the Kid trap their first victim.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>You done this before? :: <strong>Plenty of</strong> times.</em></p>
+  <ul>
+  <li>"Plenty of" is a useful alternative way of saying a lot.</li>
+  </ul>
+  <p><em>His pistol must have <strong>jammed</strong>.</em></p>
+  <ul>
+  <li>If a gun or other machine "jams," it becomes stuck and will not work.</li>
+  </ul>
+  <p><em>At least I would have pulled my pistol. :: Well you did; Right out of the lady and out the window.</em></p>
+  <ul>
+  <li>Note the play on words; A pistol is, of course, a gun, though in the second sentence it is treated as a slang word for penis.</li>
+  </ul>
+  <p><em>We don't need him. He ain't nothing but <strong>a broken down</strong> pig farmer.</em></p>
+  <ul>
+  <li>If a person is "broken down," they are physically or emotionally exhausted or no longer with energy, desire or happiness.</li>
+  </ul>
+  <p><em>You mean will I help you to kill them cowboys? :: Well, I can't <strong>spot</strong> them myself.</em></p>
+  <ul>
+  <li>"To spot" a person or object is to see, often from far away.</li>
+  </ul>
+  <p><em>Some big fellow....He really <strong>kicked the hell out of</strong> me.</em></p>
+  <ul>
+  <li>"To kick the hell out of" a person is a softer version of to kick the shit out of.</li>
+  </ul>
+  <p><em>No offense meant.</em></p>
+  <ul>
+  <li>"I didn't mean to offend or hurt you...."</li>
+  </ul>
+  <p><em>They went out <strong>scouting</strong> when they saw your <strong>fever broke</strong>.</em></p>
+  <ul>
+  <li>"To scout" is to go looking for something, though this is rarely used today.</li>
+  <li>If a "fever breaks," the temperature begins to drop and the sick person gets better.</li>
+  </ul>
+  <p><em>I thought I was gone.</em></p>
+  <ul>
+  <li>Will's way of saying that he thought he was going to die.</li>
+  </ul>
+  <p><em>Are you really going to kill them cowboys? :: There's still a <strong>payment</strong> coming, isn't there?</em></p>
+  <ul>
+  <li>A "payment" is the act of paying money that is owed by a certain time.</li>
+  </ul>
+  <p><em>Alice and Silky have been giving them <strong>free ones</strong>.</em></p>
+  <ul>
+  <li>Delilah's way of saying Alice and Silky have been having sex for free, or at least giving "advances" to Ned and the Schofield kid.</li>
+  </ul>
+  <p><em>You ain't ugly likely me. It's just that we both got <strong>scars</strong>.</em></p>
+  <ul>
+  <li>A "scar" is a mark still left on the skin from a wound or injury. Note though that a person can be both physically and emotionally scarred.</li>
+  </ul>
+  <p><em>I admire you...for being <strong>true to</strong> your wife and all.</em></p>
+  <ul>
+  <li>To be "true to " a person is to be loyal to them, in this case by not having sex with other people.</li>
+  </ul>
+  <p><em>Is she back in Kansas? :: Yeah, she's <strong>watching over</strong> my young ones.</em></p>
+  <ul>
+  <li>"To watch over" children is to take care of them and make sure they're OK (though here, it is the "spirit" of Will's wife who is doing this).</li>
+  </ul>
+  <p><em>I'm <strong>pinned</strong>, boys!</em></p>
+  <ul>
+  <li>To be "pinned" is to be stuck or trapped between two objects.</li>
+  </ul>
+  <p><em>Better <strong>finish</strong> him before he gets clear.</em></p>
+  <ul>
+  <li>In this case, "to finish" him is to kill him, instead of just injure him.</li>
+  </ul>
+  <p><em>How many more <strong>shots</strong> do I have, god damn it?!</em></p>
+  <ul>
+  <li>In this context, a "shot" is a bullet.</li>
+  </ul>
+  <p><em>You shouldn't have cut up no woman, you <strong>asshole</strong>.</em></p>
+  <ul>
+  <li>One of the most widely used insult words. Vulgar, but useful.</li>
+  </ul>
+  <p><em>Will you give him a drink of water, <strong>for Christ's sake</strong>?!</em></p>
+  <ul>
+  <li>A common expression to show emotion such as anger or frustration.</li>
+  </ul>
+  <p><em>When are we going to <strong>double back</strong>? :: <strong>After a ways</strong>.</em></p>
+  <ul>
+  <li>"To double back" is to go back in the direction from where you came, though this is rarely used.</li>
+  <li>"After a ways" means in a little while.</li>
+  </ul>
+  <p><em>Want the Spencer Will? :: This ain't no time to quit.</em></p>
+  <ul>
+  <li>The Spencer is the name of the type of rifle that Ned has.</li>
+  </ul>
+  <p><em>Me and the kid will <strong>head over</strong> to the ranch, and....we'll kill him.</em></p>
+  <ul>
+  <li>"To head over" to a place is to start travelling toward it.</li>
+  </ul>
+  <p><em>He'll <strong>hole up</strong> at the ranch.</em></p>
+  <ul>
+  <li>"To hole up" in a place is to stay inside it, hoping to avoid being caught or hurt by people who are outside.</li>
+  </ul>
+  <p><em>I'll bring your <strong>share</strong>....the kid's <strong>full of shit</strong>.</em></p>
+  <ul>
+  <li>In this case, Ned's "share" refers to his part of the money.</li>
+  <li>If a person is "full of shit," they're saying a lot of nonsense or lies. Vulgar but common.</li>
+  </ul>
+  <section id="part9"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Ned faces a horrible fate, and Will and the Kid find the cowboy they want.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+  <p>
+    <p><em>Fatty, you just get out to the bar and make sure that the other cowboy <strong>stays put</strong> and don't <strong>expose himself</strong>.</em></p>
+    <ul>
+    <li>If a person "stays put," they stay where they are.</li>
+    <li>In this case, if a person "exposes himself," he allows other people to see him.</li>
+    </ul>
+    <p><em>I didn't think they'd really do it. :: You think they came <strong>clear up</strong> from Kansas to fuck us?</em></p>
+    <ul>
+    <li>A funny line. To come "clear up" from a place is a way of saying to come all the way from there, even though it is very far.</li>
+    </ul>
+    <p><em>He ain't got no wife. Not <strong>above ground</strong>, anyway.</em></p>
+    <ul>
+    <li>Alice's way of saying that Will's wife is dead (and perhaps buried).</li>
+    </ul>
+    <p><em>Murdering whores! :: <strong>He had it coming</strong> for what he done, and the other one too!</em></p>
+    <ul>
+    <li>If a person "has it coming," they will likely be punished for something bad that they have done.</li>
+    </ul>
+    <p><em>Those cowboys <strong>mess him up</strong>? :: A little bit, I guess.</em></p>
+    <ul>
+    <li>In this case, to "mess up" a person is to beat or hurt them.</li>
+    </ul>
+    <p><em>They said they want Quick Mike's ass.</em></p>
+    <ul>
+    <li>"To want somebody's ass" is one way of saying you want to hurt or even kill them.</li>
+    </ul>
+    <p><em>You'll want to tell me and Mr. Beuachamp about your two <strong>villainous</strong> friends.</em></p>
+    <ul>
+    <li>A "villainous" person is very bad, evil or wicked.</li>
+    </ul>
+    <p><em>I'm always <strong>glad</strong> to hear the name and <strong>whereabouts</strong> of those two murderous son of bitches.</em></p>
+    <ul>
+    <li>"Glad" means happy or satisfied.</li>
+    <li>The "whereabouts" of a person is the place that they are at any given time.</li>
+    </ul>
+    <p><em>This sure is <strong>ripe</strong>.</em></p>
+    <ul>
+    <li>"Ripe" means ready. It can apply to a situation in general, or a fruit.</li>
+    </ul>
+    <p><em>You said Henry Tate out of Cheyenne. :: <strong>Hell if I did</strong>.</em></p>
+    <ul>
+    <li>A slangy way of saying "I did not" when the person wants to show anger or defiance.</li>
+    </ul>
+    <p><em>I'm going to the <strong>shithouse</strong>.</em></p>
+    <ul>
+    <li>A very old slang word for an outhouse--an outdoor toilet made above a hole in the ground.</li>
+    </ul>
+    <p><em>Let me finish this <strong>hand</strong>. :: What are you going to do, protect me while I <strong>take a dump</strong>?</em></p>
+    <ul>
+    <li>A "hand" in poker is the playing of one set of cards.</li>
+    <li>"To take a dump" is a vulgar but not uncommon way of saying to defecate.</li>
+    </ul>
+    <p><em><strong>To hell with him</strong>. If the man ain't <strong>polite</strong>, he should get shot.</em></p>
+    <ul>
+    <li>"To hell with" somebody is a way of showing anger or contempt for them.</li>
+    <li>"Polite" is an important word meaning well-behaved or having good manners.</li>
+    </ul>
+    <p><em>Cover me!</em></p>
+    <ul>
+    <li>In the context of a gun fight, one way of saying "protect me!"</li>
+    </ul>
+    <p><em>Was that what it was like in <strong>the old days</strong>? Everybody riding out shooting, smoke all over, folks all over, bullets <strong>whizzing by</strong>.</em></p>
+    <ul>
+    <li>"The old days" is a common way of referring to many years earlier, often when the speaker or listener was young.</li>
+    <li>When a bullet "whizzes by," it flies by extremely quickly and closely.</li>
+    </ul>
+    <p><em>I shot that <strong>fucker</strong> three times! He was taking <strong>a shit</strong>, he went for his pistol, and I <strong>blazed</strong> away!</em></p>
+    <ul>
+    <li>Note that "fucker" can be a crude insult noun that simply refers to a person.</li>
+    <li>"To take a shit" is a vulgar but common way of saying to defecate (just like "to take a dump").</li>
+    <li>In this case, "to blaze away" is to begin to fire a gun very quickly.</li>
+    </ul>
+    <p><em>We'll give Ned over his share together, and that way you know that I'm not <strong>holding out on</strong> you.</em></p>
+    <ul>
+    <li>"To hold out on" a person is to try and secretly keep something that you may owe them, such as money.</li>
+    </ul>
+    <p><em>He was making him answer questions and <strong>beating him up</strong>, and Ned just died.</em></p>
+    <ul>
+    <li>"To beat up" a person is to physically attack and hurt them.</li>
+    </ul>
+    <p><em>Little Bill said you was Will Munny out of Missouri...the same Will Munny who <strong>dynamited</strong> the railroad in '69, killing women and children.</em></p>
+    <ul>
+    <li>"To dynamite" is to blow something up with dynamite (a powerful explosive).</li>
+    </ul>
+    <p><em>Ned said you was more <strong>cold blooded</strong> than Will Bonney.</em></p>
+    <ul>
+    <li>A person who is "cold blooded" is extremely cruel and violent.</li>
+    </ul>
+    <p><em>Like you killed the US <strong>Marshals</strong> in '70.</em></p>
+    <ul>
+    <li>"Marshals" are police officers who often work for the federal or national government.</li>
+    </ul>
+    <p><em>What about the <strong>spectacles</strong> and the <strong>fancy</strong> clothes.</em></p>
+    <ul>
+    <li>"Spectacles" are eye glasses.</li>
+    <li>"Fancy" is an important adjective that means brightly colored or nicely decorated, but not ordinary.</li>
+    </ul>
+    <p><em>I guess I'd rather be blind and <strong>ragged</strong> than dead.</em></p>
+    <ul>
+    <li>"Ragged" means old, and torn, and is often used to describe clothes.</li>
+    </ul>
+    <p><em>You <strong>stay clear of</strong> folks you see...they'll be a lot out to hang you.</em></p>
+    <ul>
+    <li>"To stay clear of" people is to try and avoid them, or perhaps not be seen by them.</li>
+    </ul>
+    <p><em>That's two drinks, but after that, <strong>it comes out of your own pocket</strong>.</em></p>
+    <ul>
+    <li>If something "comes out of your own pocket," this means that you have to pay for it.</li>
+    </ul>
+    <p><em>We'll <strong>hit</strong> all the farms and trails.</em></p>
+    <ul>
+    <li>In this case, "to hit" is used to mean carefully search.</li>
+    </ul>
+    <p><em>We're <strong>bound to</strong> come across somebody who has seen the skunks.</em></p>
+    <ul>
+    <li>If a person is "bound to" do something, this means that it's almost certain that they will do it.</li>
+    <li>A "skunk" is a cute little animal that protects itself by spraying a horrible smelling liquid at its enemies.</li>
+    </ul>
+    <section id="part10"></section>
+    <div class="w3-row">
+    <div class="w3-col s2"><p></p></div>
+    <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Will returns to Big Whiskey to teach Little Bill a final lesson.</h4></div>
+    <div class="w3-col s2"><p></p></div>
+    </div>
+    <p>
+      <p>Who is the fellow who owns this <strong>shithole</strong>?</p>
+<ul>
+<li>An interesting insult for a small store, bar or other type of building.</li>
+</ul>
+<p>I own this <strong>establishment</strong>. I bought it from Greeley for $1,000.</p>
+<ul>
+<li>In this context, an "establishment" is a small business.</li>
+</ul>
+<p>You better <strong>clear out of</strong> there.</p>
+<ul>
+<li>"To clear out of" a place is to quickly leave it.</li>
+</ul>
+<p><strong>Hold it!</strong></p>
+<ul>
+<li>A common way of screaming "wait!"</li>
+</ul>
+<p>Sir, you are a <strong>cowardly</strong> son of a bitch.</p>
+<ul>
+<li>A strong word for a person who is fearful and has no courage.</li>
+</ul>
+<p>Well, he should've armed himself if he is going to <strong>decorate</strong> his saloon with my friend.</p>
+<ul>
+<li>"To decorate" a building is to make it look nice with new paint or wall paper or the like, though here it is used in a very cynical way.</li>
+</ul>
+<p>I killed just about everything that walks or <strong>crawls</strong>, at one time.</p>
+<ul>
+<li>"To crawl" is to move on both arms and legs, like a baby.</li>
+</ul>
+<p>All right, gentlemen, he's got just one <strong>barrel</strong> left.</p>
+<ul>
+<li>The "barrel" of a gun is the part where the bullet is housed.</li>
+</ul>
+<p>When he fires that, take out your pistol and shoot him down like the <strong>mangy scoundrel</strong> that he is.</p>
+<ul>
+<li>If a dog is "mangy," it has poor quality hair that is falling out and leaving bald spots.</li>
+<li>A "scoundrel" is an excellent word for an immoral, selfish and evil person.</li>
+</ul>
+<p><strong>Misfire</strong>! Kill the son of a bitch!</p>
+<ul>
+<li>If a gun "misfires," it fails to shoot.</li>
+</ul>
+<p>Pick up that rifle. The <strong>shells</strong> too.</p>
+<ul>
+<li>In this case, the tiny metal containers that house the bullets of a gun.</li>
+</ul>
+<p>I write. :: <strong>Letters and such</strong>?</p>
+<ul>
+<li>In the 19<sup>th</sup> century, "letters" meant articles, essays or possibly books.</li>
+<li>"And such" is a way of saying "and similar things."</li>
+</ul>
+<p>I don't believe it; You killed five men <strong>single handed</strong>.</p>
+<ul>
+<li>If a person does something single-handedly, he does it alone, without the help of others.</li>
+</ul>
+<p>When <strong>confronted</strong> by superior numbers, an experienced gun fighter will fire on the best <strong>shot</strong> first.</p>
+<ul>
+<li>If a person is "confronted" by others, they are threatened or attacked by them.</li>
+<li>Note that a "shot" can refer to a person, and a good shot is a person who shoots well.</li>
+</ul>
+<p>I don't deserve this. :: <strong>Deserve</strong> has got nothing to do with it.</p>
+<ul>
+<li>"To deserve" something is to merit, or be worthy of it. This is the line you are supposed to remember from the movie.</li>
+</ul>
+<p>Some years later, Mrs. Ansonia Feathers made the <strong>arduous</strong> journey to Hedgemena County, to visit the last <strong>resting place</strong> of her only daughter.</p>
+<ul>
+<li>"Arduous" is an interesting adjective that means exhausting or very difficult.</li>
+<li>In this context, a "resting place" is the cemetery where a body is buried. Note that Mrs. Feathers is the mother of Will's wife.</li>
+</ul>
+<p>It was <strong>rumored</strong> that he <strong>prospered</strong> in <strong>dry goods</strong>.</p>
+<ul>
+<li>If something is "rumored," it is discussed by many people who think that it may be true.</li>
+<li>"To prosper" is to do well financially, and "dry goods" are such items as canned foods and grains.</li>
+</ul>
+<p>A man of <strong>notoriously vicious and intemperate disposition</strong>.</p>
+<ul>
+<li>As noted at the beginning of this glossary, "notoriously" means widely known in a very negative way.</li>
+<li>"Vicious" is a useful adjective meaning extremely cruel or dangerous.</li>
+<li>If a person has an "intemperate disposition," they have a violent temper.</li>
+</ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. Is there a time or place in your country that has some of the same lawlessness or other features that were part of the American West?</p>
+<p>2. Were there any admirable characters in this movie?</p>
+<p>3. Do you think Alice and the other women were justified by offering a bounty, after it became clear that Little Bill would not try to get real justice for the attack on Delilah?</p>
+<p>4. Do you think Will really changed since he had stopped drinking whiskey? If so, why did he agree to go to Wyoming with the Schofield kid?</p>
+<p>5. Were you glad when Will shot Little Bill?</p>
+<p>6. What does this film tell us about violence, guns and American culture today?</p>
+<p>7. In this movie, how many people were left unforgiven?</p>
+
+</div>
+
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

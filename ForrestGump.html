@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+<title>ForrestGump</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* light-blue theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fff4e8 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ffd9b4 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ffb468 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#ff8e1d !important}
+.w3-theme-l1 {color:#fff !important; background-color:#d06800 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#773c00 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#6a3500 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#5d2e00 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#502800 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#422100 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fff4e8 !important}
+.w3-theme-dark {color:#fff !important; background-color:#422100 !important}
+.w3-theme-action {color:#fff !important; background-color:#422100 !important}
+
+.w3-theme {color:#fff !important; background-color:#854200 !important}
+.w3-text-theme {color:#854200 !important}
+.w3-border-theme {border-color:#854200 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#854200 !important}
+.w3-hover-text-theme {color:#854200 !important}
+.w3-hover-border-theme:hover {border-color:#854200 !important}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #d06800;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body style="max-width:100%;margin-left:16px;margin-right:16px;font-family: 'Open Sans', sans-serif; border:1px solid #d06800">
+<nav class="navbar navbar-fixed-top" role="navigation" style="border:2px;border-color:#d06800;border-style:solid;margin-left:16px;margin-right:16px;">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#part8" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 8</a>
+    <a href="#part9" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 9</a>
+    <a href="#part10" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 10</a>
+    <a href="#part11" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 11</a>
+    <a href="#part12" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 12</a>
+    <a href="#part13" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 13</a>
+    <a href="#part14" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 14</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">Forrest Gump</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <!--
+<img id="myImg" src="/../images/Gump.jpg" style="width:100%;margin-bottom:0px;" class="img-responsive">
+    -->
+
+    <img id="myImg" src="images/Gump.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    While not intelligent, Forrest Gump has been present at many historic moments, but his true love, Jenny Curran, eludes him.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    PG-13 | 2 hrs 22 min | Comedy, Drama, Romance | 1994
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Forrest Gump</td><td>Tom Hanks</td>
+  </tr>
+  <tr>
+    <td colspan="2">A somewhat slow (not smart) person, who happens to be incredibly kind, decent, and over the course of his life, quite lucky.</td>
+  </tr>
+  <tr>
+    <td>Jenny</td><td>Robin Wright</td>
+  </tr>
+  <tr>
+    <td colspan="2">Forrest's most important friend from early childhood, who remains his friend for over 35 years despite the very different lives that they will lead.</td>
+  </tr>
+  <tr>
+    <td>Mama Gump</td><td>Sally Field</td>
+  </tr>
+  <tr>
+    <td colspan="2">Forrest's loving mother who will do all she can to give Forrest a good life despite his lack of intelligence.</td>
+  </tr>
+  <tr>
+    <td>Lieutenant Dan</td><td>Gary Sinise</td>
+  </tr>
+  <tr>
+    <td colspan="2">An army officer that Forrest meets while serving in the Vietnam war, who eventually becomes a loyal friend of Forrest</td>
+  </tr>
+  <tr>
+    <td>Bubba</td><td>Mykelti Williamson</td>
+  </tr>
+  <tr>
+    <td colspan="2">A poor black solider, and another friend that Forrest makes in Vietnam.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+    Forrest Gump is the story of an incredibly kind and gentle person who is
+    also what some people might call "mildly retarded." It's true that he is
+    not too smart, but he is very fortunate, because he has a mother and friend
+    who love him dearly. Forrest is born and raised in rural Alabama, in the
+    Southern United States. He grows up with his mother, who rents out rooms
+    in the family house to people traveling through the area.
+<p>
+  Despite his lack of sophistication, and the fact that he was raised far from
+  any major cities, Forrest manages to become personally involved in most of the
+  critical events that take place in American History from the late 1950s until
+  the early 1980s. This includes the Vietnam War, the Watergate Scandal, the Civil
+  Rights and Anti-Vietnam War protest movements, and the Computer Revolution. Forrest
+  even meets three American Presidents as well as Elvis Presley and John Lennon.
+  In a way, this movie is a look at a period of American history through the eyes
+  of a gentle soul who lacks cynicism, but simply accepts things for what they are.
+<p>
+    Ultimately, the story is about the relationships that Forrest develops through his life.
+    We meet his mother, who will do anything for him, his two best friends from his
+    days in the army, Bubba and Lieutenant Dan, and most importantly, Jenny, his true
+    childhood sweetheart. Jenny experiences the changes in American culture from a
+    totally different perspective than Forrest, eventually joining the various protest
+    movements and subcultures of the 1960s and 70s. But in the end, she is faithful to
+    her childhood friend, whose sincerity, kindness and loyalty she would find in no
+    other person.
+<p>
+  A special note on language usage: Since much of the movie is narrated by Forrest,
+  you should be careful to not internalize the ungrammatical aspects of his personal
+  way of speaking. Aside from the obvious use of "double-negatives," Forrest also
+  tends to conjugate the past tense of "to be" incorrectly, saying "we was" instead
+  of "we were."
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest comes to town to see Jenny, and soon tells his story to anyone on the bus stop bench.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+  <p></p>
+  <p><em><strong>I'll bet</strong> you can walk all day in shoes like that and never feel anything.</em></p>
+  <ul>
+  <li>A common way to say "I'm sure that..."</li>
+  </ul>
+  <p><em>His back is as <strong>crooked</strong> as a politician.</em></p>
+  <ul>
+  <li>A good play on words: "Crooked" can mean marked by bends or curves, but it also means corrupt and dishonest.</li>
+  </ul>
+  <p><em>They were in the <strong>Ku Klux Klan</strong>. They dressed up like a bunch of ghosts or <strong>spooks</strong> or something.</em></p>
+  <ul>
+  <li>The "KKK" is an infamous group of violent racists that has existed in the United States since the 1860s. A "Spook" is a ghost.</li>
+  </ul>
+  <p><em>What are <strong>you all</strong> staring at?</em></p>
+  <ul>
+  <li>In the Southern United States, "you all" operates as a form of "you," but note that it is always pronounced "ya'all."</li>
+  </ul>
+  <p><em>He has <strong>braces</strong> on his legs.</em></p>
+  <ul>
+  <li>A clamp or brace that hold two or more pieces together.</li>
+  </ul>
+  <p><em>Green Bough, Alabama</em></p>
+  <ul>
+  <li>The County and State where Forrest grew up. States are divided into counties, though most people aren't particularly aware of them. Alabama is in the "deep South" of the United States.</li>
+  </ul>
+  <p><em>Mama decided to <strong>let</strong> those rooms <strong>out</strong>.</em></p>
+  <ul>
+  <li>A rather British way to say "rent out."</li>
+  </ul>
+  <p><em>Your boy is different: His <strong>IQ</strong> is 75.</em></p>
+  <ul>
+  <li>"Intelligence Quotient," which is the standard test to measure a person's intelligence. An IQ of 100 is considered normal, which means that Forrest has an IQ which may be close to "retarded," or as some people say in the 1990's, "mentally challenged."</li>
+  </ul>
+  <p><em>He might be a bit on the slow side.</em></p>
+  <ul>
+  <li>"He might be a little dumb."</li>
+  </ul>
+  <p><em>He's not going to a special school to <strong>retread</strong> tires!</em></p>
+  <ul>
+  <li>A "tread" is the outer covering of a tire, and thus to "retread a tire" is to put a new covering on the tire.</li>
+  </ul>
+  <p><em>Your <strong>mama</strong> sure does care about your <strong>schooling.</strong></em></p>
+  <ul>
+  <li>"Mama" is often used for mom, or mother, but outside of the South, it is usually used only by children.</li>
+  <li>"Schooling" can be an alternative word for education.</li>
+  </ul>
+  <p><em>Me and mama was on our own.</em></p>
+  <ul>
+  <li>"We had to be responsible for ourselves, since no one else would take care of us."</li>
+  </ul>
+  <p><em>There were always <strong>folks</strong> coming and going.</em></p>
+  <ul>
+  <li>"Folks" is a very Southern way to say people. It can also mean parents.</li>
+  </ul>
+  <p><em>Suitcases, hot cases, sample cases.</em></p>
+  <ul>
+  <li>Different types of cases that Forrest discovers exist. A "sample case" may be a small box for jewelry or some other product for sale.</li>
+  </ul>
+  <p><em>He had him a guitar case.</em></p>
+  <ul>
+  <li>Ungrammatical Southern English: Note the use of the object pronoun "him" after the verb "had." Avoid this grammatical construction, which is used quite a bit throughout the movie.</li>
+  </ul>
+  <p><em>That's not for children's eyes.</em></p>
+  <ul>
+  <li>Mama's poetic way of saying "children are too young to see this."</li>
+  </ul>
+  <p><em>It must be hard being a king.</em></p>
+  <ul>
+  <li>Elvis Presley became famous as "The King of Rock'n'Roll."</li>
+  </ul>
+<p>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>On the way to school, Forrest meets the most beautiful girl in the world.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>Mama said to not to be taking <strong>rides</strong> from strangers.</em></p>
+<ul>
+<li>An important noun, and the one you use when you want a friend to drive you somewhere: "Can I get a ride?"</li>
+</ul>
+<p><em>It's funny what a young man <strong>recollects.</strong></em></p>
+<ul>
+<li>A somewhat fancy word for "remember."</li>
+</ul>
+<p><em>My first outdoor <strong>picnic.</strong></em></p>
+<ul>
+<li>A meal prepared to eat outside, often in a park.</li>
+</ul>
+<p><em>My legs are just <strong>fine and dandy.</strong></em></p>
+<ul>
+<li>A curious and somewhat old-fashioned expression meaning good, or well.</li>
+</ul>
+<p><em>"Stupid is as stupid does."</em></p>
+<ul>
+<li>An expression that became famous because of this movie. I think this is mama's way of saying "Just because you look stupid, you're not stupid unless you do stupid things."</li>
+</ul>
+<p><em>We was like peas and carrots.</em></p>
+<ul>
+<li>Forrest's way of saying "we went together well, and became best friends."</li>
+</ul>
+<p><em>I showed her how to <strong>dangle.</strong></em></p>
+<ul>
+<li>An interesting little verb meaning to hang loosely, or swing gently back and forth. Children will dangle from a swing on a tree branch, but also note that a plan may dangle, until somebody takes action.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest runs from the local bullies, and soon learns he can run like the wind.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Hey <strong>dummy</strong>!</em></p>
+  <ul>
+  <li>An insulting word meaning dumb or stupid.</li>
+  </ul>
+  <p><em>I could run like the wind blows.</em></p>
+  <ul>
+  <li>A poetic expression, usually said without the verb to blow.</li>
+  </ul>
+  <p><em>That boy sure is a running <strong>fool</strong>.</em></p>
+  <p>A "fool" can be somebody who is considered dumb, or it can be someone who was made to look ridiculous in a particular situation.</p>
+  <p><em>Her mama had <strong>gone to heaven</strong> when I was five.</em></p>
+  <ul>
+  <li>Forrest's only way to say that somebody has died.</li>
+  </ul>
+  <p><em>You better get back here, girl.</em></p>
+  <ul>
+  <li>I put this here simply to tell you that "better" is the only word in English that functions as both an adverb ("I play better than you") and a auxiliary verb (as in the sentence above). Shocking, but true!</li>
+  </ul>
+  <p><em>Jenny would <strong>sneak out</strong> and come to my house.</em></p>
+  <ul>
+  <li>"To sneak out" is a useful phrasal verb meaning to leave secretly. Note that the past tense is "snuck out."</li>
+  </ul>
+  <p><em>Let's move it!</em></p>
+  <ul>
+  <li>A common alternative to "Let's go!" Often said by a person with power or authority, such as a teacher or coach.</li>
+  </ul>
+  <p><em>It used to be I ran to get where I was going; I never thought it would take me anywhere.</em></p>
+  <ul>
+  <li>---Forrest's philosophy of life</li>
+  </ul>
+  <p><em>Who <strong>in the hell</strong> is that?</em></p>
+  <ul>
+  <li>A common addition to "Wh questions" to show added emotion such as surprise or anger.</li>
+  </ul>
+  <p><em>Just a <strong>local idiot</strong>.</em></p>
+  <ul>
+  <li>A funny way to say "a dumb person who lives around here."</li>
+  </ul>
+  <p><em>He must be the stupidest <strong>son of a bitch</strong> alive!</em></p>
+  <ul>
+  <li>Usually used as a crude insult to describe a mean or unpleasant person, but here it's almost used as a term of pity.</li>
+  </ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>While in college, Forrest is involved in a world of great
+  social change, as Jenny prepares to follow her dreams.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Federal troops [are] enforcing a court order.</em></p>
+  <ul>
+  <li>Reference to the incident in 1962, when President Kennedy ordered the US army to force the authorities of Alabama to allow two black students into the University of Alabama. A judge had ordered the admission of black students, and because of resistance in the South to such orders, the President had to use army soldiers to make sure that the order was obeyed.</li>
+  </ul>
+  <p><em>Coons, Niggers.</em></p>
+  <ul>
+  <li>Very crude racist insults referring to blacks. "Coon" was short for the animal "raccoon."</li>
+  </ul>
+  <p><em>The Commander of the National Guard and Governor Wallace.</em></p>
+  <ul>
+  <li>Wallace was the racist Governor of Alabama in 1962 who refused to obey the courts because he insisted the blacks must not be allowed to go to a State University with whites. The "National Guard" are soldiers under the command of individual Governors of the 50 states who are used in times of civil unrest (riots). However, in 1962, President Kennedy "nationalized" the guard so that the troops would follow his orders, and thus enforce the court order to allow blacks into the University.</li>
+  </ul>
+  <p><em>The University of Alabama had been <strong>desegregated.</strong></em></p>
+  <ul>
+  <li>"Segregation" was the act of separating blacks and white.</li>
+  <li>"To desegregate" is to end the legal separation that exists, in this case concerning schools.</li>
+  </ul>
+  <p><em>Wasn't that Gump? :: Sure <strong>as hell</strong> was!</em></p>
+  <ul>
+  <li>Another "hell" expression, used to add emotion to a sentence.</li>
+  </ul>
+  <p><em>It was <strong>coed</strong><strong>.</strong></em></p>
+  <ul>
+  <li>Short for co-educational: An important word meaning that both males and females are present. It usually refers to a school.</li>
+  </ul>
+  <p><em>"He didn't know any better"</em></p>
+  <ul>
+  <li>A good way to excuse a stupid action!</li>
+  </ul>
+  <p><em>Forrest, look at you! <strong>Come on!</strong></em></p>
+  <ul>
+  <li>A wonderful and versatile phrasal verb, signifying everything from "Be serious" to "Please." Here, meaning "let's go!"</li>
+  </ul>
+  <p><em>I want to be a singer like <strong>Joan Baez</strong>.</em></p>
+  <ul>
+  <li>A famous American folk singer who sung songs about injustice, war and other social issues.</li>
+  </ul>
+  <p><em>I want to reach people on a personal level.</em></p>
+  <ul>
+  <li>Jenny's way of saying that she wants her songs to touch people emotionally.</li>
+  </ul>
+  <p><em>Girls? I sit next to them in <strong>home economics</strong> class all the time.</em></p>
+  <ul>
+  <li>A class in high school where students learn such practical things as cooking and managing personal finances.</li>
+  </ul>
+  <p><em>I'm <strong>dizzy</strong>.</em></p>
+  <ul>
+  <li>The sensation a person gets after spinning around too fast; A confused feeling combined with a fear you may fall down. Forrest is dizzy because he just had his first orgasm.</li>
+  </ul>
+  <p><em>I bet that never happened in <strong>home ec</strong>.</em></p>
+  <ul>
+  <li>A short way to refer to home economics class.</li>
+  </ul>
+  <section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest meets his first US. President, gets drafted in the Army, and makes a new friend, Bubba.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>The Collegiate All-American football team.</em></p>
+  <ul>
+  <li>The team created at the end of each year that has the best football players from every college. They often get to visit the White House.</li>
+  </ul>
+  <p><em>I must have drunk me about 15 <strong>Dr. Peppers</strong>.</em></p>
+  <ul>
+  <li>Dr. Pepper is a famous brand of soft drink (soda pop). Note again the ungrammatical addition of "me" that Forrest uses.</li>
+  </ul>
+  <p><em>I got to pee.</em></p>
+  <ul>
+  <li>Note how "have got to"---&gt;"gotta" in rapid speech. "To pee" is to urinate. It's more polite to say "go to the bathroom."</li>
+  </ul>
+  <p><em>Somebody shot his <strong>little</strong> brother.</em></p>
+  <ul>
+  <li>Often used as a substitute for "younger."</li>
+  </ul>
+  <p><em>You're not even a <strong>scum-sucking maggot</strong>!</em></p>
+  <ul>
+  <li>A very strong insult: "Scum" is waste material such as that found in sewer systems.</li>
+  <li>A "maggot" is a type of worm-like insect, or colloquially, a despicable or horrible person.</li>
+  </ul>
+  <p><em>It was my <strong>induction</strong> day and I was already getting yelled at.</em></p>
+  <ul>
+  <li>The first day upon entering an organization. In this case, the US. Army.</li>
+  </ul>
+  <p><em>Have you ever been on a <strong>shrimping boat</strong>?</em></p>
+  <ul>
+  <li>A boat used primarily for catching shrimp.</li>
+  </ul>
+  <p><em>I was looking to buy a boat on my own and then I got <strong>drafted</strong>.</em></p>
+  <ul>
+  <li>If you are drafted, you are forced by the government to enter into the army or other armed forces.</li>
+  </ul>
+  <p><em>People call me <strong>Bubba</strong>, just like one of them <strong>redneck</strong> boys.</em></p>
+  <ul>
+  <li>"Bubba" is the stereotypical name for a "redneck," which is a common slang word for a crude and uneducated person. The stereotype often includes a person who is racist, sexist, ignorant, violent and likes guns, trucks, beer, and Jesus.</li>
+  </ul>
+  <p><em>Whatever you tell me, <strong>Drill Sergeant</strong>!</em></p>
+  <ul>
+  <li>The army non-commissioned officer in charge of training new soldiers.</li>
+  </ul>
+  <p><em>You're god damn <strong>gifted</strong>!</em></p>
+  <ul>
+  <li>"Gifted" is a very complimentary adjective for intelligent, or born with great ability or talent. However, note that "god damn" is a crude but common way of expressing emotion such as anger (which suggests that the entire phrase is sarcastic). Forrest is demonstrating a talent for following orders down to the last detail--a good lesson for any student.</li>
+  </ul>
+  <p><em>I fit in the army like one of those round pegs.</em></p>
+  <ul>
+  <li>"I fit in the army well" (A round peg is a small pin used to plug a hole. The opposite of "fitting in" is to be "a square peg in a round hole").</li>
+  </ul>
+  <p><em>Jesus <strong>H.</strong> Christ...I'd recommend you to <strong>OCS</strong>.</em></p>
+  <ul>
+  <li>For some reason, the middle initial that is often used when people say "Jesus Christ" to express various emotions.</li>
+  <li>"OCS" stands for "Officer Candidate School." His drill sergeant is the first person to notice real talent in Forrest.</li>
+  </ul>
+  <p><em>You can boil, broil, saut&eacute;....They're deep fried, stir fried...</em></p>
+  <ul>
+  <li>Bubba's list of the various ways you can cook shrimp.</li>
+  </ul>
+  <p><em>Shrimp kabob, Creole, gumbo, stew, salad, burgers.</em></p>
+  <ul>
+  <li>Bubba's list of the way shrimp can be served. Creole and Gumbo are types of Cajun food are popular in the South, particularly in Louisiana, where the Cajun people are from.</li>
+  </ul>
+  <p><em>We lay there in our <strong>bunks</strong>.</em></p>
+  <ul>
+  <li>A narrow bed, used in places like army barracks, which are buildings used to house soldiers.</li>
+  </ul>
+  <p><em><strong>Get a load of</strong> the <strong>tits</strong> on her!</em></p>
+  <ul>
+  <li>"Get a load of" something is a colloquial way to say "Look at..."</li>
+  <li>"Tits" is colloquial and somewhat crude word for breasts.</li>
+  </ul>
+  <section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Jenny goes off to live her dream as a folk singer, and Forrest goes off to the Vietnam War.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Our very own <strong>beatnik</strong> beauty: Let's give a round of applause to the <strong>luscious</strong> <strong>Bobbie Dylan</strong>!</em></p>
+  <ul>
+  <li>A "beatnik" was a type of writer or artist in the 1950s who rejected traditional American society (They were a type of early hippie or bohemian who were known to discuss philosophy in cafes, and were often associated with Jazz and drugs).</li>
+  <li>"Luscious" is an interesting adjective for seductive, or perhaps pleasant to the senses.</li>
+  <li>Bob Dylan is a folk singer who became very famous in the 1960s. Jenny is using the stage name "Bobbie," which is the feminine version of the name "Bob."</li>
+  </ul>
+  <p><em>Her dream had come true. She was a <strong>folk singer</strong>.</em></p>
+  <ul>
+  <li>A person who sings about injustice and other social issues, usually with just an acoustic (not electric) guitar.</li>
+  <li>This is a comical moment, because Jenny isn't really a folk singer--she is in a "gentlemen's club," where nude women perform for men. This scene also shows where Jenny is moving with her life choices.</li>
+  </ul>
+  <p><em>Stupid jerk!</em></p>
+  <ul>
+  <li>An insulting word for an offensive person.</li>
+  </ul>
+  <p><em>They were trying to <strong>grab</strong> you!</em></p>
+  <ul>
+  <li>"To grab" means to hold, restrain or perhaps seize suddenly.</li>
+  </ul>
+  <p><em>Hang on a minute.</em></p>
+  <ul>
+  <li>Another way to say "wait."</li>
+  </ul>
+  <p><em><strong>Just like that</strong>, she was gone.</em></p>
+  <ul>
+  <li>A good way to say "suddenly" (Forrest says this a lot).</li>
+  </ul>
+  <p><em>After we win the war, we can <strong>shrimp</strong> these waters.</em></p>
+  <ul>
+  <li>Note the use of "shrimp" as a verb (like "to fish").</li>
+  </ul>
+  <p><em>Do not <strong>salute</strong>! There's god damn <strong>snipers</strong> all around who would love <strong>to grease</strong> an officer.</em></p>
+  <ul>
+  <li>"To salute" is to greet with a gesture required by military regulation, usually by placing your hand up to your forehead.</li>
+  <li>"Snipers" are people who shoot at others from a hidden place far away.</li>
+  <li>"To grease" is slang invented by American soldiers in WWII. Anyone killed by a submachine gun with many bullet wounds has a disfigured corpse that resembles grease.</li>
+  </ul>
+  <p><em>You better <strong>tuck</strong> that in or you'll get it caught in a <strong>trip wire</strong>.</em></p>
+  <ul>
+  <li>"To tuck in" is to fold underneath, as in to tuck in the sheets of a bed. (Here, Lieutenant Dan is joking that Bubba's lips are so big).</li>
+  <li>A "trip wire" is a hidden wire that when touched, causes a bomb or mine to explode.</li>
+  </ul>
+  <p><em>There is one item of <strong>GI</strong> gear that makes the difference between a good and dead <strong>grunt</strong>---socks.</em></p>
+  <ul>
+  <li>A "GI" is a soldier (It stands for "general infantry.").</li>
+  <li>"Gear" refers to equipment such as clothes, helmets, guns, etc.</li>
+  <li>A "grunt" is a term for an infantry soldier. The word comes from the verb "to grunt," which refers to the sound someone makes when they exert a strong effort.
+    "Grunts" are soldiers with physically demanding roles in the military; consequently, they grunt.</li>
+  </ul>
+  <p><em>The Viet Cong.</em></p>
+  <ul>
+  <li>The "Viet Cong" were South Vietnamese guerrillas fighting the US. military. (A "guerrilla" is a solider who often hides in the jungle).</li>
+  </ul>
+  <p><em>Lieutenant Dan sure knew his <strong>stuff</strong>.</em></p>
+  <ul>
+  <li>A very general and common word for "things." In this case, he knew a lot about military operations.</li>
+  </ul>
+  <p><em>God damn it! <strong>Kick some ass</strong>!</em></p>
+  <ul>
+  <li>Here, a crude way to say "Go out and kill the enemy"</li>
+  </ul>
+  <p><em>He had <strong>a lot to live up to.</strong></em></p>
+  <ul>
+  <li>If you have parents or other family members that have accomplished a lot and people expect you to do the same, then this expression applies to you.</li>
+  </ul>
+  <section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest experiences the horror of war.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Two <strong>standing orders</strong> in this <strong>platoon</strong>.</em></p>
+  <ul>
+  <li>A "standing order" is an order that is always in force and therefore doesn't need to be repeated.</li>
+  <li>A "platoon" is a group of 40-50 soldiers commanded by a lieutenant.</li>
+  </ul>
+  <p><em>I sure hope I won't <strong>let him down.</strong></em></p>
+  <ul>
+  <li>"To let someone down" is to disappoint them.</li>
+  </ul>
+  <p><em>We were always looking for this guy named Charlie.</em></p>
+  <ul>
+  <li>The abbreviation for "Viet Cong" is "VC." The military uses the NATO phonetic alphabet, which gives code words to letters. In that alphabet, "VC" is pronounced "Victor Charlie." American soldiers frequently shortened the reference to their enemy as just "Charlie."</li>
+  </ul>
+  <p><em>He was always getting <strong>funny feelings</strong>.</em></p>
+  <ul>
+  <li>In this case, suspicions that the enemy was near by.</li>
+  </ul>
+  <p><em><strong>Check out</strong> that hole.</em></p>
+  <ul>
+  <li>"To check out" something is a very useful phrasal verb meaning to investigate.</li>
+  </ul>
+  <p><em>Rain that flew in <strong>sideways</strong>.</em></p>
+  <ul>
+  <li>From one side (as opposed to from the top, or from the sky).</li>
+  </ul>
+  <p><em>We're a good partnership. We <strong>be</strong> watching out for each other.</em></p>
+  <ul>
+  <li>Note that in the grammar of Black Vernacular English, the progressive tense ("we are watching...") is constructed with the base of the verb ("We be watching").</li>
+  </ul>
+  <p><em>I'll be the captain and split everything right down the middle: <strong>Fifty-fifty</strong>.</em></p>
+  <ul>
+  <li>A very common way to say that all profits or anything else will be equally divided.</li>
+  </ul>
+  <p><em>And just like that, somebody turned off the rain.</em></p>
+  <ul>
+  <li>Forrest's poetic way of saying "Suddenly, it stopped raining."</li>
+  </ul>
+  <p><em><strong>Mayday! Pull back!</strong> Run, god damn it!</em></p>
+  <ul>
+  <li>"Mayday" is an international distress signal.</li>
+  <li>"To pull back" is a good phrasal verb meaning retreat.</li>
+  </ul>
+  <p><em>Bubba was my best good friend. I had to make sure he was OK.</em></p>
+  <ul>
+  <li>Note that the correct phrase is simply "my best friend."</li>
+  </ul>
+  <p><em>I <strong>grabbed</strong> him up and <strong>run him out of there</strong>.</em></p>
+  <ul>
+  <li>"To grab" is to seize suddenly, usually with your hands.</li>
+  <li>"To run somebody out of some place" usually means to chase them out, but in this case, it means to carry them out in order to save them.</li>
+  </ul>
+  <p><em>We got Charlie all over this area!</em></p>
+  <ul>
+  <li>"We are surrounded by the enemy!"</li>
+  </ul>
+  <p><em>The whole god damn platoon is <strong>wiped out.</strong></em></p>
+  <ul>
+  <li>"To wipe out" something is a strong phrasal verb which means to destroy it.</li>
+  </ul>
+  <p><em>They're going to nape the whole area!</em></p>
+  <ul>
+  <li>"Nape" is short for "napalm," the gasoline-based flammable gel used in Vietnam to destroy the Vietnamese jungles.</li>
+  </ul>
+  <p><em>God damn it! <strong>Get your ass out of here!</strong></em></p>
+  <ul>
+  <li>A crude way to tell someone to leave immediately.</li>
+  </ul>
+  <p><em>I want to go to heaven. :: That isn't something you can find just around the corner.</em></p>
+  <ul>
+  <li>If something is available "just around the corner," this means that it will be easy to find.</li>
+  </ul>
+  <section id="part8"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest returns to America as a war hero, but Lieutenant Dan is a broken man.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>It bit me directly in the <strong>buttocks</strong>.</em></p>
+  <ul>
+  <li>The full spelling of the word "butt." Forrest's pronunciation of "buttocks" is exaggerated.</li>
+  </ul>
+  <p><em>Never take your eyes off the ball.</em></p>
+  <ul>
+  <li>A good expression meaning "always pay careful attention." Forrest has already shown a talent for following simple instructions, so it's not surprising that he can keep his eyes on the ball.</li>
+  </ul>
+  <p><em>Ping Pong made me look like <strong>a duck in water</strong>.</em></p>
+  <ul>
+  <li>To be "like a duck in water" is to look totally natural.</li>
+  </ul>
+  <p><em>I'm nothing but a legless <strong>freak.</strong></em></p>
+  <ul>
+  <li>A strong word meaning a very abnormal or deformed person.</li>
+  </ul>
+  <p><em>You cheated me! I had a <strong>destiny</strong>.</em></p>
+  <ul>
+  <li>A very important word, in this movie, and in life in general: a predetermined course of events, or fate, beyond human control.</li>
+  </ul>
+  <p><em>I was supposed to die in the fields <strong>with honor</strong>. You cheated me out of it.</em></p>
+  <ul>
+  <li>"With honor" became critical words to American politicians in the 1960s: President Nixon said he wanted peace, but only "with honor." Honor is another word for respect or dignity.</li>
+  </ul>
+  <p><em>You've been awarded the <strong>Medal of Honor</strong>.</em></p>
+  <ul>
+  <li>A "medal" is a piece of metal that serves as an award: The Congressional Medal of Honor is the highest award the military offers.</li>
+  </ul>
+  <p><em>A <strong>candid</strong> speech on the need for <strong>escalation</strong> of the war in Vietnam.</em></p>
+  <ul>
+  <li>"Candid" is a way to say completely honest or frank. In a military context, "escalation" is another word for expansion or increase.</li>
+  </ul>
+  <p><em><strong>God damn</strong>, son, that's a surprise.</em></p>
+  <ul>
+  <li>Note that "god damn" can occasionally stand without "it" or a noun, but it's still a crude way to express emotions such as surprise or anger.</li>
+  </ul>
+  <section id="part9"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest Goes to Washington, finds a nation in turmoil, and also finds Jenny again.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Some of these people were loud and <strong>pushy</strong><strong>.</strong></em></p>
+<ul>
+<li>A good adjective meaning aggressive, or too assertive.</li>
+</ul>
+<p><em>He likes to say <strong>the F-word</strong> a lot.</em></p>
+<ul>
+<li>The expression that very proper people use to refer to the word "fuck." The person introducing Forrest is Abbie Hoffman, a famous American counter-culturalist.</li>
+</ul>
+<p><em><strong>For some reason</strong>, they'd cheer.</em></p>
+<ul>
+<li>A good expression implying that it's not clear why something was done.</li>
+</ul>
+<p><em><strong>Come on</strong>, man!</em></p>
+<ul>
+<li>Here, meaning "scream louder!"</li>
+</ul>
+<p><em>The war in Viet-fucking-nam!</em></p>
+<ul>
+<li>Another colorful example of how versatile people can be in their use of the "F-word." It's rarely used as an inter-syllabic adjective, but there it is!</li>
+</ul>
+<p><em>That's <strong>right on</strong>, man. You said it all!</em></p>
+<ul>
+<li>"Right on" is a very 60s (old-fashioned!) way to say great, or more colloquially, cool. "You said it all" is a useful little expression meaning "You said everything that needs to be said."</li>
+</ul>
+<p><em>Get your white ass away from that window!</em></p>
+<ul>
+<li>A crude way to simply say "get away from that window," in this case spoken by a militant black nationalist with a weapon.</li>
+</ul>
+<p><em>He's <strong>cool</strong>, man.</em></p>
+<ul>
+<li>A 60s colloquial adjective that still survives, meaning simply "good."</li>
+</ul>
+<p><em>Were here to protect our black leaders from the racial <strong>onslaught of the pigs</strong>.</em></p>
+<ul>
+<li>Radical rhetoric: An "onslaught" is a violent attack, and a "pig" is a very insulting but not uncommon way to refer to the police.</li>
+</ul>
+<p><em>Who's the <strong>baby killer</strong>?</em></p>
+<ul>
+<li>In the 1960s, those opposed to the Vietnam War might use this very insulting term to describe anyone from President Johnson to individual soldiers.</li>
+</ul>
+<p><em>He's the President of the Berkeley Chapter of <strong>SDS</strong>.</em></p>
+<ul>
+<li>The "Students for a Democratic Society," a widely active political group in the 1960s. Many groups have local "chapters," and most political organizations had a chapter in Berkeley, California, which is home to the University of California at Berkeley.</li>
+</ul>
+<p><em>Yes, we are against any war that <strong>brutalizes</strong> our black soldiers.</em></p>
+<ul>
+<li>"To brutalize" is a very powerful verb meaning to treat very cruelly.</li>
+</ul>
+<p><em>I should have known it was just going to be <strong>a bullshit hassle</strong>.</em></p>
+<ul>
+<li>A "hassle" is an extremely useful word for trouble, or a problem. Although "bullshit" is usually a crude noun for lies or nonsense, note that here it functions as an adjective.</li>
+</ul>
+<p><em>Sorry that we had a fight at your <strong>Black Panther Party</strong>.</em></p>
+<ul>
+<li>This was a revolutionary nationalist party formed by African-Americans in the 1960s. Notice the play on words here: "party" meaning political organization, and "party" meaning a festive gathering.</li>
+</ul>
+<p><em>That uniform is <strong>a trip,</strong> Forrest.</em></p>
+<ul>
+<li>To say that something is "a trip" is a very slangy way to say that it is unusual or interesting.</li>
+</ul>
+<p><em>She discovered ways to expand her mind and live in harmony.</em></p>
+<ul>
+<li>A 1960s way of saying "she used mind altering drugs and engaged in promiscuous sex."</li>
+</ul>
+<p><em><strong>Things got a little out of hand.</strong></em></p>
+<ul>
+<li>Very common: If a situation gets "out of hand," it is no longer easy to control.</li>
+</ul>
+<p><em>It's just this lying son of a bitch, Johnson.</em></p>
+<ul>
+<li>Reference to President Johnson, who is widely thought to have lied (perhaps even to himself) about the war in Vietnam.</li>
+</ul>
+<p><em>That's one small step for man, one giant leap for mankind.</em></p>
+<ul>
+<li>The famous words of Neil Armstrong, who said this when he became the first man to step on the moon.</li>
+</ul>
+<section id="part10"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Lieutenant Dan begins to make Peace with his destiny, and with Forrest.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div><p>
+<p>When I got home, I was a national <strong>celebrity</strong>, more famous than <strong>Captain Kangaroo</strong>.</p>
+<ul>
+<li>A "celebrity" is a famous person.</li>
+<li>"Captain Kangaroo" was a famous character on television who taught children.</li>
+</ul>
+<p>They gave you---an <strong>imbecile</strong>, a moron who makes a fool of himself on national TV---The Congressional Medal of Honor.</p>
+<ul>
+<li>"Imbecile"is a strong and funny word for a very stupid person.</li>
+</ul>
+<p>God damn bless America!</p>
+<ul>
+<li>An angry and sarcastic modification of "God Bless America," which is how most American Presidents end their TV speeches.</li>
+</ul>
+<p><strong>Have you found Jesus?</strong> :: I didn't know I was supposed to be looking for him.</p>
+<ul>
+<li>Many American Christians use the verb "to find" as a way to discuss how one converts to Christianity. Forrest's response is a clever and typically innocent thing for him to say.</li>
+</ul>
+<p>That's all these <strong>cripples</strong> down at the <strong>VA</strong> ever talk about.</p>
+<ul>
+<li>"Cripple" is an insulting and dated term for a person who is physically handicapped.</li>
+<li>The "VA" refers to the Veteran's Administration, or to the hospitals that the VA runs.</li>
+</ul>
+<p>I'll get to walk beside him in the kingdom of heaven.</p>
+<ul>
+<li>The way fundamentalist Christians discuss their lives with Jesus.</li>
+</ul>
+<p>What a crock of shit!</p>
+<ul>
+<li>A crude but truly interesting and fun way to say "what nonsense!" (A "crock" is a type of pot or holder).</li>
+</ul>
+<p>Ripple.</p>
+<ul>
+<li>An inexpensive fortified wine popular among poor alcoholics.</li>
+</ul>
+<p>He'll be the captain and I'll be his <strong>first mate</strong>.</p>
+<ul>
+<li>In a navy context, this is the second in command to the captain of the ship.</li>
+</ul>
+<p>Now hear this, <strong>Private Gump</strong>!</p>
+<ul>
+<li>A Private is the lowest rank in the army.</li>
+</ul>
+<p>Did you lose your <strong>pecker</strong> in the war?</p>
+<ul>
+<li>This is a silly slang word for penis.</li>
+</ul>
+<p>Loser! You <strong>freak</strong>!</p>
+<ul>
+<li>A "freak" is a very abnormal or strange person. A monstrosity.</li>
+</ul>
+<p>I'm sorry I ruined your <strong>New Year's Eve</strong> party.</p>
+<ul>
+<li>New Year's Eve is the evening before New Year's day.</li>
+</ul>
+<p>Lieutenant Dan <strong>figured</strong> there's some things you just can't change.</p>
+<ul>
+<li>"To figure" is a colloquial and common way to say think ("To figure out" is a related phrasal verb meaning to understand).</li>
+</ul>
+<p>You might want to send a <strong>maintenance</strong> man across the way. The lights are out but they're using flashlights that are keeping me awake.</p>
+<ul>
+<li>The "maintenance man" in a building takes care of things like the heat, lights, etc. In this scene, Forrest is referring to men who are using flashlights in the Watergate Hotel, which, of course, is a reference to the break-in at that hotel which eventually led to the entire Watergate scandal, and the resignation of President Nixon. Forrest was everywhere in modern American history...</li>
+</ul>
+<section id="part11"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest leaves the army, buys a Shrimp Boat, and gets a visit from Lieutenant Dan.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div><p>
+  <p><em>Your <strong>discharge papers.</strong> Your service is up.</em></p>
+  <ul>
+  <li>Papers that officially terminate your service in an organization. In this case, Forrest's service in the US Army.</li>
+  </ul>
+  <p><em>Mama had <strong>all sorts of</strong> visitors.</em></p>
+  <ul>
+  <li>A good expression meaning various, or different types of.</li>
+  </ul>
+  <p><em>For $25,000, you can use it and see if <strong>it grows on you</strong>.</em></p>
+  <ul>
+  <li>If something "grows on you," it means that you begin to like it.</li>
+  </ul>
+  <p><em>Are you crazy or just <strong>plain</strong> stupid?</em></p>
+  <ul>
+  <li>An interesting little adverb meaning "simply," that can add a sense of disbelief and cynicism to the speaker's voice.</li>
+  </ul>
+  <p><em>I paid my respects to Bubba himself.</em></p>
+  <ul>
+  <li>"To pay one's respects" to somebody is to honor their memory, and it is often used in the context of visiting their grave.</li>
+  </ul>
+  <p><em>I just loved playing with my <strong>flex-o-lite.</strong></em></p>
+  <ul>
+  <li>The name of the ping pong paddle that Forrest agreed to say he used in order to make $25,000 for promoting it.</li>
+  </ul>
+  <p><em>Everyone knew it wasn't true: It was just a <strong>little white lie</strong>.</em></p>
+  <ul>
+  <li>A cute little expression for a lie that is basically harmless.</li>
+  </ul>
+  <p><em>Shrimping is <strong>tough.</strong></em></p>
+  <ul>
+  <li>Any business that is "tough" means that It's difficult, and hard to make money in.</li>
+  </ul>
+  <p><em>I only caught five shrimp. Enough for a <strong>cocktail</strong>.</em></p>
+  <ul>
+  <li>A "shrimp cocktail" is a delicious glass full of shrimp and (usually) a tomato based sauce.</li>
+  </ul>
+  <p><em>I thought I'd <strong>try out</strong> my <strong>sea legs</strong>.</em></p>
+  <ul>
+  <li>"To try out" something is good phrasal verb meaning to test, or to see if it works well.</li>
+  <li>"Sea legs" refers to a phenomenon experienced by sailors. After being at sea, they get used to walking on a moving surface. When they land, they have "sea legs" and walk like they are drunk until they get used to walking on land again. Here, Lieutenant Dan is making a joke because he doesn't have any legs at all.</li>
+  </ul>
+  <p><em>I'll be your first mate. <strong>I am a man of my word</strong>.</em></p>
+  <ul>
+  <li>A very formal way to say "I keep my promises"</li>
+  </ul>
+  <p><em>I'll be calling you "Sir."</em></p>
+  <ul>
+  <li>The use of "Sir" is often seen as a sign of respect, and it is used to address higher ranking officers in the military.</li>
+  </ul>
+  <p><em>He left the praying <strong>up to me</strong>.</em></p>
+  <ul>
+  <li>To leave something "up to" somebody is to let them take care of it.</li>
+  </ul>
+  <p><em>Where the hell is this God of yours?</em></p>
+  <ul>
+  <li>An interesting sentence that expresses cynicism in two ways: The addition of both "the hell" and "of yours."</li>
+  </ul>
+  <p><em>Right then, God <strong>showed up.</strong></em></p>
+  <ul>
+  <li>"To show up" is a very common phrasal verb meaning to arrive.</li>
+  </ul>
+  <p><em><strong>You call this</strong> a storm?!</em></p>
+  <ul>
+  <li>Another grammatical construction that implies cynicism. In this case, it implies that the speaker is really saying, "this is much too small to be considered a real storm."</li>
+  </ul>
+  <p><em>The entire shipping industry <strong>has fallen victim</strong> to Hurricane Carmen.</em></p>
+  <ul>
+  <li>A vague way to say destroyed (You could also say that the industry was "victimized by...").</li>
+  </ul>
+  <p><em>Bubba-Gump Shrimp: It's <strong> a household name.</strong></em></p>
+  <ul>
+  <li>An interesting little expression that means widely known, or in fact so famous that it is known in most homes.</li>
+  </ul>
+  <p><em>I've heard some stories, but <strong>that tops them all.</strong></em></p>
+  <ul>
+  <li>Here, meaning "That's the biggest lie I've ever heard."</li>
+  </ul>
+  <p><em>I think he made his peace with God.</em></p>
+  <ul>
+  <li>A gentle and poetic observation by Forrest.</li>
+  </ul>
+  <p><em>He is <strong>indisposed</strong> at the moment.</em></p>
+  <p>Saying that someone is "indisposed" is a very formal way of saying that they are not available to come to the phone (Often said when a person is in the bathroom).</p>
+  <section id="part12"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest returns home to be with Mama.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div><p>
+    <p><em>We sure got you <strong>straightened out</strong>, didn't we, boy?</em></p>
+    <ul>
+    <li>"To straighten out" somebody can mean to help them intellectually or emotionally, but here it might also imply physically, since Forrest had a very crooked back as a child that needed to be straightened.</li>
+    </ul>
+    <p><em>Don't you be afraid, <strong>sweetheart</strong>.</em></p>
+    <ul>
+    <li>A gentle and common term of endearment. Note the use of "you" after "don't" is a grammatically suspicious but common way to imply an added sense of personal concern.</li>
+    </ul>
+    <p><em>Death is part of life. Something we're all <strong>destined</strong> to do.</em></p>
+    <ul>
+    <li>If a person is "destined" to do something, this means that it is certain that they will do it some time in the future.</li>
+    </ul>
+    <p><em>You have to <strong>figure that out</strong> for yourself.</em></p>
+    <ul>
+    <li>"To figure out" something is to try and understand it. Very common.</li>
+    </ul>
+    <p><em>He got me invested in some kind of fruit company.</em></p>
+    <ul>
+    <li>A classic misunderstanding by Forrest: Lieutenant Dan invested the money that Forrest and him made with the shrimp boats in Apple Computer Company,
+      a legendary American corporation that helped create the personal computer business in the late 1970s.</li>
+    </ul>
+    <p><em>Even though Bubba was dead and Lieutenant Dan said I was <strong>nuts</strong>, I gave his mom Bubba's <strong>share.</strong></em></p>
+    <ul>
+    <li>If somebody is "nuts," they're crazy.</li>
+    <li>In this case, his "share" refers to the share or part of the company that Bubba would have owned if he had lived.</li>
+    </ul>
+    <section id="part13"></section>
+    <div class="w3-row">
+    <div class="w3-col s2"><p></p></div>
+    <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Jenny returns to be with Forrest, only to leave again, and Forrest starts running.</h4></div>
+    <div class="w3-col s2"><p></p></div>
+    </div><p>
+      <p><em>I would <strong>jabber on</strong> like a monkey in a tree.</em></p>
+      <ul>
+      <li>An interesting little way to say talk rapidly, and in an unclear way.</li>
+      </ul>
+      <p><em>Sometimes, I guess there just aren't enough rocks.</em></p>
+      <ul>
+      <li>A typically insightful line by Forrest on the anger that Jenny feels because of all the pain from her childhood.</li>
+      </ul>
+      <p><em>She gave me the best gift in the wide world.</em></p>
+      <ul>
+      <li>"The best gift in the whole wide world" is a set phrase using the superlative grammatical construction, often used by little kids.</li>
+      </ul>
+      <p><em>Where are you <strong>running off to</strong>?</em></p>
+      <ul>
+      <li>"To run off to" somewhere simply means to go.</li>
+      </ul>
+      <p><em>I ran <strong>clear</strong> across Alabama.</em></p>
+      <ul>
+      <li>An unnecessary but stylistic adverb meaning "completely."</li>
+      </ul>
+      <p><em>I figured<strong> I might as well</strong> just keep on going.</em></p>
+      <ul>
+      <li>A common way to say "all things considered, I should..."</li>
+      </ul>
+      <p><em>You know when I had to go....I just went.</em></p>
+      <ul>
+      <li>In the right context "I have to go" implies to go to the bathroom.</li>
+      </ul>
+      <p><em>I'll be damned!</em></p>
+      <ul>
+      <li>A curious but not uncommon little phrase to express surprise or shock.</li>
+      </ul>
+      <p><em>It was like <strong>an alarm went off in my head</strong>: Here's somebody who <strong>has got his act together</strong>.</em></p>
+      <ul>
+      <li>If an "alarm goes off in your head," you may have just thought of something incredibly significant.</li>
+      <li>Somebody who has "got his act together" is someone who is essentially living their life well while making a positive contribution to either themselves, their friends or the community.</li>
+      </ul>
+      <p><em>I'm in the <strong>bumper sticker</strong> business. Can you think of any <strong>slogans</strong>?</em></p>
+      <ul>
+      <li>A bumper sticker is the little sign that people put on the back of their cars (on the "bumper"), that often has a clever slogan: A "slogan" is a short phrase expressing a political or commercial opinion, such as "Question authority."</li>
+      </ul>
+      <p><em>Shit! It happens.</em></p>
+      <ul>
+      <li>"Shit happens" is a slogan that became very popular in the 1980s. According to the movie, Forrest helped create it by stepping in some dog shit. It means approximately "Bad things happen in life."</li>
+      </ul>
+      <p><em>Have a nice day.</em></p>
+      <ul>
+      <li>Another common clich&eacute; from the 1970s, that became so overused that people often grew irritated when hearing it! This phrase is seen on posters and T-shirts with a smiling face.</li>
+      </ul>
+      <p><em>Mama said you have to <strong>put the past behind you</strong> before you could move on</em></p>
+      <ul>
+      <li>More Gump family wisdom: You must accept the past before you look to the future.</li>
+      </ul>
+      <p><em>One day <strong>out of the clear blue sky...</strong></em></p>
+      <ul>
+      <li>If something happens "out of the blue," it happens suddenly and unexpectedly.</li>
+      </ul>
+      <section id="part14"></section>
+      <div class="w3-row">
+      <div class="w3-col s2"><p></p></div>
+      <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Forrest and Jenny reunite for the last time. Forrest suffers his greatest loss and receives his greatest gift.</h4></div>
+      <div class="w3-col s2"><p></p></div>
+      </div><p>
+        <p><em>I kept a <strong>scrapbook</strong> of your <strong>clippings</strong>.</em></p>
+        <ul>
+        <li>A "scrapbook" is a personal book of memories, photographs, articles and so on.</li>
+        <li>"Clippings" refer to newspaper clippings, which are a group of specific articles about someone or something.</li>
+        </ul>
+        <p><em>I was <strong>messed up</strong> for a long time.</em></p>
+        <ul>
+        <li>A common colloquial way to say troubled, or doing poorly. ("To mess up" is also a common phrasal verb).</li>
+        </ul>
+        <p><em>I have got to go. I'm <strong>double parked</strong>.</em></p>
+        <ul>
+        <li>When a car is "double parked, " it is parked illegally, often in the middle of the street.</li>
+        </ul>
+        <p><em>He's one of the smartest in his class.</em></p>
+        <ul>
+        <li>A common way parents compare their kids to others.</li>
+        </ul>
+        <p><em>I have some kind of <strong>virus</strong>. The doctors don't know what it is.</em></p>
+        <ul>
+        <li>An important word in biology: A type of tiny parasite or bacteria that often causes disease in people. In this case, the virus is a subtle reference to the AIDS virus (HIV), which appeared in the United States in the early 1980s.</li>
+        </ul>
+        <p><em>I have <strong>custom made</strong> legs made of <strong>titanium alloy</strong>.</em></p>
+        <ul>
+        <li>Anything that is "custom-made" is made specifically for one person (as opposed to being mass produced).</li>
+        <li>"Titanium alloy" is a type of very strong metal, used in things like rockets and other machines.</li>
+        </ul>
+        <p><em>It was like before the sun goes down to bed on the <strong>bayou.</strong></em></p>
+        <ul>
+        <li>The place where a river enters into a large body of water, such as a lake or ocean.</li>
+        </ul>
+        <p><em>I had that house of your father's <strong>bulldozed</strong> to the ground.</em></p>
+        <ul>
+        <li>A "bulldozer" is a huge type of truck that levels (or razes) entire buildings to the ground. This is a passive grammatical construction of the related verb.</li>
+        </ul>
+        <p><em>I don't know if we each have a destiny or if were just floating around accidental-like, on a breeze.</em></p>
+        <ul>
+        <li>"Floating around accidental-like on a breeze" is Forrest's way of expressing a bit of existential philosophy: To float without a particular direction, in a universe not of our making, for no particular reason...</li>
+        </ul>
+        <p><em>I'm going to show that at <strong>show and tell.</strong></em></p>
+        <ul>
+        <li>"Show and tell" is the part of class time where small children bring things from their houses in order to discuss it with their fellow class mates (A long standing tradition in American elementary schools).</li>
+        </ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. How would you describe Forrest to a friend? What are his best features? Does he have any bad ones?</p>
+  <p>2. What were the most important historical events that Forrest and Jenny lived through?</p>
+  <p>3. How were the lives of Forrest and Jenny different?</p>
+  <p>4. This film shows much of the social change that the United States went through between the 1950s and the 1980s: Did your country go through similar changes?</p>
+  <p>5. How is life different in Green Bough County, Alabama, from Los Angeles, California?</p>
+  <p>6. What did you like and not like about this movie?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

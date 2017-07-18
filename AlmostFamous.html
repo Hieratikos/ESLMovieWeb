@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html>
+<title>Almost Famous</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+/* orange theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fff7f1 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#fee3d1 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#fdc7a3 !important}
+.w3-theme-l2 {color:#000 !important; background-color:#fcab75 !important}
+.w3-theme-l1 {color:#000 !important; background-color:#fb8f47 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#f36405 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#d85904 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#bd4e04 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#a24303 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#873803 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fff7f1 !important}
+.w3-theme-dark {color:#fff !important; background-color:#873803 !important}
+.w3-theme-action {color:#fff !important; background-color:#873803 !important}
+
+.w3-theme {color:#fff !important; background-color:#fa7319 !important}
+.w3-text-theme {color:#fa7319 !important}
+.w3-border-theme {border-color:#fa7319 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#fa7319 !important}
+.w3-hover-text-theme {color:#fa7319 !important}
+.w3-hover-border-theme:hover {border-color:#fa7319 !important}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #fb8f47;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body style="max-width:100%;margin-left:16px;margin-right:16px;font-family: 'Open Sans', sans-serif; border:1px solid #fb8f47">
+<nav class="navbar navbar-fixed-top" role="navigation" style="border:2px;border-color:#fb8f47;border-style:solid;margin-left:16px;margin-right:16px;">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#part8" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 8</a>
+    <a href="#part9" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 9</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">Almost Famous</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/AlmostFamous.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    A high-school boy is given the chance to write a story for Rolling Stone Magazine about an up-and-coming rock band as he accompanies them on tour.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Rated R | 2 hrs 2 min | Adventure, Comedy, Drama | 2000
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>William Miller</td><td>Patrick Fugit</td>
+  </tr>
+  <tr>
+    <td colspan="2">A sweet and very smart 15 year old kid (in 1973) who wants to be a rock'n'roll critic and write for Rolling Stone magazine.</td>
+  </tr>
+  <tr>
+    <td>Elaine Miller</td><td>Frances McDormand</td>
+  </tr>
+  <tr>
+    <td colspan="2">William's very nervous and conservative mother, a college professor, who is always worried that her children are going to take illegal drugs.</td>
+  </tr>
+  <tr>
+    <td>Anita Miller</td><td>Zoey Deschanel</td>
+  </tr>
+  <tr>
+    <td colspan="2">William's older sister who decides to leave home when she is still very young because she can no longer accept living with her mother.</td>
+  </tr>
+  <tr>
+    <td>Russell Hammond</td><td>Billy Crudup</td>
+  </tr>
+  <tr>
+    <td colspan="2">The guitarist and most well known musician in the (fictional) hard rock group Stillwater, which is trying to become a superstar group even though their music is fairly typical and not very good.</td>
+  </tr>
+  <tr>
+    <td>Jeff Bebe</td><td>Jason Lee</td>
+  </tr>
+  <tr>
+    <td colspan="2">The lead singer for Stillwater, who is convinced that rock music in general, and his group in particular, is deeply important.</td>
+  </tr>
+  <tr>
+    <td>"Penny Lane" (Lady Goodman)</td><td>Kate Hudson</td>
+  </tr>
+  <tr>
+    <td colspan="2">A 16 year old fan of the group who is in love with Russell, who travels around the country when they are on tour. Girls like her are usually called "groupies," but she prefers the term "Band-Aid."</td>
+  </tr>
+  <tr>
+    <td>Sapphire</td><td>Fairuza Balk</td>
+  </tr>
+  <tr>
+    <td colspan="2">A friend of Penny and one of the Band-Aids following Stillwater.</td>
+  </tr>
+  <tr>
+    <td>Lester Bangs</td><td>Phillip Seymour Hoffman</td>
+  </tr>
+  <tr>
+    <td colspan="2">A well-known rock critic who writes for Creem magazine and is convinced that great rock'n'roll is being killed by bad groups like Stillwater and record companies who only care about making money.</td>
+  </tr>
+  <tr>
+    <td>Ben-Fong Torres</td><td>Terry Chen</td>
+  </tr>
+  <tr>
+    <td colspan="2">A well known editor for Rolling Stone magazine who hires William to write an article on Stillwater.</td>
+  </tr>
+  <tr>
+    <td>Dick Roswell</td><td>Noah Taylor</td>
+  </tr>
+  <tr>
+    <td colspan="2">Stillwater's inexperienced British manager.</td>
+  </tr>
+  <tr>
+    <td>Dennis Hope</td><td>Jimmy Fallon</td>
+  </tr>
+  <tr>
+    <td colspan="2">A new more experienced manager that Stillwater's record company hires to help lead the group.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+    This film is the story of a sweet and very smart kid who loves rock music,
+    and whose dream is to be a rock music writer. Most of the film takes place in 1973,
+    when William Miller is 15, and when he sets out to write an article about an increasingly
+    popular rock group called Stillwater. They are typical of the hard rock groups of that period,
+    in that they are loud and seductive, but not nearly as good as the classic 1960s groups that
+    came before them (such as the Beatles and the Rolling Stones). Regardless, Stillwater is a
+    fictional group, although they are very similar to such real 1970s bands as Bad Company or
+    Grand Funk Railroad. And in fact, William himself is really Cameron Crowe in real life,
+    the writer and director of this film, who began writing for Rolling Stone magazine in the
+    early 1970s when he was just 15.
+<p>
+    While trying to get an interview with members of Stillwater, William meets several young
+    female fans who travel around the country with the band. Most people would call them "groupies"
+    because they sleep with the band members, but they like to think of themselves as "Band-Aids."
+    One of these Band-Aids is Penny Lane (a nickname taken from the Beatles song), who is in love with
+    Russell, Stillwater's lead guitarist. As William joins all of them on the road, he soon learns
+    that rock stars are not always as "cool" as they seem to be, and that if girls like Penny are not
+    careful, they can be easily hurt by the stars that they love.
+<p>
+  This is an excellent look at the "rock'n'roll scene" of the early 1970s, and as such, captures a
+  time when the ideals and dreams of the 1960s had passed, and music was in the process of becoming a very big business.
+<p>
+    A note on <strong>Lester Bangs</strong> and <strong>Ben-Fong Torres</strong>: These two are in fact real people, and both were
+    well known writers who were considered among the first important rock critics.
+<p>
+  <table class="w3-table-all w3-card-4 w3-tiny">
+    <thead>
+    <tr class="w3-theme">
+      <th colspan="2" class="w3-center" style="font-size:large;">Some Rock Names You Should Recognize From the 60s and 70s:</th>
+    </tr>
+  </thead>
+    <tr>
+      <td>Simon and Garfunkel</td><td>The Doors/Jim Morrison</td>
+    </tr>
+    <tr>
+      <td>Iggy Pop</td><td>The Guess Who</td>
+    </tr>
+    <tr>
+      <td>Lou Reed</td><td>David Bowie</td>
+    </tr>
+    <tr>
+      <td>The Faces</td><td>The Allman Brothers</td>
+    </tr>
+    <tr>
+      <td>Black Sabbath</td><td>Led Zeppelin</td>
+    </tr>
+    <tr>
+      <td>Bob Dylan</td><td>Cream</td>
+    </tr>
+    <tr>
+      <td>Todd Rundgren</td><td>Bad Company</td>
+    </tr>
+    <tr>
+      <td>The Who</td><td>The Rolling Stones/Mick Jagger</td>
+    </tr>
+    <tr>
+      <td>The Beatles</td><td>Yes</td>
+    </tr>
+  </table>
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>1969: William's mom and sister fight the 1960s cultural wars....</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+<p><em><strong>Atticus Finch</strong>; He <strong>stands up for</strong> the right thing.</em></p>
+<ul>
+<li>"Atticus Finch" is the main character in the movie "To Kill A Mockingbird," about racism in the
+  American South (Boo Radley is the silent character who saves the children's lives).</li>
+  <li>"To stand up for" something is to support it in words and actions, even if it is unpopular or difficult to do.</li>
+</ul>
+<p><em>She killed everybody else so that her son Tiberius could
+<strong>inherit the throne</strong>---just like Nixon. It's <strong>awfully</strong> common.</em></p>
+<ul>
+<li>"To inherit the throne" is to become King or Queen, after the current one has died.</li>
+<li>"To inherit" something is to get legal rights to it after the previous owner  dies.</li>
+<li>A "throne" is the legal word for the power associated with being a King or Queen.</li>
+<li>"Awfully" is a widely used adverb which means very.</li>
+</ul>
+<p><em>Soy cutlets?</strong></em></p>
+<ul>
+<li>"Soy" is a healthy vegetable substance, but it is almost never served as a "cutlet," which usually refers to a big cut of meat, such as pork chops.</li>
+</ul>
+<p><em>You've been kissing...I can <strong>tell.</strong></em></p>
+<ul>
+<li>Note that the verb "to tell" is often used to mean know or sense.</li>
+</ul>
+<p><em>It is about drugs and <strong>promiscuous</strong> sex. :: Simon and Garfunkel is poetry.</em></p>
+<ul>
+<li>A reference to sexual activity outside of one's principal sexual partner.
+A person who is promiscuous has sex with many people.</li>
+</ul>
+<p><em>Honey, they're on <strong>pot</strong>.</em></p>
+<ul>
+<li>A common way to refer to the drug marijuana.</li>
+</ul>
+<p><em>Bologna.</em></p>
+<ul>
+<li>A type of cheap sliced lunch meat, popular with school children.</li>
+</ul>
+<p><em>Celebrating Christmas on a day in September because it's too <strong>commercialized</strong>? What else are you going to <strong>ban</strong>?</em></p>
+<ul>
+<li>If a holiday is "commercialized," it has become an excuse for buying lots of gifts, instead of celebrating the original meaning.</li>
+<li>"To ban" something is to prevent it or make it illegal. A key verb in politics.</li>
+</ul>
+<p><em>You want <strong>to rebel</strong> against knowledge; I'm trying to give you the <strong>Cliff's Notes</strong> on how to live life in this world.</em></p>
+<ul>
+<li>"To rebel" against something is to fight or rise up against it (often people rebel against a government).</li>
+<li>"Cliff's Notes" are well known study guides that summarize books and other materials for students.</li>
+</ul>
+<p><em>You use knowledge <strong>to keep us down</strong>. I'm a 'yes' person and you're trying to raise us in a 'no' environment.</em></p>
+<ul>
+<li>"To keep a person down" is to limit their freedom or oppress them. The second sentence is Anita's way of telling her mom that
+   she is a person who needs more freedom than her mom is willing to give her.</li>
+</ul>
+<p><em><strong>Sweetheart</strong>, don't be a <strong>drama queen</strong>. :: Feck you!</em></p>
+<ul>
+<li>"Sweetheart" is a very common term of affection.</li>
+<li>A "drama queen" is a person who acts with great emotion, or too dramatically. Note that Anita is too scared to say "fuck you" to her mom, but does say "feck you," which doesn't exist.</li>
+</ul>
+<p><em>Mom, <strong>pull over</strong>. Tell him the truth.</em></p>
+<ul>
+<li>"Pull over" is the phrasal verb you use to describe the act of slowing down and stopping a car on the side of the road.</li>
+</ul>
+<p><em>They call him "the <strong>narc</strong>" <strong>behind his back</strong>.</em></p>
+<ul>
+<li>A slang term for a narcotics officer, who is a much hated secret police officer who tries to catch students using illegal drugs.</li>
+<li>To do something "behind a person's back" is to do it when they cannot hear or see it being done.</li>
+</ul>
+<p><em><strong>Come on</strong>, you guys. <strong>It's no big deal.</strong></em></p>
+<ul>
+<li>"Come on" is the most varied phrasal verb in English, meaning everything from hurry up to, here, calm down.</li>
+<li>"It's no big deal" is a widely used and colloquial way of saying that it's not important.</li>
+</ul>
+<p><em>So you <strong>skipped</strong> 5th grade. There's too much <strong>padding</strong> in the grades.</em></p>
+<ul>
+<li>"To skip" 5th grade is to go directly from 4th to 6th, which may happen if the student is considered very smart. In this case,
+  if the grades are "padded," they are filled with too much that is silly or unimportant. </li>
+</ul>
+<p><em>You've robbed him of an adolescence. :: Adolescence is a marketing tool!</em></p>
+<ul>
+<li>"To rob" a person is to steal from them. "Adolescence" refers to the approximate period of time between ages 13 and 16.</li>
+<li>A "marketing tool" is any thing, word or concept that helps to sell a product.</li>
+</ul>
+<p><em>I know you were expecting <strong>puberty</strong>, but you're just going to have to shine it on a little while.</em></p>
+<ul>
+<li>"Puberty" is a medical term for adolescence, or the young teenage years when kids acquire the ability to reproduce
+  ("To shine it on" means to wait longer than expected, but this is no longer used).</li>
+</ul>
+<p><em>Who <strong>put such a high premium</strong> on being typical? Who needs a <strong>crowd</strong>?</em></p>
+<ul>
+<li>"To put a high premium on" something is to value it very highly, or consider it very important.</li>
+<li>In this case, a "crowd" refers to a group of school friends.</li>
+</ul>
+<p><em>You're <strong>unique</strong>.</em></p>
+<ul>
+<li>If someone is "unique," there is no one else just like them. Highly unusual, usually in a very positive sense.</li>
+</ul>
+<p><em>Your dad knew that you were a <strong>predominantly accelerated child</strong>.</em></p>
+<ul>
+<li>"Predominantly" is another way of saying primarily, or principally.</li>
+<li>If a child is "accelerated," they are considered very smart in comparison to children their age (To accelerate is to move faster).</li>
+</ul>
+<p><em>You are <strong>rebellious</strong> and <strong>ungrateful</strong> of my love.</em></p>
+<ul>
+<li>If a person is "rebellious," they are always fighting against something (in this case, their parents and teachers).</li>
+<li>If a person is "ungrateful,"" they do not appreciate what they have been given.</li>
+</ul>
+<p><em>This song explains why I am leaving home to become a <strong>stewardess</strong>.</em></p>
+<ul>
+<li>A female who works on an airplane serving food and drinks.</li>
+</ul>
+<p><em>One day, you'll be <strong>cool</strong>. Look under your bed...it will <strong>set you free</strong>.</em></p>
+<ul>
+<li>"Cool" is a critical word in this movie, and a very common colloquial word for excellent, first-rate or superior. Rock stars are considered very cool by their fans.</li>
+<li>"To set a person free" is to give them freedom.</li>
+</ul>
+<p>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>1973: William meets Lester Bangs, the guys from Stillwater...and Penny Lane.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>Here's a <strong>theory</strong> for you to <strong>disregard</strong> completely...true music lives within you...with the <strong>vast scenic</strong> bridges and <strong>chorus</strong> in your brain.</em></p>
+<ul>
+<li>A "theory" is an educated guess.</li>
+<li>"To disregard" something is to ignore or reject it.</li>
+<li>"Vast" means extremely big or huge, and if a view is "scenic," it is pretty or pleasing to the eye.</li>
+<li>A "chorus" is a group of singers, often in a church.</li>
+</ul>
+<p><em>It's a place apart from the vast <strong>benign</strong> lap of America.</em></p>
+<ul>
+<li>If something is "benign," it is harmless.</li>
+</ul>
+<p><em>The world's greatest <strong>rock'n'roll critic</strong>.</em></p>
+<ul>
+<li>A "rock'n'roll critic" is a writer who reviews rock music, but since many people don't take any rock music seriously, some people think this term is a bit ridiculous.</li>
+</ul>
+<p><em>Jim Morrison?! He's a drunken <strong>buffoon posing</strong> as a poet.</em></p>
+<ul>
+<li>A "buffoon" is a ridiculously uneducated, stupid or moronic person.</li>
+<li>"To pose" as a poet is to pretend that you are one, when in fact you have none of the real talent or ability that is needed (Jim Morrison was the lead singer of the group The Doors).</li>
+</ul>
+<p><em>Iggy Pop! Put this on! This isn't on your <strong>playlist</strong>, is it?</em></p>
+<ul>
+<li>A "playlist" is the list of songs that a disc jockey will play on their radio station.</li>
+</ul>
+<p><em>I've been doing some <strong>stuff</strong> for a local <strong>underground</strong> paper.</em></p>
+<ul>
+<li>Note that "stuff" is a very general word for things, and this case refers to pieces of writing.</li>
+<li>Here, an "underground" paper is a slangy way of referring to a paper that has very few readers, and not one that is necessarily hiding from the government!</li>
+</ul>
+<p><em>You'll meet them all again...on their long journey to the middle.</em></p>
+<ul>
+<li>This is Lester's way of saying that most rock stars (and critics) move to the middle of the road artistically, in order to try to get as popular as possible.</li>
+</ul>
+<p><em>Your writing is <strong>damn</strong> good.</em></p>
+<ul>
+<li>A common and colloquial way of saying very.</li>
+</ul>
+<p><em>Rock'n'roll? It's over. You got here just in time for <strong>the death rattle</strong>. Last <strong>grasp</strong>. Last <strong>grope</strong>.</em></p>
+<ul>
+<li>Lester's way of saying that rock music has been so commercialized by big business that it's now dying.</li>
+<li>The "death rattle" is the sound that a rattle snake or other animal makes just before it dies.</li>
+<li>A "grasp" is a desperate attempt to reach (as in "a last grasp for air"), and a "grope" is to reach out blindly, or with no specific goal.</li>
+</ul>
+<p><em>I used to do <strong>speed</strong>. I'd stay up all night writing and writing, like 25 pages of <strong>dribble</strong>.</em></p>
+<ul>
+<li>"Speed" is an illegal drug that gives people lots of energy, but can make them a little crazy.</li>
+<li>"Dribble" is the spit or saliva that comes out of a person's mouth when they're sleeping, but it also refers to bad writing.</li>
+</ul>
+<p><em>They're gonna be <strong>fake</strong> friends. They're gonna try to <strong>corrupt</strong> you.</em></p>
+<ul>
+<li>"Fake" is not real, and thus a "fake" friend is a person who is pretending to be your friend, but who really is just using you.</li>
+<li>"To corrupt" a person is to try and lead them away from their own principles or values, often turning them into criminals.</li>
+</ul>
+<p><em><strong>Fucking</strong> nothing about you that is <strong>controversial, man</strong>.</em></p>
+<ul>
+<li>Note the use of "fucking" as a totally empty filler word. Vulgar, but common among young people.</li>
+<li>If something is "controversial," it causes much emotion, argument or disagreement.</li>
+<li>The word "man" is often used as a filler word to express general emotion. Widely used among teenagers, but basically meaningless.</li>
+</ul>
+<p><em>There are people who want you to write <strong>sanctimonious</strong> stories about the genius of rock stars...</em></p>
+<ul>
+<li>A good word to describe something that is too serious or even religious or righteous in attitude.</li>
+</ul>
+<p><em>....and they'll <strong>ruin</strong> rock'n'roll and <strong>strangle</strong> everything we love about it, right?</em></p>
+<ul>
+<li>To "ruin" something is to kill or destroy it.</li>
+<li>"To strangle" something is to choke it, or kill it by cutting off its air.</li>
+</ul>
+<p><em>And then it just becomes an industry of cool.</em></p>
+<ul>
+<li>This is Lester's way of saying the rock music is being destroyed by record companies that are just trying to promote rock stars that look cool to young people,
+  rather than those producing good music.</li>
+</ul>
+<p><em>You're <strong>coming along</strong> at a very dangerous time for rock'n'roll.</em></p>
+<ul>
+<li>In this case, to "come along" means to arrive.</li>
+</ul>
+<p><em>I can give you $35. Give me 1,000 words on Black Sabbath. :: An <strong>assignment</strong>?!</em></p>
+<ul>
+<li>An "assignment" is a specific job, in this case to write an article.</li>
+</ul>
+<p><em>You have to make your <strong>reputation</strong> on being honest and <strong>unmerciful</strong>.</em></p>
+<ul>
+<li>A person's reputation is the general opinion that other people have of them. If a person is "unmerciful," they refuse to show mercy or kindness.</li>
+</ul>
+<p><em>If you <strong>get into a jam</strong>, you can call me.</em></p>
+<ul>
+<li>"To get into a jam" is to get into a difficult situation that is hard to get out of.</li>
+</ul>
+<p><em>An entire generation of <strong>Cinderellas</strong>, and there is no <strong>slipper</strong> coming.</em></p>
+<ul>
+<li>"Cinderella" is a character in the famous children's tale who wears magical "slippers," which is a type of shoe that is easy to put on.</li>
+</ul>
+<p><em>You want to <strong>get high</strong>?</em></p>
+<ul>
+<li>To "get high" is to experience great or unusual physical, emotional or intellectual sensations, usually from taking drugs such as marijuana (but you probably already knew that).</li>
+</ul>
+<p><em>As long as I know this is a <strong>hobby</strong>...I'll pick you up at 11:00 <strong>sharp</strong>.</em></p>
+<ul>
+<li>A "hobby" is an activity that a person enjoys doing in their free time, such as playing cards or collecting records.</li>
+<li>If something is supposed to happen at "11:00 sharp," this means exactly at 11:00.</li>
+</ul>
+<p><em>I'm here from <strong>Creem</strong> magazine to interview Black Sabbath.</em></p>
+<ul>
+<li>A rock magazine edited by Lester Bangs that was popular in the 1970s, but which never had the success of Rolling Stone magazine.</li>
+</ul>
+<p><em>Go to the top of the <strong>ramp</strong> with the other girls.</em></p>
+<ul>
+<li>A roadway that connects two levels, or leads on or off a highway.</li>
+</ul>
+<p><em>I'm not a <strong>groupie</strong>.</em></p>
+<ul>
+<li>A somewhat negative word for a girl who follows rock stars around, often hoping to sleep with them while they are on a concert tour.</li>
+</ul>
+<p><em>Groupies <strong>sleep with</strong> rock starts because they want to be near someone famous. We're here because of the music. We're '<strong>Band-Aids</strong>.'</em></p>
+<ul>
+<li>Depending on the context, to "sleep with" a person often means to have sex with them.</li>
+<li>A "Band Aid" is Penny's term for girls like her who follow rock stars, since she doesn't like the word groupie. Note the play on words---they "aid" rock bands,
+  and a band-aid is a small bandage that is used to cover a cut or other minor injury.</li>
+</ul>
+<p><em>We don't have <strong>intercourse</strong> with them.</em></p>
+<ul>
+<li>A clinical way of referring to sex, or sexual intercourse.</li>
+</ul>
+<p><em>We <strong>inspire</strong> the music. We're here because of the music.</em></p>
+<ul>
+<li>"To inspire" is to encourage or stimulate great work in other people.</li>
+</ul>
+<p><em>She was the one who said 'no more <strong>exploiting</strong> our bodies and our hearts.'</em></p>
+<ul>
+<li>"To exploit" a person is to use or take advantage of them.</li>
+</ul>
+<p><em>Right; just <strong>blow jobs</strong>, and that's it.</em></p>
+<ul>
+<li>A funny line. A "blow job" is a slang term for the act of performing oral sex on a man.</li>
+</ul>
+<p><em>Who brought <strong>Opie</strong>?</em></p>
+<ul>
+<li>"Opie" was the name of a very young and innocent character in "The Andy Griffith Show," which was a popular TV show in the 1960s.
+  Sapphire is probably calling William this because he looks so innocent.</li>
+</ul>
+<p><em>This is <strong>outrageous</strong>. We're an hour and half late.</em></p>
+<ul>
+<li>A powerful adjective meaning extremely offensive or bad.</li>
+</ul>
+<p><em>Look, I'm sorry. But could you please <strong>fuck off</strong>?</em></p>
+<ul>
+<li>An alternative to the more common "fuck you." Of course, just as vulgar, but with the advantage that you can tell a 3<sup>rd</sup> person
+  to pass on the message (i.e.... "tell him to fuck off...")</li>
+</ul>
+<p><em>You guys <strong>producing</strong> it yourself, instead of Glyn Johns, that was the right thing to do.</em></p>
+<ul>
+<li>"To produce" a record is to handle of all the recording equipment in order to make the best possible song.</li>
+</ul>
+<p><em>Russell, the guitar sound is <strong>incendiary</strong>...<strong>way to go</strong>!</em></p>
+<ul>
+<li>"Incendiary" is an educated word for something that causes a fire, or in this case, that causes great emotion or passion.</li>
+<li>"Way to go" is a common and colloquial way of congratulating a person who just accomplished something very good or difficult.</li>
+</ul>
+<p><em>He's with us. Come in this way, <strong>Bro</strong>.</em></p>
+<ul>
+<li>A short slangy way of saying brother, or more loosely, friend.</li>
+</ul>
+<p><em>Rock 'n' roll is a <strong>lifestyle</strong> and a way of thinking, and it's not about money and popularity.</em></p>
+<ul>
+<li>An interesting and politically sensitive word that refers to the way of living, style or values of an individual or culture (There can be a hippie lifestyle, gay lifestyle, etc).</li>
+</ul>
+<p><em>It's a voice that says "Here I am, and 'fuck you' if you can't understand me."</em></p>
+<ul>
+<li>A silly rock star's typical way of trying to explain rock music.</li>
+</ul>
+<p><em>Rock 'n' roll can save the world....and the <strong>chicks</strong> are great.</em></p>
+<ul>
+<li>A very slangy and somewhat silly word for a girl or young woman.</li>
+</ul>
+<p><em>But what <strong>it all comes down to</strong> is that thing...the <strong>indefinable</strong> thing when people <strong>catch</strong> something from your music.</em></p>
+<ul>
+<li>If a situation "all comes down to" something, that something is the most critical or important part ("The health of a company all comes down to its employees").</li>
+<li>If something is "indefinable," it can't be defined or explained.</li>
+<li>In this case, "to catch" something from the music is to be emotionally touched by it.</li>
+</ul>
+<p><em>What am I talking about? The <strong>buzz</strong>. The chicks, the <strong>whatever</strong>, is an <strong>offshoot</strong> of the buzz.</em></p>
+<ul>
+<li>"Buzz" is a slang word for the excited talk among the public about a movie, show, or in this case, rock group.</li>
+<li>"Whatever" is an over used word to refer to anything in general, when you can't think of a more precise word.</li>
+<li>An "offshoot" of something is the direct result of it.</li>
+</ul>
+<p><em>I found you a <strong>pass</strong>.</em></p>
+<ul>
+<li>In this context, a ticket that allows a person to get into a concert free, or even allows them to go backstage after the show to meet the band.</li>
+</ul>
+<p><em>Can we <strong>bring the lights down</strong>?</em></p>
+<ul>
+<li>"To bring down the lights" is to turn them off, often slowly, at a concert.</li>
+</ul>
+<p><em>You want to come to <strong>LA</strong>? We'll be at the <strong>Riot</strong> House....the Continental Hyatt House.</em></p>
+<ul>
+<li>"LA" is the most common way to refer to Los Angeles, America's most wonderful city.</li>
+<li>A "riot" is an outbreak of violence by a crowd, though here it's a nickname for an expensive hotel (the Continental Hyatt House),
+  because rock stars and their fans often cause trouble there.</li>
+</ul>
+<p><em>Tell her to call me. I'm <strong>under</strong> "Harry Houdini."</em></p>
+<ul>
+<li>Note that to be "under" a name at a hotel is to be registered with that name (Harry Houdini was a famous magician who died in the 1920s).</li>
+</ul>
+<p><em>Come on, lets <strong>blow</strong> this <strong>burg</strong>.</em></p>
+<ul>
+<li>In this case, "to blow" a place is a slangy and somewhat dated way of saying to leave it quickly.</li>
+<li>A "burg" is a short and rare word for suburb.</li>
+</ul>
+<p><em><strong>The enemy</strong>! Come up to LA and we'll talk some time.</em></p>
+<ul>
+<li>The members of the band refer to William as the enemy because he writes for Rolling Stone magazine, which was very critical of hard rock groups like Stillwater.
+  In short, they don't trust him or the magazine.</li>
+</ul>
+<p><em>Hey man, be cool.</em></p>
+<ul>
+<li>This is a very slangy way of telling a person to be respectful or nice.</li>
+</ul>
+<p><em>No, he said it <strong>ain't</strong> California without you. :: I get the <strong>gist</strong>.</em></p>
+<ul>
+<li>"Ain't" is common slang for isn't (or other conjugations of to be), but it a word that you should generally avoid using.</li>
+<li>The "gist" is an excellent word for the main point of a speech, argument, story, etc.</li>
+</ul>
+<p><em>I live in a different world. :: <strong>Speaking of</strong> the world...</em></p>
+<ul>
+<li>"Speaking of" is an excellent way to begin talking about something that has just been mentioned in a conversation.</li>
+</ul>
+<p><em>I'm going to live in <strong>Morocco</strong> for one year.</em></p>
+<ul>
+<li>A country in North Africa, that was popular with hippies in the 1960s.</li>
+</ul>
+<p><em>I need a new <strong>crowd</strong>.</em></p>
+<ul>
+<li>In this case, Penny is using "crowd" to mean a new group of friends.</li>
+</ul>
+
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>William joins the Stillwater tour, and soon finds himself as a reporter for Rolling Stone.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Keep the small <strong>bills</strong> on the outside and call me if anyone gets drunk.</em></p>
+  <ul>
+  <li>A short way of referring to dollar bills (Elaine thinks William should carry the bigger $10 and $20 bills hidden inside the $1 bills, so he will be less likely to be robbed).</li>
+  </ul>
+  <p><em><strong>It's all happening!</strong> I'm about to use you as protection.</em></p>
+  <ul>
+  <li>A very dated and slangy expression used a lot in this movie, which probably means many that very exciting things are happening.</li>
+  </ul>
+  <p><em>Please don't <strong>smear</strong> it. Five minutes ago he touched this pen.</em></p>
+  <ul>
+  <li>"To smear" ink or paint is to cause it to spread or stain in a messy fashion, often after water or another liquid is accidentally dripped on it.</li>
+  </ul>
+  <p><em>Vic is a Zeppelin fan. :: I <strong>picked that up</strong>.</em></p>
+  <ul>
+  <li>In this case, to "pick up" something is to realize or understand it, often after observing it (i.e....William could see from Vic's behavior that he loved the group Led Zeppelin--as he should since Led Zeppelin is the greatest band in human history).</li>
+  </ul>
+  <p><em>Ladies and gentlemen, at this time please <strong>extinguish</strong> all smoking materials, for the captain has turned on the no smoking sign.</em></p>
+  <ul>
+  <li>"To extinguish" a fire is to put it out or eliminate it. These are words which Penny knows well, said by a stewardess before a plane takes off.</li>
+  </ul>
+  <p><em>Your seats and <strong>tray tables</strong> should be locked in their full upright position.</em></p>
+  <ul>
+  <li>"Tray tables" are the tiny tables that passengers use to eat on in an airplane, attached to the seat in front of them. Again, more words that Penny knows well, and that a stewardess says before a plane takes off.</li>
+  </ul>
+  <p><em>Oh...<strong>the hell with it</strong>!</em></p>
+  <ul>
+  <li>A common and slangy way of expressing great frustration, especially after you have been unable to do something that you wanted to.</li>
+  </ul>
+  <p><em><strong>Act</strong> one, in which she pretends she doesn't care about him.</em></p>
+  <ul>
+  <li>An "act" in a play is a major part or division.</li>
+  </ul>
+  <p><em>Act three, in which it all <strong>plays out</strong> the way she planned it.</em></p>
+  <ul>
+  <li>"To play out" is to happen over a period of time.</li>
+  </ul>
+  <p><em>"Voice of God, <strong>howling</strong> dogs, the spirit of rock 'n' roll."</em></p>
+  <ul>
+  <li>"To howl" is to cry out, like a dog or a wolf.</li>
+  </ul>
+  <p><em>"Hard-working band makes good." Let's do 3,000 words...we'll join the band on the road.</em></p>
+  <ul>
+  <li>This is Ben-Fong's way of telling William he wants him to write an article about the band, as it tours the country giving many concerts.</li>
+  </ul>
+  <p><em>We can only pay $700. All right, <strong>a grand</strong>.</em></p>
+  <ul>
+  <li>A common and colloquial way of saying $1,000 dollars.</li>
+  </ul>
+  <p><em>What's your background? Are you a <strong>journalism major</strong>?</em></p>
+  <ul>
+  <li>"Journalism" is the profession of writing, especially news articles.</li>
+  <li>A "major" is a specialization in school (History, English, Math, etc...)</li>
+  </ul>
+  <p><em>Honey, I need you to do that thing that fixes the <strong>garbage disposal</strong>.</em></p>
+  <ul>
+  <li>A machine in the kitchen sink that chews up food into small pieces so that it can be washed down the pipes.</li>
+  </ul>
+  <p><em>Well, I certainly know how <strong>my lady</strong> gets when you don't <strong>snap to it</strong>.</em></p>
+  <ul>
+  <li>"My lady" is a totally ridiculous way of referring to one's girlfriend or wife.</li>
+  <li>"To snap to it" means to do something quickly and efficiently.</li>
+  </ul>
+  <p><em><strong>Beware of</strong> Rolling Stone magazine, because they will change your story, turn it into <strong>swill</strong>.</em></p>
+  <ul>
+  <li>"Beware of" something is a way of telling a person to be careful, because it could be dangerous.</li>
+  <li>"Swill" is liquid food waste or food for pigs, or more colloquially here, very bad writing.</li>
+  </ul>
+  <p><em>Besides that, what would be wrong with it? :: You got <strong>starry</strong> eyes, my friend.</em></p>
+  <ul>
+  <li>A person with "starry" eyes has overly romantic or idealistic beliefs about something.</li>
+  </ul>
+  <p><em>Don't do it...to <strong>glorify worthless</strong> rock stars like Stillwater.</em></p>
+  <ul>
+  <li>"To glorify" a person is to treat them as if they are much greater or more important then they really are, or as if they were a King or God.</li>
+  <li>If an artist is "worthless," they have no value and are truly horrible.</li>
+  </ul>
+  <p><em>Don't let these <strong>swill merchants</strong> rewrite you.</em></p>
+  <ul>
+  <li>In this case, Lester's way of referring to Rolling Stone magazine, because he feels they publish horribly written articles.</li>
+  </ul>
+  <p><em>Come on Doris, you darling bus, <strong>you can make it</strong>!</em></p>
+  <ul>
+  <li>"You can make it" is another way of telling a person that they can do it if they keep on trying. In this case, Jeff is talking to Doris, which is the band's bus, which is trying hard to climb up a hill.</li>
+  </ul>
+  <p><em>I want to <strong>interview</strong> you separately and I thought we'd start with just you and me.</em></p>
+  <ul>
+  <li>"To interview" a person is to ask them a series of questions, often for a news article or book.</li>
+  </ul>
+  <p><em>You have a message from Elaine, your mother. She's a <strong>handful</strong>.</em></p>
+  <ul>
+  <li>If a person is a "handful," they are very difficult to talk to or control.</li>
+  </ul>
+  <p><em>She <strong>freaked me out</strong>.</em></p>
+  <ul>
+  <li>"To freak out" a person is an excellent phrasal verb meaning to scare or disturb them.</li>
+  </ul>
+  <p><em>He looks harmless, but he does represent the magazine that <strong>trashed</strong>" Layla," broke up Cream, and <strong>ripped</strong> every album that Led Zeppelin made.</em></p>
+  <ul>
+  <li>In rock criticism, to "trash" a song is to very sharply criticize it, or call it bad or lousy.</li>
+  <li>"To rip" an album is another slangy way of saying to call it bad or lousy, or more colloquially, shitty (anyone who rips on Led Zepplin isn't fit to live).</li>
+  </ul>
+  <p><em>Don't forget the rules. This <strong>little shit</strong> is the enemy!</em></p>
+  <ul>
+  <li>"A little shit" is an interesting but crude and insulting way of referring to anybody who is mean, abusive or perhaps can't be trusted.</li>
+  </ul>
+  <p><em>Take a <strong>valium</strong>.</em></p>
+  <ul>
+  <li>A drug that is supposed to relax people, which was very popular in the 1970s.</li>
+  </ul>
+  <p><em>Although it would be cool to be on the cover.</em></p>
+  <ul>
+  <li>Note that even though Jeff sees Rolling Stone magazine as the enemy, he would still love to be on its cover in order to become more famous.</li>
+  </ul>
+  <p><em>I'm in too truthful a mood.</em></p>
+  <ul>
+  <li>This is Russell's way of saying that he doesn't want to be interviewed by William because he may say something that he later regrets saying.</li>
+  </ul>
+  <p><em>You're so <strong>rude</strong>.</em></p>
+  <ul>
+  <li>An excellent alternative word to mean or very impolite.</li>
+  </ul>
+  <p><em>I'm gonna say this and I'm gonna <strong>stand by it</strong>. You should be really proud of him.</em></p>
+  <ul>
+  <li>"To stand by" something you have said is to continue to insist that you truly believe it, even if you get strongly criticized for doing so.</li>
+  </ul>
+  <p><em>He respects women...and let's just <strong>pause</strong> and appreciate a man like that.</em></p>
+  <ul>
+  <li>"To pause" is to stop for a short time before continuing (In this case, to think about how sweet William is).</li>
+  </ul>
+  <p><em>You <strong>created him out of thin air</strong>, you know. You raised him right.</em></p>
+  <ul>
+  <li>"To create something out of thin air" is a poetic way of saying to make something that did not exist in any way before. This is Sapphire's way of saying that Elaine has obviously been a good mother.</li>
+  </ul>
+  <p><em>Don't worry, he's still a <strong>virgin</strong> and we're all <strong>looking out for</strong> him. This is the maid speaking, by the way.</em></p>
+  <ul>
+  <li>A "virgin" is a person who has not ever had sexual intercourse.</li>
+  <li>"To look out for" a person is to protect or watch over them.</li>
+  </ul>
+  <p><em>Can you please <strong>hold it down</strong>?!</em></p>
+  <ul>
+  <li>One way of asking a person to be quiet.</li>
+  </ul>
+  <p><em>I trust you, so I'm just going <strong>to lay it right on you</strong>. Just make us look cool.</em></p>
+  <ul>
+  <li>"To lay it right on" a person is to tell them something directly, without trying to find gentle or diplomatic words.</li>
+  </ul>
+  <p><em>I will <strong>quote</strong> you warmly and accurately.</em></p>
+  <ul>
+  <li>"To quote" a person is to repeat their own words in a story.</li>
+  </ul>
+  <p><em>Some of the people you meet on the road are really <strong>amazing</strong> people.</em></p>
+  <ul>
+  <li>An excellent adjective meaning to cause great surprise, wonder or fascination because of a particular quality.</li>
+  </ul>
+  <p><em>I'm past them as a musician, but the more popular we get, the bigger their houses get, and the harder it gets for me to walk out on them.</em></p>
+  <ul>
+  <li>This is Russell's way of saying he is a much better musician than the others in the band, but he can't leave them because they are counting on him to help them make lots of money.</li>
+  </ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Russell is injured, the tour continues and William  learns more of the rock'n'roll lifestyle.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Russell just got <strong>electrocuted</strong>.</em></p>
+  <ul>
+  <li>To be injured (or killed) by the sudden passing of a great amount of electricity through the body.</li>
+  </ul>
+  <p><em>Who's taking care of us? Who's responsible for the <strong>gear</strong>?</em></p>
+  <ul>
+  <li>Another word for musical equipment, such as speakers, guitars, etc.</li>
+  </ul>
+  <p><em>You didn't finish your full <strong>set</strong>, man! :: Listen <strong>pal</strong>, your <strong>shoddy</strong> stage <strong>set up</strong> almost killed my guitarist!</em></p>
+  <ul>
+  <li>In this case, a "set" is a musical set, or a series of songs in concert.</li>
+  <li>"Pal" is another word for friend, but is often used, as here, when talking to a person the speaker actually hates.</li>
+  <li>"Shoddy" is a useful adjective which means of poor quality, and a "set up" refers to the way something is organized, in this case the equipment on stage.</li>
+  </ul>
+  <p><em>You <strong>trashed</strong> my fucking dressing room and you didn't do your 25 minutes!</em></p>
+  <ul>
+  <li>"To trash" a room is to badly damage or destroy it. Slangy but common.</li>
+  </ul>
+  <p><em>Don't <strong>fuck with</strong> my band's safety, ever! :: Fuck you, man!</em></p>
+  <ul>
+  <li>To "fuck with" something is to play with it in such a way that it can cause problems or danger. Vulgar, but common.</li>
+  </ul>
+  <p><em>I'm going to report you to every <strong>promoter</strong> in the country! Lock the gates on these <strong>fuckheads</strong>!</em></p>
+  <ul>
+  <li>In this case, a "promoter" is a businessman who organizes rock concerts.</li>
+  <li>A "fuckhead" is a colorful but crude insult word. It's safer to say jerk, creep or dick (unless the other person is armed).</li>
+  </ul>
+  <p><em><strong>Amateurs</strong>! You don't know who you're <strong>dealing with</strong> here!</em></p>
+  <ul>
+  <li>An "amateur" is a beginner at something, or someone who has no experience.</li>
+  <li>"To deal with" something is to be involved with it.</li>
+  </ul>
+  <p><em>Look at all those fucking <strong>tasty</strong> high school girls!</em></p>
+  <ul>
+  <li>"Tasty" is one way of saying delicious. A ridiculous thing to say, but typical of this type of rock star.</li>
+  </ul>
+  <p><em>Here's the thing about Russell; he's my last project.</em></p>
+  <ul>
+  <li>This is probably Penny's way of saying that she is going to get him to fall in love with her (i.e....this is her project or goal).</li>
+  </ul>
+  <p><em>Just leave me behind; I'm only the fucking <strong>lead singer</strong>!</em></p>
+  <ul>
+  <li>The "lead singer" in a band is the main singer, and usually the most famous person in the group. Note that with certain people, "fucking" can be an extremely common adverb/adjective.</li>
+  </ul>
+  <p><em>What about <strong>graduation</strong>? We had an agreement, William.</em></p>
+  <ul>
+  <li>"Graduation" is the official ending of school, and is often marked by an official ceremony to honor the students who are finishing.</li>
+  </ul>
+  <p><em>I just don't understand why I am <strong>driving my kids so far away</strong> from me.</em></p>
+  <ul>
+  <li>If you "drive a person away," you are probably so disagreeable that they leave in order to avoid being near you.</li>
+  </ul>
+  <p><em>By all practical rules, don't I get you for another three years?</em></p>
+  <ul>
+  <li>This is Elaine's way of saying that she should have the right to raise and take care of William, who is only 15, until he is 18.</li>
+  </ul>
+  <p><em>She's one of the original <strong>legendary</strong> Band-Aids! She's <strong>clairvoyant</strong>!</em></p>
+  <ul>
+  <li>A person who is "legendary" is famous, usually for having accomplished something important.</li>
+  <li>If a person is "clairvoyant," they are able to see what will happen in the future.</li>
+  </ul>
+  <p><em>I can't <strong>read your mind</strong>...I <strong>pick up things</strong> here and there.</em></p>
+  <ul>
+  <li>If you can "read a person's mind," you can know what they are thinking. In this case, "to pick up things" means to see or realize what a person is thinking (i.e....to read their mind, but just a little bit).</li>
+  </ul>
+  <p><em>I got some <strong>hydroponic pot</strong>...<strong>wow</strong>, your <strong>aura</strong> is really fantastic!</em></p>
+  <ul>
+  <li>"Hydroponic pot" is marijuana that is grown in water (usually in a home greenhouse).</li>
+  <li>"Wow" is a very common way of expressing great emotion or surprise.</li>
+  <li>A person's "aura" is the energy or feelings that seems to surround them in the air--mostly a hippie phrase.</li>
+  </ul>
+  <p><em><strong>Fire away</strong>; I'm ready.</em></p>
+  <ul>
+  <li>One way of saying "start" when telling a person they should begin to ask their questions or tell their information.</li>
+  </ul>
+  <p><em>Can we just skip the <strong>vibe</strong> and go straight to us laughing about this?</em></p>
+  <ul>
+  <li>A short way of saying "vibration," which is a physical wave, but refers to a person's emotional energy that he gives off to other people.</li>
+  </ul>
+  <p><em>I can see by your face that you want <strong>to get into</strong> it.</em></p>
+  <ul>
+  <li>In this case, "to get into" something means to seriously talk about it.</li>
+  </ul>
+  <p><em>How can you tell? I'm just one of the <strong>out-of-focus</strong> guys.</em></p>
+  <ul>
+  <li>If a person is "out-of-focus" in a photograph, they are blurry or not clearly seen.</li>
+  </ul>
+  <p><em>Do you <strong>give a shit</strong> about a t-shirt?</em></p>
+  <ul>
+  <li>"To give a shit" about something is to care about it. Crude, but common, and usually used in the negative, as in "I don't give a shit."</li>
+  </ul>
+  <p><em>From the very beginning, we said that I am the <strong>front man</strong> and you are the guitarist with <strong>mystique</strong>.</em></p>
+  <ul>
+  <li>In a band, the "front man" is the most visible person, who often speaks for the others.</li>
+  <li>If a person has "mystique," they have a certain sense of mystery that fascinates people.</li>
+  </ul>
+  <p><em>That's the <strong>dynamic</strong> we agreed on.</em></p>
+  <ul>
+  <li>A "dynamic" is a general arrangement or strategy concerning overall power or force.</li>
+  </ul>
+  <p><em><strong>Page, Plant, Mick, Keith</strong>. But somehow it's all turned around.</em></p>
+  <ul>
+  <li>Robert Plant and Jimmy Page of Led Zeppelin, and Mick Jagger and Keith Richards of the Rolling Stones. Jeff is complaining that unlike those guys, Russell is trying to get too much of the fame for himself.</li>
+  </ul>
+  <p><em>You know what I do? I <strong>connect</strong>. I <strong>get people off</strong>.</em></p>
+  <ul>
+  <li>In this case, to "connect" with a person means to touch them emotionally.</li>
+  <li>"To get a person off" is to make them happy or excited (though also note that in the right context, it means to give them an orgasm; this is one of the truly great and complex phrasal verbs).</li>
+  </ul>
+  <p><em>I look for the one guy who isn't getting off and I make him get off.</em></p>
+  <ul>
+  <li>This is Jeff's way of describing his goal at a concert. It sounds strangely sexual.</li>
+  </ul>
+  <p><em>Deal with it!</em></p>
+  <ul>
+  <li>A direct way of telling a person to face their problem and try to solve it.</li>
+  </ul>
+  <p><em>Your <strong>looks</strong> have become a problem.</em></p>
+  <ul>
+  <li>"Looks" is an interesting plural noun that refers to a person's physical appearance (Remember that people can be good or bad-looking).</li>
+  </ul>
+  <p><em>OK, enough, <strong>break it up</strong>!</em></p>
+  <ul>
+  <li>One way of telling two or more people to stop arguing or fighting.</li>
+  </ul>
+  <p><em><strong>From here on out</strong>, I'm only interested in what is real.</em></p>
+  <ul>
+  <li>Another way of saying "for now on," or "starting now."</li>
+  </ul>
+<section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>William and Russell join a party in Topeka, Kansas.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>You know all about us and I <strong>don't know shit</strong> about you.</em></p>
+  <ul>
+  <li>If you "don't know shit" about a person, you don't know anything about them. Very crude.</li>
+  </ul>
+  <p><em>My sister believes my mom is so <strong>intense</strong> that she had to escape our family.</em></p>
+  <ul>
+  <li>If a person is "intense," they have a very strong type of emotional energy that can make others nervous or uncomfortable.</li>
+  </ul>
+  <p><em>They can't seem to find a way <strong>to get through it</strong>.</em></p>
+  <ul>
+  <li>"To get through" a problem is to be able to solve it. In this case, they can't find a way to get along well.</li>
+  </ul>
+  <p><em>Do you want to <strong>hang with</strong> some good people looking to have a good time?</em></p>
+  <ul>
+  <li>This is a very slangy way of saying to pass time with, or hang out with.</li>
+  </ul>
+  <p><em><strong>Holy shit</strong>! I <strong>screwed up</strong> with that lamp shade.</em></p>
+  <ul>
+  <li>"Holy shit" is a colorful way of expressing great emotion such as surprise or anger.</li>
+  <li>If you "screw up" an object, you physically damage it. A very common and useful phrasal verb.</li>
+  </ul>
+  <p><em>You, Aaron, are what it's all about. <strong>You're real</strong>.</em></p>
+  <ul>
+  <li>This is basically Russell's way of saying Aaron is a real person with real emotions and feelings, as opposed to the business of music, which he now feels is only about numbers and money.</li>
+  </ul>
+  <p><em>You're more important than all the <strong>silly machinery</strong>.</em></p>
+  <ul>
+  <li>"Silly" means foolish or not serious.</li>
+  <li>"Machinery" refers to the impersonal complex system of business.</li>
+  </ul>
+  <p><em>Hey, there's <strong>acid</strong> in the beer that's in the red cups.</em></p>
+  <ul>
+  <li>A strong type of illegal drug that makes people hallucinate (to see things that don't really exist). It can be fun but is also dangerous.</li>
+  </ul>
+  <p><em>I can't tell. How do you know when it's <strong>kicked in</strong>?</em></p>
+  <ul>
+  <li>If a drug "kicks in," it begins to have an effect on people's behavior.</li>
+  </ul>
+  <p><em>I <strong>dig</strong> music! I'm <strong>on drugs</strong>!</em></p>
+  <ul>
+  <li>If a person "digs" something, they like it, but this verb is pretty dated.</li>
+  <li>Taking drugs purely for the physical or emotional alteration means to be "on drugs."</li>
+  </ul>
+  <p><em>They've been crying for you like <strong>whimpering pussies</strong>.</em></p>
+  <ul>
+  <li>"To whimper" means to cry softly, and a "pussy" is a very crude word for a coward or a person without any courage.</li>
+  </ul>
+  <p><em>This band's <strong>over</strong>.</em></p>
+  <ul>
+  <li>Another way of saying finished, or ended.</li>
+  </ul>
+  <p><em>We'll finish the <strong>tour</strong> and leave those ungrateful <strong>fools</strong> behind.</em></p>
+  <ul>
+  <li>A "concert tour" is a scheduled series of dates for concerts in various cities.</li>
+  <li>A "fool" is a very silly or stupid person.</li>
+  </ul>
+  <p><em>How do we know you're not a <strong>cop</strong>? Stop fucking looking at me!</em></p>
+  <ul>
+  <li>A "cop" is a very common way of referring to a policeman. Note how often "fuck" can become a grammatically curious adverb.</li>
+  </ul>
+  <p><em><strong>Easy, easy</strong>! Calm down! He only means half of what he says.</em></p>
+  <ul>
+  <li>One way of telling a person to calm down.</li>
+  </ul>
+  <p><em>In Carl Jung's opinion, we all have a sixth sense. <strong>Intuition</strong>.</em></p>
+  <ul>
+  <li>"Intuition" is the ability to know or feel something, without using logic, or the five main senses (To see, hear, touch, taste, and smell).</li>
+  </ul>
+  <p><em>When you meet someone and feel you can't live without them, this could be the memory of a past love from the <strong>collective unconscious</strong>...</em></p>
+  <ul>
+  <li>This is a dramatic term that refers to the consciousness or thinking mind that may be connected to all living things in the universe.</li>
+  </ul>
+  <p><em>....or it could just be <strong>hormones</strong>.</em></p>
+  <ul>
+  <li>Chemicals in blood that effect growth, development and sexual desire.</li>
+  </ul>
+  <p><em>I'm sorry, I can't <strong>concentrate</strong>. Rock stars have kidnapped my son.</em></p>
+  <ul>
+  <li>To "concentrate" on something is to focus on it, or to think only about it, and not the distractions that are nearby.</li>
+  </ul>
+  <p><em>I don't have my key interview. You're <strong>flipping out</strong>.</em></p>
+  <ul>
+  <li>"To flip out" is to go crazy or become extremely nervous.</li>
+  </ul>
+  <p><em>This is how <strong>you blow their minds</strong>.</em></p>
+  <ul>
+  <li>"To blow a person's mind" is a very slangy way of saying to totally impress or amaze them.</li>
+  </ul>
+<section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>The tour arrives in Cleveland as William struggles with his article and the Band Aids end his "innocence."</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Tell him it's <strong>a think piece</strong> about a midlevel band struggling with their own limitations in the.....<strong>harsh</strong> face of <strong>stardom</strong>.</em></p>
+  <ul>
+  <li>"A think piece" is an article that is supposed to make the reader think or reflect.</li>
+  <li>If something is "harsh," it is rough, cruel or difficult.</li>
+  <li>"Stardom" is another word for fame or the status of being famous.</li>
+  </ul>
+  <p><em>He'll wet himself.</em></p>
+  <ul>
+  <li>A short way of saying that he will pee in his pants from the excitement.</li>
+  </ul>
+  <p><em>Let's <strong>deflower</strong> the kid.</em></p>
+  <ul>
+  <li>"To deflower" is a fascinating verb meaning to have sex with a virgin.</li>
+  </ul>
+  <p><em>I think things are going <strong>backward</strong> for me.</em></p>
+  <ul>
+  <li>Life is getting complicated.</li>
+  </ul>
+  <p><em>I thought maybe we could <strong>hang out</strong>, you know, do some <strong>stuff</strong> back home, regular stuff...get to know you better, and then I could see you pee.</em></p>
+  <ul>
+  <li>"To hang out" with a person is to spend time with them. Note the use of "stuff," which in this case just means things in general.</li>
+  </ul>
+  <p><em>Famous people are just more interesting. :: I'd be worried that they were <strong>using</strong> me.</em></p>
+  <ul>
+  <li>Here, "to use" somebody means to exploit or take advantage of them.</li>
+  </ul>
+  <p><em>How's the story? :: I'm getting good <strong>stuff</strong> out here.</em></p>
+  <ul>
+  <li>Another clever use of "stuff." Note William means information (for his story), but Ben-Fong is thinking girls or sex in general.</li>
+  </ul>
+  <p><em>Now listen, <strong>get it together</strong>, man!</em></p>
+  <ul>
+  <li>"Get it together" is a very colloquial way of telling a person to calm down and start getting things done before it's too late.</li>
+  </ul>
+  <p><em>You're not out there to join the party; we already have one <strong>Hunter Thompson</strong>.</em></p>
+  <ul>
+  <li>Hunter S. Thompson was a famous journalist who was well known for participating in the parties, drugs and cultural events that he reported on. One of his most famous
+  quotes is: "I hate to advocate drugs, alcohol, violence, or insanity to anyone, but they've always worked for me."</li>
+  </ul>
+  <p><em>You're out there to interview and report. <strong>You got me</strong>?</em></p>
+  <ul>
+  <li>"Do you understand me?"</li>
+  </ul>
+  <p><em>We need this story in four days; Now I want to know how it is <strong>shaping up</strong>.</em></p>
+  <ul>
+  <li>In this case, "shaping up" means developing or evolving.</li>
+  </ul>
+  <p><em>It's <strong>in consideration for</strong> the cover, but don't tell the band.</em></p>
+  <ul>
+  <li>If an article is "in consideration for" the cover, there is a strong possibility that it will be on the cover of the magazine.</li>
+  </ul>
+  <p><em>Please go <strong>the fuck</strong> away.</em></p>
+  <ul>
+  <li>A grammatically fascinating filler term that adds strong emotion such as anger or frustration. Very vulgar, and best to avoid.</li>
+  </ul>
+  <p><em>Tell her you're a slave to the <strong>groove</strong>. You <strong>can't help it</strong>.</em></p>
+  <ul>
+  <li>A "groove" is the tiny, narrow path cut into the surface of a record, and thus it was a very slangy way of referring to music in general, but it is no longer used this way.</li>
+  <li>If a person "can't help doing" something, they can't prevent themselves from doing it.</li>
+  </ul>
+  <p><em>Your <strong>charm</strong> doesn't work on me. I'm <strong>on to you</strong>.</em></p>
+  <ul>
+  <li>"Charm" is the ability to please, attract or seduce with one's behavior or mannerisms.</li>
+  <li>If a person is "on to you," they know what you are thinking or planning to do.</li>
+  </ul>
+  <p><em>He <strong>worships</strong> you people. And that's fine by you, as long as he helps make you rich.</em></p>
+  <ul>
+  <li>"To worship" a person is to idolize or glorify them or treat them as if they were a God.</li>
+  </ul>
+  <p><em>He's a smart, good-hearted 15 year old kid with <strong>infinite potential</strong>.</em></p>
+  <ul>
+  <li>If a person has "infinite potential," they have the ability to do almost anything they want, if they really try and put their minds to it.</li>
+  </ul>
+  <p><em>This is not some <strong>apron</strong>-wearing mother you're speaking to.</em></p>
+  <ul>
+  <li>An "apron" is a piece of cloth that is worn to keep clothes clean while cooking. This is Elaine's way of saying that she isn't innocent or na&iuml;ve.</li>
+  </ul>
+  <p><em>I know all about your <strong>Valhalla decadence</strong>.</em></p>
+  <ul>
+  <li>"Valhalla" is a place in ancient Norse myth where slain heroes party for eternity with the chief god, Odin.</li>
+  <li>"Decadence" is a state of moral decline in society often associated with excessive use of drugs and liquor as well as sexual promiscuity.</li>
+  </ul>
+  <p><em>He's not ready for your world of <strong>compromised values</strong> and <strong>diminished brain cells</strong> that you throw away like <strong>confetti</strong>.</em></p>
+  <ul>
+  <li>If a person has "compromised their values," they have agreed to do things that even they themselves probably think is morally wrong.</li>
+  <li>"Diminished brain cells" are cells that don't work as well as they should, in this case probably because of illegal drug use.</li>
+  <li>"Confetti" is tiny bits of colored paper that is thrown from buildings during parades.</li>
+  </ul>
+  <p><em>If you <strong>harm</strong> him in any way, you will meet the voice at the other end of this telephone, and it will not be pretty.</em></p>
+  <ul>
+  <li>"To harm" a person is to hurt someone physically or emotionally. This is Elaine's way of telling Russell that he will be in big trouble if he hurts William.</li>
+  </ul>
+  <p><em>"Be <strong>bold</strong>, and <strong>mighty</strong> forces will come to your aid." <strong>Goethe</strong> said that.</em></p>
+  <ul>
+  <li>"Bold" means courageous, or refers to a person who acts decisively.</li>
+  <li>"Mighty" means powerful.</li>
+  <li>Goethe was a famous German poet.</li>
+  </ul>
+  <p><em>It's not too late for you to become <strong>a person of substance</strong>, Russell.</em></p>
+  <ul>
+  <li>A way to describe a person who contributes to society or is perhaps intellectually curious and tries to find answers to great problems.</li>
+  </ul>
+  <p><em>Your mom kind of <strong>freaked me out</strong>. :: She <strong>means well</strong>.</em></p>
+  <ul>
+  <li>"To freak out" a person is to scare or disturb them.</li>
+  <li>If a person "means well," they are trying to do what is best for others, even if it doesn't look that way.</li>
+  </ul>
+<section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>A new manager joins Stillwater, the band heads to New York, and Penny almost dies....</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Well, it seems the <strong>rumors</strong> are true. The record company has sent a big-time manager to try and <strong>talk you into</strong> replacing me.</em></p>
+  <ul>
+  <li>A "rumor" is a piece of news that many people hear, but it is unclear if it is really true.</li>
+  <li>"To talk a person into" doing something is to try and convince or persuade them to do it.</li>
+  </ul>
+  <p><em>Bring him in and we'll <strong>send him out on a rail</strong>.</em></p>
+  <ul>
+  <li>A dated way to say that they will tell him to leave, in an aggressive or rude manner (the "rail" is a railroad track, which trains travel on).</li>
+  </ul>
+  <p><em>I believe in bands <strong>holding on to their roots</strong>; Those roots need to be <strong>augmented</strong>.</em></p>
+  <ul>
+  <li>If a band "holds on to its roots," it remembers where it came from, even after it gets super popular.</li>
+  <li>"To augment" something is to add to it, or to increase it.</li>
+  </ul>
+  <p><em>If you hadn't <strong>run out on your contract</strong> in Phoenix, we could have <strong>sued</strong> over Russell's hand.</em></p>
+  <ul>
+  <li>"To run out on a contract" is to fail to do what a contract says you are required to do.</li>
+  <li>"To sue" a person is to file an action against them in a court of law, usually in hopes of being awarded money.</li>
+  </ul>
+  <p><em>But you left, <strong>negating</strong> the contract, <strong>forfeiting</strong> the <strong>deposit</strong>.</em></p>
+  <ul>
+  <li>"To negate" something is to make it legally or practically ineffective or cancelled.</li>
+  <li>"To forfeit" something is to give up a legal right to it, and a "deposit" is the advance money that is given to a person in order to guarantee the availability of something later, such as an apartment, or here, a concert hall.</li>
+  </ul>
+  <p><em>Your damages have put you way <strong>in the hole</strong> for this tour.</em></p>
+  <ul>
+  <li>If band is "in the hole," they have lost more money than they have made.</li>
+  </ul>
+  <p><em><strong>Hey man</strong>, I'd travel on a <strong>pogo stick</strong> if I though we could make more money.</em></p>
+  <ul>
+  <li>"Hey man" is an out-dated way of expressing general emotion at the beginning of a sentence.</li>
+  <li>A "pogo stick" is a large stick with foot supports which allows you to jump up and down very high.</li>
+  </ul>
+  <p><em>Do you know how to do a <strong>headlining tour</strong>? Do you know how to get a record not just <strong>pressed</strong>, but <strong>played</strong>?</em></p>
+  <ul>
+  <li>"To headline" a concert tour is to be the last and most popular group to play each concert, after the less known groups have played.</li>
+  <li>If a record is "pressed," it is made in the factory, and if it is played, the music on it is played on the radio.</li>
+  </ul>
+  <p><em>I didn't invent the <strong>rainy day</strong>, man. I just own the best umbrella.</em></p>
+  <ul>
+  <li>This is Dennis' way of referring to a situation with lots of problems.</li>
+  </ul>
+  <p><em><strong>Side proposition</strong> to the winner. For 50 <strong>bucks</strong> and a <strong>case of Heineken</strong>, I'll throw into <strong>the pot</strong> three lovely ladies.</em></p>
+  <ul>
+  <li>In this case, a "side proposition" is an additional offer (at the poker game they are playing).</li>
+  <li>"Bucks" is very common slang for dollars.</li>
+  <li>A "case of Heineken" is 24 bottles of Heineken beer.</li>
+  <li>"The pot" is the money that the winner of the poker game will win.</li>
+  </ul>
+  <p><em>Russ is <strong>getting soft on</strong> us.</em></p>
+  <ul>
+  <li>If you get "soft on" someone, you no longer are as strict or mean to them as you were before.</li>
+  </ul>
+  <p><em>A joint.</em></p>
+  <ul>
+  <li>A common word for a marijuana cigarette. Used before vaping was invented.</li>
+  </ul>
+  <p><em>I'm in.</em></p>
+  <ul>
+  <li>A term in poker meaning that the person wants to bet money on that particular hand or distribution of cards.</li>
+  </ul>
+  <p><em>You're so <strong>sweet</strong>. God, if there was more of you in him.</em></p>
+  <ul>
+  <li>"Sweet" is another way of describing a person who is kind and gentle. This is Penny's way of saying she wished Russ was more like William.
+    (It's also code for "I'm in a destructive relationship with someone who treats me badly, but I lack the self-esteem to leave.")</li>
+  </ul>
+  <p><em>I could go with the Stillwater <strong>road crew</strong>, but that would be <strong>pathetic</strong>.</em></p>
+  <ul>
+  <li>The "road crew" for a band are the people who carry around all the musical equipment and make sure the stage is ready for the concerts.</li>
+  <li>"Pathetic" is a strong and excellent adjective meaning ridiculously bad, hopeless, or worthy of pity.</li>
+  </ul>
+  <p><em>I'm flying to New York by myself; I know his <strong>ex-wife current girlfriend thing</strong> is going to be there.</em></p>
+  <ul>
+  <li>This is Penny's colorful way of describing Russell's ex-wife, who has just gotten back together with him.</li>
+  </ul>
+  <p><em>I'm really confused here. All these rules, and <strong>sayings</strong> and <strong>nicknames</strong>.</em></p>
+  <ul>
+  <li>A "saying" is an expression ('You are what you eat'), and a "nickname" is the name a person uses even though its not their real name.</li>
+  </ul>
+  <p><em>You're too sweet for rock'n'roll. :: Sweet?! Where do you <strong>get off</strong>?!</em></p>
+  <ul>
+  <li>Another truly great phrasal verb: In this context, <em>asking</em> a person where or how they "get off" doing something is accusing them of having incredible nerve or disrespect, but if a person "gets off" doing something (in a positive sentence), he enjoys doing it very much.</li>
+  </ul>
+  <p><em>I'm <strong>dark</strong> and mysterious and <strong>pissed off</strong>.</em></p>
+  <ul>
+  <li>If a person is "dark," they are generally angry and negative or moody.</li>
+  <li>If they are "pissed off," they are angry about something in particular.</li>
+  </ul>
+  <p><em>All you can do is be yourself and leave a <strong>pint</strong> of blood on the stage.</em></p>
+  <ul>
+  <li>A unit of measurement, about the size of a small carton of milk. This is Dennis' way of telling the band to play their hearts out when they are in New York.</li>
+  </ul>
+  <p><em>We showed you America. Did everything but <strong>get you laid</strong>.</em></p>
+  <ul>
+  <li>"To get laid" is a common way of saying to have sex (though it's rarely used when discussing two people who are married or living together).</li>
+  </ul>
+  <p><em>Room is <strong>fully stocked</strong>. Air conditioning is on.</em></p>
+  <ul>
+  <li>If a hotel room is "fully stocked," it has plenty of food and drinks.</li>
+  </ul>
+  <p><em>By the way, you look <strong>stunning</strong>.</em></p>
+  <ul>
+  <li>Here, a powerful adjective that means beautiful or gorgeous (in other contexts, it could mean shocking or overwhelming).</li>
+  </ul>
+  <p><em>William Miller, you have an <strong>urgent</strong> call.</em></p>
+  <ul>
+  <li>If something is "urgent," it is extremely important and needs to be taken care of immediately.</li>
+  </ul>
+  <p><em>This is Jann Werner, <strong>publisher</strong> of Rolling Stone.</em></p>
+  <ul>
+  <li>The "publisher" of a magazine is the person who is responsible for the business of running it, and in fact is often the owner.</li>
+  </ul>
+  <p><em>Congratulations, it's going to be a cover. <strong>Annie Leibovitz</strong> will <strong>shoot</strong> them next week in LA, but we're going to need you in San Francisco tomorrow.</em></p>
+  <ul>
+  <li>"To shoot" a person is to photograph them, in this case for the cover of the magazine.</li>
+  <li>"Annie Leibovitz" is a famous American photographer who used to work for Rolling Stone magazine.</li>
+  </ul>
+  <p><em>Our <strong>fact-checker</strong> needs you to <strong>transmit</strong> whatever you have of the story right now, along with your notes.</em></p>
+  <ul>
+  <li>A "fact-checker" for a magazine is a person who makes sure all the facts in the story are true and accurate. "To transmit" information is to send it, usually through a telephone line or other type of wire.</li>
+  </ul>
+  <p><em>A <strong>mojo</strong>; It's a very modern machine that transmits pages over the telephone.</em></p>
+  <ul>
+  <li>A "mojo wire" is a primitive fax machine--technically, it's a Xerox telecopier--Hunter S. Thompson called it a "mojo wire," and the name stuck.</li>
+  </ul>
+  <p><em>They don't just put somebody with one little <strong>hit</strong> on the cover of Rolling Stone fucking magazine, man!</em></p>
+  <ul>
+  <li>In the music business, a "hit" is a popular song that is played often on the radio. More generally, anything that is very popular.</li>
+  </ul>
+  <p><em>Who is that girl? She's <strong>creeping me out</strong>.</em></p>
+  <ul>
+  <li>"To creep out" a person is to make them very nervous or uncomfortable (If something is creepy, it is scary or unpleasant, like a ghost).</li>
+  </ul>
+  <p><em>Even Sapphire went someplace else, and all she left were her <strong>quaaludes</strong>.</em></p>
+  <ul>
+  <li>A type of drug that was very popular in the 1970s which makes people feel drunk, and which is now banned from production.</li>
+  </ul>
+  <p><em><strong>Front desk</strong>, could you please send a doctor?</em></p>
+  <ul>
+  <li>The "front desk" of a hotel is usually the place where people check in and guests can get help.</li>
+  </ul>
+  <p><em>I love you, and I'm about to go <strong>boldly</strong> where many men have gone before.</em></p>
+  <ul>
+  <li>To do something "boldly" is to do it with great courage. "To go boldly where <em>no</em> man has gone before" is a very famous line from the TV show "Star Trek."</li>
+  </ul>
+  <p><em>Emily, we're going to have to <strong>pump your stomach</strong>, OK?</em></p>
+  <ul>
+  <li>"To pump a person's stomach" is to force a liquid down someone's throat and physically pump out dangerous drugs that the person has swallowed.</li>
+  </ul>
+  <p><em>You're going to have to swallow this <strong>tube</strong>.</em></p>
+  <ul>
+  <li>A "small" hollow pipe through which liquid can be poured.</li>
+  </ul>
+  <p><em>What about your mom? :: She always said "<strong>marry up</strong>, marry someone <strong>grand</strong>."</em></p>
+  <ul>
+  <li>"To marry up" is to marry a person from a higher or richer social class.</li>
+  <li>"Grand" is a ridiculous way of referring to a person, but as said by Penny's mom, it probably means rich and accomplished.</li>
+  </ul>
+<section id="part8"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>William and Stillwater reveal their deepest secrets in a plane about to crash.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p><em>Bob Dylan <strong>showed up</strong>. He was sitting at our table for what had to be an hour or something.</em></p>
+  <ul>
+  <li>"To show up" is a very common way of saying to arrive.</li>
+  </ul>
+  <p><em>Bob Dylan just <strong>rapping</strong> at our fucking table.</em></p>
+  <p>"To rap" is to talk freely and easily.</p>
+  <p><em>"Peggy Sue, oh Peggy Sue..."</em></p>
+  <ul>
+  <li>These are the first words to the famous song, which was written by Buddy Holly, the legendary rock star who died in a plane crash in 1959.</li>
+  </ul>
+  <p><em>It appears we caught the <strong>edge</strong> of that electrical storm.</em></p>
+  <ul>
+  <li>The "edge" is the outside border of something. This is the pilot's way of saying they are flying just inside of a lightning storm.</li>
+  </ul>
+  <p><em>We're going to try and land in <strong>Tupelo</strong>. We found a field to land in.</em></p>
+  <ul>
+  <li>Although not mentioned in the movie, Tupelo, Mississippi is famous as the birthplace and childhood home of Elvis Presley.</li>
+  </ul>
+  <p><em>It's going to be a <strong>rough set down</strong>, but we should be fine.</em></p>
+  <ul>
+  <li>In this case, "rough" means bumpy, scary or even violent, and a "set down" is another way of saying a landing.</li>
+  </ul>
+  <p><em>Just <strong>hang in there</strong>, and we'll <strong>get you out of</strong> this.</em></p>
+  <ul>
+  <li>"Hang in there" is a common way of telling a person to hold on or keep going, even if a situation is very difficult.</li>
+  <li>"To get a person out of" something is to help them escape from it.</li>
+  </ul>
+  <p><em>Everyone says it is <strong>glamorous</strong> out here.</em></p>
+  <ul>
+  <li>If a place is "glamorous," it has great beauty, charm or elegance.</li>
+  </ul>
+  <p><em>I once hit a man in Dearborn, Michigan. <strong>Hit and run.</strong></em></p>
+  <ul>
+  <li>A "hit and run" accident is when the driver of the car that hits another car or person immediately drives away in hopes that they will not be held responsible.</li>
+  </ul>
+  <p><em>You <strong>slept with</strong> Jeff?! :: Yeah, but it <strong>didn't count</strong>. It was the summer we decided to be free of all rules.</em></p>
+  <ul>
+  <li>In this case, to "sleep with" a person is to have sex with them.</li>
+  <li>If something "doesn't count," it is not important, or cannot be considered as either an accomplishment, or a violation of any rule.</li>
+  </ul>
+  <p><em>You <strong>act above</strong> us, you always have. You just <strong>held it over us</strong>, like you might leave.</em></p>
+  <ul>
+  <li>"To act above" others is to look down on them, or act in a snobby way.</li>
+  <li>"To hold something over" other people is to use the threat of a possible action (in this case, the possibility that Russell may leave the group), in order to intimidate them or get what you want.</li>
+  </ul>
+  <p><em>Whatever happens, Bebe, you're dead. :: Don't be <strong>self-righteous</strong>, Russell.</em></p>
+  <ul>
+  <li>A person who is "self-righteous" is one who acts as if they are always acting in a righteous or morally correct manner.</li>
+  </ul>
+  <p><em>You're always talking about your fans. She was your biggest fan, and you threw her away.</em></p>
+  <ul>
+  <li>This is William's way of accusing Russell of mistreating Penny.</li>
+  </ul>
+  <p><em>We're alive! We're going <strong>to make it</strong>.</em></p>
+  <ul>
+  <li>In this case, to "make it" means to survive.</li>
+  </ul>
+  <p><em>Sweet life! <strong>Hallelujah</strong>, dear God!</em></p>
+  <ul>
+  <li>A very old religious word that basically means thank God!</li>
+  </ul>
+  <p><em>Didn't anything happen after $600 of <strong>room service bills</strong>?</em></p>
+  <ul>
+  <li>The money hotels charge for extra services, such as meals in the room, laundry services, etc.</li>
+  </ul>
+  <p><em>Ok, I think we should <strong>push up</strong> Flippo's Who cover.</em></p>
+  <ul>
+  <li>To "push up" a story is to publish it earlier than originally planned (Flippo is a Rolling Stoner writer, and The Who are a rock group).</li>
+  </ul>
+  <p><em>Good, because it's going to take me three days to <strong>get through</strong> this research. It's all handwritten on little <strong>bits</strong> of paper.</em></p>
+  <ul>
+  <li>"To get through" a piece of writing is to carefully read and understand it.</li>
+  <li>"Bits" are small pieces.</li>
+  </ul>
+  <p><em>It's a <strong>puff piece</strong>. Plus they refer to women as 'chicks.'</em></p>
+  <ul>
+  <li>A "puff piece" is a journalistic term for an article that is written to make somebody look good, but has no serious research or criticism.</li>
+  </ul>
+  <p><em>See, friendship is the <strong>booze</strong> that they feed you.</em></p>
+  <ul>
+  <li>"Booze" is a colloquial word for liquor or alcohol.</li>
+  </ul>
+  <p><em>We are uncool. Women will always be a problem for guys like us, and most of the great art in the world is about that very problem.</em></p>
+  <ul>
+  <li>This is Lester's philosophical way of telling William that life is hard for guys who are not good looking and cool.</li>
+  </ul>
+  <p><em>Good looking people, they got no <strong>spine</strong>. Their art never lasts.</em></p>
+  <ul>
+  <li>A person's "spine" is their backbone, though here Lester is using it to mean courage or bravery.</li>
+  </ul>
+  <p><em>Great art is about guilt and <strong>longing</strong> and love <strong>disguised</strong> as sex and sex disguised as love.</em></p>
+  <ul>
+  <li>"Longing" is a poetic word that means strong desire.</li>
+  <li>If one thing is "disguised" as another, it is pretending to be that other.</li>
+  </ul>
+  <p><em>Hey, you got <strong>a big head start</strong>.</em></p>
+  <ul>
+  <li>One way of saying a big advantage over other people.</li>
+  </ul>
+  <p><em>The only true <strong>currency</strong> in this <strong>bankrupt</strong> world is what you share with someone else when you're uncool.</em></p>
+  <ul>
+  <li>"Currency" is money, and often refers to foreign money.</li>
+  <li>If a person is "bankrupt," it means they have no money to pay their bills, but it also can refer to having no moral values. This may be Lester's poetic way of saying that people like him and William express honest emotional pain because they are "uncool" (though this word is never used).</li>
+  </ul>
+  <section id="part9"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Russell almost costs William his career as a journalist, but thanks to Penny, they meet again....</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+  <p>
+<p><em>Dark, <strong>lively</strong>. :: Yeah, it gets better.</em></p>
+<ul>
+<li>If an article is "lively," it is filled with energy and interesting writing.</li>
+</ul>
+<p><em><strong>Holy shit</strong>! He's using it all! :: <strong>So what</strong>?</em></p>
+<ul>
+<li>"Holy shit" is a vulgar but great way to express emotion such as anger or frustration ("Holy" means sacred or perhaps close to God).</li>
+<li>"So what?" is a common way of asking "why is this a problem?" after a person has told you something that they think is a serious problem.</li>
+</ul>
+<p><em>"So what?!" We <strong>come off</strong> like <strong>amateurs</strong>, some average band trying to <strong>come to grips with</strong> success.</em></p>
+<ul>
+<li>"To come off" badly in an article is to appear bad because of the way the article is written.</li>
+<li>An "amateur" is a non-professional, or one with little or no experience.</li>
+<li>"To come to grips" with something is to learn and accept it, or to deal with it ("To grip" something is to hold it tightly).</li>
+</ul>
+<p><em>We're <strong>buffoons</strong>! "The chicks are great"?! I sound like a <strong>dick</strong>!</em></p>
+<ul>
+<li>A "buffoon" is a very stupid or foolish person.</li>
+<li>A "dick" is a jerk, idiot or ass, although it also means penis. One of the better insult words.</li>
+</ul>
+<p><em><strong>The kid has you</strong> on <strong>acid</strong> screaming "I'm a golden God" from a kid's rooftop.</em></p>
+<ul>
+<li>"The kid has you" is a way of saying "He wrote that..."</li>
+<li>"Acid" is a powerful illegal drug that often makes people see things that don't really exist.</li>
+</ul>
+<p><em>It's <strong>phenomenal</strong>, William. It's <strong>sophisticated</strong>, intelligent.</em></p>
+<ul>
+<li>"Phenomenal" is a powerful adjective that means truly amazing, or extraordinary, and usually in a very positive sense.</li>
+<li>"Sophisticated" means complicated, but in an intelligent or clever way.</li>
+</ul>
+<p><em>The band just <strong>denied</strong> 90% of the story; It's a <strong>fabrication</strong>.</em></p>
+<ul>
+<li>"To deny" what somebody says is to claim it isn't true.</li>
+<li>A "fabrication" is a story that is made up by the author, that never really happened.</li>
+</ul>
+<p><em>You look <strong>awful</strong>, but it's great.</em></p>
+<ul>
+<li>"Awful" means truly bad or horrible.</li>
+</ul>
+<p><em>Hey, I'll <strong>take off</strong> work. Let's have an adventure, you and me, finally.</em></p>
+<ul>
+<li>"To take off" work is to leave work or to not go to work for a certain period of time in order to take a vacation or some other type of break.</li>
+</ul>
+<p><em>Is Penny OK? The quaaludes <strong>incident</strong>? It wasn't pretty.</em></p>
+<ul>
+<li>An "incident" is a specific event, especially one that is dramatic.</li>
+</ul>
+<p><em>I'm sorry. If we could just <strong>get together</strong> and find some time to talk.</em></p>
+<ul>
+<li>"To get together" is another way of saying to meet in order to pass some time together.</li>
+</ul>
+<p><em>You know, when we spoke, I felt that we connected.</em></p>
+<ul>
+<li>This is Russell's way of telling Penny that he thought they had a type of emotional connection between them.</li>
+</ul>
+<p><em>My son is very important to me, and I think you do owe him an <strong>apology</strong>.</em></p>
+<ul>
+<li>The act of asking forgiveness after having done something wrong.</li>
+</ul>
+<p><em>So what do you love about music? :: <strong>To begin with</strong>, everything.</em></p>
+<ul>
+<li>A good way of starting an answer or speech when you are to list a lot of different things.</li>
+</ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. Was William too innocent to be a rock'n'roll writer?</p>
+  <p>2. Do you like any music from this period? If so, what bands?</p>
+  <p>3. How would you describe Penny Lane to a friend? What do you think would become of her in the years ahead?</p>
+  <p>4. Are most rock stars more concerned about making money and being popular than making great music?</p>
+  <p>5. Who are the best rock groups/artists in the history of rock music?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>
