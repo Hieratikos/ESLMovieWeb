@@ -16,6 +16,18 @@
     url('fonts/open-sans-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('fonts/open-sans-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+.fullPage{
+    max-width:100%;
+    margin-left:16px;
+    margin-right:16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+    border:2px;
+    border-style:solid;
+    margin-left:16px;
+    margin-right:16px;
+}
 h1, h3{
     font-family: 'Bangers', cursive;
     text-shadow: 3px 3px #aaaaaa;
