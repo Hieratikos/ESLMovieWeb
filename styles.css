@@ -1,0 +1,74 @@
+/* bangers-regular - latin */
+@font-face {
+    font-family: 'Bangers';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bangers Regular'), local('Bangers-Regular'),
+    url('fonts/bangers-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/bangers-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('fonts/open-sans-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/open-sans-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+h1, h3{
+    font-family: 'Bangers', cursive;
+    text-shadow: 3px 3px #aaaaaa;
+    margin:auto;
+}
+h2,h4,h5,h6{
+    font-family: 'Bangers', cursive;
+    margin:auto;
+    margin-bottom: 20px;
+    color: #fff;
+}
+img {
+    height: 100%;
+    width: auto;
+    margin:auto;
+}
+.header{
+    text-align: center;
+    background-repeat:repeat-x;
+}
+.header.top{
+    background-image:url('images/ReelTop.webp');
+}
+.header.bottom{
+    background-image:url('images/ReelBottom.webp');
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+}
+.imgBox{
+    border-style:ridge;
+    border-width:5px;
+}
+.mockbird{
+    background-color:#3f51b5;
+    border-color:#3f51b5;
+}
+.gump{
+    background-color:#854200;
+    border-color:#854200;
+}
+.almfam{
+    background-color:#fa7319;
+    border-color:#fa7319;
+}
+.ambeau{
+    background-color:#ff053f;
+    border-color:#ff053f;
+}
+.willhunt{
+    background-color:#ffbb33;
+    border-color:#ffbb33;
+}
+.unforg{
+    background-color:#bd4f00;
+    border-color:#bd4f00;
+}
