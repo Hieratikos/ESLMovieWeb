@@ -6,3 +6,7 @@
 > Live version [here](http://hieratikos.x10.mx/ESLMovies/).
 
 ![MobileSite](images/MobileSite.png)
+
+* Quick and dirty test results:
+
+![GoogleTestResults](images/GoogleTestResults.png)
