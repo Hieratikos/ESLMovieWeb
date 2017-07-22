@@ -14,3 +14,7 @@
 > Quick and dirty test results:
 
 ![GoogleTestResults](images/GoogleTestResults.png)
+
+> Or for more detail:
+
+![WebPageTestResults](images/WebPageTestResults.png)
