@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html>
+<title>Wall Street</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
+  <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script async type="text/javascript" src="bootstrap.min.js"></script>
+<style>
+/* amber theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fffbf3 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#fff1d6 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ffe4ad !important}
+.w3-theme-l2 {color:#000 !important; background-color:#ffd685 !important}
+.w3-theme-l1 {color:#000 !important; background-color:#ffc95c !important}
+.w3-theme-d1 {color:#000 !important; background-color:#ffb114 !important}
+.w3-theme-d2 {color:#000 !important; background-color:#f5a300 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#d68f00 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#b87a00 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#996600 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fffbf3 !important}
+.w3-theme-dark {color:#fff !important; background-color:#996600 !important}
+.w3-theme-action {color:#fff !important; background-color:#996600 !important}
+
+.w3-theme {color:#000 !important; background-color:#ffbb33 !important}
+.w3-text-theme {color:#ffbb33 !important}
+.w3-border-theme {border-color:#ffbb33 !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#ffbb33 !important}
+.w3-hover-text-theme {color:#ffbb33 !important}
+.w3-hover-border-theme:hover {border-color:#ffbb33 !important}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: none;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #ffcd37;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+.navbar{
+  border-color:#ffcd37;
+}
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body class="fullPage" style="border:1px solid #ffcd37">
+<nav class="navbar navbar-fixed-top" role="navigation">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#part8" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 8</a>
+    <a href="#part9" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 9</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">Wall Street</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/WallStreet.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    A young and impatient stockbroker is willing to do anything to get to the top,
+    including trading on illegal inside information taken through a ruthless and
+    greedy corporate raider who takes the youth under his wing.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Rated R | 2 hrs 6 min | Crime, Drama | 1987
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Bud Fox</td><td>Charlie Sheen</td>
+  </tr>
+  <tr>
+    <td colspan="2">A young, smart and very motivated  stock broker
+      (seller) who dreams of making millions of dollars.</td>
+  </tr>
+  <tr>
+    <td>Gordon Gekko</td><td>Michael Douglas</td>
+  </tr>
+  <tr>
+    <td colspan="2">A very rich, ruthless and immoral stock trader
+      and “corporate raider,” which is a person who buys and sells
+      companies, often with horrible results for company workers.</td>
+  </tr>
+  <tr>
+    <td>Darien Taylor</td><td>Daryl Hannah</td>
+  </tr>
+  <tr>
+    <td colspan="2">A young and beautiful interior decorator with very
+      expensive taste, who is a friend of Gekko’s, and who soon becomes
+      Bud’s girlfriend.</td>
+  </tr>
+  <tr>
+    <td>Carl Fox</td><td>Martin Sheen</td>
+  </tr>
+  <tr>
+    <td colspan="2">Bud’s father, a very honest and good man, who is an airplane mechanic and labor union leader at Blue Star Airlines.</td>
+  </tr>
+  <tr>
+    <td>Sir Larry Wildman</td><td>Terence Stamp</td>
+  </tr>
+  <tr>
+    <td colspan="2">An extremely rich British corporate raider, who often finds
+      himself fighting against Gekko for control of various companies. </td>
+  </tr>
+  <tr>
+    <td>Lou Mannheim</td><td>Hal Holbrook</td>
+  </tr>
+  <tr>
+    <td colspan="2">An older trader at the brokerage (stock trading firm) where Bud works.</td>
+  </tr>
+  <tr>
+    <td>Roger Barnes</td><td>James Spader</td>
+  </tr>
+  <tr>
+    <td colspan="2">A corporate lawyer and old friend of Bud’s, who has inside
+      (secret) information on many companies, thanks to his job.</td>
+  </tr>
+  <tr>
+    <td>Marvin</td><td>John C. McGintey</td>
+  </tr>
+  <tr>
+    <td colspan="2">A fellow trader and friend of Bud’s.</td>
+  </tr>
+  <tr>
+    <td>Duncan</td><td>William G. Knight</td>
+  </tr>
+  <tr>
+    <td colspan="2">The leader of the pilot’s union at Blue Star airlines.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+  This movie is the story of a young and ambitious Wall Street stock broker named
+  Bud Fox, who is determined to become rich like his hero, a stock trader and corporate
+  raider named Gordon Gekko. Gekko is one of the richest, most ruthless and immoral
+  businessmen in the country, who routinely uses inside (secret) corporate information
+  to make deals, even though this is  completely illegal. He also buys companies cheap,
+  only to destroy them and their workers’ jobs in order to sell off the company’s assets
+  (such as planes, land, office buildings, etc). For Gekko, “greed is good.”
+<p>
+  After trying for several weeks, Bud gets to meet Gekko, and with a little luck, he is
+  soon working with him, making investments with an account Gekko has set up for him.
+  Gekko promises Bud lots of “perks” (benefits) if he does well with the money, and those
+  benefits soon arrive. He also meets Darien at a party that Gekko is throwing, and now
+  that he is starting to make so much money, he can afford to go out with her, despite her
+  very expensive taste. Unfortunately, Bud soon learns the dark side of Gekko’s
+  trading world, including his willingness to break any law, or for that matter, destroy
+  any company to make more and more money. This includes the company where Bud’s
+  father is the leader of the labor union, and for Bud, that is a bad deal that is just
+  too close to home.
+<p>
+  This movie, which was made in 1987, does a good job of capturing the ambiance, and more
+  specifically, the greed, that was a big part of the American scene during the 1980s. In
+  fact, the character of Gordon Gekko is based loosely on a real corporate raider named
+  Ivan Boesky, who was fined $100,000,000 and sentenced to several years in jail for his
+  part in the insider trading scandals that shook Wall Street during that decade. Of course,
+  wealth and money are relative; by the end of the 1990s, dozens of people in the US had
+  accumulated fortunes in the billions of dollars, making the sums discussed in this movie
+  seem almost insignificant!
+<p>
+  <strong><em>A Note on “Insider trading”</em></strong>: This is the act of trading stock after acquiring information
+  from executives or other high officials inside a company. It is illegal, because it is
+  believed the person who has this information has an unfair advantage over those who don’t.
+  Of course, it is difficult to prove, and in the real world, many people often come very
+  close to breaking this law.
+  <p>
+  <strong><em>The Three Most Important Companies in this Film (All Fictional):</em></strong><br/>
+<ul>
+  <li><strong>Blue Star Airlines:</strong>  The airline where Bud’s dad is a mechanic and union
+  leader, which is facing bankruptcy because it cannot compete with bigger airlines. Bud feels
+  he can save it, but Gekko has other ideas.</li>
+
+  <li><strong>Teldar Paper:</strong> A huge paper company that Gekko wants to buy, forcing out
+    all of their management. Obviously, the management tries to resist this.</li>
+
+  <li><strong>Anacott Steel:</strong>  A steel company that Larry Wildman wants to buy and save,
+  and in theory, make profitable for the long run. It becomes harder for Larry to do this when
+  Gekko begins to buy stock in it, thus driving up the price.</li>
+</ul>
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Bud has a bad day at the office, losing $7,000 for all his hard work.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+  <p></p>
+<p><em>How are you doing? :: Doing any better, and it would be a <strong>sin</strong>.</em></p>
+<ul>
+  <li>A silly way of saying things are going very well (A &ldquo;sin&rdquo; is an immoral act of which "God" disapproves).</li>
+</ul>
+<p><em>Get out while you&rsquo;re young, kid.</em></p>
+<ul>
+  <li>Lou&rsquo;s way of telling Buddy to leave the brokering business.</li>
+</ul>
+<p><em>How are you doing, <strong>pal</strong>?</em></p>
+<ul>
+  <li>&ldquo;Pal&rdquo; is an alternative word to friend (It is heavily used in this movie).</li>
+</ul>
+<p><em>Marv, I&rsquo;ve got a feeling we&rsquo;re gonna <strong>make a killing</strong> today.</em></p>
+<ul>
+  <li>A slangy way of saying to make a lot of money.</li>
+</ul>
+<p><em><strong>Jesus</strong>, you can&rsquo;t make a <strong>buck</strong> in this market.</em></p>
+<ul>
+  <li>"Jesus" is a common way of showing emotion such as anger or frustration.</li>
+  <li>A "buck" is a widely used way of saying a dollar.</li>
+</ul>
+<p><em>The country is <strong>going to hell</strong> faster than when that <strong>son of a bitch</strong> Roosevelt was in charge.</em></p>
+<ul>
+  <li>If a person or country is &ldquo;going to hell,&rdquo; it is becoming bad or weak.</li>
+  <li>A &ldquo;son of a bitch &ldquo; is a vulgar way to refer to a mean or abusive person.</li>
+</ul>
+<p><em>Putnam Drug. :: No, it will take five years for that company to <strong>come around</strong>.</em></p>
+<ul>
+  <li>In this case, for a company to &ldquo;come around&rdquo; means to become strong and profitable again.</li>
+</ul>
+<p><em>Stick to the fundamentals. That&rsquo;s how IBM and Hilton were built.</em></p>
+<ul>
+  <li>In this case, a type of business advice that says companies should concentrate on doing what they do best (Building computers for IBM and running hotels for Hilton).</li>
+</ul>
+<p><em><strong>Look sharp</strong>, especially you, <strong>rookie</strong>.</em></p>
+<ul>
+  <li>To &ldquo;look sharp&rdquo; is to look professional, or like you know what you&rsquo;re doing.</li>
+  <li>A &ldquo;rookie&rdquo; is a person who just started working in a new job.</li>
+</ul>
+<p><em><strong>Utilities</strong> are our top priority today.</em></p>
+<ul>
+  <li>The companies that deliver gas and electricity.</li>
+</ul>
+<p><em>Here&rsquo;s a <strong>hot lead</strong>; research just put <strong>thrifts</strong> on the recommended.</em></p>
+<ul>
+  <li>A &ldquo;hot lead&rdquo; is a piece of information that could be very valuable.</li>
+  <li>&ldquo;Thrifts&rdquo; are a type of small lending bank (The research department is recommending to buy the stocks of certain thrift banks).</li>
+</ul>
+<p><em><strong>Dump them</strong>, <strong>for Christ&rsquo;s sake</strong>.</em></p>
+<ul>
+  <li>"To dump" a stock is to sell it, often very quickly before it continues to go down in price. A very important verb in this film!</li>
+  <li>"For Christ's sake" is a common way of expressing frustration or other emotion.</li>
+</ul>
+<p><em>Jack, 30,000, 38 tops.</em></p>
+<ul>
+  <li>A short way of telling Jack to buy 38,000 shares of a particular stock, but to pay no more than $38 per share.</li>
+</ul>
+<p>We are in the middle of the biggest <strong>bull market</strong> that our generation or any other has ever <strong>witnessed</strong>.</p>
+<ul>
+  <li>A &ldquo;bull market&rdquo; is a stock market in which prices are going up (A &ldquo;bear market&rdquo; is when prices are going down).</li>
+  <li>&ldquo;To witness&rdquo; something is to see or observe it.</li>
+</ul>
+<p><em>If I could have five minutes of your time to explore the <strong>extraordinary opportunities</strong> <strong>emerging</strong> in the international <strong>debt market</strong>.</em></p>
+<ul>
+  <li>An "extraordinary opportunity" is a very rare chance, in this case to make a lot of money.</li>
+  <li>"To emerge" is to appear or become known.</li>
+  <li>The &ldquo;debt market&rdquo; is investments in corporate or government bonds (Debt is the money owed by one person or institution to another).</li>
+</ul>
+<p><em>In 10 minutes <strong>it&rsquo;s history</strong>, at 4:00 I&rsquo;m a <strong>dinosaur</strong>!</em></p>
+<ul>
+  <li>Marv&rsquo;s way of saying that stocks must be sold extremely quickly, because their value changes dramatically in just a few seconds</li>
+  <li>If something &ldquo;is history,&rdquo; it&rsquo;s old and useless, and &ldquo;dinasaurs&rdquo; are the huge monsters that ruled the earth millions of years ago.</li>
+</ul>
+<p><em>Sure it&rsquo;s gone down, but you got the <strong>tip</strong>, I didn&rsquo;t.</em></p>
+<ul>
+  <li>A &ldquo;tip&rdquo; is a useful piece of information or advise.</li>
+</ul>
+<p><em>Oh <strong>give me a break</strong>! How <strong>the hell</strong> was I supposed to know you were in surgery?</em></p>
+<ul>
+  <li>&ldquo;Give me a break&rdquo; is an excellent way of telling someone to stop saying nonsense, or to stop acting in a ridiculous way.</li>
+  <li>&ldquo;The hell&rdquo; is added to Wh- questions in order to show emotion such as frustration.</li>
+</ul>
+<p><em>I&rsquo;ll discuss that with the <strong>account executive</strong> and get back to you.</em></p>
+<ul>
+  <li>An &ldquo;account executive&rdquo; is a prestigious or fancy way of referring to a salesman, or in this case, stock broker.</li>
+</ul>
+<p><em>You tell me that he&rsquo;ll <strong>DK</strong> you for a <strong>lousy</strong> 1/4 point?</em></p>
+<ul>
+  <li>Here, to &ldquo;DK&rdquo; a broker is to claim you &ldquo;don&rsquo;t know&rdquo; them, so that you don&rsquo;t have to pay for a stock that has gone down in price since you bought it!</li>
+  <li>&ldquo;Lousy&rdquo; is a good word for bad, or here, insignificant.</li>
+</ul>
+<p><em>$7,000 loss! You <strong>assigned</strong> me to this guy and you know he has a history of this kind of <strong>bullshit</strong>.</em></p>
+<ul>
+  <li>&ldquo;To assign&rdquo; a client to a broker is to give them that person&rsquo;s business.</li>
+  <li>&ldquo;Bullshit&rdquo; is a vulgar but excellent word for lies, nonsense, or in this case, unethical or immoral behavior.</li>
+</ul>
+<p><em>Howard the <strong>jerk</strong> <strong>reneged</strong> on me.</em></p>
+<ul>
+  <li>A &ldquo;jerk&rdquo; is a widely used word for an idiot, bastard, ass, etc&hellip;</li>
+  <li>&ldquo;To reneg&rdquo; on a person is to refuse to do what you had promised them.</li>
+</ul>
+<p><em>I&rsquo;ve got <strong>to cover his losses</strong> <strong>to the tune of</strong> about seven <strong>grand</strong>.</em></p>
+<ul>
+  <li>&ldquo;To cover a person&rsquo;s losses&rdquo; is to pay for them.</li>
+  <li>&ldquo;To the tune of&rdquo; is a way of saying &ldquo;that are equal to&hellip;&rdquo;</li>
+  <li>A &ldquo;grand&rsquo; is $1,000.</li>
+</ul>
+<p><em>I&rsquo;m <strong>tapped out</strong>, Marv. American Express has a <strong>hit man</strong> looking for me.</em></p>
+<ul>
+  <li>In this context, if a person is &ldquo;tapped out,&rdquo; they no longer have any credit left with their credit card company (Here, American Express).</li>
+  <li>A &ldquo;hit man&rdquo; is a person paid to kill somebody.</li>
+</ul>
+<p><em>What do I got? A <strong>c-note</strong>? :: Thanks, Marv. <strong>I&rsquo;ll make it up to you</strong>.</em></p>
+<ul>
+  <li>A &ldquo;c-note&rdquo; is a $100 bill.</li>
+  <li>&ldquo;To make it up&rdquo; to somebody is to pay them back for a favor they have done.</li>
+</ul>
+<p><em>30 seconds after the <strong>Challenger</strong> blows up, Gekko&rsquo;s on the phone <strong>selling NASA stocks short</strong>.</em></p>
+<ul>
+  <li>The &ldquo;Challenger&rdquo; was the space craft the blew up in 1986, killing all the astronauts on board.</li>
+  <li>To &ldquo;sell a stock short&rdquo; is to borrow stocks whose price is expected to decrease in the future. The trader sells the stocks right away, and when they decrease in value, he buys them on the open market for a reduced price, returns the stocks to the original owner, and makes a profit for doing nothing but guessing correctly.</li>
+  <li>NASA is the National Aeronautics and Space Administration of the federal government.</li>
+</ul>
+<p><em>And he had an <strong>ethical by-pass</strong> at birth.</em></p>
+<ul>
+  <li>A funny line. &ldquo;Ethical&rdquo; is another word for moral, and a &ldquo;by-pass&rdquo; is a serious heart operation. This is a way of saying that Gekko was born without morals or ethics, or that that were by-passed at birth.</li>
+</ul>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Bud sees his dad, and then after 39 days of calling, gets to meet Gekko.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>Give me 50 grand and I&rsquo;ll get you a <strong>condo</strong> in Florida next Christmas.</em></p>
+<ul>
+  <li>Short for a &ldquo;condominium,&rdquo; which is an apartment that people own.</li>
+</ul>
+<p><em>You look like you&rsquo;ve grown another <strong>inch</strong>, but you <strong>don&rsquo;t look so hot</strong>.</em></p>
+<ul>
+  <li>An inch is a unit of measurement, about the length of a thumb.</li>
+  <li>If a person &ldquo;doesn&rsquo;t look so hot,&rdquo; they often look sick or weak (In other context, this could be referring to physical beauty).</li>
+</ul>
+<p><em>You&rsquo;re starting to get bags under your eyes, like your <strong>old man</strong>.</em></p>
+<ul>
+  <li>A person&rsquo;s &ldquo;old man&rdquo; is their father. Very slangy.</li>
+</ul>
+<p><em>I had a <strong>tough</strong> day.</em></p>
+<ul>
+  <li>A &ldquo;tough&rdquo; day is a difficult one.</li>
+</ul>
+<p><em>DK: He didn&rsquo;t know who I was when the <strong>options</strong> he bought <strong>took a bath</strong>.</em></p>
+<ul>
+  <li>An &ldquo;option&rdquo; is an investment that bets on whether a stock will go up or down.</li>
+  <li>If an investment &ldquo;takes a bath,&rdquo; it goes down in value.</li>
+</ul>
+<p><em>I told you not to get into that <strong>racket</strong>. You could have been a doctor.</em></p>
+<ul>
+  <li>A &ldquo;racket&rdquo; is a very negative word for a profession in which people make money by cheating or manipulating others.</li>
+</ul>
+<p><em>If you stayed at Blue Star, you could have been a <strong>supervisor</strong>, instead of a salesman.</em></p>
+<ul>
+  <li>A person who is in charge of others at a business or office.</li>
+</ul>
+<p><em><strong>50K</strong> doesn&rsquo;t get you to first base in <strong>the big apple</strong>.</em></p>
+<ul>
+  <li>&ldquo;50 K&rdquo; is $50,000. In this case, &ldquo;first base&rdquo; is the most minimum amount of money needed to live decently in New York.</li>
+  <li>&ldquo;The big apple&rdquo; is a common nickname for New York City.</li>
+</ul>
+<p><em>Come back home and live rent free, instead of in that <strong>roach</strong> <strong>infested</strong> place you&rsquo;re living in.</em></p>
+<ul>
+  <li>A &ldquo;roach&rdquo; (or &ldquo;cockroach&rdquo;) is an unpleasant insect, common in poor apartments.</li>
+  <li>If a place is &ldquo;infested&rdquo; with insects, it is filled with them.</li>
+</ul>
+<p><em>Jesus Christ, the whole world is <strong>off it&rsquo;s rocker</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;off their rocker,&rdquo; they are acting crazy.</li>
+</ul>
+<p><em>That&rsquo;s <strong>Queens</strong>, dad. A 5% <strong>mortgage</strong> and you rent the top room.</em></p>
+<ul>
+  <li>&ldquo;Queens&rdquo; is a borough (section) of New York City, not on the island of Manhattan, which is where Wall Street is located.</li>
+  <li>A &ldquo;mortgage&rdquo; is the monthly amount that a home owner pays a bank on a home loan.</li>
+</ul>
+<p><em>I got to live in Manhattan to be a <strong>player</strong>; there is no <strong>nobility</strong> in <strong>poverty</strong> anymore.</em></p>
+<ul>
+  <li>In this case, &ldquo;a player&rdquo; is a person with huge amounts of money that can effect the future of stocks and companies.</li>
+  <li>&ldquo;Nobility&rdquo; is another word for honor or dignity, and &ldquo;poverty&rdquo; is the state of being very poor.</li>
+</ul>
+<p><em>Can you <strong>spare</strong> $300?</em></p>
+<ul>
+  <li>A common verb meaning to lend or give away, most frequently heard on American streets in the question &ldquo;Can you spare a quarter?&rdquo;</li>
+</ul>
+<p><em><strong>Damn</strong> <strong>mandatory</strong> drug tests are driving my men crazy.</em></p>
+<ul>
+  <li>&ldquo;Damn&rdquo; is a filler adjective that expresses anger or other emotion.</li>
+  <li>If something is &ldquo;mandatory,&rdquo; it is legally required (In this case, drug tests on the job to test for marijuana and other illegal drugs).</li>
+</ul>
+<p><em>The <strong>FAA</strong> is going to rule it was a manufacturing error on the door <strong>latch mechanism</strong>.</em></p>
+<ul>
+  <li>The FAA is the Federal Aviation Administration, which regulates all airplane traffic in the US.</li>
+  <li>A &ldquo;latch mechanism&rdquo; is a part of a door that allows it to swing open and shut.</li>
+</ul>
+<p><em>I kept telling them it wasn&rsquo;t <strong>maintenance</strong>. It&rsquo;s those <strong>God damn</strong> greedy manufacturers in <strong>Cincinnati</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;maintenance&rdquo; refers to the mechanics at the airline that make sure the airplanes are safe.</li>
+  <li>&ldquo;God damn&rdquo; is a stronger and more vulgar version of damn.</li>
+  <li>Cincinnati is a major city in Ohio.</li>
+</ul>
+<p><em>This gets us out from <strong>under suspension</strong>. We can get new <strong>routes</strong> to Boston and Pittsburgh now.</em></p>
+<ul>
+  <li>If a company is &ldquo;under suspension,&rdquo; they are legally required to follow certain rules, often until an investigation is completed.</li>
+  <li>Airline &ldquo;routes&rdquo; are the pathway between two cities that it&rsquo;s allowed to fly.</li>
+</ul>
+<p><em>You&rsquo;ve got that <strong>mischievous</strong> look in your eyes.</em></p>
+<ul>
+  <li>An excellent word to describe a young boy who looks like they are about to do something that is wrong or not permitted.</li>
+</ul>
+<p><em>I&rsquo;ll give you a <strong>hint</strong>; You&rsquo;re thinking seriously about marrying me.</em></p>
+<ul>
+  <li>Another good word for a useful piece of information.</li>
+</ul>
+<p><em>You can&rsquo;t just come <strong>barging in</strong> here&hellip;.and what makes you think it&rsquo;s his birthday?</em></p>
+<ul>
+  <li>&ldquo;To barge in&rdquo; to an office is to quickly and forcefully enter it, often without knocking or warning the person inside.</li>
+</ul>
+<p><em>Life <strong>all comes down to</strong> a few moments. This is one of them.</em></p>
+<ul>
+  <li>If life &ldquo;all comes down to&rdquo; a few moments, it means that these few moments will dramatically effect life in the future.</li>
+</ul>
+<p><em>I loved it at 40; it&rsquo;s an insult at 50.</em></p>
+<ul>
+  <li>This is Gekko&rsquo;s way of saying the stock price was good at 40 dollars a share, but too expensive at 50 dollars a share.</li>
+</ul>
+<p><em>Their <strong>analysts</strong> don&rsquo;t know preferred stock from livestock.</em></p>
+<ul>
+  <li>A funny play on words. In this context, &ldquo;stock analysts&rdquo; are people who study the true value of stocks and companies.</li>
+  <li>&ldquo;Preferred stock&rdquo; is a type of company stock, while &ldquo;livestock&rdquo; is another word for cows!</li>
+</ul>
+<p><em>There ought to be a picture of you in the dictionary under &ldquo;<strong>persistence</strong>,&rdquo; kid.</em></p>
+<ul>
+  <li>&ldquo;Persistence&rdquo; is the act of continuing to try for an extended period of time, despite an early lack of success.</li>
+</ul>
+<p><em>I&rsquo;m looking for 30, 35%, just enough to block anybody else&rsquo;s <strong>merger</strong> plans and find out from the inside if <strong>the books are cooked</strong>.</em></p>
+<ul>
+  <li>A corporate "merger" is the act of two companies joining to become one. If a company's "books are cooked," the accounting numbers they use to show profits are misleading or even false. Gekko is saying he wants to buy enough stock in the company so that he can get inside of corporate offices to investigate for himself.</li>
+</ul>
+<p><em>If it looks as good <strong>on paper</strong>, we&rsquo;re in <strong>the kill zone</strong>.</em></p>
+<ul>
+  <li>If something looks good &ldquo;on paper,&rdquo; it looks good when studied carefully. In this context, if a stock price is in &ldquo;the kill zone,&rdquo; it is at a price that is worth buying.</li>
+</ul>
+<p><em>Lunch?! Lunch is for <strong>wimps</strong>!</em></p>
+<ul>
+  <li>A funny slang word for a weak or fragile person.</li>
+</ul>
+<p><em>I&rsquo;ve got to <strong>monitor</strong> my blood pressure, so whatever you do, don&rsquo;t upset me.</em></p>
+<ul>
+  <li>&ldquo;To monitor&rdquo; a medical condition is to observe it over a period of time.</li>
+</ul>
+<p><em>Got an LCD readout, <strong>cost-effective</strong>. Less than one visit to a doctor.</em></p>
+<ul>
+  <li>A computerized &ldquo;readout&rdquo; is a printed copy of information. If something is &ldquo;cost-effective,&rdquo; it saves more money than it costs.</li>
+</ul>
+<p><em>Jacob-Steinham. :: They&rsquo;re <strong>going places</strong>, good <strong>junk bond</strong> department.</em></p>
+<ul>
+  <li>Jacob-Steinham is the investment firm where Bud works. If it is &ldquo;going places,&rdquo; they are going to grow and become more successful.</li>
+  <li>A &ldquo;junk bond&rdquo; is a high-risk corporate bond that pays a high interest rate.</li>
+</ul>
+<p><em>You do the <strong>financing</strong> on that Janson investment?</em></p>
+<ul>
+  <li>The &ldquo;financing&rdquo; of a business deal is the act of getting together the money that is needed.</li>
+</ul>
+<p><em>What are you? 12<sup>th</sup> man on the deal team, last to know?</em></p>
+<ul>
+  <li>This is Gekko&rsquo;s way of making fun of Bud for not knowing the details of a business deal that he supposedly involved in.</li>
+</ul>
+<p><em>Whitewood Young. <strong>Explosive earnings</strong>, 30% <strong>discount from the book</strong>, couple of <strong>5% holders</strong>. :: <strong>It&rsquo;s a dog</strong>.</em></p>
+<ul>
+  <li>If a company has &ldquo;explosive earnings,&rdquo; it is making a huge amount of money.</li>
+  <li>If a company stock sells at 30% &ldquo;discount from the book value,&rdquo; it is believed to be worth at least 30% more than what the stock is valued at.</li>
+  <li>A &ldquo;5% holder&rdquo; is a person who owns 5% of the stock.</li>
+  <li>For Gekko, if a company is &ldquo;a dog,&rdquo; it is a bad or stupid investment.</li>
+</ul>
+<p><em>If this guy owned a <strong>funeral parlor</strong>, no one would die. This turkey is totally brain dead.</em></p>
+<ul>
+  <li>A "funeral parlor" is a building where funerals occur for those who have recently died. All of this is Gekko's way of saying the company is run by people who are stupid or have no business skills.</li>
+</ul>
+<p><em>Keep on buying, <strong>dilute</strong> the son of a bitch. I want every <strong>orifice</strong> in his fucking body flowing red.</em></p>
+<ul>
+  <li>&ldquo;To dilute&rdquo; a stock holder is to reduce the percentage of stock that they own in the company.</li>
+  <li>An &ldquo;orifice&rdquo; is a body hole (mouth, nostrils, etc&hellip;). This is Gekko&rsquo;s very vulgar way of saying he wants another stock trader to lose control of a company he wants to buy.</li>
+</ul>
+<p><em><strong>Piece of cake</strong>. :: This guy is the best trader on <strong>the street</strong>.</em></p>
+<ul>
+  <li>&ldquo;Piece of cake&rdquo; is a common way of saying something is very easy to do.</li>
+  <li>&ldquo;The street&rdquo; is a widely used way of referring to Wall Street.</li>
+</ul>
+<p><em>Tarafly. The <strong>breakup value</strong> is twice the <strong>market price</strong>.</em></p>
+<ul>
+  <li>The &ldquo;breakup value&rdquo; of a company is how much money can be made by selling all of its assets, such as its property, technology, etc.</li>
+  <li>The &ldquo;market price&rdquo; of a company is how much all of its stock is worth.</li>
+</ul>
+<p><em>That&rsquo;s a dog with different <strong>fleas</strong>. Tell me something I don&rsquo;t know.</em></p>
+<ul>
+  <li>A &ldquo;flea&rdquo; is a type of winged insect that live on dogs and cats. Gekko&rsquo;s way of saying that this company has its own big problems.</li>
+</ul>
+<p><em>Blue Star Airlines. :: <strong>Rings a bell</strong> somewhere, so what?</em></p>
+<ul>
+  <li>If something &ldquo;rings a bell,&rdquo; it sounds familiar, but you can&rsquo;t quite remember what it is.</li>
+</ul>
+<p><em>It&rsquo;s <strong>a comer</strong>&hellip;.great <strong>slots</strong> in major cities.</em></p>
+<ul>
+  <li>In this context, a &ldquo;comer&rdquo; is a slangy way of referring to a growing company with a good future. As in "up and comer."</li>
+  <li>&ldquo;Slots&rdquo; are the gates that individual airlines have access to at airports.</li>
+</ul>
+<p><em>They got a <strong>favorable ruling</strong> on a lawsuit. Even the <strong>plaintiffs</strong> don&rsquo;t know about it.</em></p>
+<ul>
+  <li>A &ldquo;favorable ruling&rdquo; in a lawsuit means that a judge has agreed with your side.</li>
+  <li>A &ldquo;plaintiff&rdquo; is a person who sues for damages in court.</li>
+</ul>
+<p><em>The decision should <strong>clear the way</strong> for new planes and route contracts.</em></p>
+<ul>
+  <li>If a legal decision &ldquo;clears the way,&rdquo; it eliminates all the obstacles or road blocks to moving forward.</li>
+</ul>
+<p><em>We got close to half a million <strong>shares</strong> <strong>in the bag</strong>. :: <strong>The Terminator</strong>!</em></p>
+<ul>
+  <li>A &ldquo;share&rdquo; is a unit of stock, and in this case, if they are &ldquo;in the bag,&rdquo; they have just been bought.</li>
+  <li>The Terminator is the character from the Arnold Schwarzenegger movie (To terminate something is to end it).</li>
+</ul>
+<p><em><strong>Blow them away</strong>, Ollie!</em></p>
+<ul>
+  <li>In this case, to &ldquo;blow away&rdquo; somebody is to kill them.</li>
+</ul>
+<p><em>I look at 100 <strong>deals</strong> a day. I <strong>close</strong> one.</em></p>
+<ul>
+  <li>A &ldquo;deal&rdquo; is a business agreement, and to &ldquo;close&rdquo; a deal is to agree to it.</li>
+</ul>
+<p><em><strong>We&rsquo;re going over 5% in Teldar</strong>&hellip;and we don&rsquo;t buy <strong>anything over 22</strong>.</em></p>
+<ul>
+  <li>Gekko&rsquo;s way of saying that he&rsquo;s going to own over 5% of Teldar Paper Company, but all the stock he buys will be no more than $22 a share.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Bud gets to trade for Gekko, and soon enters his world.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>I&rsquo;m <strong>in a bind</strong> here. I&rsquo;ve got all those damn new computers and young men are <strong>edging me out</strong> here.</em></p>
+<ul>
+  <li>If a person is "in a bind," they are in a difficult situation. If you are "edged out" by another person, you are being beaten by them (To "have an edge" at a skill is to be just a little more talented than the other).</li>
+</ul>
+<p><em>Did he see you? :: Yeah, he <strong>saw right through me</strong>.</em></p>
+<ul>
+  <li>&ldquo;To see through&rdquo; a person is to see how they really are, and not how they want you to think they are.</li>
+</ul>
+<p><em>Plenty of <strong>six-figure names</strong> in that <strong>zip code file</strong> to <strong>cold-call</strong>.</em></p>
+<ul>
+  <li>A &ldquo;six figure name&rdquo; has an income of over $100,000 a year.</li>
+  <li>A "zip code file" has people listed by their postal zip code (which helps mailmen deliver the mail).</li>
+  <li>When a salesman &ldquo;cold-calls&rdquo; a potential client, they call without that client ever having been contacted before.</li>
+</ul>
+<p><em>Got tickets to the <strong>Knicks</strong> game tonight. Go out and <strong>cruise some chicks</strong> afterwards?</em></p>
+<ul>
+  <li>The Knicks are the New York City basketball team.</li>
+  <li>&ldquo;To cruise chicks&rdquo; is a very slangy and ridiculous way of saying to try and meet girls.</li>
+</ul>
+<p><em>It&rsquo;s going to be <strong>awesome</strong>. What do you say?</em></p>
+<ul>
+  <li>A wonderful adjective meaning excellent, fantastic, great, etc.</li>
+</ul>
+<p><em><strong>Come on</strong>, forget <strong>charts</strong>.</em></p>
+<ul>
+  <li>Here, &ldquo;come on&rdquo; means &ldquo;be reasonable,&rdquo; but depending on the context, it can mean everything from hurry up to stop.</li>
+  <li>In this case, &ldquo;financial charts&rdquo; are sheets of paper with lots of graphs and other important information.</li>
+</ul>
+<p><em>We&rsquo;re not <strong>fund</strong> managers! <strong>Churn</strong> them and burn them!</em></p>
+<ul>
+  <li>A &ldquo;mutual fund&rdquo; is an investment which owns many separate company stocks, which helps individual investors diversify.</li>
+  <li>&ldquo;To churn&rdquo; something is to move it around violently, so this is Marv&rsquo;s way of saying he wants to buy and sell stocks quickly.</li>
+</ul>
+<p><em>Lou Mannheim. Nice guy, <strong>swell</strong> <strong>fella</strong>, but he&rsquo;s a loser. He lost all his <strong>equity</strong> when the firm went <strong>belly up</strong> in the <strong>recession</strong> of &rsquo;71.</em></p>
+<ul>
+  <li>&ldquo;Swell&rdquo; is a somewhat dated adjective meaning nice or admirable, and a &ldquo;fella&rdquo; is a guy.</li>
+  <li>&ldquo;Equity&rdquo; is the value of real estate or stock that a person owns, and when a business firm goes &ldquo;belly up,&rdquo; it goes bankrupt and closes down.</li>
+  <li>A &ldquo;recession&rdquo; is a bad economic down turn.</li>
+</ul>
+<p><em>I want you to buy 20,000 shares of Blue Star at 15 1/8<sup>th</sup>, <strong>3/8<sup>th</sup> tops</strong>, and don&rsquo;t <strong>screw it up</strong>, Sport. Think you can <strong>handle</strong> that?</em></p>
+<ul>
+  <li>&ldquo;3/8<sup>th</sup> tops&rdquo; is Gekko&rsquo;s way of saying he won&rsquo;t pay more than 15 and 3/8<sup>th</sup> per share of Blue Star stock.</li>
+  <li>&ldquo;To screw up&rdquo; something is to do it badly.</li>
+  <li>In this case, to be able to &ldquo;handle&rdquo; something is to be able to do it.</li>
+</ul>
+<p><em>Blue Star <strong>Exonerated</strong> in 1984 Crash [Headline].</em></p>
+<ul>
+  <li>If a person or company is &ldquo;exonerated&rdquo; of a crime, they are found not guilty of having committed it.</li>
+</ul>
+<p><em>My kid Rudy. He&rsquo;s three years old&hellip;he&rsquo;s an <strong>electronics freak</strong>.</em></p>
+<ul>
+  <li>If a person is an &ldquo;electronics freak,&rdquo; they love electronic devices such as computers, wireless phones, TVs, etc.</li>
+</ul>
+<p><em>Telstar is <strong>shooting up</strong>. Did you buy any for yourself? :: No Sir, that wouldn&rsquo;t have been legal.</em></p>
+<ul>
+  <li>If a company stock is &ldquo;shooting up,&rdquo; it is quickly rising in value. Note that Bud is still worried about using inside information.</li>
+</ul>
+<p><em>Relax Pal, no one is going to <strong>blow the whistle</strong> on you.</em></p>
+<ul>
+  <li>&ldquo;To blow the whistle&rdquo; on a person is to go to the police or other authorities and report that they have been involved in a crime.</li>
+</ul>
+<p><em>Use a <strong>stop-loss</strong> so your <strong>down side</strong> is $100,000, and buy a <strong>decent</strong> suit.</em></p>
+<ul>
+  <li>A &ldquo;stop-loss&rdquo; is a computer program that automatically sells a stock when it falls to a certain level.</li>
+  <li>The &ldquo;down side&rdquo; risk of an investment is the amount that could be lost.</li>
+  <li>A &ldquo;decent&rdquo; suit is socially acceptable.</li>
+</ul>
+<p><em>And save the cheap salesmen talk, will ya? It&rsquo;s obvious.</em></p>
+<ul>
+  <li>A reference to the fact that Bud always appears like he is trying to sell something, even when he is pretending that he is not.</li>
+</ul>
+<p><em>Nothing <strong>ruins</strong> my day more than <strong>losses</strong>. Now you do good, and you get <strong>perks</strong>. Lots and lots of perks.</em></p>
+<ul>
+  <li>"To ruin" something is to destroy it.</li>
+  <li>In this case, "losses" refers to financial losses.</li>
+  <li>"Perks" are additional benefits that employees get beyond their usual salary, such as a company car or vacations.</li>
+</ul>
+<p><em>Maybe we could just <strong>drive around</strong> for a while. <strong>Work up an appetite</strong>.</em></p>
+<ul>
+  <li>&ldquo;To drive around&rdquo; is to drive with no particular pace to go.</li>
+  <li>&ldquo;To work up an appetite&rdquo; is to become hungry.</li>
+</ul>
+<p><em>This guy who should know tells me to buy Hewlett Packard, but I&rsquo;ve been <strong>burned on tips</strong>.</em></p>
+<ul>
+  <li>If you get &ldquo;burned on tips&rdquo; you lose money by following the advice or suggestion of another person.</li>
+</ul>
+<p><em>Average <strong>yield</strong>, rising profits, strong <strong>balance sheets</strong>.</em></p>
+<ul>
+  <li>The &ldquo;yield&rdquo; is the rate of return, or interest, on an investment.</li>
+  <li>A &ldquo;balance sheet&rdquo; is a list of all the assets and debts that a company has.</li>
+</ul>
+<p><em>We sure went <strong>down the toilet</strong> on that ugly bitch.</em></p>
+<ul>
+  <li>If a stock goes down the toilet, it loses most of its value. This is Gekko&rsquo;s vulgar and silly way of referring to the Teldar stock.</li>
+</ul>
+<p><em>Not bad for a <strong>city college</strong> boy.</em></p>
+<ul>
+  <li>A local school for adults, often called a community college.</li>
+</ul>
+<p><em>I bought my way in, and now all those <strong>Ivy League</strong> <strong>schmucks</strong> are sucking my knee caps.</em></p>
+<ul>
+  <li>&ldquo;Ivy League&rdquo; schools are the best universities on the East coast, and include such famous institutions as Harvard and Yale (Ivy is a green plant that grows on the walls of many of these schools&rsquo; buildings).</li>
+  <li>&ldquo;Schmuck&rdquo; is an excellent Jewish word for a jerk, idiot, ass, etc.</li>
+</ul>
+<p><em>I just got on the <strong>board</strong> of the <strong>Bronx</strong> zoo. It cost me a <strong>mil</strong>.</em></p>
+<ul>
+  <li>The &ldquo;board&rdquo; of a corporation or other institution is the group that meets every few months to set general policies.</li>
+  <li>The Bronx is one of the five boroughs (sections) of New York city.</li>
+  <li>A &ldquo;mil&rdquo; is a million dollars.</li>
+</ul>
+<p><em>The thing you got to remember about <strong>WASPs</strong>, they love animals and they <strong>can&rsquo;t stand</strong> people.</em></p>
+<ul>
+  <li>WASPs are White Anglo-Saxon Protestants, or generally speaking, white Americans of Western European origin.</li>
+  <li>If you "can't stand" something, you hate or detest it. Very common and useful.</li>
+</ul>
+<p><em>The most valuable <strong>commodity</strong> I know of is information.</em></p>
+<ul>
+  <li>A commodity is a product of trade or commerce, especially basic materials like wood or rubber, or crops such as wheat.</li>
+</ul>
+<p><em>The public is out there throwing darts at a board, Sport.</em></p>
+<ul>
+  <li>&ldquo;Darts&rdquo; are small sharp pointed objects that are thrown at boards as a game. This is Gekko&rsquo;s way of saying people don&rsquo;t know how to invest.</li>
+</ul>
+<p><em>You wonder why fund managers can&rsquo;t beat the <strong>S&amp;P 500</strong>?</em></p>
+<ul>
+  <li>The S&amp;P 500 refers to the 500 largest companies in the stock market.</li>
+  <li>It is known that most mutual funds are not as good an investment as investing money in a mutual fund that invests in all the S&amp;P 500.</li>
+</ul>
+<p><em>These Harvard <strong>MBA</strong> types don&rsquo;t add up to dog shit.</em></p>
+<ul>
+  <li>An MBA is a Masters in Business Administration. This is Gekko&rsquo;s way of saying even the most educated business people do not know how to invest well.</li>
+</ul>
+<p><em>It&rsquo;s <strong>trench warfare</strong> out there, pal.</em></p>
+<ul>
+  <li>This is the type of horribly violent warfare in which armies face each other while shooting from trenches, which are long ditches dug in the ground. For Gekko, the buying and selling of companies is as bloody.</li>
+</ul>
+<p><em>I&rsquo;ll <strong>go the extra mile</strong>. Just one more chance, Mr. Gekko.</em></p>
+<ul>
+  <li>&ldquo;To go the extra mile&rdquo; for a person is to do everything you absolutely can to help them.</li>
+</ul>
+<p><em>You want another chance? :: <strong>Fucking A</strong>!</em></p>
+<ul>
+  <li>A rather strange and certainly vulgar expression which means Yes.</li>
+</ul>
+<p><em>Like all <strong>Brits</strong>, he thinks he was born with a better pot <strong>to piss</strong> in.</em></p>
+<ul>
+  <li>A &ldquo;Brit&rdquo; is a British person, and &ldquo;to piss&rdquo; is to urinate or go to the bathroom. Gekko thinks British people are snobby or arrogant.</li>
+</ul>
+<p><em>He <strong>bribed</strong> an old secretary of mine to open her mouth and stole RDR Pharmaceuticals <strong>right from under me</strong>.</em></p>
+<ul>
+  <li>"To bribe" a person is to offer them money to do something that is illegal or immoral.</li>
+  <li>"To steal a company right from under" a person is to seize or take it quickly.</li>
+  <li>A "pharmaceutical" company makes drugs.</li>
+</ul>
+<p><em>Payback time, Sport.</em></p>
+<ul>
+  <li>A colloquial way of saying that it is time to get revenge on somebody who has done something bad to you.</li>
+</ul>
+<p><em>Anyway, I had a <strong>mole</strong> in Wildman&rsquo;s <strong>operation</strong>.</em></p>
+<ul>
+  <li>In this case, a &ldquo;mole&rdquo; is a spy, and Wildman&rsquo;s &ldquo;operation&rdquo; is his business offices, where business deals are decided on.</li>
+</ul>
+<p><em>Wildman is in town. <strong>Something big is going down</strong>.</em></p>
+<ul>
+  <li>A very slangy way of saying something important is going to happen.</li>
+</ul>
+<p><em>If the <strong>SEC</strong> found out, I could go to jail. That&rsquo;s <strong>inside information</strong>, isn&rsquo;t it?</em></p>
+<ul>
+  <li>The SEC is the Securities and Exchange Commission, which regulates the sale of stocks.</li>
+  <li>"Inside information" is a key legal term which refers to information that is not allowed to be passed on by company executives or employees to others, since it could effect stock prices.</li>
+</ul>
+<p><em>Unless your father is on the <strong>board of directors</strong> of another company, you and I are going to have a very <strong>tough time</strong> doing business together.</em></p>
+<ul>
+  <li>The "Board of Directors" of a company sets general policies for that company. If you have a "tough time" doing something, it is hard to do.</li>
+</ul>
+<p><em>I&rsquo;m not talking about some $400,000 a year <strong>working</strong> Wall Street <strong>stiff</strong> flying first class.</em></p>
+<ul>
+  <li>A &ldquo;working stiff&rdquo; is a slang term for a middle class guy who works hard to survive. For Gekko, $400,000 a year (in 1985!) was a small salary!</li>
+</ul>
+<p><em>I&rsquo;m talking about <strong>liquid</strong>. Rich enough to have your own jet. $100,000,000 dollars. A <strong>player</strong>&hellip;or nothing.</em></p>
+<ul>
+  <li>In this context, if a person is "liquid," they have so much money they can effect the future of entire companies.</li>
+  <li>"A player" is that wealthy.</li>
+</ul>
+<p><em>You <strong>had what it took</strong> to get into my office; The question is if you <strong>have what it takes</strong> to stay there.</em></p>
+<ul>
+  <li>If a person &ldquo;has what it takes&rdquo; to do something, they have the skill and determination to do it, even if it is extremely difficult.</li>
+</ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Bud begins to spy for Gekko, meets Darien at a party,
+  and sees Gekko and Larry in a classic corporate raider’s battle.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>He had lunch at Les Circus with a group of well dressed <strong>heavy set</strong> <strong>bean counters</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;heavy set,&rdquo; they are physically big. A &ldquo;bean counter&rdquo; is a slang term for an accountant, or a person who counts profits and losses.</li>
+</ul>
+<p><em>He later stopped off at <strong>Morgan</strong>, and from all the <strong>palm pressing</strong> going on, I&rsquo;d say Larry got himself some nice <strong>fat financing</strong>.</em></p>
+<ul>
+  <li>&ldquo;Morgan Stanley&rdquo; is a very big investment bank.</li>
+  <li>&ldquo;Palm pressing&rdquo; is a silly way of referring to a handshake, and some nice &ldquo;fat financing&rdquo; is Bud&rsquo;s way of referring to a large amount of investment money.</li>
+</ul>
+<p><em><strong>Bright</strong>, but not bright enough, <strong>Sherlock</strong>. Let&rsquo;s roll the dice and play a little <strong>monopoly</strong>.</em></p>
+<ul>
+  <li>&ldquo;Bright&rdquo; is a common way of saying intelligent.</li>
+  <li>&ldquo;Sherlock&rdquo; is a reference to Sherlock Holms, the fictional but very smart private detective.</li>
+  <li>&ldquo;Monopoly&rdquo; is a famous board game in which players land on individual squares in hopes of buying the real estate they represent.</li>
+</ul>
+<p><em>What box will land in <strong>Eerie, Pennsylvania</strong>?</em></p>
+<ul>
+  <li>An industrial town in Western Pennsylvania where Anacott Steel is located, which is the company that Wildman wants to buy.</li>
+</ul>
+<p><em>Call the Wall Street Chronicle, <strong>extension 1605</strong>, and you tell the man &ldquo;Blue Horseshoe loves Anacott Steel.&rdquo; You <strong>got</strong> that?</em></p>
+<ul>
+  <li>An &ldquo;extension number&rdquo; is the one that links you to the phone of a particular person within a company, after you reach the company itself.</li>
+  <li>&ldquo;You got that?&rdquo; is a common way of asking &ldquo;Do you understand?&rdquo;</li>
+</ul>
+<p><em>Start buying Anacott Steal <strong>across the boards</strong>. Use the <strong>off-shore accounts</strong> and keep it quiet.</em></p>
+<ul>
+  <li>In this case, to buy something &ldquo;across the boards&rdquo; is to buy it using many different accounts.</li>
+  <li>An &ldquo;off-shore&rdquo; account is one that is located outside the US, often in small island-nations like the Cayman Islands.</li>
+</ul>
+<p><em>Lou, I got <strong>a sure thing</strong>. :: No sure thing, except death and taxes.</em></p>
+<ul>
+  <li>In this context, &ldquo;a sure thing&rdquo; is a stock that is guaranteed to go up.</li>
+</ul>
+<p><em>There are no <strong>short-cuts</strong>. <strong>Quick-buck artists</strong> come and go with every bull market, but the <strong>steady players make it through the bear markets</strong>.</em></p>
+<ul>
+  <li>A "short-cut" is a faster way of doing something.</li>
+  <li>"Quick-buck artists" are suspicious people who try to make a lot of money very fast, often by cheating others.</li>
+  <li>"Steady players make it through the bear markets" is Lou's way of saying calm and disciplined investors survive well even if the stock market drops for an extended period of time.</li>
+</ul>
+<p><em>You got to get to <strong>the big time</strong> first, and then you can be a <strong>pillar</strong> and do good things.</em></p>
+<ul>
+  <li>&ldquo;The big time&rdquo; is Bud&rsquo;s way of referring to a situation where you make huge amounts of money.</li>
+  <li>A &ldquo;pillar&rdquo; is a physical foundation for a building, or here, a reference to being a &ldquo;pillar of the community.&rdquo;</li>
+</ul>
+<p><em>I know this 18 year old <strong>bimbette</strong> that&rsquo;s just <strong>gorgeous</strong>.</em></p>
+<ul>
+  <li>A &ldquo;bimbette&rdquo; is a silly version of &ldquo;bimbo,&rdquo; which is a funny slang word for a stupid or uneducated but often pretty girl.</li>
+  <li>&ldquo;Gorgeous&rdquo; is another word for beautiful.</li>
+</ul>
+<p><em>Take it and bid it. Make the tape. <strong>Bet the ranch</strong>. Buy 100,000 shares.</em></p>
+<ul>
+  <li>These are all ways of saying to buy stock. &ldquo;To bet the ranch&rdquo; also means to risk everything on one decision or investment.</li>
+</ul>
+<p><em>First lesson in business. Don&rsquo;t get emotional about stock; it <strong>clouds the judgement</strong>.</em></p>
+<ul>
+  <li>If something &ldquo;clouds your judgement&rdquo; it is difficult to think rationally or clearly.</li>
+</ul>
+<p><em>He doesn&rsquo;t <strong>talk back</strong>, doesn&rsquo;t steal the silverware, and Dick here is going to get me an <strong>exemption</strong>.</em></p>
+<ul>
+  <li>If a person &ldquo;talks back,&rdquo; they defiantly or impolitely respond to a person, often by interrupting in anger.</li>
+  <li>A &ldquo;tax exemption&rdquo; is a term in accounting which allows a person to buy something and then claim it is a business expense, so that they can pay less total tax.</li>
+</ul>
+<p><em><strong>Stick around</strong>; This could be fun.</em></p>
+<ul>
+  <li>A very common way of saying &ldquo;stay here.&rdquo;</li>
+</ul>
+<p><em>Oh, how <strong>ghastly</strong>! You should see her.</em></p>
+<ul>
+  <li>A powerful adjective which means horrible, sickening or shocking. I've never once heard anyone use it outside of a movie script.</li>
+</ul>
+<p><em>A few thousand dollars <strong>down the tubes</strong>, if you ask me.</em></p>
+<ul>
+  <li>If money goes &ldquo;down the tubes,&rdquo; it is wasted or lost.</li>
+</ul>
+<p>I guess you could <strong>kiss</strong> your career as an art <strong>appraiser</strong> <strong>goodbye</strong>.</p>
+<ul>
+  <li>&ldquo;To kiss something goodbye&rdquo; is a slangy way of saying to lose it (or here, to not be able to ever get it).</li>
+  <li>An &ldquo;art appraiser&rdquo; is a person who judges the value of paintings and other types of art.</li>
+</ul>
+<p><em>It&rsquo;s nice if you&rsquo;re on <strong>mushrooms</strong>.</em></p>
+<ul>
+  <li>A reference to hallucinogenic mushrooms, which are (illegal) drugs that make people hallucinate, or see illusions.</li>
+</ul>
+<p><em>He really <strong>took a bath</strong> on this. :: I&rsquo;d say Gordon is one of the most <strong>astute</strong> collectors around.</em></p>
+<ul>
+  <li>&ldquo;To take a bath&rdquo; on an investment is to lose a lot of money on it.</li>
+  <li>If a person is &ldquo;astute,&rdquo; they&rsquo;re very smart and easily notice small details.</li>
+</ul>
+<p><em>I&rsquo;m sure you could <strong>do wonders</strong> with my place.</em></p>
+<ul>
+  <li>If an interior decorator can &ldquo;do wonders&rdquo; with an apartment, they can greatly improve how it looks.</li>
+</ul>
+<p><em>I&rsquo;ll be moving to the <strong>East Side</strong> soon. A couple of <strong>deals brewing</strong> with Gordon.</em></p>
+<ul>
+  <li>The Upper East Side is the New York neighborhood East of Central Park and on the other side of the park from the Upper West Side. It's a mostly rich neighborhood.</li>
+  <li>If a business deal is "brewing," it is in the process of being made.</li>
+</ul>
+<p><em>What if I have a previous <strong>engagement</strong>? :: You <strong>break</strong> it.</em></p>
+<ul>
+  <li>An &ldquo;engagement&rdquo; is another word for a meeting or social obligation.</li>
+  <li>&ldquo;To break&rdquo; an engagement is to cancel it.</li>
+</ul>
+<p><em>No, this time I&rsquo;m <strong>in for the long term</strong>. It&rsquo;s not a <strong>liquidation</strong>.</em></p>
+<ul>
+  <li>To be &ldquo;in for the long term&rdquo; means to be involved for a long period of time.</li>
+  <li>A company &ldquo;liquidation&rdquo; is the act of selling all of its property and then shutting it down.</li>
+</ul>
+<p><em>I&rsquo;m going to turn it around. You&rsquo;re getting a free ride on my tail.</em></p>
+<ul>
+  <li>This is Larry&rsquo;s way of complaining that Gekko is able to make lots of money without risk, by buying the stock of a company that Gekko knows Larry wants to buy.</li>
+</ul>
+<p><em>Correct me if I&rsquo;m wrong, but you acquired CJE electronics, and you <strong>laid off</strong>, what, 6,000 workers.</em></p>
+<ul>
+  <li>&ldquo;To lay off&rdquo; workers is to fire them. This is Gekko&rsquo;s way of saying that Larry does not have a history of being a good guy, but in fact buys and liquidates companies just like Gekko.</li>
+</ul>
+<p><em>I could <strong>dump the stock</strong> just to burn your ass, but I happen to want the company.</em></p>
+<ul>
+  <li>Larry&rsquo;s way of saying he could sell all his shares in the company, and thus drive down the price of the stock, which means Gekko himself would lose lots of money.</li>
+</ul>
+<p><em>And I want your block of shares. I&rsquo;m announcing a <strong>tender offer</strong> at 65 tomorrow.</em></p>
+<ul>
+  <li>A common term in business in which one buyer offers to buy all the stock in a company (Here, at $65 dollars a share).</li>
+</ul>
+<p><em><strong>Showdowns</strong> bore me, Larry, nobody wins. You can have the company.</em></p>
+<ul>
+  <li>A &ldquo;showdown&rdquo; is a major battle between two great enemies.</li>
+</ul>
+<p><em>It&rsquo;s going to be fun watching you and your giant <strong>ego</strong> try to make <strong>a horse race of it</strong>.</em></p>
+<ul>
+  <li>A person&rsquo;s &ldquo;ego&rdquo; is the psychological confidence that they have in themselves.</li>
+  <li>&ldquo;To make a horse race&rdquo; of a difficult situation is to do your best to try and succeed.</li>
+</ul>
+<p><em>You&rsquo;re a <strong>two-bit</strong> <strong>pirate</strong> and <strong>green mailer</strong>. Nothing more.</em></p>
+<ul>
+  <li>&ldquo;Two pit&rdquo; is a negative word which means very poor, bad or pitiful. (It used to mean "25 cents" about a hundred years ago.)</li>
+  <li>A &ldquo;pirate&rdquo; is man who sails the seas, stopping and robbing other ships.</li>
+  <li>A &ldquo;green mailer&rdquo; is a person who buys weak companies, often in order to break them up, sell off their assets (property) and destroy them.</li>
+</ul>
+<p><em>Not only would you sell your mother to make a deal, you&rsquo;d send her <strong>C.O.D.</strong></em></p>
+<ul>
+  <li>"Cash on Delivery." A product sent COD must be paid for by the receiver.</li>
+</ul>
+<p><em>I had to sell. The key to the game is <strong>capital reserves</strong>, and if you don&rsquo;t have enough, you can&rsquo;t piss with the big boys.</em></p>
+<ul>
+  <li>&ldquo;Capital reserves&rdquo; is the amount of money that a person or company has which is ready to use for a potential purchase. This is Gekko&rsquo;s way of saying he didn&rsquo;t have enough money to compete with Larry.</li>
+</ul>
+<p><em>All warfare is based on <strong>deception</strong>. <strong>Sun Tzu</strong>.</em></p>
+<ul>
+  <li>&ldquo;Deception&rdquo; is the act of fooling a person into believing something is true which is not.</li>
+  <li>Sun Tzu was a Chinese military strategist, known mostly for his work "The Art of War."</li>
+</ul>
+<p><em>If your enemy is superior, <strong>evade</strong> him, if angry, <strong>irritate</strong> him, if equally matched, fight, and if not, split and reevaluate.</em></p>
+<ul>
+  <li>"To evade" a person is to avoid or hide from them, and "to irritate" a person is to greatly bother or annoy them.&nbsp;</li>
+</ul>
+<p><em>I want to be surprised. <strong>Astonish</strong> me, pal. New <strong>info</strong>. I don&rsquo;t care where or how you get it, just get it.</em></p>
+<ul>
+  <li>&ldquo;To astonish&rdquo; a person is to greatly surprise them.</li>
+  <li>&ldquo;Info&rdquo; is a very common way of meaning information.</li>
+</ul>
+  <section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>As the money grows bigger, Bud increases
+  the risks in his search for corporate information.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>My wife tells me you <strong>made a move</strong> on Derrian.</em></p>
+<ul>
+  <li>&ldquo;To make a move&rdquo; on a woman is to try and attract or seduce her, so that she will go out with you later.</li>
+</ul>
+<p><em>Here&rsquo;s some inside info for you. The <strong>Euroflash GQ</strong> type she&rsquo;s going out with <strong>has big bucks</strong>, but he&rsquo;s <strong>putting her feet to sleep</strong>.</em></p>
+<ul>
+  <li>A &ldquo;Euroflash GQ type&rdquo; is Gekko&rsquo;s way of referring to a rich man who dresses well (GQ is a fashion magazine).</li>
+  <li>If a person &ldquo;has big bucks,&rdquo; they are wealthy.</li>
+  <li>Gekko is telling Buddy that this guy is boring to Darien, but &ldquo;putting her feet to sleep&rdquo; is never used.</li>
+</ul>
+<p><em>This is your <strong>wake-up call</strong>, pal. Go to work.</em></p>
+<ul>
+  <li>In this context, a &ldquo;wake-up call&rdquo; is a dramatic notice or announcement that makes a person act in some way which will hopefully change their life for the better.</li>
+</ul>
+<p><em>What is this, <strong>d&eacute;j&agrave; vu</strong>? What has it been, a year and a half?</em></p>
+<ul>
+  <li>A widely used French term which means &ldquo;already seen,&rdquo; and thus it is used in those situations where you feel that in some strange way you&rsquo;ve already experienced a situation before.</li>
+</ul>
+<p><em>Still seeing that sexy French <strong>chick</strong>? :: No, she asked me the wrong question.</em></p>
+<ul>
+  <li>&ldquo;Chick&rdquo; is a common but silly slang word for a young woman (The &ldquo;wrong question&rdquo; was probably a marriage proposal).</li>
+</ul>
+<p><em>The hours are hell, but the cash is starting to tumble in.</em></p>
+<ul>
+  <li>This is Bud&rsquo;s way of saying he works extremely long hours, but he is starting to make a lot of money (&ldquo;To tumble&rdquo; is to roll down, usually in a quick and disorderly manner).</li>
+</ul>
+<p><em>I know a guy who has an <strong>ironclad</strong> way of making money. I can&rsquo;t lose and I can&rsquo;t get hurt.</em></p>
+<ul>
+  <li>If something is &ldquo;ironclad,&rdquo; it is absolutely secure or guaranteed.</li>
+</ul>
+<p><em>I heard you guys are <strong>handling</strong> the Fairchild Foods <strong>merger</strong> and it may not be <strong>going through</strong>.</em></p>
+<ul>
+  <li>If a law firm &ldquo;handles&rdquo; a business deal, they work on all the legal documents for it. A &ldquo;merger&rdquo; between two companies is when they join to become one. If a deal &ldquo;goes through,&rdquo; it actually takes place.</li>
+</ul>
+<p><em>Come on, Buddy, that&rsquo;s illegal. You wouldn&rsquo;t want me to get <strong>disbarred</strong>.</em></p>
+<ul>
+  <li>If a lawyer is &ldquo;disbarred,&rdquo; they are no longer allowed to practice law (The &ldquo;Bar exam&rdquo; is the test that every lawyer must pass to practice).</li>
+</ul>
+<p><em>Who is listening? Just one college <strong>buddy</strong> talking to another.</em></p>
+<ul>
+  <li>&ldquo;Buddy&rdquo; is another word for friend (as well as Bud&rsquo;s nick name).</li>
+</ul>
+<p><em>If you don&rsquo;t know, you don&rsquo;t know. :: If I did, <strong>what&rsquo;s in it for moi</strong>?</em></p>
+<ul>
+  <li>&ldquo;What&rsquo;s in it for me?&rdquo; is another way of asking &ldquo;What do I get?&rdquo; &ldquo;Moi&rdquo; is a French word that means me, but this is never used.</li>
+</ul>
+<p><em>Get inside of my uncle&rsquo;s doors, and all the secrets of the world are yours. The <strong>lifeblood</strong> of companies&hellip;.</em></p>
+<ul>
+  <li>The &ldquo;lifeblood&rdquo; of a company is the client lists, computer files and other information that it needs to run efficiently. Such information usually shows the company&rsquo;s true value (which is why Bud wants it).</li>
+</ul>
+<p><em>I could use a <strong>tax break</strong>. What would you say to some <strong>working capital</strong> and a working partner?</em></p>
+<ul>
+  <li>A &ldquo;tax break&rdquo; is an expense that a person can use to show he made less money, and thus pay less tax. &ldquo;Working capital&rdquo; is money that is used to start or expand a business.</li>
+</ul>
+<p><em>I&rsquo;m an expert at identifying <strong>undervalued assets</strong>, such as this business.</em></p>
+<ul>
+  <li>An &ldquo;undervalued asset&rdquo; is a piece of property, real estate or a company itself that is worth more than the current market seems to suggest it is.</li>
+</ul>
+<p><em>You got to be <strong>kidding</strong>. The <strong>quarterlies</strong> are for shit.</em></p>
+<ul>
+  <li>If a person is &ldquo;kidding,&rdquo; they are joking around or not being serious.</li>
+  <li>&ldquo;Quarterly reports&rdquo; are financial documents which show how much a company has made or lost in the last three months. This is Gekko&rsquo;s way of saying this company is not a good investment.</li>
+</ul>
+<p><em>I&rsquo;d like to produce a <strong>line</strong> of high quality <strong>antiques</strong> at a low price. :: Sounds great; <strong>I&rsquo;ll take you public</strong>.</em></p>
+<ul>
+  <li>A &ldquo;line&rdquo; of some product is a variety of them. &ldquo;Antiques&rdquo; are old pieces of valuable furniture. If an investment bank &ldquo;takes a company public,&rdquo; they arrange for the company to sell stock in the stock market.</li>
+</ul>
+<p><em>Hey, it&rsquo;s the <strong>bozos</strong> who keep us in the air.</em></p>
+<ul>
+  <li>A &ldquo;bozo&rdquo; is a clown or perhaps stupid or silly person.</li>
+</ul>
+<p><em>Who <strong>peed</strong> in your <strong>Cheerios</strong>? :: The god damn <strong>fare wars</strong> are killing us.</em></p>
+<ul>
+  <li>&ldquo;To pee&rdquo; is to urinate, and Cheerios is a well known breakfast cereal, and thus this is Bud&rsquo;s colorful way of asking his dad why he is in such a bad mood.</li>
+  <li>&ldquo;Fare wars&rdquo; are periods of intense competition between the airlines in which they are forced to lower prices to keep customers.</li>
+</ul>
+<p><em>How do you know you&rsquo;ll have any <strong>dough</strong> next month?</em></p>
+<ul>
+  <li>A somewhat dated slang word for money.</li>
+</ul>
+<p><em>What is this? I only gave you a few hundred. :: It&rsquo;s a <strong>dividend</strong>.</em></p>
+<ul>
+  <li>A &ldquo;dividend&rdquo; is the money that many companies pay their stockholders every year, just for investing.</li>
+</ul>
+<p><em>I <strong>figure</strong> I&rsquo;ve borrowed at least five <strong>grand</strong> in <strong>pocket change</strong> over the years.</em></p>
+<ul>
+  <li>"To figure" is a common way of saying to think or believe.</li>
+  <li>A "grand" is a colloquial word for a thousand dollars, and "pocket change" is small amounts of money, often just a few quarters or dollars.</li>
+</ul>
+<p><em>I don&rsquo;t <strong>hobnob</strong> with the <strong>jetset</strong>.</em></p>
+<ul>
+  <li>&ldquo;To hobnob&rdquo; with rich people is to socialize with them, usually at parties.</li>
+  <li>The &ldquo;jetset&rdquo; are the rich and powerful of a society.</li>
+</ul>
+<p><em>Money is one giant <strong>pain in the ass</strong>.</em></p>
+<ul>
+  <li>This is a very common term for any big problem or hassle.</li>
+</ul>
+<p><em>This gives you limited <strong>power of attorney</strong> for Mr. Gekko&rsquo;s account.</em></p>
+<ul>
+  <li>If a person has &ldquo;power of attorney&rdquo; over a bank account, they have the legal right to speak (and sign) for the person who owns that account.</li>
+</ul>
+<p><em>You <strong>call the shots</strong>, and Mr. Gekko has no official knowledge of what stocks you are buying.</em></p>
+<ul>
+  <li>If a person &ldquo;calls the shots,&rdquo; they make the decision.</li>
+</ul>
+<p><em>Your <strong>transactions</strong> will be <strong>monitored</strong> by Stockwatch. If any trouble does <strong>arise</strong>, you are <strong>on your own</strong>.</em></p>
+<ul>
+  <li>A business &ldquo;transaction&rdquo; is an exchange of goods or services.</li>
+  <li>If a person is monitored, they are carefully watched (In this case, by Stockwatch, which monitors the sale of stock sales to look for illegal trades).</li>
+  <li>&ldquo;To arise&rdquo; is to appear or emerge.</li>
+  <li>If a person is &ldquo;on their own,&rdquo; they cannot count on anybody else to help them.</li>
+</ul>
+<p><em>The <strong>trail</strong> does stop with you. :: <strong>Spread</strong> the buy orders over different accounts, and you won&rsquo;t <strong>get burnt</strong>.</em></p>
+<ul>
+  <li>A &ldquo;trail&rdquo; is a path that leads to a particular place, and &ldquo;to spread&rdquo; something around is to place parts of it in many places at once.</li>
+  <li>In this case, &ldquo;to get burnt&rdquo; is to get in trouble with the law.</li>
+</ul>
+<p><em>The kid has the highest score on his <strong>IQ test</strong>.</em></p>
+<ul>
+  <li>A test that is supposed to measure intelligence (Intelligence Quotient).</li>
+</ul>
+<p><em>You&rsquo;ll <strong>wire transfer</strong> the money to this account in the <strong>Cayman Islands</strong>.</em></p>
+<ul>
+  <li>&ldquo;To wire-transfer&rdquo; money is to send electronically. The Cayman Islands are a small country near Cuba with many off-shore banks.</li>
+</ul>
+<p><em>The <strong>stakes</strong> are going up. No mistakes.</em></p>
+<ul>
+  <li>The &ldquo;stakes&rdquo; are the risks and rewards of a situation.</li>
+</ul>
+<p><em>We decided <strong>to split up</strong> the world between us. :: You have modest <strong>wants</strong>. I like that in a man.</em></p>
+<ul>
+  <li>&ldquo;To split up&rdquo; something is to divide it into two or more pieces.</li>
+  <li>Note the use of &ldquo;wants&rdquo; as a plural noun! An alternative to desires.</li>
+</ul>
+<p><em>I&rsquo;ll <strong>park</strong> some money in your account, and if it <strong>hits</strong>, you get <strong>a big cut</strong>.</em></p>
+<ul>
+  <li>&ldquo;To park&rdquo; money in an account is to hide it there so that it can&rsquo;t be traced.</li>
+  <li>In this case, &ldquo;to hit&rdquo; is to go up in value, and &ldquo;a big cut&rdquo; is a big percentage of the possible profits (for agreeing to park the money).</li>
+</ul>
+  <section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Bud moves in with Darien, and Gekko explains
+  to Teldar’s stockholders his corporate philosophy.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Lynch is <strong>giving him the boot</strong>. Not <strong>pulling his quota</strong>.</em></p>
+<ul>
+  <li>When an employer &ldquo;gives an employee the boot,&rdquo; he fires him.</li>
+  <li>If a salesman is not &ldquo;pulling his quota,&rdquo; he is not making the number of sales he is expected to make each month.</li>
+</ul>
+<p><em>We&rsquo;re all just one trade away from <strong>humility</strong>.</em></p>
+<ul>
+  <li>&ldquo;Humility&rdquo; is the state of feeling humble or perhaps vulnerable. This is Marv&rsquo;s way of saying any broker could be easily fired.</li>
+</ul>
+<p><em>No <strong>RSVP</strong> required, just be there.</em></p>
+<ul>
+  <li>&ldquo;R-S-V-P&rdquo; is the abbreviation for a French expression that means &ldquo;please respond,&rdquo; (r&eacute;pondez s'il vous pla&icirc;t) which is used after you invite a person to a party and you want to know if they are going to come. Common and useful.</li>
+</ul>
+<p><em>The new office record for a single month&rsquo;s <strong>gross commission</strong> from the <strong>wealthy individual accounts</strong> goes to Bud Fox.</em></p>
+<ul>
+  <li>A salesman&rsquo;s &ldquo;gross commission&rdquo; is the total money they have earned from sales for a given month (A commission is the percent of money that a salesman gets on that sale).</li>
+  <li>For a stock broker, the &ldquo;wealthy individual accounts&rdquo; are those accounts with rich clients.</li>
+</ul>
+<p><em>Shows <strong>cold-calling</strong> does work. :: <strong>Way to go</strong>, Bud!</em></p>
+<ul>
+  <li>&ldquo;Cold-calling&rdquo; is the act of calling a person who has never been contacted before, in order to try and sell something.</li>
+  <li>&ldquo;Way to go&rdquo; is a way of congratulating a person who&rsquo;s just accomplished a great thing.</li>
+</ul>
+<p><em>You&rsquo;re <strong>on a roll</strong>, kid. Enjoy it while it lasts, because it never does.</em></p>
+<ul>
+  <li>If a person is &ldquo;on a roll,&rdquo; they are going through a period of great success or good luck.</li>
+</ul>
+<p><em>So what is it, Mr. cocksucker, now?</em></p>
+<ul>
+  <li>A vulgar insult word (A &ldquo;cock&rdquo; is a slang word for a penis).</li>
+</ul>
+<p><em>I got four other deals. One of them is an <strong>all-cash</strong> type.</em></p>
+<ul>
+  <li>An &ldquo;all-cash&rdquo; real estate deal is when a person pays for a home with cash instead of borrowing money from a bank (a mortgage).</li>
+</ul>
+<p><em>I got something on Sutter Place. It&rsquo;s a million and a half, but now <strong>we&rsquo;re talking duplex</strong>.</em></p>
+<ul>
+  <li>&ldquo;We&rsquo;re talking&rdquo; is a widely used colloquial way of clarifying or announcing what is being discussed.</li>
+  <li>A &ldquo;duplex&rdquo; is an apartment building with two separate living units.</li>
+</ul>
+<p><em>What do you say we get a <strong>suite</strong> at the Carlyle? Champagne, caviar.</em></p>
+<ul>
+  <li>A &ldquo;suite&rdquo; is a set of several rooms in a hotel.</li>
+</ul>
+<p><em>It looks like you got a bad case of <strong>puppy love</strong>.</em></p>
+<ul>
+  <li>A colloquial expression for the feeling of intense romantic attraction that teenagers get for a person right after they first meet.</li>
+</ul>
+<p><em>He hasn&rsquo;t <strong>been around the block</strong> yet, you have. Have you told him about us?</em></p>
+<ul>
+  <li>A person who hasn&rsquo;t &ldquo;been around the block&rdquo; is still innocent or na&iuml;ve.</li>
+</ul>
+<p><em>I don&rsquo;t want him to ever know. :: <strong>Mum&rsquo;s the word</strong>.</em></p>
+<ul>
+  <li>An interesting expression which means &ldquo;I promise not to say anything about this to anyone.&rdquo;</li>
+</ul>
+<p><em>You&rsquo;re really <strong>twisted</strong>.</em></p>
+<ul>
+  <li>A great adjective to describe a person who is immoral, strange or perverted.</li>
+</ul>
+<p><em>On <strong>settlement day</strong>, you <strong>endorse</strong> a check to Blue Horseshoe Trading Corp, and then I send you your <strong>cut</strong>.</em></p>
+<ul>
+  <li>In business, &ldquo;settlement day&rdquo; is the day a contract or business deal goes into effect.</li>
+  <li>&ldquo;To endorse&rdquo; a check is to sign it.</li>
+  <li>In a business deal, a person&rsquo;s &ldquo;cut&rdquo; is the money that they make from their involvement.</li>
+</ul>
+<p><em>That&rsquo;s <strong>the bottom line</strong>; Nobody gets hurt.</em></p>
+<ul>
+  <li>A very common way of saying the most important fact. (It comes from a financial document called a Profit &amp; Loss Statement--the last line in the document shows the net profit or loss for the company.)</li>
+</ul>
+<p><em><strong>What the fuck</strong> is the matter with you?</em></p>
+<ul>
+  <li>This is added to Wh- questions to show emotion such as anger. This is a very vulgar way of asking what&rsquo;s wrong, or perhaps &ldquo;why did you do that?!&rdquo;</li>
+</ul>
+<p><em>I&rsquo;m sick and tired of playing <strong>wet nurse</strong> to you all the time; Will you do your homework, Marv? :: What an <strong>asshole</strong>.</em></p>
+<ul>
+  <li>A &ldquo;wet nurse&rdquo; is a person who takes care of every possible problem for another. &ldquo;Asshole&rdquo; is a very vulgar insult word for a jerk, creep, etc&hellip;</li>
+</ul>
+<p><em>Your company&hellip;is <strong>under siege</strong> from Gordon Gekko.</em></p>
+<ul>
+  <li>If a company is &ldquo;under siege,&rdquo; it is under heavy attack.</li>
+</ul>
+<p><em>Teldar Paper is now <strong>leveraged to the hilt</strong> like some <strong>piss poor</strong> South American country.</em></p>
+<ul>
+  <li>If a company is &ldquo;leveraged to the hilt,&rdquo; it is very deeply in debt.</li>
+  <li>&ldquo;Piss poor&rdquo; is a very slangy way of saying extremely poor.</li>
+</ul>
+<p><em>I strongly recommend you <strong>see through</strong> his intention <strong>to strip this company</strong> and severely penalize the stockholders.</em></p>
+<ul>
+  <li>&ldquo;To see through&rdquo; a person is to see what they are really like and what they really want.</li>
+  <li>In this case, &ldquo;to strip a company&rdquo; is to sell off all of its property and assets.</li>
+</ul>
+<p><em>Reject his <strong>tender</strong>&hellip;by voting for management&rsquo;s <strong>restructuring</strong> of the stock.</em></p>
+<ul>
+  <li>&ldquo;To tender&rdquo; an offer is to request to buy a large share of company stock.</li>
+  <li>&ldquo;To restructure&rdquo; company stock is to value it in such a way that a person like Gekko can&rsquo;t take control of the company.</li>
+</ul>
+<p><em>It&rsquo;s <strong>trade deficit</strong> and <strong>fiscal deficit</strong> are at nightmare <strong>proportions</strong>.</em></p>
+<ul>
+  <li>A &ldquo;trade deficit&rdquo; is the (negative) difference between what a country sells and buys, and a &ldquo;fiscal deficit&rdquo; is the (negative) difference between what a country gets in taxes and what it spends.</li>
+  <li>&ldquo;Proportion&rdquo; is the relationship between a part (the deficit) and the whole (total income).</li>
+</ul>
+<p><em>There was <strong>accountability</strong> to the stockholder.</em></p>
+<ul>
+  <li>Another way of saying responsibility, or necessity to explain.</li>
+</ul>
+<p><em>The Mellons, the Carnegies, the people who built this great industrial power, made sure of it because it was their money at stake.</em></p>
+<ul>
+  <li>Gekko&rsquo;s way of saying that people like Andrew Carnegie were more determined than today&rsquo;s management to make US companies successful, since they owned such a high percentage of them.</li>
+</ul>
+<p><em>You, the stockholders, are all being royally <strong>screwed over</strong> by these&hellip;. <strong>bureaucrats</strong>, with their steak lunches, their hunting and fishing trips.</em></p>
+<ul>
+  <li>If a person is being &ldquo;screwed over,&rdquo; they are being cheated or treated very poorly (&ldquo;Royally&rdquo; in this case means extremely, though as an adjective it generally refers to a King or Queen).</li>
+  <li>A &ldquo;bureaucrat&rdquo; is a negative way of referring to a person who works in a big office.</li>
+</ul>
+<p><em>Their corporate jets and <strong>golden parachutes</strong>.</em></p>
+<ul>
+  <li>An expression for the huge amounts of money or stock that some executives get when they are forced to leave a company (A parachute is the device that allows a person to jump safely out of a plane).</li>
+</ul>
+<p><em>This is an <strong>outrage</strong>! <strong>You&rsquo;re out of line</strong>, Gekko!</em></p>
+<ul>
+  <li>An &ldquo;outrage&rdquo; is any type of behavior that is considered extremely cruel or inappropriate.</li>
+  <li>If a person is &ldquo;out of line,&rdquo; they are behaving in a completely inappropriate or unacceptable way.</li>
+</ul>
+<p><em>The new <strong>law of evolution</strong> in corporate America seems to be survival of the <strong>unfittest</strong>.</em></p>
+<ul>
+  <li>The &ldquo;law of evolution&rdquo; is Charles Darwin&rsquo;s theory of how animals change over millions of years.</li>
+  <li>&ldquo;Survival of the <em>fittest</em>&rdquo; means that those animals (or businesses) that are the most fit, or strongest, will survive (though note Gekko teases the executives by saying <em>un</em>fittest).</li>
+</ul>
+<p><em>The point is that greed, <strong>for lack of a better word</strong>, is good.</em></p>
+<ul>
+  <li>The most famous line in this movie! &ldquo;For lack of&rdquo; a better word is another way of saying &ldquo;because there is no&rdquo; better word.</li>
+</ul>
+<p><em>Greed <strong>clarifies</strong>, <strong>cuts through</strong> and captures the <strong>essence</strong> of the evolutionary spirit.</em></p>
+<ul>
+  <li>"To clarify" something is to make it clear, and in this case, "to cut through" is also to clarify or expose it so that it can be clearly seen.</li>
+  <li>&ldquo;The essence&rdquo; of something is it&rsquo;s central or most important quality.</li>
+</ul>
+<p><em>Greed in all it&rsquo;s forms&hellip;has marked the upward <strong>surge</strong> of mankind.</em></p>
+<ul>
+  <li>A &ldquo;surge&rdquo; is a dramatic and fast movement.</li>
+</ul>
+<p><em>I&rsquo;m getting <strong>psychotic</strong> from a lack of <strong>REM</strong> sleep.</em></p>
+<ul>
+  <li>If a person is &ldquo;psychotic,&rdquo; they are crazy or deluded.</li>
+  <li>&ldquo;REM&rdquo; sleep is the deepest part of a person&rsquo;s sleep, when they get the most rest. (It stands for "Rapid Eye Movement")</li>
+</ul>
+<p><em>I&rsquo;m going to be an <strong>entrepreneur</strong> in the Italian 16<sup>th</sup> century sense of the word. <strong>A mover, a shaker</strong>. I&rsquo;m shooting for the stars.</em></p>
+<ul>
+  <li>An &ldquo;entrepreneur&rdquo; is a French word for a person who starts and grows small businesses.</li>
+  <li>&ldquo;Movers and shakers&rdquo; are very powerful people in business who effect many others with their financial decisions.</li>
+</ul>
+  <section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Bud convinces himself that he and he and  Gekko
+  can save Blue Star Airlines, but Carl sees a trap.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Blue Star is an <strong>unpolished gem</strong>, right out of the garbage.</em></p>
+<ul>
+  <li>An &ldquo;unpolished gem&rdquo; is a piece of jewelry that is not recognized for its beauty because it has not been polished or cleaned. This is Bud&rsquo;s way of saying people are unaware of how valuable Blue Star Airlines is.</li>
+</ul>
+<p><em>A <strong>half-assed</strong> management being <strong>decimated</strong> by a price war they cannot win, but <strong>the gates at La Guardia</strong> can <strong>bail us out</strong>.</em></p>
+<ul>
+  <li>If a management team is &ldquo;half-assed,&rdquo; they are not serious or good.</li>
+  <li>&ldquo;To decimate&rdquo; something is to completely destroy it.</li>
+  <li>The &ldquo;gates at La Guardia&rdquo; are slots or spaces at the La Guardia airport in New York.</li>
+  <li>&ldquo;To bail out&rdquo; a person is a slangy way of saying to save or help them.</li>
+</ul>
+<p><em>I&rsquo;ve got <strong>mixed emotions</strong>, like Larry Wildman going off a <strong>cliff</strong> in my new <strong>Maserati</strong>.</em></p>
+<ul>
+  <li>If a person has &ldquo;mixed emotions&rdquo; about something, they feel confused or conflicted by it (happy and sad).</li>
+  <li>A "cliff" is the edge of a very steep face of rock, high above a lower level.</li>
+  <li>A &ldquo;Maserati&rdquo; is a very expensive Italian sports car.</li>
+</ul>
+<p><em>Aren&rsquo;t you forgetting one thing? <strong>Capital reserves</strong>. This company has 75 million cash in over-funded <strong>pensions</strong>. That buys us some <strong>credibility</strong>.</em></p>
+<ul>
+  <li>&ldquo;Capital reserves&rdquo; is the amount of cash that a person or company can use if quickly needed.</li>
+  <li>A "pension" is a retirement account paid for by both the employer and employee, in this case for the workers of the airline (If it is "over-funded," there is actually more money in it than is legally required for the airline to pay out).</li>
+  <li>"Credibility" is believability.</li>
+</ul>
+<p><em>The beauty is you already own close to 2% of this <strong>sucker</strong>.</em></p>
+<ul>
+  <li>A silly but common slang word for a person, thing, or here, company.</li>
+</ul>
+<p><em>I&rsquo;m <strong>up to my ass</strong> in more <strong>nuts</strong> than a <strong>fruitcake</strong>.</em></p>
+<ul>
+  <li>A silly play on words; If a person is &ldquo;up to their ass&rdquo; in nuts, they are surrounded by them.</li>
+  <li>Of course, in this case, a &ldquo;nut&rdquo; is a crazy person, and not a snack food.</li>
+  <li>A &ldquo;fruitcake&rdquo; is a traditional Christmas cake that contains many types of fruit and nut.</li>
+</ul>
+<p><em>The hourly cost of a <strong>flight crew</strong> is $850 an hour.</em></p>
+<ul>
+  <li>The &ldquo;flight crew&rdquo; on a plane includes the pilots and cabin attendants, who serve the food in flight.</li>
+</ul>
+<p><em>Bud is a <strong>born liar</strong>, but otherwise he&rsquo;s a good kid.</em></p>
+<ul>
+  <li>A person who is &ldquo;a born liar&rdquo; has, of course lied from the time they were a baby. Any noun could work: A born politician, athlete, etc.</li>
+</ul>
+<p><em>No offense. :: None taken.</em></p>
+<ul>
+  <li>"No offense" are the words you use if you have just said something that could hurt or offend the person you're speaking to, and "none taken" is what that person says back, unless they really were offended!</li>
+</ul>
+<p><em>I got <strong>roasted</strong> the other night; A friend asked &ldquo;Why are we <strong>honoring</strong> this man? Have we run out of human beings?&rdquo;</em></p>
+<ul>
+  <li>&ldquo;To roast&rdquo; a well known person at a dinner is to come together to both honor and make fun of them.</li>
+  <li>&ldquo;To honor&rdquo; a person is to show them great respect, usually for what they have accomplished.</li>
+</ul>
+<p><em>You&rsquo;ve got losses of $20-30,000,000, dividends cut to zero, and you&rsquo;re being <strong>squeezed</strong> to death by the majors.</em></p>
+<ul>
+  <li>This is Gekko&rsquo;s way of saying that competition from the big airlines is threatening to destroy Blue Star.</li>
+  <li>&ldquo;To squeeze&rdquo; is to press or hold very tightly together.</li>
+</ul>
+<p><em>Present management may not be the worst <strong>scum of the earth</strong>, but they&rsquo;re the guys who put you on this <strong>kamikaze</strong> course.</em></p>
+<ul>
+  <li>&ldquo;Scum of the earth&rdquo; is an extremely negative insult to describe a horrible or very immoral person (Scum is the filth that collects on shower tiles).</li>
+  <li>&ldquo;Kamikaze&rdquo; is a Japanese word for the pilots who agreed to commit suicide by crashing their planes into enemy ships.</li>
+</ul>
+<p><em>Pretty soon everybody will be <strong>scrambling</strong> for <strong>parachutes</strong>, only there is not enough to go around.</em></p>
+<ul>
+  <li>&ldquo;To scramble&rdquo; is to move or run quickly, often in a desperate attempt to escape.</li>
+  <li>&ldquo;Parachutes&rdquo; are the devices for jumping out of planes, or here, the huge amounts of money that only top executives get when a company is sold off, or when they agree to leave the company.</li>
+</ul>
+<p><em>If they throw Blue Star into <strong>Chapter 11</strong>, they&rsquo;ll use the <strong>bankruptcy</strong> laws to break your unions, your contracts, and to throw you guys off the property.</em></p>
+<ul>
+  <li>&ldquo;Chapter 11&rdquo; is the well known set of laws that allow a business to &ldquo;declare bankruptcy,&rdquo; which allows the business to avoid paying debts that it still has, since it no longer has any money.</li>
+</ul>
+<p><em>What do you say we <strong>cut to the chase</strong>?</em></p>
+<ul>
+  <li>If you &ldquo;cut to the chase,&rdquo; you start to speak immediately about the most important or critical matter that needs to be discussed.</li>
+</ul>
+<p><em>I&rsquo;m asking for a modest 20% <strong>across the board wage cut</strong> and seven more hours a month.</em></p>
+<ul>
+  <li>An &ldquo;across the board wage cut&rdquo; means that every single employee in the company will be paid less.</li>
+</ul>
+<p><em>If we&rsquo;re <strong>in the black</strong>, salaries go back to their present levels and we <strong>initiate</strong> an employee <strong>profit sharing</strong> program with stock.</em></p>
+<ul>
+  <li>If a company is &ldquo;in the black,&rdquo; it is making money (If it is &ldquo;in the red,&rdquo; it is losing money).</li>
+  <li>&ldquo;To initiate&rdquo; a plan is to start it, and a &ldquo;profit-sharing&rdquo; program is one in which employees get stock in the company.</li>
+</ul>
+<p><em>Effective <strong>inventory management</strong> through computerization will increase our load factor by 5-20%.</em></p>
+<ul>
+  <li>&ldquo;Inventory management&rdquo; is a way for companies to have just enough inventory (goods or supplies), but not too much. This is Bud&rsquo;s way of saying they can increase profits by 5-20% if the airline is more efficient.</li>
+</ul>
+<p><em>We expand our <strong>hubs</strong> in Atlanta, North Carolina and St. Louis.</em></p>
+<ul>
+  <li>A &ldquo;hub&rdquo; is a an airport that serves as a major center of operations for an airline, from which planes fly to other less important cities.</li>
+</ul>
+<p><em><strong>Cards are on the table</strong>; What do you say? :: It&rsquo;s <strong>in the ballpark</strong>; I can take it to my people.</em></p>
+<ul>
+  <li>If &ldquo;the cards are on the table,&rdquo; the details of a proposal have been clearly explained.</li>
+  <li>If the proposal is &ldquo;in the ballpark,&rdquo; it is worth discussing since it may be acceptable (In this case, to union members).</li>
+</ul>
+<p><em>You&rsquo;ve sketched some broad strokes. I would like to see the fine print.</em></p>
+<ul>
+  <li>In this case, to &ldquo;sketch some broad strokes&rdquo; is to discuss the major points, whereas &ldquo;the fine print&rdquo; are the small but important details (To sketch is to draw, and broad strokes are thick lines or paint).</li>
+</ul>
+<p><em>What else you got in your <strong>bag of tricks</strong>, Mr. Gekko?</em></p>
+<ul>
+  <li>A &ldquo;bag of tricks&rdquo; is a bag used by magicians used to help fool or confuse people, and in this case, referring to Gekko&rsquo;s ability to do the same.</li>
+</ul>
+<p><em>There came into Egypt a <strong>pharaoh</strong> that did not know. :: Is that a <strong>proverb</strong>?</em></p>
+<ul>
+  <li>This is spoken like "Biblical English."</li>
+  <li>A "pharaoh" is a leader of ancient Egypt, and a proverb is a short well known expression, such as "A bird in the hand is worth two in the bush."</li>
+</ul>
+<p><em>No, a <strong>prophecy</strong>. The rich have been doing it to the poor since the beginning of time.</em></p>
+<ul>
+  <li>A &ldquo;prophecy&rdquo; is a prediction, or a powerful guess about the future.</li>
+</ul>
+<p><em>He&rsquo;s only in it for the buck, and he don&rsquo;t take prisoners.</em></p>
+<ul>
+  <li>This is Carl&rsquo;s way of saying Gekko only wants to make as much money as possible, and he is willing to destroy lives in order to do so (If an enemy doesn&rsquo;t take prisoners, it&rsquo;s because he kills those he captures).</li>
+</ul>
+<p><em>Of course my son did work as a baggage and <strong>freight</strong> handler for three summers.</em></p>
+<ul>
+  <li>&ldquo;Freight&rdquo; is transported goods such as large containers of food or furniture, and a freight handler is a person who makes sure such goods are well placed on the plane.</li>
+</ul>
+<p><em>If that&rsquo;s scum, I&rsquo;ll take it over a <strong>rat</strong> any day. You know where <strong>I stand</strong>. Goodnight, all.</em></p>
+<ul>
+  <li>A person who is a rat is a horrible person who cannot be trusted.</li>
+  <li>To take &ldquo;a stand&rdquo; on an issue is to have an opinion or position.</li>
+</ul>
+<p><em><strong>Save</strong> the &ldquo;<strong>workers of the world, unite</strong>&rdquo; speech. I heard it too much growing up.</em></p>
+<ul>
+  <li>In this grammatical context, &ldquo;save&rdquo; means stop.</li>
+  <li>&ldquo;Workers of the world, unite&rdquo; is the famous expression in the "Communist Manifesto" by Karl Marx and Friedrich Engels.</li>
+</ul>
+<p><em>You are going to be <strong>axed</strong>. You and the whole <strong>shitty</strong> airline are going <strong>right down the tubes</strong>.</em></p>
+<ul>
+  <li>In this context, if a person is &ldquo;axed,&rdquo; they are fired from their job (An ax is a sharp tool used for cutting wood).</li>
+  <li>&ldquo;Shitty&rdquo; is a vulgar but common adjective meaning bad or lousy.</li>
+  <li>If a business is going &ldquo;right down the tubes,&rdquo; it is going bankrupt and may go out of business.</li>
+</ul>
+<p><em>He&rsquo;s using you, kid. He&rsquo;s got your <strong>prick</strong> in his back pocket, but you&rsquo;re too blind to see it.</em></p>
+<ul>
+  <li>A &ldquo;prick&rdquo; is a slang word for a penis. This is Carl&rsquo;s way of saying that Gekko is manipulating or fooling Bud.</li>
+</ul>
+<p><em>You see a guy who never measured a man&rsquo;s success by the size of his wallet.</em></p>
+<ul>
+  <li>&ldquo;To measure a person&rsquo;s success by the size of their wallet&rdquo; is to judge how successful they are by how much money they make.</li>
+</ul>
+<p><em>You never had the <strong>guts</strong> to go out in the world and <strong>stake your own claim</strong>.</em></p>
+<ul>
+  <li>In this context, &ldquo;guts&rdquo; refers to courage or bravery (Guts are literally stomach intestines).</li>
+  <li>&ldquo;To stake your claim&rdquo; is to go out and try and create a business or make a lot of money.</li>
+</ul>
+<p><em>When my men come to me tomorrow morning, <strong>I&rsquo;ll be damned if</strong> I&rsquo;m going to lie to them.</em></p>
+<ul>
+  <li>A curious expression that means &ldquo;there is no possible way that&hellip;&rdquo;</li>
+</ul>
+<p><em>What if one day you were wrong? For once, if your <strong>compass</strong> was off?</em></p>
+<ul>
+  <li>A &ldquo;compass&rdquo; is a tool that sailors use on the ocean to know in what direction they are travelling (North, South, East and West).</li>
+</ul>
+<p><em>Would you be willing <strong>to wreck</strong> your men&rsquo;s future?</em></p>
+<ul>
+  <li>&ldquo;To wreck&rdquo; something is to destroy it.</li>
+</ul>
+<p><em>I don&rsquo;t go to sleep with no <strong>whore</strong> and I don&rsquo;t wake up with no <strong>whore</strong>.</em></p>
+<ul>
+  <li>An insulting word for a prostitute, and Carl&rsquo;s way to describe Gekko.</li>
+</ul>
+  <section id="part8"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Bud learns a very painful lesson about Gekko, greed and Wall Street.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>We got a guy at Jackson-Steinham buying large <strong>chunks</strong> of Teldar Paper for an off-shore account.</em></p>
+<ul>
+  <li>Here, a &ldquo;chunk&rdquo; of stock is several shares, or a significant amount.</li>
+</ul>
+<p><em>I got a strange call from the <strong>SEC</strong>. They asked to see my records. This is <strong>heavy</strong>, Bud.</em></p>
+<ul>
+  <li>The SEC is the Securities and Exchange Commission, which investigates illegal stock sales.</li>
+  <li>In this case, &ldquo;heavy&rdquo; is a slangy way of saying that something is very serious.</li>
+</ul>
+<p><em>They&rsquo;re always looking for <strong>red flags</strong>.</em></p>
+<ul>
+  <li>A &ldquo;red flag&rdquo; is an expression which is used to describe anything that is suspicious, or which might need to be investigated.</li>
+</ul>
+<p><em>They never <strong>come up</strong> with anything, Roger. We&rsquo;re <strong>invulnerable</strong> on this one.</em></p>
+<ul>
+  <li>If the government fails to &ldquo;come up&rdquo; with evidence, they fail to find any.</li>
+  <li>A person who is &ldquo;invulnerable&rdquo; cannot be caught or hurt.</li>
+</ul>
+<p><em>You&rsquo;re only the president of the company. What <strong>the hell</strong> do you know, anyway?</em></p>
+<ul>
+  <li>&ldquo;The hell&rdquo; is added to Wh- questions in order to show emotion such as frustration, or here, surprise.</li>
+</ul>
+<p><em>Gekko&rsquo;s got 12% of the stock and climbing, plus he&rsquo;s got the unions <strong>in his back pocket</strong>.</em></p>
+<ul>
+  <li>If you have somebody &ldquo;in your pocket,&rdquo; they will do whatever you ask them to do.</li>
+</ul>
+<p><em>We must have your assurance that you&rsquo;ll pay us back in the first 12 months, and the only way we see this happening is <strong>liquidating</strong> the <strong>hangers</strong> and planes.</em></p>
+<ul>
+  <li>&ldquo;To liquidate&rdquo; property is to sell it off to whoever is willing to pay the most.</li>
+  <li>&ldquo;Hangers&rdquo; are the large buildings where airplanes are repaired.</li>
+</ul>
+<p><em>We got the Bezeebo brothers lined up to build <strong>condos</strong> where the hangers are.</em></p>
+<ul>
+  <li>Short for condominiums, which are apartments that are owned, not rented.</li>
+</ul>
+<p><em>I got the Texas boys <strong>drooling</strong> at my kneecaps for the <strong>routes</strong> and the slots.</em></p>
+<ul>
+  <li>&ldquo;To drool&rdquo; is to let saliva or spit run out of your mouth, like a baby.</li>
+  <li>&ldquo;Routes&rdquo; are the cities which airlines fly between, and in this case, a &ldquo;slot&rdquo; is a gate for planes at an airport.</li>
+</ul>
+<p><em>The beauty of the deal is the over-funded pension. $50,000,000 buys him the minimum annuities for 6,000 employees, and he walks with the rest.</em></p>
+<ul>
+  <li>When Gekko buys the airline, he must pay $50,000,000 to the employees for their retirement pensions, but since there may millions more in the fund, he will get whatever is left (If he &ldquo;walks with the rest,&rdquo; he gets the millions that are still left in the fund).</li>
+</ul>
+<p><em>I figure he&rsquo;ll <strong>clear</strong> 60 or 70,000,000 dollars. Not bad for a month&rsquo;s work.</em></p>
+<ul>
+  <li>&ldquo;To clear&rdquo; $1,000 is to make that much profit.</li>
+</ul>
+<p><em>I just found out about the <strong>garage sale</strong> down at Blue Star.</em></p>
+<ul>
+  <li>A sale popular in American homes, in which people sell the thing they no longer want, often out of their garages or front yards.</li>
+</ul>
+<p><em>He <strong>stuck his nose in</strong> the pot once too often and he got stuck.</em></p>
+<ul>
+  <li>&ldquo;To stick your nose&rdquo; into other people&rsquo;s business is to try and learn about things that others prefer you don&rsquo;t know.</li>
+</ul>
+<p><em>You were walking around blind without a <strong>cane</strong>. A <strong>fool</strong> and his money are not likely to get together.</em></p>
+<ul>
+  <li>A "cane" is a stick that blind people use to be able to walk around without a dog or human help.</li>
+  <li>A "fool" is a silly or stupid person.</li>
+</ul>
+<p><em><strong>I gave him my word</strong>. :: It&rsquo;s all about bucks, kid.</em></p>
+<ul>
+  <li>&ldquo;To give a person your word&rdquo; is to promise them something.</li>
+</ul>
+<p><em>How many <strong>yachts</strong> can you water ski behind? How much is enough?</em></p>
+<ul>
+  <li>A large luxurious boat that rich people love to own.</li>
+</ul>
+<p><em>It&rsquo;s a <strong>zero-sum game</strong>. Somebody wins, somebody loses.</em></p>
+<ul>
+  <li>A &ldquo;zero-sum game&rdquo; is a game or situation in which every dollar or property gained by one person must be lost by another.</li>
+</ul>
+<p><em>2/3 of that wealth comes from <strong>inheritance</strong>, <strong>interest</strong> accumulated by widows and idiot sons, and what I do, stock and real estate <strong>speculation</strong>. It&rsquo;s <strong>bullshit</strong>.</em></p>
+<ul>
+  <li>&ldquo;Inheritance&rdquo; is money passed down from one generation to the next.</li>
+  <li>&ldquo;Interest&rdquo; is the money a borrower pays for a loan, and &ldquo;speculation&rdquo; is investment in an asset such as real estate , in the belief that it will rise in value.</li>
+  <li>&ldquo;Bullshit&rdquo; is a vulgar but great word for nonsense, lies, etc.</li>
+</ul>
+<p><em>The news, war, peace, <strong>famine</strong>, <strong>upheaval</strong>. The price of a paper clip.</em></p>
+<ul>
+  <li>&ldquo;Famine&rdquo; is mass starvation, and &ldquo;upheaval&rdquo; is violent social unrest.</li>
+</ul>
+<p><em>Yeah, you got that <strong>killer instinct</strong>.</em></p>
+<ul>
+  <li>A &ldquo;killer instinct&rdquo; is the intense desire or drive to win at any cost, no matter how badly somebody else gets hurt.</li>
+</ul>
+<p><em>Tell them I want <strong>zip-locked mouths</strong> on the Blue Star deal, or I&rsquo;ll personally come down there and <strong>rip out</strong> there fucking throats.</em></p>
+<ul>
+  <li>&ldquo;Zip locked mouths&rdquo; is Gekko&rsquo;s term for mouths that don&rsquo;t talk or give away secrets.</li>
+  <li>&ldquo;To rip out&rdquo; something is to violently remove it.</li>
+</ul>
+<p><em>I&rsquo;ve been played like a <strong>grand piano</strong>.</em></p>
+<ul>
+  <li>A &ldquo;grand piano&rdquo; is a large concert piano. This is Bud&rsquo;s way of saying that he has been skillfully manipulated or used by Gekko.</li>
+</ul>
+<p><em>He&rsquo;s going to <strong>carve</strong> Blue Star into little pieces and sell it all off. <strong>Bastard</strong>.</em></p>
+<ul>
+  <li>&ldquo;To carve&rdquo; something is to slice it, often with a very sharp knife.</li>
+  <li>&ldquo;Bastard&rdquo; is a vulgar but common word for a mean or abusive man.</li>
+</ul>
+<p><em>I handed it to him on a silver <strong>platter</strong>.</em></p>
+<ul>
+  <li>A &ldquo;platter&rdquo; is a large dish used for serving food.</li>
+  <li>&ldquo;To hand it to a person on a silver platter&rdquo; is to make it easy for them to get what they want.</li>
+</ul>
+<p><em>Don&rsquo;t <strong>cross</strong> Gordon. He&rsquo;ll <strong>crush</strong> you.</em></p>
+<ul>
+  <li>&ldquo;To cross&rdquo; a friend or ally is to trick them or work against their interests.</li>
+  <li>&ldquo;To crush&rdquo; a person is to physically press against them with great force, or more generally here, to destroy them.</li>
+</ul>
+<p><em>At least I won&rsquo;t be pulling the <strong>trigger</strong>.</em></p>
+<ul>
+  <li>The &ldquo;trigger&rdquo; of a gun is the device that is pulled to actually shoot it. Bud&rsquo;s way of saying he won&rsquo;t be the person ultimately responsible.</li>
+</ul>
+<p><em><strong>Cut</strong> the <strong>self-pity</strong> <strong>crap</strong>, Bud.</em></p>
+<ul>
+  <li>If a person tells you to &ldquo;cut&rdquo; something, they are saying to stop it.</li>
+  <li>&ldquo;Self-pity&rdquo; is the act of feeling sorry for yourself, and &ldquo;crap&rdquo; is a vulgar word which means nonsense, lies, etc.</li>
+</ul>
+<p><em>I guess without Gordon&rsquo;s money and <strong>seal of approval</strong>, I&rsquo;m not such a hot investment anymore.</em></p>
+<ul>
+  <li>A &ldquo;seal of approval&rdquo; is simply a sign of approval or endorsement (A seal is an official mark stuck to a written document). This is Bud&rsquo;s way of admitting that Darien may not be interested in him if Gekko is no longer there to pay him so much money.</li>
+</ul>
+<p><em>Get the fuck out of here!</em></p>
+<ul>
+  <li>A vulgar but grammatically glorious way to simply say &ldquo;leave!&rdquo;</li>
+</ul>
+<p><em><strong>The market</strong> is dead now. Even the rich are <strong>bitching</strong>.</em></p>
+<ul>
+  <li>In this film, &ldquo;the market&rdquo; is always the stock market.</li>
+  <li>If a person is &ldquo;bitching,&rdquo; they are complaining.</li>
+</ul>
+<p><em>The only thing moving is the Puerto Ricans and the <strong>cockroaches</strong>, and with the <strong>commission</strong> I get&hellip;</em></p>
+<ul>
+  <li>&ldquo;Cockroaches&rdquo; are hard shelled insects found in the apartments of poor people.</li>
+  <li>A sales person&rsquo;s &ldquo;commission&rdquo; is the percentage of money they get from the sale price of something they sell.</li>
+</ul>
+<p><em>Save the <strong>rap</strong>, just sell the fucker fast&hellip;</em></p>
+<ul>
+  <li>Bud&rsquo;s way of telling his real estate agent to stop making excuses and to sell his condo quickly (A &ldquo;rap&rdquo; is a slang word for a speech or talk).</li>
+</ul>
+  <section id="part9"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>With Larry’s help, Bud teaches Gekko a lesson he will never
+  forget, and helps the US Government grab a very rich criminal....</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>He was complaining about chest pains, and the next thing they know, he&rsquo;s <strong>collapsed</strong>.</em></p>
+<ul>
+  <li>If a person or building &ldquo;collapses,&rdquo; they fall to the ground</li>
+</ul>
+<p><em>You&rsquo;re <strong>pushing your luck</strong>.</em></p>
+<ul>
+  <li>If you &ldquo;push you&rsquo;re luck,&rdquo; you are doing things that are very risky.</li>
+</ul>
+<p><em>The stock is at 19 and going up. Gekko <strong>figures</strong> by breaking up Blue Star, it&rsquo;s worth at least $30 a share.</em></p>
+<ul>
+  <li>&ldquo;To figure&rdquo; is a very common way of saying to think or believe.</li>
+</ul>
+<p><em>When it hits 23, you guys go to Gekko and <strong>lower the boom</strong>; When he learns there&rsquo;s no union <strong>concessions</strong>, he&rsquo;ll <strong>jump ship</strong> and sell everything he&rsquo;s got.</em></p>
+<ul>
+  <li>&ldquo;To lower the boom&rdquo; is a slangy way of saying to start a forceful attack. (A nautical phrase--a "boom" is the lower horizontal pole attached to a main sail. When it is lowered, the sail takes more wind and moves faster.)</li>
+  <li>&ldquo;Concessions&rdquo; are promises to compromise, such as agreeing to accept less salary.</li>
+  <li>If a person &ldquo;jumps ship,&rdquo; they try to run away or escape. (Another nautical term. People "jump ship" when the ship is in danger--jumping means getting off the ship.)</li>
+</ul>
+<p><em>What&rsquo;s to prevent some other <strong>shark</strong> from coming along and <strong>devouring</strong> us?</em></p>
+<ul>
+  <li>A &ldquo;shark&rdquo; is a deadly fish, of course, and a ruthless or immoral business man. &ldquo;To devour&rdquo; food is to eat it with great pleasure.</li>
+</ul>
+<p><em>What would you say to owning Blue Star Airlines with union concessions for $18 a share, and in the process, hanging Gekko <strong>out in the wind to twist</strong>?</em></p>
+<ul>
+  <li>If a person is left &ldquo;out in the wind to twist,&rdquo; they are at the mercy of nature after being completely defeated.</li>
+</ul>
+<p><em>Why you, <strong>mate</strong>? What&rsquo;s a <strong>bloke</strong> like you doing <strong>mixed up</strong> with Gekko?</em></p>
+<ul>
+  <li>&ldquo;Mate&rdquo; is a British word for friend, and &ldquo;bloke&rdquo; is a British word for guy.</li>
+  <li>To be &ldquo;mixed up&rdquo; with a person is to be involved with them.</li>
+</ul>
+<p><em>We want a contract agreement that&rsquo;s <strong>ironclad</strong>; If you buy it, you can&rsquo;t break it up.</em></p>
+<ul>
+  <li>An &ldquo;ironclad&rdquo; contract is one that can&rsquo;t be changed or manipulated. Duncan wants to make sure the airline will survive if Larry buys it.</li>
+</ul>
+<p><em>You&rsquo;ve been a real <strong>schmuck</strong> lately::I want to <strong>make it up</strong> to you.</em></p>
+<ul>
+  <li>&ldquo;Schmuck&rdquo; is a great Jewish word for a jerk or idiot.</li>
+  <li>If you try to &ldquo;make it up&rdquo; to somebody, you try to do something good in exchange for having done something bad in the past.</li>
+</ul>
+<p><em>Blue Star is in play. Let&rsquo;s <strong>check it out</strong>.</em></p>
+<ul>
+  <li>&ldquo;To check out&rdquo; something is a very common way of saying to investigate or look at it.</li>
+</ul>
+<p><em>It&rsquo;s at 21 and 5/8<sup>th</sup>. I don&rsquo;t know <strong>what to make</strong> of it.</em></p>
+<ul>
+  <li>If you don&rsquo;t know &ldquo;what to make&rdquo; of something, this means you don&rsquo;t know what it means or whether it is even important.</li>
+</ul>
+<p><em>The <strong>word is out</strong>, pal. You&rsquo;re union <strong>buddies</strong> are talking.</em></p>
+<ul>
+  <li>If the &ldquo;word is out&rdquo; on something, this means that it is no longer being kept secret.</li>
+  <li>&ldquo;Buddy&rdquo; is an alternative word for friend or pal.</li>
+</ul>
+<p><em><strong>Slash and burn</strong> and buy everything in sight up to 22!</em></p>
+<ul>
+  <li>This means to act with great violence, speed and force. &ldquo;To slash&rdquo; something is to cut it to pieces.</li>
+</ul>
+<p><em>The stock is going to Pluto, man. :: Start <strong>unloading</strong>! <strong>Dump</strong> it now!</em></p>
+<ul>
+  <li>Pluto is the last body in our solar system, and thus if a stock is going there, it is going up very high in value.</li>
+  <li>&ldquo;To unload&rdquo; or &ldquo;dump&rdquo; a stock is to suddenly sell it as fast as possible.</li>
+</ul>
+<p><em>We know what you&rsquo;re <strong>up to</strong> Gekko, and you can <strong>go straight to hell</strong>.</em></p>
+<ul>
+  <li>To be &ldquo;up to&rdquo; something is simply to be doing it.</li>
+  <li>If you tell a person to &ldquo;go to hell,&rdquo; you are strongly insulting them, though this is still gentler than &ldquo;fuck you.&rdquo;</li>
+</ul>
+<p><em>Those <strong>flight reservation systems</strong> can get awfully&nbsp;<strong>screwed up</strong> if we&rsquo;re not paying attention.</em></p>
+<ul>
+  <li>A &ldquo;flight reservation system&rdquo; is a computerized system for keeping track of passengers. If it&rsquo;s &ldquo;screwed up,&rdquo; it is working very badly.</li>
+</ul>
+<p><em>If you want to be <strong>gobbled up</strong> by <strong>Attila the Hun</strong>, be my guest.</em></p>
+<ul>
+  <li>To be &ldquo;gobbled up&rdquo; is to be eaten or devoured.</li>
+  <li>Attila the Hun was a ruthless leader in the middle ages known for killing all his enemies.</li>
+</ul>
+<p><em>Gekko is <strong>on the ropes</strong>! He&rsquo;s trying to sell, but there aren&rsquo;t any takers. The stock is <strong>plummeting</strong>!</em></p>
+<ul>
+  <li>If a person is &ldquo;on the ropes,&rdquo; they are in very bad trouble. If a stock is &ldquo;plummeting,&rdquo; it is dropping in value extremely fast.</li>
+</ul>
+<p><em>There&rsquo;s got to be a <strong>way out</strong> of this, Gordon. :: Why don&rsquo;t you dial <strong>9-1-1</strong>?</em></p>
+<ul>
+  <li>The &ldquo;way out&rdquo; of a problem is the possible solution.</li>
+  <li>9-1-1 is the number you dial in the US if you have an emergency.</li>
+</ul>
+<p><em>You take it right in the ass, you fucking <strong>scumbag</strong> cocksucker!</em></p>
+<ul>
+  <li>Typical vulgar insults from Gekko, but it&rsquo;s worth noting &ldquo;scumbag,&rdquo; which is a classic insult for a worthless, disgusting or abusive person.</li>
+</ul>
+<p><em><strong>Fueled</strong> by <strong>takeover rumors</strong>, the stock <strong>soared</strong> to an all time high of 24 1/8&hellip;</em></p>
+<ul>
+  <li>In this case, &ldquo;fueled&rdquo; means powered, or propelled.</li>
+  <li>Here, &ldquo;takeover rumors&rdquo; are talk or gossip which suggests a company is about to be bought.</li>
+  <li>If a stock price &ldquo;soars,&rdquo; it goes up very fast, like a bird.</li>
+</ul>
+<p><em>&hellip;.and then when <strong>contradictory</strong> rumors later surfaced that the takeover was <strong>unfounded</strong>&hellip;.the stock plummeted to 16 before closing at 17.</em></p>
+<ul>
+  <li>If another rumor is &ldquo;contradictory,&rdquo; it conflicts with, or is, the exact opposite of the previous one.</li>
+  <li>If news is &ldquo;unfounded,&rdquo; it not true.</li>
+</ul>
+<p><em>Tonight another <strong>rumble</strong> shook the street; According to many sources, raider Sir Lawrence Wildman has bought a <strong>substantial block</strong> of Blue Star.</em></p>
+<ul>
+  <li>A &ldquo;rumble&rdquo; is a loud noise, such as when a truck drives by.</li>
+  <li>In this case, &ldquo;a substantial block&rdquo; of a company is a large percentage of their stock.</li>
+</ul>
+<p><em>Man looks into the <strong>abyss</strong>; There&rsquo;s nothing <strong>staring</strong> back at him. At that moment he finds his <strong>character</strong>, and that keeps him out of the abyss.</em></p>
+<ul>
+  <li>An &ldquo;abyss&rdquo; is a bottomless black hole.</li>
+  <li>&ldquo;To stare&rdquo; at a person is to look at them without turning away.</li>
+  <li>In this case, &ldquo;character&rdquo; is courage or true inner feelings.</li>
+</ul>
+<p><em>The Postal Inspector Service. The Security and Exchange Enforcement Office.</em></p>
+<ul>
+  <li>Two agencies in the federal government that investigate and prosecute people for violations of the securities (stock) laws.</li>
+</ul>
+<p><em>You&rsquo;re under arrest, Mr. Fox, for <strong>conspiracy to commit securities fraud</strong>, and for violating the <strong>Insider Traders Sanction Act</strong>.</em></p>
+<ul>
+  <li>&ldquo;Conspiracy to commit securities fraud&rdquo; is the act of working with others to buy and sell stock in a way that is not honest or ethical.</li>
+  <li>The &ldquo;Insider Traders Sanction Act&rdquo; is a law to prevent people from buying and selling stock based on secret company information.</li>
+</ul>
+<p><em>You have the right to remain silent&hellip;.anything you do say may be used against you.</em></p>
+<ul>
+  <li>Very famous words in American culture that the police must tell all people as soon as they arrest them.</li>
+</ul>
+<p><em>You taught the teacher a lesson&hellip;that <strong>the tail can wag the dog</strong>.</em></p>
+<ul>
+  <li>When a dog &ldquo;wags&rdquo; its tail, it shakes it back and forth. An expression which suggests the less powerful can still fool or trick the powerful.</li>
+</ul>
+<p><em>Let me <strong>clue you in</strong>, pal. The ice is melting right underneath your feet.</em></p>
+<ul>
+  <li>&ldquo;To clue in&rdquo; a person is to let them know of some key information.</li>
+</ul>
+<p><em>You think you could have gotten this far this fast with someone else? You think you&rsquo;d be <strong>dicking</strong> someone like Darien?</em></p>
+<ul>
+  <li>Gekko&rsquo;s way of telling Bud he should have been appreciative to him for helping him make so much money so fast (&ldquo;Dick&rdquo; is a common slang word for a penis, but the verb to dick is never used).</li>
+</ul>
+<p><em>You told the truth and gave the money back. All things considered in this <strong>cockamamie</strong> world, you&rsquo;re <strong>shooting par</strong>.</em></p>
+<ul>
+  <li>&ldquo;Cockamamie&rdquo; is an interesting adjective meaning crazy.</li>
+  <li>&ldquo;To shoot par&rdquo; is a golfing term, which here means to be even (not ahead or behind).</li>
+</ul>
+<p><em>I&rsquo;m going to jail. :: Maybe in some kind of <strong>screwed up way</strong>, it&rsquo;s the best thing that could have happened to you.</em></p>
+<ul>
+  <li>In this case, to look at a situation &ldquo;in a screwed up way&rdquo; is to see it from a very different or unusual point of view.</li>
+</ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1.  Do corporate raiders like Gekko create anything useful? Do they make the economy more efficient?</p>
+<p>2. Why is it illegal to engage in insider trading? Should it be?</p>
+<p>3.  Are there stock brokers, corporate raiders and other types of Wall Street institutions in your country?</p>
+<p>4. Could Bud have continued to work with Gekko and still be a good and decent person?</p>
+<p>5. How does this movie reflect American culture?  Are Americans more obsessed about making money than other people?</p>
+<p>6. Is Darien a good girlfriend for Bud?</p>
+<p>7. Were there any really admirable characters in this film?</p>
+<p>8. What did Gekko mean when he said to the stockholders of Teldar Paper that “greed is good”?</p>
+<p>9. If you had been in Bud’s situation, would you have gone to the government in order to trap Gekko?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

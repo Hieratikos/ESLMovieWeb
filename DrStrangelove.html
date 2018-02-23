@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+<title>Dr. Strangelove</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
+    <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script async type="text/javascript" src="bootstrap.min.js"></script>
+<style>
+/* orange theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fff7f1 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#fee3d1 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#fdc7a3 !important}
+.w3-theme-l2 {color:#000 !important; background-color:#fcab75 !important}
+.w3-theme-l1 {color:#000 !important; background-color:#fb8f47 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#f36405 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#d85904 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#bd4e04 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#a24303 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#873803 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fff7f1 !important}
+.w3-theme-dark {color:#fff !important; background-color:#873803 !important}
+.w3-theme-action {color:#fff !important; background-color:#873803 !important}
+
+.w3-theme {color:#fff !important; background-color:#fa7319 !important}
+.w3-text-theme {color:#fa7319 !important}
+.w3-border-theme {border-color:#fa7319 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#fa7319 !important}
+.w3-hover-text-theme {color:#fa7319 !important}
+.w3-hover-border-theme:hover {border-color:#fa7319 !important}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: none;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #fb8f47;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+    .navbar{
+        border-color:#fb8f47;
+    }
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body class="fullPage" style="border:1px solid #fb8f47">
+<nav class="navbar navbar-fixed-top" role="navigation">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">Dr. Strangelove</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/DrStrangelove.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    An insane general triggers a path to nuclear holocaust that a war room full of politicians and generals frantically tries to stop.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Rated PG | 1 hr 35 min | Comedy | 1964
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>General Jack Ripper</td><td>Sterling Hayden</td>
+  </tr>
+  <tr>
+    <td colspan="2">A clearly insane US Airforce General who decides to personally
+      launch a nuclear attack against the Soviet Union.</td>
+  </tr>
+  <tr>
+    <td>Captain Lionel Mandrake</td><td>Peter Sellers</td>
+  </tr>
+  <tr>
+    <td colspan="2">Ripper’s charming English executive officer who tries
+      to stop Ripper from starting a nuclear war.</td>
+  </tr>
+  <tr>
+    <td>General Buck Turgidson</td><td>George C. Scott</td>
+  </tr>
+  <tr>
+    <td colspan="2">The somewhat crazy Chairman of the Joint Chiefs of Staff
+      (The Joint Chiefs advise the President on military issues). </td>
+  </tr>
+  <tr>
+    <td>Col. "Bat" Guano</td><td>Keenan Wynn</td>
+  </tr>
+  <tr>
+    <td colspan="2">The Marine colonel who shoots his way in to the Air Force base.</td>
+  </tr>
+  <tr>
+    <td>President Merkin Muffley</td><td>Peter Sellers</td>
+  </tr>
+  <tr>
+    <td colspan="2">The nice and somewhat incompetent President of the United States.</td>
+  </tr>
+  <tr>
+    <td>Major King Kong</td><td>Slim Pickins</td>
+  </tr>
+  <tr>
+    <td colspan="2">The colorful Texan pilot of an Air Force Jet that goes to bomb Russia.</td>
+  </tr>
+  <tr>
+    <td>Russian Ambassador Alexi de Sadesky</td><td>Peter Bull</td>
+  </tr>
+  <tr>
+    <td colspan="2">The Russian Ambassador who President Muffley invites into the War Room.</td>
+  </tr>
+  <tr>
+    <td>Dr. Strangelove</td><td>Peter Sellers</td>
+  </tr>
+  <tr>
+    <td colspan="2">President Muffley’s German advisor on nuclear weapons,
+      who may be as insane as General Ripper and appears to be a Nazi.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p>
+  This is Hollywood’s most famous attempt to look at the dangers of the Cold War, made just
+  two years after the Cuban Missile Crisis almost resulted in an actual nuclear war between
+  the United States and the Soviet Union. It is the story of General Jack Ripper, a clearly
+  insane US Air Force General who decides to launch a nuclear strike against the Soviet Union
+  because he is convinced the communists are out to secretly take over the world by fluoridating
+  the water (Fluoride is a substance that had been added to much of the US water supply since the
+  1950s in order to fight tooth decay, but many extremely conservative Americans truly thought it
+  was a “communist plot”).
+  <p>
+  After General Ripper orders the airplanes at his base to attack the Soviets, Captain Mandrake,
+  a British officer, tries to figure out the secret code that will tell the airplanes to abandon
+  the attack and return to base. Meanwhile, General Turgidson and the military’s other top leaders
+  must explain to President Muffley the options available in this emergency. Turgidson himself soon
+  argues for a massive follow-up attack to prevent the Soviets from successfully counter-attacking
+  with their own nuclear weapons, but the President decides to try and help the Soviets knock down
+  whatever planes the Americans can not successfully communicate with (Once the planes cross into
+  Soviet airspace, they are instructed to respond only to a secret three letter code, that apparently,
+  only General Ripper knows!).
+<p>
+  Unfortunately,  the situation is complicated by the fact that the Soviet ambassador to the United
+  States reveals to the American government that the Soviets possess a “doomsday device” that will
+  automatically destroy virtually all life on earth if his country is ever attacked, and thus if just
+  one US plane is not stopped, it could mean the end of civilization! Of course, for General Turgidson
+  and Dr. Strangelove, such news is not entirely bad, for it may give the United States another opportunity
+  to beat the Soviets, if enough Americans can survive…..by living underground for the next 100 years.
+<p>
+  <strong><em>A Quick Note on the Cast</em></strong>: Note that the same British actor, Peter Sellers,
+  plays three roles: English Captain Mandrake, American President Muffley and German Dr. Strangelove!
+<p>
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>General Ripper, cool and calm, decides to start a nuclear war.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+<p><em>It is the <strong>stated position</strong> of the US Airforce that their <strong>safeguards</strong> would prevent the occurrence of such events as are <strong>depicted</strong> in this film.</em></p>
+<ul>
+  <li>A &ldquo;stated position&rdquo; is a written or spoken statement or policy. A &ldquo;safeguard&rdquo; is anything that is used to prevent an accident or danger. &ldquo;To depict&rdquo; something is to describe or portray it.</li>
+</ul>
+<p><em><strong>Ominous</strong> <strong>rumors</strong> had been privately <strong>circulating</strong>&hellip;that the Soviet Union had been at work at what was darkly <strong>hinted</strong> to be the ultimate weapon.</em></p>
+<ul>
+  <li>If a piece of news is "ominous," it suggests something bad is going to happen. A "rumor" is a piece of news that spreads from one person to another which may or may not be true. If a rumor "circulates," it spreads from one person to the next. In this case, to "hint" at something is to indirectly suggest it without actually saying it. Here, the ultimate weapon is one that would destroy all life on earth.</li>
+</ul>
+<p><em>A <strong>Doomsday Device</strong>.</em></p>
+<ul>
+  <li>&ldquo;Doomsday&rdquo; is the day that everything is destroyed, and a &ldquo;device&rdquo; is a type of machine (In this case, a machine that can launch a nuclear war).</li>
+</ul>
+<p><em><strong>Intelligence sources</strong> traced the sight of the top secret project to the <strong>perpetually</strong> <strong>fog-shrouded</strong> wasteland below the Arctic peaks of the Zhokov Islands.</em></p>
+<ul>
+  <li>&ldquo;Intelligence sources&rdquo; are often spies who work for foreign governments. &ldquo;Perpetually&rdquo; means constantly or for long periods of time. If a mountain is &ldquo;fog-shrouded,&rdquo; it is covered by fog (low clouds).</li>
+</ul>
+<p><em>Why it should be located in such a <strong>remote</strong>, <strong>desolate</strong> place, no one could say.</em></p>
+<ul>
+  <li>If a place is &ldquo;remote,&rdquo; it is far from other inhabited places. If it is &ldquo;desolate,&rdquo; it is sad, lonely or occupied by few living beings.</li>
+</ul>
+<p><em>You don&rsquo;t think I&rsquo;d ask if you recognize my voice unless it was pretty damn important, do you?</em></p>
+<ul>
+  <li>A common filler word to express emotion such as anger or frustration.</li>
+</ul>
+<p><em>Let&rsquo; see if we can <strong>stay on the ball</strong>.</em></p>
+<ul>
+  <li>In this case, a way of saying to stay focused on one particular subject in the conversation.</li>
+</ul>
+<p><em>Has <strong>the wing</strong> <strong>confirmed</strong> holding at their <strong>failsafe points</strong>?</em></p>
+<ul>
+  <li>In this film, &ldquo;the wing&rdquo; refers to the several attack planes of a particular division in the Air Force. &ldquo;To confirm&rdquo; something is to verify that it is true. Here, a &ldquo;failsafe point&rdquo; is a point in space where the planes can easily be contacted, so that they will not mistakenly attack the Russians.</li>
+</ul>
+<p><em>The <strong>base</strong> is being put on <strong>condition red</strong>. I want this <strong>flashed</strong> to all sections immediately.</em></p>
+<ul>
+  <li>The &ldquo;base&rdquo; refers to an Air Force base, and &ldquo;condition red&rdquo; is a military way of saying a state of high alert or emergency. Here, &ldquo;to flash&rdquo; a piece of news is to officially announce it.</li>
+</ul>
+<p><em>Jolly good idea.</em></p>
+<ul>
+  <li>A very British way of saying excellent idea.</li>
+</ul>
+<p><em>Keeps the men <strong>on their toes</strong>.</em></p>
+<ul>
+  <li>A way of saying to keep people alert or emotionally prepared.</li>
+</ul>
+<p><em>I&rsquo;m afraid this is not an <strong>exercise </strong></em></p>
+<ul>
+  <li>In this case, an &ldquo;exercise&rdquo; is a test (as opposed to &ldquo;the real thing&rdquo;).</li>
+</ul>
+<p><em>It looks like were in a <strong>shooting war</strong>.</em></p>
+<ul>
+  <li>A war with actual fighting, unlike the Cold War, in which the US and the Soviet Union were enemies, but never actually shot at each other.</li>
+</ul>
+<p><em>My orders are for this base <strong>to be sealed tight</strong> and that&rsquo;s what I mean to do.</em></p>
+<ul>
+  <li>&ldquo;To seal off&rdquo; a place such as a base is to make it impossible for anybody to enter it (and often even to leave it).</li>
+</ul>
+<p><em>I want you to <strong>transmit</strong> <strong>Plan R</strong>, <strong>R for Robert</strong>, to the wing.</em></p>
+<ul>
+  <li>&ldquo;To transmit&rdquo; a message is to send it, usually electronically. In this film, &ldquo;Plan R&rdquo; is a plan to attack the Soviet Union if the US believes that it has been attacked (R = Retaliation, which means to strike back, but of course, the Russians had not attacked!). "R for Robert" the military uses words to represent the letters of the alphabet, and here, the script writer got it wrong--"R" is represented by the word "Romeo" in the military.</li>
+</ul>
+<p><em>Is it that bad, Sir? :: It looks like <strong>it&rsquo;s pretty hairy</strong>.</em></p>
+<ul>
+  <li>This is General Ripper&rsquo;s silly way of saying serious or dangerous.</li>
+</ul>
+<p><em>I want all privately owned radios to be immediately <strong>impounded</strong>.</em></p>
+<ul>
+  <li>&ldquo;To impound&rdquo; something is to seize or take it under government orders.</li>
+</ul>
+<p><em>They might be used to issue instructions to <strong>saboteurs</strong>.</em></p>
+<ul>
+  <li>A &ldquo;saboteur&rdquo; is a person, often working for a foreign government, who secretly tries to destroy machines or other property. The verb is "to sabotage."</li>
+</ul>
+<p><em>After you&rsquo;ve done that, <strong>report</strong> back to me.</em></p>
+<ul>
+  <li>&ldquo;To report&rdquo; to a person is to officially inform them of information that has been obtained.</li>
+</ul>
+<p><em>America&rsquo;s <strong>strategic air command</strong> maintains a large force of <strong>B-52 bombers</strong> <strong>airborne</strong> 24 hours a day.</em></p>
+<ul>
+  <li>The &ldquo;strategic air command&rdquo; refers to the leaders of the Air Force. B-52s were a well known airplane that carried nuclear bombs, and if a plane is &ldquo;airborne,&rdquo; it is in the air, as opposed to on the ground.</li>
+</ul>
+<p><em>50 <strong>megatons</strong>&hellip;equal to 16 times the total explosive force of all the bombs and <strong>shells</strong> by all the armies of World War 2.</em></p>
+<ul>
+  <li>A &ldquo;megaton&rdquo; equals a million tons of TNT, which is a well known explosive (This is a huge amount!) A &ldquo;shell&rdquo; is an explosive from a large gun.</li>
+</ul>
+<p><em>The Airborne Alert force is <strong>deployed</strong> from the Persian Gulf to Arctic Ocean.</em></p>
+<ul>
+  <li>&ldquo;To deploy&rdquo; a group of planes in a particular place is to station or locate them there.</li>
+</ul>
+<p><em>They are all 2 hours from their <strong>targets</strong> inside Russia.</em></p>
+<ul>
+  <li>In this case, a &ldquo;target&rdquo; is a place that one is trying to fire at or destroy.</li>
+</ul>
+<p><em>I just got a message from <strong>CRM</strong>&hellip;It <strong>decodes</strong> as wing attack plan R.</em></p>
+<ul>
+  <li>&ldquo;CRM&rdquo; is a secret military code (It&rsquo;s actual meaning is not revealed in the film). &ldquo;To decode&rdquo; a message is to translate it into an understandable language.</li>
+</ul>
+<p><em>I don&rsquo;t want no <strong>horsing around</strong> on the airplane.</em></p>
+<ul>
+  <li>To &ldquo;horse around&rdquo; is to play around or act like small children.</li>
+</ul>
+<p><em>Earphones.</em></p>
+<ul>
+  <li>Small devices that you can put in your ear to listen to a radio or phone without disturbing others.</li>
+</ul>
+<p><em>Is it possible this is some kind of <strong>loyalty test</strong>?</em></p>
+<ul>
+  <li>In this case, a type of test to see whether a person is likely to follow instructions, even if those instructions are difficult to carry out.</li>
+</ul>
+<p><em>Give the <strong>go-code</strong> and <strong>recall</strong> to see who would actually go?</em></p>
+<ul>
+  <li>The &ldquo;go-code&rdquo; is the Air Force instructions to pilots to actually carry out their mission (in this case, to bomb the Soviet Union). To &ldquo;recall&rdquo; a plane is to tell it to come back or return from where it was going.</li>
+</ul>
+<p><em><strong>Ain&rsquo;t nobody ever got</strong> the go-code yet.</em></p>
+<ul>
+  <li>A very ungrammatical way of saying &ldquo;Nobody has ever&hellip;&rdquo; The actor, Slim Pickens, is from Texas, and he is using his normal speech in the movie. You should <em>never</em> use the word &lsquo;ain&rsquo;t&rsquo;!</li>
+</ul>
+<p><em>Old Ripper wouldn&rsquo;t be giving us Plan R unless those <strong>Ruskies</strong> had already <strong>clobbered</strong> Washington and other towns with <strong>a sneak attack</strong>.</em></p>
+<ul>
+  <li>&ldquo;Ruskie&rdquo; is a very dated and silly way of referring to the Russians. &ldquo;To clobber&rdquo; a person is to hit them very hard. A &ldquo;sneak attack&rdquo; is a sudden and unexpected military strike.</li>
+</ul>
+<p><em>Well boys, I <strong>reckon</strong> this is it.</em></p>
+<ul>
+  <li>&ldquo;To reckon&rdquo; is an old-fashioned but still used word meaning to think.</li>
+</ul>
+<p><em>Something <strong>doggoned</strong> important is going on back there.</em></p>
+<ul>
+  <li>&ldquo;Doggoned&rdquo; is a dated and silly way of saying very.</li>
+</ul>
+<p><em>I got a fair idea of some of the emotions some of you <strong>fellows</strong> may be thinking.</em></p>
+<ul>
+  <li>&ldquo;Fellow&rdquo; is another word for guy.</li>
+</ul>
+<p><em><strong>Heck</strong>, I reckon you wouldn&rsquo;t even be human beings if you didn&rsquo;t have some strange feelings about nuclear <strong>combat</strong>.</em></p>
+<ul>
+  <li>&ldquo;Heck&rdquo; is an old-fashioned filler word used to express emotion such as surprise or anger. &ldquo;Combat&rdquo; is another word for war or fighting.</li>
+</ul>
+<p><em><strong>Folks</strong> back home <strong>are counting on</strong> you, and <strong>by golly</strong>, we ain&rsquo;t about to <strong>let them down</strong>.</em></p>
+<ul>
+  <li>&ldquo;Folks&rdquo; is another word for people. &ldquo;To count on&rdquo; a person is to depend on them. &ldquo;By golly&rdquo; is a very dated way of showing emotion. &ldquo;To let a person down&rdquo; is a common way of saying to disappoint them.</li>
+</ul>
+<p><em>If this <strong>turns out</strong> to be half as important as I <strong>figure</strong> it might be, you&rsquo;re all in line for some important <strong>promotions</strong> and <strong>personal citations</strong>.</em></p>
+<ul>
+  <li>If a situation &ldquo;turns out&rdquo; well, it concludes or ends up well. &ldquo;To figure&rdquo; is to think or believe. A &ldquo;promotion&rdquo; is a raise in salary or job responsibility and &ldquo;personal citations&rdquo; are awards or official letters of thanks, in this case from the Air Force.</li>
+</ul>
+<p><em>Regardless of your race, color or <strong>creed</strong>&hellip;</em></p>
+<ul>
+  <li>Another word for religious or philosophical belief.</li>
+</ul>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>General Turgidson learns of the crisis as Ripper seals
+  off his base, and then explains to Mandrake the
+  real reason the communists must be eliminated....</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>Oh, we&rsquo;re just <strong>catching up</strong> on some of the generals&rsquo; <strong>paperwork</strong>.</em></p>
+<ul>
+  <li>&ldquo;To catch up on&rdquo; work is do what should have been done earlier (and thus now there is a lot of work left to do). &ldquo;Paperwork&rdquo; usually refers to work that is done in an office or at a desk.</li>
+</ul>
+<p><em>He&rsquo;s <strong>tied up</strong>. I&rsquo;m afraid he can&rsquo;t come to the phone.</em></p>
+<ul>
+  <li>If a person is &ldquo;tied up,&rdquo; they are busy doing something.</li>
+</ul>
+<p><em><strong>For Pete&rsquo;s ----</strong>. Find out what he wants.</em></p>
+<ul>
+  <li>&ldquo;For pete&rsquo;s <em>sake</em>&rdquo; is a way of expressing anger or frustration.</li>
+</ul>
+<p><em>They <strong>monitored</strong> a transmission about eight minutes ago from Burpelson Airforce Base.</em></p>
+<ul>
+  <li>&ldquo;To monitor&rdquo; a phone call or other communication is to try and listen to it.</li>
+</ul>
+<p><em>It decoded as Wing Attack Plan R. :: Tell him to call <strong>what&rsquo;s-his-name</strong>. Base commander Ripper.</em></p>
+<ul>
+  <li>A common way of referring to a person if you&rsquo;ve forgotten their name.</li>
+</ul>
+<p><em>All communications are dead. :: <strong>Bull</strong>! Tell him to do it himself.</em></p>
+<ul>
+  <li>&ldquo;Bull&rdquo; is a way of referring to nonsense or lies, although note that the more common word is &ldquo;bullshit.&rdquo;</li>
+</ul>
+<p><em><strong>What&rsquo;s cooking</strong> on the threat board?</em></p>
+<ul>
+  <li>&ldquo;What&rsquo;s cooking&rdquo; is a very colloquial way of asking what&rsquo;s happening? In this film, the &ldquo;threat board&rdquo; is the large map in the war room that is used to show where both US and Russian planes are located (Here, a &lsquo;threat&rsquo; is the danger of a possible military attack).</li>
+</ul>
+<p><em>Tell you what you better do, old <strong>buddy</strong>.</em></p>
+<ul>
+  <li>&ldquo;Buddy&rdquo; is another word for friend (And Turgidson&rsquo;s nickname).</li>
+</ul>
+<p><em>Give Elmo and Charlie a <strong>blast</strong> and <strong>bump up</strong> everybody up to Condition Red.</em></p>
+<ul>
+  <li>A &ldquo;blast&rdquo; is an explosion, though Turgidson uses it to mean phone call. Here, to &ldquo;bump up&rdquo; a person is to raise their level of alertness.</li>
+</ul>
+<p><em>I thought I might <strong>mosey over</strong> to the war room to see <strong>what&rsquo;s doing</strong> over there.</em></p>
+<ul>
+  <li>"To mosey over" to a place is a slangy way of saying to slowly move toward it (Note that Turgidson says "what's doing," though everyone else says "what's happening").</li>
+</ul>
+<p><em>You just start your <strong>countdown</strong>, and old Bucky will be back here before you say &lsquo;blastoff.&rsquo;</em></p>
+<ul>
+  <li>A &ldquo;countdown is the counting of numbers from 10 down to 0. A &ldquo;blastoff&rdquo; is the act of a rocket lifting off from earth toward space.</li>
+</ul>
+<p><em>Your <strong>commie</strong> has no regard for human life, not even his own.</em></p>
+<ul>
+  <li>A &ldquo;commie&rdquo; is a ridiculous and dated slang word for a communist.</li>
+</ul>
+<p><em>I want <strong>to impress upon</strong> you the need for <strong>extreme watchfulness</strong>.</em></p>
+<ul>
+  <li>&ldquo;To impress upon&rdquo; a person is to convince them of something. &ldquo;Extreme watchfulness&rdquo; is a very high state of caution or alert, most likely to watch out for an enemy sneak attack.</li>
+</ul>
+<p><em>The enemy&hellip;may even come in the <strong>uniform</strong> of our own <strong>troops</strong>.</em></p>
+<ul>
+  <li>A &ldquo;uniform&rdquo; is the official clothing of an organization, in this case of the US army. &ldquo;Troops&rdquo; are soldiers.</li>
+</ul>
+<p><em>Trust no one, whatever his uniform or <strong>rank</strong>.</em></p>
+<ul>
+  <li>A person&rsquo;s &ldquo;rank&rdquo; is their level of responsibility (Captain, General, etc).</li>
+</ul>
+<p><em>Anyone or anything that approaches within 200 <strong>yards</strong> of the <strong>perimeter</strong> is to be <strong>fired upon</strong>.</em></p>
+<ul>
+  <li>A &ldquo;yard&rdquo; is three feet long. The &ldquo;perimeter&rdquo; of a place is the outer edge or border. If a person is being &ldquo;fired upon, &ldquo; they are being shot at.</li>
+</ul>
+<p><em>I would sooner accept a few <strong>casualties</strong> through accident than lose the entire base and its <strong>personnel</strong> through <strong>carelessness</strong>.</em></p>
+<ul>
+  <li>&ldquo;Casualties&rdquo; are injuries or death due to war. &ldquo;Personnel&rdquo; are the people who work at a company or other organization. &ldquo;Carelessness&rdquo; is the act of being forgetful, reckless or not careful.</li>
+</ul>
+<p><em>In the two years that it has been my <strong>privilege</strong> to be your commanding officer, I have always expected the best from you.</em></p>
+<ul>
+  <li>A &ldquo;privilege&rdquo; is a high honor or feeling of gratefulness.</li>
+</ul>
+<p><em>Here&rsquo;s the <strong>attack profile</strong>, Sir.</em></p>
+<ul>
+  <li>In this case, the detailed plans of the possible attack (A profile can be a description or the drawing of the side of a person&rsquo;s face).</li>
+</ul>
+<p><em>To ensure that the enemy cannot monitor voice transmission, or <strong>plant</strong> false transmissions, the CRM 114 is to be switched into all receiver circuits.</em></p>
+<ul>
+  <li>In this context, &ldquo;to plant&rdquo; a false transmission is to send a message while pretending to be somebody that you are not (i.e.&hellip;.the Russians would call US pilots claiming to be American).</li>
+</ul>
+<p><em>The <strong>code prefix</strong> is to be set on the <strong>dials</strong> of the CRM.</em></p>
+<ul>
+  <li>Here, a &ldquo;code prefix&rdquo; is a secret three digit number (4-2-1). A &ldquo;dial&rdquo; is the wheel of an old phone or other instrument that was used to set numbers (The CRM is a device for receiving secret messages).</li>
+</ul>
+<p><em><strong>Roger</strong>. Ready to set code prefix.</em></p>
+<ul>
+  <li>An important military word that simply means OK or understood.</li>
+</ul>
+<p><em>Check auto-destruct <strong>circuits</strong>.</em></p>
+<ul>
+  <li>The electronic parts of a device that are designed to destroy themselves if something happens that would make them dangerous (A &lsquo;circuit&rsquo; is a tiny metal ring through which electricity travels).</li>
+</ul>
+<p><em><strong>Primary target</strong>; The <strong>ICBM</strong> complex at Laputa.</em></p>
+<ul>
+  <li>A &ldquo;primary target&rdquo; is the first place that a military attack is designed to destroy. &ldquo;ICBM&rdquo; stands for Inter-Continental-Ballistic-Missile, and thus the ICBM complex are buildings (near the town of Laputa) where the Soviets stored nuclear missiles that could reach the U.S.</li>
+</ul>
+<p><em>Thirty megaton <strong>nuclear device</strong> will be used if first <strong>malfunctions</strong>. Otherwise, proceed to secondary target.</em></p>
+<ul>
+  <li>A "nuclear device" is a military way of saying a nuclear bomb! If a machine "malfunctions," it fails to work correctly. "To proceed" is to move forward.</li>
+</ul>
+<p><em>Something <strong>rather</strong> interesting has just <strong>cropped up</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;rather&rdquo; is another way of saying somewhat or a little. If something &ldquo;crops up,&rdquo; it suddenly appears, often unexpectedly.</li>
+</ul>
+<p><em><strong>Civilian broadcasting</strong>. I think these fellows in the Pentagon have given us an excuse to check our <strong>readiness</strong>.</em></p>
+<ul>
+  <li>&ldquo;Civilian broadcasting&rdquo; refers to regular programming on commercial radio (such as pop music), as opposed to military programming or music. &ldquo;Readiness&rdquo; is a formal word for state of preparation.</li>
+</ul>
+<p><em>Our fellows will be inside Russian <strong>radar</strong> cover in about 20 minutes.</em></p>
+<ul>
+  <li>&ldquo;Radar&rdquo; is a technology that, among other things, allows nations to see planes from other countries that are secretly flying into their airspace.</li>
+</ul>
+<p><em>Listen to that; <strong>chock full</strong> of stations all <strong>churning it out</strong>.</em></p>
+<ul>
+  <li>To be &ldquo;chock full of&rdquo; something is to be completely filled with it. To &ldquo;churn out&rdquo; a product is to continually produce or manufacture a lot of it over a long period of time.</li>
+</ul>
+<p><em>I thought of our fellows hitting their <strong>stuff</strong>; if they do, it would cause a bit of a stink.</em></p>
+<ul>
+  <li>&ldquo;Stuff&rdquo; can mean any kind of &ldquo;thing,&rdquo; though here it refers to Russia&rsquo;s military bases. &ldquo;To cause a bit of a stink&rdquo; is a British way of saying to cause some problems.</li>
+</ul>
+<p><em>Group Captain, the officer exchange program does not give you any special <strong>prerogatives</strong> to question my orders.</em></p>
+<ul>
+  <li>A &ldquo;prerogative&rdquo; is a fancy word for a special right, power or privilege.</li>
+</ul>
+<p><em><strong>Let&rsquo;s face it</strong>; We don&rsquo;t really want to start a nuclear war unless we really have to, do we?</em></p>
+<ul>
+  <li>A common way to start a discussion when you want the listener to consider the hard reality of a difficult situation.</li>
+</ul>
+<p><em>The planes are not going to be <strong>recalled</strong>.</em></p>
+<ul>
+  <li>If a plane is &ldquo;recalled,&rdquo; it is ordered back to where it came from.</li>
+</ul>
+<p><em>My attack orders have been <strong>issued</strong> and the <strong>orders stand</strong>.</em></p>
+<ul>
+  <li>&ldquo;To issue&rdquo; an order is to announce it and demand that it be carried out, and if an order &ldquo;stands,&rdquo; it remains in force.</li>
+</ul>
+<p><em>That would be a rather <strong>odd</strong> way of looking at it.</em></p>
+<ul>
+  <li>A great word for strange or bizarre.</li>
+</ul>
+<p><em>I&rsquo;m afraid I&rsquo;m still not with you.</em></p>
+<ul>
+  <li>One way of saying &ldquo;I still don&rsquo;t understand what you&rsquo;re saying.&rdquo;</li>
+</ul>
+<p><em>I would say there&rsquo;s something <strong>dreadfully</strong> wrong somewhere.</em></p>
+<ul>
+  <li>A powerful adverb meaning horribly or terribly (&ldquo;To dread&rdquo; something is to greatly fear it).</li>
+</ul>
+<p><em>Why don&rsquo;t you <strong>take it easy</strong>, Group Captain.</em></p>
+<ul>
+  <li>A very common way of saying to relax.</li>
+</ul>
+<p><em>Please make me a drink of <strong>grain alcohol</strong> and rain water.</em></p>
+<ul>
+  <li>100% pure alcohol.</li>
+</ul>
+<p><em>As an officer in <strong>Her Majesty&rsquo;s</strong> Airforce, it is my clear duty under the present <strong>circumstances</strong> to issue the recall code upon my own authority&hellip;</em></p>
+<ul>
+  <li>&ldquo;Her Majesty&rdquo; is the Queen of England. &ldquo;Circumstances&rdquo; are the facts of a situation, and &ldquo;authority&rdquo; is another word for control or power.</li>
+</ul>
+<p><em>I have to ask for the key and the recall code; Have you got them <strong>handy</strong>, Sir?</em></p>
+<ul>
+  <li>If something is &ldquo;handy,&rdquo; it is easy to physically take or grab.</li>
+</ul>
+<p><em>I suppose it&rsquo;s never occurred to you that while we&rsquo;re <strong>chattering</strong> here so enjoyably, a decision is being made by the President and the <strong>Joint Chiefs</strong>&hellip;</em></p>
+<ul>
+  <li>&ldquo;To chatter&rdquo; is to talk quickly, often about unimportant topics. The &ldquo;Joint Chiefs&rdquo; are the leaders of the different sections of the military (Army, Air Force and Navy), who directly report to the President.</li>
+</ul>
+<p><em>&hellip;.in the War Room at <strong>The Pentagon</strong>.</em></p>
+<ul>
+  <li>The huge five sided headquarters of the US military.</li>
+</ul>
+<p><em>When they realize that there is no way of recalling the wing, they&rsquo;ll realize there&rsquo;s only one course of action open; total commitment.</em></p>
+<ul>
+  <li>This is Ripper's way of saying the US will have to do everything it can to destroy the Russian nuclear forces, since the Russians will surely try to attack the US after the US attacked Russia first.</li>
+</ul>
+<p><em>Do you <strong>recall</strong> what Clemenceau said about war?</em></p>
+<ul>
+  <li>In this case, to &ldquo;recall&rdquo; is to remember. Clemenceau was President of France during World War I.</li>
+</ul>
+<p><em>Today, war is too important to be left to the politicians.</em></p>
+<ul>
+  <li>This is Ripper&rsquo;s way of saying that military men, not politicians, should decide when a war is going to happen.</li>
+</ul>
+<p><em>They have neither the time, training, nor <strong>inclination</strong> for <strong>strategic</strong> thought.</em></p>
+<ul>
+  <li>If a person has the &ldquo;inclination&rdquo; to do something, they have the general desire or liking to do it. &ldquo;Strategic&rdquo; refers to the art of skillful planning for war, business or other complex activities.</li>
+</ul>
+<p><em>I can no longer sit back here and allow communist <strong>infiltration</strong>, communist <strong>indoctrination</strong>, communist <strong>subversion</strong>&hellip;.</em></p>
+<ul>
+  <li>&ldquo;To infiltrate&rdquo; a body, nation or group is to secretly sneak into it, &ldquo;Indoctrination&rdquo; is the act of convincing a person of a particular political or religious viewpoint, usually by psychological manipulation. &ldquo;Subversion&rdquo; is the act of trying to overthrow a government by acting from within it.</li>
+</ul>
+<p><em>&hellip;.and the <strong>international communist conspiracy</strong>&hellip;<strong>to sap</strong> and <strong>impurify</strong> all of our <strong>precious bodily fluids</strong>.</em></p>
+<ul>
+  <li>&ldquo;The international communist conspiracy&rdquo; refers to the belief that the Soviet Union and other communist powers were out to make the whole world communist. &ldquo;To sap&rdquo; is to weaken, and &ldquo;to impurify&rdquo; is to make impure, or to corrupt. &ldquo;Precious&rdquo; is very valuable and rare, and &ldquo;bodily fluids&rdquo; refer to such fluids as saliva and blood. This is perhaps Ripper&rsquo;s most ridiculous line in the movie.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>President Muffley handles the crisis in the war room as Turgidson suggests a massive strike to lessen a Soviet nuclear counterattack.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em><strong>Mr. President</strong>, the <strong>Secretary of State</strong> is in Vietnam&hellip;but the <strong>undersecretaries</strong> are all here.</em></p>
+<ul>
+  <li>Note that the President is always addressed as &ldquo;Mr. President.&rdquo; The &ldquo;Secretary of State&rdquo; is responsible for US foreign relations. An &ldquo;undersecretary&rdquo; works under the Secretary of Defense or Secretary of State or other powerful government official.</li>
+</ul>
+<p><em>The 34 <strong>B-52s</strong> of his wing, which were airborne at the time.</em></p>
+<ul>
+  <li>A B-52 is a large and powerful plane designed to drop nuclear bombs.</li>
+</ul>
+<p><em>The order called for the planes to attack their <strong>targets</strong> inside Russia.</em></p>
+<ul>
+  <li>A &ldquo;target&rdquo; is a particular place that is to be attacked.</li>
+</ul>
+<p><em>The aircraft will begin <strong>penetrating</strong> Russian radar cover within 25 minutes.</em></p>
+<ul>
+  <li>&ldquo;To penetrate&rdquo; a country is to forcefully enter it.</li>
+</ul>
+<p><em>I was the only one <strong>in authority</strong> to order the use of nuclear weapons.</em></p>
+<ul>
+  <li>A person &ldquo;in authority&rdquo; has the power to give orders.</li>
+</ul>
+<p><em>It&rsquo;s beginning to look like General Ripper <strong>exceeded</strong> his authority.</em></p>
+<ul>
+  <li>&ldquo;To exceed&rdquo; one&rsquo;s authority is to go beyond what is actually allowed.</li>
+</ul>
+<p><em>Perhaps you&rsquo;ve forgotten the <strong>provisions</strong> of Plan R, Sir.</em></p>
+<ul>
+  <li>A &ldquo;provision&rdquo; of a plan is a particular agreement or condition, which may become effective if certain events happen.</li>
+</ul>
+<p><em>Plan R is an emergency war plan in which a lower <strong>echelon</strong> commander may order a nuclear <strong>retaliation</strong> after a sneak attack&hellip;.</em></p>
+<ul>
+  <li>&ldquo;Echelon&rdquo; is another word for rank or level of power. &ldquo;Retaliation&rdquo; is the act of hitting or striking back after having been attacked.</li>
+</ul>
+<p><em>&hellip;.if the normal <strong>chain of command</strong> has been <strong>disrupted</strong>.</em></p>
+<ul>
+  <li>&ldquo;The chain of command&rdquo; is the order in which commands are passed down (from the President to Secretary of Defense to a General to lower officers and soldiers). If something is &ldquo;disrupted,&rdquo; it is prevented from operating effectively or smoothly.</li>
+</ul>
+<p><em>Surely you recall when Senator Beaufort made that big <strong>hassle</strong> about our <strong>deterrent</strong> lacking <strong>credibility</strong>?</em></p>
+<ul>
+  <li>A &ldquo;hassle&rdquo; is a problem or difficulty. In this context, &ldquo;deterrent&rdquo; is the power to convince the enemy not to attack because of the threat of an overwhelming counterattack. &ldquo;Credibility&rdquo; is believability.</li>
+</ul>
+<p><em>Plan R was to be a <strong>retaliatory safeguard</strong>.</em></p>
+<ul>
+  <li>Here, the threat of a counterattack that is so deadly that the enemy (the Soviets) would never attack first.</li>
+</ul>
+<p><em>I admit that <strong>the human element</strong> seems to have failed us here.</em></p>
+<ul>
+  <li>In this case, &ldquo;the human element&rdquo; refers to the unpredictability of human behavior or actions.</li>
+</ul>
+<p><em>They could <strong>knock out</strong> Washington, and yourself, as part of a sneak attack, and escape <strong>retaliation</strong> because of a lack of <strong>proper</strong> <strong>command and control</strong>.</em></p>
+<ul>
+  <li>&ldquo;To knock out&rdquo; a city is to destroy it or severely damage it so that leaders living there could not communicate. &ldquo;Retaliation&rdquo; is the act of counter-attacking. In this context, &ldquo;proper&rdquo; means sufficient and &ldquo;command and control&rdquo; refers to the structure of military command, from the President on downward.</li>
+</ul>
+<p><em>Once they fly beyond <strong>failsafe</strong>, they do not require a second order <strong>to proceed</strong>.</em></p>
+<ul>
+  <li>The &ldquo;failsafe&rdquo; point of a plane is the point beyond which it is in communication with home base. &ldquo;To proceed&rdquo; is to move forward.</li>
+</ul>
+<p><em>Why haven&rsquo;t you radioed the planes, <strong>countermanding</strong> the go code?</em></p>
+<ul>
+  <li>&ldquo;To countermand&rdquo; a previous order is to instruct people to ignore it or not follow it.</li>
+</ul>
+<p><em>A special <strong>coded</strong> <strong>device</strong>, which I believe is <strong>designated</strong> as CRM 114&hellip;is designed not to receive any messages at all&hellip;</em></p>
+<ul>
+  <li>If something is &ldquo;coded,&rdquo; it is in the form of a secret message that can only be read by certain people. A &ldquo;device&rdquo; is a machine or instrument. &ldquo;To designate&rdquo; something is to give it a specific name.</li>
+</ul>
+<p><em>&hellip;unless the message is preceded by the correct <strong>three letter code group prefix</strong>.</em></p>
+<ul>
+  <li>A reference to the secret three letters that would tell the pilots to ignore previous instructions to bomb the Soviets and to return to base.</li>
+</ul>
+<p><em>That&rsquo;s about the size of it.</em></p>
+<ul>
+  <li>A slangy way of saying &ldquo;that is basically correct.&rdquo;</li>
+</ul>
+<p><em>We are <strong>plowing through</strong> every possible three letter combination of the code.</em></p>
+<ul>
+  <li>&ldquo;To plow through&rdquo; something is to move through it quickly (&ldquo;To plow&rdquo; soil is to dig it up in order to be able to later plant seeds).</li>
+</ul>
+<p><em>But given that there are 17,000 <strong>permutations</strong>&hellip;.</em></p>
+<ul>
+  <li>A &ldquo;permutation&rdquo; is a change or variation from an original sample.</li>
+</ul>
+<p><em>General Ripper called <strong>Strategic Air Command Headquarters</strong>.</em></p>
+<ul>
+  <li>The central military base where the Air Force is run.</li>
+</ul>
+<p><em>I have a <strong>portion</strong> of the <strong>transcript</strong> of that conversation.</em></p>
+<ul>
+  <li>A &ldquo;portion&rdquo; is a section or part of a greater whole. A &ldquo;transcript&rdquo; is the written version of a spoken conversation.</li>
+</ul>
+<p><em>&ldquo;<strong>For the sake of</strong> our country&hellip;..I suggest you get the rest of the <strong>SAC</strong> in after them&hellip;&hellip;Otherwise, we will be totally destroyed by <strong>red</strong> retaliation.</em></p>
+<ul>
+  <li>To do something &ldquo;for the sake of&rdquo; a country is to it for its benefit or well-being. The SAC is the Strategic Air Command, which controls the Air Force. &ldquo;Red&rdquo; was a slang word for communists, though this is rarely used today.</li>
+</ul>
+<p><em>God willing, we will <strong>prevail</strong>, in peace and freedom from fear&hellip;and in true health, through the purity and <strong>essence</strong> of our natural&hellip;fluids.&rdquo;</em></p>
+<ul>
+  <li>&ldquo;To prevail&rdquo; is to survive or continue moving forward. &ldquo;Essence&rdquo; is the most critical or important part of something, though when used by General Ripper, it doesn&rsquo;t seem to have any meaning.</li>
+</ul>
+<p><em>There is nothing to <strong>figure out</strong>&hellip;.This man is obviously a <strong>psychotic</strong>.</em></p>
+<ul>
+  <li>&ldquo;To figure out&rdquo; a problem is to find its answer or solution. If a person is a &ldquo;psychotic,&rdquo; they are psychologically sick or even insane.</li>
+</ul>
+<p><em>When you <strong>instituted</strong> the <strong>human reliability test</strong>, you assured me there was no possibility of such a thing ever occurring.</em></p>
+<ul>
+  <li>&ldquo;To institute&rdquo; a test or policy is to carry it out or make it happen. In this case, a &ldquo;human reliability test&rdquo; is one designed to test the reliability of a person, or more specifically, whether you can trust them.</li>
+</ul>
+<p><em>I don&rsquo;t think it&rsquo;s quite fair <strong>to condemn</strong> a whole program because of a single <strong>slip up</strong>, Sir.</em></p>
+<ul>
+  <li>&ldquo;To condemn&rdquo; a person is to seriously criticize them. A &ldquo;slip up&rdquo; is a minor or unimportant mistake.</li>
+</ul>
+<p><em>Of course it isn&rsquo;t only physical! I deeply respect you as a human being!</em></p>
+<ul>
+  <li>What a man would tell his girlfriend if she feels he only likes her for sex.</li>
+</ul>
+<p><em>The 23<sup>rd</sup> airborne division is <strong>stationed</strong> seven miles away at Alvarado.</em></p>
+<ul>
+  <li>If a military division is &ldquo;stationed&rdquo; in a particular place, it is housed or located there.</li>
+</ul>
+<p><em>Any force trying to enter there would certainly <strong>encounter</strong> <strong>heavy casualties</strong>.</em></p>
+<ul>
+  <li>&ldquo;To encounter&rdquo; something is to meet it or come in contact with it. &ldquo;Heavy casualties&rdquo; means many deaths or serious injuries.</li>
+</ul>
+<p><em><strong>With all due respect</strong> for your defense team, my boys could <strong>brush them aside</strong> without too much trouble.</em></p>
+<ul>
+  <li>&ldquo;With all due respect&rdquo; is a set expression used to show respect when you still disagree with what has just been said. &ldquo;To brush aside&rdquo; a person or group is to physically remove them without much effort.</li>
+</ul>
+<p><em>Our hopes for recalling the 843<sup>rd</sup> bomber wing are quickly being reduce to a low order of probability.</em></p>
+<ul>
+  <li>This is Turgidson&rsquo;s complicated way of saying that it is becoming unlikely that the planes can be recalled.</li>
+</ul>
+<p><em>They are going <strong>to go absolutely ape</strong> and <strong>strike back</strong> with everything they got.</em></p>
+<ul>
+  <li>In this case, &ldquo;to go ape&rdquo; is a very slangy way of saying to become extremely angry. &ldquo;To strike back&rdquo; is to hit back after being attacked.</li>
+</ul>
+<p><em>If <strong>prior to</strong> this time, we have done nothing further <strong>to suppress</strong> their <strong>retaliatory capabilities</strong>, we will suffer <strong>virtual annihilation</strong>.</em></p>
+<ul>
+  <li>&ldquo;Prior to&rdquo; means before. &ldquo;To suppress&rdquo; something is to greatly weaken or destroy it. &ldquo;Retaliatory capability&rdquo; is the ability to strike back after being attacked. &ldquo;Virtual annihilation&rdquo; is almost total destruction.</li>
+</ul>
+<p><em>If we were to immediately <strong>launch</strong> an <strong>all out</strong> and <strong>coordinated</strong> attack on their airfields and missile bases&hellip;</em></p>
+<ul>
+  <li>&ldquo;To launch&rdquo; an attack is to begin it (To launch a missile is to send it into space). An &ldquo;all out&rdquo; attack is a complete and powerful one, and if it is &ldquo;coordinated,&rdquo; it is well organized by all important leaders.</li>
+</ul>
+<p><em>&hellip;.we&rsquo;d <strong>stand a damn good chance</strong> of <strong>catching them with their pants down</strong>!</em></p>
+<ul>
+  <li>&ldquo;To stand a damn good chance&rdquo; of doing something is to have a good possibility of being able to do it. &ldquo;To catch a person with their pants down&rdquo; is a very slangy way of saying to catch them completely unprepared.</li>
+</ul>
+<p><em>Hell, we&rsquo;ve got 5 to 1 missile superiority as it is&hellip;and we&rsquo;d still have a very effective <strong>reserve force</strong> for any other <strong>contingency</strong>.</em></p>
+<ul>
+  <li>In this case, a &ldquo;reserve force&rdquo; is a military force that can be used after the first attack has been launched. A &ldquo;contingency&rdquo; is any possible event that could realistically happen.</li>
+</ul>
+<p><em>We would therefore <strong>prevail</strong> and suffer only <strong>modest civilian casualties</strong> from their remaining force, which would be badly damaged and uncoordinated.</em></p>
+<ul>
+  <li>&ldquo;To prevail&rdquo; is to survive, and for General Turgidson, &ldquo;modest civilian casualties&rdquo; is only a few million killed (as opposed to tens of millions!).</li>
+</ul>
+<p><em>General, it is the <strong>avowed policy</strong> of our country never to strike first with nuclear weapons.</em></p>
+<ul>
+  <li>An &ldquo;avowed policy&rdquo; is a clearly stated and well known principle.</li>
+</ul>
+<p><em>General Ripper has already <strong>invalidated</strong> that policy!</em></p>
+<ul>
+  <li>&ldquo;To invalidate&rdquo; a policy is to break it or to declare it no longer in force.</li>
+</ul>
+<p><em>We are rapidly approaching a moment of truth&hellip;between two regrettable but nevertheless <strong>distinguishable</strong> postwar environments.</em></p>
+<ul>
+  <li>If two things are &ldquo;distinguishable,&rdquo; their differences can easily be seen or understood.</li>
+</ul>
+<p><em>You&rsquo;re talking about mass murder, not war! :: Mr. President, I&rsquo;m not saying we wouldn&rsquo;t get our hair <strong>mussed</strong>.</em></p>
+<ul>
+  <li>&ldquo;To muss&rdquo; something is to make it messy or unorganized.</li>
+</ul>
+<p><em>No more than 10-20 million killed, <strong>tops</strong>! Depending on <strong>the breaks</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;tops&rdquo; means the absolute maximum, and &ldquo;the breaks&rdquo; means luck or more generally, the playing out of future events.</li>
+</ul>
+<p><em>I will not <strong>go down in history</strong> as the greatest mass murderer since Hitler.</em></p>
+<ul>
+  <li>&ldquo;To go down in history&rdquo; is to be remembered by future generations.</li>
+</ul>
+<p><em>They say he&rsquo;s <strong>having a fit</strong> about that <strong>squad</strong> of <strong>MPs</strong>.</em></p>
+<ul>
+  <li>&ldquo;To have a fit&rdquo; is a common and colloquial way of saying to show extreme anger or emotional frustration. A &ldquo;squad&rdquo; is a small group of people or a team, and &ldquo;MPs&rdquo; are the military police.</li>
+</ul>
+<p><em>I don&rsquo;t know how to put this, Sir, but are you aware of what a serious <strong>breach of security</strong> that would be?!</em></p>
+<ul>
+  <li>A &ldquo;breach of security&rdquo; is the release of information to others who can use it in order to weaken or even destroy the person or organization.</li>
+</ul>
+<p><em>He&rsquo;ll see the big board! :: That is <strong>precisely</strong> the idea!</em></p>
+<ul>
+  <li>A good alternative word for exactly.</li>
+</ul>
+<p><em>Staines, get Premiere Kissoff on the <strong>hotline</strong>.</em></p>
+<ul>
+  <li>A famous telephone line that allowed American and Soviet leaders to immediately talk to each other in times of crisis.</li>
+</ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>The President tries to calm the Russian Premiere, the Russian
+  ambassador reveals the doomsday device, and Mandrake tries to get the recall code from Ripper before US planes hit their targets in Russia.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em><strong>Survival kit</strong> contents check&hellip;One <strong>45 caliber automatic</strong>, two boxes of <strong>ammunition</strong>&hellip;four day <strong>concentrated rations</strong>&hellip;</em></p>
+<ul>
+  <li>A &ldquo;survival kit&rdquo; is a small box with everything needed to survive alone for several days at a time. A &ldquo;45 caliber automatic&rdquo; is a type of gun. &ldquo;Ammunition&rdquo; is bullets for the gun, and &ldquo;concentrated rations&rdquo; are small packets of food.</li>
+</ul>
+<p><em><strong>Antibiotics</strong>, <strong>morphine</strong>, vitamin pills, <strong>pep pills</strong>, <strong>tranquilizer</strong> pills.</em></p>
+<ul>
+  <li>&ldquo;Antibiotics&rdquo; are medicines that fight bacteria, &ldquo;morphine&rdquo; is a pain-killing drug, &ldquo;pep pills&rdquo; give you energy and &ldquo;tranquilizers&rdquo; relax you and allow you to sleep.</li>
+</ul>
+<p><em>One issue of <strong>prophylactics</strong>, 3 lipsticks, 3 pair of <strong>nylons</strong>.</em></p>
+<ul>
+  <li>A &ldquo;prophylactic&rdquo; is a fancy word for a condom. &ldquo;Nylons&rdquo; are the material that women&rsquo;s stockings are made of.</li>
+</ul>
+<p><em>A fellow could have a pretty good weekend in <strong>Vegas</strong> with that stuff.</em></p>
+<ul>
+  <li>***If you watch closely, Slim Pickens doesn't say "Vegas", he says "Dallas," but he had to record a voice-over after the scene was made. The movie was originally scheduled to be released in late 1963, but in November, 1963--in Dallas, Texas, Pres. John F. Kennedy was assassinated. The movie was postponed, and Slim Pickens was asked to re-record that scene.***</li>
+</ul>
+<p><em>I don&rsquo;t support the work of <strong>imperialist</strong> <strong>stooges</strong>. :: Only commie stooges, huh?</em></p>
+<ul>
+  <li>An &ldquo;imperialist&rdquo; is a person who believes or excuses the social and economic dominance of one country in other countries around the world. A &ldquo;stooge&rdquo; is a person who faithfully serves a more powerful person, though it has also come to mean a fool or idiot.</li>
+</ul>
+<p><em>You&rsquo;re going to let that <strong>lousy</strong> commie <strong>punk</strong> vomit all over us like that?!</em></p>
+<ul>
+  <li>&ldquo;Lousy&rdquo; is an excellent word for bad or horrible. A &ldquo;punk&rdquo; is a bully or a badly behaved young person.</li>
+</ul>
+<p><em>I said Premiere Kissoff is a <strong>degenerate</strong> <strong>atheistic</strong> commie!</em></p>
+<ul>
+  <li>A &ldquo;degenerate&rdquo; is a horrible person with no morals. An &ldquo;atheist&rdquo; is a person who does not believe in God.</li>
+</ul>
+<p><em>This <strong>clumsy</strong> fool tried <strong>to plant</strong> this ridiculous camera on me.</em></p>
+<ul>
+  <li>If a person is &ldquo;clumsy,&rdquo; they are physically awkward or uncoordinated. &ldquo;To plant&rdquo; an object on a person is to secretly put it on them or their clothes without that person knowing.</li>
+</ul>
+<p><em>This is <strong>outrageous</strong>! I&rsquo;ve never heard of such behavior in the war room before!</em></p>
+<ul>
+  <li>A powerful word meaning completely shocking or offensive.</li>
+</ul>
+<p><em>You sure got <strong>to hand it to</strong> those commies!</em></p>
+<ul>
+  <li>&ldquo;To hand it to&rdquo; somebody is a colloquial way of saying to praise them or give them credit for having done something difficult or valuable.</li>
+</ul>
+<p><em>Probably got them from the army as <strong>war surplus</strong>.</em></p>
+<ul>
+  <li>Extra clothes and equipment that the army sells to the public because it is no longer needed.</li>
+</ul>
+<p><em>OK, <strong>open up</strong> at 200 yards! Fire!</em></p>
+<ul>
+  <li>In this case, to &ldquo;open up&rdquo; is to start shooting guns.</li>
+</ul>
+<p><em>Clear and plain and <strong>coming through</strong> fine!</em></p>
+<ul>
+  <li>If a voice is &ldquo;coming through&rdquo; a phone line, it is being transmitted.</li>
+</ul>
+<p><em><strong>The bomb</strong>. The hydrogen bomb.</em></p>
+<ul>
+  <li>Note that &ldquo;the bomb&rdquo; usually refers to the atomic bomb in general, though the hydrogen bomb, created in the 1950s, was much more powerful than the atomic bombs used on Japan.</li>
+</ul>
+<p><em>One of our base commanders&hellip;<strong>went a little funny in the head</strong>.</em></p>
+<ul>
+  <li>&ldquo;To go a little funny in the head&rdquo; is President Muffley&rsquo;s gentle way of saying to go crazy.</li>
+</ul>
+<p><em>He went and did a silly thing.</em></p>
+<ul>
+  <li>This is President Muffley&rsquo;s ridiculous way of talking about General Ripper&rsquo;s decision to attack the Soviet Union.</li>
+</ul>
+<p><em>Listen, I&rsquo;ve <strong>been all over</strong> this with your ambassador. It&rsquo;s not a <strong>trick</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;to go over&rdquo; something is to discuss it very seriously. A &ldquo;trick&rdquo; is a plan or action designed to fool somebody or even make them look stupid.</li>
+</ul>
+<p><em>We&rsquo;d like to give your air staff a complete <strong>rundown</strong> on the targets, the flight plans and defensive systems of the planes.</em></p>
+<ul>
+  <li>A &ldquo;rundown&rdquo; is a summary of important or relevant information.</li>
+</ul>
+<p><em>Sorry, you <strong>faded away</strong>.</em></p>
+<ul>
+  <li>&ldquo;To fade away&rdquo; is to grow weaker or quieter.</li>
+</ul>
+<p><em>I see, just ask for <strong>Omsk</strong> information.</em></p>
+<ul>
+  <li>In this case, the telephone operator in the city of Omsk who gives out phone numbers.</li>
+</ul>
+<p><em>The fools, the <strong>mad</strong> <strong>fools</strong>!</em></p>
+<ul>
+  <li>Note that here, a person who is mad is not angry but crazy. A &ldquo;fool&rdquo; is a silly or stupid person who does stupid or silly things.</li>
+</ul>
+<p><em><strong>On no account</strong> will a commie ever drink water, and not without good reason.</em></p>
+<ul>
+  <li>One way of saying &ldquo;Under no circumstances.&rdquo;</li>
+</ul>
+<p><em>I don&rsquo;t quite see what you&rsquo;re getting at.</em></p>
+<ul>
+  <li>&ldquo;I don&rsquo;t understand what you&rsquo;re saying.&rdquo;</li>
+</ul>
+<p><em>You and I need fresh pure water <strong>to replenish</strong> our precious <strong>bodily fluids</strong>.</em></p>
+<ul>
+  <li>&ldquo;To replenish&rdquo; is to refill with water, energy or nutrition. &ldquo;Bodily fluids&rdquo; are blood, saliva, semen, etc.</li>
+</ul>
+<p><em>Have you ever wondered why I drink only <strong>distilled</strong> water?</em></p>
+<ul>
+  <li>Water that is purified (by evaporation and condensation).</li>
+</ul>
+<p><em>Have you heard of <strong>fluoridation</strong> of water?</em></p>
+<ul>
+  <li>The adding of fluoride to water, which is a substance that helps protect teeth from cavities and tooth decay.</li>
+</ul>
+<p><em>Fluoridation is the most <strong>monstrously conceived</strong> and dangerous communist <strong>plot</strong> we have ever had to face!</em></p>
+<ul>
+  <li>If something is &ldquo;monstrously conceived,&rdquo; it is thought of or created for the primary goal of doing great harm. A &ldquo;plot&rdquo; is a plan or conspiracy usually carried out by two or more people to do something illegal or very damaging. In the 1950s and 1960s, many conservative Americans really did think fluoridation was a communist plot!</li>
+</ul>
+<p><em>Two can play at this game, solider!</em></p>
+<ul>
+  <li>A set expression to tell a person that they can do the same thing as is being done to them (In this case, General Ripper can shoot back at those who are shooting at him).</li>
+</ul>
+<p><em>In the name of Her Majesty and the <strong>Continental Congress</strong>, feed me the belt!</em></p>
+<ul>
+  <li>The Continental Congress was the colonial American group that declared independence from England in 1776. In this case, the &ldquo;belt&rdquo; is a long line of bullets that is fed into a machine gun.</li>
+</ul>
+<p><em>The <strong>string</strong> in my leg is gone. I&rsquo;ve got a <strong>gammy</strong> leg. Gone. Shot off.</em></p>
+<ul>
+  <li>&ldquo;String&rdquo; is a very thin cord or rope, though it&rsquo;s not clear what Captain Mandrake means here. &ldquo;Gammy&rdquo; is a British word for physically impaired or lame (Never used in the US).</li>
+</ul>
+<p><em>Come over here. The <strong>Red Coats</strong> are coming!</em></p>
+<ul>
+  <li>One way of referring to British solider during the Revolutionary War.</li>
+</ul>
+<p><em>When it is <strong>detonated</strong>, it will provide enough <strong>radioactive fallout</strong>, so that in 10 months, the surface of the earth will be as dead as the moon.</em></p>
+<ul>
+  <li>&ldquo;To detonate&rdquo; a bomb is to explode it. &ldquo;Radioactive fallout&rdquo; is the nuclear poison that covers the earth after a nuclear bomb goes off.</li>
+</ul>
+<p><em><strong>Come on</strong>, De Sadskey, that&rsquo;s ridiculous.</em></p>
+<ul>
+  <li>The most versatile phrasal verb in English, in this case meaning &ldquo; I don&rsquo;t believe you.&rdquo;</li>
+</ul>
+<p><em><strong>Cobalt Thorium G</strong> has a radioactive half-life of 93 years.</em></p>
+<ul>
+  <li>In this film, &ldquo;Cobalt Thorium G&rdquo; is a very dangerous and radioactive substance than can destroy all life. If a metal has a &ldquo;radioactive half-life&rdquo; of 93 years, it will stay radioactive and poisonous for that long.</li>
+</ul>
+<p><em>If you take 50 H-bombs in the 40 megaton <strong>range</strong> and <strong>jacked</strong> them with Cobalt Thorium G, when they are exploded they will produce a doomsday <strong>shroud</strong>.</em></p>
+<ul>
+  <li>Here, a &ldquo;range&rdquo; refers to approximate level or strength. &ldquo;To jack&rdquo; a bomb with a substance is to add that substance, but this is never used. A &ldquo;shroud&rdquo; is a cloth covering, or anything that covers or hides.</li>
+</ul>
+<p><em>A <strong>lethal</strong> cloud of radioactivity, which will encircle the earth for 93 years.</em></p>
+<ul>
+  <li>If something is &ldquo;lethal,&rdquo; it is deadly.</li>
+</ul>
+<p><em>What a load of commie <strong>bull</strong>!</em></p>
+<ul>
+  <li>&ldquo;A load of&rdquo; something is a lot of it. &ldquo;Bull&rdquo; is lies or nonsense, although the more common variation is the somewhat cruder "bullshit!"</li>
+</ul>
+<p><em>It is not a thing a <strong>sane</strong> man would do; The doomsday machine is designed <strong>to trigger</strong> itself automatically.</em></p>
+<ul>
+  <li>A Person who is &ldquo;sane&rdquo; is psychologically stable (the opposite of crazy, or insane). &ldquo;To trigger&rdquo; a bomb or device is to set it off.</li>
+</ul>
+<p><em>Surely, you can <strong>disarm</strong> it somehow!</em></p>
+<ul>
+  <li>&ldquo;To disarm&rdquo; a person or machine is take away its ability to kill or injure, or to literally take away its guns or other arms.</li>
+</ul>
+<p><em>Look at the big board; They&rsquo;re getting ready <strong>to clobber</strong> us!</em></p>
+<ul>
+  <li>&ldquo;To clobber&rdquo; someone is to hit or strike them hard.</li>
+</ul>
+<p><em>This is absolute <strong>madness</strong>! Why should you build such a thing?!</em></p>
+<ul>
+  <li>Another word for insanity or craziness.</li>
+</ul>
+<p><em>In the end, we could not keep up with the expenses of the <strong>arms race</strong>, the <strong>space race</strong> and the <strong>peace race</strong>.</em></p>
+<ul>
+  <li>The &ldquo;arms race&rdquo; refers to the Cold War competition between the US and Soviet Union to build as many nuclear bombs as possible (The space race was the race to the moon, but there was no &lsquo;peace race&rsquo;).</li>
+</ul>
+<p><em>At the same time, our people <strong>grumbled</strong> for more <strong>nylons</strong> and washing machines.</em></p>
+<ul>
+  <li>&ldquo;To grumble&rdquo; is to complain in a soft voice. &ldquo;Nylons&rdquo; is another word for women&rsquo;s panty hose.</li>
+</ul>
+<p><em>Our doomsday scheme cost us just a small fraction on what we had been spending in a single year.</em></p>
+<ul>
+  <li>A &ldquo;scheme&rdquo; is a plan that is often designed to do something illegal or immoral. A &ldquo;fraction&rdquo; is a part of a greater whole, such as 1/5<sup>th</sup>.</li>
+</ul>
+<p><em>The <strong>deciding factor</strong> was when we learned your country was working along similar lines, and we were afraid of a doomsday <strong>gap</strong>.</em></p>
+<ul>
+  <li>A &ldquo;deciding factor&rdquo; is a key consideration or point which causes a person to act in a particular way. A &ldquo;gap&rdquo; is a space between two walls, or a difference in production, in this case between two countries (The &ldquo;missile gap&rdquo; was an apparent lead in Soviet production of missiles, but there has never been a &ldquo;doomsday machine gap&rdquo;!).</li>
+</ul>
+<p><em>When did you first&hellip;develop this <strong>theory</strong>?</em></p>
+<ul>
+  <li>A &ldquo;theory&rdquo; is a prediction or guess, often basic on scientific study.</li>
+</ul>
+<p><em>During <strong>the physical act of love</strong>. Yes, a <strong>profound</strong> sense of <strong>fatigue</strong>, of physical emptiness followed.</em></p>
+<ul>
+  <li>&ldquo;The physical act of love&rdquo; is a particularly ridiculous way to refer to sex. &ldquo;Profound&rdquo; means deep (physically or philosophically). &ldquo;Fatigue&rdquo; is a good alternative word to tired.</li>
+</ul>
+<p><em>I was able to interpret these feeling correctly. Loss of <strong>essence</strong>.</em></p>
+<ul>
+  <li>General Ripper&rsquo;s way of describing physical strength, though these are basically complete nonsense words (The &ldquo;essence&rdquo; of a thing is its most important part).</li>
+</ul>
+<p><em>I can assure it has not <strong>recurred</strong>, Mandrake.</em></p>
+<ul>
+  <li>If something &ldquo;recurs,&rdquo; it happens again.</li>
+</ul>
+<p><em>Women sense my power, and they seek the life essence.</em></p>
+<ul>
+  <li>More nonsense words from General Ripper, though it is possible he is referring to his own sperm.</li>
+</ul>
+<p><em>I do not <strong>avoid</strong> women, but I do deny them my essence.</em></p>
+<ul>
+  <li>&ldquo;To avoid&rdquo; a person is to try and stay away from them.</li>
+</ul>
+<p><strong><em>Cease-fire!</em></strong></p>
+<ul>
+  <li>A military expression that refers to an agreement in which both side agree to stop firing their guns and other weapons.</li>
+</ul>
+<p><em>Those boys were like my children. Now they <strong>let me down</strong>.</em></p>
+<ul>
+  <li>&ldquo;To let down&rdquo; a person is to disappoint them.</li>
+</ul>
+<p><em>Suppose a bit of water has <strong>gone off</strong>? Do I look at all <strong>rancid</strong> and <strong>clotted</strong>?!</em></p>
+<ul>
+  <li>In this case, Mandrake uses &ldquo;gone off&rdquo; to mean &ldquo;become bad,&rdquo; though this is never used in the US. &ldquo;Rancid&rdquo; is a powerful adjective meaning rotten or foul smelling, and &ldquo;clots&rdquo; are pieces of solidified blood.</li>
+</ul>
+<p><em>I was laying train lines for the <strong>bloody</strong> Japanese puff puffs.</em></p>
+<ul>
+  <p><li>&ldquo;Bloody&rdquo; is a very common way of saying &ldquo;damn&rdquo; in England, but it is rare in the US (It&rsquo;s not clear what a &lsquo;puff puff&rsquo; is, though it may be referring to a person who smokes, since one puffs on a cigarette). These days, a "Japanese puff puff" has a completely different meaning.</li></p>
+</ul>
+  <p><em>It was just their way of having a bit of fun, the <strong>swine</strong>.</em></p>
+<ul>
+  <li>A &ldquo;swine&rdquo; is a pig, used as an insult word like ass or bastard.</li>
+</ul>
+<p><em>Those clowns outside will <strong>give me a pretty good going over</strong> for the code.</em></p>
+<ul>
+  <li>In this context, to &ldquo;give someone a good going over&rdquo; is to aggressively question or interview them, or physically abuse or even torture them.</li>
+</ul>
+<p><em>I don&rsquo;t know how well I could <strong>stand up under</strong> torture.</em></p>
+<ul>
+  <li>&ldquo;To stand up under&rdquo; torture is to continue to refuse to talk, or perhaps just to survive.</li>
+</ul>
+<p><em>If those devils come back and try any <strong>rough stuff</strong>, we&rsquo;ll fight them together.</em></p>
+<ul>
+  <li>Here, &ldquo;rough stuff&rdquo; means any physical abuse or attack.</li>
+</ul>
+<p><em>You&rsquo;re going to wash and <strong>brush up</strong>. What a good idea.</em></p>
+<ul>
+  <li>&ldquo;To brush up&rdquo; is to clean oneself.</li>
+</ul>
+<p><em>Water on the back of the neck makes you feel <strong>marvelous</strong>.</em></p>
+<ul>
+  <li>A nice word for wonderful or great.</li>
+</ul>
+<section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>The moment of truth approaches as Major Kong
+  pilots his plane past Russian defenses</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Copilot to <strong>navigator</strong>, I&rsquo;m ready with the <strong>fuel</strong> figures now.</em></p>
+<ul>
+  <li>A &ldquo;navigator&rdquo; is responsible for telling a pilot where a plane is. &ldquo;Fuel&rdquo; is another word for gas, and here, &ldquo;figures&rdquo; are numbers (3, 23, etc).</li>
+</ul>
+<p><em>79,000 in the <strong>main</strong> and 30,000 in the <strong>auxiliaries</strong>.</em></p>
+<ul>
+  <li>This refers to main and auxiliary fuel tanks, where gas is stored (An auxiliary tank is an extra one designed to back up a main tank).</li>
+</ul>
+<p><em>And that <strong>works out to</strong> roughly 7 hours 15 minutes <strong>endurance</strong> for this time.</em></p>
+<ul>
+  <li>If a plan &ldquo;works out to&rdquo; several hours, it is equal to (or will last) that long. &ldquo;Endurance&rdquo; is the strength or ability to last or survive.</li>
+</ul>
+<p><em>An unidentified <strong>radar blip</strong>&hellip;.it looks like a missile <strong>tracking</strong> us.</em></p>
+<ul>
+  <li>A &ldquo;radar blip&rdquo; is a very short or small sound or image, produced on a screen designed to look for airplanes and other flying objects. &ldquo;To track&rdquo; something is to follow it, or head toward it.</li>
+</ul>
+<p><em><strong>Commence</strong> <strong>evasive action</strong>, right.</em></p>
+<ul>
+  <li>&ldquo;To commence&rdquo; is to begin. &ldquo;Evasive action&rdquo; is any action designed to escape being hit or captured by somebody or something else.</li>
+</ul>
+<p><em>Missile closing range&hellip;lock ECM to target intercept mode.</em></p>
+<ul>
+  <li>This is all technical military language saying that a missile is getting close to the plane and the plane must fire something at the missile to destroy it before it hits the plane.</li>
+</ul>
+<p><em>Electronic guidance <strong>scramble</strong> to blue grid.</em></p>
+<ul>
+  <li>&ldquo;To scramble&rdquo; is to quickly move in a different direction. A &ldquo;grid&rdquo; is square or particular place on a map or in space.</li>
+</ul>
+<p><em>Missile still <strong>closing</strong> true and <strong>steady</strong>.</em></p>
+<ul>
+  <li>If a missile is &ldquo;closing,&rdquo; it is getting closer. &ldquo;Steady&rdquo; means predictably, without sudden or unexpected movements.</li>
+</ul>
+<p><em>Range 10 miles. Missile track <strong>defecting</strong>.</em></p>
+<ul>
+  <li>&ldquo;To defect&rdquo; a missile is to force it off course from the planned path that it had been following.</li>
+</ul>
+<p><em>Missile <strong>detonated</strong>.</em></p>
+<ul>
+  <li>&ldquo;To detonate&rdquo; a missile is to explode it.</li>
+</ul>
+<p><em>The <strong>hatch</strong> is <strong>stuck</strong>!</em></p>
+<ul>
+  <li>A &ldquo;hatch&rdquo; is a metal door or opening on a ship, and if it is &ldquo;stuck,&rdquo; it can&rsquo;t be moved or opened.</li>
+</ul>
+<p><em>Extinguishers! Fuel valves!</em></p>
+<ul>
+  <li>A &ldquo;fire extinguisher&rdquo; is used to put out fires. A &ldquo;valve&rdquo; is a switch.</li>
+</ul>
+<p><em><strong>What the devil</strong> do you think you&rsquo;re doing, shooting your way in here?</em></p>
+<ul>
+  <li>Added to WH- questions in order to show emotion such as anger or frustration (though not as common as &ldquo;What the hell&hellip;.?&rdquo;)</li>
+</ul>
+<p><em>This happens to be an <strong>RAF</strong> uniform, and I&rsquo;m group Captain Lionel Madrake, General Ripper&rsquo;s <strong>executive officer</strong>.</em></p>
+<ul>
+  <li>RAF stands for the Royal Air Force (of England). In the military, the &ldquo;executive officer&rdquo; is second in command on a unit.</li>
+</ul>
+<p><em>It&rsquo;s some kind of <strong>recurrent theme</strong>; It&rsquo;s a variation of &lsquo;peace on earth&rsquo; or &lsquo;purity of essence.&rsquo;</em></p>
+<ul>
+  <li>A &ldquo;recurrent theme&rdquo; is a topic or subject of conversation that continues to appear or show up.</li>
+</ul>
+<p><em>Don&rsquo;t you know that General Ripper went <strong>as mad as a bloody March hare</strong> and sent the whole wing to attack the Soviets?</em></p>
+<ul>
+  <li>A very British way of saying completely crazy.</li>
+</ul>
+<p><em><strong>Blast</strong>! Shot away, I <strong>expect</strong> by one of your men doing this ridiculous fighting!</em></p>
+<ul>
+  <li>&ldquo;Blast&rdquo; is Mandrake&rsquo;s very British way of saying damn or shit to express frustration or anger. Note that &ldquo;to expect&rdquo; can mean to think, though this is a rare usage.</li>
+</ul>
+<p><em>I suspect the <strong>auto-destruct mechanism</strong> got hit and blew itself up.</em></p>
+<ul>
+  <li>A mechanism is a small part of a machine or electronic device.</li>
+</ul>
+<p><em>This gives us a <strong>radius of action</strong> to take out primary and secondary targets, but we will not be able to make it back to any base or <strong>neutral</strong> country.</em></p>
+<ul>
+  <li>A "radius" is the distance from the center of a circle to the edge, and thus a "radius of action" is the total space that an airplane can operate in before running out of fuel. A "neutral" country does not support either side in a war, but tries to stay out of the conflict.</li>
+</ul>
+<p><em>However, we could have enough fuel <strong>to ditch</strong> at weather ship Tango Delta, Grid Coordinates 0-0-3-6-1.</em></p>
+<ul>
+  <li>&ldquo;To ditch&rdquo; a plane is to crash it intentionally, usually after jumping out of it with parachutes.</li>
+</ul>
+<p><em>We got more holes in us than a horse trader&rsquo;s <strong>mule</strong>.</em></p>
+<ul>
+  <li>A &ldquo;mule&rdquo; is a combination of a horse and donkey.</li>
+</ul>
+<p><em>We&rsquo;re leaking fuel, and if we fly any lower, we&rsquo;d need <strong>sleigh</strong> bells on this thing.</em></p>
+<ul>
+  <li>A &ldquo;sleigh&rdquo; is a vehicle that slides on snow.</li>
+</ul>
+<p><em>At this height, they might <strong>harpoon</strong> us, but they sure ain&rsquo;t gonna <strong>spot us</strong> on no radar screen.</em></p>
+<ul>
+  <li>&ldquo;To harpoon&rdquo; a whale is to kill it with a large spear or pointed stick. &ldquo;To spot&rdquo; somebody is to see them. Note that you should never use &ldquo;ain&rsquo;t,&rdquo; and that &lsquo;going to&rsquo;--------&gt; &lsquo;gonna&rsquo; in rapid speech.</li>
+</ul>
+<p><em>I think you&rsquo;re some kind of deviated &lsquo;<strong>prevert</strong>&rsquo;&hellip;.and you were organizing some kind of <strong>mutiny</strong> of preverts.</em></p>
+<ul>
+  <li>A &ldquo;<em>per</em>vert&rdquo; is a person who is considered sexually bizarre or sick (but note that Colonel Guano badly mispronounces the word). A &ldquo;mutiny&rdquo; is an uprising or rebellion against those people in power.</li>
+</ul>
+<p><em>If you don&rsquo;t put that gun away and stop this stupid nonsense,&nbsp;the <strong>court of inquiry</strong> on this will give you such a <strong>pranging</strong>&hellip;.</em></p>
+<ul>
+  <li>In this case, a &ldquo;court of inquiry&rdquo; is a military court that investigates a crime. A &ldquo;pranging&rdquo; must be an old British word for punishment, but it is never used in the US.</li>
+</ul>
+<p><em>&hellip;you&rsquo;ll be lucky if you end up wearing a uniform of a bloody <strong>toilet attendant</strong>.</em></p>
+<ul>
+  <li>A person who cleans public bathrooms.</li>
+</ul>
+<p><em>You try any <strong>preversions</strong> and I&rsquo;ll <strong>blow your head off</strong>.</em></p>
+<ul>
+  <li>A &ldquo;<em>per</em>version&rdquo; is a sexual act that is considered abnormal (though again, the pronunciation here is awful). &ldquo;To blow a person&rsquo;s head off&rdquo; is to kill them by shooting them in the head.</li>
+</ul>
+<p><em>Something very <strong>urgent</strong> has <strong>come up</strong> and I want you to place an emergency person to person call.</em></p>
+<ul>
+  <li>If something is &ldquo;urgent,&rdquo; it is extremely important and must be taken care of immediately. If something &ldquo;comes up,&rdquo; it unexpectedly appears.</li>
+</ul>
+<p><em>Could you make this a <strong>collect call</strong>?</em></p>
+<ul>
+  <li>A &ldquo;collect call&rdquo; is one in which the person receiving the call pays for it.</li>
+</ul>
+<p><em>Do you think I&rsquo;d go into <strong>combat</strong> with <strong>loose change</strong>?</em></p>
+<ul>
+  <li>&ldquo;Combat&rdquo; is another word for military conflict or fighting. &ldquo;Loose change&rdquo; refers to the coins that people carry in their pockets.</li>
+</ul>
+<p><em>Can you imagine what is going to happen to you&hellip;when they learn you have <strong>obstructed</strong> a call to the President of the United States?</em></p>
+<ul>
+  <li>&ldquo;To obstruct&rdquo; something is to block, impede or prevent it.</li>
+</ul>
+<p><em>That&rsquo;s what the bullets are for, you <strong>twit</strong>!</em></p>
+<ul>
+  <li>A nasty insult word for a weak or stupid person.</li>
+</ul>
+<p><em>The recall code O.P.E. is being acknowledged by elements of the bomb wing.</em></p>
+<ul>
+  <li>A way of saying that many of the planes are returning because they recognize the code telling them to stop the attack.</li>
+</ul>
+<p><em>I&rsquo;m not a <strong>sentimentalist</strong> by nature, but I think I know what&rsquo;s in every heart in this room.</em></p>
+<ul>
+  <li>A &ldquo;sentimentalist&rdquo; is a person who is easily moved by emotions such as love, romance or nostalgia.</li>
+</ul>
+<p><em>I think we ought <strong>to bow</strong> our heads and give a short prayer of thanks for our <strong>deliverance</strong>.</em></p>
+<ul>
+  <li>&ldquo;To bow&rdquo; one&rsquo;s head is to face it toward the ground, in a sign of respect. In this case, &ldquo;deliverance&rdquo; is the act of being saved, perhaps by God.</li>
+</ul>
+<p><em>We have heard the wings of the angel of death <strong>fluttering</strong> over our heads from the valley of fear.</em></p>
+<ul>
+  <li>&ldquo;To flutter&rdquo; is to move quickly or lightly while flapping wings, like birds and insects do. All of this is Turgidson&rsquo;s way of saying that they all came close to death, but God had saved them.</li>
+</ul>
+<p><em>You have <strong>seen fit to</strong> deliver us from the forces of evil.</em></p>
+<ul>
+  <li>&ldquo;To see fit to&rdquo; do something is to think that it&rsquo;s appropriate to do it.</li>
+</ul>
+<p><em>Premiere Kissoff&rsquo;s calling again and he&rsquo;s <strong>hopping mad</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;hopping mad,&rdquo; they are extremely angry, though this is rarely used (To hop is to jump like a rabbit).</li>
+</ul>
+<p><em>It&rsquo;s headed for a <strong>missile complex</strong> at Laputa.</em></p>
+<ul>
+  <li>A group of buildings or underground structures that house nuclear missiles (Laputa is the name of the area where it is located).</li>
+</ul>
+<p><em>34 planes, 30 planes recalled and 4 <strong>splashes</strong>, and one of those was targeted for Laputa.</em></p>
+<ul>
+  <li>A &ldquo;splash&rdquo; is the sound water makes after a person jumps in it, but here Turgidson uses it to refer to planes that have been shot down.</li>
+</ul>
+<p><em>I&rsquo;m beginning <strong>to smell a big, fat, commie rat</strong>!</em></p>
+<ul>
+  <li>&ldquo;To smell a rat&rdquo; is to think that there is something suspicious or illegal going on, but you are not exactly sure what it is.</li>
+</ul>
+<p><em>If the <strong>spaghetti hits the fan</strong>, we&rsquo;re in trouble.</em></p>
+<ul>
+  <li>This is never used, but if &ldquo;the shit hits the fan,&rdquo; this means that a lot of trouble or problems are about to occur (crude, but useful and fun).</li>
+</ul>
+<p><em>If this report is true and the plane <strong>manages</strong> to bomb the target, is this going <strong>to set off</strong> the doomsday machine?</em></p>
+<ul>
+  <li>&ldquo;To manage&rdquo; to do something is to be able to do it, and to &ldquo;set off&rdquo; a machine is to cause it to start doing what it has been designed to do.</li>
+</ul>
+<p><em>I&rsquo;m sorry they&rsquo;re <strong>jamming your radar</strong> and flying so low, but they&rsquo;re <strong>trained</strong> to do it.</em></p>
+<ul>
+  <li>&ldquo;To jam radar&rdquo; is to send electronic signals that prevent enemy radar from seeing planes that are flying nearby. &ldquo;To train&rdquo; to do something is to practice it a lot so that a person can master how to do it.</li>
+</ul>
+<p><em>It&rsquo;s <strong>initiative</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;initiative&rdquo; is the energy or personal determination to perform a job well.</li>
+</ul>
+<p><em>There&rsquo;s no point in you getting <strong>hysterical</strong> at a moment like this.</em></p>
+<ul>
+  <li>If a person is &ldquo;hysterical,&rdquo; they are extremely upset, angry or scared, and have generally lost control of their emotions.</li>
+</ul>
+<p><em>I&rsquo;m sorry, Sir, that <strong>estimate</strong> was based on the original <strong>loss rate</strong>, not at 2-0-5.</em></p>
+<ul>
+  <li>An &ldquo;estimate&rdquo; is a guess or approximation, based on the evidence available. In this case, the &ldquo;loss rate&rdquo; refers to the amount of gas that the plane is losing per minute.</li>
+</ul>
+<p><em>I don&rsquo;t give a hoot in hell how you do it.</em></p>
+<ul>
+  <li>This is a very dated way of saying &ldquo; I don&rsquo;t give a shit,&rdquo; or less colloquially, &ldquo;I don&rsquo;t care.&rdquo;</li>
+</ul>
+<p><em>Sir, that&rsquo;s the <strong>ICBM</strong> complex at Kotkos.</em></p>
+<ul>
+  <li>ICBMs are Intercontinental Ballistic Missiles, or those nuclear missiles that flew from one continent to another during an attack.</li>
+</ul>
+<p><em>All right, <strong>designating</strong> new target: 3-8-4.</em></p>
+<ul>
+  <li>&ldquo;To designate&rdquo; a new target is to officially name or announce it.</li>
+</ul>
+<p><em>We&rsquo;ll <strong>keep our fingers crossed</strong>, Dimitri. And remember, we&rsquo;re all in this together.</em></p>
+<ul>
+  <li>&ldquo;To keep your fingers crossed&rdquo; is a way of wishing for good luck.</li>
+</ul>
+<p><em>Mr. President, if I may speak freely. The <strong>Ruskie</strong> talks big, but frankly, we think he&rsquo;s short of <strong>know-how</strong>.</em></p>
+<ul>
+  <li>&ldquo;Ruskie&rdquo; is a ridiculous word for Russian. &ldquo;Know-how&rdquo; is the ability to do something technical, in this case flying airforce jets.</li>
+</ul>
+<p><em>You just can&rsquo;t expect a bunch of <strong>ignorant</strong> <strong>peons</strong> to understand a machine like our boys.</em></p>
+<ul>
+  <li>If a person is &ldquo;ignorant,&rdquo; they know little or nothing about a particular subject. A &ldquo;peon&rsquo; a very negative insult word for a small, poor or unimportant person.</li>
+</ul>
+<p><em>You take your average Ruskie; We all know how much <strong>guts</strong> he&rsquo;s got.</em></p>
+<ul>
+  <li>&ldquo;Guts&rdquo; is a common colloquial word for courage or bravery (It is literally the intestines of the stomach).</li>
+</ul>
+<p><em>Can&rsquo;t you <strong>stick to the point</strong>, General?!</em></p>
+<ul>
+  <li>&ldquo;To stick to the point&rdquo; is to talk only about the subject people are interested in, as opposed to others that aren&rsquo;t relevant or important.</li>
+</ul>
+<p><em>If he&rsquo;s really <strong>sharp</strong>, he can <strong>barrel in</strong> that baby so low!</em></p>
+<ul>
+  <li>In this case, &ldquo;sharp&rdquo; means skilled or intelligent. &ldquo;To barrel in&rdquo; a plane is to fly in very fast, and in this case, very low.</li>
+</ul>
+<p><em>It&rsquo;s <strong>jet exhaust</strong> frying chickens in the <strong>barnyard</strong>.</em></p>
+<ul>
+  <li>&ldquo;Jet exhaust&rdquo; is the black smoke that comes from a jet&rsquo;s engine. A &ldquo;barnyard&rdquo; is where farm animals are held (Turgidson is saying the US planes will fly so low that farm animals will be cooked by the plane&rsquo;s exhaust).</li>
+</ul>
+<p><em>Ready for final bomb run check.</em></p>
+<ul>
+  <li>A test of all the key equipment on the plane before it begins to bomb.</li>
+</ul>
+<p><em>Take over, Ace. :: Roger.</em></p>
+<ul>
+  <li>&ldquo;Take over&rdquo; is a way of telling a person to take control of what the speaker was doing (such as flying the plane). &ldquo;Ace&rdquo; is a nickname for a smart of skilled person. &ldquo;Roger&rdquo; is used as OK in the military.</li>
+</ul>
+<p><em>Check bomb door <strong>circuits</strong> one through four. :: <strong>Negative function</strong>, lights red.</em></p>
+<ul>
+  <li>A &ldquo;circuit&rdquo; is an electronic switch. &ldquo;Negative function&rdquo; is a military way of saying that something doesn&rsquo;t work.</li>
+</ul>
+<p><em>The <strong>teleflex drive cable</strong> must be <strong>sheared away</strong>.</em></p>
+<ul>
+  <li>The &ldquo;teleflex drive cable&rdquo; is a thick cable used to open and shut. If it is &ldquo;sheared away,&rdquo; it has been cut away or split in two.</li>
+</ul>
+<p><em>Stay on the bomb run. I&rsquo;m going to get them doors open if it <strong>harelips</strong> everybody in Bear Creek.</em></p>
+<ul>
+  <li>A &ldquo;harelip&rdquo; is a birth defect in which a person&rsquo;s upper lip is split in two, but it&rsquo;s never used as a verb, the way Major Kong does here.</li>
+</ul>
+<p><em>Target in sight! <strong>Where in hell</strong> is Major Kong?</em></p>
+<ul>
+  <li>A filler added to WH- questions to show emotion such as frustration, but note it is much more common to say &ldquo;where <em>the</em> hell&hellip;?&rdquo;</li>
+</ul>
+<section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Dr. Strangelove and General Turgidson plan for a post-war world....</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Mr. President, I would not rule out the chance <strong>to preserve</strong> a <strong>nucleus of human specimens</strong>.</em></p>
+<ul>
+  <li>&ldquo;To preserve&rdquo; something is to keep it alive and healthy. A &ldquo;nucleus of human specimens&rdquo; is Dr. Strangelove&rsquo;s way of saying an important group of humans (A &ldquo;nucleus&rdquo; is the center of a cell, and a &ldquo;specimen&rdquo; is a small example of something, often in a laboratory).</li>
+</ul>
+<p><em>It would be quite easy at the bottom of some of our deeper <strong>mine shafts</strong>.</em></p>
+<ul>
+  <li>A &ldquo;mine shaft&rdquo; is an underground space that has been dug out for different purposes, such as storing missiles or digging coal or gold.</li>
+</ul>
+<p><em>The <strong>radioactivity</strong> would never <strong>penetrate</strong> a mine thousands of feed deep, and in a matter of weeks,&hellip;.</em></p>
+<ul>
+  <li>&ldquo;Radioactivity&rdquo; is the atomic poison released by a nuclear bomb. &ldquo;To penetrate&rdquo; a space is to physically push into it.</li>
+</ul>
+<p>&hellip;.sufficient improvements in <strong>dwelling</strong> space could easily be provided.</p>
+<ul>
+  <li>A &ldquo;dwelling&rdquo; is a home, so dwelling space is living space.</li>
+</ul>
+<p><em>It would not be difficult, <strong>Mein Fuhrer</strong>.</em></p>
+<ul>
+  <li>The German words for &ldquo;my leader,&rdquo; and the words Germans used to address Hitler!</li>
+</ul>
+<p><em>Nuclear reactors could provide power almost <strong>indefinitely</strong>.</em></p>
+<ul>
+  <li>A good word for a long time into the future, or perhaps, forever.</li>
+</ul>
+<p><em><strong>Greenhouses</strong> could maintain plant life. Animals could be <strong>bred</strong> and <strong>slaughtered</strong>.</em></p>
+<ul>
+  <li>A &ldquo;greenhouse&rdquo; is a glass structure where plants are grown. &ldquo;To breed&rdquo; animals is to encourage them to have sex in order to reproduce, and to &ldquo;slaughter&rdquo; animals is to kill them, usually in order to eat them. Dr. Strangelove seems to enjoy saying this word.</li>
+</ul>
+<p><em>The computers could be <strong>programmed</strong> to accept factors from youth, health, sexual fertility, intelligence and a <strong>cross-section</strong> of necessary skills.</em></p>
+<ul>
+  <li>Note that computers are &ldquo;programmed,&rdquo; which means they are instructed to do various jobs through the use of a computer language. A &ldquo;cross-section&rdquo; is a wide variety, in this case, a wide variety of skills.</li>
+</ul>
+<p><em>Of course, it would be absolutely <strong>vital</strong> that our top government and military men be included&hellip;.</em></p>
+<ul>
+  <li>&ldquo;Vital&rdquo; means extremely important or critical.</li>
+</ul>
+<p><em>&hellip;.<strong>to foster</strong> and <strong>impart</strong> the required principles of leadership and tradition.</em></p>
+<ul>
+  <li>&ldquo;To foster&rdquo; is to encourage to grow or develop, and &ldquo;to impart&rdquo; is to grant or give knowledge.</li>
+</ul>
+<p><em>Naturally, they would <strong>breed prodigiously</strong>.</em></p>
+<ul>
+  <li>&ldquo;To breed prodigiously&rdquo; is to reproduce with great speed.</li>
+</ul>
+<p><em>With proper breeding techniques and a <strong>ratio</strong> of 10 females to each male, they could work their way back to pre-war <strong>gross national product</strong> within 20 years.</em></p>
+<ul>
+  <li>A ratio is the amount of one thing compared to another (Thus, in the case above, 10 females for every male). The &ldquo;gross national product&rdquo; is the value of all the goods and services that a country produces each year (It is now more commonly called the gross <em>domestic</em> product).</li>
+</ul>
+<p><em>Wouldn&rsquo;t this nucleus of survivors be so <strong>grief stricken and anguished</strong> that they would <strong>envy</strong> the dead and not want to go on living?</em></p>
+<ul>
+  <li>If a person is &ldquo;grief stricken&rdquo; or &ldquo;anguished,&rdquo; they are so emotionally upset that they can barely function in life. &ldquo;To envy&rdquo; someone else is to be jealous of them, or to wish you had what they had.</li>
+</ul>
+<p><em>The <strong>prevailing</strong> emotion will be of <strong>nostalgia</strong> for those left behind, combined with a spirit of bold curiosity for the adventure ahead!</em></p>
+<ul>
+  <li>If something is &ldquo;prevailing,&rdquo; it is long-lasting or dominant. &ldquo;Nostalgia&rdquo; is a warm feeling of fondness for past times.</li>
+</ul>
+<p><em>Wouldn&rsquo;t that necessitate the abandonment of the <strong>so-called</strong> monogamous sexual relationship?</em></p>
+<ul>
+  <li>&ldquo;So-called&rdquo; is used to describe something that is called by a name that the speaker does not agree with, or perhaps does not understand. If a couple are &ldquo;monogamous,&rdquo; they do not have sex with others.</li>
+</ul>
+<p><em>I <strong>hasten</strong> to add that since each man will be required to do <strong>prodigious</strong>&hellip;.service along these lines&hellip;.</em></p>
+<ul>
+  <li>&ldquo;To hasten&rdquo; to do something is to do it as quickly as possible. &ldquo;Prodigious&rdquo; is in great quantity or speed. Dr. Strangelove is saying that men will have to have sex with lots of women in the post-war world.</li>
+</ul>
+<p><em>&hellip;the women will have to be selected&hellip;&hellip;.for their sexual <strong>characteristics</strong> which will have to be of a <strong>highly stimulating nature</strong>.</em></p>
+<ul>
+  <li>&ldquo;Characteristics&rdquo; are features or qualities, such as height or hair color. In this case, women who are of a &ldquo;highly stimulating nature&rdquo; are very beautiful or sexy, and thus can easily stimulate or excite men.</li>
+</ul>
+<p><em>You have an <strong>astonishingly</strong> good idea, doctor!</em></p>
+<ul>
+  <li>If something is &ldquo;astonishing,&rdquo; it is amazing, incredible or shocking.</li>
+</ul>
+<p><em>Suppose the Ruskies <strong>stashed away</strong> some big bombs, and we didn&rsquo;t?</em></p>
+<ul>
+  <li>&ldquo;To stash away&rdquo; something is to store it in a hidden place.</li>
+</ul>
+<p><em>When they come out in 100 years, they could <strong>take over</strong>!</em></p>
+<ul>
+  <li>&ldquo;To take over&rdquo; a country is to occupy or control it.</li>
+</ul>
+<p><em>It would be extremely <strong>na&iuml;ve</strong> of us to imagine that these new developments are going to cause any change in <strong>Soviet expansionist policy</strong>!</em></p>
+<ul>
+  <li>If a person is &ldquo;na&iuml;ve,&rdquo; they are young and inexperienced or perhaps innocent. &ldquo;Soviet Expansionist policy&rdquo; refers to Soviet foreign policy, which many Americans thought was designed to help the Soviet Union expand and take over the world.</li>
+</ul>
+<p><em>We must be increasingly <strong>on the alert</strong> to prevent them from taking over other mine shaft space in order to breed more prodigiously than we do&hellip;.</em></p>
+<ul>
+  <li>To be &ldquo;on the alert&rdquo; is to be especially careful, cautious or attentive to possible dangers.</li>
+</ul>
+<p><em>&hellip;.thus <strong>knocking us out</strong> with superior numbers when we <strong>emerge</strong>!</em></p>
+<ul>
+  <li>To &ldquo;knock out&rdquo; a person is to hit them so hard they are left unconscious. &ldquo;To emerge&rdquo; from a mine shaft or any other hole is to climb up out of it.</li>
+</ul>
+
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. Could one crazy person start a nuclear war today? Who is most likely to do it?</p>
+  <p>2. Does the logic of a doomsday machine---as it was to be used by the Soviets in this movie---make any sense?</p>
+  <p>3. Research the phrase "Mutual Assured Destruction (MAD)" and read more on the topic.</p>
+  <p>4. List some examples of how sexuality is mentioned in the movie.</p>
+  <p>5. Who was the most insane character in the movie and why?</p>
+  <p>6. How is humor used in the movie? What are some funny and amusing parts? Why are they comical?</p>
+  <p>7. What did you like and not like about this film?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html>
+<title>Chinatown</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
+  <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script async type="text/javascript" src="bootstrap.min.js"></script>
+<style>
+/* rose quarts theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fff0f4 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ffcdd9 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ff9bb2 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#ff698c !important}
+.w3-theme-l1 {color:#fff !important; background-color:#ff3766 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#ea0037 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#d00031 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#b6002a !important}
+.w3-theme-d4 {color:#fff !important; background-color:#9c0024 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#82001e !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fff0f4 !important}
+.w3-theme-dark {color:#fff !important; background-color:#82001e !important}
+.w3-theme-action {color:#fff !important; background-color:#82001e !important}
+
+.w3-theme {color:#fff !important; background-color:#ff053f !important}
+.w3-text-theme {color:#ff053f !important}
+.w3-border-theme {border-color:#ff053f !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#ff053f !important}
+.w3-hover-text-theme {color:#ff053f !important}
+.w3-hover-border-theme:hover {border-color:#ff053f !important}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: none;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #ff3766;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+.navbar{
+  border-color:#ff3766;
+}
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body class="fullPage" style="border:1px solid #ff3766">
+<nav class="navbar navbar-fixed-top" role="navigation">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-d2" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">Chinatown</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/Chinatown.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    A private detective hired to expose an adulterer finds himself caught up in a web of deceit, corruption, and murder.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    Rated R | 2 hrs 10 min | Drama, Mystery, Thriller | 1974
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Jake Gittes</td><td>Jack Nicholson</td>
+  </tr>
+  <tr>
+    <td colspan="2">A smart, tough and honest private detective who is
+      asked to investigate a married man’s sexual affair (see below),
+      but who soon becomes involved in the investigation of that man’s murder. </td>
+  </tr>
+  <tr>
+    <td>Hollis Mulwray</td><td>Darrell Zwerling</td>
+  </tr>
+  <tr>
+    <td colspan="2">The powerful, rich and honest engineer for the Los Angeles
+      Department of Water and Power, whose murder Jake tries to solve.</td>
+  </tr>
+  <tr>
+    <td>Evelyn Cross Mulwray</td><td>Faye Dunaway</td>
+  </tr>
+  <tr>
+    <td colspan="2">The beautiful and mysterious wife of Hollis, who appears to want Jake
+      to help her solve Hollis’ murder, but who also clearly wants to keep
+      secret some important parts of her own life.</td>
+  </tr>
+  <tr>
+    <td>Noah Cross</td><td>John Huston</td>
+  </tr>
+  <tr>
+    <td colspan="2">Evelyn’s very rich and powerful father, who was a business associate
+      of Hollis, who is convinced that Los Angeles will grow into the neighboring San Fernando
+      Valley, if the Valley gets enough water.</td>
+  </tr>
+  <tr>
+    <td>Lieutenant Lou Escobar</td><td>Perry Lopez</td>
+  </tr>
+  <tr>
+    <td colspan="2">The police officer who is responsible for investigating Hollis’ murder,
+      who had worked with Jake in Chinatown, years earlier, when Jake himself was a policeman.</td>
+  </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+  This film is the story of a private detective, Jake Gittes, who starts out investigating
+  a sexual affair, and ends up investigating a murder, and in the process, discovers a world
+  of lies and corruption in pre-war Los Angeles (LA). It takes place in 1937, when LA was
+  still a relatively small city in a big desert, but it was already growing fast, and in fact
+  the only thing that held its growth back was a lack of water to support the increasing population.
+  A key to LA’s growth was the San Fernando Valley (“the Valley”), today a huge suburb, but back
+  in the 30s, a largely uninhabited area populated mainly by orange groves and other farms.
+<p>
+  At first, Gittes is contacted by a woman claiming to be the wife of Hollis Mulwray, the powerful
+  but honest head of the city water department who is opposed to building a dam that he feels  wouldn’t
+  be safe. This woman wants Jake to see if Hollis is having an affair, but it soon turns out that this
+  woman is not really Hollis’ wife, a fact that Jake finds out when Hollis’ real wife, Evelyn Mulwray,
+  shows up at his office. Jake soon realizes that somebody is out to embarrass Hollis, and then when
+  Hollis is found dead, he is convinced that it was not an accident, but a murder.
+<p>
+  For Jake, the suspects include Evelyn, who may have killed her husband out of jealousy, and Noah Cross,
+  Evelyn’s powerful father,  who was once an business associate of Hollis’, but who now may have been
+  trying to remove him from the scene in order move forward with his plans to bring water and economic
+  development to the Valley. Indeed, over the course of the movie, Jake slowly discovers that some very
+  powerful and corrupt people are diverting water from the Valley so that its farmers are forced out of
+  business, thus allowing those same people to buy up the Valley’s land at extremely low prices. In short,
+  Jake Gittes was investigating a strange affair and a possible homicide, but in the process, he was
+  discovering how the future of his city was being created--one murder, land sale and bribe at a time.
+<p>
+  <strong><em>A Brief Note:</em></strong> This movie is a work of fiction, with none of the characters based on any real people. However, such topics as the control of water, suspicious real estate deals and widespread corruption are clearly important topics in the general history of LA’s explosive growth.
+</p>
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Jake meets a jealous wife and begins the
+    investigation of Hollis Mulwray’s affair.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+  <p></p>
+<p><em>You can&rsquo;t eat the <strong>venetian blinds</strong>. I just had them <strong>installed</strong> on Wednesday.</em></p>
+<ul>
+  <li>&ldquo;Venetian blinds&rdquo; are window covers that are used for privacy. &ldquo;To install&rdquo; blinds or other equipment is to set them up.</li>
+</ul>
+<p><em>Down the hatch!</em></p>
+<ul>
+  <li>A slangy way of referring to the act of drinking (&ldquo;Hatch&rdquo; is a very colloquial way of referring to a person&rsquo;s throat). It's another way of saying "Cheers!"</li>
+</ul>
+<p><em>They don&rsquo;t pay the same for <strong>skipjack</strong> as they do for <strong>albacore</strong>.</em></p>
+<ul>
+  <li>Two types of fish (though the first one is very rarely used).</li>
+</ul>
+<p><em>I don&rsquo;t want your last <strong>dime</strong>.</em></p>
+<ul>
+  <li>An American coin worth 10 cents.</li>
+</ul>
+<p><em>These are my <strong>operatives</strong> and at some point they&rsquo;re going to have to assist me.</em></p>
+<ul>
+  <li>A rare but interesting word for an agent or assistant.</li>
+</ul>
+<p><em>Do you know the expression &ldquo;<strong>Let sleeping dogs lie</strong>&rdquo;?</em></p>
+<ul>
+  <li>A good little expression that is a way of saying that you should not investigate something too carefully since what you find out may cause more problems than it is worth.</li>
+</ul>
+<p><em>This type of investigation can be <strong>hard on your pocketbook</strong>.</em></p>
+<ul>
+  <li>Jake&rsquo;s way of saying that investigations can be expensive (A person&rsquo;s pocketbook is a wallet in which they carry money).</li>
+</ul>
+<p><em>You can <strong>hop</strong> a <strong>streetcar</strong>, and within 25 miles, end up smack in the Pacific Ocean.</em></p>
+<ul>
+  <li>&ldquo;To hop&rdquo; a bus is to get on it quickly. A &ldquo;streetcar&rdquo; is a type of bus that drives on rails and is powered by electricity (They were removed from LA streets in the 1940 and 50s).</li>
+</ul>
+<p><em>You can&rsquo;t <strong>irrigate</strong> an <strong>orange grove</strong> with it.</em></p>
+<ul>
+  <li>"To irrigate" crops is to water them with pipes that are built for that purpose. An "orange grove" is a farm filled with orange trees.</li>
+</ul>
+<p><em>Without water, the dust will rise up and cover us as though we never existed.</em></p>
+<ul>
+  <li>This reflects the belief that the city of Los Angeles was completely dependent on importing water for its survival.</li>
+</ul>
+<p><em>Over 500 lives were lost when the Van de Lip <strong>dam</strong> gave way.</em></p>
+<ul>
+  <li>A dam is a huge structure designed to hold water behind a large retaining wall. If a dam &ldquo;gives way,&rdquo; it breaks open and the water floods the area around it.</li>
+</ul>
+<p><em><strong>Core samples</strong> have shown that beneath this <strong>bedrock</strong> is <strong>shale</strong> similar to the <strong>permeable</strong> shale in the Van de Lip disaster.</em></p>
+<ul>
+  <li>A sentence with a lot of geological vocabulary!: &ldquo;Core samples&rdquo; are small samples of rock, &ldquo;bedrock&rdquo; and &ldquo;shale&rdquo; are types of rock found in the earth, and if something is &ldquo;permeable,&rdquo; this means that liquid or gas can penetrate or move through it, usually in tiny holes within it.</li>
+</ul>
+<p><em>It couldn&rsquo;t <strong>withstand</strong> that kind of pressure.</em></p>
+<ul>
+  <li>&ldquo;To withstand&rdquo; pressure is to be able to resist it or stand up to it without breaking or collapsing.</li>
+</ul>
+<p><em>Now you propose yet another <strong>dirt banked terminus dam</strong> with <strong>slopes</strong> of two and a half to one&hellip;with 12,000 <strong>acre</strong> water surface. Well, it won&rsquo;t <strong>hold</strong>.</em></p>
+<ul>
+  <li>A "dirt banked terminus dam" is a type of dam (though only engineers would really care how it is made). A "slope" is the angle or slant at which something rises from a set point. An "acre" is a unit of land measurement, about the size of a city block. If a dam can't "hold," it will break or collapse under pressure.</li>
+</ul>
+<p><em>What <strong>the hell</strong> do you think you&rsquo;re doing?! Get those <strong>goddamn</strong> things out of here!</em></p>
+<ul>
+  <li>"The hell" is filler added to WH- questions to express emotion such as anger or frustration, and "goddamn" is an adjective that also expresses that type of emotion.</li>
+</ul>
+<p><em>You steal water from <strong>the valley</strong>, <strong>ruin</strong> the <strong>grazing</strong>, starve the <strong>livestock</strong>; Who&rsquo;s paying you to do this, Mr. Mulwray?</em></p>
+<ul>
+  <li>In this film, &ldquo;the valley&rdquo; always refers to the San Fernando Valley, which is now a suburb northwest of LA. &ldquo;To ruin&rdquo; something is to destroy it. &ldquo;Grazing&rdquo; is the act of cows eating grass, and &ldquo;livestock&rdquo; refers to farm animals such as cows and pigs.</li>
+</ul>
+<p><em><strong>Jeez</strong>, he was there all night.</em></p>
+<ul>
+  <li>A gentle filler word used to express surprise or other emotion.</li>
+</ul>
+<p><em>Yesterday, he went to three <strong>reservoirs</strong>&hellip;and then drove to the <strong>Pig&rsquo;n&rsquo; Whistle</strong>.</em></p>
+<ul>
+  <li>A &ldquo;reservoir&rdquo; is an artificial lake or huge container where water is stored. &ldquo;The Pig &rsquo;n&rsquo; Whistle&rdquo; is a well known LA bar and restaurant (and now landmark).</li>
+</ul>
+<p><em>The guy has got water on the brain.</em></p>
+<ul>
+  <li>A slangy way of saying that this person is always thinking about water.</li>
+</ul>
+<p><em>They got into a <strong>terrific</strong> argument outside the Pig&rsquo;n&rsquo; Whistle.</em></p>
+<ul>
+  <li>&ldquo;Terrific&rdquo; usually means fantastic or excellent, though here it just means big or serious.</li>
+</ul>
+<p><em>Let me explain something to you, Walsh. This business requires a certain amount of <strong>finesse</strong>.</em></p>
+<ul>
+  <li>&ldquo;Finesse&rdquo; is an excellent word that means skill in handling a delicate situation, or perhaps social refinement.</li>
+</ul>
+<p><em>He found himself some <strong>cute</strong> little twist.</em></p>
+<ul>
+  <li>&ldquo;Cute&rdquo; is a key adjective meaning pretty or attractive in a childlike way (&ldquo;Cute little twist&rdquo; is Jake&rsquo;s way of saying a girl, but this is not used).</li>
+</ul>
+<p><em>They&rsquo;re at <strong>Echo Park</strong> in a <strong>rowboat</strong>.</em></p>
+<ul>
+  <li>&ldquo;Echo Park&rdquo; is a well known area of LA. A &ldquo;rowboat&rdquo; is a small boat in which people use wooden oars to row it forward through the water.</li>
+</ul>
+<p><em>OK, <strong>pal</strong>, let&rsquo;s have us a big smile.</em></p>
+<ul>
+  <li>&ldquo;Pal&rdquo; is another word for friend, though it is often used in a slangy manner to address anybody.</li>
+</ul>
+<p><em>Department of Water and Power <strong>Blows Fuse</strong>! [Headline]</em></p>
+<ul>
+  <li>If a &ldquo;fuse blows,&rdquo; the electrical device which controls electricity shuts down, cutting off the electrical supply (In this headline, the implication is that the Water Department did something terribly wrong).</li>
+</ul>
+<p><em>When you get so much <strong>publicity</strong>, you got to get <strong>blas&eacute;</strong> about it.</em></p>
+<ul>
+  <li>&ldquo;Publicity&rdquo; is exposure or coverage in the media, especially newspapers or television. To be &ldquo;blas&eacute;&rdquo; about something is to act as if it is not at all important because it happens so often.</li>
+</ul>
+<p><em>The heat is murder!</em></p>
+<ul>
+  <li>One way of saying that it is very hot outside.</li>
+</ul>
+<p><em>You got a <strong>hell of a</strong> way to make a living! :: And what do you do to <strong>make ends meet</strong>?</em></p>
+<ul>
+  <li>&ldquo;Hell of a&rdquo; is added to sentences to express emotion. &ldquo;To make ends meet&rdquo; is to make enough money to pay your expenses.</li>
+</ul>
+<p><em><strong>Mortgage</strong> Department, First National Bank. :: Did you <strong>foreclose</strong> on many families this week?</em></p>
+<ul>
+  <li>A &ldquo;mortgage&rdquo; is the money that a bank lends a person so they can buy a house. If a bank &ldquo;forecloses on&rdquo; a person, they take away their house because they are unable to make their monthly mortgage payment.</li>
+</ul>
+<p><em>Who is this <strong>bimbo</strong>, Barney?</em></p>
+<ul>
+  <li>Today, a &ldquo;bimbo&rdquo; is a common slang word for a silly or stupid female, though here, Jake uses it to refer to a man.</li>
+</ul>
+<p><em>I don&rsquo;t kick families out of their houses like you <strong>bums</strong> down at the bank do.</em></p>
+<ul>
+  <li>A &ldquo;bum&rdquo; is a person who lives on the street without a home, or more generally, a dirty, corrupt or unpleasant person.</li>
+</ul>
+<p><em>I make an honest living!</em></p>
+<ul>
+  <li>A way of saying that you earn your money fairly or honestly.</li>
+</ul>
+<p><em>Anyway, this guy who got tired of <strong>screwing</strong> his wife&hellip;.</em></p>
+<ul>
+  <li>&ldquo;To screw&rdquo; is a very common and somewhat vulgar way of saying to have sex (Jake is now telling a long and stupid joke).</li>
+</ul>
+<p><em>First the Chinese screw a little bit and then stop&hellip;..and read a little <strong>Confucius</strong> and then screw a little more and then they go <strong>contemplate</strong> the moon&hellip;.</em></p>
+<ul>
+  <li>Confucius is a very important philosopher from ancient China. &ldquo;To contemplate&rdquo; something is to think about it very seriously.</li>
+</ul>
+<p><em>Now, his wife is getting <strong>sore</strong>.</em></p>
+<ul>
+  <li>Here, &ldquo;sore&rdquo; means angry, though it can also mean to be in pain.</li>
+</ul>
+<p><em>He says &ldquo;what&rsquo;s the matter with you? You&rsquo;re screwing like a <strong>Chinaman</strong>.&rdquo;</em></p>
+<ul>
+  <li>&ldquo;Chinaman&rdquo; is a dated and racist way of referring to Chinese men.</li>
+</ul>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Jake meets the REAL Mrs. Mulwray, continues his
+  investigation, and starts to discover the politics of water.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>I&rsquo;ve never hired you to do anything. Certainly not <strong>to spy on</strong> my husband.</em></p>
+<ul>
+  <li>&ldquo;To spy on&rdquo; a person is to secretly follow them and see what they are doing, often in order to report back to another person.</li>
+</ul>
+<p><em>There&rsquo;s been some misunderstanding here; there&rsquo;s no point in <strong>getting tough</strong> with me.</em></p>
+<ul>
+  <li>&ldquo;To get tough&rdquo; with a person is to treat them very roughly or firmly.</li>
+</ul>
+<p><em>May I ask what this is <strong>regarding</strong>? :: It&rsquo;s a personal matter.</em></p>
+<ul>
+  <li>In this context, &ldquo;regard&rdquo; functions as another word for about.</li>
+</ul>
+<p><em>Gee whiz, and I&rsquo;m late.</em></p>
+<ul>
+  <li>A gentle and innocent way of expressing surprise or other emotion.</li>
+</ul>
+<p><em>After you&rsquo;ve worked with a man for a <strong>certain length of time</strong>, you come to know his habits, his <strong>values</strong>.</em></p>
+<ul>
+  <li>A &ldquo;certain length of time&rdquo; is one way of saying quite a while or perhaps a relatively long time. A person&rsquo;s &ldquo;values&rdquo; refers to what they most deeply believe in, such as honesty, kindness or equality.</li>
+</ul>
+<p><em>Either he&rsquo;s the kind of man who <strong>chases after</strong> women or he isn&rsquo;t.</em></p>
+<ul>
+  <li>To &ldquo;chase after&rdquo; a woman is to try and attract her, either romantically or sexually.</li>
+</ul>
+<p><em>He never even <strong>kids about</strong> it.</em></p>
+<ul>
+  <li>&ldquo;To kid about&rdquo; something is to joke about it.</li>
+</ul>
+<p><em>What are you doing here? :: They shut my water off; <strong>What&rsquo;s it to you</strong>?</em></p>
+<ul>
+  <li>An interesting way of asking &ldquo;Why do you care?&rdquo;</li>
+</ul>
+<p><em>Relax Mulvihill, <strong>glad</strong> to see you.</em></p>
+<ul>
+  <li>If a person is glad, they are happy or pleased.</li>
+</ul>
+<p><em>There&rsquo;s been some <strong>threats</strong> to blow up the city reservoirs.</em></p>
+<ul>
+  <li>A &ldquo;threat&rdquo; is a warning or implied intention to hurt or harm somebody or something.</li>
+</ul>
+<p><em>It&rsquo;s this <strong>damn draught</strong>. We <strong>rationed</strong> water in the valley and the farmers are desperate.</em></p>
+<ul>
+  <li>&ldquo;Damn&rdquo; is a filler word to express anger or other emotion. A &ldquo;draught&rdquo; is a lack of water caused by too little rain. &ldquo;To ration&rdquo; something is to limit the amount any one person can use because there is a shortage.</li>
+</ul>
+<p><em>When Mulvihill was <strong>Sheriff</strong> of Ventura County, the <strong>rum runners</strong> landed <strong>tons</strong> of <strong>booze</strong> on the beach and they never lost a drop.</em></p>
+<ul>
+  <li>A &ldquo;sheriff&rdquo; is the head police officer of a county. Ventura County is the county just north of Los Angeles County (A County is a political entity that is usually much bigger than a city, and often includes a city and surrounding countryside and towns). &ldquo;Rum runners&rdquo; were people who smuggled rum and other liquor during the 1930s, when it was illegal in the US. A &ldquo;ton&rdquo; is 2,000 pounds, or more generally, a lot, and &ldquo;booze&rdquo; is a very slangy word for liquor or alcohol.</li>
+</ul>
+<p><em>Believe me, Mrs. Mulwray, whoever set your husband up <strong>set me up</strong>.</em></p>
+<ul>
+  <li>&ldquo;To set up&rdquo; a person is to fool them into believing something that is not true, often so that they will do something stupid or even illegal.</li>
+</ul>
+<p><em>LA is a small town&hellip;people talk, I don&rsquo;t want to become <strong>a local joke</strong>.</em></p>
+<ul>
+  <li>Jake&rsquo;s way of saying that he doesn&rsquo;t want his reputation hurt by his doing something stupid (in the 30s, LA was still a relatively small city).</li>
+</ul>
+<p>Mr. Gittes, You&rsquo;ve <strong>talked me into it</strong>.</p>
+<ul>
+  <li>&ldquo;To talk a person into&rdquo; doing something is to convince them to do it.</li>
+</ul>
+<p><em>I&rsquo;ll <strong>drop</strong> the lawsuit, so let&rsquo;s <strong>drop</strong> the whole thing.</em></p>
+<ul>
+  <li>&ldquo;To drop&rdquo; a lawsuit is to officially stop or discontinue it. More generally, when people say &ldquo;drop it,&rdquo; they want to stop talking about it.</li>
+</ul>
+<p><em>I <strong>better</strong> talk to your husband about this. :: What <strong>on earth</strong> for?</em></p>
+<p>Note that &ldquo;better,&rdquo; which means &ldquo;should,&rdquo; is the only adverb that functions as a modal verb! (The grammatical expression is "had better"). &ldquo;On earth&rdquo; is a fascinating filler added to WH- questions that is used to express great emotion such as surprise.</p>
+<p><em>Hollis seems to think you&rsquo;re an <strong>innocent</strong> man.</em></p>
+<ul>
+  <li>Here, note that &ldquo;innocent&rdquo; means na&iuml;ve or uninformed.</li>
+</ul>
+<p><em>I&rsquo;m not the one who&rsquo;s supposed to be <strong>caught with his pants down</strong>.</em></p>
+<ul>
+  <li>If a person has been &ldquo;caught with their pants down,&rdquo; they find themselves completely unprepared by what has suddenly happened.</li>
+</ul>
+<p><em>May I <strong>speak frankly</strong>, Mrs. Mulwray? :: You may if you can, Mr. Gittes.</em></p>
+<ul>
+  <li>&ldquo;To speak frankly&rdquo; means to speak honestly (Note the clever response).</li>
+</ul>
+<p><em>She was pretty, <strong>in a cheap sort of way</strong>, of course.</em></p>
+<ul>
+  <li>If a woman is pretty &ldquo;in a cheap sort of way,&rdquo; this probably means she probably wore a lot of make up, or even looked like a prostitute.</li>
+</ul>
+<p><em>It&rsquo;s very <strong>personal</strong>, it couldn&rsquo;t be more personal. :: Is this a business or <strong>obsession</strong> with you?</em></p>
+<ul>
+  <li>If something is &ldquo;personal,&rdquo; it is considered private or intimate. An &ldquo;obsession&rdquo; is something a person is constantly thinking about.</li>
+</ul>
+<p><em>Let&rsquo;s look at it this way; Now, this <strong>phony broad</strong>---excuse the language---she tells me she&rsquo;s you.</em></p>
+<ul>
+  <li>If a person is &ldquo;phony,&rdquo; they are fake or are pretending to be somebody they are not. A &ldquo;broad&rdquo; is a very dated and somewhat vulgar way to refer to a woman.</li>
+</ul>
+<p><em>Whoever <strong>put her up to it</strong> doesn&rsquo;t have anything against me; they&rsquo;re <strong>after</strong> your husband.</em></p>
+<ul>
+  <li>&ldquo;To put somebody up&rdquo; to do something is to convince or even pay them to do it. In this context, if a person is &ldquo;after&rdquo; someone, they are trying to hurt them (short version of "going after").</li>
+</ul>
+<p><em>I went <strong>riding</strong> rather early.</em></p>
+<ul>
+  <li>Here, to go &ldquo;riding&rdquo; is to go horseback riding.</li>
+</ul>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Hollis Mulwray is found dead and Jake is convinced he was murdered,
+  and in trying to find out who did it, he almost loses his nose.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Gittes, <strong>for Christ&rsquo;s sake</strong>. :: Get <strong>outta</strong> here before he sees you.</em></p>
+<ul>
+  <li>&ldquo;For Christ&rsquo;s sake&rdquo; is a way of expressing anger or frustration. Note that &ldquo;out of&rdquo; ----&gt; &ldquo;outta&rdquo; in rapid speech.</li>
+</ul>
+<p><em>How are you? :: <strong>Lousy</strong> cold I can&rsquo;t seem <strong>to shake</strong>.</em></p>
+<ul>
+  <li>&ldquo;Lousy&rdquo; is a good word for bad or awful. &ldquo;To shake&rdquo; a cold is to get rid of it.</li>
+</ul>
+<p><em>You look like you&rsquo;ve <strong>done well by yourself</strong>. :: <strong>I get by</strong>.</em></p>
+<ul>
+  <li>In a financial context, "to do well by yourself" is to be reasonably successful, and to "get by" means to survive fairly well.</li>
+</ul>
+<p><em>You going through other people&rsquo;s linen?</em></p>
+<ul>
+  <li>&ldquo;To go through people&rsquo;s linen&rdquo; is to try and find out secrets about them (Linen is another word for clothes or cloth).</li>
+</ul>
+<p><em>You still putting Chinamen in jail for spitting in the laundry?</em></p>
+<ul>
+  <li>A reference to the fact that when Jake worked as a police detective in Chinatown, he would enforce local business laws and regulations.</li>
+</ul>
+<p><em>I&rsquo;m out of Chinatown&hellip;since I made <strong>lieutenant</strong>.</em></p>
+<ul>
+  <li>A &ldquo;lieutenant&rdquo; is a high rank or level in the police (It is also used in the military).</li>
+</ul>
+<p><em>Looks like he was washed down the entire length of the <strong>runoff channel</strong>.</em></p>
+<ul>
+  <li>A &ldquo;runoff channel&rdquo; is a tunnel or cement path where extra water runs or is dumped if it cannot be used (Here, they are talking about a body, that was apparently carried down the entire channel by the water).</li>
+</ul>
+<p><em>The <strong>fall</strong> must have <strong>knocked him unconscious</strong>.</em></p>
+<ul>
+  <li>A &ldquo;fall&rdquo; is the act of tripping or falling down. &ldquo;To knock a person unconscious&rdquo; is to hit them so hard that they lose consciousness (so they look as if they were asleep or dead).</li>
+</ul>
+<p>Mrs. Mulwray, this <strong>alleged</strong> <strong>affair</strong> your husband was having&hellip;</p>
+<ul>
+  <li>If something is &ldquo;alleged,&rdquo; it is reported to have happened, but it is not clear that it actually did happen. In this case, an &ldquo;affair&rdquo; is a secret romantic or sexual relationship.</li>
+</ul>
+<p><em>&hellip;the publicity didn&rsquo;t make him <strong>morose</strong> or unhappy?</em></p>
+<ul>
+  <li>&ldquo;Morose&rdquo; is a good word meaning depressed, gloomy or unhappy.</li>
+</ul>
+<p><em>Mrs. Mulwray, do you happen to know the name of the young lady <strong>in question</strong>.</em></p>
+<ul>
+  <li>This is a stylistic way of saying &ldquo;the woman we are talking about.&rdquo;</li>
+</ul>
+<p><em>We <strong>quarreled</strong> over her, of course. It came as a complete surprise to me.</em></p>
+<ul>
+  <li>&ldquo;To quarrel&rdquo; over something is to argue about it.</li>
+</ul>
+<p><em>I thought you <strong>hired</strong> a private investigator.</em></p>
+<ul>
+  <li>&ldquo;To hire&rdquo; a person is to pay them to work. A private detective is a person who investigates things such as sexual affairs and crimes.</li>
+</ul>
+<p><em>I did that because I thought I would put an end to a ridiculous <strong>rumor</strong> that had no basis.</em></p>
+<ul>
+  <li>A &ldquo;rumor&rdquo; is a piece of news that people are talking about that may or may not be true, that has no known source. If a rumor has &ldquo;no basis,&rdquo; there is no real reason to think that it is true.</li>
+</ul>
+<p><em>When did he <strong>inform</strong> you that these rumors had some <strong>foundation in fact</strong>?</em></p>
+<ul>
+  <li>&ldquo;To inform&rdquo; a person about something is to let them know about it. If a rumor has a &ldquo;foundation in fact,&rdquo; there is a logical reason to think that it may be true.</li>
+</ul>
+<p><em>Just before the stories <strong>broke in the papers</strong>, Lou.</em></p>
+<ul>
+  <li>If a story or piece of news &ldquo;breaks&rdquo; in the papers (or other media), it is reported to the public for the first time.</li>
+</ul>
+<p><em>You have my deepest sympathy.</em></p>
+<ul>
+  <li>A formal way of telling a person that you are terribly sorry after somebody close to them has died.</li>
+</ul>
+<p><em><strong>I&rsquo;ll see her to</strong> the car. <strong>I&rsquo;ll</strong> be right back.</em></p>
+<ul>
+  <li>&ldquo;To see&rdquo; a person to a place is to physically accompany or escort them there. Note that in the immediate future, the contracted form of &ldquo;I +will&rdquo; is always used (Don&rsquo;t say &ldquo;I will be&hellip;&rdquo; or &ldquo;I am going to be&hellip;&rdquo;).</li>
+</ul>
+<p><em>Jake, come on, <strong>what&rsquo;s the story?</strong></em></p>
+<ul>
+  <li>An excellent way of asking a person what&rsquo;s happening or what the details are of an evolving or developing situation.</li>
+</ul>
+<p><em><strong>Take it easy</strong>, guys. Let us <strong>get through</strong>.</em></p>
+<ul>
+  <li>&ldquo;Take it easy&rdquo; is a common way of telling a person to relax. To physically &ldquo;get through&rdquo; a group of people or other type of blockage is to walk past or around them.</li>
+</ul>
+<p><em>I thought I&rsquo;d <strong>drop by</strong> and see who <strong>dropped dead</strong> lately.</em></p>
+<ul>
+  <li>To &ldquo;drop by&rdquo; a person&rsquo;s house is to go there, often without calling, just because you are already in the neighborhood. If a person &ldquo;drops dead,&rdquo; they suddenly and unexpectedly die.</li>
+</ul>
+<p><em>Isn&rsquo;t this something? Middle of a <strong>draught</strong> and the water commissioner <strong>drowns</strong>. <strong>Only in LA</strong>!</em></p>
+<ul>
+  <li>A "draught" is a shortage of water because there has not been enough rain. If a person "drowns," they die from being unable to breath because they are under water. "Only in LA" is a colloquial way of saying "this is so strange it could only happen in LA!"</li>
+</ul>
+<p><em>He looks pretty <strong>banged up</strong>. :: It&rsquo;s a long fall.</em></p>
+<ul>
+  <li>If a person is &ldquo;banged up,&rdquo; they have a lot of bruises or other injuries after having fallen or been physically attacked.</li>
+</ul>
+<p><em>Leon Shuhart, <strong>local drunk</strong>. Used to <strong>hang&nbsp;</strong><strong>around</strong> Fergeson&rsquo;s Ally. <strong>Quite a character</strong>.</em></p>
+<ul>
+  <li>If a person is a &ldquo;local drunk,&rdquo; he is known around the local area as being a drunk who probably lives in the streets. To &ldquo;hang around&rdquo; a place is to pass a lot of time there (In this case at Fergeson&rsquo;s Ally, which is a bar). If a person is described as &ldquo;quite a character,&rdquo; they are seen as being colorful or interesting, but not always in a good way.</li>
+</ul>
+<p><em>Lately he&rsquo;s been living in one downtown <strong>storm drain</strong>.</em></p>
+<ul>
+  <li>An underground cement tunnel where rain water goes.</li>
+</ul>
+<p><em>He had a <strong>bureau dresser</strong> down there, and everything.</em></p>
+<ul>
+  <li>A &ldquo;bureau dresser&rdquo; is a piece of furniture for storing clothes.</li>
+</ul>
+<p><em>He drowned, too. :: <strong>Come again</strong>?</em></p>
+<ul>
+  <li>An interesting way of asking a person to repeat what they just said if you didn&rsquo;t understand the first time.</li>
+</ul>
+<p><em>He got drunk, <strong>passed out</strong> in the bottom of the <strong>riverbed</strong>.</em></p>
+<ul>
+  <li>&ldquo;To pass out&rdquo; is to lose consciousness, from drinking too much or perhaps being hit hard on the head. A &ldquo;riverbed&rdquo; is the land on which a river runs.</li>
+</ul>
+<p><em>It&rsquo;s dry as a bone.</em></p>
+<ul>
+  <li>A clich&eacute; meaning there is no water.</li>
+</ul>
+<p><em>He <strong>ain&rsquo;t</strong> exactly going to drown in a riverbed, no matter how <strong>soused</strong> he is.</em></p>
+<ul>
+  <li>&ldquo;Ain&rsquo;t&rdquo; is very poor grammar for the negative conjugation of &ldquo;to be.&rdquo; In this case, you should say &ldquo;isn&rsquo;t.&rdquo; If a person is &ldquo;soused,&rdquo; they are drunk, though this is a fairly rare and dated word.</li>
+</ul>
+<p><em>Howdy.</em></p>
+<ul>
+  <li>A common way of saying hi or hello.</li>
+</ul>
+<p><em><strong>Son of a bitch</strong>! Goddamn Florsheim shoes!</em></p>
+<ul>
+  <li>&ldquo;Son of a bitch&rdquo; is an insult word for a mean or abusive person, or in this case, just a way of expressing anger or frustration.</li>
+</ul>
+<p><em><strong>Hold it</strong> there, Kitty Kat!</em></p>
+<ul>
+  <li>&ldquo;Hold it&rdquo; is one of saying don&rsquo;t move, or stop.</li>
+</ul>
+<p><em>Hello, Claude. Where did you get the <strong>midget</strong>?</em></p>
+<ul>
+  <li>A person whose height is limited, usually under four feet tall. The term is out-dated; now we refer to such people as "little people."</li>
+</ul>
+<p><em>You&rsquo;re a very <strong>nosy</strong> <strong>fellow</strong>, huh?</em></p>
+<ul>
+  <li>If a person is &ldquo;nosy,&rdquo; they are always looking into the personal lives of others. A &ldquo;fellow&rdquo; is another word for a guy.</li>
+</ul>
+<p><em>So some <strong>contractor</strong> wants to build a dam and he makes a few <strong>payoffs</strong>. <strong>So what?</strong> Think you can <strong>nail</strong> Mulvihill?</em></p>
+<ul>
+  <li>A &ldquo;contractor&rdquo; is a businessman who builds houses and other buildings. A &ldquo;payoff&rdquo; is a bribe or the giving of money for an illegal or corrupt favor. &ldquo;So what?&rdquo; is one way of asking &ldquo;So why is that important?&rdquo; In this case, &ldquo;to nail&rdquo; a person is to catch them doing something and then to punish them for it.</li>
+</ul>
+<p><em>He&rsquo;ll claim you were <strong>trespassing</strong>.</em></p>
+<ul>
+  <li>&ldquo;To trespass&rdquo; on a person&rsquo;s property is to enter it illegally, or without permission from the owner.</li>
+</ul>
+<p><em>I want <strong>the big boys</strong> that are making the payoffs.</em></p>
+<ul>
+  <li>This is Jake&rsquo;s way of saying he wants to catch the rich and powerful people who are responsible for the corruption, and not just the less important people who work for them.</li>
+</ul>
+<p><em>Then what do you do? :: <strong>Sue</strong> <strong>the shit out of</strong> them.</em></p>
+<ul>
+  <li>&ldquo;To sue&rdquo; a person is to file a lawsuit against them in court, usually in the hopes of getting money from them. &ldquo;The shit out of&rdquo; is a vulgar but not uncommon filler expression that adds emotion to the sentence.</li>
+</ul>
+<p><em>Sue people like that? They&rsquo;re <strong>liable to</strong> be having dinner with the judges trying the suit.</em></p>
+<ul>
+  <li>If a person is &ldquo;liable to&rdquo; be doing something, they are likely to be doing it. The sentence above suggests that there is so much corruption in LA that even the judges would be bought off by the criminals.</li>
+</ul>
+<p><em>Hello, Miss Sessions, I don&rsquo;t believe we&rsquo;ve had the pleasure.</em></p>
+<ul>
+  <li>This is Jake&rsquo;s way of saying he doesn&rsquo;t believe that they have already met each other.</li>
+</ul>
+<p><em>Are you alone? :: Isn&rsquo;t everyone?</em></p>
+<ul>
+  <li>Jake&rsquo;s response is a clever way of saying he thinks everybody is lonely.</li>
+</ul>
+<p><em>Shut the fuck up!</em></p>
+<ul>
+  <li>A more vulgar, but not uncommon version of shut up.</li>
+</ul>
+<p><em>Beg your pardon?</em></p>
+<ul>
+  <li>One common way of asking &ldquo;What did you say?&rdquo;</li>
+</ul>
+<p><em>The point is, if it ever <strong>comes out</strong>, I want somebody to know that I didn&rsquo;t know what would happen.</em></p>
+<ul>
+  <li>If a piece of news &ldquo;comes out,&rdquo; it becomes known to the general public or a lot of people.</li>
+</ul>
+<p><em>Maybe we can talk this over. :: No, Mr. Gittes, just look at the <strong>obituary column</strong> of today&rsquo;s Post-Record.</em></p>
+<ul>
+  <li>An &ldquo;obituary column&rdquo; is a daily newspaper&rsquo;s list of people who have recently died in the local community (The Post-Record is a newspaper).</li>
+</ul>
+<p><em>How do you like them apples?</em></p>
+<ul>
+  <li>A wonderful but very old-fashioned expression in the form of a question, which is used when you expect the listener to be surprised or angry or perhaps amazed.</li>
+</ul>
+<p><em>&ldquo;Water Board <strong>Issue</strong> Passes Council&rdquo; [Headline]</em></p>
+<ul>
+  <li>In this case, an &ldquo;issue&rdquo; is a tax proposal to pay for a public project, and the Council refers to the City Council, which passes local laws.</li>
+</ul>
+<p><em>Tom Collins with lime.</em></p>
+<ul>
+  <li>A popular alcoholic drink.</li>
+</ul>
+<p><em>The money is fine, its generous, but I think you <strong>shortchanged me</strong> on the story.</em></p>
+<ul>
+  <li>&ldquo;To shortchange&rdquo; a person is to give them less then they are owed (It usually refers to money, but here Jake is saying he thinks Mrs. Mulwray is not telling him the whole truth).</li>
+</ul>
+<p><em>You were <strong>upset</strong>, but not that upset.</em></p>
+<ul>
+  <li>An important word meaning angry, worried or unhappy.</li>
+</ul>
+<p><em>You sue me, your husband dies, you drop the suit <strong>like a hot potato</strong>, all of it <strong>quicker than the wind from a duck&rsquo;s ass</strong>.</em></p>
+<ul>
+  <li>&ldquo;To drop something like a hot potato&rdquo; is to discontinue it very quickly. &ldquo;Quicker than the wind from a duck&rsquo;s ass&rdquo; is a never used and very vulgar but colorful way of saying very fast (It refers to a duck farting).</li>
+</ul>
+<p><em>This could look like you <strong>paid me off to withhold evidence</strong>.</em></p>
+<ul>
+  <li>&ldquo;To pay a person off&rdquo; is to pay them to do something illegal or immoral. &ldquo;To withhold evidence&rdquo; is to keep information secret that could effect the outcome of a trial.</li>
+</ul>
+<p><em>Look, I do <strong>matrimonial</strong> work, it&rsquo;s my <strong>m&eacute;tier</strong>.</em></p>
+<ul>
+  <li>&ldquo;Matrimonial&rdquo; is an adjective that refers to marriage, and &ldquo;m&eacute;tier&rdquo; is an educated word for profession or work.</li>
+</ul>
+<p><em>When a wife tells me she&rsquo;s happy that her husband is <strong>cheating on</strong> her, it <strong>runs contrary to my experience</strong>.</em></p>
+<ul>
+  <li>If a husband &ldquo;cheats on&rdquo; his wife, he is probably having a sexual affair with another woman. If something &ldquo;runs contrary to your experience,&rdquo; it is what you would not expect given what you have seen before.</li>
+</ul>
+<p><em>I wouldn&rsquo;t run home and tell him every time I <strong>went to bed with someone</strong>, if that&rsquo;s what you mean.</em></p>
+<ul>
+  <li>&ldquo;To go to bed with&rdquo; a person is to have sex with them.</li>
+</ul>
+<p><em>I didn&rsquo;t want publicity, I didn&rsquo;t want <strong>to get into</strong> any of this, then or now.</em></p>
+<ul>
+  <li>In this case, &ldquo;to get into&rdquo; something means to become involved in it.</li>
+</ul>
+<p><em>That&rsquo;s your <strong>maiden name</strong>?</em></p>
+<ul>
+  <li>A woman&rsquo;s &ldquo;maiden name&rdquo; is the family name that she had before she got married.</li>
+</ul>
+<p><em>You must have had a reason to ask me that. :: No, I&rsquo;m just a <strong>snoop</strong>.</em></p>
+<ul>
+  <li>A &ldquo;snoop&rdquo; is a person who is always looking into other people&rsquo;s personal lives.</li>
+</ul>
+<p><em>A <strong>waterlogged</strong> drunk&rsquo;s in the <strong>morgue</strong>, <strong>involuntary manslaughter</strong> if anybody wants to take the trouble.</em></p>
+<ul>
+  <li>If something is &ldquo;waterlogged,&rdquo; it is soaked or weighed down with lots of water. A &ldquo;morgue&rdquo; is a place where dead bodies are stored, and &ldquo;involuntary manslaughter&rdquo; is a legal term referring to the accidental but criminally negligent (careless) killing of a person.</li>
+</ul>
+<p><em>It seems like half the city is trying to <strong>cover it all up</strong>, which is fine by me.</em></p>
+<ul>
+  <li>&ldquo;To cover up&rdquo; something illegal is to try and hide it from the public.</li>
+</ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Jake meets Noah (Evelyn’s father), and soon discovers that the
+  San Fernando Valley has a lot of dry, desperate farms and
+  some curious people who want to buy all the Valley’s land.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>It&rsquo;s my lunch hour; I can wait. :: He&rsquo;s <strong>liable to</strong> be <strong>tied up</strong> <strong>indefinitely</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;liable to&rdquo; do something, they are likely to do it. If a person is &ldquo;tied up,&rdquo; they are busy doing something else. &ldquo;Indefinitely&rdquo; means for as long as long as is necessary, or perhaps even forever.</li>
+</ul>
+<p><em>How did they <strong>get it away from</strong> him? :: Mr. Mulwray felt the public should own the water.</em></p>
+<ul>
+  <li>&ldquo;To get something away from&rdquo; a person is to take, steal or remove it from them.</li>
+</ul>
+<p><em>Yes, they were <strong>partners</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;partners&rdquo; refers to business partners, or associates (Jake and the secretary are talking about Evelyn&rsquo;s father and husband).</li>
+</ul>
+<p><em>These <strong>staff meetings</strong>, they just go on and on.</em></p>
+<ul>
+  <li>A &ldquo;staff meeting&rdquo; is a meeting for members of a business or other organization&rsquo;s staff, which generally means the people who work there. If a meeting &ldquo;goes on and on,&rdquo; it lasts a very long time.</li>
+</ul>
+<p><em>It must be especially <strong>tough</strong> to take over under these <strong>circumstances</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;tough&rdquo; means difficult. &ldquo;Circumstances&rdquo; are the details of a particular situation.</li>
+</ul>
+<p><em>Hollis was the best <strong>department chief</strong> the city&rsquo;s ever had.</em></p>
+<ul>
+  <li>A &ldquo;department chief&rdquo; is the head of a particular department or division within an organization (Here, the Department of Water and Power).</li>
+</ul>
+<p><em><strong>My goodness</strong>, what happened to your nose?</em></p>
+<ul>
+  <li>An innocent little way to start a sentence and express surprise or shock.</li>
+</ul>
+<p><em>That must really <strong>smart</strong>. :: Only when I breath.</em></p>
+<ul>
+  <li>&ldquo;To smart,&rdquo; interesting enough, is a verb that means to hurt!</li>
+</ul>
+<p><em>He had a reputation that was hard <strong>to get around</strong>. You decided to <strong>ruin</strong> it.</em></p>
+<ul>
+  <li>&ldquo;To get around&rdquo; your own reputation is to avoid it or make people not pay attention to it. &ldquo;To ruin&rdquo; something is to completely destroy it.</li>
+</ul>
+<p><em>Then he found you were dumping water at night, and then he was drowned. :: Mr. Gittes, that&rsquo;s an <strong>outrageous</strong> <strong>accusation</strong>!</em></p>
+<ul>
+  <li>If something is &ldquo;outrageous,&rdquo; it is so ridiculous or scandalous that it can&rsquo;t be believed. An &ldquo;accusation&rdquo; is an official charge or declaration of wrongdoing on the part of another person.</li>
+</ul>
+<p><em>Mr. Gittes, we&rsquo;re not <strong>anxious</strong> for this <strong>to get around</strong>, but we have been <strong>diverting</strong> a little water to irrigate orange groves in the Northwest Valley.</em></p>
+<ul>
+  <li>In this context, &ldquo;anxious&rdquo; means hopeful for something to happen. If a piece of information &ldquo;gets around,&rdquo; it becomes known by the general public. &ldquo;To divert&rdquo; water is to force it to go in a different direction that it was going (Here, supposedly from the city to the farms in the Valley, though in fact, water is simply being diverted <em>from</em> the Valley to the ocean in order to drive the farms out of business).</li>
+</ul>
+<p><em>The farmers have no legal right to our water, but we&rsquo;ve been trying to help some of them out, keep them from <strong>going under</strong>.</em></p>
+<ul>
+  <li>If a company (or farm) &ldquo;goes under,&rdquo; it goes out of business because it can no longer pay its bills.</li>
+</ul>
+<p><em>Naturally, when you divert water, there&rsquo;s a little <strong>runoff</strong>.</em></p>
+<ul>
+  <li>&ldquo;Runoff&rdquo; is extra water that spills over from a stream or river.</li>
+</ul>
+<p><em>My <strong>field men</strong> are out; I can&rsquo;t give you the exact location.</em></p>
+<ul>
+  <li>People who work out in the fields, or in this case, the farms, taking measurements and writing reports on what they see.</li>
+</ul>
+<p><em>I don&rsquo;t want <strong>to nail</strong> you; I want to find out who <strong>put you up to it</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;to nail&rdquo; a person is to catch them doing something wrong and then to make sure they are punished for it. &ldquo;To put up&rdquo; somebody to do something wrong is to pay them or convince them to do it.</li>
+</ul>
+<p><em>Maybe we can <strong>put the whole thing off on</strong> a few <strong>big shots</strong> and you can stay head of the department.</em></p>
+<ul>
+  <li>In this case, &ldquo;to put something off on&rdquo; somebody is to blame them for it. A &ldquo;big shot&rdquo; is a common phrase for a very important person.</li>
+</ul>
+<p><em>$35 a day for myself and $20 to my associates plus expenses plus a <strong>bonus</strong> if I show results.</em></p>
+<ul>
+  <li>A &ldquo;bonus&rdquo; is an extra payment for a job well done.</li>
+</ul>
+<p><em>Sophie, <strong>draw up</strong> one of our <strong>standard</strong> contracts for Mrs. Mulwray.</em></p>
+<ul>
+  <li>&ldquo;To draw up&rdquo; a contract or other writing is to type it or copy it. If something is &ldquo;standard,&rdquo; it is typical, or the type most often used.</li>
+</ul>
+<p><em>I was just out of <strong>grade school</strong> when they did that.</em></p>
+<ul>
+  <li>This is grades one through six, or approximately ages five to 13.</li>
+</ul>
+<p><em>Hollis felt that the water should belong to the public and I don&rsquo;t think that my father felt that way.</em></p>
+<ul>
+  <li>This is Evelyn&rsquo;s way of explaining that her father and husband had very different ideas about who should own the water for the city.</li>
+</ul>
+<p><em>Hollis never forgave him for what? :: For <strong>talking him into</strong> building it.</em></p>
+<ul>
+  <li>&ldquo;To talk a person into&rdquo; doing something is to convince them to do it.</li>
+</ul>
+<p><em>You got a <strong>nasty</strong> reputation, Mr. Gittes. I like that.</em></p>
+<ul>
+  <li>&ldquo;Nasty&rdquo; is an interesting adjective meaning dirty or very unpleasant, though here it is actually used as a compliment.</li>
+</ul>
+<p><em>In your business, it&rsquo;s good advertising. It&rsquo;s why you attracted a <strong>client</strong> like my daughter.</em></p>
+<ul>
+  <li>A &ldquo;client&rdquo; is a customer or a person who pays for the services of a professional such as a lawyer, or in this case , private detective.</li>
+</ul>
+<p><em>I&rsquo;m surprised you&rsquo;re still working for her, unless she&rsquo;s <strong>come up with</strong> another husband.</em></p>
+<ul>
+  <li>&ldquo;To come up with&rdquo; something is to obtain, produce or create it.</li>
+</ul>
+<p><em>I hope you <strong>don&rsquo;t mind</strong>. I like to serve it with the head.</em></p>
+<ul>
+  <li>If a person &ldquo;doesn&rsquo;t mind&rdquo; something, they are not bothered or annoyed by it.</li>
+</ul>
+<p><em>Who&rsquo;s the <strong>investigating officer</strong>? :: Lou Escobar.</em></p>
+<ul>
+  <li>An &ldquo;investigating officer&rdquo; is the policeman responsible for investigating or researching the details of a crime.</li>
+</ul>
+<p><em>Would you call him a <strong>capable</strong> man?</em></p>
+<ul>
+  <li>An excellent word for a person who has the talent or skill to accomplish what they need to.</li>
+</ul>
+<p><em>Honest? :: As far as it goes. Of course, he has to swim in the same water we all do.</em></p>
+<ul>
+  <li>This is Jake&rsquo;s way of saying that Escobar is probably mostly honest, though he works in an environment where most people are at least a little corrupt.</li>
+</ul>
+<p><em>You&rsquo;ve no reason to think he&rsquo;s <strong>bungled</strong> the case?</em></p>
+<ul>
+  <li>&ldquo;To bungle&rdquo; a case or criminal investigation is to do it poorly, or in a way that may cause problems in the future.</li>
+</ul>
+<p><em>It <strong>disturbs</strong> me. It makes me think you&rsquo;re <strong>taking my daughter for a ride</strong>. Financially speaking, of course.</em></p>
+<ul>
+  <li>&ldquo;To disturb&rdquo; a person is to bother them, or in this case, to make them feel uncomfortable. In this context, &ldquo;to take a person for a ride&rdquo; is to manipulate them or cheat them out of a lot of money.</li>
+</ul>
+<p><em>What are you charging her? :: My <strong>usual fee</strong>.</em></p>
+<ul>
+  <li>A detective&rsquo;s &ldquo;usual fee&rdquo; is the price they normally charge their clients.</li>
+</ul>
+<p><em>Are you <strong>sleeping with</strong> her? <strong>Come, come</strong>, Mr. Gittes, you don&rsquo;t have to think about that to remember.</em></p>
+<ul>
+  <li>&ldquo;To sleep with&rdquo; a person is to have sex with them. &ldquo;Come, come&rdquo; is a way of telling a person to be serious.</li>
+</ul>
+<p><em>You&rsquo;re <strong>dealing with</strong> a disturbed woman who just lost her husband. I don&rsquo;t want her <strong>taken advantage of</strong>.</em></p>
+<ul>
+  <li>Here, to be &ldquo;dealing with&rdquo; a person is to be involved with them. &ldquo;To take advantage of&rdquo; a person is to manipulate or use them for personal benefit.</li>
+</ul>
+<p><em>It&rsquo;s what the <strong>district attorney</strong> used to tell me in Chinatown; Politicians, ugly buildings and <strong>whores</strong> all get respectable if they last long enough.</em></p>
+<ul>
+  <li>A &ldquo;district attorney&rdquo; is a lawyer for the local city or county that tries criminals in court. A &ldquo;whore&rdquo; is a vulgar word for a prostitute.</li>
+</ul>
+<p><em>Sheriff&rsquo;s gold <strong>posse</strong>. Bunch of damn fools. They paid $5,000 a piece towards the sheriff&rsquo;s reelection.</em></p>
+<ul>
+  <li>A sheriffs &ldquo;posse&rdquo; is a group of people that support him, and help maintain the peace in an emergency. Note that in some cities, sheriffs are elected, just like politicians.</li>
+</ul>
+<p><em>Do you remember the last time you saw Mulwray? :: At my age, you <strong>tend to</strong> forget.</em></p>
+<ul>
+  <li>If a person &ldquo;tends to&rdquo; do something, they do it often or easily.</li>
+</ul>
+<p><em>I happen to know that Hollis was <strong>fond of</strong> her.</em></p>
+<ul>
+  <li>If a person is &ldquo;fond of&rdquo; somebody, they like or have affectionate feelings for them.</li>
+</ul>
+<p><em>Hollis Mulwray made this city and he made a fortune.</em></p>
+<ul>
+  <li>This is Noah&rsquo;s way of saying that Hollis was a critical person in the history of LA.</li>
+</ul>
+<p><em>I still got a few teeth left in my head and a few friends left in town</em></p>
+<ul>
+  <li>Noah&rsquo;s way of saying he is not yet that old or stupid.</li>
+</ul>
+<p><em>Are you <strong>frightened</strong> for the girl or what Evelyn might do to her?</em></p>
+<ul>
+  <li>&ldquo;Frightened&rdquo; is another word for scared or afraid.</li>
+</ul>
+<p><em>I&rsquo;ll look into it, as soon as I&rsquo;ve <strong>checked out</strong> some orange groves.</em></p>
+<ul>
+  <li>In this case, &ldquo;to check out&rdquo; something is to examine or study it.</li>
+</ul>
+<p><em>I was wondering if you could tell me where the <strong>plat books</strong> for the Northwest Valley are. :: Part of it is in <strong>Ventura County</strong>.</em></p>
+<ul>
+  <li>A &ldquo;plat book&rdquo; is a book containing official land and real estate records. Ventura County is the county immediately North of LA County.</li>
+</ul>
+<p><em>We don&rsquo;t have Ventura County in our <strong>hall of records</strong>.</em></p>
+<ul>
+  <li>A &ldquo;hall of records&rdquo; is a government office that keeps official records such as land sales or public health data.</li>
+</ul>
+<p><em>Weasel.</em></p>
+<ul>
+  <li>A small funny looking animal, or an insult word for a weak or nerdy looking guy.</li>
+</ul>
+<p><em><strong>Say</strong>, &hellip;.<strong>Sonny</strong>, why do they have all these names pasted in the plat books? :: Land sales out of <strong>escrow</strong> are always recorded within the week.</em></p>
+<ul>
+  <li>&ldquo;Say&rdquo; is a way of starting a sentence when the speaker wants the person they are speaking with to listen carefully. &ldquo;Sonny&rdquo; is a possible way to address a younger person. &ldquo;Escrow&rdquo; is a legal word for the time between when a person agrees to buy a house and the money is actually given to the seller of the house.</li>
+</ul>
+<p><em>Can I <strong>check</strong> one of these volumes <strong>out</strong>?</em></p>
+<ul>
+  <li>&ldquo;To check out&rdquo; a book from a library is to borrow it.</li>
+</ul>
+<p><em>Have you got a <strong>ruler</strong>? The print is real <strong>fine</strong> and I&rsquo;d like to be able to read across.</em></p>
+<ul>
+  <li>A &ldquo;ruler&rdquo; is a straight edge for drawing straight lines and measuring small distances. In this case, &ldquo;fine&rdquo; means very small.</li>
+</ul>
+<p><em>Why, thank you.</em></p>
+<ul>
+  <li>An interesting way of starting a sentence to express emotion such as surprise, or here, appreciation.</li>
+</ul>
+<p><em>Keep Out, No Trespassing [Sign]</em></p>
+<ul>
+  <li>&ldquo;To trespass&rdquo; on property is to enter it secretly or illegally.</li>
+</ul>
+<p><em>Hold it right there!</em></p>
+<ul>
+  <li>One way of saying Stop!</li>
+</ul>
+<p><em>Search the man; See if he&rsquo;s <strong>armed</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;armed,&rdquo; they have a gun or other weapon on them.</li>
+</ul>
+<p><em>Pick on somebody your own size!</em></p>
+<ul>
+  <li>A clich&eacute; which tells the listener to stop threatening or harassing people that are weaker or smaller than they are.</li>
+</ul>
+<p><em><strong>Cut that out!</strong> Give the man a chance to say something!</em></p>
+<ul>
+  <li>An excellent expression which means &ldquo;Stop it!&rdquo;</li>
+</ul>
+<p><em>The water department&rsquo;s been sending people out here to <strong>blow up&nbsp;</strong>my <strong>water tanks</strong>, and they put poison down three of my <strong>wells</strong>.</em></p>
+<ul>
+  <li>&ldquo;To blow up&rdquo; something is to explode or destroy it. A &ldquo;water tank&rdquo; is a large container for holding lots of water, and a &ldquo;well&rdquo; is an underground hole, pit or tube which holds water.</li>
+</ul>
+<p><em>Mulwray? That&rsquo;s the <strong>son-of-a-bitch</strong> whose done it to us.</em></p>
+<ul>
+  <li>A vulgar insult for a mean or abusive person.</li>
+</ul>
+<p><em>You don&rsquo;t know what you&rsquo;re talking about, you dumb <strong>Okie</strong>.</em></p>
+<ul>
+  <li>An insult for a poor person from the state of Oklahoma (no longer used).</li>
+</ul>
+  <section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Mrs. Mulwray continues to help Jake find the killer and the truth,
+  but he can’t help thinking that she knows more than she admits.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>That dam is a <strong>con job</strong>.</em></p>
+<ul>
+  <li>A &ldquo;con job&rdquo; is any work or group of lies that fools people or tricks them out of their money.</li>
+</ul>
+<p><em>They&rsquo;re <strong>conning</strong> LA into building it, but the water isn&rsquo;t going to LA. It&rsquo;s coming right here. :: To the Valley?</em></p>
+<ul>
+  <li>&ldquo;To con&rdquo; a person is to trick or fool them.</li>
+</ul>
+<p><em>Robert Knox has bought 5,000 <strong>acres</strong>.</em></p>
+<ul>
+  <li>A unit of measurement for land, about the size of a small city block.</li>
+</ul>
+<p><em>They&rsquo;re <strong>blowing farmers off of their land</strong> and then <strong>picking it up for peanuts</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;to blow a person off&rdquo; their land is to force them off, and &ldquo;to pick up land for peanuts&rdquo; is to buy it for an extremely low price.</li>
+</ul>
+<p><em>You have any idea what this land would be worth with a <strong>steady</strong> water supply?</em></p>
+<ul>
+  <li>&ldquo;Steady&rdquo; is consistent or stable.</li>
+</ul>
+<p><em>A <strong>memorial service</strong> was held for Jasper LeMar Crabbe. He <strong>passed away</strong> two weeks ago.</em></p>
+<ul>
+  <li>A &ldquo;memorial service&rdquo; is a tribute to a person who has died. &ldquo;To pass away&rdquo; is a common and gentle way of saying to die.</li>
+</ul>
+<p><em>Can I help you <strong>folks</strong>?</em></p>
+<ul>
+  <li>&ldquo;Folks&rdquo; is another way of saying people, or in the right context, parents.</li>
+</ul>
+<p><em>It&rsquo;s dad. I can&rsquo;t seem <strong>to handle</strong> him anymore.</em></p>
+<ul>
+  <li>In this case, &ldquo;to handle&rdquo; a person is to take care of them.</li>
+</ul>
+<p><em>I&rsquo;m <strong>anxious</strong> for him to have the best, and <strong>money is no object</strong>.</em></p>
+<ul>
+  <li>Here, &ldquo;anxious&rdquo; means seriously hoping. &ldquo;Money is no object&rdquo; is a common expression (among the rich!) that means it is unimportant how expensive something is, because any price can be paid.</li>
+</ul>
+<p><em>Do you accept people of the Jewish <strong>persuasion</strong>?</em></p>
+<ul>
+  <li>In this case, a person&rsquo;s &ldquo;persuasion&rdquo; is their religion or possibly ethnicity, though this word is rarely if ever used today.</li>
+</ul>
+<p><em>We never <strong>reveal</strong> the names of our guests. It&rsquo;s a <strong>matter of policy</strong>.</em></p>
+<ul>
+  <li>&ldquo;To reveal&rdquo; a name is to make it public or known. If something is &ldquo;a matter of policy,&rdquo; it is part of the general laws or goals that an organization follows.</li>
+</ul>
+<p><em>Would you mind if we took a <strong>stroll</strong> on our own? :: Just if you <strong>confine yourself</strong> to the main building.</em></p>
+<ul>
+  <li>A &ldquo;stroll&rdquo; is an old-fashioned but still used word for a walk. &ldquo;To confine yourself&rdquo; to a particular place is to physically stay within it.</li>
+</ul>
+<p><em>You&rsquo;re looking at the owners of a 50,000 <strong>acre empire</strong>.</em></p>
+<ul>
+  <li>An &ldquo;acre&rdquo; is a unit of measurement for land, and an &ldquo;empire&rdquo; is a large area of land (or many lands) controlled by a central power.</li>
+</ul>
+<p><em>Emma, did you know that you&rsquo;re a very <strong>wealthy</strong> woman?</em></p>
+<ul>
+  <li>A good alternative word for rich or financially well-off.</li>
+</ul>
+<p><em>Where did you get this piece of <strong>material</strong>? :: At the Albacore club.</em></p>
+<ul>
+  <li>&ldquo;Material&rdquo; is any type of physical matter, from cloth to rock.</li>
+</ul>
+<p><em>We&rsquo;re an unofficial <strong>charity</strong> of theirs, Mr. Gittes.</em></p>
+<ul>
+  <li>A &ldquo;charity&rdquo; is an organization that is given money by the public for a particular goal, such as helping poor people or the environment.</li>
+</ul>
+<p><em>The maid&rsquo;s <strong>night off</strong>. :: Why?</em></p>
+<ul>
+  <li>If a worker has &ldquo;a day off,&rdquo; they don&rsquo;t have to work that specific day.</li>
+</ul>
+<p><em>No question from you is <strong>innocent</strong>, Mr. Gittes.</em></p>
+<ul>
+  <li>In this case, &ldquo;innocent&rdquo; means na&iuml;ve or perhaps childlike.</li>
+</ul>
+<p><em><strong>To you</strong>, Mrs. Mulwray.</em></p>
+<ul>
+  <li>If a person raises a glass while saying &ldquo;To you,&rdquo; they are saluting you or your accomplishments, or more specifically, offering a toast.</li>
+</ul>
+<p><em>If this is how you <strong>go about</strong> your work, I&rsquo;d say you&rsquo;d be lucky <strong>to get through</strong> a whole day.</em></p>
+<ul>
+  <li>&ldquo;To go about&rdquo; doing something is to do it in a particular way. &ldquo;To get through&rdquo; a day is to survive it.</li>
+</ul>
+<p><em>Do you have any <strong>peroxide</strong> or anything like that?</em></p>
+<ul>
+  <li>A type of medicine that kills germs and cleanses wounds or injuries.</li>
+</ul>
+<p><em>It&rsquo;s a <strong>nasty</strong> cut!</em></p>
+<ul>
+  <li>A good word meaning dirty, mean or disgusting, though here it means serious or intense.</li>
+</ul>
+<p><em>There&rsquo;s something back in the green part of your eye. :: It&rsquo;s a <strong>flaw</strong> in the <strong>iris</strong>.</em></p>
+<ul>
+  <li>A &ldquo;flaw&rdquo; is a small defect or imperfection, and the &ldquo;iris&rdquo; is the colored part of the eye.</li>
+</ul>
+<p><em>It&rsquo;s sort of a <strong>birthmark</strong>.</em></p>
+<ul>
+  <li>A type of freckle, mole or scar on the skin that is present from birth.</li>
+</ul>
+<p><em>Must have looked cute <strong>in blue</strong>.</em></p>
+<ul>
+  <li>This is Evelyn&rsquo;s way of saying Jake must have been attractive when he was a policeman and wore a blue uniform.</li>
+</ul>
+<p><em><strong>Give me a break</strong>, will ya?</em></p>
+<ul>
+  <li>"Give me a break" is a good expression which means "Be serious and stop saying nonsense." Note that "you"------&gt; "ya" in rapid speech.</li>
+</ul>
+<p><em>Why does it <strong>bother</strong> you to talk about it?</em></p>
+<ul>
+  <li>If something &ldquo;bothers&rdquo; you, it distracts you or makes you unhappy.</li>
+</ul>
+<p><em>I was trying to keep someone from being hurt; I <strong>ended up</strong> making sure that she was hurt.</em></p>
+<ul>
+  <li>To "end up" doing something is to finish by doing or being a certain way, often after considering doing or being something else.</li>
+</ul>
+<p><em>Are you trying to tell me that he might be <strong>behind</strong> all this?</em></p>
+<ul>
+  <li>If a person is &ldquo;behind&rdquo; a crime, they are the person responsible for it.</li>
+</ul>
+<p><em><strong>Come on</strong>, Mrs. Mulwray. You&rsquo;ve got your husband&rsquo;s girlfriend <strong>tied up</strong> there.</em></p>
+<ul>
+  <li>&ldquo;Come on&rdquo; is the most versatile phrasal verb in English, meaning everything from &ldquo;hurry up&rdquo; to, as here, &ldquo;be serious and stop saying nonsense.&rdquo; If a person is &ldquo;tied up,&rdquo; a piece of rope or string is tied around them to prevent them from moving.</li>
+</ul>
+<p><em>It looks like she knows more than you want her to tell. :: You&rsquo;re <strong>insane.</strong></em></p>
+<ul>
+  <li>&ldquo;Insane&rdquo; is a powerful adjective meaning crazy or psychotic.</li>
+</ul>
+<p><em>I would never have harmed Hollis. He was the most gentle, <strong>decent</strong> man imaginable.</em></p>
+<ul>
+  <li>In this context, &ldquo;decent&rdquo; means ethical or having good morals.</li>
+</ul>
+<p><em>He <strong>put up with</strong> more from me than you&rsquo;ll ever know.</em></p>
+<ul>
+  <li>&ldquo;To put up&rdquo; with something is to accept it and learn to live with it, even if it is very unpleasant.</li>
+</ul>
+<p><em>Somebody <strong>slammed</strong> a bedroom window on it? :: <strong>Nope</strong>, your wife got excited and she <strong>crossed her legs</strong> a little too quick.</em></p>
+<ul>
+  <li>&ldquo;To slam&rdquo; a door or window is to shut it quickly and very forcefully. &ldquo;Nope&rdquo; is a slangy way of saying no. If a person &ldquo;crosses their legs,&rdquo; they put one leg over the other (Often as a way of being polite).</li>
+</ul>
+<p><em>Understand what I mean, <strong>pal</strong>?</em></p>
+<ul>
+  <li>A colloquial word for friend, but often used by some individuals to address people in general.</li>
+</ul>
+<p><em>This <strong>broad</strong> hired you, not Evelyn Mulwray.</em></p>
+<ul>
+  <li>A very dated and silly word for a woman.</li>
+</ul>
+<p><em>Somebody wanted <strong>to shake Mulwray down</strong>, she hired you. That&rsquo;s <strong>how come</strong> you found out he was murdered.</em></p>
+<ul>
+  <li>"To shake down" a person is to threaten them, often by forcing them to pay money or do something they don't want to do. "How come" is a common way of saying "why."</li>
+</ul>
+<p><em>Who <strong>the hell</strong> do you think you&rsquo;re <strong>dealing with</strong>? <strong>A bunch</strong> of <strong>assholes</strong>?</em></p>
+<ul>
+  <li>&ldquo;The hell&rdquo; is added to WH- questions to express emotion such as anger. &ldquo;To deal with&rdquo; a person is to get involved with them. A &ldquo;bunch&rdquo; is a group or small number, and an &ldquo;asshole&rdquo; is a vulgar insult word for a jerk, ass, creep, idiot, etc.</li>
+</ul>
+<p><em>It was Evelyn Mulwray and she&rsquo;s been paying you off like a <strong>slouch</strong> ever since.</em></p>
+<ul>
+  <li>A &ldquo;slouch&rdquo; is a lazy, incompetent or awkward person.</li>
+</ul>
+<p><em>You accusing me of <strong>extortion</strong>? :: Absolutely.</em></p>
+<ul>
+  <li>&ldquo;Extortion&rdquo; is the criminal act of threatening to hurt somebody unless they do what you want them to do.</li>
+</ul>
+<p><em>You&rsquo;re <strong>dumber</strong> than you think I think you are.</em></p>
+<ul>
+  <li>&ldquo;Dumb&rdquo; is another word for stupid. This is a very clever line.</li>
+</ul>
+<p><em>I wouldn&rsquo;t extort a <strong>nickel</strong> from my worst enemy; That&rsquo;s where I <strong>draw the line</strong>.</em></p>
+<ul>
+  <li>A &ldquo;nickel&rdquo; is a coin that is worth five cents. &ldquo;To draw the line&rdquo; is to set a limit, often involving behavior, which you decide you will not pass.</li>
+</ul>
+<p><em>We&rsquo;re talking about <strong>accessory after the fact</strong>, <strong>conspiracy</strong>, and extortion, minimum.</em></p>
+<ul>
+  <li>&ldquo;Accessory after the fact&rdquo; is a legal term that refers to those actions which help a criminal, after the actual crime has already taken place.</li>
+  <li>&ldquo;Conspiracy&rdquo; is the planning of a crime by two or more people.</li>
+</ul>
+<p><em>Evelyn Mulwray <strong>knocked off</strong> her husband in the ocean and then <strong>dragged</strong> him to the reservoir because she thought it would look more like an accident?</em></p>
+<ul>
+  <li>&ldquo;To knock off&rdquo; a person is a slangy way of saying to kill them.</li>
+  <li>&ldquo;To drag&rdquo; a person is to pull them on the ground, though here it more generally means just to transport or take.</li>
+</ul>
+<p><em>He found out they were <strong>dumping</strong> water there; That&rsquo;s what they were trying <strong>to cover up</strong>.</em></p>
+<ul>
+  <li>Here, &ldquo;to dump&rdquo; water is to quickly get rid of it, and &ldquo;to cover up&rdquo; something is to try and hide it or keep it secret from the public.</li>
+</ul>
+<p><em>Come on, Lou, you&rsquo;re <strong>in charge</strong>. Make a decision.</em></p>
+<ul>
+  <li>If a person is &ldquo;in charge,&rdquo; they are the ones responsible for what happens in an organization.</li>
+</ul>
+<p><em>He says Gittes knows this and he&rsquo;s been going around making irresponsible <strong>accusations</strong> all last week.</em></p>
+<ul>
+  <li>An &ldquo;accusation&rdquo; is an official charge or declaration that somebody is doing something wrong or illegal.</li>
+</ul>
+<p><em>Let&rsquo;s <strong>swear out</strong> a <strong>warrant</strong> for her arrest; What the hell are we waiting for?</em></p>
+<ul>
+  <li>A "warrant for a person's arrest" is an official document signed by a judge that allows the police to arrest a person for a crime (To "swear out" a warrant is to ask a judge for it, but this is no longer used).</li>
+</ul>
+<p><em>He just made lieutenant; He wants to hold on to his little gold bar.</em></p>
+<ul>
+  <li>This is Jake&rsquo;s way of saying Escobar is trying to keep the power he has now that he is high up in the police department.</li>
+</ul>
+<p><em>I&rsquo;ve got you right now for <strong>withholding evidence</strong>.</em></p>
+<ul>
+  <li>&ldquo;To withhold evidence&rdquo; is to try and keep secret any facts or objects that could be used to prove the truth in a criminal trial (Escobar is saying he has enough evidence to charge Jake with withholding evidence, which is itself a crime).</li>
+</ul>
+  <section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Jake learns a terrible truth about Mrs. Mulwray, and some
+  things that are even worse about her very powerful father....</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Saltwater very bad for <strong>glass</strong>.</em></p>
+<ul>
+  <li>Note that the Japanese gardener is saying glass, although what he really means to say is <em>grass</em> (This is a mispronunciation that is most associated with beginning Japanese speakers of English).</li>
+</ul>
+<p><em>You know any good <strong>criminal lawyers</strong>?</em></p>
+<ul>
+  <li>A criminal lawyer is one who specializes in defending people who are accused of a crime (A lawyer who works for the county and defends poor people is called a public defender).</li>
+</ul>
+<p><em>They&rsquo;re expensive, but you can <strong>afford</strong> it.</em></p>
+<ul>
+  <li>To be able to &ldquo;afford&rdquo; something is to have enough money to pay for it and not feel uncomfortable doing it.</li>
+</ul>
+<p><em>I found them in your backyard in the <strong>pond</strong>.</em></p>
+<ul>
+  <li>A &ldquo;pond&rdquo; is a small body of water.</li>
+</ul>
+<p><em>The <strong>coroner&rsquo;s</strong> report shows that he had saltwater in his lungs when he was killed. <strong>Take my word for it</strong>.</em></p>
+<ul>
+  <li>A &ldquo;coroner&rdquo; is a person who deals with dead bodies and analyzes the cause of death (They write brief reports for each body or corpse).</li>
+  <li>&ldquo;Take my word for it&rdquo; is another way of saying &ldquo;Trust me.&rdquo;</li>
+</ul>
+<p><em>I want to know before Escobar gets here because I don&rsquo;t want to lose my <strong>license</strong>.</em></p>
+<ul>
+  <li>Note that detectives, like doctors and lawyers, need an official license from the state in order to practice their profession.</li>
+</ul>
+<p><em>This is the craziest, most <strong>insane</strong> thing!</em></p>
+<ul>
+  <li>Another word for crazy, or in this case, completely ridiculous.</li>
+</ul>
+<p><em>His girl is a <strong>witness</strong>. You had to shut her up.</em></p>
+<ul>
+  <li>A &ldquo;witness&rdquo; is a person who has seen something take place, and who is often called to officially say what they saw in a court of law.</li>
+</ul>
+<p><em>You don&rsquo;t have the <strong>guts</strong> <strong>to harm</strong> her, but you got the money to keep her mouth shut.</em></p>
+<ul>
+  <li>If a person has the &ldquo;guts&rdquo; to do something, they have the courage to do it (Literally, guts are stomach intestines).</li>
+  <li>&ldquo;To harm&rdquo; a person is to physically or emotionally hurt them.</li>
+</ul>
+<p><em>Who is she? And don&rsquo;t give me that <strong>crap</strong> about a sister because you don&rsquo;t have a sister.</em></p>
+<ul>
+  <li>&ldquo;Crap&rdquo; is a vulgar word for excrement or shit, or more generally, as here, nonsense or lies (A good alternative to bullshit).</li>
+</ul>
+<p><em><strong>For God&rsquo;s sake</strong>, keep her upstairs. Go back!</em></p>
+<ul>
+  <li>A common way to express emotion such as frustration, or possibly an emotional way of saying please.</li>
+</ul>
+<p><em>Understand? Or is it too <strong>tough</strong> for you?</em></p>
+<ul>
+  <li>In this case, &ldquo;tough&rdquo; is a good alternative to difficult.</li>
+</ul>
+<p><em>I <strong>ran away</strong>. Hollis came and took care of me.</em></p>
+<ul>
+  <li>If a child (or wife) &ldquo;runs away from home,&rdquo; they often leave in anger for days or more, usually causing great worry back at their house.</li>
+</ul>
+<p><em>You better just get out of here. Leave all this <strong>stuff</strong> here.</em></p>
+<ul>
+  <li>An important word for things in general.</li>
+</ul>
+<p><em>He didn&rsquo;t wear <strong>bifocals</strong>.</em></p>
+<ul>
+  <li>An educated word for reading glasses.</li>
+</ul>
+<p><em>Listen pal, Escobar is going to try and <strong>book me</strong> in about 5 minutes.</em></p>
+<ul>
+  <li>&ldquo;To book&rdquo; a person is a colloquial way of saying to arrest them for having allegedly committed a crime.</li>
+</ul>
+<p><em>What the hell is the matter?</em></p>
+<ul>
+  <li>A slangy way of asking &ldquo;What&rsquo;s wrong?&rdquo;</li>
+</ul>
+<p><em>Looks like we&rsquo;re both too late. She <strong>flew the coop</strong>.</em></p>
+<ul>
+  <li>A dated way of saying to leave quickly or escape.</li>
+</ul>
+<p><em>She went to her maid&rsquo;s house. She knows <strong>something&rsquo;s up</strong>.</em></p>
+<ul>
+  <li>If you say &ldquo;something is up,&rdquo; you are saying something important is probably happening, but it&rsquo;s not clear what.</li>
+</ul>
+<p><em>If she <strong>ain&rsquo;t</strong> there, you&rsquo;re going downtown and you&rsquo;re going to stay there until she does <strong>show up</strong>.</em></p>
+<ul>
+  <li>&ldquo;Ain&rsquo;t&rdquo; is a common but very incorrect conjugation of &ldquo;to be&rdquo; (Here, you should say isn&rsquo;t).</li>
+  <li>&ldquo;To show up&rdquo; is to arrive, often unexpectedly.</li>
+</ul>
+<p><em>Just sitting down to <strong>supper</strong>. Care to join us?</em></p>
+<ul>
+  <li>&ldquo;Supper&rdquo; is a somewhat dated word for dinner. Note that the next sentence is very elliptical, dropping the &ldquo;Would you&rdquo; at the beginning.</li>
+</ul>
+<p><em>Where&rsquo;s that? :: In the garage, <strong>off</strong> the <strong>alley</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;off&rdquo; is a preposition that means next to, or by. An &ldquo;alley&rdquo; is a narrow road that is often found between houses or other buildings.</li>
+</ul>
+<p><em>Curly, can you <strong>give me a ride</strong> somewhere?</em></p>
+<ul>
+  <li>&ldquo;To give a person a ride&rdquo; is to transport them in your car.</li>
+</ul>
+<p><em>How would you like to <strong>pay me off</strong> by taking a couple of passengers to <strong>Ensenada</strong>?</em></p>
+<ul>
+  <li>In this case, &ldquo;to pay off&rdquo; a person is to pay a debt that is owed by doing a favor (instead of paying it in cash).</li>
+  <li>"Ensenada" is a small town in Mexico, just across the border.</li>
+</ul>
+<p><em>I might be able to <strong>squeeze</strong> 75 <strong>bucks</strong> out of it for you.</em></p>
+<ul>
+  <li>"To squeeze several dollars out of it" is to manage to get that much money together, even if it is difficult.</li>
+  <li>A "buck" is an extremely common word for a dollar.</li>
+</ul>
+<p><em>Plus what I owe? :: I&rsquo;ll <strong>throw that in</strong>, too.</em></p>
+<ul>
+  <li>&ldquo;To throw in&rdquo; an extra something into a deal is to include it.</li>
+</ul>
+<p><em>I&rsquo;ve got the girls. Do you remember the <strong>figures</strong> we&rsquo;ve discussed?</em></p>
+<ul>
+  <li>In this context, &ldquo;figures&rdquo; are numbers (to be paid for services).</li>
+</ul>
+<p><em>Well, you don&rsquo;t look too much <strong>the worse for wear</strong>, Mr. Gittes.</em></p>
+<ul>
+  <li>If a person &ldquo;looks the worse for wear,&rdquo; they look bad or tired because of all the difficulties they have experienced.</li>
+</ul>
+<p><em>What is it? An <strong>obituary column</strong>.</em></p>
+<ul>
+  <li>A list of people who have just died, found in the daily newspaper.</li>
+</ul>
+<p><em>Can you see alright in this light? :: I guess I can <strong>manage</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;to manage&rdquo; is to get by or survive OK.</li>
+</ul>
+<p><em>Hollis was always <strong>fascinated by</strong> <strong>tide ponds</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;fascinated by&rdquo; something, they are very interested in it.</li>
+  <li>&ldquo;Tide ponds&rdquo; are puddles of water on the beach that form after the tide comes in every day (The tide is the daily rising and lowering of ocean water on the beach or coast).</li>
+</ul>
+<p><em>You know what he used to say? :: I haven&rsquo;t <strong>the faintest idea</strong>.</em></p>
+<ul>
+  <li>If a person doesn&rsquo;t have &ldquo;the faintest idea,&rdquo; they do not know at all.</li>
+</ul>
+<p><em>That&rsquo;s where life begins. The <strong>sloughs</strong>, tide pools.</em></p>
+<ul>
+  <li>A &ldquo;slough&rdquo; is a very muddy area or small, muddy river.</li>
+</ul>
+<p><em>He <strong>figured</strong> if you dumped water into the desert sand and let it <strong>percolate</strong> down to the <strong>bedrock</strong>, it would stay there&hellip;..</em></p>
+<ul>
+  <li>&ldquo;To figure&rdquo; is a colloquial and common way of saying to think.</li>
+  <li>&ldquo;To percolate&rdquo; is to pass through a substance with tiny holes.</li>
+  <li>&ldquo;Bedrock&rdquo; is a type of hard rock found in the earth.</li>
+</ul>
+<p><em>&hellip;&hellip;instead of </em>evaporate<em> the way it does in most reservoirs.</em></p>
+<ul>
+  <li>If a liquid &ldquo;evaporates,&rdquo; it turns into vapor or steam after being heated.</li>
+</ul>
+<p><em>When the <strong>bond issue</strong> passes Tuesday, they&rsquo;ll be $8,000,000 to build an <strong>aqueduct</strong> to the reservoir.</em></p>
+<ul>
+  <li>A &ldquo;bond issue&rdquo; is the raising of money through the selling of bonds that is passed by local voters (A bond is a loan from a business or government). An &ldquo;aqueduct&rdquo; is a canal for carrying a lot of water.</li>
+</ul>
+<p><em>They&rsquo;ll be a lot of <strong>irate</strong> citizens when they find out they&rsquo;re paying for water they&rsquo;re not going to get.</em></p>
+<ul>
+  <li>A person who is &ldquo;irate&rdquo; is extremely angry.</li>
+</ul>
+<p><em>You see, Mr. Gittes, you bring the water to LA., or you bring LA to the water.</em></p>
+<ul>
+  <li>This is Noah&rsquo;s way of saying that the city of LA will soon expand into the San Fernando Valley.</li>
+</ul>
+<p><em>How are you going to do that? :: By <strong>incorporating</strong> the Valley into the city.</em></p>
+<ul>
+  <li>&ldquo;To incorporate&rdquo; an area into a city is to legally make it part of that city.</li>
+</ul>
+<p><em><strong>How much are you worth</strong>? :: I have no idea.</em></p>
+<ul>
+  <li>This question is the simplest way to ask a person the value of everything that they own.</li>
+</ul>
+<p><em>I want the only girl I&rsquo;ve got left. As you found out, Evelyn was lost to me a long time ago.</em></p>
+<ul>
+  <li>This is Noah&rsquo;s way of saying he no longer has any relationship with Evelyn.</li>
+</ul>
+<p><em>Most people never have <strong>to face</strong> the fact that at the right time and the right place, they&rsquo;re <strong>capable</strong> of anything.</em></p>
+<ul>
+  <li>&ldquo;To face&rdquo; something is to accept it or deal with it seriously.</li>
+  <li>If a person is &ldquo;capable&rdquo; of doing something, they have the ability to do it.</li>
+</ul>
+<p><em>Mr. Cross, these are my <strong>associates</strong>.</em></p>
+<ul>
+  <li>Another word for work partners.</li>
+</ul>
+<p><em>You&rsquo;re under arrest, Jake. <strong>Withholding evidence, extortion, accessory after the fact</strong>.</em></p>
+<ul>
+  <li>Three serious crimes: Hiding facts or information that could be used in a trial, threatening to harm somebody if they do not do what you tell them, and assisting criminals who have already committed a crime.</li>
+</ul>
+<p><em>This is Evelyn&rsquo;s father; He&rsquo;s the <strong>bird</strong> you&rsquo;re after.</em></p>
+<ul>
+  <li>Here, a &ldquo;bird&rdquo; is a person, but this word is rarely if ever used that way.</li>
+</ul>
+<p><em>He&rsquo;s rich! He thinks he can <strong>get away with</strong> anything!</em></p>
+<ul>
+  <li>&ldquo;To get away with&rdquo; something illegal is to do it without being caught or punished for having done it.</li>
+</ul>
+<p><em>If you don&rsquo;t shut up, I&rsquo;ll <strong>lock you</strong> to the wheel of that car.</em></p>
+<ul>
+  <li>&ldquo;To lock&rdquo; a person to something is to chain or tie them to it.</li>
+</ul>
+<p><em>Evelyn, you&rsquo;re a <strong>disturbed</strong> woman and you cannot provide&hellip;</em></p>
+<ul>
+  <li>If a person is &ldquo;disturbed,&rdquo; they are emotionally upset or unstable.</li>
+</ul>
+<p><em>Let the police handle this. :: He <strong>owns</strong> the police!</em></p>
+<ul>
+  <li>The second sentence is Evelyn&rsquo;s way of saying both how corrupt and powerful her father is.</li>
+</ul>
+<p><em>Halt!</em></p>
+<ul>
+  <li>A dramatic way of saying &ldquo;Stop!&rdquo;</li>
+</ul>
+<p><em>Turn them all loose!</em></p>
+<ul>
+  <li>&ldquo;To turn a person loose&rdquo; is to let them go free.</li>
+</ul>
+<p><em>Clear the area! On the sidewalk!</em></p>
+<ul>
+  <li>When the police &ldquo;clear&rdquo; a place, they force people to leave it.</li>
+</ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. Is Jake an admirable character? Is he cool?</p>
+  <p>2. Would you want to be a private detective?</p>
+  <p>3. How much corruption is there in the city where you live?</p>
+  <p>4. What were the most shocking parts of the film?</p>
+  <p>5. What’s your impression of LA today?</p>
+  <p>6. Were you disappointed by the ending?</p>
+  <p>7. What did you like and dislike about this movie?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>

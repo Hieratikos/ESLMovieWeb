@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html>
+<title>The Manchurian Candidate</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
+  <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script async type="text/javascript" src="bootstrap.min.js"></script>
+<style>
+/* light-blue theme from lightest to darkest */
+.w3-theme-l5 {color:#000 !important; background-color:#fff4e8 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ffd9b4 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#ffb468 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#ff8e1d !important}
+.w3-theme-l1 {color:#fff !important; background-color:#d06800 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#773c00 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#6a3500 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#5d2e00 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#502800 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#422100 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#fff4e8 !important}
+.w3-theme-dark {color:#fff !important; background-color:#422100 !important}
+.w3-theme-action {color:#fff !important; background-color:#422100 !important}
+
+.w3-theme {color:#fff !important; background-color:#854200 !important}
+.w3-text-theme {color:#854200 !important}
+.w3-border-theme {border-color:#854200 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#854200 !important}
+.w3-hover-text-theme {color:#854200 !important}
+.w3-hover-border-theme:hover {border-color:#854200 !important}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: none;
+}
+td,th{
+  font-size: small;
+  font-weight: bold;
+  border: 1px;
+  border-style: solid;
+  border-color: #d06800;
+  width: 50%;
+}
+section {
+padding-top:52px;
+}
+.navbar{
+  border-color:#d06800;
+}
+</style>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</head>
+<body class="fullPage" style="border:1px solid #d06800">
+<nav class="navbar navbar-fixed-top" role="navigation">
+
+  <!-- Sidebar Navigation-->
+  <div class="w3-sidebar w3-bar-block w3-animate-left w3-theme-dark" style="display:none;z-index:5" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-mobile w3-hover-theme" onclick="w3_close()">Close &times;</button>
+    <a href="#top" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Top</a>
+    <a href="#characters" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Major Characters</a>
+    <a href="#plot" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Plot Summary</a>
+    <a href="#part1" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 1</a>
+    <a href="#part2" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 2</a>
+    <a href="#part3" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 3</a>
+    <a href="#part4" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 4</a>
+    <a href="#part5" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 5</a>
+    <a href="#part6" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 6</a>
+    <a href="#part7" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Part 7</a>
+    <a href="#discussion" class="w3-bar-item w3-button w3-mobile w3-hover-theme">Class Discussion</a>
+  </div>
+  <!-- Page Content for Sidebar -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-theme">
+  <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+</nav>
+<section id="top"></section>
+<header class="w3-container w3-card-4 w3-theme">
+  <h1 style="text-align:center">The Manchurian Candidate</h1>
+</header>
+
+<div class="w3-row w3-theme">
+  <div class="w3-col s3">
+    <img id="myImg" src="images/Manchurian.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
+</div>
+  <div class="w3-col s9" style="text-align:center">
+    A former prisoner of war is brainwashed as an unwitting assassin for an international Communist conspiracy.
+  </div>
+</div>
+
+<div class="w3-row w3-text-theme">
+  <div class="w3-col w3-small s12 w3-center"><br>
+    PG-13 | 2 hrs 6 min | Drama, Thriller | 1962
+  </div>
+</div>
+<hr>
+<div class="w3-row">
+  <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+  <section id="characters"></section>
+  <thead>
+  <tr class="w3-theme">
+    <th>Major Characters</th><th>Played By</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Raymond Shaw</td><td>Laurence Harvey</td>
+  </tr>
+  <tr>
+    <td colspan="2">A soldier in the US army who is captured during the Korean War (1950-1953),
+        who is later celebrated as an American war hero for having helped himself and his fellow
+        soldiers to escape from the enemy.</td>
+  </tr>
+  <tr>
+    <td>Major Bennett Marco</td><td>Frank Sinatra</td>
+  </tr>
+  <tr>
+    <td colspan="2">Raymond’s commanding officer who had recommended that he receive the Congressional
+        Medal of Honor, but who slowly becomes convinced that Raymond was not the hero that he and
+        others had thought he was.</td>
+  </tr>
+  <tr>
+    <td>Mrs. Eleanor Shaw Iselin</td><td>Angela Lansbury</td>
+  </tr>
+  <tr>
+    <td colspan="2">Raymond’s mom, a manipulative and deceitful person, who will do anything for more political power.</td>
+  </tr>
+  <tr>
+    <td>Senator John Iselin</td><td>James Gregory</td>
+  </tr>
+  <tr>
+    <td colspan="2">Raymond’s step-father, a dim-witted pawn for Raymond's mom, who spends
+        much of his time creating conspiracies about communists in the US government. (He resembles the real
+        Senator Joe McCarthy of Wisconsin).</td>
+  </tr>
+  <tr>
+    <td>Eugenie Rose Chaney</td><td>Janet Leigh</td>
+  </tr>
+  <tr>
+    <td colspan="2">A somewhat mysterious young woman whom Marco meets and soon falls in love with.</td>
+  </tr>
+    <tr>
+        <td>Senator Thomas Jordan</td><td>John McGiver</td>
+    </tr>
+    <tr>
+        <td colspan="2">A decent and conscientious Senator who is a political rival of Senator Iselin.</td>
+    </tr>
+    <tr>
+        <td>Jocelyn Jordan</td><td>Leslie Parrish</td>
+    </tr>
+    <tr>
+        <td colspan="2">Senator Jordan’s beautiful young daughter, whom Raymond has loved since the first time they met.</td>
+    </tr>
+    <tr>
+        <td>Dr. Yen Lo</td><td>Khigh Dhiegh</td>
+    </tr>
+    <tr>
+        <td colspan="2">The evil (but somewhat comical) Chinese spy who is in charge of brainwashing Raymond, Marco and the other
+            American soldiers who were captured during the war.</td>
+    </tr>
+    <tr>
+        <td>Chunjin</td><td>Henry Silva</td>
+    </tr>
+    <tr>
+        <td colspan="2">A US Army Korean translator, who is actually a Chinese spy, who returns to the US after
+            the war in order to work for Raymond as a steward (cleaner, cook, driver, etc.)</td>
+    </tr>
+</table>
+  </div>
+</div>
+<p>
+  <section id="plot"></section>
+<div class="w3-container w3-theme">
+    <h1 style="text-align:center">Plot Summary</h1>
+  </div>
+<div class="w3-container">
+  <p><p>
+    This is a classic film, and a great reflection of the anxiety-filled times in which
+    it was produced. It is the story of a group of American soldiers who are captured
+    during the Korean War, and secretly taken to Manchuria, China. There, they are
+    brainwashed by a group of communist Chinese officials, who have learned the latest
+    in mind control, the subconscious, and modern psychology from their Russian allies.
+    After just a few days, the soldiers are released, but because of the brainwashing,
+    they mistakenly believe that they had escaped in a hard fought battle and that Raymond
+    was the hero who was most responsible for their freedom.
+<p>
+    In reality, all of them had been drugged and psychologically manipulated before being
+    released, and Raymond in particular had been chosen to later serve as a spy for his
+    Chinese and Russian “bosses.” Of course, because nobody knows when they’ve been brainwashed,
+    Raymond is totally unaware of what he is doing and how he is being used. Thus, he comes
+    home as part American war hero and part communist robot.
+<p>
+    In the years after the war, Major Marco begins to have the same nightmare about his experience
+    in Korea, and  he slowly realizes that in fact, Raymond is not a real war hero; he is a brainwashed
+    communist killer who is not aware of his own actions. Nobody in the army seems to believe Marco,
+    but as other soldiers soon tell of the same nightmares and confused memories, it gradually becomes
+    clear that something terrible is happening, and that in fact, Raymond’s Chinese and Russian controllers
+    are going to use him to not only spy, but to do everything they can to take control of the American government.
+<p>
+    <em><strong>Some Brief background about the Korean War and the Cold War:</strong></em>  The Korean War was fought between 1950 and 1953,
+    and it was the first major battle between the American lead capitalist West and the Russian lead communists.
+    The communist Chinese fought actively on the side of the communist North Koreans, and the Americans had entered
+    the war in defense of the South Koreans. In this film, the Chinese take the Americans prisoner and send
+    them to Manchuria in order to be brainwashed (Manchuria is a large province in Northern China).
+    <p>
+    For this film, more important than the Korean War is the presence of the <a href="https://en.wikipedia.org/wiki/Cold_War">Cold War</a>,
+    the great battle for influence and power in the world,  between the capitalist United States and the communist Soviet Union. In the 1950s, many
+    Americans were convinced that communists were everywhere within the US government, and some politicians (especially
+    <a href="https://en.wikipedia.org/wiki/Joseph_McCarthy" target="_blank">Senator Joe McCarthy</a>) built their entire
+    careers on scaring people into such a belief. These conspiracy theories destroyed many peoples' lives, and it is
+  within this historical context that The Manchurian Candidate was made, and ultimately, the film itself is a great
+  reflection of America’s greatest fears during those tense Cold War years.
+</div>
+<div class="w3-row">
+<div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
+<table class="w3-table-all w3-card-4 w3-tiny">
+    <thead>
+    <tr class="w3-theme">
+        <th>Army Enlisted Ranks</th><th>Army Officer Ranks</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+        <td>Sergeant Major</td><td>General</td>
+    </tr>
+    <tr>
+      <td>First Sergeant</td><td>Lieutenant General</td>
+    </tr>
+    <tr>
+      <td>Master Sergeant</td><td>Major General</td>
+    </tr>
+    <tr>
+      <td>Sergeant First Class</td><td>Brigadier General</td>
+    </tr>
+    <tr>
+      <td>Staff Sergeant</td><td>Colonel</td>
+    </tr>
+    <tr>
+      <td>Sergeant</td><td>Major</td>
+    </tr>
+    <tr>
+      <td>Corporal</td><td>Captain</td>
+    </tr>
+    <tr>
+      <td>Private</td><td>Lieutenant</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<p>
+<section id="part1"></section>
+  <div class="w3-row">
+  <div class="w3-col s2"><p></p></div>
+  <div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Raymond Shaw returns from Korea as a decorated war hero.</h4></div>
+  <div class="w3-col s2"><p></p></div>
+  </div>
+<p>
+  <p><strong>New Words and Expressions:</strong></p>
+  <p></p>
+<p><em><strong>Come on</strong>, <strong>Sarge</strong>, Gertrude'll buy you a beer.</em></p>
+<ul>
+  <li>&ldquo;Come on&rdquo; is the most versatile phrasal verb in all of English, meaning everything from hurry up to, as in this case, be reasonable. &ldquo;Sarge&rdquo; is short for Sergeant, which is a mid-level enlisted rank in the US Army.</li>
+</ul>
+<p><em>What&rsquo;s so bad about it? :: <strong>Tricky</strong>. <strong>Swamp</strong> all around.</em></p>
+<ul>
+  <li>If a situation is &ldquo;tricky,&rdquo; it is difficult or possibly dangerous. A &ldquo;swamp&rdquo; is a wetland covered by water, grasses and woody vegetation.</li>
+</ul>
+<p><em>Nobody said anything about <strong>quicksand</strong>.</em></p>
+<ul>
+  <li>A type of loose sand in which anything that goes on it starts to sink into it.</li>
+</ul>
+<p><em>The next 200 <strong>yards</strong>. :: Reject. It&rsquo;s not <strong>tactical</strong> to travel forward in a single line.</em></p>
+<ul>
+  <li>A &ldquo;yard&rdquo; is a unit of measurement about three feet long. If something is &ldquo;tactical,&rdquo; it is thought to help advance a general plan or larger purpose.</li>
+</ul>
+<p><em>Ok, <strong>pass the word</strong>.</em></p>
+<ul>
+  <li>One way of saying &ldquo;tell other people.&rdquo;</li>
+</ul>
+<p><em>The nation jealously guards its highest award for <strong>valor</strong>; The Congressional Medal of Honor.</em></p>
+<ul>
+  <li>A powerful word meaning great bravery or courage.</li>
+</ul>
+<p><em>With 5,770,000 men <strong>engaged</strong>, only 77 men were so honored.</em></p>
+<ul>
+  <li>In this case, &ldquo;engaged&rdquo; means actively involved in (of the millions who served in the military during the Korean War, 77 won the Congressional Medal of Honor--about 1.8 million people served "in theater", which means to be actually in the area of war operations).</li>
+</ul>
+<p><em><strong>Staff Sergeant</strong> Raymond Shaw&hellip;was flown from <strong>combat</strong> directly to Washington D.C., to be <strong>decorated</strong> personally by the President of the United States.</em></p>
+<ul>
+  <li>A &ldquo;staff sergeant&rdquo; is a mid-level enlisted rank in the Army. &ldquo;Combat&rdquo; refers to the actual fighting during a war. To be "decorated" in the military means to be given a medal.</li>
+</ul>
+<p><em>The presence of any Medal of Honor winner is <strong>sufficient</strong> to bring <strong>Generals</strong> to their feet, <strong>saluting</strong>.</em></p>
+<ul>
+  <li>If something is &ldquo;sufficient,&rdquo; it is just enough for what is needed. A &ldquo;General&rdquo; is the highest officer rank of the Army, and &ldquo;to salute&rdquo; is to bring your hand to your forehead while addressing a superior or someone in the military.</li>
+</ul>
+<p><em>Senator, how about a <strong>statement</strong>?</em></p>
+<ul>
+  <li>An important word for an official remark or declaration, often made to the news media.</li>
+</ul>
+<p><em>The Senator is Raymond&rsquo;s <strong>step-father</strong>.</em></p>
+<ul>
+  <li>Your step-father is the husband of your mom, but not your own father.</li>
+</ul>
+<p><em>You organized this <strong>three ring circus</strong>.</em></p>
+<ul>
+  <li>Literally, a giant circus with three large tents, but more generally, any planned event that is considered ridiculous, often because it is a huge waste of money and time.</li>
+</ul>
+<p><em>You&rsquo;ve been a <strong>mess</strong> the last few months.</em></p>
+<ul>
+  <li>If a person is a &ldquo;mess,&rdquo; they are usually in very bad physical or emotional state, or having great trouble just taking care of themselves.</li>
+</ul>
+<p><em>Say &lsquo;<strong>cheese</strong>.&rsquo;</em></p>
+<ul>
+  <li>The one word that people are supposed to say when their picture is being taken so that it will look as if they are smiling.</li>
+</ul>
+<p><em>Why, you <strong>publicity sick</strong>&hellip;.<strong>boob</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;publicity sick,&rdquo; they desperately want to be in the news. A &ldquo;boob&rdquo; is a slang word for a stupid person (and for a female breast).</li>
+</ul>
+<p><em>Who&rsquo;s kidding who?</em></p>
+<ul>
+  <li>One way of saying that no one really believes what is being said.</li>
+</ul>
+<p><em>You&rsquo;ve got it all <strong>figured out</strong>, haven&rsquo;t you?</em></p>
+<ul>
+  <li>&ldquo;To figure out&rdquo; a problem is to find the solution to it, usually after thinking about it quite seriously.</li>
+</ul>
+<p><em>His <strong>citation</strong>, <strong>attested to</strong> by his <strong>commanding officer</strong>, Captain Bennett Marco, and the nine surviving members of his <strong>patrol</strong>, read in part&hellip;</em></p>
+<ul>
+  <li>In this case, a &ldquo;citation&rdquo; is an official statement of respect for having done something brave, and if a statement is &ldquo;attested to&rdquo; by someone, it is claimed to be true by them. A soldier&rsquo;s &ldquo;commanding officer&rdquo; is the leader who is in charge of them, and a &ldquo;patrol&rdquo; is a group of soldiers.</li>
+</ul>
+<p><em>&hellip;.<strong>Displaying valor</strong> beyond the <strong>call of duty</strong>, did <strong>single handedly</strong> save the lives of nine members of his patrol, capturing an enemy machine <strong>gun nest</strong>&hellip;</em></p>
+<ul>
+  <li>&ldquo;To display valor&rdquo; is to show great courage. &ldquo;The call of duty&rdquo; is an official way of referring to what is expected of a person in a particular job or position. To do something &ldquo;single-handedly&rdquo; is to do it without the help of others, and a &ldquo;gun nest&rdquo; of enemy soldiers is a group of them in an armed, defended location.</li>
+</ul>
+<p><em>&hellip;and <strong>taking out</strong> in the process a full company of enemy <strong>infantry</strong>.&rdquo;</em></p>
+<ul>
+  <li>In this case, &ldquo;to take out&rdquo; a group of enemy soldiers is to kill them, and &ldquo;infantry&rdquo; is a military word for any solider who fights on foot.</li>
+</ul>
+<p><em>He then <strong>proceeded to</strong> lead his patrol, which had been listed as <strong>missing&nbsp;in action</strong> for three days, back through the <strong>enemy lines</strong> to safety.</em></p>
+<ul>
+  <li>&ldquo;To proceed to&rdquo; do something is to start to do it. If a solider is &ldquo;missing in action,&rdquo; they cannot be found, and may be dead or taken prisoner. &ldquo;Enemy lines&rdquo; refers to the farthest advance that enemy soldiers have made into an area of land.</li>
+</ul>
+<p><em>Anything to take the pain out of <strong>campaigning</strong>.</em></p>
+<ul>
+  <li>In a political context, &ldquo;to campaign&rdquo; is to endlessly travel around making speeches, trying to get voters to voter for you.</li>
+</ul>
+<p><em>He&rsquo;s not a <strong>communist</strong>, mother. As a matter of fact, he&rsquo;s a <strong>Republican</strong>.</em></p>
+<ul>
+  <li>In this film, a &ldquo;communist&rdquo; is a believer in the political system of the old Soviet Union and China during the Cold War. A &ldquo;Republican&rdquo; is a member of the Republican Party, which generally speaking, is and was more anti-Communist and conservative than the Democratic party.</li>
+</ul>
+<p><em>What could you possibly have in common with that <strong>dreadful</strong> old man?</em></p>
+<ul>
+  <li>An excellent word for awful, horrible or totally depressing.</li>
+</ul>
+<p><em>For one thing, we discovered that we both <strong>loath</strong> and <strong>despise</strong> you and Johnny.</em></p>
+<ul>
+  <li>&ldquo;To loath&rdquo; a person is to hate them with great passion or anger. &ldquo;To despise&rdquo; means the same thing as to loath, though it&rsquo;s more common.</li>
+</ul>
+<p>
+  <section id="part2"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Major Marco is haunted by nightmares of Korea and Raymond’s actions
+  while there, and soon Marco is transferred to a public relations job.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+</p>
+<p><em>The war in Korea was over. <strong>Captain</strong>, now <strong>Major</strong> Bennett Marco, had been <strong>reassigned</strong> to <strong>Army intelligence</strong> in Washington.</em></p>
+<ul>
+  <li>&ldquo;Captain&rdquo; and &ldquo;Major&rdquo; are two ranks or levels of position in the military. &ldquo;To reassign&rdquo; a person is to place them in another job (which in this case is in another place). &ldquo;Army intelligence&rdquo; refers to that part of the army responsible for spying and collecting information on others.</li>
+</ul>
+<p><em>It was, <strong>by and large</strong>, a <strong>pleasant</strong> assignment.</em></p>
+<ul>
+  <li>&ldquo;By and large&rdquo; means generally speaking, and if something is &ldquo;pleasant,&rdquo; it is enjoyable or pleasing.</li>
+</ul>
+<p><em>Night after night, the major was <strong>plagued</strong> by the same <strong>recurring</strong> nightmare.</em></p>
+<ul>
+  <li>If a person is &ldquo;plagued&rdquo; by something, they are greatly worried or disturbed by it. If a nightmare is &ldquo;recurring,&rdquo; it happens over and over.</li>
+</ul>
+<p><em>I noticed <strong>magnificent hydrangeas</strong> on the hills, where the <strong>drainage</strong> was perfect, and very poor <strong>specimens</strong> or perhaps nothing at all in the valleys.</em></p>
+<ul>
+  <li>&ldquo;Magnificent&rdquo; is an alternative to wonderful or splendid. &ldquo;Hydrangeas&rdquo; are a type of plant, &ldquo;drainage&rdquo; is the ability of water to flow away, and &ldquo;specimen&rdquo; is a scientific word for a single animal or plant that belongs to a larger group or classification.</li>
+</ul>
+<p><em>Thus it was the hydrangea that gave the first <strong>pointer</strong> in another discovery of <strong>horticultural</strong> importance.</em></p>
+<ul>
+  <li>A &ldquo;pointer&rdquo; is a clue, or a small amount of information that serves to instruct. &ldquo;Horticulture&rdquo; refers to the study of plants and gardening.</li>
+</ul>
+<p><em>A number of varieties originally found in Japan, not all of which, of course, have the same <strong>characteristics</strong>.</em></p>
+<ul>
+  <li>A &ldquo;characteristic&rdquo; refers to a quality, such as, in this case, the ability to live a long time without water.</li>
+</ul>
+<p><em>Allow me to introduce our American visitors&mdash;I must ask you to forgive their somewhat <strong>lackadaisical manner</strong>.</em></p>
+<ul>
+  <li>If a person has a &ldquo;lackadaisical manner,&rdquo; they have no real energy, passion or spirit.</li>
+</ul>
+<p><em>I have <strong>conditioned</strong> them, or <strong>brainwashed</strong> them, which I understand is the new American word.</em></p>
+<ul>
+  <li>&ldquo;To condition&rdquo; a person is to train or teach them to respond in a certain way to certain situations. &ldquo;To brainwash&rdquo; is a very powerful verb which means to use psychological means to totally change the way a person thinks, so that they will accept things they wouldn&rsquo;t normally (such as a new religion or philosophy) and do things that they may not even be aware that they are doing. A critical verb for this film.</li>
+</ul>
+<p><em>They believe they are <strong>waiting out</strong> a storm in the <strong>lobby</strong> of a small hotel in New Jersey, where a meeting of the Ladies Garden Club is in progress.</em></p>
+<ul>
+  <li>&ldquo;To wait out&rdquo; a storm is to wait for it to end. &ldquo;The lobby&rdquo; of a hotel is the open hallway or large room where guests often check in.</li>
+</ul>
+<p><em>I&rsquo;ve allowed my people to have a little fun in the selection of <strong>bizarre</strong> <strong>tobacco</strong> substitutes.</em></p>
+<ul>
+  <li>&ldquo;Bizarre&rdquo; means very strange or odd. &ldquo;Tobacco&rdquo; is the plant used to make cigarettes, and thus this may be a reference to drugs like marijuana.</li>
+</ul>
+<p><em>Now then, <strong>comrades</strong>.</em></p>
+<ul>
+  <li>A word popular among communists that basically meant fellow citizen.</li>
+</ul>
+<p><em>You&rsquo;ve flown 8,000 miles to a <strong>dreary</strong> spot in <strong>Manchuria</strong>.</em></p>
+<ul>
+  <li>A good word for gray and depressing. Manchuria is a province in Northern China.</li>
+</ul>
+<p><em>I&rsquo;m sure you&rsquo;ve all heard the <strong>old wives tale</strong> that no <strong>hypnotized subject</strong> may be forced to do that which is <strong>repellant</strong> to his <strong>moral nature</strong>.</em></p>
+<ul>
+  <li>An &ldquo;old wives tale&rdquo; is a generally believed fact or story that is not true. If a person is &ldquo;hypnotized,&rdquo; they are put in a type of subconscious state where they could become easily influenced to do things they wouldn&rsquo;t normally do. A &ldquo;subject&rdquo; is a person in an experiment. If something is &ldquo;repellant,&rdquo; it is disgusting or very disagreeable, and a person&rsquo;s &ldquo;moral nature&rdquo; is a way of referring to what they believe to be right and wrong.</li>
+</ul>
+<p><em>You note takers might&hellip;.<strong>consult</strong> Brennan&rsquo;s paper &ldquo;Experiments in the Hypnotic Production of Anti-Social and <strong>Self-Injurious</strong>&nbsp;Behavior.&rdquo;</em></p>
+<ul>
+  <li>&ldquo;To consult&rdquo; an academic paper is to read or study it. If a person&rsquo;s behavior is &ldquo;self-injurious,&rdquo; they are hurting or harming themselves.</li>
+</ul>
+<p><em>If it offends you, only <strong>the West</strong> is working to <strong>manufacture</strong> more crime and better criminals.</em></p>
+<ul>
+  <li>In the context of the Cold War, &ldquo;the West&rdquo; generally referred to the US and its European allies, and &ldquo;to manufacture&rdquo; means to produce or create.</li>
+</ul>
+<p><em>My dear Yen, as you grow older, you grow more <strong>long-winded</strong>&mdash;Can&rsquo;t we <strong>get to the point</strong>?</em></p>
+<ul>
+  <li>If a person is &ldquo;long-winded,&rdquo; they tend to talk on and on. If a person &ldquo;gets to the point,&rdquo; they say exactly what it is they are trying to communicate, rather than talking in stories or analogies.</li>
+</ul>
+<p><em>I keep forgetting&hellip;your <strong>attention span</strong> is limited.</em></p>
+<ul>
+  <li>A person&rsquo;s &ldquo;attention span&rdquo; refers to the maximum amount of time they are able to concentrate on one thing. Yen is basically calling the complainer a stupid person.</li>
+</ul>
+<p><em>Raymond has been a <strong>crack shot</strong> since childhood.:: <strong>Marvelous outlet</strong> for his aggression.</em></p>
+<ul>
+  <li>A &ldquo;crack shot&rdquo; is a person who is able to shoot a gun with great accuracy. &ldquo;Marvelous&rdquo; is another word for wonderful or great, and an &ldquo;outlet&rdquo; is an opening through which something, such an anger, can be let out.</li>
+</ul>
+<p><em>May I have the <strong>bayonet</strong> please?</em></p>
+<ul>
+  <li>A large steel blade, frequently attached to the end of a rifle for close-quarters combat.</li>
+</ul>
+<p><em>You notice that he is always <strong>drawn to authority</strong>?</em></p>
+<ul>
+  <li>If a person is &ldquo;drawn to authority,&rdquo; they&rsquo;re attracted to powerful people.</li>
+</ul>
+<p><em>Now then Raymond, take this <strong>scarf</strong> and <strong>strangle</strong> Ed Malvole.</em></p>
+<ul>
+  <li>A &ldquo;scarf&rdquo; is a cloth worn around one&rsquo;s head or neck. "To strangle&rdquo; a person is to choke them, or violently cut off their air supply, perhaps by squeezing on their neck.</li>
+</ul>
+<p><em>Hey, Sarge, <strong>cut it out</strong>! :: Quiet, Ed!</em></p>
+<ul>
+  <li>An excellent colloquial expression which means &ldquo;Stop it.&rdquo;</li>
+</ul>
+<p><em>Doesn&rsquo;t it <strong>strike</strong> anyone as <strong>curious</strong> that Malvole was one of the two men lost in action?</em></p>
+<ul>
+  <li>If something &ldquo;strikes a person as curious,&rdquo; they think of it as strange.</li>
+</ul>
+<p><em>Raymond Shaw, his life, his background, his habits and his friends and <strong>associates</strong> have been under <strong>scrupulous</strong> examination.</em></p>
+<ul>
+  <li>A person&rsquo;s &ldquo;associates&rdquo; are the people that they interact with in everyday life, often at work. If an examination is &ldquo;scrupulous,&rdquo; it is done extremely carefully and looks into every detail.</li>
+</ul>
+<p><em>The facts speak for themselves.</em></p>
+<ul>
+  <li>One way of saying that what is happening is totally clear or obvious.</li>
+</ul>
+<p><em>It&rsquo;s <strong>inconceivable</strong> that&hellip; :: Major, as the consulting <strong>psychiatrist</strong>, I&rsquo;d be most interested in hearing your personal feelings about Shaw.</em></p>
+<ul>
+  <li>If something is &ldquo;inconceivable,&rdquo; it does not seem possible. A &ldquo;psychiatrist&rdquo; is a psychologist who is also a medical doctor (and a &ldquo;consulting&rdquo; one is responsible for a particular person or case).</li>
+</ul>
+<p><em>Raymond Shaw is the <strong>kindest</strong>, bravest, warmest most wonderful human being I&rsquo;ve ever known in my life.</em></p>
+<ul>
+  <li>&ldquo;Kind&rdquo; is another word for nice, gentle or considerate. (You'll be hearing this sentence several times during the movie.)</li>
+</ul>
+<p><em>I&rsquo;d recommend that the <strong>matter</strong> of Raymond Shaw be dropped and that Major Marco be reassigned to less <strong>strenuous</strong>, and if I may say so, less <strong>sensitive duties</strong>.</em></p>
+<ul>
+  <li>In this case, &ldquo;matter&rdquo; is another word for case. &ldquo;Strenuous&rdquo; means exhausting or very tiring, and in this context, &ldquo;sensitive duties&rdquo; refers to jobs that involve secret matters of intelligence or national security.</li>
+</ul>
+<p><em>A few months of <strong>detached</strong> service to perhaps <strong>the public relations corps</strong> should put the major right back <strong>in the pink</strong>.</em></p>
+<ul>
+  <li>&ldquo;Detached&rdquo; means separated, in this case from the army. &ldquo;The public relations corps&rdquo; of the military is responsible for keeping its good reputation with the public. If a person is &ldquo;in the pink,&rdquo; they have a lot of energy and feel very healthy.</li>
+</ul>
+<p><em>I&rsquo;ll give you an equally <strong>simple minded</strong> answer.</em></p>
+<ul>
+  <li>If an answer is &ldquo;simple minded,&rdquo; it is silly or not very thoughtful.</li>
+</ul>
+<p><em>There&rsquo;s no great naval power <strong>menacing</strong> the <strong>free world</strong> today.</em></p>
+<ul>
+  <li>&ldquo;To menace&rdquo; a person or country is to threaten it or make it feel weak or vulnerable. In the context of the Cold War, &ldquo;the free world&rdquo; referred to those countries in the non-communist West.</li>
+</ul>
+<p><em>The navy&rsquo;s overwhelming <strong>preponderance</strong> of surface ships seems to be <strong>superfluous</strong>. Hence, the cut in budget.</em></p>
+<ul>
+  <li>&ldquo;Preponderance&rdquo; means superiority, usually in strength or intelligence. If something is &ldquo;superfluous,&rdquo; it is extra and not needed.</li>
+</ul>
+<p><em>If there are no further questions for the secretary, I think that about <strong>wraps things up</strong>.</em></p>
+<ul>
+  <li>&ldquo;To wrap things up&rdquo; is a common colloquial way of saying to finish them.</li>
+</ul>
+<p><em><strong>Evasion</strong>? What <strong>the hell</strong> are you talking about?</em></p>
+<ul>
+  <li>&ldquo;Evasion&rdquo; is the act of evading, avoiding or escaping a responsibility. Note that &ldquo;the hell&rdquo; is added to WH- questions to express emotion such as anger or frustration.</li>
+</ul>
+<p><em>I don&rsquo;t think it&rsquo;s good public relations to talk that way to a United States Senator, even if he is an <strong>idiot</strong>.</em></p>
+<ul>
+  <li>An excellent word for a jerk, moron, ass or stupid person.</li>
+</ul>
+<p><em>I have a list here of the names of 207 persons who are known as being members of the Communist party.</em></p>
+<ul>
+  <li>Note that in the 1950s, many Americans were falsely accused of being members of the Communist Party, and even though political affiliation was not illegal, many peoples' lives were destroyed.</li>
+</ul>
+<p><em>There will be no <strong>covering up</strong>, Sir.</em></p>
+<ul>
+  <li>To &ldquo;cover up&rdquo; something illegal or scandalous is to try and hide it from the public.</li>
+</ul>
+<p><em>Major, throw that <strong>lunatic</strong> out of here!</em></p>
+<ul>
+  <li>A fun and excellent word for a person who is completely crazy.</li>
+</ul>
+<p><em>You no longer <strong>have my confidence</strong>! :: You&rsquo;re an idiot, you&rsquo;re <strong>out of your mind</strong>!</em></p>
+<ul>
+  <li>&ldquo;To have a person&rsquo;s confidence&rdquo; is to be trusted by them. If a person is &ldquo;out of their mind,&rdquo; they are crazy.</li>
+</ul>
+<p><em>What are you <strong>on</strong>?! Get out of here!</em></p>
+<ul>
+  <li>Note that to be &ldquo;on&rdquo; a drug is to be using it (If you are "on drugs", you will act stoned or in a drugged manner).</li>
+</ul>
+<p><em>I&rsquo;d like to <strong>verify</strong> that number, Sir. How many communists did you say?</em></p>
+<ul>
+  <li>&ldquo;To verify&rdquo; a fact is to confirm or establish its truth or accuracy.</li>
+</ul>
+<p><em>There are 104 <strong>card-carrying</strong> communists in the defense department at this time.</em></p>
+<ul>
+  <li>If a person is a &ldquo;card carrying&rdquo; member of an organization, they are full members who generally believe in that organization&rsquo;s principles.</li>
+</ul>
+<p>&nbsp;</p>
+<section id="part3"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Raymond’s communist “operators” program Raymond to kill
+  his boss, and Marco meets Rosie on his way to New York</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>When you are returned to <strong>patrol headquarters</strong>, what duties will you perform?</em></p>
+<ul>
+  <li>The building or place where a group of soldiers is based.</li>
+</ul>
+<p><em>He <strong>took out</strong> a complete <strong>company</strong> of Chinese <strong>infantry</strong>.</em></p>
+<ul>
+  <li>In this context, &ldquo;to take out&rdquo; a group of soldiers is to kill them. A &ldquo;company&rdquo; in the military is a division, and &ldquo;infantry&rdquo; soldiers are those that fight on foot (as opposed to in planes or tanks).</li>
+</ul>
+<p><em>We can <strong>spare</strong> an imaginary company of infantry for this particular plan.</em></p>
+<ul>
+  <li>&ldquo;To spare&rdquo; means to give up or use (Note that homeless people on city streets will ask if you can spare some change).</li>
+</ul>
+<p><em>If we are out to <strong>humiliate</strong> our great Chinese <strong>ally</strong> in the newspapers of the world, we <strong>might as well</strong> make it a full <strong>battalion</strong>.</em></p>
+<ul>
+  <li>&ldquo;To humiliate&rdquo; a person is to embarrass them or make them feel bad about themselves. In a war, an &ldquo;ally&rdquo; is a nation that is fighting on its side against a common enemy. &ldquo;Might as well&rdquo; means should, and a &ldquo;battalion&rdquo; is a large division in the military.</li>
+</ul>
+<p><em>If we may <strong>proceed</strong> with the demonstration; Who&rsquo;s that little <strong>fellow</strong> sitting next to the captain?</em></p>
+<ul>
+  <li>&ldquo;To proceed&rdquo; with something is to start or continue it. &ldquo;Fellow&rdquo; is another word for man or guy.</li>
+</ul>
+<p><em>Our <strong>mascot</strong>, I guess you&rsquo;d call him.</em></p>
+<ul>
+  <li>A person, animal or object that becomes the public symbol of a team, business or other type of organization.</li>
+</ul>
+<p><em>Shoot Bobby through the <strong>forehead</strong>.</em></p>
+<ul>
+  <li>The part of the head above the eyes.</li>
+</ul>
+<p><em>What makes it so <strong>awful</strong> is to keep dreaming a thing like that about Sergeant Shaw.</em></p>
+<ul>
+  <li>A powerful word meaning terrible or horrible.</li>
+</ul>
+<p><em>I think I&rsquo;m <strong>going nuts</strong>.</em></p>
+<ul>
+  <li>A common colloquial expression meaning to go crazy.</li>
+</ul>
+<p><em>The dream has a lot of Chinese people, and a lot of big <strong>brass</strong> from the Russian army.</em></p>
+<ul>
+  <li>&ldquo;Brass&rdquo; is a word that refers to important or powerful people. It comes from the many gold medals that military leaders wear.</li>
+</ul>
+<p><em>It&rsquo;s pretty <strong>rough</strong>; You have to <strong>take my word</strong> for that.</em></p>
+<ul>
+  <li>In this case, &ldquo;rough&rdquo; means hard or difficult. &ldquo;To take a person&rsquo;s word&rdquo; for what they just said means to believe them.</li>
+</ul>
+<p><em>Raymond, why don&rsquo;t you pass the time by playing a little <strong>solitaire</strong>.</em></p>
+<ul>
+  <li>A card game that is played alone, and a critical game in this film!</li>
+</ul>
+<p><em>You will be taken to the <strong>sanitarium</strong>. We want you there for a <strong>check up</strong>; Is that clear?</em></p>
+<ul>
+  <li>A &ldquo;sanitarium&rdquo; is a rest home for old people. In this context, a &ldquo;check up&rdquo; is a medical or psychological examination.</li>
+</ul>
+<p><em>He was <strong>run down</strong> in the street by a <strong>hit and run</strong> driver.</em></p>
+<ul>
+  <li>If a person is &ldquo;run down,&rdquo; they are hit or run over by a car. A &ldquo;hit and run&rdquo; driver is one who does not stop, but who drives away immediately from the scene of an accident.</li>
+</ul>
+<p><em>It just came over the <strong>AP</strong>; <strong>Good heavens</strong>.</em></p>
+<ul>
+  <li>The &ldquo;AP&rdquo; is the Associated Press, which distributes news over their wire service. &ldquo;Good heavens&rdquo; is a gentle way of expressing surprise or shock.</li>
+</ul>
+<p><em>We will not tell him on the chance there is some sort of prearranged <strong>code</strong>.</em></p>
+<ul>
+  <li>A &ldquo;code&rdquo; is a system of letters, numbers or other symbols that are used to communicate to some people while being unreadable to all others.</li>
+</ul>
+<p><em>I was flown in last night under embassy <strong>quota</strong>. <strong>Revolting</strong> journey.</em></p>
+<ul>
+  <li>A &ldquo;quota&rdquo; is a number of spaces or slots that are reserved for a particular group of people. If something is &ldquo;revolting,&rdquo; it is totally disgusting.</li>
+</ul>
+<p><em>We&rsquo;re going through this <strong>elaborate procedure</strong> simply <strong>out of precaution</strong>.</em></p>
+<ul>
+  <li>An &ldquo;elaborate procedure&rdquo; is a complicated and well thought out plan or scheme, and if it&rsquo;s done &ldquo;out of precaution,&rdquo; it&rsquo;s done as a way of preventing what could be a possible threat or danger.</li>
+</ul>
+<p><em>It&rsquo;s one of the few <strong>Soviet operations</strong> in America that actually showed a profit at the end of the <strong>fiscal year</strong>.</em></p>
+<ul>
+  <li>&ldquo;Soviet&rdquo; refers to the former Soviet Union, the communist state centered on Russia that fell apart at the end of the Cold war. In this case, &ldquo;operations&rdquo; refers to an office or business. &ldquo;Fiscal year&rdquo; is a term from accounting that refers to the business year.</li>
+</ul>
+<p><em><strong>Beware</strong> my dear Zilkov. The fires of capitalism are highly <strong>infectious</strong>.</em></p>
+<ul>
+  <li>&ldquo;Beware&rdquo; is a dramatic way of telling a person to be careful because there is danger near. If a disease is &ldquo;infectious,&rdquo; it can be easily passed from one person to another.</li>
+</ul>
+<p><em>You should try, comrade Zilkov, to <strong>cultivate</strong> a sense of humor.</em></p>
+<ul>
+  <li>&ldquo;To cultivate&rdquo; something is to grow or nurture it.</li>
+</ul>
+<p><em>Captain Marco sent up some low <strong>flares</strong>, so it was easy to see what was happening.</em></p>
+<ul>
+  <li>A &ldquo;flare&rdquo; is a controlled fire of light that is used to light up the sky or to communicate with others far away.</li>
+</ul>
+<p><em>The enemy had a <strong>fix on the position</strong>. They were killed instantly by a <strong>high mortar shell</strong>.</em></p>
+<ul>
+  <li>In this case, to have a &ldquo;fix on a soldier&rsquo;s position,&rdquo; is know where they are located. A &ldquo;high mortar shell&rdquo; is a powerful explosive used in war.</li>
+</ul>
+<p><em>Do you realize, comrade, the <strong>implications</strong> of the weapon that has been placed <strong>at your disposal</strong>?</em></p>
+<ul>
+  <li>&ldquo;The implications&rdquo; of something are the logical result or outcome (If A is larger than B, and B is larger than C, the implication is A is larger than C). If a weapon is &ldquo;at a person&rsquo;s disposal,&rdquo; it is available for their use.</li>
+</ul>
+<p><em>Having been <strong>relieved</strong> of those uniquely American symptoms, guilt and fear, he cannot possibly <strong>give himself away</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;relieved&rdquo; of an unpleasant symptom, they no longer suffer from it. If a person who has done something illegal &ldquo;gives themselves away,&rdquo; they accidentally do something that the police or others realize shows that they did that illegal action.</li>
+</ul>
+<p><em>Raymond will remain an <strong>outwardly normal</strong>, productive, <strong>sober</strong>, and a respected member of the community.</em></p>
+<ul>
+  <li>If a person is &ldquo;outwardly normal,&rdquo; there is nothing about them which appears strange to others. A person who is &ldquo;sober&rdquo; is calm, stable and in control of themselves, as opposed to drunk.</li>
+</ul>
+<p><em>And entirely <strong>police-proof</strong>. His brain has not only been washed, as they say, it&rsquo;s been <strong>dry cleaned</strong>.</em></p>
+<ul>
+  <li>In this case, if a plan is &ldquo;police-proof,&rdquo; the police won&rsquo;t be able to find out about it. &ldquo;Dry cleaned&rdquo; clothes are washed with chemicals, not water.</li>
+</ul>
+<p><em><strong>Sealed</strong> floors or no, you will permit him to have visitors.</em></p>
+<ul>
+  <li>If a floor is &ldquo;sealed,&rdquo; it is tightly closed off from the rest of the building.</li>
+</ul>
+<p><em>It will take about a week&hellip;to check the <strong>mechanism</strong> completely.</em></p>
+<ul>
+  <li>A &ldquo;mechanism&rdquo; refers to the small parts of a machine, or how the various parts of a machine or plan fit together to work.</li>
+</ul>
+<p><em>You&rsquo;ll want to be sure the <strong>linkages</strong> are still functioning correctly.</em></p>
+<ul>
+  <li>&ldquo;Linkages&rdquo; are the parts of a machine or plan that connect two or more separate parts together.</li>
+</ul>
+<p><em>I thought to spend my afternoon at <strong>Macy&rsquo;s</strong>. Madame Yin has given me the most <strong>appalling</strong> list.</em></p>
+<ul>
+  <li>&ldquo;Macy&rsquo;s&rdquo; is a famous department store. &ldquo;Appalling&rdquo; is a strong adjective meaning disgusting, or causing horror or revulsion.</li>
+</ul>
+<p><em>You say the man has been built as an <strong>assassin</strong>. Very well, then, let him assassinate someone!</em></p>
+<ul>
+  <li>An &ldquo;assassin&rdquo; is a person who murders a powerful person, most often a politician (Note that the verb is to assassinate).</li>
+</ul>
+<p><em>I&rsquo;m shocked you would risk an <strong>asset</strong> as valuable as Raymond out of <strong>sheer</strong> nervousness.</em></p>
+<ul>
+  <li>An &ldquo;asset&rdquo; is anything of real value, from stock in a company to a house or car. &ldquo;Sheer&rdquo; as an adjective means total, pure, utter or unqualified.</li>
+</ul>
+<p><em>If kill we must, for a better New York, why should it not be his <strong>superior</strong> at the newspaper, Mr. Holborn Gaines?</em></p>
+<ul>
+  <li>In this context, a person&rsquo;s &ldquo;superior&rdquo; is their boss or employer.</li>
+</ul>
+<p><em>With Mr. Gaines <strong>out of the way</strong>, might he not be given the very <strong>influential</strong> job himself?</em></p>
+<ul>
+  <li>If somebody is &ldquo;out of the way,&rdquo; they are far enough away that they can&rsquo;t cause problems. If a writer is &ldquo;influential,&rdquo; they effect the way people think about things (An influential job simply means a powerful position).</li>
+</ul>
+<p><em>I&rsquo;m sorry to <strong>disturb</strong> you, Sir.</em></p>
+<ul>
+  <li>&ldquo;To disturb&rdquo; a person is to bother or annoy them, or in certain contexts, to emotionally upset or scare them.</li>
+</ul>
+<p><em>What <strong>the devil</strong> are you doing here at 4:00 in the morning?</em></p>
+<ul>
+  <li>A very old-fashioned version of &ldquo;the hell,&rdquo; which is added to Wh- questions to express emotion such as anger or surprise.</li>
+</ul>
+<p><em>You&rsquo;re not going to <strong>pour out your heart</strong> with the details of some <strong>sordid</strong> love affair or anything like that, are you?</em></p>
+<ul>
+  <li>&ldquo;To pour out your heart&rdquo; is to confide in someone by emotionally telling them of all your tragic secrets, often concerning a failed romance. &ldquo;Sordid&rdquo; is a fun little adjective which means dirty, filthy or vile, and is often used in sexual contexts.</li>
+</ul>
+<p><em>Who is this mysterious &ldquo;they&rdquo;?</em></p>
+<ul>
+  <li>Note how a pronoun can be used as the subject of a question!</li>
+</ul>
+<p><em><strong>Scotch</strong> all right? :: Fine.</em></p>
+<ul>
+  <li>Whisky from Scotland.</li>
+</ul>
+<p><em>I got a guy who <strong>picks them out</strong> for me <strong>at random</strong>.</em></p>
+<ul>
+  <li>&ldquo;To pick out&rdquo; something is to choose it from a larger possible choice. If you pick out something &ldquo;at random,&rdquo; you pick it without any particular logic or reason, but just by chance.</li>
+</ul>
+<p><em>He ships them to me. Where I happen to be <strong>stationed</strong>.</em></p>
+<ul>
+  <li>If a solider is &ldquo;stationed&rdquo; at a place, that is where he lives and works.</li>
+</ul>
+<p><em>They&rsquo;d also make great <strong>insulation</strong> against an enemy attack.</em></p>
+<ul>
+  <li>In this case, &ldquo;insulation&rdquo; is a layer of protection (In houses, insulation is any kind of material that is used to keep a house warmer or cooler).</li>
+</ul>
+<p><em>I&rsquo;m interested in the principles of modern banking, and the history of <strong>piracy</strong>.</em></p>
+<ul>
+  <li>&ldquo;Piracy&rdquo; is the act of robbing or stealing while on the high seas or oceans.</li>
+</ul>
+<p><em>Among other things, you permitted the <strong>Secretary</strong> to make a number of <strong>unfortunate remarks</strong> to that idiot Iselin, which started him off on a <strong>rampage</strong>.</em></p>
+<ul>
+  <li>Note that a &ldquo;Secretary&rdquo; can be a powerful officer who heads an entire department or branch of government (In this case, the Secretary of the Navy). An &ldquo;unfortunate remark&rdquo; is a gentle way of referring to a harmful statement that never should have been said. A &ldquo;rampage&rdquo; is a violent, angry and often abusive speech or other type of action.</li>
+</ul>
+<p><em>For the last six months, I&rsquo;ve been driven nearly <strong>out of my mind</strong> by the same <strong>recurring</strong> dream.</em></p>
+<ul>
+  <li>If a person is &ldquo;out of their mind,&rdquo; they are crazy, and if a dream is &ldquo;recurring,&rdquo; it happens over and over again.</li>
+</ul>
+<p><em>There&rsquo;s something <strong>phony</strong> about me, about Raymond Shaw, about the whole medal of honor business.</em></p>
+<ul>
+  <li>&ldquo;Phony&rdquo; means misleading or fake. If a person is phony, they are pretending to be somebody that they are not.</li>
+</ul>
+<p><em>In fact, he&rsquo;s one of the most <strong>repulsive</strong> human beings I&rsquo;ve ever known.</em></p>
+<ul>
+  <li>An extremely negative adjective that means totally disgusting.</li>
+</ul>
+<p><em>Public relations has <strong>bounced</strong> you back to me, and in your present <strong>state</strong>, there&rsquo;s no possible way I can use you.</em></p>
+<ul>
+  <li>&ldquo;To bounce&rdquo; a worker from one job to another is to move them between position (A ball bounces against a wall).</li>
+</ul>
+<p><em>As of this moment, I&rsquo;m placing you on <strong>indefinite sick leave</strong>.</em></p>
+<ul>
+  <li>If a period of time is &ldquo;indefinite,&rdquo; it is unclear or has no exact limits. &ldquo;Sick leave&rdquo; is a paid break from work in which an employee is allowed to stay home and try to recover or feel better.</li>
+</ul>
+<p><em><strong>Maryland</strong> is a beautiful state. :: This is <strong>Delaware</strong>.</em></p>
+<ul>
+  <li>Two small East Coast states, between New York and Washington DC.</li>
+</ul>
+<p><em>I know, I was one of the original Chinese workman who <strong>laid</strong> the track in this state.</em></p>
+<ul>
+  <li>Note the verb; Railroad track is &ldquo;laid&rdquo; when railroad lines are built.</li>
+</ul>
+<p><em>So is Ohio, for that matter. I guess Columbus is a <strong>tremendous football town</strong>.</em></p>
+<ul>
+  <li>Another word for incredible or amazing. A &ldquo;football town&rdquo; is a city where (American) football is extremely popular.</li>
+</ul>
+<p><em>Of the two names, I&rsquo;ve always <strong>favored</strong> &ldquo;Rosie&rdquo; because it smells of brown soap and beer.</em></p>
+<ul>
+  <li>As a verb, &ldquo;to favor&rdquo; something is to prefer it.</li>
+</ul>
+<p><em>I could never figure out what that <strong>phrase</strong> meant, &ldquo;<strong>more or less</strong>.&rdquo;</em></p>
+<ul>
+  <li>A &ldquo;phrase&rdquo; is an expression, and &ldquo;more or less&rdquo; means "basically".</li>
+</ul>
+<p><em>I&rsquo;m a <strong>production assistant</strong> for a man named Justin, who had two <strong>hits</strong> last season.</em></p>
+<ul>
+  <li>A &ldquo;production assistant&rdquo; helps the producer or director of a movie or play. In the movie business, a &ldquo;hit&rdquo; is a film that is very popular.</li>
+</ul>
+<p><em>I&rsquo;m a <strong>tea-privileges</strong> member, no cream.</em></p>
+<ul>
+  <li>If a person has &ldquo;tea privileges&rdquo; at an exclusive or rich social club, they&rsquo;re allowed to have tea in the dining area, but they are not considered full members with all the privileges and rights of full membership.</li>
+</ul>
+<p><em>I got sick, and now I&rsquo;m <strong>on leave</strong>, and I&rsquo;m <strong>gonna</strong> spend it in New York.</em></p>
+<ul>
+  <li>If a worker is &ldquo;on leave,&rdquo; they have official time off from their job. Note that &ldquo;going to&rdquo; ----&gt; &ldquo;gonna&rdquo; in rapid speech.</li>
+</ul>
+<p><em>I&rsquo;m gonna <strong>look up</strong> an old friend of mine whose a newspaper man.</em></p>
+<ul>
+  <li>&ldquo;To look up&rdquo; a person is to try and find them or visit them.</li>
+</ul>
+  <section id="part4"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Chunjin gets a job with Raymond, and Marco learns of
+  Raymond’s  love for Jocelyn before he had entered the Army.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>There were no <strong>oriental</strong> gentlemen in the army with me.</em></p>
+<ul>
+  <li>Note that this a very dated way of referring to Asian people.</li>
+</ul>
+<p><em>He is very <strong>insistent</strong> Sir. :: All right, <strong>show him in</strong>.</em></p>
+<ul>
+  <li>If a person is &ldquo;insistent,&rdquo; they continue to request or demand what they want over a period of time, even if they&rsquo;ve been told they can&rsquo;t have it. &ldquo;To show a person in&rdquo; is to lead them into an office or room.</li>
+</ul>
+<p><em>I was interpreter, attached to <strong>Charlie Company</strong>, 52nd <strong>regimen</strong>.</em></p>
+<ul>
+  <li>&ldquo;Charlie Company&rdquo; is the name for "C Company," a division in the US Army, and a &ldquo;regimen&rdquo; is a large group of soldiers who train and fight together.</li>
+</ul>
+<p><em>I&rsquo;m a <strong>tailor</strong> and <strong>mender</strong>. I am cook. I am cleaner and <strong>scrubber</strong>.</em></p>
+<ul>
+  <li>A &ldquo;tailor&rdquo; sews clothes, a &ldquo;mender&rdquo; repairs things, and a &ldquo;scrubber&rdquo; scrubs or cleans things, such as dirty dishes.</li>
+</ul>
+<p><em>I ask for job with you because you&rsquo;re a great man who saved my life. :: I could use a <strong>valet</strong>, I think.</em></p>
+<ul>
+  <li>A French word for a person who drives for their rich employers.</li>
+</ul>
+<p><em>You will have every Thursday and every other Sunday <strong>off</strong>. $60 a week.</em></p>
+<ul>
+  <li>If a worker has Thursdays &ldquo;off,&rdquo; he does not work on that day.</li>
+</ul>
+<p><em>You&rsquo;re gonna be perfectly <strong>marvelous</strong> this afternoon.</em></p>
+<ul>
+  <li>An alternative to wonderful or fantastic.</li>
+</ul>
+<p><em>I&rsquo;d be a lot happier if we could just <strong>settle</strong> on the number of communists that I know are in the Defense Department.</em></p>
+<ul>
+  <li>When two people &ldquo;settle&rdquo; on a number, they agree what it will be.</li>
+</ul>
+<p><em>The way you keep changing the <strong>figures</strong> on me&hellip;.makes me look like some kind of a <strong>nut</strong>, like an <strong>idiot</strong>.</em></p>
+<ul>
+  <li>In this case, a &ldquo;figure&rdquo; is a number. A &ldquo;nut&rdquo; is a slangy way of referring to a crazy or very unstable person, and an &ldquo;idiot&rdquo; is a fool, jerk, moron, etc..</li>
+</ul>
+<p>***Note: In this scene, as Eleanor is thinking of how many communists there are, the Senator is using a ketchup bottle from the Heinz company. That company also produces a very famous sauce called "Heinz 57 Sauce".***</p>
+<p><em>Point of order, Mr. Speaker!</em></p>
+<ul>
+  <li>&ldquo;Point of order&rdquo; is a formal way of demanding that an organization, in this case the US Senate, follow its own rules of procedure of how things are done. &ldquo;Mr. Speaker&rdquo; is a way of referring to the person in charge of running the Senate or House of Representatives in the Congress.</li>
+</ul>
+<p><em>You know what I was doing when you so <strong>cleverly</strong> had the police call me?</em></p>
+<ul>
+  <li>&ldquo;Clever&rdquo; is a popular adjective meaning smart, skillful or marked by a quick sense of humor.</li>
+</ul>
+<p><em>I telephoned my <strong>fianc&eacute;e</strong>. I told you I wasn&rsquo;t married, I never said I wasn&rsquo;t <strong>engaged</strong>.</em></p>
+<ul>
+  <li>A person&rsquo;s &ldquo;fianc&eacute;e&rdquo; is the person they plan to marry, and if a person is &ldquo;engaged,&rdquo; they are officially planning to marry.</li>
+</ul>
+<p><em>I gave him his ring back and I tried to <strong>convey</strong> my regrets for whatever pain I might be causing him.</em></p>
+<ul>
+  <li>&ldquo;To convey&rdquo; is to communicate. If a person &ldquo;regrets&rdquo; having done something, they feel bad that they did it (This can be a noun or verb).</li>
+</ul>
+<p><em>You had the police call to invite me to the 24<sup>th</sup> <strong>precinct</strong>.</em></p>
+<ul>
+  <li>A &ldquo;precinct&rdquo; is a specific administrative area of a city, especially one that limits the territory that the police at a station are responsible for covering.</li>
+</ul>
+<p><em>I <strong>grabbed</strong> my coat and kissed my fianc&eacute;e on the cheek for the last time we would ever kiss, and I ran.</em></p>
+<ul>
+  <li>&ldquo;To grab&rdquo; something is to take it quickly.</li>
+</ul>
+<p><em>You had just <strong>beaten up</strong> a very large Chinese gentleman.</em></p>
+<ul>
+  <li>&ldquo;To beat up&rdquo; someone is to physically attack and badly hurt them.</li>
+</ul>
+<p><em>According to Washington&hellip;.you must be somebody very important indeed.</em></p>
+<ul>
+  <li>A popular British word that means in fact.</li>
+</ul>
+<p><em>If they were the <strong>tiniest</strong> bit <strong>puzzled</strong> about you, they could&rsquo;ve asked me.</em></p>
+<ul>
+  <li>&ldquo;Tiny&rdquo; means extremely small or slight, and if you are &ldquo;puzzled&rdquo; by someone, you are confused or mystified by them or their behavior.</li>
+</ul>
+<p><em>They called me in Washington to tell me that you had <strong>broken into</strong> my apartment and beaten up my <strong>house boy</strong>.</em></p>
+<ul>
+  <li>&ldquo;To break into&rdquo; a house is to enter secretly, usually by force through a window or a locked door, in order to rob it. A &ldquo;house boy&rdquo; is a very old-fashioned expression for a person who is hired to help around the house.</li>
+</ul>
+<p><em>I&rsquo;ve never seen you look so <strong>awful</strong>.</em></p>
+<ul>
+  <li>A good word for extremely bad or horrible.</li>
+</ul>
+<p><em>You know how much the guys in the <strong>outfit</strong> hated me.</em></p>
+<ul>
+  <li>Another word for a group of soldiers or others that work as a team.</li>
+</ul>
+<p><em>The poor simple <strong>boob</strong>&hellip;.he said he was going out of his mind.</em></p>
+<ul>
+  <li>A gentle slang word for a fool or idiot (as well as a female breast).</li>
+</ul>
+<p><em>Turkish wrestlers, <strong>pastoral psychiatrists</strong>&hellip;.and various officers of the <strong>USSR</strong>, the People&rsquo;s Republic of China and the Soviet army.</em></p>
+<ul>
+  <li>&ldquo;Pastoral&rdquo; refers to religious leaders in the Christian Church, and a psychiatrist is a psychologist who has a medical degree. The USSR is a famous acronym for the old Union of Soviet Socialist republics.</li>
+</ul>
+<p><em>He had a loud voice, and it <strong>grated</strong>.</em></p>
+<ul>
+  <li>If a person&rsquo;s voice is &ldquo;grating,&rdquo; it is unpleasant and annoying.</li>
+</ul>
+<p><em>His staff dressed in civilian clothes. They looked a little like <strong>FBI</strong> men.</em></p>
+<ul>
+  <li>The Federal Bureau of Investigation, which is the famous federal police force.</li>
+</ul>
+<p><em>He&rsquo;s a member of the <strong>central committee</strong>.</em></p>
+<ul>
+  <li>In countries run by a communist party, the &ldquo;central committee&rdquo; was a group of the country&rsquo;s most powerful leaders.</li>
+</ul>
+<p><em>His <strong>staff</strong> was <strong>uniformed</strong>, varying from a full colonel to a full lieutenant.</em></p>
+<ul>
+  <li>A person&rsquo;s &ldquo;staff&rdquo; are the various people who work directly for them. A &ldquo;uniform&rdquo; refers to the clothes that are associated with a particular job or organization (It&rsquo;s rarely used as an adjective, as it is here).</li>
+</ul>
+<p><em>I&rsquo;m going to recommend setting up a <strong>joint intelligence</strong> <strong>CIA</strong>-FBI <strong>unit</strong> based out of New York.</em></p>
+<ul>
+  <li>A &ldquo;joint intelligence unit&rdquo; is a group of spies and other investigators set up by two or more organizations, in this case the FBI and the CIA. The CIA is the Central Intelligence Agency, which spies outside the US (In fact, it rarely worked with the FBI until the terrorist attacks of 9/11, 2001).</li>
+</ul>
+<p><em>He was very <strong>reluctant</strong> to go. :: That&rsquo;s probably because Chunjin is a Buddhist and he doesn&rsquo;t celebrate Christmas.</em></p>
+<ul>
+  <li>If a person is &ldquo;reluctant&rdquo; to do something, they are hesitant or don&rsquo;t want to do it, perhaps because they fear something bad will happen.</li>
+</ul>
+<p><em>He would have had to send me a card on the Buddha&rsquo;s birthday, <strong>to save face</strong>, right.</em></p>
+<ul>
+  <li>&ldquo;To save face&rdquo; is to avoid looking weak or foolish (For example, some men feel they must fight even if they don&rsquo;t want to, in order to save face).</li>
+</ul>
+<p><em>One day of Christmas is <strong>loathsome</strong> enough.</em></p>
+<ul>
+  <li>A strongly negative adjective meaning disgusting, horrible or detestable.</li>
+</ul>
+<p><em>It&rsquo;s rather like listening to Orestes <strong>gripe</strong> about Clytemestra.</em></p>
+<ul>
+  <li>&ldquo;To gripe&rdquo; is to complain in an annoying and incessant fashion. (Orestes and Clymestra are characters from ancient Greek plays).</li>
+</ul>
+<p><em>She&rsquo;s <strong>lovely</strong>.</em></p>
+<ul>
+  <li>A popular British word meaning pretty or attractive.</li>
+</ul>
+<p><em>I am not loveable. No, no, don&rsquo;t <strong>contradict</strong> me.</em></p>
+<ul>
+  <li>&ldquo;To contradict&rdquo; a person is to say the exact opposite of what they say.</li>
+</ul>
+<p><em>You&rsquo;re not supposed to move. It makes the poison <strong>circulate</strong>.</em></p>
+<ul>
+  <li>If poison &ldquo;circulates&rdquo; in the blood, it travels throughout the body.</li>
+</ul>
+<p><em>He&rsquo;s just absolutely <strong>scared diddly</strong> about snakes in this part of the country.</em></p>
+<ul>
+  <li>An extremely dated way of saying very scared. Today, you&rsquo;re much more likely to hear that a person is scared <em>shitless</em>.</li>
+</ul>
+<p><em>I know it sounds terribly <strong>Freudian</strong>, but in this case, I don&rsquo;t think it is.</em></p>
+<ul>
+  <li>If a comment is &ldquo;Freudian,&rdquo; it is likely based on subconscious thoughts, accidentally said, and often of a sexual nature. The adjective is named after the famous Austrian psychiatrist Sigmund Freud, who died in 1939.</li>
+</ul>
+<p><em>Daddy&rsquo;s going to be <strong>thrilled</strong> about this. All summer long, daddy&rsquo;s just been <strong>raving</strong> about snakes.</em></p>
+<ul>
+  <li>To be &ldquo;thrilled&rdquo; about something is to be very excited about it. &ldquo;To rave&rdquo; about something is to talk about it in an excited or enthusiastic manner.</li>
+</ul>
+<p><em>Oh, there&rsquo;s no <strong>swelling</strong> above or below.</em></p>
+<ul>
+  <li>If a part of your body &ldquo;swells&rdquo; after being hit by a ball, it expands or grows in size beyond what is normal.</li>
+</ul>
+<p><em>You&rsquo;re not <strong>by any chance</strong> a <strong>mute</strong>, are you?</em></p>
+<ul>
+  <li>&ldquo;By any chance&rdquo; is a way for the speaker to express uncertain belief. A &ldquo;mute&rdquo; is a person who can&rsquo;t speak or hear.</li>
+</ul>
+<p><em>According to the <strong>quaint</strong> local <strong>custom</strong>, it&rsquo;s your turn to tell us what your name is.</em></p>
+<ul>
+  <li>If a tradition is &ldquo;quaint,&rdquo; it is pleasing or charming, but in a very old-fashioned way. A &ldquo;custom&rdquo; is a tradition or particular type of behavior that has been practiced by a particular group of people for a long time, usually over many generations.</li>
+</ul>
+<p><em>There is still the traditional <strong>folk remedy</strong> against snake bite, which we haven&rsquo;t applied.</em></p>
+<ul>
+  <li>A &ldquo;folk remedy&rdquo; is a treatment used by local people to try and cure various medical problems, from colds to snake bites. They often include the use of herbs, and may or may not be approved by modern medicine.</li>
+</ul>
+<p><em>I once found it necessary <strong>to sue</strong> your mother for <strong>defamation of character</strong> and <strong>slander</strong>.</em></p>
+<ul>
+  <li>&ldquo;To sue&rdquo; a person is to force them into a civil trial in order to try and legally get money from them for they&rsquo;re having done something wrong against you. &ldquo;Defamation of character&rdquo; is the harming of a person&rsquo;s reputation, and &ldquo;slander&rdquo; is writing something untrue about somebody.</li>
+</ul>
+<p><em>One of your mother&rsquo;s <strong>endearing traits</strong> is the <strong>tendency</strong> to refer to anyone who disagrees with her as a communist.</em></p>
+<ul>
+  <li>An &ldquo;endearing trait&rdquo; is a character or quality about a person that is much liked or admired (Here, Jordan is being sarcastic, or joking). If a person has a &ldquo;tendency&rdquo; to do something, they usually do it quite a lot over time.</li>
+</ul>
+<p><em>What hurt her more than the money was the fact that I <strong>donated</strong> all of it to an organization called the <strong>American Civil Liberties Union</strong>.</em></p>
+<ul>
+  <li>&ldquo;To donate&rdquo; money is to give it away without asking anything in return. The American Civil Liberties Union is still a well known civil rights group that is best known as the ACLU.</li>
+</ul>
+<p><em>I would very much like to ask your permission to marry Jocelyn.</em></p>
+<ul>
+  <li>Note that it is considered extremely old-fashioned today for men to ask the parents of their girlfriends for their permission to marry them!</li>
+</ul>
+<p><em>The communist <strong>tart</strong>?</em></p>
+<ul>
+  <li>A old-fashioned but fun slang word for a sexually loose or promiscuous woman.</li>
+</ul>
+<p><em>Are you going to <strong>crucify</strong> me?</em></p>
+<ul>
+  <li>&ldquo;To crucify&rdquo; a person is to kill them by hanging them on a cross, the way Jesus was said to die in the Bible (More generally, to crucify a person means to treat them cruelly, or to strongly criticize or ridicule them).</li>
+</ul>
+<p><em>Raymond, if we were at war and you were suddenly to become <strong>infatuated with</strong> the daughter of a Russian <strong>agent</strong>, would you expect your mother to object?</em></p>
+<ul>
+  <li>If you become &ldquo;infatuated&rdquo; with a person, you fall madly in love with, or obsessed by them, even if you don&rsquo;t know them well. Here, an &ldquo;agent&rdquo; is a spy or other official who works for the (Russian) government.</li>
+</ul>
+<p><em>I will show you <strong>documented proof</strong> that this man <strong>stands for</strong> evil, and that his whole life is <strong>devoted</strong> to <strong>undermining</strong> everything you and I believe in.</em></p>
+<ul>
+  <li>&ldquo;Documented proof&rdquo; is evidence that proves the truth of something, usually in the form of official papers. If a person &ldquo;stands for&rdquo; something, they become a symbol for that belief or cause. &ldquo;To devote&rdquo; oneself to something is to work extremely hard for it, and to &ldquo;undermine&rdquo; a country or organization is to work hard to overthrow or destroy it.</li>
+</ul>
+<p><em>It was a terrible, <strong>vile</strong>, disgusting letter.</em></p>
+<ul>
+  <li>Another powerful adjective for disgusting or morally repulsive.</li>
+</ul>
+<p><em>The next day I <strong>enlisted</strong> in the army and I never saw her again.</em></p>
+<ul>
+  <li>&ldquo;To enlist&rdquo; in the army is to officially join or sign up for it.</li>
+</ul>
+<p><em>Come on, kid. It&rsquo;s time for you <strong>to call it a night</strong>.</em></p>
+<ul>
+  <li>&ldquo;To call it a night&rdquo; is a colloquial way of saying to go to sleep.</li>
+</ul>
+<p><em>This <strong>lousy</strong> brother-in-law of mine. I say &ldquo;You think you&rsquo;re a poker player? I got a <strong>flash</strong> for you.&rdquo;</em></p>
+<ul>
+  <li>&ldquo;Lousy&rdquo; is an excellent adjective meaning bad or very poor quality. A &ldquo;<em>news</em> flash&rdquo; is a sudden and just learned piece of news.</li>
+</ul>
+<p><em>If I was you, I&rsquo;d get myself another <strong>line of action</strong>.</em></p>
+<ul>
+  <li>Note correct grammar would be &ldquo;if I <em>were</em> you.&rdquo; A &ldquo;line of action&rdquo; is Marco&rsquo;s slangy way of saying a job or type of work.</li>
+</ul>
+<p><em>When I got married to <strong>my old lady</strong>, I got no idea that this guy comes in the same package.</em></p>
+<ul>
+  <li>&ldquo;My old lady&rdquo; is a ridiculously dated way of referring to your wife or girlfriend.</li>
+</ul>
+<p><em>For 11 long years, I got this guy tied around my neck, and believe me, it&rsquo;s no <strong>bargain</strong>.</em></p>
+<ul>
+  <li>A &ldquo;bargain&rdquo; is a good deal or value. This is Rosie&rsquo;s way of saying that her ex-husband was a pain to be around and that she had a horrible relationship with him.</li>
+</ul>
+  <section id="part5"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Raymond’s mom and Senator Iselin have a party for Raymond,
+  Senator Jordan and Jocelyn, and soon after Raymond and Jocelyn get married.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>Why don&rsquo;t you go and get yourself a <strong>cab</strong> and go up to Central park and <strong>jump in the lake</strong>?</em></p>
+<ul>
+  <li>A &ldquo;cab&rdquo; is a taxi, and note that an interesting insult expression is &ldquo;Go jump in the lake.&rdquo;</li>
+</ul>
+<p><em>You <strong>bolted out</strong> of the bar, jumped in a cab, drove here and jumped in the water.</em></p>
+<ul>
+  <li>&ldquo;To bolt out&rdquo; of a building is to leave it by running out very quickly.</li>
+</ul>
+<p><em>Obviously, the <strong>solitaire</strong> games serves as some kind of <strong>trigger mechanism</strong>.</em></p>
+<ul>
+  <li>&ldquo;Solitaire&rdquo; is a card game that is played alone. A &ldquo;trigger mechanism&rdquo; is any device, part or action that causes something to happen (In this case, which causes Raymond to fall in a hypnotic state that will allow his programmers to tell him what to do).</li>
+</ul>
+<p><em>I suggest we <strong>discard</strong> the various number systems and concentrate on the <strong>face cards</strong>.</em></p>
+<ul>
+  <li>&ldquo;To discard&rdquo; something is to ignore, not use, or throw it away.</li>
+</ul>
+<p><em>Humans&hellip;develop <strong>psychic injuries</strong> as they <strong>collide</strong> with one another.</em></p>
+<ul>
+  <li>&ldquo;Psychic injuries&rdquo; refer to deep emotional or psychological pain. If two objects &ldquo;collide,&rdquo; they violently slam or run into each other.</li>
+</ul>
+<p><em>Most <strong>mortal</strong> of all are those gotten from the parent fish.</em></p>
+<ul>
+  <li>If a human or animal is mortal, it will eventually die. (If something is <em>immortal</em>, it will live forever).</li>
+</ul>
+<p><em>To cheat at Solitaire is a form of <strong>regression</strong>.</em></p>
+<ul>
+  <li>&ldquo;Regression&rdquo; is the act of going backwards (the opposite of progress).</li>
+</ul>
+<p><em>I can see that Chinese man standing there and smiling like <strong>Fu Manchu</strong>, and saying &ldquo;The Queen of Diamonds is <strong>reminiscent</strong> in many ways&hellip;..</em></p>
+<ul>
+  <li>"Fu Manchu" was a famous and evil fictional character (with a great moustache) created by British writer Sax Rohmer. If an object or person is &ldquo;reminiscent&rdquo; of something else, it reminds people of that other object or person (i.e.&hellip;they are similar).</li>
+</ul>
+<p><em>&hellip; of Raymond&rsquo;s dearly loved and hated mother, and it is the second key to clear the mechanism for any other assignment.&rdquo;</em></p>
+<ul>
+  <li>This is Yen Lo&rsquo;s way of saying that the Queen of Diamonds puts Raymond into the hypnotic trance, so that he can be controlled by others.</li>
+</ul>
+<p><em>&ldquo;&hellip;.Until the <strong>peril</strong> of <strong>international communism</strong> is driven from every dark corner of this great nation.&rdquo;</em></p>
+<ul>
+  <li>&ldquo;Peril&rdquo; is a powerful noun meaning great danger. &ldquo;International communism&rdquo; refers to the belief during the Cold War that so-called communist nations like the USSR and China were trying to take over the world by attracting dissatisfied people in other nations.</li>
+</ul>
+<p><em>I have <strong>devoted considerable thought</strong> to the problem, and it has <strong>occurred</strong> to me that Tom Jordan&rsquo;s daughter Jocelyn&mdash;You remember her, that <strong>mousy</strong> little girl.</em></p>
+<ul>
+  <li>&ldquo;To devote considerable thought&rdquo; to a problem is to think about it a lot. If something &ldquo;occurs&rdquo; to you, it suddenly enters your head and you start to think about it without having planned to do so. &ldquo;Mousy&rdquo; means small and weak, like a mouse.</li>
+</ul>
+<p><em>I might have been a little bit <strong>hasty</strong>, and times change and I now think she&rsquo;d make Raymond an excellent wife.</em></p>
+<ul>
+  <li>If a person acts in a &ldquo;hasty&rdquo; manner, they act in a hurry, without careful thought about what they are doing.</li>
+</ul>
+<p><em>You&rsquo;re very good at a great many things, but thinking just isn&rsquo;t one of them.</em></p>
+<ul>
+  <li>A wonderful insult from Raymond&rsquo;s mom to her husband.</li>
+</ul>
+<p><em>You just keep shouting &ldquo;point of order!&rdquo; into the television cameras and I will <strong>handle</strong> the rest.</em></p>
+<ul>
+  <li>&ldquo;To handle&rdquo; a problem or situation is to take care of it.</li>
+</ul>
+<p><em>I think a June wedding would be nice, right before the <strong>convention</strong>.</em></p>
+<ul>
+  <li>This is a reference to the Republican Party political convention, in which party members get together at a giant conference in order to decide who will be their party&rsquo;s nominee to run for President.</li>
+</ul>
+<p><em>The steaks are to be <strong>broiled</strong> for exactly 11 minutes, no more, no less, on each side in a pre-heated <strong>grill</strong> at 400 degrees.</em></p>
+<ul>
+  <li>&ldquo;To broil&rdquo; meat is to cook it over direct heat or fire, and a &ldquo;grill&rdquo; is a cooking device of parallel bars in which food is directly exposed to heat.</li>
+</ul>
+<p><em>This is a purely <strong>social event</strong>, however.</em></p>
+<ul>
+  <li>A &ldquo;social event&rdquo; is a party or other gathering in which people get to talk and have fun, rather than to do business.</li>
+</ul>
+<p><em>Johnny and I are giving an <strong>enormous</strong> party, a <strong>costume ball</strong> actually, at the summer house on <strong>Long Island</strong>.</em></p>
+<ul>
+  <li>&ldquo;Enormous&rdquo; means extremely big and a &ldquo;costume ball&rdquo; is a party in which people dress up as both things and people, from a tree to the President (The term <em>costume party</em> is much more common). "Long Island" is the island extending from the east of New York City.</li>
+</ul>
+<p><em>Do you remember a <strong>darling</strong> girl we met the summer before you went into the army?</em></p>
+<ul>
+  <li>As an adjective, &ldquo;darling&rdquo; means very cute or pleasing.</li>
+</ul>
+<p><em>She&rsquo;s been <strong>living abroad</strong> for the last several years.</em></p>
+<ul>
+  <li>If a person is &ldquo;living abroad,&rdquo; they live in a foreign country.</li>
+</ul>
+<p><em>I thought that given the <strong>rather shabby</strong> way you treated her, it might be a rather <strong>gracious gesture</strong> if I gave her a coming home party.</em></p>
+<ul>
+  <li>As an adverb, &ldquo;rather&rdquo; means somewhat or generally. &ldquo;Shabby&rdquo; means of poor quality, or in this case, poorly or unfairly. If an act is &ldquo;gracious,&rdquo; it is done with kindness or politeness. A &ldquo;gesture&rdquo; is any small action that communicates an attitude, such as writing an old friend a letter.</li>
+</ul>
+<p><em>Don&rsquo;t be such a <strong>jerk</strong>. Get yourself a drink or a <strong>tranquilizer</strong> or something.</em></p>
+<ul>
+  <li>A &ldquo;jerk&rdquo; is a very negative word for an idiot, creep, asshole, etc. A &ldquo;tranquilizer&rdquo; is any type of medicine that makes a person very sleepy.</li>
+</ul>
+<p><em>Raymond can certainly be a <strong>royal pain</strong>.</em></p>
+<ul>
+  <li>A &ldquo;royal pain&rdquo; is a person who is always causing problems when you&rsquo;re around them (A more widely used expression is a <em>pain in the ass</em>).</li>
+</ul>
+<p><em>I am here at this <strong>fascist rally</strong> because my daughter has assured me it was important to her happiness that I come.</em></p>
+<ul>
+  <li>If a person is &ldquo;fascist,&rdquo; they generally believe in the absolute power of the state or a dictatorship to control people&rsquo;s lives (the Nazi party is fascist). A &ldquo;rally&rdquo; is a big gathering of people, often for a cause such as supporting a specific politician.</li>
+</ul>
+<p><em>I&rsquo;ll take this one; It might bring <strong>mischief</strong> if I leave it.</em></p>
+<ul>
+  <li>&ldquo;Mischief&rdquo; is a fun word for trouble, especially the type of trouble that children get into if their parents are away.</li>
+</ul>
+<p><em>Alright dear, <strong>run along</strong>. The <strong>grown ups</strong> have to talk.</em></p>
+<ul>
+  <li>&ldquo;Run along&rdquo; is a parent&rsquo;s way of telling their child to leave. A &ldquo;grown up&rdquo; is a somewhat dated word for an adult.</li>
+</ul>
+<p><em>If Johnny&rsquo;s name were put forward at the convention next week, would you attempt to <strong>block</strong> him?</em></p>
+<ul>
+  <li>In this case, &ldquo;to block&rdquo; a person at a political convention is to try and prevent them from being nominated or chosen to represent their party in that year&rsquo;s election.</li>
+</ul>
+<p><em>There are people who think of Johnny as a clown and a <strong>buffoon</strong>.</em></p>
+<ul>
+  <li>A &ldquo;buffoon&rdquo; is a very negative word for a ridiculous or stupid fool.</li>
+</ul>
+<p><em>I <strong>despise</strong> John Iselein and everything that Iselisim has come to <strong>stand for</strong>.</em></p>
+<ul>
+  <li>&ldquo;To despise&rdquo; a person is to hate them with great passion. If a person &ldquo;stands for&rdquo; something, he has come to represent or symbolize it.</li>
+</ul>
+<p><em>I think of John Iselin were a paid Soviet <strong>agent</strong>, he could not do more harm to this country than he&rsquo;s doing now.</em></p>
+<ul>
+  <li>In this context, an &ldquo;agent&rdquo; is a spy or other secret official.</li>
+</ul>
+<p><em>If you attempt to deal with the <strong>delegates</strong>, or cause Johnny&rsquo;s name to be brought forward on this <strong>ticket</strong>, or if you <strong>canvas</strong> the delegates by telephone&hellip;</em></p>
+<ul>
+  <li>In a political context, &ldquo;delegates&rdquo; are representatives for the candidates at a political convention. A &ldquo;ticket&rdquo; is the name of the candidate for President and Vice-President in a political party. &ldquo;To canvas&rdquo; a large group of people is to try and contact them in order to get their support.</li>
+</ul>
+<p><em>&hellip;I will bring impeachment proceedings against your husband on the floor of the United States Senate.</em></p>
+<ul>
+  <li>&ldquo;Impeachment proceedings&rdquo; are official legal actions that are designed to officially remove a person from a political office for having done something illegal or immoral.</li>
+</ul>
+<p><em>For one million <strong>bucks</strong>, pick a card&hellip; <strong>Card tricks</strong>.</em></p>
+<ul>
+  <li>A &ldquo;buck&rdquo; is a common slang word for a dollar. &ldquo;Card tricks&rdquo; are the use of a deck of cards to fool or deceive a person, often in the form of magic.</li>
+</ul>
+<p><em>We certainly are in <strong>good spirits</strong> tonight, aren&rsquo;t we?</em></p>
+<ul>
+  <li>If a person is &ldquo;in good spirits,&rdquo; they are happy and feel good.</li>
+</ul>
+<p><em>A nice long <strong>chat</strong> about the good old days in Korea and some old Russian and Chinese friends of ours.</em></p>
+<ul>
+  <li>A &ldquo;chat&rdquo; is a casual or informal conversation.</li>
+</ul>
+<p><em>I used to be convinced that as a baby, I was the <strong>sole</strong> survivor of a ship that <strong>overshot</strong> Mars.</em></p>
+<ul>
+  <li>As an adjective, &ldquo;sole&rdquo; means only or single. &ldquo;To overshoot&rdquo; a destination is to go so fast that you travel past without being able to stop in time.</li>
+</ul>
+<p><em>Aren&rsquo;t you going to <strong>pop champagne</strong> or at least kiss the bride?</em></p>
+<ul>
+  <li>&ldquo;To pop <em>open</em>&rdquo; a bottle of champagne is to open it, and usually in such a way that the cork flies off the opening and a loud poping sound is made.</li>
+</ul>
+<p><em>There must be some&hellip;<strong>anchovies</strong> in the box.</em></p>
+<ul>
+  <li>A small and smelly type of fish that some people love and most hate.</li>
+</ul>
+<p><em><strong>Crack open</strong> whatever it is. We&rsquo;ve all got to have some drinks.</em></p>
+<ul>
+  <li>&ldquo;To crack open&rdquo; a container is a slangy way of saying to open it.</li>
+</ul>
+<p><em><strong>Bustle</strong>! <strong>Make like</strong> a housewife. I&rsquo;ll get out of this idiot <strong>suit</strong>.</em></p>
+<ul>
+  <li>&ldquo;To bustle&rdquo; is to act in a very busy manner, doing lots of things quickly. &ldquo;Make like&rdquo; a housewife is a slangy way of telling a person to act like a housewife, and a &ldquo;suit&rdquo; is a formal set of pants and jacket (Note that idiot can be used as an adjective).</li>
+</ul>
+<p><em>The reason I came here this morning is to ask Raymond to voluntarily put himself <strong>under arrest</strong>. To surrender himself to some questioning.</em></p>
+<ul>
+  <li>To be put &ldquo;under arrest&rdquo; is to be held at a police station because of suspicion that a crime has been committed (Usually, the police arrest the suspect, rather than the suspect putting themselves under arrest!).</li>
+</ul>
+<p><em>He&rsquo;s the healthiest man I&rsquo;ve seen in my whole life. You can tell that just by looking at him. :: That&rsquo;s not the kind of <strong>sick</strong> I mean.</em></p>
+<ul>
+  <li>Note that if a person is &ldquo;sick,&rdquo; it can be either physical or psychological.</li>
+</ul>
+<p><em>He&rsquo;s <strong>tied up inside in 1,000 knots</strong>, but you can see for yourself how he is with me.</em></p>
+<ul>
+  <li>If a person is &ldquo;tied up inside in 1,000 knots,&rdquo; they are suffering great psychological or emotional stress and are not sure what to do about it. (A &ldquo;knot&rdquo; is a sting, rope or other things tied together in a small ball, or more generally, a big problem).</li>
+</ul>
+  <section id="part6"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Senators Jordan and Iselin clash, the unconscious Manchurian
+  candidate tragically  kills again, and Mrs. Iselin  prepares for the unthinkable at the Republican Convention.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>We&rsquo;re already <strong>wired</strong> for a room.</em></p>
+<ul>
+  <li>In this case, if a room is &ldquo;wired,&rdquo; it has been fitted with small electronic devices that can listen in on what is being said.</li>
+</ul>
+<p><em>Have you noticed how the human race is <strong>divided</strong> into two distinct and <strong>irreconcilable</strong> groups.</em></p>
+<ul>
+  <li>If two groups are &ldquo;distinct,&rdquo; they are quite different from each other and usually easy to tell apart. If two people have differences in opinion that are &ldquo;irreconcilable,&rdquo; they will not be able to come to a solution or agreement, or more generally, repair their relationship.</li>
+</ul>
+<p><em>It appears though that the Montague-Capulet note will have little effect on the <strong>feud</strong> now <strong>raging</strong> between the party leaders.</em></p>
+<ul>
+  <li>A &ldquo;feud&rdquo; between two people is a bitter or angry war of words or general hostility. If a feud &ldquo;rages,&rdquo; it continues with loud or uncontrolled anger (The Montagues and Capulets were feuding families in <em>Romeo and Juliet</em>).</li>
+</ul>
+<p><em>I now <strong>charge</strong> this man, Thomas Jordan, with <strong>high treason</strong>.</em></p>
+<ul>
+  <li>&ldquo;To charge&rdquo; a person is to officially accuse them of having committed a crime. &ldquo;High treason&rdquo; is the serious offense of having worked for the enemy, against the interests of your own country.</li>
+</ul>
+<p><em>I <strong>assure</strong> you, the moment the Senate <strong>reconvenes</strong>, I shall move for this man&rsquo;s <strong>impeachment</strong>.</em></p>
+<ul>
+  <li>&ldquo;To assure&rdquo; a person of something is to promise them you will do it, or to make them feel secure in what is being said. When a meeting &ldquo;reconvenes,&rdquo; it starts up again after having stopped for a break. &ldquo;Impeachment&rdquo; is the act of removing a person from their office or position of power, for having done something illegal.</li>
+</ul>
+<p><em><strong>Convey</strong> my personal apologies; I&rsquo;ll join you there later.</em></p>
+<ul>
+  <li>&ldquo;To convey&rdquo; is to communicate or signal.</li>
+</ul>
+<p><em>I&rsquo;m going to <strong>beat</strong> this <strong>vile</strong>, <strong>slandering</strong> son of a <strong>numbskull</strong> to a bloody <strong>pulp</strong>.</em></p>
+<ul>
+  <li>&ldquo;To beat&rdquo; a person is to physically attack them. &ldquo;Vile&rdquo; is disgusting or repulsive, and &ldquo;to slander&rdquo; a person is to say untrue things about them which will harm their reputation. A &ldquo;numbskull&rdquo; is a dated but fun word for a dumb person and &ldquo;pulp&rdquo; is tiny little bits of soft fruit, or more generally, anything that&rsquo;s been crushed into tiny little pieces.</li>
+</ul>
+<p><em>Something very important has <strong>come up</strong>.</em></p>
+<ul>
+  <li>If a problem &ldquo;comes up,&rdquo; it suddenly appears or arrives.</li>
+</ul>
+<p><em>She <strong>turned in</strong> about a quarter to three.</em></p>
+<ul>
+  <li>In this context, &ldquo;to turn in&rdquo; is to go to sleep.</li>
+</ul>
+<p><em>I&rsquo;ll force some good whiskey on you, celebrate your wedding, <strong>soothe</strong> you after a trying day.</em></p>
+<ul>
+  <li>&ldquo;To soothe&rdquo; a person is to relieve, clam them down or make them feel relaxed. If a day is &ldquo;trying,&rdquo; it has been difficult and tiring.</li>
+</ul>
+<p><em>I only hope you haven&rsquo;t been too <strong>upset</strong> by these <strong>idiotic</strong> attacks of Iselin.</em></p>
+<ul>
+  <li>&ldquo;Upset&rdquo; is emotionally disturbed, angry or worried. If something is &ldquo;idiotic,&rdquo; it is completely ridiculous, stupid or foolish.</li>
+</ul>
+<p><em>I take the <strong>position</strong> that any attack by Iselin is a great honor.</em></p>
+<ul>
+  <li>Note that &ldquo;position&rdquo; can mean opinion.</li>
+</ul>
+<p><em>What the hell is that in your hand? :: It&rsquo;s a <strong>pistol</strong>, Sir.</em></p>
+<ul>
+  <li>A common word for small gun.</li>
+</ul>
+<p><em>Is that a <strong>silencer</strong>?</em></p>
+<ul>
+  <li>A device on a gun that allows it to shoot without making any noise.</li>
+</ul>
+<p><em>My wife is <strong>prostrate</strong> over the loss of this dear and wonderful girl she loved as a daughter.</em></p>
+<ul>
+  <li>An interesting word which means to be overwhelmed or weakened by emotion (It also means to be lying flat, face down).</li>
+</ul>
+<p><em>I&rsquo;m in a hotel room across from the <strong>Garden</strong>.</em></p>
+<ul>
+  <li>&ldquo;Madison Square Garden&rdquo; is a famous convention center in New York.</li>
+</ul>
+<p><em><strong>What do you know</strong>! They just handed the Vice President nomination to that idiot Iselin!</em></p>
+<ul>
+  <li>&ldquo;What do you know!&rdquo; (<em>not</em> in the tone of a question) is a way of expressing great surprise.</li>
+</ul>
+<p><em>The <strong>patrol</strong> was taken by a Russian <strong>airborne unit</strong> and flown by helicopter across the Manchurian border.</em></p>
+<ul>
+  <li>A &ldquo;patrol&rdquo; is a group of soldiers, and an &ldquo;airborne unit&rdquo; is a military division that travels and fights with airplanes.</li>
+</ul>
+<p><em>We were worked on for three days by a team of specialists from the <strong>Pavlov Institute</strong> in Moscow.</em></p>
+<ul>
+  <li>The &ldquo;Pavlov Institute&rdquo; is a medical research organization (Pavlov was a 19<sup>th</sup> century Russian scientist who was famous for training or conditioning rats and other animals to behave in certain ways).</li>
+</ul>
+<p><em>They developed a <strong>technique</strong> for <strong>descent</strong> into the <strong>unconscious mind</strong>, part light <strong>induced</strong> and part drug.</em></p>
+<ul>
+  <li>A &ldquo;technique&rdquo; is a method or process. &ldquo;Descent&rdquo; is the act of going down, and the &ldquo;unconscious mind&rdquo; is the part of a person&rsquo;s thought process or thinking that they are not aware of. If something is &ldquo;induced&rdquo; by light, it is caused or triggered by light.</li>
+</ul>
+<p><em>We were <strong>drilled</strong> for three days.</em></p>
+<ul>
+  <li>If a prisoner is &ldquo;drilled,&rdquo; they are aggressively questioned, or in this case, aggressively brainwashed!</li>
+</ul>
+<p><em>I <strong>strangled</strong> Ed Marole and shot Bobby Lemeck.</em></p>
+<ul>
+  <li>To strangle&rdquo; a person is kill them by violently cutting off their air supply.</li>
+</ul>
+<p><em>They picked me to see if my <strong>linkages</strong> still worked before they turned me over to my <strong>American operator</strong>.</em></p>
+<ul>
+  <li>A &ldquo;linkage&rdquo; is a connection, or in this case, the mental connections in the brain that cause a deep hypnotic state. Raymond&rsquo;s &ldquo;American operator&rdquo; is the American responsible for controlling him and telling him what to do.</li>
+</ul>
+<p><em>Something somebody said in the bar accidentally <strong>triggered</strong> it.</em></p>
+<ul>
+  <li>&ldquo;To trigger&rdquo; an event is to cause it or set it off.</li>
+</ul>
+<p><em>Their beautifully conditioned links are over; They&rsquo;re <strong>smashed</strong> as of now because we say they are to be <strong>smashed</strong>.</em></p>
+<ul>
+  <li>If something has been &ldquo;smashed,&rdquo; it has been crushed or destroyed.</li>
+</ul>
+<p><em>We&rsquo;re <strong>busting up</strong> the <strong>joint</strong>, we&rsquo;re <strong>tearing up</strong> all the wire.</em></p>
+<ul>
+  <li>&ldquo;To bust up&rdquo; something is to destroy it or turn it into a mess. A &ldquo;joint&rdquo; is a slangy word for a small building or room. &ldquo;To tear up&rdquo; wire is to rip or pull it out so that it is made useless.</li>
+</ul>
+<p><em>Anybody invites you to a game of solitaire, you tell them &ldquo;I&rsquo;m sorry <strong>Buster</strong>, the game is over.&rdquo;</em></p>
+<ul>
+  <li>&ldquo;Buster&rdquo; is a very slangy way of addressing a person.</li>
+</ul>
+<p><em>The <strong>convention</strong> is <strong>adjourned</strong>. It <strong>reconvenes</strong> at 9:00 for the <strong>acceptance speeches</strong>.</em></p>
+<ul>
+  <li>A &ldquo;convention&rdquo; is a large gathering of people, often for a political purpose. If a meeting is &ldquo;adjourned,&rdquo; it stops, and if it &ldquo;reconvenes,&rdquo; it starts up again later. At a political convention, &ldquo;acceptance speeches&rdquo; are made to accept the nominations of a party to run for an office.</li>
+</ul>
+<p><em>I&rsquo;ve got 500 people <strong>at my disposal</strong>, 1,000 if needed.</em></p>
+<ul>
+  <li>If you have something &ldquo;at your disposal,&rdquo; it&rsquo;s available to use.</li>
+</ul>
+<p><em>It&rsquo;s been decided that you&rsquo;ll be dressed as a priest to help you <strong>get away</strong> in the <strong>pandemonium</strong> afterward.</em></p>
+<ul>
+  <li>In this case, to &ldquo;get away&rdquo; is to escape. &ldquo;Pandemonium&rdquo; is an excellent word for general chaos and violent, loud disorder.</li>
+</ul>
+<p><em>Chunjin will give you a two piece Soviet <strong>sniper&rsquo;s</strong> rifle that fit&rsquo;s nicely into a special bag.</em></p>
+<ul>
+  <li>A &ldquo;sniper&rdquo; is a person who shoots at people from a hidden place.</li>
+</ul>
+<p><em>There&rsquo;s a spotlight booth that won&rsquo;t be in use.</em></p>
+<ul>
+  <li>A &ldquo;spotlight&rdquo; is a very bright and powerful light that can be seen from far away. A &ldquo;booth&rdquo; is a stand or stall for selling goods at a convention.</li>
+</ul>
+<p><em>You are to shoot the Presidential <strong>nominee</strong> through the head, and Johnny will rise <strong>gallantly</strong> to his feet.</em></p>
+<ul>
+  <li>The &ldquo;nominee&rdquo; of a political party is the person chosen by that party to run for a particular office (in this case, President). To rise &ldquo;gallantly&rdquo; is to stand with great confidence and power, like a king.</li>
+</ul>
+<p><em>The speech is short, but it&rsquo;s the most <strong>rousing</strong> speech I&rsquo;ve ever read. It&rsquo;s been worked on here and in Russia for over eight years.</em></p>
+<ul>
+  <li>If a speech is &ldquo;rousing,&rdquo; it causes great emotion or excitement among the people who hear it.</li>
+</ul>
+<p><em><strong>Rallying</strong> a nation of television viewers into <strong>hysteria</strong>, to sweep us up into the White House with powers that will make <strong>martial law</strong> seem like <strong>anarchy</strong>.</em></p>
+<ul>
+  <li>&ldquo;To rally&rdquo; people is to get them excited about a particular cause or event. &ldquo;Hysteria&rdquo; is uncontrolled emotion or excitement. &ldquo;Martial law&rdquo; is strict rule by the military, and &ldquo;anarchy&rdquo; is the lack of law or government, or a more general word for chaos or disorder.</li>
+</ul>
+<p><em>&hellip;he finishes the <strong>phrase</strong> &ldquo;Nor would I ask any American to give something in defense of his freedom that I would not gladly give myself.&rdquo;</em></p>
+<ul>
+  <li>A &ldquo;phrase&rdquo; is an expression or set of words.</li>
+</ul>
+<p><em>I know you will never entirely <strong>comprehend</strong> this Raymond, but you must believe I did not know it would be you.</em></p>
+<ul>
+  <li>&ldquo;To comprehend&rdquo; is to understand.</li>
+</ul>
+<p><em>I am <strong>on the point of</strong> winning them the greatest <strong>foothold</strong> they&rsquo;ll ever have in this country and they paid me back by taking your <strong>soul</strong> away from you.</em></p>
+<ul>
+  <li>To be &ldquo;on the point of&rdquo; doing something is to be about to do it (Today, it&rsquo;s much more common to say on the <em>verge</em> of doing something). A &ldquo;foothold&rdquo; is a starting position that can be used as a base for later advance or expansion. A person&rsquo;s &ldquo;soul&rdquo; is the non-physical part of who they are, which according to religions, lives on after one dies.</li>
+</ul>
+<p><em>I told them to build me an <strong>arsenal</strong> and they chose you, because they thought it would <strong>bind</strong> me closer to them.</em></p>
+<ul>
+  <li>An &ldquo;arsenal&rdquo; is a plant for the building and storage of weapons. &ldquo;To bind&rdquo; one person to another is to hold or stick them close together.</li>
+</ul>
+<p><em>And when I take power, they will be pulled down and <strong>ground</strong> into dirt for what they did to you, and what they did in so <strong>contemptuously</strong> <strong>underestimating</strong> me.</em></p>
+<ul>
+  <li>&ldquo;To ground&rdquo; a person into dirt is to crush them into little pieces. If a person acts &ldquo;contemptuously,&rdquo; they behave in a snobby way, looking down on the person they are dealing with. &ldquo;To underestimate&rdquo; a person is to believe they are not as smart, talented, strong, etc. as they really are.</li>
+</ul>
+  <section id="part7"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>With help from Major Marco, Raymond escapes from his
+  communist brainwashing, but he still pays a terrible price.</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+<p><em>It was a <strong>calculated risk</strong>; You were right to take it.</em></p>
+<ul>
+  <li>A &ldquo;calculated risk&rdquo; is an action that involves danger, but that is done only after intelligently thinking about how much risk is really involved.</li>
+</ul>
+<p><em>If Stieman doesn&rsquo;t take off that stupid hat and stop <strong>messing around</strong> with those <strong>broads</strong>, I&rsquo;m gonna <strong>bust</strong> him into a <strong>PFC</strong>.</em></p>
+<ul>
+  <li>&ldquo;To mess around&rdquo; with someone is to joke around with them or to pass time with them in a not very serious manner. &ldquo;Broad&rdquo; is a ridiculously dated slang word for a woman. In this case, &ldquo;to bust&rdquo; a person in the military means to demote them to a lower rank. A "PFC" is a Private First Class, one of the lowest ranks in the Army.</li>
+</ul>
+<p><em>Ok, Milt, I <strong>blew it</strong>.</em></p>
+<ul>
+  <li>&ldquo;To blow it&rdquo; is an excellent expression which means to do something very badly, or even to forget entirely to do something that needed to be done.</li>
+</ul>
+<p><em>If the <strong>Pentagon</strong> ever wants to open up a stupidity division, they know who they can get to lead it.</em></p>
+<ul>
+  <li>&ldquo;The Pentagon&rdquo; is the five sided building in Washington that houses the US military, and more generally, the US military command itself.</li>
+</ul>
+<p><em>That&rsquo;s what I <strong>figured</strong>. Let me get <strong>the hell</strong> out of here.</em></p>
+<ul>
+  <li>&ldquo;To figure&rdquo; is a common way of saying to think or believe. &ldquo;The hell&rdquo; is a filler added to express emotion such as frustration.</li>
+</ul>
+<p><em>If you got a <strong>tip</strong> there was bomb planted here, you&rsquo;d stop it fast enough.</em></p>
+<ul>
+  <li>A "tip" is an important and often secretly given piece of information that helps a person solve a problem, or in this case, avoid something bad.</li>
+</ul>
+<p><em>I tell you there&rsquo;s a bomb just waiting to go off.</em></p>
+<ul>
+  <li>If a bomb &ldquo;goes off,&rdquo; it explodes.</li>
+</ul>
+<p><em>Ladies and gentleman, our national anthem.</em></p>
+<ul>
+  <li>The official song of a country (In the US, it is &ldquo;The Star Spangled Banner&rdquo;).</li>
+</ul>
+<p><em>Stop <strong>twitching</strong>; Raymond&rsquo;s never missed with a <strong>rifle</strong> in his life.</em></p>
+<ul>
+  <li>&ldquo;To twitch&rdquo; is to move one&rsquo;s muscles about nervously or in sudden jerking motions. A &ldquo;rifle&rdquo; is a gun with a long barrel through which the bullets pass.</li>
+</ul>
+<p><em>Were <strong>in like flint</strong>, lover.</em></p>
+<ul>
+  <li>An old-fashioned expression which means to have succeeded at something difficult so that you are now in a good situation.</li>
+</ul>
+<p><em>It&rsquo;s with <strong>humility</strong>, <strong>albeit</strong> <strong>enormous</strong> <strong>pride</strong>, that I must humbly and gratefully accept this nomination for the highest office in our land.</em></p>
+<ul>
+  <li>&ldquo;Humility&rdquo; is a feeling of being humble, or almost of not feeling like you truly deserve what you&rsquo;ve been given. &ldquo;Albeit&rdquo; is a very formal word for "although" or "even though". &ldquo;Enormous&rdquo; means huge or extremely big and &ldquo;pride&rdquo; is the feeling of being highly pleased with oneself.</li>
+</ul>
+<p><em>The years of decision, and if I may be permitted a <strong>phrase</strong> of my own, the years of striving.</em></p>
+<ul>
+  <li>A &ldquo;phrase&rdquo; is a brief expression, and &ldquo;to strive&rdquo; means to work hard for something or toward a much desired goal.</li>
+</ul>
+<p><em>You should read some of the <strong>citations</strong> sometime.</em></p>
+<ul>
+  <li>Here, &ldquo;citations&rdquo; are official expressions of appreciation and gratefulness.</li>
+</ul>
+<p><em>Killing four enemies in the process when one arm and one leg was <strong>shattered</strong>.</em></p>
+<ul>
+  <li>If a person&rsquo;s leg has been &ldquo;shattered,&rdquo; it has been blown into pieces.</li>
+</ul>
+<p><em>He could only <strong>crawl</strong> because the other leg had been blown off.</em></p>
+<ul>
+  <li>&ldquo;To crawl&rdquo; is to move on your hands and knees, like a baby.</li>
+</ul>
+<p><em>He pulled two of his men to safety <strong>amid</strong> 69 dead and 203 <strong>casualties</strong>.</em></p>
+<ul>
+  <li>&ldquo;Amid&rdquo; means surrounded by or in the middle of. A &ldquo;casualty&rdquo; is a person who has been killed or seriously wounded, often during a war.</li>
+</ul>
+<p><em>Made to commit acts too <strong>unspeakable</strong> to be <strong>cited</strong> here, by an enemy who had captured his mind and soul.</em></p>
+<ul>
+  <li>If an act is &ldquo;unspeakable,&rdquo; it is so horrible or disgusting that people don&rsquo;t want to talk about it. Here, &ldquo;cited&rdquo; means officially listed or mentioned.</li>
+</ul>
+<p><em>He heroically and <strong>unhesitatingly</strong> gave his life to save his country.</em></p>
+<ul>
+  <li>This is a rare adverb which means to do something without hesitation, doubt or delay.</li>
+</ul>
+<section id="discussion"></section>
+<div class="w3-row">
+<div class="w3-col s2"><p></p></div>
+<div class="w3-col s8 w3-theme w3-center" style="font-style:italic;"><h4>Class Discussion</h4></div>
+<div class="w3-col s2"><p></p></div>
+</div>
+<p>
+  <p>1. Do you think people can really be brainwashed? Do you know anybody who has? Have you?!?</p>
+  <p>2. Was Raymond the only brainwashed American? Is it possible Major Marco was too?</p>
+  <p>3. What does the role of Raymond’s mother tell us about how Americans viewed the communist threat back in 1962? Were the communists (the Soviets and the Chinese) really as evil as they appear in this movie?</p>
+  <p>4. How is fear portrayed in this movie? Who is afraid? Are their fears justified? Are they paranoid?</p>
+  <p>5. Why do you think this movie was remade in 2004?</p>
+  <p>6. Was this movie a drama or science fiction? Or even a comedy?</p>
+  <p>7. Was the plot believable? Why or why not?</p>
+  <footer class="w3-container w3-theme" style="text-align: center;">
+<p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
+</footer>
+<div class="w3-container w3-theme-dark w3-xlarge w3-center"><a href="#top" class="w3-text-theme">Back to the Top</a></div>
+</body>
+</html>
