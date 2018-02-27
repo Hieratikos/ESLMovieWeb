@@ -10,8 +10,9 @@
 
   <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
   <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
-  <script async type="text/javascript" src="jquery-3.2.1.min.js"></script>
-  <script async type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/movieScripts.js"></script>
 <style>
 /* rose quarts theme from lightest to darkest */
 .w3-theme-l5 {color:#000 !important; background-color:#fff0f4 !important}
@@ -56,16 +57,6 @@ padding-top:52px;
   border-color:#ff3766;
 }
 </style>
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 </head>
 <body class="fullPage" style="border:1px solid #ff3766">
 <nav class="navbar navbar-fixed-top" role="navigation">
@@ -98,12 +89,23 @@ function w3_close() {
 </header>
 
 <div class="w3-row w3-theme">
-  <div class="w3-col s3">
-    <img id="myImg" src="images/AmericanBeauty.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
-</div>
-  <div class="w3-col s9" style="text-align:center">
+  <!--<div class="w3-col s3">-->
+    <!--<img id="myImg" src="images/AmericanBeauty.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">-->
+<!--</div>-->
+  <div class="w3-col s12" style="text-align:center">
     A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.
   </div>
+
+  <div class="w3-col s12" style="text-align:center">
+    <video id="videoPlayer" max-height="100%" width="100%" poster="images/AmericanBeauty.webp" style="display: block;">
+      <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519757824/ESL/Videos/WEBM/AmericanBeauty_hrelhd.mkv" type="video/webm">
+      <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519714489/ESL/Videos/MP4/AmericanBeauty_sms6tr.mp4" type="video/mp4">
+      <!--<source src="videos/AmericanBeauty.ogg" type="video/ogg">-->
+      Your browser does not support the video tag.
+    </video>
+    <button id="btnTrailer" onclick="if (playVideo()?this.innerHTML='Watch Trailer':this.innerHTML='Reset');" class="w3-btn">Watch Trailer</button>
+  </div>
+
 </div>
 
 <div class="w3-row w3-text-theme">
@@ -1376,11 +1378,12 @@ grow closer, but Ricky soon has big problems with his dad.</h4></div>
 <div class="w3-col s2"><p></p></div>
 </div>
 <p>
-  <p>1. Are the Burnhams really a typical American family, or are they in fact more dysfunctional ("screwed up") than most? What about compared to your family?</p>
-  <p>2. Why are Lester and Carolyn so unhappy? Should they be?</p>
-  <p>3. Which characters had public images that hid who they really were, and which ones seemed to be completely honest?</p>
-  <p>4. Do you think most men over 40 dream of being 18 again?</p>
-  <p>5. What did you like and not like about this movie?</p>
+  <p>1. The word "beauty" is both a count noun and a non-count noun. What does the movie title mean in both cases?</p>
+  <p>2. Are the Burnhams really a typical American family, or are they in fact more dysfunctional ("screwed up") than most?</p>
+  <p>3. Why are Lester and Carolyn so unhappy? Should they be?</p>
+  <p>4. Which characters had public images that hid who they really were, and which ones seemed to be completely honest?</p>
+  <p>5. Do you think most men over 40 dream of being 18 again?</p>
+  <p>6. What did you like and not like about this movie?</p>
   <footer class="w3-container w3-theme" style="text-align: center;">
 <p>&copy; 1999 by Raymond Weschler - content <br> &copy; 2017 by Jordi Combs - design & content</p>
 </footer>

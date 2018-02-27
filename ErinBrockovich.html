@@ -11,7 +11,8 @@
   <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
   <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-  <script async type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/movieScripts.js"></script>
 <style>
 /* orange theme from lightest to darkest */
 .w3-theme-l5 {color:#000 !important; background-color:#fff4ec !important}
@@ -56,16 +57,6 @@ padding-top:52px;
   border-color:#fd6900;
 }
 </style>
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 </head>
 <body class="fullPage" style="border:1px solid #fd6900";>
 <nav class="navbar navbar-fixed-top" role="navigation">
@@ -99,13 +90,24 @@ function w3_close() {
 </header>
 
 <div class="w3-row w3-theme">
-  <div class="w3-col s3">
-    <img id="myImg" src="images/Brockovich.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
-</div>
-  <div class="w3-col s9" style="text-align:center">
+  <!--<div class="w3-col s3">-->
+    <!--<img id="myImg" src="images/Brockovich.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">-->
+<!--</div>-->
+  <div class="w3-col s12" style="text-align:center">
     An unemployed single mother becomes a legal assistant and almost single-handedly
     brings down a California power company accused of polluting a city's water supply.
   </div>
+
+  <div class="w3-col s12" style="text-align:center">
+    <video id="videoPlayer" max-height="100%" width="100%" poster="images/Brockovich.webp" style="display: block;">
+      <source src="videos/Converted/Brockovich.mp4" type="video/mp4">
+      <!--<source src="videos/Brockovich.webm" type="video/webm">-->
+      <!--<source src="videos/Brockovich.ogg" type="video/ogg">-->
+      Your browser does not support the video tag.
+    </video>
+    <button id="btnTrailer" onclick="if (playVideo()?this.innerHTML='Watch Trailer':this.innerHTML='Reset');" class="w3-btn">Watch Trailer</button>
+  </div>
+
 </div>
 
 <div class="w3-row w3-text-theme">

@@ -87,3 +87,6 @@ img {
 h4{
     padding-top: 10px;
 }
+html, body {
+    overflow-x: hidden;
+}

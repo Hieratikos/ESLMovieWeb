@@ -10,8 +10,9 @@
 
     <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
     <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
-    <script async type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script async type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/movieScripts.js"></script>
 <style>
 /* indigo theme from lightest to darkest */
 .w3-theme-l5 {color:#000 !important; background-color:#f3f4fb !important}
@@ -53,16 +54,6 @@ padding-top:52px;
         border-color:#6271c8;
     }
 </style>
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 </head>
 <body class="fullPage" style="border:1px solid #6271c8">
 <nav class="navbar navbar-fixed-top" role="navigation">
@@ -97,14 +88,24 @@ function w3_close() {
   <h1 style="text-align:center">To Kill a Mockingbird</h1>
 </header>
 <div class="w3-row w3-theme">
-  <div class="w3-col s3">
-
-    <img id="myImg" src="images/mockingbird.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
-
-</div>
-  <div class="w3-col s9" style="text-align:center">
+  <!--<div class="w3-col s3">-->
+    <!--<img id="myImg" src="images/Mockingbird.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">-->
+  <!--</div>-->
+  <div class="w3-col s12" style="text-align:center">
     Atticus Finch, a lawyer in the Depression-era South, defends a black man against an undeserved rape charge, and his children against prejudice.
   </div>
+
+    <div class="w3-col s12" style="text-align:center">
+        <video id="videoPlayer" max-height="100%" width="100%" poster="images/Mockingbird.webp" style="display: block;">
+            <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519758880/ESL/Videos/WEBM/Mockingbird_b2sgwr.mkv" type="video/webm">
+            <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519716390/ESL/Videos/MP4/Mockingbird_a03vj5.mp4" type="video/mp4">
+            <!--<source src="videos/Mockingbird.ogg" type="video/ogg">-->
+            Your browser does not support the video tag.
+        </video>
+
+        <button id="btnTrailer" onclick="if (playVideo()?this.innerHTML='Watch Trailer':this.innerHTML='Reset');" class="w3-btn">Watch Trailer</button>
+    </div>
+
 </div>
 
 <div class="w3-row w3-text-theme">

@@ -12,6 +12,7 @@
     <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/movieScripts.js"></script>
 <style>
 /* indigo theme from lightest to darkest */
 .w3-theme-l5 {color:#000 !important; background-color:#f3f4fb !important}
@@ -53,16 +54,6 @@ padding-top:52px;
         border-color:#6271c8;
     }
 </style>
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 </head>
 <body class="fullPage" style="border:1px solid #6271c8">
 <nav class="navbar navbar-fixed-top" role="navigation">
@@ -94,22 +85,33 @@ function w3_close() {
 <header class="w3-container w3-card-4 w3-theme">
   <h1 style="text-align:center">Mr. Smith Goes To Washington</h1>
 </header>
-<div class="w3-row w3-theme">
-  <div class="w3-col s3">
-    <img id="myImg" src="images/MrSmith.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">
-</div>
-  <div class="w3-col s9" style="text-align:center">
-      A na&iuml;ve man is appointed to fill a vacancy in the United States Senate. His plans promptly collide with political corruption, but he doesn't back down.
-  </div>
-</div>
 
+    <div class="w3-row w3-theme">
+        <!--<div class="w3-col s3">-->
+            <!--<img id="myImg" src="images/MrSmith.webp" style="width:100%;margin-bottom:0px;" class="img-responsive">-->
+        <!--</div>-->
+
+    <div class="w3-col s12" style="text-align:center">
+      A na&iuml;ve man is appointed to fill a vacancy in the United States Senate. His plans promptly collide with political corruption, but he doesn't back down.
+    </div>
+
+    <div class="w3-col s12" style="text-align:center">
+    <video id="videoPlayer" max-height="100%" width="100%" poster="images/MrSmith.webp" style="display: block;">
+        <!--<source src="videos/Converted/MrSmith.mp4" type="video/mp4">-->
+        <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519758979/ESL/Videos/WEBM/MrSmith_wydzng.mkv" type="video/webm">
+        <!--<source src="videos/MrSmith.ogg" type="video/ogg">-->
+        Your browser does not support the video tag.
+    </video>
+        <button id="btnTrailer" onclick="if (playVideo()?this.innerHTML='Watch Trailer':this.innerHTML='Reset');" class="w3-btn">Watch Trailer</button>
+    </div>
+
+</div>
 <div class="w3-row w3-text-theme">
   <div class="w3-col w3-small s12 w3-center"><br>
     Not Rated | 2 hrs 9 min | Comedy, Drama | 1939
   </div>
 </div>
 
-<hr>
 <div class="w3-row">
   <div class="w3-col s12 w3-container" style="font-family: 'Open Sans', sans-serif;">
 <table class="w3-table-all w3-card-4 w3-tiny">
