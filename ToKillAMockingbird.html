@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="w3.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/w3.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
     <link rel="shortcut icon" href="images/myfavico.webp" type="image/x-icon">
     <link rel="icon" href="images/myfavico.webp" type="image/x-icon">
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/movieScripts.js"></script>
 <style>
 /* indigo theme from lightest to darkest */
@@ -27,10 +27,8 @@
 .w3-theme-d5 {color:#fff !important; background-color:#20295b !important}
 .w3-theme-light {color:#000 !important; background-color:#f3f4fb !important}
 .w3-theme-dark {color:#fff !important; background-color:#20295b !important}
-.w3-theme-action {color:#fff !important; background-color:#20295b !important}
 .w3-theme {color:#fff !important; background-color:#3f51b5 !important}
 .w3-text-theme {color:#3f51b5 !important}
-.w3-border-theme {border-color:#3f51b5 !important}
 .w3-hover-theme:hover {color:#fff !important; background-color:#3f51b5 !important}
 .w3-hover-text-theme:hover {color:#3f51b5 !important}
 .w3-hover-border-theme:hover {border-color:#3f51b5 !important}
@@ -50,8 +48,16 @@ td,th{
 section {
 padding-top:52px;
 }
-    .navbar{
-        border-color:#6271c8;
+.navbar{
+    border-color:#6271c8;
+}
+    #topNav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #topLangChoice{
+        align-items:  center;
+        display:  flex;
     }
 </style>
 </head>
@@ -78,9 +84,24 @@ padding-top:52px;
   <!-- Page Content for Sidebar -->
 <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
+    <!--original is below-->
 <div class="w3-theme">
   <button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
 </div>
+    <!--<div id="topNav" class="w3-theme">-->
+        <!--<span><button class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button></span>-->
+        <!--<span id="topLangChoice">-->
+            <!--<select id="langChoice" class="w3-theme-dark">-->
+                <!--<option value="English">English</option>-->
+                <!--<option value="Chinese">中文</option>-->
+                <!--<option value="Farsi">فارسی</option>-->
+                <!--<option value="Russian">Русский</option>-->
+            <!--</select>-->
+        <!--</span>-->
+    <!--</div>-->
+
+
+    <!--test stops here-->
 </nav>
 <section id="top"></section>
 
@@ -96,16 +117,16 @@ padding-top:52px;
   </div>
 
     <div class="w3-col s12" style="text-align:center">
-        <video id="videoPlayer" max-height="100%" width="100%" poster="images/Mockingbird.webp" style="display: block;">
-            <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519758880/ESL/Videos/WEBM/Mockingbird_b2sgwr.mkv" type="video/webm">
-            <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519716390/ESL/Videos/MP4/Mockingbird_a03vj5.mp4" type="video/mp4">
-            <!--<source src="videos/Mockingbird.ogg" type="video/ogg">-->
-            Your browser does not support the video tag.
-        </video>
+    <video id="videoPlayer" max-height="100%" width="100%" poster="images/Mockingbird.webp" style="display: block;">
+        <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519758880/ESL/Videos/WEBM/Mockingbird_b2sgwr.mkv" type="video/webm">
+        <source src="http://res.cloudinary.com/hieratikos/video/upload/v1519716390/ESL/Videos/MP4/Mockingbird_a03vj5.mp4" type="video/mp4">
+        <track src="videos/Subtitles/Mockingbird.vtt" kind="subtitles" srclang="en" label="English" default>
+        <!--<source src="videos/Mockingbird.ogg" type="video/ogg">-->
+        Your browser does not support the video tag.
+    </video>
 
-        <button id="btnTrailer" onclick="if (playVideo()?this.innerHTML='Watch Trailer':this.innerHTML='Reset');" class="w3-btn">Watch Trailer</button>
+    <button id="btnTrailer" onclick="if (playVideo()?this.innerHTML='Watch Trailer':this.innerHTML='Reset');" class="w3-btn">Watch Trailer</button>
     </div>
-
 </div>
 
 <div class="w3-row w3-text-theme">
