@@ -49,10 +49,10 @@ img {
     background-repeat:repeat-x;
 }
 .header.top{
-    background-image:url('../images/ReelTop.webp');
+    background-image:url('../images/ReelTop.gif');
 }
 .header.bottom{
-    background-image:url('../images/ReelBottom.webp');
+    background-image:url('../images/ReelBottom.gif');
     padding-bottom: 50px;
     margin-bottom: 0px;
 }
